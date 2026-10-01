@@ -1,0 +1,132 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Blocks
+  commentId: N:Koffing.Blocks
+  id: Koffing.Blocks
+  children:
+  - Koffing.Blocks.Block
+  - Koffing.Blocks.BlockSet
+  - Koffing.Blocks.IBlock
+  - Koffing.Blocks.IDowngradable`1
+  - Koffing.Blocks.IUpgradable`1
+  - Koffing.Blocks.MadeBlockContext
+  langs:
+  - csharp
+  - vb
+  name: Koffing.Blocks
+  nameWithType: Koffing.Blocks
+  fullName: Koffing.Blocks
+  type: Namespace
+  assemblies:
+  - Koffing
+references:
+- uid: Koffing.Blocks.Block
+  commentId: T:Koffing.Blocks.Block
+  parent: Koffing.Blocks
+  isExternal: true
+  href: Koffing.Blocks.Block.html
+  name: Block
+  nameWithType: Block
+  fullName: Koffing.Blocks.Block
+- uid: Koffing.Blocks.BlockSet
+  commentId: T:Koffing.Blocks.BlockSet
+  parent: Koffing.Blocks
+  isExternal: true
+  href: Koffing.Blocks.BlockSet.html
+  name: BlockSet
+  nameWithType: BlockSet
+  fullName: Koffing.Blocks.BlockSet
+- uid: Koffing.Blocks.IBlock
+  commentId: T:Koffing.Blocks.IBlock
+  parent: Koffing.Blocks
+  isExternal: true
+  href: Koffing.Blocks.IBlock.html
+  name: IBlock
+  nameWithType: IBlock
+  fullName: Koffing.Blocks.IBlock
+- uid: Koffing.Blocks.IDowngradable`1
+  commentId: T:Koffing.Blocks.IDowngradable`1
+  isExternal: true
+  href: Koffing.Blocks.IDowngradable-1.html
+  name: IDowngradable<T>
+  nameWithType: IDowngradable<T>
+  fullName: Koffing.Blocks.IDowngradable<T>
+  nameWithType.vb: IDowngradable(Of T)
+  fullName.vb: Koffing.Blocks.IDowngradable(Of T)
+  name.vb: IDowngradable(Of T)
+  spec.csharp:
+  - uid: Koffing.Blocks.IDowngradable`1
+    name: IDowngradable
+    isExternal: true
+    href: Koffing.Blocks.IDowngradable-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Koffing.Blocks.IDowngradable`1
+    name: IDowngradable
+    isExternal: true
+    href: Koffing.Blocks.IDowngradable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Koffing.Blocks.IUpgradable`1
+  commentId: T:Koffing.Blocks.IUpgradable`1
+  isExternal: true
+  href: Koffing.Blocks.IUpgradable-1.html
+  name: IUpgradable<T>
+  nameWithType: IUpgradable<T>
+  fullName: Koffing.Blocks.IUpgradable<T>
+  nameWithType.vb: IUpgradable(Of T)
+  fullName.vb: Koffing.Blocks.IUpgradable(Of T)
+  name.vb: IUpgradable(Of T)
+  spec.csharp:
+  - uid: Koffing.Blocks.IUpgradable`1
+    name: IUpgradable
+    isExternal: true
+    href: Koffing.Blocks.IUpgradable-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Koffing.Blocks.IUpgradable`1
+    name: IUpgradable
+    isExternal: true
+    href: Koffing.Blocks.IUpgradable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Koffing.Blocks.MadeBlockContext
+  commentId: T:Koffing.Blocks.MadeBlockContext
+  parent: Koffing.Blocks
+  isExternal: true
+  href: Koffing.Blocks.MadeBlockContext.html
+  name: MadeBlockContext
+  nameWithType: MadeBlockContext
+  fullName: Koffing.Blocks.MadeBlockContext
+- uid: Koffing.Blocks
+  commentId: N:Koffing.Blocks
+  isExternal: true
+  name: Koffing.Blocks
+  nameWithType: Koffing.Blocks
+  fullName: Koffing.Blocks
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Blocks
+    name: Blocks
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Blocks
+    name: Blocks
+    isExternal: true

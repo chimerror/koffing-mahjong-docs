@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ThirteenOrphansWait | Koffing Mahjong Engine </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ThirteenOrphansWait | Koffing Mahjong Engine ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Koffing Mahjong Engine">
+            Koffing Mahjong Engine
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Koffing.Waits.ThirteenOrphansWait">
+
+
+
+  <h1 id="Koffing_Waits_ThirteenOrphansWait" data-uid="Koffing.Waits.ThirteenOrphansWait" class="text-break">
+Class ThirteenOrphansWait  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Waits/ThirteenOrphansWait.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Koffing.html">Koffing</a>.<a class="xref" href="Koffing.Waits.html">Waits</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Koffing.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ThirteenOrphansWait : Wait, IEnumerable&lt;Tile&gt;, IEnumerable, IComparable&lt;Block&gt;, IEquatable&lt;Block&gt;, IBlock</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Koffing.Blocks.Block.html">Block</a></div>
+      <div><a class="xref" href="Koffing.Waits.Wait.html">Wait</a></div>
+      <div><span class="xref">ThirteenOrphansWait</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="Koffing.Blocks.Block.html">Block</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Koffing.Blocks.Block.html">Block</a>&gt;</div>
+      <div><a class="xref" href="Koffing.Blocks.IBlock.html">IBlock</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Koffing.Waits.Wait.html#Koffing_Waits_Wait_GetFirstLevelWaits_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">Wait.GetFirstLevelWaits(IEnumerable&lt;Tile&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block__tiles">Block._tiles</a>
+    </div>
+    <div>
+      <a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossibleBlockSets_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">Block.GetPossibleBlockSets(IEnumerable&lt;Tile&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">Block.GetPossibleForTile(Tile, IEnumerable&lt;Tile&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossibleHelper_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__System_Type_">Block.GetPossibleHelper(IEnumerable&lt;Tile&gt;, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_Equals_System_Object_">Block.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCode">Block.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetEnumerator">Block.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_CompareTo_Koffing_Blocks_Block_">Block.CompareTo(Block)</a>
+    </div>
+    <div>
+      <a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_ToString">Block.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_Item_System_Int32_">Block.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_Tiles">Block.Tiles</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Koffing.Extensions.html#Koffing_Extensions_NotationFromTiles_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">Extensions.NotationFromTiles(IEnumerable&lt;Tile&gt;)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Koffing_Waits_ThirteenOrphansWait__ctor_" data-uid="Koffing.Waits.ThirteenOrphansWait.#ctor*"></a>
+
+  <h3 id="Koffing_Waits_ThirteenOrphansWait__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Waits.ThirteenOrphansWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
+  ThirteenOrphansWait(IEnumerable&lt;Tile&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Waits/ThirteenOrphansWait.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThirteenOrphansWait(IEnumerable&lt;Tile&gt; tiles = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Waits_ThirteenOrphansWait__ctor_" data-uid="Koffing.Waits.ThirteenOrphansWait.#ctor*"></a>
+
+  <h3 id="Koffing_Waits_ThirteenOrphansWait__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__System_Collections_Generic_IEnumerable_Koffing_Blocks_Block__" data-uid="Koffing.Waits.ThirteenOrphansWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Blocks.Block})">
+  ThirteenOrphansWait(IEnumerable&lt;Tile&gt;, IEnumerable&lt;Block&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Waits/ThirteenOrphansWait.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThirteenOrphansWait(IEnumerable&lt;Tile&gt; tiles, IEnumerable&lt;Block&gt; pairs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>pairs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Blocks.Block.html">Block</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Koffing_Waits_ThirteenOrphansWait_Pairs_" data-uid="Koffing.Waits.ThirteenOrphansWait.Pairs*"></a>
+
+  <h3 id="Koffing_Waits_ThirteenOrphansWait_Pairs" data-uid="Koffing.Waits.ThirteenOrphansWait.Pairs">
+  Pairs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Waits/ThirteenOrphansWait.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Block&gt; Pairs { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Blocks.Block.html">Block</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Koffing_Waits_ThirteenOrphansWait_Equals_" data-uid="Koffing.Waits.ThirteenOrphansWait.Equals*"></a>
+
+  <h3 id="Koffing_Waits_ThirteenOrphansWait_Equals_Koffing_Blocks_Block_" data-uid="Koffing.Waits.ThirteenOrphansWait.Equals(Koffing.Blocks.Block)">
+  Equals(Block)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Waits/ThirteenOrphansWait.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(Block thatBlock)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thatBlock</code> <a class="xref" href="Koffing.Blocks.Block.html">Block</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="eii">Explicit Interface Implementations
+</h2>
+
+
+  <a id="Koffing_Waits_ThirteenOrphansWait_GetHashCodeBasis_" data-uid="Koffing.Waits.ThirteenOrphansWait.GetHashCodeBasis*"></a>
+
+  <h3 id="Koffing_Waits_ThirteenOrphansWait_GetHashCodeBasis" data-uid="Koffing.Waits.ThirteenOrphansWait.GetHashCodeBasis">
+  GetHashCodeBasis()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Waits/ThirteenOrphansWait.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static int GetHashCodeBasis()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Waits_ThirteenOrphansWait_GetPossible_" data-uid="Koffing.Waits.ThirteenOrphansWait.GetPossible*"></a>
+
+  <h3 id="Koffing_Waits_ThirteenOrphansWait_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Waits.ThirteenOrphansWait.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
+  GetPossible(IEnumerable&lt;Tile&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Waits/ThirteenOrphansWait.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static IEnumerable&lt;MadeBlockContext&gt; GetPossible(IEnumerable&lt;Tile&gt; tiles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Waits/ThirteenOrphansWait.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

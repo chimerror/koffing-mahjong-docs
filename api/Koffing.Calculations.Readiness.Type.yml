@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Calculations.Readiness.Type
+  commentId: T:Koffing.Calculations.Readiness.Type
+  id: Readiness.Type
+  parent: Koffing.Calculations
+  children:
+  - Koffing.Calculations.Readiness.Type.SevenPairs
+  - Koffing.Calculations.Readiness.Type.Standard
+  - Koffing.Calculations.Readiness.Type.ThirteenOrphans
+  langs:
+  - csharp
+  - vb
+  name: Readiness.Type
+  nameWithType: Readiness.Type
+  fullName: Koffing.Calculations.Readiness.Type
+  type: Enum
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Calculations/Readiness.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Calculations
+  syntax:
+    content: public enum Readiness.Type
+    content.vb: Public Enum Readiness.Type
+- uid: Koffing.Calculations.Readiness.Type.Standard
+  commentId: F:Koffing.Calculations.Readiness.Type.Standard
+  id: Standard
+  parent: Koffing.Calculations.Readiness.Type
+  langs:
+  - csharp
+  - vb
+  name: Standard
+  nameWithType: Readiness.Type.Standard
+  fullName: Koffing.Calculations.Readiness.Type.Standard
+  type: Field
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Calculations/Readiness.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Calculations
+  syntax:
+    content: Standard = 0
+    return:
+      type: Koffing.Calculations.Readiness.Type
+- uid: Koffing.Calculations.Readiness.Type.SevenPairs
+  commentId: F:Koffing.Calculations.Readiness.Type.SevenPairs
+  id: SevenPairs
+  parent: Koffing.Calculations.Readiness.Type
+  langs:
+  - csharp
+  - vb
+  name: SevenPairs
+  nameWithType: Readiness.Type.SevenPairs
+  fullName: Koffing.Calculations.Readiness.Type.SevenPairs
+  type: Field
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Calculations/Readiness.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Calculations
+  syntax:
+    content: SevenPairs = 1
+    return:
+      type: Koffing.Calculations.Readiness.Type
+- uid: Koffing.Calculations.Readiness.Type.ThirteenOrphans
+  commentId: F:Koffing.Calculations.Readiness.Type.ThirteenOrphans
+  id: ThirteenOrphans
+  parent: Koffing.Calculations.Readiness.Type
+  langs:
+  - csharp
+  - vb
+  name: ThirteenOrphans
+  nameWithType: Readiness.Type.ThirteenOrphans
+  fullName: Koffing.Calculations.Readiness.Type.ThirteenOrphans
+  type: Field
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Calculations/Readiness.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Calculations
+  syntax:
+    content: ThirteenOrphans = 2
+    return:
+      type: Koffing.Calculations.Readiness.Type
+references:
+- uid: Koffing.Calculations
+  commentId: N:Koffing.Calculations
+  isExternal: true
+  name: Koffing.Calculations
+  nameWithType: Koffing.Calculations
+  fullName: Koffing.Calculations
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Calculations
+    name: Calculations
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Calculations
+    name: Calculations
+    isExternal: true
+- uid: Koffing.Calculations.Readiness.Type
+  commentId: T:Koffing.Calculations.Readiness.Type
+  parent: Koffing.Calculations
+  isExternal: true
+  href: Koffing.Calculations.Readiness.html
+  name: Readiness.Type
+  nameWithType: Readiness.Type
+  fullName: Koffing.Calculations.Readiness.Type
+  spec.csharp:
+  - uid: Koffing.Calculations.Readiness
+    name: Readiness
+    isExternal: true
+    href: Koffing.Calculations.Readiness.html
+  - name: .
+  - uid: Koffing.Calculations.Readiness.Type
+    name: Type
+    isExternal: true
+    href: Koffing.Calculations.Readiness.Type.html
+  spec.vb:
+  - uid: Koffing.Calculations.Readiness
+    name: Readiness
+    isExternal: true
+    href: Koffing.Calculations.Readiness.html
+  - name: .
+  - uid: Koffing.Calculations.Readiness.Type
+    name: Type
+    isExternal: true
+    href: Koffing.Calculations.Readiness.Type.html

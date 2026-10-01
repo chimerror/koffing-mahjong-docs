@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Godot.UI.Elements
+  commentId: N:Koffing.Godot.UI.Elements
+  id: Koffing.Godot.UI.Elements
+  children:
+  - Koffing.Godot.UI.Elements.TileRect
+  - Koffing.Godot.UI.Elements.TileRect.MethodName
+  - Koffing.Godot.UI.Elements.TileRect.PropertyName
+  - Koffing.Godot.UI.Elements.TileRect.SignalName
+  langs:
+  - csharp
+  - vb
+  name: Koffing.Godot.UI.Elements
+  nameWithType: Koffing.Godot.UI.Elements
+  fullName: Koffing.Godot.UI.Elements
+  type: Namespace
+  assemblies:
+  - Koffing
+references:
+- uid: Koffing.Godot.UI.Elements.TileRect
+  commentId: T:Koffing.Godot.UI.Elements.TileRect
+  isExternal: true
+  href: Koffing.Godot.UI.Elements.TileRect.html
+  name: TileRect
+  nameWithType: TileRect
+  fullName: Koffing.Godot.UI.Elements.TileRect
+- uid: Koffing.Godot.UI.Elements.TileRect.MethodName
+  commentId: T:Koffing.Godot.UI.Elements.TileRect.MethodName
+  isExternal: true
+  href: Koffing.Godot.UI.Elements.TileRect.html
+  name: TileRect.MethodName
+  nameWithType: TileRect.MethodName
+  fullName: Koffing.Godot.UI.Elements.TileRect.MethodName
+  spec.csharp:
+  - uid: Koffing.Godot.UI.Elements.TileRect
+    name: TileRect
+    isExternal: true
+    href: Koffing.Godot.UI.Elements.TileRect.html
+  - name: .
+  - uid: Koffing.Godot.UI.Elements.TileRect.MethodName
+    name: MethodName
+    isExternal: true
+    href: Koffing.Godot.UI.Elements.TileRect.MethodName.html
+  spec.vb:
+  - uid: Koffing.Godot.UI.Elements.TileRect
+    name: TileRect
+    isExternal: true
+    href: Koffing.Godot.UI.Elements.TileRect.html
+  - name: .
+  - uid: Koffing.Godot.UI.Elements.TileRect.MethodName
+    name: MethodName
+    isExternal: true
+    href: Koffing.Godot.UI.Elements.TileRect.MethodName.html
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName
+  commentId: T:Koffing.Godot.UI.Elements.TileRect.PropertyName
+  isExternal: true
+  href: Koffing.Godot.UI.Elements.TileRect.html
+  name: TileRect.PropertyName
+  nameWithType: TileRect.PropertyName
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName
+  spec.csharp:
+  - uid: Koffing.Godot.UI.Elements.TileRect
+    name: TileRect
+    isExternal: true
+    href: Koffing.Godot.UI.Elements.TileRect.html
+  - name: .
+  - uid: Koffing.Godot.UI.Elements.TileRect.PropertyName
+    name: PropertyName
+    isExternal: true
+    href: Koffing.Godot.UI.Elements.TileRect.PropertyName.html
+  spec.vb:
+  - uid: Koffing.Godot.UI.Elements.TileRect
+    name: TileRect
+    isExternal: true
+    href: Koffing.Godot.UI.Elements.TileRect.html
+  - name: .
+  - uid: Koffing.Godot.UI.Elements.TileRect.PropertyName
+    name: PropertyName
+    isExternal: true
+    href: Koffing.Godot.UI.Elements.TileRect.PropertyName.html
+- uid: Koffing.Godot.UI.Elements.TileRect.SignalName
+  commentId: T:Koffing.Godot.UI.Elements.TileRect.SignalName
+  isExternal: true
+  href: Koffing.Godot.UI.Elements.TileRect.html
+  name: TileRect.SignalName
+  nameWithType: TileRect.SignalName
+  fullName: Koffing.Godot.UI.Elements.TileRect.SignalName
+  spec.csharp:
+  - uid: Koffing.Godot.UI.Elements.TileRect
+    name: TileRect
+    isExternal: true
+    href: Koffing.Godot.UI.Elements.TileRect.html
+  - name: .
+  - uid: Koffing.Godot.UI.Elements.TileRect.SignalName
+    name: SignalName
+    isExternal: true
+    href: Koffing.Godot.UI.Elements.TileRect.SignalName.html
+  spec.vb:
+  - uid: Koffing.Godot.UI.Elements.TileRect
+    name: TileRect
+    isExternal: true
+    href: Koffing.Godot.UI.Elements.TileRect.html
+  - name: .
+  - uid: Koffing.Godot.UI.Elements.TileRect.SignalName
+    name: SignalName
+    isExternal: true
+    href: Koffing.Godot.UI.Elements.TileRect.SignalName.html

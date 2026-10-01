@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BlockTests | Koffing Mahjong Engine </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BlockTests | Koffing Mahjong Engine ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Koffing Mahjong Engine">
+            Koffing Mahjong Engine
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Koffing.Tests.BlockTests">
+
+
+
+  <h1 id="Koffing_Tests_BlockTests" data-uid="Koffing.Tests.BlockTests" class="text-break">
+Class BlockTests  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Koffing.html">Koffing</a>.<a class="xref" href="Koffing.Tests.html">Tests</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Koffing.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestSuite(14, &quot;&quot;)]
+public class BlockTests</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">BlockTests</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Koffing_Tests_BlockTests__ctor_" data-uid="Koffing.Tests.BlockTests.#ctor*"></a>
+
+  <h3 id="Koffing_Tests_BlockTests__ctor" data-uid="Koffing.Tests.BlockTests.#ctor">
+  BlockTests()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlockTests()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Koffing_Tests_BlockTests_BlockEqualsEdgeCasesAreCorrect_" data-uid="Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect*"></a>
+
+  <h3 id="Koffing_Tests_BlockTests_BlockEqualsEdgeCasesAreCorrect_Koffing_Blocks_Block_System_Object_System_String_" data-uid="Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect(Koffing.Blocks.Block,System.Object,System.String)">
+  BlockEqualsEdgeCasesAreCorrect(Block, object, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestCase(new object?[] { })]
+[DataPoint(&quot;BlockEqualsEdgeTestCases&quot;)]
+public static void BlockEqualsEdgeCasesAreCorrect(Block blockA, object objectB, string because)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockA</code> <a class="xref" href="Koffing.Blocks.Block.html">Block</a></dt>
+    <dd></dd>
+    <dt><code>objectB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>because</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Tests_BlockTests_BlockEqualsIsCorrect_" data-uid="Koffing.Tests.BlockTests.BlockEqualsIsCorrect*"></a>
+
+  <h3 id="Koffing_Tests_BlockTests_BlockEqualsIsCorrect_Koffing_Blocks_Block_Koffing_Blocks_Block_System_Boolean_System_String_" data-uid="Koffing.Tests.BlockTests.BlockEqualsIsCorrect(Koffing.Blocks.Block,Koffing.Blocks.Block,System.Boolean,System.String)">
+  BlockEqualsIsCorrect(Block, Block, bool, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestCase(new object?[] { })]
+[DataPoint(&quot;BlockEqualsTestCases&quot;)]
+public static void BlockEqualsIsCorrect(Block blockA, Block blockB, bool expectedResult, string because)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockA</code> <a class="xref" href="Koffing.Blocks.Block.html">Block</a></dt>
+    <dd></dd>
+    <dt><code>blockB</code> <a class="xref" href="Koffing.Blocks.Block.html">Block</a></dt>
+    <dd></dd>
+    <dt><code>expectedResult</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>because</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Tests_BlockTests_CompareBlockSetsIsCorrect_" data-uid="Koffing.Tests.BlockTests.CompareBlockSetsIsCorrect*"></a>
+
+  <h3 id="Koffing_Tests_BlockTests_CompareBlockSetsIsCorrect_Koffing_Blocks_BlockSet_Koffing_Blocks_BlockSet_System_Int32_System_String_" data-uid="Koffing.Tests.BlockTests.CompareBlockSetsIsCorrect(Koffing.Blocks.BlockSet,Koffing.Blocks.BlockSet,System.Int32,System.String)">
+  CompareBlockSetsIsCorrect(BlockSet, BlockSet, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestCase(new object?[] { })]
+[DataPoint(&quot;CompareBlockSetsTestCases&quot;)]
+public static void CompareBlockSetsIsCorrect(BlockSet blockSetA, BlockSet blockSetB, int expectedComparisonValue, string because)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockSetA</code> <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a></dt>
+    <dd></dd>
+    <dt><code>blockSetB</code> <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a></dt>
+    <dd></dd>
+    <dt><code>expectedComparisonValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>because</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Tests_BlockTests_CompareBlocksIsCorrect_" data-uid="Koffing.Tests.BlockTests.CompareBlocksIsCorrect*"></a>
+
+  <h3 id="Koffing_Tests_BlockTests_CompareBlocksIsCorrect_Koffing_Blocks_Block_Koffing_Blocks_Block_System_Int32_System_String_" data-uid="Koffing.Tests.BlockTests.CompareBlocksIsCorrect(Koffing.Blocks.Block,Koffing.Blocks.Block,System.Int32,System.String)">
+  CompareBlocksIsCorrect(Block, Block, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestCase(new object?[] { })]
+[DataPoint(&quot;CompareBlocksTestCases&quot;)]
+public static void CompareBlocksIsCorrect(Block blockA, Block blockB, int expectedComparisonValue, string because)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockA</code> <a class="xref" href="Koffing.Blocks.Block.html">Block</a></dt>
+    <dd></dd>
+    <dt><code>blockB</code> <a class="xref" href="Koffing.Blocks.Block.html">Block</a></dt>
+    <dd></dd>
+    <dt><code>expectedComparisonValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>because</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Tests_BlockTests_CompareMadeBlockContextsIsCorrect_" data-uid="Koffing.Tests.BlockTests.CompareMadeBlockContextsIsCorrect*"></a>
+
+  <h3 id="Koffing_Tests_BlockTests_CompareMadeBlockContextsIsCorrect_Koffing_Blocks_MadeBlockContext_Koffing_Blocks_MadeBlockContext_System_Int32_System_String_" data-uid="Koffing.Tests.BlockTests.CompareMadeBlockContextsIsCorrect(Koffing.Blocks.MadeBlockContext,Koffing.Blocks.MadeBlockContext,System.Int32,System.String)">
+  CompareMadeBlockContextsIsCorrect(MadeBlockContext, MadeBlockContext, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestCase(new object?[] { })]
+[DataPoint(&quot;CompareMadeBlockContextsTestCases&quot;)]
+public static void CompareMadeBlockContextsIsCorrect(MadeBlockContext contextA, MadeBlockContext contextB, int expectedComparisonValue, string because)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>contextA</code> <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a></dt>
+    <dd></dd>
+    <dt><code>contextB</code> <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a></dt>
+    <dd></dd>
+    <dt><code>expectedComparisonValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>because</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_" data-uid="Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect*"></a>
+
+  <h3 id="Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_Koffing_Blocks_Block_System_Int32_" data-uid="Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)">
+  GetBlockHashCodeIsCorrect(Block, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestCase(new object?[] { })]
+[DataPoint(&quot;GetBlockHashCodeTestCases&quot;)]
+public static void GetBlockHashCodeIsCorrect(Block block, int expectedHashCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>block</code> <a class="xref" href="Koffing.Blocks.Block.html">Block</a></dt>
+    <dd></dd>
+    <dt><code>expectedHashCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Tests_BlockTests_GetPossibleBlockSetsIsCorrect_" data-uid="Koffing.Tests.BlockTests.GetPossibleBlockSetsIsCorrect*"></a>
+
+  <h3 id="Koffing_Tests_BlockTests_GetPossibleBlockSetsIsCorrect_System_String_System_Collections_Generic_List_Koffing_Blocks_BlockSet__System_String_" data-uid="Koffing.Tests.BlockTests.GetPossibleBlockSetsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.BlockSet},System.String)">
+  GetPossibleBlockSetsIsCorrect(string, List&lt;BlockSet&gt;, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestCase(new object?[] { })]
+[DataPoint(&quot;GetPossibleBlockSetsTestCases&quot;)]
+public static void GetPossibleBlockSetsIsCorrect(string tilesString, List&lt;BlockSet&gt; expectedOutput, string because)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tilesString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>expectedOutput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>because</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Tests_BlockTests_MadeBlockContextEqualsCasesAreCorrect_" data-uid="Koffing.Tests.BlockTests.MadeBlockContextEqualsCasesAreCorrect*"></a>
+
+  <h3 id="Koffing_Tests_BlockTests_MadeBlockContextEqualsCasesAreCorrect_Koffing_Blocks_MadeBlockContext_Koffing_Blocks_MadeBlockContext_System_Boolean_System_String_" data-uid="Koffing.Tests.BlockTests.MadeBlockContextEqualsCasesAreCorrect(Koffing.Blocks.MadeBlockContext,Koffing.Blocks.MadeBlockContext,System.Boolean,System.String)">
+  MadeBlockContextEqualsCasesAreCorrect(MadeBlockContext, MadeBlockContext, bool, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestCase(new object?[] { })]
+[DataPoint(&quot;MadeBlockContextEqualsTestCases&quot;)]
+public static void MadeBlockContextEqualsCasesAreCorrect(MadeBlockContext contextA, MadeBlockContext contextB, bool expectedResult, string because)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>contextA</code> <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a></dt>
+    <dd></dd>
+    <dt><code>contextB</code> <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a></dt>
+    <dd></dd>
+    <dt><code>expectedResult</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>because</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Tests_BlockTests_MadeBlockContextEqualsEdgeCasesAreCorrect_" data-uid="Koffing.Tests.BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect*"></a>
+
+  <h3 id="Koffing_Tests_BlockTests_MadeBlockContextEqualsEdgeCasesAreCorrect_Koffing_Blocks_MadeBlockContext_System_Object_System_String_" data-uid="Koffing.Tests.BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect(Koffing.Blocks.MadeBlockContext,System.Object,System.String)">
+  MadeBlockContextEqualsEdgeCasesAreCorrect(MadeBlockContext, object, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestCase(new object?[] { })]
+[DataPoint(&quot;MadeBlockContextEqualsEdgeTestCases&quot;)]
+public static void MadeBlockContextEqualsEdgeCasesAreCorrect(MadeBlockContext contextA, object objectB, string because)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>contextA</code> <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a></dt>
+    <dd></dd>
+    <dt><code>objectB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>because</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Tests_BlockTests_PairsAndPairWaitsCastingIsCorrect_" data-uid="Koffing.Tests.BlockTests.PairsAndPairWaitsCastingIsCorrect*"></a>
+
+  <h3 id="Koffing_Tests_BlockTests_PairsAndPairWaitsCastingIsCorrect" data-uid="Koffing.Tests.BlockTests.PairsAndPairWaitsCastingIsCorrect">
+  PairsAndPairWaitsCastingIsCorrect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestCase(new object?[] { })]
+public static void PairsAndPairWaitsCastingIsCorrect()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Tests_BlockTests_Setup_" data-uid="Koffing.Tests.BlockTests.Setup*"></a>
+
+  <h3 id="Koffing_Tests_BlockTests_Setup" data-uid="Koffing.Tests.BlockTests.Setup">
+  Setup()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Before(17, &quot;Setup&quot;)]
+public static void Setup()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Tests_BlockTests_TearDown_" data-uid="Koffing.Tests.BlockTests.TearDown*"></a>
+
+  <h3 id="Koffing_Tests_BlockTests_TearDown" data-uid="Koffing.Tests.BlockTests.TearDown">
+  TearDown()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[After(23, &quot;TearDown&quot;)]
+public static void TearDown()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

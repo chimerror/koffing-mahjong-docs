@@ -22,6 +22,943 @@
       "version": ""
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Blocks.Block.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Blocks.Block.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Blocks.Block",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Blocks.BlockSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Blocks.BlockSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Blocks.BlockSet",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Blocks.IBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Blocks.IBlock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Blocks.IBlock",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Blocks.IDowngradable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Blocks.IDowngradable-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Blocks.IDowngradable<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Blocks.IUpgradable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Blocks.IUpgradable-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Blocks.IUpgradable<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Blocks.MadeBlockContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Blocks.MadeBlockContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Blocks.MadeBlockContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Blocks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Blocks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Blocks",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Calculations.Readiness.Type.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Calculations.Readiness.Type.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Calculations.Readiness.Type",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Calculations.Readiness.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Calculations.Readiness.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Calculations.Readiness",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Calculations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Calculations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Calculations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Godot.Random.GodotRandomNumberGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Godot.Random.GodotRandomNumberGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Godot.Random.GodotRandomNumberGenerator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Godot.Random.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Godot.Random.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Godot.Random",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Godot.Tiles.TileSprite.MethodName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Godot.Tiles.TileSprite.MethodName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Godot.Tiles.TileSprite.MethodName",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Godot.Tiles.TileSprite.PropertyName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Godot.Tiles.TileSprite.PropertyName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Godot.Tiles.TileSprite.PropertyName",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Godot.Tiles.TileSprite.SignalName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Godot.Tiles.TileSprite.SignalName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Godot.Tiles.TileSprite.SignalName",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Godot.Tiles.TileSprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Godot.Tiles.TileSprite.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Godot.Tiles.TileSprite",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Godot.Tiles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Godot.Tiles.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Godot.Tiles",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Godot.UI.Elements.TileRect.MethodName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Godot.UI.Elements.TileRect.MethodName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Godot.UI.Elements.TileRect.MethodName",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Godot.UI.Elements.TileRect.PropertyName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Godot.UI.Elements.TileRect.PropertyName",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Godot.UI.Elements.TileRect.SignalName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Godot.UI.Elements.TileRect.SignalName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Godot.UI.Elements.TileRect.SignalName",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Godot.UI.Elements.TileRect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Godot.UI.Elements.TileRect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Godot.UI.Elements.TileRect",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Godot.UI.Elements.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Godot.UI.Elements.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Godot.UI.Elements",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Helpers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Helpers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Matches.Match.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Matches.Match.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Matches.Match",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Matches.PlayerCount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Matches.PlayerCount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Matches.PlayerCount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Matches.Wall.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Matches.Wall.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Matches.Wall",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Matches.WallDisplay.MethodName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Matches.WallDisplay.MethodName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Matches.WallDisplay.MethodName",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Matches.WallDisplay.PropertyName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Matches.WallDisplay.PropertyName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Matches.WallDisplay.PropertyName",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Matches.WallDisplay.SignalName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Matches.WallDisplay.SignalName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Matches.WallDisplay.SignalName",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Matches.WallDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Matches.WallDisplay.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Matches.WallDisplay",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Matches.Wind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Matches.Wind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Matches.Wind",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Matches.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Matches.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Matches",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Melds.Chow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Melds.Chow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Melds.Chow",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Melds.Kong.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Melds.Kong.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Melds.Kong",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Melds.Meld.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Melds.Meld.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Melds.Meld",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Melds.Pair.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Melds.Pair.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Melds.Pair",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Melds.Pung.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Melds.Pung.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Melds.Pung",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Melds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Melds.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Melds",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Players.Player.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Players.Player.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Players.Player",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Players.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Players.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Players",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Random.IRandomNumberGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Random.IRandomNumberGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Random.IRandomNumberGenerator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Random.SystemRandomNumberGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Random.SystemRandomNumberGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Random.SystemRandomNumberGenerator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Random.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Random.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Random",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Tests.BlockTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Tests.BlockTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Tests.BlockTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Tests.CalculationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Tests.CalculationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Tests.CalculationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Tests.MatchTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Tests.MatchTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Tests.MatchTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Tests.MeldTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Tests.MeldTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Tests.MeldTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Tests.RandomNumberGeneratorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Tests.RandomNumberGeneratorTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Tests.RandomNumberGeneratorTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Tests.TileTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Tests.TileTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Tests.TileTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Tests.UpgradableDowngradableTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Tests.UpgradableDowngradableTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Tests.UpgradableDowngradableTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Tests.WaitTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Tests.WaitTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Tests.WaitTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Tiles.Suit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Tiles.Suit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Tiles.Suit",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Tiles.Tile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Tiles.Tile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Tiles.Tile",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Tiles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Tiles.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Tiles",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Waits.Kanchan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Waits.Kanchan.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Waits.Kanchan",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Waits.Orphan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Waits.Orphan.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Waits.Orphan",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Waits.PairWait.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Waits.PairWait.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Waits.PairWait",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Waits.Penchan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Waits.Penchan.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Waits.Penchan",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Waits.Ryanmen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Waits.Ryanmen.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Waits.Ryanmen",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Waits.SevenPairsWait.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Waits.SevenPairsWait.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Waits.SevenPairsWait",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Waits.ThirteenOrphansWait.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Waits.ThirteenOrphansWait.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Waits.ThirteenOrphansWait",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Waits.Wait.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Waits.Wait.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Waits.Wait",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Waits.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Waits.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Waits",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/getting-started.md",
       "output": {

@@ -1,0 +1,1027 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Tests.MatchTests
+  commentId: T:Koffing.Tests.MatchTests
+  id: MatchTests
+  parent: Koffing.Tests
+  children:
+  - Koffing.Tests.MatchTests.#ctor
+  - Koffing.Tests.MatchTests.DealHandsIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.List{System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}})
+  - Koffing.Tests.MatchTests.MatchIsCreatedCorrectly(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Int32)
+  - Koffing.Tests.MatchTests.PopLiveTileIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  - Koffing.Tests.MatchTests.PopReplacementTileIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  - Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  - Koffing.Tests.MatchTests.Setup
+  - Koffing.Tests.MatchTests.TearDown
+  - Koffing.Tests.MatchTests.WallIsCreatedCorrectly(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Koffing.Tiles.Tile)
+  langs:
+  - csharp
+  - vb
+  name: MatchTests
+  nameWithType: MatchTests
+  fullName: Koffing.Tests.MatchTests
+  type: Class
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestSuite(16, "")]
+
+      public class MatchTests
+    content.vb: >-
+      <TestSuite(16, "")>
+
+      Public Class MatchTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: GdUnit4.TestSuiteAttribute
+    ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
+    arguments:
+    - type: System.Int32
+      value: 16
+    - type: System.String
+      value: ''
+- uid: Koffing.Tests.MatchTests.Setup
+  commentId: M:Koffing.Tests.MatchTests.Setup
+  id: Setup
+  parent: Koffing.Tests.MatchTests
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: MatchTests.Setup()
+  fullName: Koffing.Tests.MatchTests.Setup()
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [Before(19, "Setup")]
+
+      public static void Setup()
+    content.vb: >-
+      <Before(19, "Setup")>
+
+      Public Shared Sub Setup()
+  overload: Koffing.Tests.MatchTests.Setup*
+  attributes:
+  - type: GdUnit4.BeforeAttribute
+    ctor: GdUnit4.BeforeAttribute.#ctor(System.Int32,System.String)
+    arguments:
+    - type: System.Int32
+      value: 19
+    - type: System.String
+      value: Setup
+- uid: Koffing.Tests.MatchTests.TearDown
+  commentId: M:Koffing.Tests.MatchTests.TearDown
+  id: TearDown
+  parent: Koffing.Tests.MatchTests
+  langs:
+  - csharp
+  - vb
+  name: TearDown()
+  nameWithType: MatchTests.TearDown()
+  fullName: Koffing.Tests.MatchTests.TearDown()
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [After(25, "TearDown")]
+
+      public static void TearDown()
+    content.vb: >-
+      <After(25, "TearDown")>
+
+      Public Shared Sub TearDown()
+  overload: Koffing.Tests.MatchTests.TearDown*
+  attributes:
+  - type: GdUnit4.AfterAttribute
+    ctor: GdUnit4.AfterAttribute.#ctor(System.Int32,System.String)
+    arguments:
+    - type: System.Int32
+      value: 25
+    - type: System.String
+      value: TearDown
+- uid: Koffing.Tests.MatchTests.WallIsCreatedCorrectly(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Koffing.Tiles.Tile)
+  commentId: M:Koffing.Tests.MatchTests.WallIsCreatedCorrectly(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Koffing.Tiles.Tile)
+  id: WallIsCreatedCorrectly(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Koffing.Tiles.Tile)
+  parent: Koffing.Tests.MatchTests
+  langs:
+  - csharp
+  - vb
+  name: WallIsCreatedCorrectly(PlayerCount, bool, int, int, int, int, int, Tile)
+  nameWithType: MatchTests.WallIsCreatedCorrectly(PlayerCount, bool, int, int, int, int, int, Tile)
+  fullName: Koffing.Tests.MatchTests.WallIsCreatedCorrectly(Koffing.Matches.PlayerCount, bool, int, int, int, int, int, Koffing.Tiles.Tile)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("WallCreationTestCases")]
+
+      public static void WallIsCreatedCorrectly(PlayerCount playerCount, bool hasRedFives, int breakDiceRoll, int expectedLiveWallStart, int expectedNextReplacementTile, int expectedLastRevealedDoraIndicator, int expectedNextDoraIndicator, Tile expectedRevealedDoraIndicatorTile)
+    parameters:
+    - id: playerCount
+      type: Koffing.Matches.PlayerCount
+    - id: hasRedFives
+      type: System.Boolean
+    - id: breakDiceRoll
+      type: System.Int32
+    - id: expectedLiveWallStart
+      type: System.Int32
+    - id: expectedNextReplacementTile
+      type: System.Int32
+    - id: expectedLastRevealedDoraIndicator
+      type: System.Int32
+    - id: expectedNextDoraIndicator
+      type: System.Int32
+    - id: expectedRevealedDoraIndicatorTile
+      type: Koffing.Tiles.Tile
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("WallCreationTestCases")>
+
+      Public Shared Sub WallIsCreatedCorrectly(playerCount As PlayerCount, hasRedFives As Boolean, breakDiceRoll As Integer, expectedLiveWallStart As Integer, expectedNextReplacementTile As Integer, expectedLastRevealedDoraIndicator As Integer, expectedNextDoraIndicator As Integer, expectedRevealedDoraIndicatorTile As Tile)
+  overload: Koffing.Tests.MatchTests.WallIsCreatedCorrectly*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: WallCreationTestCases
+  nameWithType.vb: MatchTests.WallIsCreatedCorrectly(PlayerCount, Boolean, Integer, Integer, Integer, Integer, Integer, Tile)
+  fullName.vb: Koffing.Tests.MatchTests.WallIsCreatedCorrectly(Koffing.Matches.PlayerCount, Boolean, Integer, Integer, Integer, Integer, Integer, Koffing.Tiles.Tile)
+  name.vb: WallIsCreatedCorrectly(PlayerCount, Boolean, Integer, Integer, Integer, Integer, Integer, Tile)
+- uid: Koffing.Tests.MatchTests.PopLiveTileIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  commentId: M:Koffing.Tests.MatchTests.PopLiveTileIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  id: PopLiveTileIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  parent: Koffing.Tests.MatchTests
+  langs:
+  - csharp
+  - vb
+  name: PopLiveTileIsCorrect(PlayerCount, bool, IEnumerable<Tile>)
+  nameWithType: MatchTests.PopLiveTileIsCorrect(PlayerCount, bool, IEnumerable<Tile>)
+  fullName: Koffing.Tests.MatchTests.PopLiveTileIsCorrect(Koffing.Matches.PlayerCount, bool, System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("PopLiveTileTestCases")]
+
+      public static void PopLiveTileIsCorrect(PlayerCount playerCount, bool hasRedFives, IEnumerable<Tile> expectedPoppedTiles)
+    parameters:
+    - id: playerCount
+      type: Koffing.Matches.PlayerCount
+    - id: hasRedFives
+      type: System.Boolean
+    - id: expectedPoppedTiles
+      type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("PopLiveTileTestCases")>
+
+      Public Shared Sub PopLiveTileIsCorrect(playerCount As PlayerCount, hasRedFives As Boolean, expectedPoppedTiles As IEnumerable(Of Tile))
+  overload: Koffing.Tests.MatchTests.PopLiveTileIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: PopLiveTileTestCases
+  nameWithType.vb: MatchTests.PopLiveTileIsCorrect(PlayerCount, Boolean, IEnumerable(Of Tile))
+  fullName.vb: Koffing.Tests.MatchTests.PopLiveTileIsCorrect(Koffing.Matches.PlayerCount, Boolean, System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
+  name.vb: PopLiveTileIsCorrect(PlayerCount, Boolean, IEnumerable(Of Tile))
+- uid: Koffing.Tests.MatchTests.PopReplacementTileIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  commentId: M:Koffing.Tests.MatchTests.PopReplacementTileIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  id: PopReplacementTileIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  parent: Koffing.Tests.MatchTests
+  langs:
+  - csharp
+  - vb
+  name: PopReplacementTileIsCorrect(PlayerCount, bool, int, IEnumerable<Tile>, IEnumerable<Tile>)
+  nameWithType: MatchTests.PopReplacementTileIsCorrect(PlayerCount, bool, int, IEnumerable<Tile>, IEnumerable<Tile>)
+  fullName: Koffing.Tests.MatchTests.PopReplacementTileIsCorrect(Koffing.Matches.PlayerCount, bool, int, System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>, System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("PopReplacementTileTestCases")]
+
+      public static void PopReplacementTileIsCorrect(PlayerCount playerCount, bool hasRedFives, int numberOfReplacementTilesToPop, IEnumerable<Tile> expectedPoppedReplacementTiles, IEnumerable<Tile> expectedPoppedLiveTiles)
+    parameters:
+    - id: playerCount
+      type: Koffing.Matches.PlayerCount
+    - id: hasRedFives
+      type: System.Boolean
+    - id: numberOfReplacementTilesToPop
+      type: System.Int32
+    - id: expectedPoppedReplacementTiles
+      type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+    - id: expectedPoppedLiveTiles
+      type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("PopReplacementTileTestCases")>
+
+      Public Shared Sub PopReplacementTileIsCorrect(playerCount As PlayerCount, hasRedFives As Boolean, numberOfReplacementTilesToPop As Integer, expectedPoppedReplacementTiles As IEnumerable(Of Tile), expectedPoppedLiveTiles As IEnumerable(Of Tile))
+  overload: Koffing.Tests.MatchTests.PopReplacementTileIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: PopReplacementTileTestCases
+  nameWithType.vb: MatchTests.PopReplacementTileIsCorrect(PlayerCount, Boolean, Integer, IEnumerable(Of Tile), IEnumerable(Of Tile))
+  fullName.vb: Koffing.Tests.MatchTests.PopReplacementTileIsCorrect(Koffing.Matches.PlayerCount, Boolean, Integer, System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile), System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
+  name.vb: PopReplacementTileIsCorrect(PlayerCount, Boolean, Integer, IEnumerable(Of Tile), IEnumerable(Of Tile))
+- uid: Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  commentId: M:Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  id: RevealDoraIndicatorIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  parent: Koffing.Tests.MatchTests
+  langs:
+  - csharp
+  - vb
+  name: RevealDoraIndicatorIsCorrect(PlayerCount, bool, int, IEnumerable<Tile>)
+  nameWithType: MatchTests.RevealDoraIndicatorIsCorrect(PlayerCount, bool, int, IEnumerable<Tile>)
+  fullName: Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect(Koffing.Matches.PlayerCount, bool, int, System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("RevealDoraIndicatorTestCases")]
+
+      public static void RevealDoraIndicatorIsCorrect(PlayerCount playerCount, bool hasRedFives, int numberOfDoraTilesToReveal, IEnumerable<Tile> expectedRevealedDoraIndicators)
+    parameters:
+    - id: playerCount
+      type: Koffing.Matches.PlayerCount
+    - id: hasRedFives
+      type: System.Boolean
+    - id: numberOfDoraTilesToReveal
+      type: System.Int32
+    - id: expectedRevealedDoraIndicators
+      type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("RevealDoraIndicatorTestCases")>
+
+      Public Shared Sub RevealDoraIndicatorIsCorrect(playerCount As PlayerCount, hasRedFives As Boolean, numberOfDoraTilesToReveal As Integer, expectedRevealedDoraIndicators As IEnumerable(Of Tile))
+  overload: Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: RevealDoraIndicatorTestCases
+  nameWithType.vb: MatchTests.RevealDoraIndicatorIsCorrect(PlayerCount, Boolean, Integer, IEnumerable(Of Tile))
+  fullName.vb: Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect(Koffing.Matches.PlayerCount, Boolean, Integer, System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
+  name.vb: RevealDoraIndicatorIsCorrect(PlayerCount, Boolean, Integer, IEnumerable(Of Tile))
+- uid: Koffing.Tests.MatchTests.MatchIsCreatedCorrectly(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Int32)
+  commentId: M:Koffing.Tests.MatchTests.MatchIsCreatedCorrectly(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Int32)
+  id: MatchIsCreatedCorrectly(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Int32)
+  parent: Koffing.Tests.MatchTests
+  langs:
+  - csharp
+  - vb
+  name: MatchIsCreatedCorrectly(PlayerCount, bool, int, int)
+  nameWithType: MatchTests.MatchIsCreatedCorrectly(PlayerCount, bool, int, int)
+  fullName: Koffing.Tests.MatchTests.MatchIsCreatedCorrectly(Koffing.Matches.PlayerCount, bool, int, int)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("MatchCreationTestCases")]
+
+      public static void MatchIsCreatedCorrectly(PlayerCount playerCount, bool hasRedFives, int numberOfRounds, int expectedStartingEastIndex)
+    parameters:
+    - id: playerCount
+      type: Koffing.Matches.PlayerCount
+    - id: hasRedFives
+      type: System.Boolean
+    - id: numberOfRounds
+      type: System.Int32
+    - id: expectedStartingEastIndex
+      type: System.Int32
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("MatchCreationTestCases")>
+
+      Public Shared Sub MatchIsCreatedCorrectly(playerCount As PlayerCount, hasRedFives As Boolean, numberOfRounds As Integer, expectedStartingEastIndex As Integer)
+  overload: Koffing.Tests.MatchTests.MatchIsCreatedCorrectly*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: MatchCreationTestCases
+  nameWithType.vb: MatchTests.MatchIsCreatedCorrectly(PlayerCount, Boolean, Integer, Integer)
+  fullName.vb: Koffing.Tests.MatchTests.MatchIsCreatedCorrectly(Koffing.Matches.PlayerCount, Boolean, Integer, Integer)
+  name.vb: MatchIsCreatedCorrectly(PlayerCount, Boolean, Integer, Integer)
+- uid: Koffing.Tests.MatchTests.DealHandsIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.List{System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}})
+  commentId: M:Koffing.Tests.MatchTests.DealHandsIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.List{System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}})
+  id: DealHandsIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.List{System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}})
+  parent: Koffing.Tests.MatchTests
+  langs:
+  - csharp
+  - vb
+  name: DealHandsIsCorrect(PlayerCount, bool, int, List<IEnumerable<Tile>>)
+  nameWithType: MatchTests.DealHandsIsCorrect(PlayerCount, bool, int, List<IEnumerable<Tile>>)
+  fullName: Koffing.Tests.MatchTests.DealHandsIsCorrect(Koffing.Matches.PlayerCount, bool, int, System.Collections.Generic.List<System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>>)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("DealHandsTestCases")]
+
+      public static void DealHandsIsCorrect(PlayerCount playerCount, bool hasRedFives, int numberOfRounds, List<IEnumerable<Tile>> expectedDealtHands)
+    parameters:
+    - id: playerCount
+      type: Koffing.Matches.PlayerCount
+    - id: hasRedFives
+      type: System.Boolean
+    - id: numberOfRounds
+      type: System.Int32
+    - id: expectedDealtHands
+      type: System.Collections.Generic.List{System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}}
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("DealHandsTestCases")>
+
+      Public Shared Sub DealHandsIsCorrect(playerCount As PlayerCount, hasRedFives As Boolean, numberOfRounds As Integer, expectedDealtHands As List(Of IEnumerable(Of Tile)))
+  overload: Koffing.Tests.MatchTests.DealHandsIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DealHandsTestCases
+  nameWithType.vb: MatchTests.DealHandsIsCorrect(PlayerCount, Boolean, Integer, List(Of IEnumerable(Of Tile)))
+  fullName.vb: Koffing.Tests.MatchTests.DealHandsIsCorrect(Koffing.Matches.PlayerCount, Boolean, Integer, System.Collections.Generic.List(Of System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile)))
+  name.vb: DealHandsIsCorrect(PlayerCount, Boolean, Integer, List(Of IEnumerable(Of Tile)))
+- uid: Koffing.Tests.MatchTests.#ctor
+  commentId: M:Koffing.Tests.MatchTests.#ctor
+  id: '#ctor'
+  parent: Koffing.Tests.MatchTests
+  langs:
+  - csharp
+  - vb
+  name: MatchTests()
+  nameWithType: MatchTests.MatchTests()
+  fullName: Koffing.Tests.MatchTests.MatchTests()
+  type: Constructor
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: public MatchTests()
+    content.vb: Public Sub New()
+  overload: Koffing.Tests.MatchTests.#ctor*
+  nameWithType.vb: MatchTests.New()
+  fullName.vb: Koffing.Tests.MatchTests.New()
+  name.vb: New()
+references:
+- uid: Koffing.Tests
+  commentId: N:Koffing.Tests
+  isExternal: true
+  name: Koffing.Tests
+  nameWithType: Koffing.Tests
+  fullName: Koffing.Tests
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Tests
+    name: Tests
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Tests
+    name: Tests
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koffing.Tests.MatchTests.Setup*
+  commentId: Overload:Koffing.Tests.MatchTests.Setup
+  isExternal: true
+  href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_Setup
+  name: Setup
+  nameWithType: MatchTests.Setup
+  fullName: Koffing.Tests.MatchTests.Setup
+- uid: Koffing.Tests.MatchTests.TearDown*
+  commentId: Overload:Koffing.Tests.MatchTests.TearDown
+  isExternal: true
+  href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_TearDown
+  name: TearDown
+  nameWithType: MatchTests.TearDown
+  fullName: Koffing.Tests.MatchTests.TearDown
+- uid: Koffing.Tests.MatchTests.WallIsCreatedCorrectly*
+  commentId: Overload:Koffing.Tests.MatchTests.WallIsCreatedCorrectly
+  isExternal: true
+  href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_WallIsCreatedCorrectly_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_Koffing_Tiles_Tile_
+  name: WallIsCreatedCorrectly
+  nameWithType: MatchTests.WallIsCreatedCorrectly
+  fullName: Koffing.Tests.MatchTests.WallIsCreatedCorrectly
+- uid: Koffing.Matches.PlayerCount
+  commentId: T:Koffing.Matches.PlayerCount
+  parent: Koffing.Matches
+  isExternal: true
+  href: Koffing.Matches.PlayerCount.html
+  name: PlayerCount
+  nameWithType: PlayerCount
+  fullName: Koffing.Matches.PlayerCount
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Koffing.Tiles.Tile
+  commentId: T:Koffing.Tiles.Tile
+  parent: Koffing.Tiles
+  isExternal: true
+  href: Koffing.Tiles.Tile.html
+  name: Tile
+  nameWithType: Tile
+  fullName: Koffing.Tiles.Tile
+- uid: Koffing.Matches
+  commentId: N:Koffing.Matches
+  isExternal: true
+  name: Koffing.Matches
+  nameWithType: Koffing.Matches
+  fullName: Koffing.Matches
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Matches
+    name: Matches
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Matches
+    name: Matches
+    isExternal: true
+- uid: Koffing.Tiles
+  commentId: N:Koffing.Tiles
+  isExternal: true
+  name: Koffing.Tiles
+  nameWithType: Koffing.Tiles
+  fullName: Koffing.Tiles
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+    isExternal: true
+- uid: Koffing.Tests.MatchTests.PopLiveTileIsCorrect*
+  commentId: Overload:Koffing.Tests.MatchTests.PopLiveTileIsCorrect
+  isExternal: true
+  href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_PopLiveTileIsCorrect_Koffing_Matches_PlayerCount_System_Boolean_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  name: PopLiveTileIsCorrect
+  nameWithType: MatchTests.PopLiveTileIsCorrect
+  fullName: Koffing.Tests.MatchTests.PopLiveTileIsCorrect
+- uid: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+  commentId: T:System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Tile>
+  nameWithType: IEnumerable<Tile>
+  fullName: System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>
+  nameWithType.vb: IEnumerable(Of Tile)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile)
+  name.vb: IEnumerable(Of Tile)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    isExternal: true
+    href: Koffing.Tiles.Tile.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    isExternal: true
+    href: Koffing.Tiles.Tile.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Koffing.Tests.MatchTests.PopReplacementTileIsCorrect*
+  commentId: Overload:Koffing.Tests.MatchTests.PopReplacementTileIsCorrect
+  isExternal: true
+  href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_PopReplacementTileIsCorrect_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  name: PopReplacementTileIsCorrect
+  nameWithType: MatchTests.PopReplacementTileIsCorrect
+  fullName: Koffing.Tests.MatchTests.PopReplacementTileIsCorrect
+- uid: Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect*
+  commentId: Overload:Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect
+  isExternal: true
+  href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_RevealDoraIndicatorIsCorrect_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  name: RevealDoraIndicatorIsCorrect
+  nameWithType: MatchTests.RevealDoraIndicatorIsCorrect
+  fullName: Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect
+- uid: Koffing.Tests.MatchTests.MatchIsCreatedCorrectly*
+  commentId: Overload:Koffing.Tests.MatchTests.MatchIsCreatedCorrectly
+  isExternal: true
+  href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_MatchIsCreatedCorrectly_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_System_Int32_
+  name: MatchIsCreatedCorrectly
+  nameWithType: MatchTests.MatchIsCreatedCorrectly
+  fullName: Koffing.Tests.MatchTests.MatchIsCreatedCorrectly
+- uid: Koffing.Tests.MatchTests.DealHandsIsCorrect*
+  commentId: Overload:Koffing.Tests.MatchTests.DealHandsIsCorrect
+  isExternal: true
+  href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_DealHandsIsCorrect_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_System_Collections_Generic_List_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile___
+  name: DealHandsIsCorrect
+  nameWithType: MatchTests.DealHandsIsCorrect
+  fullName: Koffing.Tests.MatchTests.DealHandsIsCorrect
+- uid: System.Collections.Generic.List{System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<IEnumerable<Tile>>
+  nameWithType: List<IEnumerable<Tile>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>>
+  nameWithType.vb: List(Of IEnumerable(Of Tile))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
+  name.vb: List(Of IEnumerable(Of Tile))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    isExternal: true
+    href: Koffing.Tiles.Tile.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    isExternal: true
+    href: Koffing.Tiles.Tile.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Koffing.Tests.MatchTests.#ctor*
+  commentId: Overload:Koffing.Tests.MatchTests.#ctor
+  isExternal: true
+  href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests__ctor
+  name: MatchTests
+  nameWithType: MatchTests.MatchTests
+  fullName: Koffing.Tests.MatchTests.MatchTests
+  nameWithType.vb: MatchTests.New
+  fullName.vb: Koffing.Tests.MatchTests.New
+  name.vb: New

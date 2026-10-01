@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Godot.Random
+  commentId: N:Koffing.Godot.Random
+  id: Koffing.Godot.Random
+  children:
+  - Koffing.Godot.Random.GodotRandomNumberGenerator
+  langs:
+  - csharp
+  - vb
+  name: Koffing.Godot.Random
+  nameWithType: Koffing.Godot.Random
+  fullName: Koffing.Godot.Random
+  type: Namespace
+  assemblies:
+  - Koffing
+references:
+- uid: Koffing.Godot.Random.GodotRandomNumberGenerator
+  commentId: T:Koffing.Godot.Random.GodotRandomNumberGenerator
+  isExternal: true
+  href: Koffing.Godot.Random.GodotRandomNumberGenerator.html
+  name: GodotRandomNumberGenerator
+  nameWithType: GodotRandomNumberGenerator
+  fullName: Koffing.Godot.Random.GodotRandomNumberGenerator

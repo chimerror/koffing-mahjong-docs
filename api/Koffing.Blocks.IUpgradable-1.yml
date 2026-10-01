@@ -1,0 +1,320 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Blocks.IUpgradable`1
+  commentId: T:Koffing.Blocks.IUpgradable`1
+  id: IUpgradable`1
+  parent: Koffing.Blocks
+  children:
+  - Koffing.Blocks.IUpgradable`1.CanUpgradeWith(Koffing.Tiles.Tile)
+  - Koffing.Blocks.IUpgradable`1.SoughtTiles
+  - Koffing.Blocks.IUpgradable`1.Upgrade(Koffing.Tiles.Tile)
+  langs:
+  - csharp
+  - vb
+  name: IUpgradable<T>
+  nameWithType: IUpgradable<T>
+  fullName: Koffing.Blocks.IUpgradable<T>
+  type: Interface
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IUpgradable.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  syntax:
+    content: public interface IUpgradable<T>
+    typeParameters:
+    - id: T
+    content.vb: Public Interface IUpgradable(Of T)
+  derivedClasses:
+  - Koffing.Melds.Pung
+  nameWithType.vb: IUpgradable(Of T)
+  fullName.vb: Koffing.Blocks.IUpgradable(Of T)
+  name.vb: IUpgradable(Of T)
+- uid: Koffing.Blocks.IUpgradable`1.CanUpgradeWith(Koffing.Tiles.Tile)
+  commentId: M:Koffing.Blocks.IUpgradable`1.CanUpgradeWith(Koffing.Tiles.Tile)
+  id: CanUpgradeWith(Koffing.Tiles.Tile)
+  parent: Koffing.Blocks.IUpgradable`1
+  langs:
+  - csharp
+  - vb
+  name: CanUpgradeWith(Tile)
+  nameWithType: IUpgradable<T>.CanUpgradeWith(Tile)
+  fullName: Koffing.Blocks.IUpgradable<T>.CanUpgradeWith(Koffing.Tiles.Tile)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IUpgradable.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  syntax:
+    content: bool CanUpgradeWith(Tile tile)
+    parameters:
+    - id: tile
+      type: Koffing.Tiles.Tile
+    return:
+      type: System.Boolean
+    content.vb: Function CanUpgradeWith(tile As Tile) As Boolean
+  overload: Koffing.Blocks.IUpgradable`1.CanUpgradeWith*
+  nameWithType.vb: IUpgradable(Of T).CanUpgradeWith(Tile)
+  fullName.vb: Koffing.Blocks.IUpgradable(Of T).CanUpgradeWith(Koffing.Tiles.Tile)
+- uid: Koffing.Blocks.IUpgradable`1.Upgrade(Koffing.Tiles.Tile)
+  commentId: M:Koffing.Blocks.IUpgradable`1.Upgrade(Koffing.Tiles.Tile)
+  id: Upgrade(Koffing.Tiles.Tile)
+  parent: Koffing.Blocks.IUpgradable`1
+  langs:
+  - csharp
+  - vb
+  name: Upgrade(Tile)
+  nameWithType: IUpgradable<T>.Upgrade(Tile)
+  fullName: Koffing.Blocks.IUpgradable<T>.Upgrade(Koffing.Tiles.Tile)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IUpgradable.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  syntax:
+    content: T Upgrade(Tile tile)
+    parameters:
+    - id: tile
+      type: Koffing.Tiles.Tile
+    return:
+      type: '{T}'
+    content.vb: Function Upgrade(tile As Tile) As T
+  overload: Koffing.Blocks.IUpgradable`1.Upgrade*
+  nameWithType.vb: IUpgradable(Of T).Upgrade(Tile)
+  fullName.vb: Koffing.Blocks.IUpgradable(Of T).Upgrade(Koffing.Tiles.Tile)
+- uid: Koffing.Blocks.IUpgradable`1.SoughtTiles
+  commentId: P:Koffing.Blocks.IUpgradable`1.SoughtTiles
+  id: SoughtTiles
+  parent: Koffing.Blocks.IUpgradable`1
+  langs:
+  - csharp
+  - vb
+  name: SoughtTiles
+  nameWithType: IUpgradable<T>.SoughtTiles
+  fullName: Koffing.Blocks.IUpgradable<T>.SoughtTiles
+  type: Property
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IUpgradable.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  syntax:
+    content: HashSet<Tile> SoughtTiles { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.HashSet{Koffing.Tiles.Tile}
+    content.vb: ReadOnly Property SoughtTiles As HashSet(Of Tile)
+  overload: Koffing.Blocks.IUpgradable`1.SoughtTiles*
+  nameWithType.vb: IUpgradable(Of T).SoughtTiles
+  fullName.vb: Koffing.Blocks.IUpgradable(Of T).SoughtTiles
+references:
+- uid: Koffing.Blocks
+  commentId: N:Koffing.Blocks
+  isExternal: true
+  name: Koffing.Blocks
+  nameWithType: Koffing.Blocks
+  fullName: Koffing.Blocks
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Blocks
+    name: Blocks
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Blocks
+    name: Blocks
+    isExternal: true
+- uid: Koffing.Blocks.IUpgradable`1.CanUpgradeWith*
+  commentId: Overload:Koffing.Blocks.IUpgradable`1.CanUpgradeWith
+  isExternal: true
+  href: Koffing.Blocks.IUpgradable-1.html#Koffing_Blocks_IUpgradable_1_CanUpgradeWith_Koffing_Tiles_Tile_
+  name: CanUpgradeWith
+  nameWithType: IUpgradable<T>.CanUpgradeWith
+  fullName: Koffing.Blocks.IUpgradable<T>.CanUpgradeWith
+  nameWithType.vb: IUpgradable(Of T).CanUpgradeWith
+  fullName.vb: Koffing.Blocks.IUpgradable(Of T).CanUpgradeWith
+- uid: Koffing.Tiles.Tile
+  commentId: T:Koffing.Tiles.Tile
+  parent: Koffing.Tiles
+  isExternal: true
+  href: Koffing.Tiles.Tile.html
+  name: Tile
+  nameWithType: Tile
+  fullName: Koffing.Tiles.Tile
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Koffing.Tiles
+  commentId: N:Koffing.Tiles
+  isExternal: true
+  name: Koffing.Tiles
+  nameWithType: Koffing.Tiles
+  fullName: Koffing.Tiles
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+    isExternal: true
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koffing.Blocks.IUpgradable`1.Upgrade*
+  commentId: Overload:Koffing.Blocks.IUpgradable`1.Upgrade
+  isExternal: true
+  href: Koffing.Blocks.IUpgradable-1.html#Koffing_Blocks_IUpgradable_1_Upgrade_Koffing_Tiles_Tile_
+  name: Upgrade
+  nameWithType: IUpgradable<T>.Upgrade
+  fullName: Koffing.Blocks.IUpgradable<T>.Upgrade
+  nameWithType.vb: IUpgradable(Of T).Upgrade
+  fullName.vb: Koffing.Blocks.IUpgradable(Of T).Upgrade
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  commentId: '!:T'
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Koffing.Blocks.IUpgradable`1.SoughtTiles*
+  commentId: Overload:Koffing.Blocks.IUpgradable`1.SoughtTiles
+  isExternal: true
+  href: Koffing.Blocks.IUpgradable-1.html#Koffing_Blocks_IUpgradable_1_SoughtTiles
+  name: SoughtTiles
+  nameWithType: IUpgradable<T>.SoughtTiles
+  fullName: Koffing.Blocks.IUpgradable<T>.SoughtTiles
+  nameWithType.vb: IUpgradable(Of T).SoughtTiles
+  fullName.vb: Koffing.Blocks.IUpgradable(Of T).SoughtTiles
+- uid: System.Collections.Generic.HashSet{Koffing.Tiles.Tile}
+  commentId: T:System.Collections.Generic.HashSet{Koffing.Tiles.Tile}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<Tile>
+  nameWithType: HashSet<Tile>
+  fullName: System.Collections.Generic.HashSet<Koffing.Tiles.Tile>
+  nameWithType.vb: HashSet(Of Tile)
+  fullName.vb: System.Collections.Generic.HashSet(Of Koffing.Tiles.Tile)
+  name.vb: HashSet(Of Tile)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    isExternal: true
+    href: Koffing.Tiles.Tile.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    isExternal: true
+    href: Koffing.Tiles.Tile.html
+  - name: )
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

@@ -1,0 +1,6 @@
+### YamlMime:ManagedReference
+apiRules:
+- exclude:
+    uidRegex: ^gdUnit4\.addons
+- exclude:
+    uidRegex: ^GdUnit4\.TestRunner

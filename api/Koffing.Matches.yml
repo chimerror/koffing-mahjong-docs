@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Matches
+  commentId: N:Koffing.Matches
+  id: Koffing.Matches
+  children:
+  - Koffing.Matches.Match
+  - Koffing.Matches.PlayerCount
+  - Koffing.Matches.Wall
+  - Koffing.Matches.WallDisplay
+  - Koffing.Matches.WallDisplay.MethodName
+  - Koffing.Matches.WallDisplay.PropertyName
+  - Koffing.Matches.WallDisplay.SignalName
+  - Koffing.Matches.Wind
+  langs:
+  - csharp
+  - vb
+  name: Koffing.Matches
+  nameWithType: Koffing.Matches
+  fullName: Koffing.Matches
+  type: Namespace
+  assemblies:
+  - Koffing
+references:
+- uid: Koffing.Matches.Match
+  commentId: T:Koffing.Matches.Match
+  isExternal: true
+  href: Koffing.Matches.Match.html
+  name: Match
+  nameWithType: Match
+  fullName: Koffing.Matches.Match
+- uid: Koffing.Matches.PlayerCount
+  commentId: T:Koffing.Matches.PlayerCount
+  parent: Koffing.Matches
+  isExternal: true
+  href: Koffing.Matches.PlayerCount.html
+  name: PlayerCount
+  nameWithType: PlayerCount
+  fullName: Koffing.Matches.PlayerCount
+- uid: Koffing.Matches.Wall
+  commentId: T:Koffing.Matches.Wall
+  isExternal: true
+  href: Koffing.Matches.Wall.html
+  name: Wall
+  nameWithType: Wall
+  fullName: Koffing.Matches.Wall
+- uid: Koffing.Matches.WallDisplay
+  commentId: T:Koffing.Matches.WallDisplay
+  isExternal: true
+  href: Koffing.Matches.WallDisplay.html
+  name: WallDisplay
+  nameWithType: WallDisplay
+  fullName: Koffing.Matches.WallDisplay
+- uid: Koffing.Matches.WallDisplay.MethodName
+  commentId: T:Koffing.Matches.WallDisplay.MethodName
+  isExternal: true
+  href: Koffing.Matches.WallDisplay.html
+  name: WallDisplay.MethodName
+  nameWithType: WallDisplay.MethodName
+  fullName: Koffing.Matches.WallDisplay.MethodName
+  spec.csharp:
+  - uid: Koffing.Matches.WallDisplay
+    name: WallDisplay
+    isExternal: true
+    href: Koffing.Matches.WallDisplay.html
+  - name: .
+  - uid: Koffing.Matches.WallDisplay.MethodName
+    name: MethodName
+    isExternal: true
+    href: Koffing.Matches.WallDisplay.MethodName.html
+  spec.vb:
+  - uid: Koffing.Matches.WallDisplay
+    name: WallDisplay
+    isExternal: true
+    href: Koffing.Matches.WallDisplay.html
+  - name: .
+  - uid: Koffing.Matches.WallDisplay.MethodName
+    name: MethodName
+    isExternal: true
+    href: Koffing.Matches.WallDisplay.MethodName.html
+- uid: Koffing.Matches.WallDisplay.PropertyName
+  commentId: T:Koffing.Matches.WallDisplay.PropertyName
+  isExternal: true
+  href: Koffing.Matches.WallDisplay.html
+  name: WallDisplay.PropertyName
+  nameWithType: WallDisplay.PropertyName
+  fullName: Koffing.Matches.WallDisplay.PropertyName
+  spec.csharp:
+  - uid: Koffing.Matches.WallDisplay
+    name: WallDisplay
+    isExternal: true
+    href: Koffing.Matches.WallDisplay.html
+  - name: .
+  - uid: Koffing.Matches.WallDisplay.PropertyName
+    name: PropertyName
+    isExternal: true
+    href: Koffing.Matches.WallDisplay.PropertyName.html
+  spec.vb:
+  - uid: Koffing.Matches.WallDisplay
+    name: WallDisplay
+    isExternal: true
+    href: Koffing.Matches.WallDisplay.html
+  - name: .
+  - uid: Koffing.Matches.WallDisplay.PropertyName
+    name: PropertyName
+    isExternal: true
+    href: Koffing.Matches.WallDisplay.PropertyName.html
+- uid: Koffing.Matches.WallDisplay.SignalName
+  commentId: T:Koffing.Matches.WallDisplay.SignalName
+  isExternal: true
+  href: Koffing.Matches.WallDisplay.html
+  name: WallDisplay.SignalName
+  nameWithType: WallDisplay.SignalName
+  fullName: Koffing.Matches.WallDisplay.SignalName
+  spec.csharp:
+  - uid: Koffing.Matches.WallDisplay
+    name: WallDisplay
+    isExternal: true
+    href: Koffing.Matches.WallDisplay.html
+  - name: .
+  - uid: Koffing.Matches.WallDisplay.SignalName
+    name: SignalName
+    isExternal: true
+    href: Koffing.Matches.WallDisplay.SignalName.html
+  spec.vb:
+  - uid: Koffing.Matches.WallDisplay
+    name: WallDisplay
+    isExternal: true
+    href: Koffing.Matches.WallDisplay.html
+  - name: .
+  - uid: Koffing.Matches.WallDisplay.SignalName
+    name: SignalName
+    isExternal: true
+    href: Koffing.Matches.WallDisplay.SignalName.html
+- uid: Koffing.Matches.Wind
+  commentId: T:Koffing.Matches.Wind
+  parent: Koffing.Matches
+  isExternal: true
+  href: Koffing.Matches.Wind.html
+  name: Wind
+  nameWithType: Wind
+  fullName: Koffing.Matches.Wind
+- uid: Koffing.Matches
+  commentId: N:Koffing.Matches
+  isExternal: true
+  name: Koffing.Matches
+  nameWithType: Koffing.Matches
+  fullName: Koffing.Matches
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Matches
+    name: Matches
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Matches
+    name: Matches
+    isExternal: true

@@ -1,0 +1,214 @@
+### YamlMime:TableOfContent
+items:
+- uid: Koffing
+  name: Koffing
+  type: Namespace
+  items:
+  - uid: Koffing.Extensions
+    name: Extensions
+    type: Class
+  - uid: Koffing.Helpers
+    name: Helpers
+    type: Class
+- uid: Koffing.Blocks
+  name: Koffing.Blocks
+  type: Namespace
+  items:
+  - uid: Koffing.Blocks.Block
+    name: Block
+    type: Class
+  - uid: Koffing.Blocks.BlockSet
+    name: BlockSet
+    type: Class
+  - uid: Koffing.Blocks.IBlock
+    name: IBlock
+    type: Interface
+  - uid: Koffing.Blocks.IDowngradable`1
+    name: IDowngradable<T>
+    type: Interface
+  - uid: Koffing.Blocks.IUpgradable`1
+    name: IUpgradable<T>
+    type: Interface
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    type: Class
+- uid: Koffing.Calculations
+  name: Koffing.Calculations
+  type: Namespace
+  items:
+  - uid: Koffing.Calculations.Readiness
+    name: Readiness
+    type: Class
+  - uid: Koffing.Calculations.Readiness.Type
+    name: Readiness.Type
+    type: Enum
+- uid: Koffing.Godot.Random
+  name: Koffing.Godot.Random
+  type: Namespace
+  items:
+  - uid: Koffing.Godot.Random.GodotRandomNumberGenerator
+    name: GodotRandomNumberGenerator
+    type: Class
+- uid: Koffing.Godot.Tiles
+  name: Koffing.Godot.Tiles
+  type: Namespace
+  items:
+  - uid: Koffing.Godot.Tiles.TileSprite
+    name: TileSprite
+    type: Class
+  - uid: Koffing.Godot.Tiles.TileSprite.MethodName
+    name: TileSprite.MethodName
+    type: Class
+  - uid: Koffing.Godot.Tiles.TileSprite.PropertyName
+    name: TileSprite.PropertyName
+    type: Class
+  - uid: Koffing.Godot.Tiles.TileSprite.SignalName
+    name: TileSprite.SignalName
+    type: Class
+- uid: Koffing.Godot.UI.Elements
+  name: Koffing.Godot.UI.Elements
+  type: Namespace
+  items:
+  - uid: Koffing.Godot.UI.Elements.TileRect
+    name: TileRect
+    type: Class
+  - uid: Koffing.Godot.UI.Elements.TileRect.MethodName
+    name: TileRect.MethodName
+    type: Class
+  - uid: Koffing.Godot.UI.Elements.TileRect.PropertyName
+    name: TileRect.PropertyName
+    type: Class
+  - uid: Koffing.Godot.UI.Elements.TileRect.SignalName
+    name: TileRect.SignalName
+    type: Class
+- uid: Koffing.Matches
+  name: Koffing.Matches
+  type: Namespace
+  items:
+  - uid: Koffing.Matches.Match
+    name: Match
+    type: Class
+  - uid: Koffing.Matches.PlayerCount
+    name: PlayerCount
+    type: Enum
+  - uid: Koffing.Matches.Wall
+    name: Wall
+    type: Class
+  - uid: Koffing.Matches.WallDisplay
+    name: WallDisplay
+    type: Class
+  - uid: Koffing.Matches.WallDisplay.MethodName
+    name: WallDisplay.MethodName
+    type: Class
+  - uid: Koffing.Matches.WallDisplay.PropertyName
+    name: WallDisplay.PropertyName
+    type: Class
+  - uid: Koffing.Matches.WallDisplay.SignalName
+    name: WallDisplay.SignalName
+    type: Class
+  - uid: Koffing.Matches.Wind
+    name: Wind
+    type: Enum
+- uid: Koffing.Melds
+  name: Koffing.Melds
+  type: Namespace
+  items:
+  - uid: Koffing.Melds.Chow
+    name: Chow
+    type: Class
+  - uid: Koffing.Melds.Kong
+    name: Kong
+    type: Class
+  - uid: Koffing.Melds.Meld
+    name: Meld
+    type: Class
+  - uid: Koffing.Melds.Pair
+    name: Pair
+    type: Class
+  - uid: Koffing.Melds.Pung
+    name: Pung
+    type: Class
+- uid: Koffing.Players
+  name: Koffing.Players
+  type: Namespace
+  items:
+  - uid: Koffing.Players.Player
+    name: Player
+    type: Class
+- uid: Koffing.Random
+  name: Koffing.Random
+  type: Namespace
+  items:
+  - uid: Koffing.Random.IRandomNumberGenerator
+    name: IRandomNumberGenerator
+    type: Interface
+  - uid: Koffing.Random.SystemRandomNumberGenerator
+    name: SystemRandomNumberGenerator
+    type: Class
+- uid: Koffing.Tests
+  name: Koffing.Tests
+  type: Namespace
+  items:
+  - uid: Koffing.Tests.BlockTests
+    name: BlockTests
+    type: Class
+  - uid: Koffing.Tests.CalculationTests
+    name: CalculationTests
+    type: Class
+  - uid: Koffing.Tests.MatchTests
+    name: MatchTests
+    type: Class
+  - uid: Koffing.Tests.MeldTests
+    name: MeldTests
+    type: Class
+  - uid: Koffing.Tests.RandomNumberGeneratorTests
+    name: RandomNumberGeneratorTests
+    type: Class
+  - uid: Koffing.Tests.TileTests
+    name: TileTests
+    type: Class
+  - uid: Koffing.Tests.UpgradableDowngradableTests
+    name: UpgradableDowngradableTests
+    type: Class
+  - uid: Koffing.Tests.WaitTests
+    name: WaitTests
+    type: Class
+- uid: Koffing.Tiles
+  name: Koffing.Tiles
+  type: Namespace
+  items:
+  - uid: Koffing.Tiles.Suit
+    name: Suit
+    type: Enum
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    type: Class
+- uid: Koffing.Waits
+  name: Koffing.Waits
+  type: Namespace
+  items:
+  - uid: Koffing.Waits.Kanchan
+    name: Kanchan
+    type: Class
+  - uid: Koffing.Waits.Orphan
+    name: Orphan
+    type: Class
+  - uid: Koffing.Waits.PairWait
+    name: PairWait
+    type: Class
+  - uid: Koffing.Waits.Penchan
+    name: Penchan
+    type: Class
+  - uid: Koffing.Waits.Ryanmen
+    name: Ryanmen
+    type: Class
+  - uid: Koffing.Waits.SevenPairsWait
+    name: SevenPairsWait
+    type: Class
+  - uid: Koffing.Waits.ThirteenOrphansWait
+    name: ThirteenOrphansWait
+    type: Class
+  - uid: Koffing.Waits.Wait
+    name: Wait
+    type: Class
+memberLayout: SamePage

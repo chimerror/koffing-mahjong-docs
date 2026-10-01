@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Godot.Tiles
+  commentId: N:Koffing.Godot.Tiles
+  id: Koffing.Godot.Tiles
+  children:
+  - Koffing.Godot.Tiles.TileSprite
+  - Koffing.Godot.Tiles.TileSprite.MethodName
+  - Koffing.Godot.Tiles.TileSprite.PropertyName
+  - Koffing.Godot.Tiles.TileSprite.SignalName
+  langs:
+  - csharp
+  - vb
+  name: Koffing.Godot.Tiles
+  nameWithType: Koffing.Godot.Tiles
+  fullName: Koffing.Godot.Tiles
+  type: Namespace
+  assemblies:
+  - Koffing
+references:
+- uid: Koffing.Godot.Tiles.TileSprite
+  commentId: T:Koffing.Godot.Tiles.TileSprite
+  isExternal: true
+  href: Koffing.Godot.Tiles.TileSprite.html
+  name: TileSprite
+  nameWithType: TileSprite
+  fullName: Koffing.Godot.Tiles.TileSprite
+- uid: Koffing.Godot.Tiles.TileSprite.MethodName
+  commentId: T:Koffing.Godot.Tiles.TileSprite.MethodName
+  isExternal: true
+  href: Koffing.Godot.Tiles.TileSprite.html
+  name: TileSprite.MethodName
+  nameWithType: TileSprite.MethodName
+  fullName: Koffing.Godot.Tiles.TileSprite.MethodName
+  spec.csharp:
+  - uid: Koffing.Godot.Tiles.TileSprite
+    name: TileSprite
+    isExternal: true
+    href: Koffing.Godot.Tiles.TileSprite.html
+  - name: .
+  - uid: Koffing.Godot.Tiles.TileSprite.MethodName
+    name: MethodName
+    isExternal: true
+    href: Koffing.Godot.Tiles.TileSprite.MethodName.html
+  spec.vb:
+  - uid: Koffing.Godot.Tiles.TileSprite
+    name: TileSprite
+    isExternal: true
+    href: Koffing.Godot.Tiles.TileSprite.html
+  - name: .
+  - uid: Koffing.Godot.Tiles.TileSprite.MethodName
+    name: MethodName
+    isExternal: true
+    href: Koffing.Godot.Tiles.TileSprite.MethodName.html
+- uid: Koffing.Godot.Tiles.TileSprite.PropertyName
+  commentId: T:Koffing.Godot.Tiles.TileSprite.PropertyName
+  isExternal: true
+  href: Koffing.Godot.Tiles.TileSprite.html
+  name: TileSprite.PropertyName
+  nameWithType: TileSprite.PropertyName
+  fullName: Koffing.Godot.Tiles.TileSprite.PropertyName
+  spec.csharp:
+  - uid: Koffing.Godot.Tiles.TileSprite
+    name: TileSprite
+    isExternal: true
+    href: Koffing.Godot.Tiles.TileSprite.html
+  - name: .
+  - uid: Koffing.Godot.Tiles.TileSprite.PropertyName
+    name: PropertyName
+    isExternal: true
+    href: Koffing.Godot.Tiles.TileSprite.PropertyName.html
+  spec.vb:
+  - uid: Koffing.Godot.Tiles.TileSprite
+    name: TileSprite
+    isExternal: true
+    href: Koffing.Godot.Tiles.TileSprite.html
+  - name: .
+  - uid: Koffing.Godot.Tiles.TileSprite.PropertyName
+    name: PropertyName
+    isExternal: true
+    href: Koffing.Godot.Tiles.TileSprite.PropertyName.html
+- uid: Koffing.Godot.Tiles.TileSprite.SignalName
+  commentId: T:Koffing.Godot.Tiles.TileSprite.SignalName
+  isExternal: true
+  href: Koffing.Godot.Tiles.TileSprite.html
+  name: TileSprite.SignalName
+  nameWithType: TileSprite.SignalName
+  fullName: Koffing.Godot.Tiles.TileSprite.SignalName
+  spec.csharp:
+  - uid: Koffing.Godot.Tiles.TileSprite
+    name: TileSprite
+    isExternal: true
+    href: Koffing.Godot.Tiles.TileSprite.html
+  - name: .
+  - uid: Koffing.Godot.Tiles.TileSprite.SignalName
+    name: SignalName
+    isExternal: true
+    href: Koffing.Godot.Tiles.TileSprite.SignalName.html
+  spec.vb:
+  - uid: Koffing.Godot.Tiles.TileSprite
+    name: TileSprite
+    isExternal: true
+    href: Koffing.Godot.Tiles.TileSprite.html
+  - name: .
+  - uid: Koffing.Godot.Tiles.TileSprite.SignalName
+    name: SignalName
+    isExternal: true
+    href: Koffing.Godot.Tiles.TileSprite.SignalName.html

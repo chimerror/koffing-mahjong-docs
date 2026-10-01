@@ -1,0 +1,212 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Tiles.Suit
+  commentId: T:Koffing.Tiles.Suit
+  id: Suit
+  parent: Koffing.Tiles
+  children:
+  - Koffing.Tiles.Suit.Man
+  - Koffing.Tiles.Suit.Pin
+  - Koffing.Tiles.Suit.Sou
+  - Koffing.Tiles.Suit.Zi
+  langs:
+  - csharp
+  - vb
+  name: Suit
+  nameWithType: Suit
+  fullName: Koffing.Tiles.Suit
+  type: Enum
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Suit.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tiles
+  syntax:
+    content: public enum Suit
+    content.vb: Public Enum Suit
+  extensionMethods:
+  - Koffing.Tiles.Suit.Koffing.Extensions.GetSuitString
+- uid: Koffing.Tiles.Suit.Man
+  commentId: F:Koffing.Tiles.Suit.Man
+  id: Man
+  parent: Koffing.Tiles.Suit
+  langs:
+  - csharp
+  - vb
+  name: Man
+  nameWithType: Suit.Man
+  fullName: Koffing.Tiles.Suit.Man
+  type: Field
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Suit.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tiles
+  syntax:
+    content: Man = 2
+    return:
+      type: Koffing.Tiles.Suit
+- uid: Koffing.Tiles.Suit.Pin
+  commentId: F:Koffing.Tiles.Suit.Pin
+  id: Pin
+  parent: Koffing.Tiles.Suit
+  langs:
+  - csharp
+  - vb
+  name: Pin
+  nameWithType: Suit.Pin
+  fullName: Koffing.Tiles.Suit.Pin
+  type: Field
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Suit.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tiles
+  syntax:
+    content: Pin = 3
+    return:
+      type: Koffing.Tiles.Suit
+- uid: Koffing.Tiles.Suit.Sou
+  commentId: F:Koffing.Tiles.Suit.Sou
+  id: Sou
+  parent: Koffing.Tiles.Suit
+  langs:
+  - csharp
+  - vb
+  name: Sou
+  nameWithType: Suit.Sou
+  fullName: Koffing.Tiles.Suit.Sou
+  type: Field
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Suit.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tiles
+  syntax:
+    content: Sou = 5
+    return:
+      type: Koffing.Tiles.Suit
+- uid: Koffing.Tiles.Suit.Zi
+  commentId: F:Koffing.Tiles.Suit.Zi
+  id: Zi
+  parent: Koffing.Tiles.Suit
+  langs:
+  - csharp
+  - vb
+  name: Zi
+  nameWithType: Suit.Zi
+  fullName: Koffing.Tiles.Suit.Zi
+  type: Field
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Suit.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tiles
+  syntax:
+    content: Zi = 7
+    return:
+      type: Koffing.Tiles.Suit
+references:
+- uid: Koffing.Tiles
+  commentId: N:Koffing.Tiles
+  isExternal: true
+  name: Koffing.Tiles
+  nameWithType: Koffing.Tiles
+  fullName: Koffing.Tiles
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+    isExternal: true
+- uid: Koffing.Tiles.Suit.Koffing.Extensions.GetSuitString
+  commentId: M:Koffing.Extensions.GetSuitString(Koffing.Tiles.Suit)
+  parent: Koffing.Extensions
+  definition: Koffing.Extensions.GetSuitString(Koffing.Tiles.Suit)
+  href: Koffing.Extensions.html#Koffing_Extensions_GetSuitString_Koffing_Tiles_Suit_
+  name: GetSuitString(Suit)
+  nameWithType: Extensions.GetSuitString(Suit)
+  fullName: Koffing.Extensions.GetSuitString(Koffing.Tiles.Suit)
+  spec.csharp:
+  - uid: Koffing.Extensions.GetSuitString(Koffing.Tiles.Suit)
+    name: GetSuitString
+    isExternal: true
+    href: Koffing.Extensions.html#Koffing_Extensions_GetSuitString_Koffing_Tiles_Suit_
+  - name: (
+  - uid: Koffing.Tiles.Suit
+    name: Suit
+    isExternal: true
+    href: Koffing.Tiles.Suit.html
+  - name: )
+  spec.vb:
+  - uid: Koffing.Extensions.GetSuitString(Koffing.Tiles.Suit)
+    name: GetSuitString
+    isExternal: true
+    href: Koffing.Extensions.html#Koffing_Extensions_GetSuitString_Koffing_Tiles_Suit_
+  - name: (
+  - uid: Koffing.Tiles.Suit
+    name: Suit
+    isExternal: true
+    href: Koffing.Tiles.Suit.html
+  - name: )
+- uid: Koffing.Extensions.GetSuitString(Koffing.Tiles.Suit)
+  commentId: M:Koffing.Extensions.GetSuitString(Koffing.Tiles.Suit)
+  isExternal: true
+  href: Koffing.Extensions.html#Koffing_Extensions_GetSuitString_Koffing_Tiles_Suit_
+  name: GetSuitString(Suit)
+  nameWithType: Extensions.GetSuitString(Suit)
+  fullName: Koffing.Extensions.GetSuitString(Koffing.Tiles.Suit)
+  spec.csharp:
+  - uid: Koffing.Extensions.GetSuitString(Koffing.Tiles.Suit)
+    name: GetSuitString
+    isExternal: true
+    href: Koffing.Extensions.html#Koffing_Extensions_GetSuitString_Koffing_Tiles_Suit_
+  - name: (
+  - uid: Koffing.Tiles.Suit
+    name: Suit
+    isExternal: true
+    href: Koffing.Tiles.Suit.html
+  - name: )
+  spec.vb:
+  - uid: Koffing.Extensions.GetSuitString(Koffing.Tiles.Suit)
+    name: GetSuitString
+    isExternal: true
+    href: Koffing.Extensions.html#Koffing_Extensions_GetSuitString_Koffing_Tiles_Suit_
+  - name: (
+  - uid: Koffing.Tiles.Suit
+    name: Suit
+    isExternal: true
+    href: Koffing.Tiles.Suit.html
+  - name: )
+- uid: Koffing.Extensions
+  commentId: T:Koffing.Extensions
+  parent: Koffing
+  isExternal: true
+  href: Koffing.Extensions.html
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Koffing.Extensions
+- uid: Koffing
+  commentId: N:Koffing
+  isExternal: true
+  name: Koffing
+  nameWithType: Koffing
+  fullName: Koffing
+- uid: Koffing.Tiles.Suit
+  commentId: T:Koffing.Tiles.Suit
+  parent: Koffing.Tiles
+  isExternal: true
+  href: Koffing.Tiles.Suit.html
+  name: Suit
+  nameWithType: Suit
+  fullName: Koffing.Tiles.Suit

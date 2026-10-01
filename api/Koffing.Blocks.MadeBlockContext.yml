@@ -1,0 +1,949 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Blocks.MadeBlockContext
+  commentId: T:Koffing.Blocks.MadeBlockContext
+  id: MadeBlockContext
+  parent: Koffing.Blocks
+  children:
+  - Koffing.Blocks.MadeBlockContext.#ctor(Koffing.Blocks.Block,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  - Koffing.Blocks.MadeBlockContext.CompareTo(Koffing.Blocks.MadeBlockContext)
+  - Koffing.Blocks.MadeBlockContext.Equals(Koffing.Blocks.MadeBlockContext)
+  - Koffing.Blocks.MadeBlockContext.Equals(System.Object)
+  - Koffing.Blocks.MadeBlockContext.GetHashCode
+  - Koffing.Blocks.MadeBlockContext.MadeBlock
+  - Koffing.Blocks.MadeBlockContext.RemainingTiles
+  - Koffing.Blocks.MadeBlockContext.ToString
+  langs:
+  - csharp
+  - vb
+  name: MadeBlockContext
+  nameWithType: MadeBlockContext
+  fullName: Koffing.Blocks.MadeBlockContext
+  type: Class
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/MadeBlockContext.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  syntax:
+    content: 'public class MadeBlockContext : IComparable<MadeBlockContext>, IEquatable<MadeBlockContext>'
+    content.vb: Public Class MadeBlockContext Implements IComparable(Of MadeBlockContext), IEquatable(Of MadeBlockContext)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IComparable{Koffing.Blocks.MadeBlockContext}
+  - System.IEquatable{Koffing.Blocks.MadeBlockContext}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Koffing.Blocks.MadeBlockContext.#ctor(Koffing.Blocks.Block,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  commentId: M:Koffing.Blocks.MadeBlockContext.#ctor(Koffing.Blocks.Block,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  id: '#ctor(Koffing.Blocks.Block,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})'
+  parent: Koffing.Blocks.MadeBlockContext
+  langs:
+  - csharp
+  - vb
+  name: MadeBlockContext(Block, IEnumerable<Tile>)
+  nameWithType: MadeBlockContext.MadeBlockContext(Block, IEnumerable<Tile>)
+  fullName: Koffing.Blocks.MadeBlockContext.MadeBlockContext(Koffing.Blocks.Block, System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
+  type: Constructor
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/MadeBlockContext.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  syntax:
+    content: public MadeBlockContext(Block madeBlock, IEnumerable<Tile> remainingTiles)
+    parameters:
+    - id: madeBlock
+      type: Koffing.Blocks.Block
+    - id: remainingTiles
+      type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+    content.vb: Public Sub New(madeBlock As Block, remainingTiles As IEnumerable(Of Tile))
+  overload: Koffing.Blocks.MadeBlockContext.#ctor*
+  nameWithType.vb: MadeBlockContext.New(Block, IEnumerable(Of Tile))
+  fullName.vb: Koffing.Blocks.MadeBlockContext.New(Koffing.Blocks.Block, System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
+  name.vb: New(Block, IEnumerable(Of Tile))
+- uid: Koffing.Blocks.MadeBlockContext.Equals(System.Object)
+  commentId: M:Koffing.Blocks.MadeBlockContext.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Koffing.Blocks.MadeBlockContext
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: MadeBlockContext.Equals(object)
+  fullName: Koffing.Blocks.MadeBlockContext.Equals(object)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/MadeBlockContext.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  example: []
+  syntax:
+    content: public override bool Equals(object that)
+    parameters:
+    - id: that
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(that As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Koffing.Blocks.MadeBlockContext.Equals*
+  nameWithType.vb: MadeBlockContext.Equals(Object)
+  fullName.vb: Koffing.Blocks.MadeBlockContext.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Koffing.Blocks.MadeBlockContext.Equals(Koffing.Blocks.MadeBlockContext)
+  commentId: M:Koffing.Blocks.MadeBlockContext.Equals(Koffing.Blocks.MadeBlockContext)
+  id: Equals(Koffing.Blocks.MadeBlockContext)
+  parent: Koffing.Blocks.MadeBlockContext
+  langs:
+  - csharp
+  - vb
+  name: Equals(MadeBlockContext)
+  nameWithType: MadeBlockContext.Equals(MadeBlockContext)
+  fullName: Koffing.Blocks.MadeBlockContext.Equals(Koffing.Blocks.MadeBlockContext)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/MadeBlockContext.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  example: []
+  syntax:
+    content: public bool Equals(MadeBlockContext thatContext)
+    parameters:
+    - id: thatContext
+      type: Koffing.Blocks.MadeBlockContext
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(thatContext As MadeBlockContext) As Boolean
+  overload: Koffing.Blocks.MadeBlockContext.Equals*
+  implements:
+  - System.IEquatable{Koffing.Blocks.MadeBlockContext}.Equals(Koffing.Blocks.MadeBlockContext)
+- uid: Koffing.Blocks.MadeBlockContext.GetHashCode
+  commentId: M:Koffing.Blocks.MadeBlockContext.GetHashCode
+  id: GetHashCode
+  parent: Koffing.Blocks.MadeBlockContext
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: MadeBlockContext.GetHashCode()
+  fullName: Koffing.Blocks.MadeBlockContext.GetHashCode()
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/MadeBlockContext.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Koffing.Blocks.MadeBlockContext.GetHashCode*
+- uid: Koffing.Blocks.MadeBlockContext.CompareTo(Koffing.Blocks.MadeBlockContext)
+  commentId: M:Koffing.Blocks.MadeBlockContext.CompareTo(Koffing.Blocks.MadeBlockContext)
+  id: CompareTo(Koffing.Blocks.MadeBlockContext)
+  parent: Koffing.Blocks.MadeBlockContext
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(MadeBlockContext)
+  nameWithType: MadeBlockContext.CompareTo(MadeBlockContext)
+  fullName: Koffing.Blocks.MadeBlockContext.CompareTo(Koffing.Blocks.MadeBlockContext)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/MadeBlockContext.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  example: []
+  syntax:
+    content: public int CompareTo(MadeBlockContext that)
+    parameters:
+    - id: that
+      type: Koffing.Blocks.MadeBlockContext
+    return:
+      type: System.Int32
+    content.vb: Public Function CompareTo(that As MadeBlockContext) As Integer
+  overload: Koffing.Blocks.MadeBlockContext.CompareTo*
+  implements:
+  - System.IComparable{Koffing.Blocks.MadeBlockContext}.CompareTo(Koffing.Blocks.MadeBlockContext)
+- uid: Koffing.Blocks.MadeBlockContext.ToString
+  commentId: M:Koffing.Blocks.MadeBlockContext.ToString
+  id: ToString
+  parent: Koffing.Blocks.MadeBlockContext
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: MadeBlockContext.ToString()
+  fullName: Koffing.Blocks.MadeBlockContext.ToString()
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/MadeBlockContext.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Koffing.Blocks.MadeBlockContext.ToString*
+- uid: Koffing.Blocks.MadeBlockContext.MadeBlock
+  commentId: P:Koffing.Blocks.MadeBlockContext.MadeBlock
+  id: MadeBlock
+  parent: Koffing.Blocks.MadeBlockContext
+  langs:
+  - csharp
+  - vb
+  name: MadeBlock
+  nameWithType: MadeBlockContext.MadeBlock
+  fullName: Koffing.Blocks.MadeBlockContext.MadeBlock
+  type: Property
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/MadeBlockContext.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  syntax:
+    content: public Block MadeBlock { get; }
+    parameters: []
+    return:
+      type: Koffing.Blocks.Block
+    content.vb: Public ReadOnly Property MadeBlock As Block
+  overload: Koffing.Blocks.MadeBlockContext.MadeBlock*
+- uid: Koffing.Blocks.MadeBlockContext.RemainingTiles
+  commentId: P:Koffing.Blocks.MadeBlockContext.RemainingTiles
+  id: RemainingTiles
+  parent: Koffing.Blocks.MadeBlockContext
+  langs:
+  - csharp
+  - vb
+  name: RemainingTiles
+  nameWithType: MadeBlockContext.RemainingTiles
+  fullName: Koffing.Blocks.MadeBlockContext.RemainingTiles
+  type: Property
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/MadeBlockContext.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  syntax:
+    content: public IEnumerable<Tile> RemainingTiles { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+    content.vb: Public ReadOnly Property RemainingTiles As IEnumerable(Of Tile)
+  overload: Koffing.Blocks.MadeBlockContext.RemainingTiles*
+references:
+- uid: Koffing.Blocks
+  commentId: N:Koffing.Blocks
+  isExternal: true
+  name: Koffing.Blocks
+  nameWithType: Koffing.Blocks
+  fullName: Koffing.Blocks
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Blocks
+    name: Blocks
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Blocks
+    name: Blocks
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IComparable{Koffing.Blocks.MadeBlockContext}
+  commentId: T:System.IComparable{Koffing.Blocks.MadeBlockContext}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<MadeBlockContext>
+  nameWithType: IComparable<MadeBlockContext>
+  fullName: System.IComparable<Koffing.Blocks.MadeBlockContext>
+  nameWithType.vb: IComparable(Of MadeBlockContext)
+  fullName.vb: System.IComparable(Of Koffing.Blocks.MadeBlockContext)
+  name.vb: IComparable(Of MadeBlockContext)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    isExternal: true
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    isExternal: true
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: )
+- uid: System.IEquatable{Koffing.Blocks.MadeBlockContext}
+  commentId: T:System.IEquatable{Koffing.Blocks.MadeBlockContext}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<MadeBlockContext>
+  nameWithType: IEquatable<MadeBlockContext>
+  fullName: System.IEquatable<Koffing.Blocks.MadeBlockContext>
+  nameWithType.vb: IEquatable(Of MadeBlockContext)
+  fullName.vb: System.IEquatable(Of Koffing.Blocks.MadeBlockContext)
+  name.vb: IEquatable(Of MadeBlockContext)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    isExternal: true
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    isExternal: true
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Koffing.Blocks.MadeBlockContext.#ctor*
+  commentId: Overload:Koffing.Blocks.MadeBlockContext.#ctor
+  isExternal: true
+  href: Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext__ctor_Koffing_Blocks_Block_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  name: MadeBlockContext
+  nameWithType: MadeBlockContext.MadeBlockContext
+  fullName: Koffing.Blocks.MadeBlockContext.MadeBlockContext
+  nameWithType.vb: MadeBlockContext.New
+  fullName.vb: Koffing.Blocks.MadeBlockContext.New
+  name.vb: New
+- uid: Koffing.Blocks.Block
+  commentId: T:Koffing.Blocks.Block
+  parent: Koffing.Blocks
+  isExternal: true
+  href: Koffing.Blocks.Block.html
+  name: Block
+  nameWithType: Block
+  fullName: Koffing.Blocks.Block
+- uid: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+  commentId: T:System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Tile>
+  nameWithType: IEnumerable<Tile>
+  fullName: System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>
+  nameWithType.vb: IEnumerable(Of Tile)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile)
+  name.vb: IEnumerable(Of Tile)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    isExternal: true
+    href: Koffing.Tiles.Tile.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    isExternal: true
+    href: Koffing.Tiles.Tile.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Koffing.Blocks.MadeBlockContext.Equals*
+  commentId: Overload:Koffing.Blocks.MadeBlockContext.Equals
+  isExternal: true
+  href: Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_Equals_System_Object_
+  name: Equals
+  nameWithType: MadeBlockContext.Equals
+  fullName: Koffing.Blocks.MadeBlockContext.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable{Koffing.Blocks.MadeBlockContext}.Equals(Koffing.Blocks.MadeBlockContext)
+  commentId: M:System.IEquatable{Koffing.Blocks.MadeBlockContext}.Equals(Koffing.Blocks.MadeBlockContext)
+  parent: System.IEquatable{Koffing.Blocks.MadeBlockContext}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(MadeBlockContext)
+  nameWithType: IEquatable<MadeBlockContext>.Equals(MadeBlockContext)
+  fullName: System.IEquatable<Koffing.Blocks.MadeBlockContext>.Equals(Koffing.Blocks.MadeBlockContext)
+  nameWithType.vb: IEquatable(Of MadeBlockContext).Equals(MadeBlockContext)
+  fullName.vb: System.IEquatable(Of Koffing.Blocks.MadeBlockContext).Equals(Koffing.Blocks.MadeBlockContext)
+  spec.csharp:
+  - uid: System.IEquatable{Koffing.Blocks.MadeBlockContext}.Equals(Koffing.Blocks.MadeBlockContext)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    isExternal: true
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Koffing.Blocks.MadeBlockContext}.Equals(Koffing.Blocks.MadeBlockContext)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    isExternal: true
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: )
+- uid: Koffing.Blocks.MadeBlockContext
+  commentId: T:Koffing.Blocks.MadeBlockContext
+  parent: Koffing.Blocks
+  isExternal: true
+  href: Koffing.Blocks.MadeBlockContext.html
+  name: MadeBlockContext
+  nameWithType: MadeBlockContext
+  fullName: Koffing.Blocks.MadeBlockContext
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Koffing.Blocks.MadeBlockContext.GetHashCode*
+  commentId: Overload:Koffing.Blocks.MadeBlockContext.GetHashCode
+  isExternal: true
+  href: Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_GetHashCode
+  name: GetHashCode
+  nameWithType: MadeBlockContext.GetHashCode
+  fullName: Koffing.Blocks.MadeBlockContext.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Koffing.Blocks.MadeBlockContext.CompareTo*
+  commentId: Overload:Koffing.Blocks.MadeBlockContext.CompareTo
+  isExternal: true
+  href: Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_CompareTo_Koffing_Blocks_MadeBlockContext_
+  name: CompareTo
+  nameWithType: MadeBlockContext.CompareTo
+  fullName: Koffing.Blocks.MadeBlockContext.CompareTo
+- uid: System.IComparable{Koffing.Blocks.MadeBlockContext}.CompareTo(Koffing.Blocks.MadeBlockContext)
+  commentId: M:System.IComparable{Koffing.Blocks.MadeBlockContext}.CompareTo(Koffing.Blocks.MadeBlockContext)
+  parent: System.IComparable{Koffing.Blocks.MadeBlockContext}
+  definition: System.IComparable`1.CompareTo(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(MadeBlockContext)
+  nameWithType: IComparable<MadeBlockContext>.CompareTo(MadeBlockContext)
+  fullName: System.IComparable<Koffing.Blocks.MadeBlockContext>.CompareTo(Koffing.Blocks.MadeBlockContext)
+  nameWithType.vb: IComparable(Of MadeBlockContext).CompareTo(MadeBlockContext)
+  fullName.vb: System.IComparable(Of Koffing.Blocks.MadeBlockContext).CompareTo(Koffing.Blocks.MadeBlockContext)
+  spec.csharp:
+  - uid: System.IComparable{Koffing.Blocks.MadeBlockContext}.CompareTo(Koffing.Blocks.MadeBlockContext)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    isExternal: true
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: )
+  spec.vb:
+  - uid: System.IComparable{Koffing.Blocks.MadeBlockContext}.CompareTo(Koffing.Blocks.MadeBlockContext)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    isExternal: true
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: )
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Koffing.Blocks.MadeBlockContext.ToString*
+  commentId: Overload:Koffing.Blocks.MadeBlockContext.ToString
+  isExternal: true
+  href: Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_ToString
+  name: ToString
+  nameWithType: MadeBlockContext.ToString
+  fullName: Koffing.Blocks.MadeBlockContext.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Koffing.Blocks.MadeBlockContext.MadeBlock*
+  commentId: Overload:Koffing.Blocks.MadeBlockContext.MadeBlock
+  isExternal: true
+  href: Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_MadeBlock
+  name: MadeBlock
+  nameWithType: MadeBlockContext.MadeBlock
+  fullName: Koffing.Blocks.MadeBlockContext.MadeBlock
+- uid: Koffing.Blocks.MadeBlockContext.RemainingTiles*
+  commentId: Overload:Koffing.Blocks.MadeBlockContext.RemainingTiles
+  isExternal: true
+  href: Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_RemainingTiles
+  name: RemainingTiles
+  nameWithType: MadeBlockContext.RemainingTiles
+  fullName: Koffing.Blocks.MadeBlockContext.RemainingTiles

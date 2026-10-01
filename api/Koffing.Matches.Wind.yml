@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Matches.Wind
+  commentId: T:Koffing.Matches.Wind
+  id: Wind
+  parent: Koffing.Matches
+  children:
+  - Koffing.Matches.Wind.East
+  - Koffing.Matches.Wind.North
+  - Koffing.Matches.Wind.South
+  - Koffing.Matches.Wind.West
+  langs:
+  - csharp
+  - vb
+  name: Wind
+  nameWithType: Wind
+  fullName: Koffing.Matches.Wind
+  type: Enum
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/Wind.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Matches
+  syntax:
+    content: public enum Wind
+    content.vb: Public Enum Wind
+- uid: Koffing.Matches.Wind.East
+  commentId: F:Koffing.Matches.Wind.East
+  id: East
+  parent: Koffing.Matches.Wind
+  langs:
+  - csharp
+  - vb
+  name: East
+  nameWithType: Wind.East
+  fullName: Koffing.Matches.Wind.East
+  type: Field
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/Wind.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Matches
+  syntax:
+    content: East = 1
+    return:
+      type: Koffing.Matches.Wind
+- uid: Koffing.Matches.Wind.South
+  commentId: F:Koffing.Matches.Wind.South
+  id: South
+  parent: Koffing.Matches.Wind
+  langs:
+  - csharp
+  - vb
+  name: South
+  nameWithType: Wind.South
+  fullName: Koffing.Matches.Wind.South
+  type: Field
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/Wind.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Matches
+  syntax:
+    content: South = 2
+    return:
+      type: Koffing.Matches.Wind
+- uid: Koffing.Matches.Wind.West
+  commentId: F:Koffing.Matches.Wind.West
+  id: West
+  parent: Koffing.Matches.Wind
+  langs:
+  - csharp
+  - vb
+  name: West
+  nameWithType: Wind.West
+  fullName: Koffing.Matches.Wind.West
+  type: Field
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/Wind.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Matches
+  syntax:
+    content: West = 3
+    return:
+      type: Koffing.Matches.Wind
+- uid: Koffing.Matches.Wind.North
+  commentId: F:Koffing.Matches.Wind.North
+  id: North
+  parent: Koffing.Matches.Wind
+  langs:
+  - csharp
+  - vb
+  name: North
+  nameWithType: Wind.North
+  fullName: Koffing.Matches.Wind.North
+  type: Field
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/Wind.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Matches
+  syntax:
+    content: North = 4
+    return:
+      type: Koffing.Matches.Wind
+references:
+- uid: Koffing.Matches
+  commentId: N:Koffing.Matches
+  isExternal: true
+  name: Koffing.Matches
+  nameWithType: Koffing.Matches
+  fullName: Koffing.Matches
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Matches
+    name: Matches
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Matches
+    name: Matches
+    isExternal: true
+- uid: Koffing.Matches.Wind
+  commentId: T:Koffing.Matches.Wind
+  parent: Koffing.Matches
+  isExternal: true
+  href: Koffing.Matches.Wind.html
+  name: Wind
+  nameWithType: Wind
+  fullName: Koffing.Matches.Wind

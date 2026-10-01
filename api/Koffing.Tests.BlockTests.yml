@@ -1,0 +1,1131 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Tests.BlockTests
+  commentId: T:Koffing.Tests.BlockTests
+  id: BlockTests
+  parent: Koffing.Tests
+  children:
+  - Koffing.Tests.BlockTests.#ctor
+  - Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect(Koffing.Blocks.Block,System.Object,System.String)
+  - Koffing.Tests.BlockTests.BlockEqualsIsCorrect(Koffing.Blocks.Block,Koffing.Blocks.Block,System.Boolean,System.String)
+  - Koffing.Tests.BlockTests.CompareBlockSetsIsCorrect(Koffing.Blocks.BlockSet,Koffing.Blocks.BlockSet,System.Int32,System.String)
+  - Koffing.Tests.BlockTests.CompareBlocksIsCorrect(Koffing.Blocks.Block,Koffing.Blocks.Block,System.Int32,System.String)
+  - Koffing.Tests.BlockTests.CompareMadeBlockContextsIsCorrect(Koffing.Blocks.MadeBlockContext,Koffing.Blocks.MadeBlockContext,System.Int32,System.String)
+  - Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
+  - Koffing.Tests.BlockTests.GetPossibleBlockSetsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.BlockSet},System.String)
+  - Koffing.Tests.BlockTests.MadeBlockContextEqualsCasesAreCorrect(Koffing.Blocks.MadeBlockContext,Koffing.Blocks.MadeBlockContext,System.Boolean,System.String)
+  - Koffing.Tests.BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect(Koffing.Blocks.MadeBlockContext,System.Object,System.String)
+  - Koffing.Tests.BlockTests.PairsAndPairWaitsCastingIsCorrect
+  - Koffing.Tests.BlockTests.Setup
+  - Koffing.Tests.BlockTests.TearDown
+  langs:
+  - csharp
+  - vb
+  name: BlockTests
+  nameWithType: BlockTests
+  fullName: Koffing.Tests.BlockTests
+  type: Class
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestSuite(14, "")]
+
+      public class BlockTests
+    content.vb: >-
+      <TestSuite(14, "")>
+
+      Public Class BlockTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: GdUnit4.TestSuiteAttribute
+    ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
+    arguments:
+    - type: System.Int32
+      value: 14
+    - type: System.String
+      value: ''
+- uid: Koffing.Tests.BlockTests.Setup
+  commentId: M:Koffing.Tests.BlockTests.Setup
+  id: Setup
+  parent: Koffing.Tests.BlockTests
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: BlockTests.Setup()
+  fullName: Koffing.Tests.BlockTests.Setup()
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [Before(17, "Setup")]
+
+      public static void Setup()
+    content.vb: >-
+      <Before(17, "Setup")>
+
+      Public Shared Sub Setup()
+  overload: Koffing.Tests.BlockTests.Setup*
+  attributes:
+  - type: GdUnit4.BeforeAttribute
+    ctor: GdUnit4.BeforeAttribute.#ctor(System.Int32,System.String)
+    arguments:
+    - type: System.Int32
+      value: 17
+    - type: System.String
+      value: Setup
+- uid: Koffing.Tests.BlockTests.TearDown
+  commentId: M:Koffing.Tests.BlockTests.TearDown
+  id: TearDown
+  parent: Koffing.Tests.BlockTests
+  langs:
+  - csharp
+  - vb
+  name: TearDown()
+  nameWithType: BlockTests.TearDown()
+  fullName: Koffing.Tests.BlockTests.TearDown()
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [After(23, "TearDown")]
+
+      public static void TearDown()
+    content.vb: >-
+      <After(23, "TearDown")>
+
+      Public Shared Sub TearDown()
+  overload: Koffing.Tests.BlockTests.TearDown*
+  attributes:
+  - type: GdUnit4.AfterAttribute
+    ctor: GdUnit4.AfterAttribute.#ctor(System.Int32,System.String)
+    arguments:
+    - type: System.Int32
+      value: 23
+    - type: System.String
+      value: TearDown
+- uid: Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect(Koffing.Blocks.Block,System.Object,System.String)
+  commentId: M:Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect(Koffing.Blocks.Block,System.Object,System.String)
+  id: BlockEqualsEdgeCasesAreCorrect(Koffing.Blocks.Block,System.Object,System.String)
+  parent: Koffing.Tests.BlockTests
+  langs:
+  - csharp
+  - vb
+  name: BlockEqualsEdgeCasesAreCorrect(Block, object, string)
+  nameWithType: BlockTests.BlockEqualsEdgeCasesAreCorrect(Block, object, string)
+  fullName: Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect(Koffing.Blocks.Block, object, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("BlockEqualsEdgeTestCases")]
+
+      public static void BlockEqualsEdgeCasesAreCorrect(Block blockA, object objectB, string because)
+    parameters:
+    - id: blockA
+      type: Koffing.Blocks.Block
+    - id: objectB
+      type: System.Object
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("BlockEqualsEdgeTestCases")>
+
+      Public Shared Sub BlockEqualsEdgeCasesAreCorrect(blockA As Block, objectB As Object, because As String)
+  overload: Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: BlockEqualsEdgeTestCases
+  nameWithType.vb: BlockTests.BlockEqualsEdgeCasesAreCorrect(Block, Object, String)
+  fullName.vb: Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect(Koffing.Blocks.Block, Object, String)
+  name.vb: BlockEqualsEdgeCasesAreCorrect(Block, Object, String)
+- uid: Koffing.Tests.BlockTests.BlockEqualsIsCorrect(Koffing.Blocks.Block,Koffing.Blocks.Block,System.Boolean,System.String)
+  commentId: M:Koffing.Tests.BlockTests.BlockEqualsIsCorrect(Koffing.Blocks.Block,Koffing.Blocks.Block,System.Boolean,System.String)
+  id: BlockEqualsIsCorrect(Koffing.Blocks.Block,Koffing.Blocks.Block,System.Boolean,System.String)
+  parent: Koffing.Tests.BlockTests
+  langs:
+  - csharp
+  - vb
+  name: BlockEqualsIsCorrect(Block, Block, bool, string)
+  nameWithType: BlockTests.BlockEqualsIsCorrect(Block, Block, bool, string)
+  fullName: Koffing.Tests.BlockTests.BlockEqualsIsCorrect(Koffing.Blocks.Block, Koffing.Blocks.Block, bool, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("BlockEqualsTestCases")]
+
+      public static void BlockEqualsIsCorrect(Block blockA, Block blockB, bool expectedResult, string because)
+    parameters:
+    - id: blockA
+      type: Koffing.Blocks.Block
+    - id: blockB
+      type: Koffing.Blocks.Block
+    - id: expectedResult
+      type: System.Boolean
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("BlockEqualsTestCases")>
+
+      Public Shared Sub BlockEqualsIsCorrect(blockA As Block, blockB As Block, expectedResult As Boolean, because As String)
+  overload: Koffing.Tests.BlockTests.BlockEqualsIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: BlockEqualsTestCases
+  nameWithType.vb: BlockTests.BlockEqualsIsCorrect(Block, Block, Boolean, String)
+  fullName.vb: Koffing.Tests.BlockTests.BlockEqualsIsCorrect(Koffing.Blocks.Block, Koffing.Blocks.Block, Boolean, String)
+  name.vb: BlockEqualsIsCorrect(Block, Block, Boolean, String)
+- uid: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
+  commentId: M:Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
+  id: GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
+  parent: Koffing.Tests.BlockTests
+  langs:
+  - csharp
+  - vb
+  name: GetBlockHashCodeIsCorrect(Block, int)
+  nameWithType: BlockTests.GetBlockHashCodeIsCorrect(Block, int)
+  fullName: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block, int)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("GetBlockHashCodeTestCases")]
+
+      public static void GetBlockHashCodeIsCorrect(Block block, int expectedHashCode)
+    parameters:
+    - id: block
+      type: Koffing.Blocks.Block
+    - id: expectedHashCode
+      type: System.Int32
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("GetBlockHashCodeTestCases")>
+
+      Public Shared Sub GetBlockHashCodeIsCorrect(block As Block, expectedHashCode As Integer)
+  overload: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: GetBlockHashCodeTestCases
+  nameWithType.vb: BlockTests.GetBlockHashCodeIsCorrect(Block, Integer)
+  fullName.vb: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block, Integer)
+  name.vb: GetBlockHashCodeIsCorrect(Block, Integer)
+- uid: Koffing.Tests.BlockTests.CompareBlocksIsCorrect(Koffing.Blocks.Block,Koffing.Blocks.Block,System.Int32,System.String)
+  commentId: M:Koffing.Tests.BlockTests.CompareBlocksIsCorrect(Koffing.Blocks.Block,Koffing.Blocks.Block,System.Int32,System.String)
+  id: CompareBlocksIsCorrect(Koffing.Blocks.Block,Koffing.Blocks.Block,System.Int32,System.String)
+  parent: Koffing.Tests.BlockTests
+  langs:
+  - csharp
+  - vb
+  name: CompareBlocksIsCorrect(Block, Block, int, string)
+  nameWithType: BlockTests.CompareBlocksIsCorrect(Block, Block, int, string)
+  fullName: Koffing.Tests.BlockTests.CompareBlocksIsCorrect(Koffing.Blocks.Block, Koffing.Blocks.Block, int, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("CompareBlocksTestCases")]
+
+      public static void CompareBlocksIsCorrect(Block blockA, Block blockB, int expectedComparisonValue, string because)
+    parameters:
+    - id: blockA
+      type: Koffing.Blocks.Block
+    - id: blockB
+      type: Koffing.Blocks.Block
+    - id: expectedComparisonValue
+      type: System.Int32
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("CompareBlocksTestCases")>
+
+      Public Shared Sub CompareBlocksIsCorrect(blockA As Block, blockB As Block, expectedComparisonValue As Integer, because As String)
+  overload: Koffing.Tests.BlockTests.CompareBlocksIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CompareBlocksTestCases
+  nameWithType.vb: BlockTests.CompareBlocksIsCorrect(Block, Block, Integer, String)
+  fullName.vb: Koffing.Tests.BlockTests.CompareBlocksIsCorrect(Koffing.Blocks.Block, Koffing.Blocks.Block, Integer, String)
+  name.vb: CompareBlocksIsCorrect(Block, Block, Integer, String)
+- uid: Koffing.Tests.BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect(Koffing.Blocks.MadeBlockContext,System.Object,System.String)
+  commentId: M:Koffing.Tests.BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect(Koffing.Blocks.MadeBlockContext,System.Object,System.String)
+  id: MadeBlockContextEqualsEdgeCasesAreCorrect(Koffing.Blocks.MadeBlockContext,System.Object,System.String)
+  parent: Koffing.Tests.BlockTests
+  langs:
+  - csharp
+  - vb
+  name: MadeBlockContextEqualsEdgeCasesAreCorrect(MadeBlockContext, object, string)
+  nameWithType: BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect(MadeBlockContext, object, string)
+  fullName: Koffing.Tests.BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect(Koffing.Blocks.MadeBlockContext, object, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("MadeBlockContextEqualsEdgeTestCases")]
+
+      public static void MadeBlockContextEqualsEdgeCasesAreCorrect(MadeBlockContext contextA, object objectB, string because)
+    parameters:
+    - id: contextA
+      type: Koffing.Blocks.MadeBlockContext
+    - id: objectB
+      type: System.Object
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("MadeBlockContextEqualsEdgeTestCases")>
+
+      Public Shared Sub MadeBlockContextEqualsEdgeCasesAreCorrect(contextA As MadeBlockContext, objectB As Object, because As String)
+  overload: Koffing.Tests.BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: MadeBlockContextEqualsEdgeTestCases
+  nameWithType.vb: BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect(MadeBlockContext, Object, String)
+  fullName.vb: Koffing.Tests.BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect(Koffing.Blocks.MadeBlockContext, Object, String)
+  name.vb: MadeBlockContextEqualsEdgeCasesAreCorrect(MadeBlockContext, Object, String)
+- uid: Koffing.Tests.BlockTests.MadeBlockContextEqualsCasesAreCorrect(Koffing.Blocks.MadeBlockContext,Koffing.Blocks.MadeBlockContext,System.Boolean,System.String)
+  commentId: M:Koffing.Tests.BlockTests.MadeBlockContextEqualsCasesAreCorrect(Koffing.Blocks.MadeBlockContext,Koffing.Blocks.MadeBlockContext,System.Boolean,System.String)
+  id: MadeBlockContextEqualsCasesAreCorrect(Koffing.Blocks.MadeBlockContext,Koffing.Blocks.MadeBlockContext,System.Boolean,System.String)
+  parent: Koffing.Tests.BlockTests
+  langs:
+  - csharp
+  - vb
+  name: MadeBlockContextEqualsCasesAreCorrect(MadeBlockContext, MadeBlockContext, bool, string)
+  nameWithType: BlockTests.MadeBlockContextEqualsCasesAreCorrect(MadeBlockContext, MadeBlockContext, bool, string)
+  fullName: Koffing.Tests.BlockTests.MadeBlockContextEqualsCasesAreCorrect(Koffing.Blocks.MadeBlockContext, Koffing.Blocks.MadeBlockContext, bool, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("MadeBlockContextEqualsTestCases")]
+
+      public static void MadeBlockContextEqualsCasesAreCorrect(MadeBlockContext contextA, MadeBlockContext contextB, bool expectedResult, string because)
+    parameters:
+    - id: contextA
+      type: Koffing.Blocks.MadeBlockContext
+    - id: contextB
+      type: Koffing.Blocks.MadeBlockContext
+    - id: expectedResult
+      type: System.Boolean
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("MadeBlockContextEqualsTestCases")>
+
+      Public Shared Sub MadeBlockContextEqualsCasesAreCorrect(contextA As MadeBlockContext, contextB As MadeBlockContext, expectedResult As Boolean, because As String)
+  overload: Koffing.Tests.BlockTests.MadeBlockContextEqualsCasesAreCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: MadeBlockContextEqualsTestCases
+  nameWithType.vb: BlockTests.MadeBlockContextEqualsCasesAreCorrect(MadeBlockContext, MadeBlockContext, Boolean, String)
+  fullName.vb: Koffing.Tests.BlockTests.MadeBlockContextEqualsCasesAreCorrect(Koffing.Blocks.MadeBlockContext, Koffing.Blocks.MadeBlockContext, Boolean, String)
+  name.vb: MadeBlockContextEqualsCasesAreCorrect(MadeBlockContext, MadeBlockContext, Boolean, String)
+- uid: Koffing.Tests.BlockTests.CompareMadeBlockContextsIsCorrect(Koffing.Blocks.MadeBlockContext,Koffing.Blocks.MadeBlockContext,System.Int32,System.String)
+  commentId: M:Koffing.Tests.BlockTests.CompareMadeBlockContextsIsCorrect(Koffing.Blocks.MadeBlockContext,Koffing.Blocks.MadeBlockContext,System.Int32,System.String)
+  id: CompareMadeBlockContextsIsCorrect(Koffing.Blocks.MadeBlockContext,Koffing.Blocks.MadeBlockContext,System.Int32,System.String)
+  parent: Koffing.Tests.BlockTests
+  langs:
+  - csharp
+  - vb
+  name: CompareMadeBlockContextsIsCorrect(MadeBlockContext, MadeBlockContext, int, string)
+  nameWithType: BlockTests.CompareMadeBlockContextsIsCorrect(MadeBlockContext, MadeBlockContext, int, string)
+  fullName: Koffing.Tests.BlockTests.CompareMadeBlockContextsIsCorrect(Koffing.Blocks.MadeBlockContext, Koffing.Blocks.MadeBlockContext, int, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("CompareMadeBlockContextsTestCases")]
+
+      public static void CompareMadeBlockContextsIsCorrect(MadeBlockContext contextA, MadeBlockContext contextB, int expectedComparisonValue, string because)
+    parameters:
+    - id: contextA
+      type: Koffing.Blocks.MadeBlockContext
+    - id: contextB
+      type: Koffing.Blocks.MadeBlockContext
+    - id: expectedComparisonValue
+      type: System.Int32
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("CompareMadeBlockContextsTestCases")>
+
+      Public Shared Sub CompareMadeBlockContextsIsCorrect(contextA As MadeBlockContext, contextB As MadeBlockContext, expectedComparisonValue As Integer, because As String)
+  overload: Koffing.Tests.BlockTests.CompareMadeBlockContextsIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CompareMadeBlockContextsTestCases
+  nameWithType.vb: BlockTests.CompareMadeBlockContextsIsCorrect(MadeBlockContext, MadeBlockContext, Integer, String)
+  fullName.vb: Koffing.Tests.BlockTests.CompareMadeBlockContextsIsCorrect(Koffing.Blocks.MadeBlockContext, Koffing.Blocks.MadeBlockContext, Integer, String)
+  name.vb: CompareMadeBlockContextsIsCorrect(MadeBlockContext, MadeBlockContext, Integer, String)
+- uid: Koffing.Tests.BlockTests.PairsAndPairWaitsCastingIsCorrect
+  commentId: M:Koffing.Tests.BlockTests.PairsAndPairWaitsCastingIsCorrect
+  id: PairsAndPairWaitsCastingIsCorrect
+  parent: Koffing.Tests.BlockTests
+  langs:
+  - csharp
+  - vb
+  name: PairsAndPairWaitsCastingIsCorrect()
+  nameWithType: BlockTests.PairsAndPairWaitsCastingIsCorrect()
+  fullName: Koffing.Tests.BlockTests.PairsAndPairWaitsCastingIsCorrect()
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      public static void PairsAndPairWaitsCastingIsCorrect()
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      Public Shared Sub PairsAndPairWaitsCastingIsCorrect()
+  overload: Koffing.Tests.BlockTests.PairsAndPairWaitsCastingIsCorrect*
+- uid: Koffing.Tests.BlockTests.CompareBlockSetsIsCorrect(Koffing.Blocks.BlockSet,Koffing.Blocks.BlockSet,System.Int32,System.String)
+  commentId: M:Koffing.Tests.BlockTests.CompareBlockSetsIsCorrect(Koffing.Blocks.BlockSet,Koffing.Blocks.BlockSet,System.Int32,System.String)
+  id: CompareBlockSetsIsCorrect(Koffing.Blocks.BlockSet,Koffing.Blocks.BlockSet,System.Int32,System.String)
+  parent: Koffing.Tests.BlockTests
+  langs:
+  - csharp
+  - vb
+  name: CompareBlockSetsIsCorrect(BlockSet, BlockSet, int, string)
+  nameWithType: BlockTests.CompareBlockSetsIsCorrect(BlockSet, BlockSet, int, string)
+  fullName: Koffing.Tests.BlockTests.CompareBlockSetsIsCorrect(Koffing.Blocks.BlockSet, Koffing.Blocks.BlockSet, int, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("CompareBlockSetsTestCases")]
+
+      public static void CompareBlockSetsIsCorrect(BlockSet blockSetA, BlockSet blockSetB, int expectedComparisonValue, string because)
+    parameters:
+    - id: blockSetA
+      type: Koffing.Blocks.BlockSet
+    - id: blockSetB
+      type: Koffing.Blocks.BlockSet
+    - id: expectedComparisonValue
+      type: System.Int32
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("CompareBlockSetsTestCases")>
+
+      Public Shared Sub CompareBlockSetsIsCorrect(blockSetA As BlockSet, blockSetB As BlockSet, expectedComparisonValue As Integer, because As String)
+  overload: Koffing.Tests.BlockTests.CompareBlockSetsIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CompareBlockSetsTestCases
+  nameWithType.vb: BlockTests.CompareBlockSetsIsCorrect(BlockSet, BlockSet, Integer, String)
+  fullName.vb: Koffing.Tests.BlockTests.CompareBlockSetsIsCorrect(Koffing.Blocks.BlockSet, Koffing.Blocks.BlockSet, Integer, String)
+  name.vb: CompareBlockSetsIsCorrect(BlockSet, BlockSet, Integer, String)
+- uid: Koffing.Tests.BlockTests.GetPossibleBlockSetsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.BlockSet},System.String)
+  commentId: M:Koffing.Tests.BlockTests.GetPossibleBlockSetsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.BlockSet},System.String)
+  id: GetPossibleBlockSetsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.BlockSet},System.String)
+  parent: Koffing.Tests.BlockTests
+  langs:
+  - csharp
+  - vb
+  name: GetPossibleBlockSetsIsCorrect(string, List<BlockSet>, string)
+  nameWithType: BlockTests.GetPossibleBlockSetsIsCorrect(string, List<BlockSet>, string)
+  fullName: Koffing.Tests.BlockTests.GetPossibleBlockSetsIsCorrect(string, System.Collections.Generic.List<Koffing.Blocks.BlockSet>, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("GetPossibleBlockSetsTestCases")]
+
+      public static void GetPossibleBlockSetsIsCorrect(string tilesString, List<BlockSet> expectedOutput, string because)
+    parameters:
+    - id: tilesString
+      type: System.String
+    - id: expectedOutput
+      type: System.Collections.Generic.List{Koffing.Blocks.BlockSet}
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("GetPossibleBlockSetsTestCases")>
+
+      Public Shared Sub GetPossibleBlockSetsIsCorrect(tilesString As String, expectedOutput As List(Of BlockSet), because As String)
+  overload: Koffing.Tests.BlockTests.GetPossibleBlockSetsIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: GetPossibleBlockSetsTestCases
+  nameWithType.vb: BlockTests.GetPossibleBlockSetsIsCorrect(String, List(Of BlockSet), String)
+  fullName.vb: Koffing.Tests.BlockTests.GetPossibleBlockSetsIsCorrect(String, System.Collections.Generic.List(Of Koffing.Blocks.BlockSet), String)
+  name.vb: GetPossibleBlockSetsIsCorrect(String, List(Of BlockSet), String)
+- uid: Koffing.Tests.BlockTests.#ctor
+  commentId: M:Koffing.Tests.BlockTests.#ctor
+  id: '#ctor'
+  parent: Koffing.Tests.BlockTests
+  langs:
+  - csharp
+  - vb
+  name: BlockTests()
+  nameWithType: BlockTests.BlockTests()
+  fullName: Koffing.Tests.BlockTests.BlockTests()
+  type: Constructor
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/BlockTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: public BlockTests()
+    content.vb: Public Sub New()
+  overload: Koffing.Tests.BlockTests.#ctor*
+  nameWithType.vb: BlockTests.New()
+  fullName.vb: Koffing.Tests.BlockTests.New()
+  name.vb: New()
+references:
+- uid: Koffing.Tests
+  commentId: N:Koffing.Tests
+  isExternal: true
+  name: Koffing.Tests
+  nameWithType: Koffing.Tests
+  fullName: Koffing.Tests
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Tests
+    name: Tests
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Tests
+    name: Tests
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koffing.Tests.BlockTests.Setup*
+  commentId: Overload:Koffing.Tests.BlockTests.Setup
+  isExternal: true
+  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_Setup
+  name: Setup
+  nameWithType: BlockTests.Setup
+  fullName: Koffing.Tests.BlockTests.Setup
+- uid: Koffing.Tests.BlockTests.TearDown*
+  commentId: Overload:Koffing.Tests.BlockTests.TearDown
+  isExternal: true
+  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_TearDown
+  name: TearDown
+  nameWithType: BlockTests.TearDown
+  fullName: Koffing.Tests.BlockTests.TearDown
+- uid: Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect*
+  commentId: Overload:Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect
+  isExternal: true
+  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_BlockEqualsEdgeCasesAreCorrect_Koffing_Blocks_Block_System_Object_System_String_
+  name: BlockEqualsEdgeCasesAreCorrect
+  nameWithType: BlockTests.BlockEqualsEdgeCasesAreCorrect
+  fullName: Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect
+- uid: Koffing.Blocks.Block
+  commentId: T:Koffing.Blocks.Block
+  parent: Koffing.Blocks
+  isExternal: true
+  href: Koffing.Blocks.Block.html
+  name: Block
+  nameWithType: Block
+  fullName: Koffing.Blocks.Block
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Koffing.Blocks
+  commentId: N:Koffing.Blocks
+  isExternal: true
+  name: Koffing.Blocks
+  nameWithType: Koffing.Blocks
+  fullName: Koffing.Blocks
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Blocks
+    name: Blocks
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Blocks
+    name: Blocks
+    isExternal: true
+- uid: Koffing.Tests.BlockTests.BlockEqualsIsCorrect*
+  commentId: Overload:Koffing.Tests.BlockTests.BlockEqualsIsCorrect
+  isExternal: true
+  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_BlockEqualsIsCorrect_Koffing_Blocks_Block_Koffing_Blocks_Block_System_Boolean_System_String_
+  name: BlockEqualsIsCorrect
+  nameWithType: BlockTests.BlockEqualsIsCorrect
+  fullName: Koffing.Tests.BlockTests.BlockEqualsIsCorrect
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect*
+  commentId: Overload:Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect
+  isExternal: true
+  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_Koffing_Blocks_Block_System_Int32_
+  name: GetBlockHashCodeIsCorrect
+  nameWithType: BlockTests.GetBlockHashCodeIsCorrect
+  fullName: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Koffing.Tests.BlockTests.CompareBlocksIsCorrect*
+  commentId: Overload:Koffing.Tests.BlockTests.CompareBlocksIsCorrect
+  isExternal: true
+  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_CompareBlocksIsCorrect_Koffing_Blocks_Block_Koffing_Blocks_Block_System_Int32_System_String_
+  name: CompareBlocksIsCorrect
+  nameWithType: BlockTests.CompareBlocksIsCorrect
+  fullName: Koffing.Tests.BlockTests.CompareBlocksIsCorrect
+- uid: Koffing.Tests.BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect*
+  commentId: Overload:Koffing.Tests.BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect
+  isExternal: true
+  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_MadeBlockContextEqualsEdgeCasesAreCorrect_Koffing_Blocks_MadeBlockContext_System_Object_System_String_
+  name: MadeBlockContextEqualsEdgeCasesAreCorrect
+  nameWithType: BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect
+  fullName: Koffing.Tests.BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect
+- uid: Koffing.Blocks.MadeBlockContext
+  commentId: T:Koffing.Blocks.MadeBlockContext
+  parent: Koffing.Blocks
+  isExternal: true
+  href: Koffing.Blocks.MadeBlockContext.html
+  name: MadeBlockContext
+  nameWithType: MadeBlockContext
+  fullName: Koffing.Blocks.MadeBlockContext
+- uid: Koffing.Tests.BlockTests.MadeBlockContextEqualsCasesAreCorrect*
+  commentId: Overload:Koffing.Tests.BlockTests.MadeBlockContextEqualsCasesAreCorrect
+  isExternal: true
+  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_MadeBlockContextEqualsCasesAreCorrect_Koffing_Blocks_MadeBlockContext_Koffing_Blocks_MadeBlockContext_System_Boolean_System_String_
+  name: MadeBlockContextEqualsCasesAreCorrect
+  nameWithType: BlockTests.MadeBlockContextEqualsCasesAreCorrect
+  fullName: Koffing.Tests.BlockTests.MadeBlockContextEqualsCasesAreCorrect
+- uid: Koffing.Tests.BlockTests.CompareMadeBlockContextsIsCorrect*
+  commentId: Overload:Koffing.Tests.BlockTests.CompareMadeBlockContextsIsCorrect
+  isExternal: true
+  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_CompareMadeBlockContextsIsCorrect_Koffing_Blocks_MadeBlockContext_Koffing_Blocks_MadeBlockContext_System_Int32_System_String_
+  name: CompareMadeBlockContextsIsCorrect
+  nameWithType: BlockTests.CompareMadeBlockContextsIsCorrect
+  fullName: Koffing.Tests.BlockTests.CompareMadeBlockContextsIsCorrect
+- uid: Koffing.Tests.BlockTests.PairsAndPairWaitsCastingIsCorrect*
+  commentId: Overload:Koffing.Tests.BlockTests.PairsAndPairWaitsCastingIsCorrect
+  isExternal: true
+  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_PairsAndPairWaitsCastingIsCorrect
+  name: PairsAndPairWaitsCastingIsCorrect
+  nameWithType: BlockTests.PairsAndPairWaitsCastingIsCorrect
+  fullName: Koffing.Tests.BlockTests.PairsAndPairWaitsCastingIsCorrect
+- uid: Koffing.Tests.BlockTests.CompareBlockSetsIsCorrect*
+  commentId: Overload:Koffing.Tests.BlockTests.CompareBlockSetsIsCorrect
+  isExternal: true
+  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_CompareBlockSetsIsCorrect_Koffing_Blocks_BlockSet_Koffing_Blocks_BlockSet_System_Int32_System_String_
+  name: CompareBlockSetsIsCorrect
+  nameWithType: BlockTests.CompareBlockSetsIsCorrect
+  fullName: Koffing.Tests.BlockTests.CompareBlockSetsIsCorrect
+- uid: Koffing.Blocks.BlockSet
+  commentId: T:Koffing.Blocks.BlockSet
+  parent: Koffing.Blocks
+  isExternal: true
+  href: Koffing.Blocks.BlockSet.html
+  name: BlockSet
+  nameWithType: BlockSet
+  fullName: Koffing.Blocks.BlockSet
+- uid: Koffing.Tests.BlockTests.GetPossibleBlockSetsIsCorrect*
+  commentId: Overload:Koffing.Tests.BlockTests.GetPossibleBlockSetsIsCorrect
+  isExternal: true
+  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetPossibleBlockSetsIsCorrect_System_String_System_Collections_Generic_List_Koffing_Blocks_BlockSet__System_String_
+  name: GetPossibleBlockSetsIsCorrect
+  nameWithType: BlockTests.GetPossibleBlockSetsIsCorrect
+  fullName: Koffing.Tests.BlockTests.GetPossibleBlockSetsIsCorrect
+- uid: System.Collections.Generic.List{Koffing.Blocks.BlockSet}
+  commentId: T:System.Collections.Generic.List{Koffing.Blocks.BlockSet}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<BlockSet>
+  nameWithType: List<BlockSet>
+  fullName: System.Collections.Generic.List<Koffing.Blocks.BlockSet>
+  nameWithType.vb: List(Of BlockSet)
+  fullName.vb: System.Collections.Generic.List(Of Koffing.Blocks.BlockSet)
+  name.vb: List(Of BlockSet)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Koffing.Blocks.BlockSet
+    name: BlockSet
+    isExternal: true
+    href: Koffing.Blocks.BlockSet.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Blocks.BlockSet
+    name: BlockSet
+    isExternal: true
+    href: Koffing.Blocks.BlockSet.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Koffing.Tests.BlockTests.#ctor*
+  commentId: Overload:Koffing.Tests.BlockTests.#ctor
+  isExternal: true
+  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests__ctor
+  name: BlockTests
+  nameWithType: BlockTests.BlockTests
+  fullName: Koffing.Tests.BlockTests.BlockTests
+  nameWithType.vb: BlockTests.New
+  fullName.vb: Koffing.Tests.BlockTests.New
+  name.vb: New

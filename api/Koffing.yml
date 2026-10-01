@@ -1,0 +1,39 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing
+  commentId: N:Koffing
+  id: Koffing
+  children:
+  - Koffing.Extensions
+  - Koffing.Helpers
+  langs:
+  - csharp
+  - vb
+  name: Koffing
+  nameWithType: Koffing
+  fullName: Koffing
+  type: Namespace
+  assemblies:
+  - Koffing
+references:
+- uid: Koffing.Extensions
+  commentId: T:Koffing.Extensions
+  parent: Koffing
+  isExternal: true
+  href: Koffing.Extensions.html
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Koffing.Extensions
+- uid: Koffing.Helpers
+  commentId: T:Koffing.Helpers
+  isExternal: true
+  href: Koffing.Helpers.html
+  name: Helpers
+  nameWithType: Helpers
+  fullName: Koffing.Helpers
+- uid: Koffing
+  commentId: N:Koffing
+  isExternal: true
+  name: Koffing
+  nameWithType: Koffing
+  fullName: Koffing

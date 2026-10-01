@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Matches.PlayerCount
+  commentId: T:Koffing.Matches.PlayerCount
+  id: PlayerCount
+  parent: Koffing.Matches
+  children:
+  - Koffing.Matches.PlayerCount.Four
+  - Koffing.Matches.PlayerCount.Three
+  - Koffing.Matches.PlayerCount.Two
+  langs:
+  - csharp
+  - vb
+  name: PlayerCount
+  nameWithType: PlayerCount
+  fullName: Koffing.Matches.PlayerCount
+  type: Enum
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/PlayerCount.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Matches
+  syntax:
+    content: public enum PlayerCount
+    content.vb: Public Enum PlayerCount
+- uid: Koffing.Matches.PlayerCount.Two
+  commentId: F:Koffing.Matches.PlayerCount.Two
+  id: Two
+  parent: Koffing.Matches.PlayerCount
+  langs:
+  - csharp
+  - vb
+  name: Two
+  nameWithType: PlayerCount.Two
+  fullName: Koffing.Matches.PlayerCount.Two
+  type: Field
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/PlayerCount.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Matches
+  syntax:
+    content: Two = 2
+    return:
+      type: Koffing.Matches.PlayerCount
+- uid: Koffing.Matches.PlayerCount.Three
+  commentId: F:Koffing.Matches.PlayerCount.Three
+  id: Three
+  parent: Koffing.Matches.PlayerCount
+  langs:
+  - csharp
+  - vb
+  name: Three
+  nameWithType: PlayerCount.Three
+  fullName: Koffing.Matches.PlayerCount.Three
+  type: Field
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/PlayerCount.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Matches
+  syntax:
+    content: Three = 3
+    return:
+      type: Koffing.Matches.PlayerCount
+- uid: Koffing.Matches.PlayerCount.Four
+  commentId: F:Koffing.Matches.PlayerCount.Four
+  id: Four
+  parent: Koffing.Matches.PlayerCount
+  langs:
+  - csharp
+  - vb
+  name: Four
+  nameWithType: PlayerCount.Four
+  fullName: Koffing.Matches.PlayerCount.Four
+  type: Field
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/PlayerCount.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Matches
+  syntax:
+    content: Four = 4
+    return:
+      type: Koffing.Matches.PlayerCount
+references:
+- uid: Koffing.Matches
+  commentId: N:Koffing.Matches
+  isExternal: true
+  name: Koffing.Matches
+  nameWithType: Koffing.Matches
+  fullName: Koffing.Matches
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Matches
+    name: Matches
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Matches
+    name: Matches
+    isExternal: true
+- uid: Koffing.Matches.PlayerCount
+  commentId: T:Koffing.Matches.PlayerCount
+  parent: Koffing.Matches
+  isExternal: true
+  href: Koffing.Matches.PlayerCount.html
+  name: PlayerCount
+  nameWithType: PlayerCount
+  fullName: Koffing.Matches.PlayerCount

@@ -4,13 +4,14 @@
     {
       "src": [
         {
-          "src": "../src",
+          "src": "../Koffing/.godot/mono/temp/bin/Debug",
           "files": [
-            "**/*.csproj"
+            "Koffing.dll"
           ]
         }
       ],
-      "dest": "api"
+      "dest": "api",
+      "filter": "apiFilterConfig.yml"
     }
   ],
   "build": {

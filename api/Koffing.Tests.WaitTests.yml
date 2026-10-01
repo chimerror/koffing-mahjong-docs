@@ -1,0 +1,1278 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Tests.WaitTests
+  commentId: T:Koffing.Tests.WaitTests
+  id: WaitTests
+  parent: Koffing.Tests
+  children:
+  - Koffing.Tests.WaitTests.#ctor
+  - Koffing.Tests.WaitTests.CanCreateOrphan
+  - Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  - Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  - Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  - Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  - Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  - Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  - Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  - Koffing.Tests.WaitTests.Setup
+  - Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect(Koffing.Waits.SevenPairsWait,Koffing.Waits.SevenPairsWait,System.Boolean,System.String)
+  - Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  - Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  - Koffing.Tests.WaitTests.TearDown
+  - Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect(Koffing.Waits.ThirteenOrphansWait,Koffing.Waits.ThirteenOrphansWait,System.Boolean,System.String)
+  - Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  langs:
+  - csharp
+  - vb
+  name: WaitTests
+  nameWithType: WaitTests
+  fullName: Koffing.Tests.WaitTests
+  type: Class
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestSuite(16, "")]
+
+      public class WaitTests
+    content.vb: >-
+      <TestSuite(16, "")>
+
+      Public Class WaitTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: GdUnit4.TestSuiteAttribute
+    ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
+    arguments:
+    - type: System.Int32
+      value: 16
+    - type: System.String
+      value: ''
+- uid: Koffing.Tests.WaitTests.Setup
+  commentId: M:Koffing.Tests.WaitTests.Setup
+  id: Setup
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: WaitTests.Setup()
+  fullName: Koffing.Tests.WaitTests.Setup()
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [Before(19, "Setup")]
+
+      public static void Setup()
+    content.vb: >-
+      <Before(19, "Setup")>
+
+      Public Shared Sub Setup()
+  overload: Koffing.Tests.WaitTests.Setup*
+  attributes:
+  - type: GdUnit4.BeforeAttribute
+    ctor: GdUnit4.BeforeAttribute.#ctor(System.Int32,System.String)
+    arguments:
+    - type: System.Int32
+      value: 19
+    - type: System.String
+      value: Setup
+- uid: Koffing.Tests.WaitTests.TearDown
+  commentId: M:Koffing.Tests.WaitTests.TearDown
+  id: TearDown
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: TearDown()
+  nameWithType: WaitTests.TearDown()
+  fullName: Koffing.Tests.WaitTests.TearDown()
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [After(25, "TearDown")]
+
+      public static void TearDown()
+    content.vb: >-
+      <After(25, "TearDown")>
+
+      Public Shared Sub TearDown()
+  overload: Koffing.Tests.WaitTests.TearDown*
+  attributes:
+  - type: GdUnit4.AfterAttribute
+    ctor: GdUnit4.AfterAttribute.#ctor(System.Int32,System.String)
+    arguments:
+    - type: System.Int32
+      value: 25
+    - type: System.String
+      value: TearDown
+- uid: Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  commentId: M:Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  id: GetFirstLevelWaitsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: GetFirstLevelWaitsIsCorrect(string, List<MadeBlockContext>, string)
+  nameWithType: WaitTests.GetFirstLevelWaitsIsCorrect(string, List<MadeBlockContext>, string)
+  fullName: Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect(string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("GetFirstLevelWaitsTestCases")]
+
+      public static void GetFirstLevelWaitsIsCorrect(string tilesNotation, List<MadeBlockContext> expectedOutput, string because)
+    parameters:
+    - id: tilesNotation
+      type: System.String
+    - id: expectedOutput
+      type: System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext}
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("GetFirstLevelWaitsTestCases")>
+
+      Public Shared Sub GetFirstLevelWaitsIsCorrect(tilesNotation As String, expectedOutput As List(Of MadeBlockContext), because As String)
+  overload: Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: GetFirstLevelWaitsTestCases
+  nameWithType.vb: WaitTests.GetFirstLevelWaitsIsCorrect(String, List(Of MadeBlockContext), String)
+  fullName.vb: Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect(String, System.Collections.Generic.List(Of Koffing.Blocks.MadeBlockContext), String)
+  name.vb: GetFirstLevelWaitsIsCorrect(String, List(Of MadeBlockContext), String)
+- uid: Koffing.Tests.WaitTests.CanCreateOrphan
+  commentId: M:Koffing.Tests.WaitTests.CanCreateOrphan
+  id: CanCreateOrphan
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: CanCreateOrphan()
+  nameWithType: WaitTests.CanCreateOrphan()
+  fullName: Koffing.Tests.WaitTests.CanCreateOrphan()
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      public static void CanCreateOrphan()
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      Public Shared Sub CanCreateOrphan()
+  overload: Koffing.Tests.WaitTests.CanCreateOrphan*
+- uid: Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  commentId: M:Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  id: RyanmenGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: RyanmenGetPossibleForTileIsCorrect(string, string, List<MadeBlockContext>, string)
+  nameWithType: WaitTests.RyanmenGetPossibleForTileIsCorrect(string, string, List<MadeBlockContext>, string)
+  fullName: Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect(string, string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("RyanmenGetPossibleForTileTestCases")]
+
+      public static void RyanmenGetPossibleForTileIsCorrect(string tileNotation, string otherTilesNotation, List<MadeBlockContext> expectedOutput, string because)
+    parameters:
+    - id: tileNotation
+      type: System.String
+    - id: otherTilesNotation
+      type: System.String
+    - id: expectedOutput
+      type: System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext}
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("RyanmenGetPossibleForTileTestCases")>
+
+      Public Shared Sub RyanmenGetPossibleForTileIsCorrect(tileNotation As String, otherTilesNotation As String, expectedOutput As List(Of MadeBlockContext), because As String)
+  overload: Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: RyanmenGetPossibleForTileTestCases
+  nameWithType.vb: WaitTests.RyanmenGetPossibleForTileIsCorrect(String, String, List(Of MadeBlockContext), String)
+  fullName.vb: Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect(String, String, System.Collections.Generic.List(Of Koffing.Blocks.MadeBlockContext), String)
+  name.vb: RyanmenGetPossibleForTileIsCorrect(String, String, List(Of MadeBlockContext), String)
+- uid: Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  commentId: M:Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  id: RyanmenGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: RyanmenGetPossibleIsCorrect(string, List<MadeBlockContext>, string)
+  nameWithType: WaitTests.RyanmenGetPossibleIsCorrect(string, List<MadeBlockContext>, string)
+  fullName: Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect(string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("RyanmenGetPossibleTestCases")]
+
+      public static void RyanmenGetPossibleIsCorrect(string tilesNotation, List<MadeBlockContext> expectedOutput, string because)
+    parameters:
+    - id: tilesNotation
+      type: System.String
+    - id: expectedOutput
+      type: System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext}
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("RyanmenGetPossibleTestCases")>
+
+      Public Shared Sub RyanmenGetPossibleIsCorrect(tilesNotation As String, expectedOutput As List(Of MadeBlockContext), because As String)
+  overload: Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: RyanmenGetPossibleTestCases
+  nameWithType.vb: WaitTests.RyanmenGetPossibleIsCorrect(String, List(Of MadeBlockContext), String)
+  fullName.vb: Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect(String, System.Collections.Generic.List(Of Koffing.Blocks.MadeBlockContext), String)
+  name.vb: RyanmenGetPossibleIsCorrect(String, List(Of MadeBlockContext), String)
+- uid: Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  commentId: M:Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  id: KanchanGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: KanchanGetPossibleForTileIsCorrect(string, string, List<MadeBlockContext>, string)
+  nameWithType: WaitTests.KanchanGetPossibleForTileIsCorrect(string, string, List<MadeBlockContext>, string)
+  fullName: Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect(string, string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("KanchanGetPossibleForTileTestCases")]
+
+      public static void KanchanGetPossibleForTileIsCorrect(string tileNotation, string otherTilesNotation, List<MadeBlockContext> expectedOutput, string because)
+    parameters:
+    - id: tileNotation
+      type: System.String
+    - id: otherTilesNotation
+      type: System.String
+    - id: expectedOutput
+      type: System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext}
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("KanchanGetPossibleForTileTestCases")>
+
+      Public Shared Sub KanchanGetPossibleForTileIsCorrect(tileNotation As String, otherTilesNotation As String, expectedOutput As List(Of MadeBlockContext), because As String)
+  overload: Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: KanchanGetPossibleForTileTestCases
+  nameWithType.vb: WaitTests.KanchanGetPossibleForTileIsCorrect(String, String, List(Of MadeBlockContext), String)
+  fullName.vb: Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect(String, String, System.Collections.Generic.List(Of Koffing.Blocks.MadeBlockContext), String)
+  name.vb: KanchanGetPossibleForTileIsCorrect(String, String, List(Of MadeBlockContext), String)
+- uid: Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  commentId: M:Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  id: KanchanGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: KanchanGetPossibleIsCorrect(string, List<MadeBlockContext>, string)
+  nameWithType: WaitTests.KanchanGetPossibleIsCorrect(string, List<MadeBlockContext>, string)
+  fullName: Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect(string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("KanchanGetPossibleTestCases")]
+
+      public static void KanchanGetPossibleIsCorrect(string tilesNotation, List<MadeBlockContext> expectedOutput, string because)
+    parameters:
+    - id: tilesNotation
+      type: System.String
+    - id: expectedOutput
+      type: System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext}
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("KanchanGetPossibleTestCases")>
+
+      Public Shared Sub KanchanGetPossibleIsCorrect(tilesNotation As String, expectedOutput As List(Of MadeBlockContext), because As String)
+  overload: Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: KanchanGetPossibleTestCases
+  nameWithType.vb: WaitTests.KanchanGetPossibleIsCorrect(String, List(Of MadeBlockContext), String)
+  fullName.vb: Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect(String, System.Collections.Generic.List(Of Koffing.Blocks.MadeBlockContext), String)
+  name.vb: KanchanGetPossibleIsCorrect(String, List(Of MadeBlockContext), String)
+- uid: Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  commentId: M:Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  id: PenchanGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: PenchanGetPossibleForTileIsCorrect(string, string, List<MadeBlockContext>, string)
+  nameWithType: WaitTests.PenchanGetPossibleForTileIsCorrect(string, string, List<MadeBlockContext>, string)
+  fullName: Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect(string, string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("PenchanGetPossibleForTileTestCases")]
+
+      public static void PenchanGetPossibleForTileIsCorrect(string tileNotation, string otherTilesNotation, List<MadeBlockContext> expectedOutput, string because)
+    parameters:
+    - id: tileNotation
+      type: System.String
+    - id: otherTilesNotation
+      type: System.String
+    - id: expectedOutput
+      type: System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext}
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("PenchanGetPossibleForTileTestCases")>
+
+      Public Shared Sub PenchanGetPossibleForTileIsCorrect(tileNotation As String, otherTilesNotation As String, expectedOutput As List(Of MadeBlockContext), because As String)
+  overload: Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: PenchanGetPossibleForTileTestCases
+  nameWithType.vb: WaitTests.PenchanGetPossibleForTileIsCorrect(String, String, List(Of MadeBlockContext), String)
+  fullName.vb: Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect(String, String, System.Collections.Generic.List(Of Koffing.Blocks.MadeBlockContext), String)
+  name.vb: PenchanGetPossibleForTileIsCorrect(String, String, List(Of MadeBlockContext), String)
+- uid: Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  commentId: M:Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  id: PenchanGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: PenchanGetPossibleIsCorrect(string, List<MadeBlockContext>, string)
+  nameWithType: WaitTests.PenchanGetPossibleIsCorrect(string, List<MadeBlockContext>, string)
+  fullName: Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect(string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("PenchanGetPossibleTestCases")]
+
+      public static void PenchanGetPossibleIsCorrect(string tilesNotation, List<MadeBlockContext> expectedOutput, string because)
+    parameters:
+    - id: tilesNotation
+      type: System.String
+    - id: expectedOutput
+      type: System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext}
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("PenchanGetPossibleTestCases")>
+
+      Public Shared Sub PenchanGetPossibleIsCorrect(tilesNotation As String, expectedOutput As List(Of MadeBlockContext), because As String)
+  overload: Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: PenchanGetPossibleTestCases
+  nameWithType.vb: WaitTests.PenchanGetPossibleIsCorrect(String, List(Of MadeBlockContext), String)
+  fullName.vb: Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect(String, System.Collections.Generic.List(Of Koffing.Blocks.MadeBlockContext), String)
+  name.vb: PenchanGetPossibleIsCorrect(String, List(Of MadeBlockContext), String)
+- uid: Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect(Koffing.Waits.SevenPairsWait,Koffing.Waits.SevenPairsWait,System.Boolean,System.String)
+  commentId: M:Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect(Koffing.Waits.SevenPairsWait,Koffing.Waits.SevenPairsWait,System.Boolean,System.String)
+  id: SevenPairsWaitEqualsIsCorrect(Koffing.Waits.SevenPairsWait,Koffing.Waits.SevenPairsWait,System.Boolean,System.String)
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: SevenPairsWaitEqualsIsCorrect(SevenPairsWait, SevenPairsWait, bool, string)
+  nameWithType: WaitTests.SevenPairsWaitEqualsIsCorrect(SevenPairsWait, SevenPairsWait, bool, string)
+  fullName: Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect(Koffing.Waits.SevenPairsWait, Koffing.Waits.SevenPairsWait, bool, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("SevenPairsWaitEqualsTestCases")]
+
+      public static void SevenPairsWaitEqualsIsCorrect(SevenPairsWait blockA, SevenPairsWait blockB, bool expectedResult, string because)
+    parameters:
+    - id: blockA
+      type: Koffing.Waits.SevenPairsWait
+    - id: blockB
+      type: Koffing.Waits.SevenPairsWait
+    - id: expectedResult
+      type: System.Boolean
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("SevenPairsWaitEqualsTestCases")>
+
+      Public Shared Sub SevenPairsWaitEqualsIsCorrect(blockA As SevenPairsWait, blockB As SevenPairsWait, expectedResult As Boolean, because As String)
+  overload: Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: SevenPairsWaitEqualsTestCases
+  nameWithType.vb: WaitTests.SevenPairsWaitEqualsIsCorrect(SevenPairsWait, SevenPairsWait, Boolean, String)
+  fullName.vb: Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect(Koffing.Waits.SevenPairsWait, Koffing.Waits.SevenPairsWait, Boolean, String)
+  name.vb: SevenPairsWaitEqualsIsCorrect(SevenPairsWait, SevenPairsWait, Boolean, String)
+- uid: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  commentId: M:Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  id: SevenPairsWaitGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: SevenPairsWaitGetPossibleForTileIsCorrect(string, string, List<MadeBlockContext>, string)
+  nameWithType: WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect(string, string, List<MadeBlockContext>, string)
+  fullName: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect(string, string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("SevenPairsWaitGetPossibleForTileTestCases")]
+
+      public static void SevenPairsWaitGetPossibleForTileIsCorrect(string tileNotation, string otherTilesNotation, List<MadeBlockContext> expectedOutput, string because)
+    parameters:
+    - id: tileNotation
+      type: System.String
+    - id: otherTilesNotation
+      type: System.String
+    - id: expectedOutput
+      type: System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext}
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("SevenPairsWaitGetPossibleForTileTestCases")>
+
+      Public Shared Sub SevenPairsWaitGetPossibleForTileIsCorrect(tileNotation As String, otherTilesNotation As String, expectedOutput As List(Of MadeBlockContext), because As String)
+  overload: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: SevenPairsWaitGetPossibleForTileTestCases
+  nameWithType.vb: WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect(String, String, List(Of MadeBlockContext), String)
+  fullName.vb: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect(String, String, System.Collections.Generic.List(Of Koffing.Blocks.MadeBlockContext), String)
+  name.vb: SevenPairsWaitGetPossibleForTileIsCorrect(String, String, List(Of MadeBlockContext), String)
+- uid: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  commentId: M:Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  id: SevenPairsWaitGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: SevenPairsWaitGetPossibleIsCorrect(string, List<MadeBlockContext>, string)
+  nameWithType: WaitTests.SevenPairsWaitGetPossibleIsCorrect(string, List<MadeBlockContext>, string)
+  fullName: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect(string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("SevenPairsWaitGetPossibleTestCases")]
+
+      public static void SevenPairsWaitGetPossibleIsCorrect(string tilesNotation, List<MadeBlockContext> expectedOutput, string because)
+    parameters:
+    - id: tilesNotation
+      type: System.String
+    - id: expectedOutput
+      type: System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext}
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("SevenPairsWaitGetPossibleTestCases")>
+
+      Public Shared Sub SevenPairsWaitGetPossibleIsCorrect(tilesNotation As String, expectedOutput As List(Of MadeBlockContext), because As String)
+  overload: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: SevenPairsWaitGetPossibleTestCases
+  nameWithType.vb: WaitTests.SevenPairsWaitGetPossibleIsCorrect(String, List(Of MadeBlockContext), String)
+  fullName.vb: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect(String, System.Collections.Generic.List(Of Koffing.Blocks.MadeBlockContext), String)
+  name.vb: SevenPairsWaitGetPossibleIsCorrect(String, List(Of MadeBlockContext), String)
+- uid: Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect(Koffing.Waits.ThirteenOrphansWait,Koffing.Waits.ThirteenOrphansWait,System.Boolean,System.String)
+  commentId: M:Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect(Koffing.Waits.ThirteenOrphansWait,Koffing.Waits.ThirteenOrphansWait,System.Boolean,System.String)
+  id: ThirteenOrphansWaitEqualsIsCorrect(Koffing.Waits.ThirteenOrphansWait,Koffing.Waits.ThirteenOrphansWait,System.Boolean,System.String)
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: ThirteenOrphansWaitEqualsIsCorrect(ThirteenOrphansWait, ThirteenOrphansWait, bool, string)
+  nameWithType: WaitTests.ThirteenOrphansWaitEqualsIsCorrect(ThirteenOrphansWait, ThirteenOrphansWait, bool, string)
+  fullName: Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect(Koffing.Waits.ThirteenOrphansWait, Koffing.Waits.ThirteenOrphansWait, bool, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("ThirteenOrphansWaitEqualsTestCases")]
+
+      public static void ThirteenOrphansWaitEqualsIsCorrect(ThirteenOrphansWait blockA, ThirteenOrphansWait blockB, bool expectedResult, string because)
+    parameters:
+    - id: blockA
+      type: Koffing.Waits.ThirteenOrphansWait
+    - id: blockB
+      type: Koffing.Waits.ThirteenOrphansWait
+    - id: expectedResult
+      type: System.Boolean
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("ThirteenOrphansWaitEqualsTestCases")>
+
+      Public Shared Sub ThirteenOrphansWaitEqualsIsCorrect(blockA As ThirteenOrphansWait, blockB As ThirteenOrphansWait, expectedResult As Boolean, because As String)
+  overload: Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ThirteenOrphansWaitEqualsTestCases
+  nameWithType.vb: WaitTests.ThirteenOrphansWaitEqualsIsCorrect(ThirteenOrphansWait, ThirteenOrphansWait, Boolean, String)
+  fullName.vb: Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect(Koffing.Waits.ThirteenOrphansWait, Koffing.Waits.ThirteenOrphansWait, Boolean, String)
+  name.vb: ThirteenOrphansWaitEqualsIsCorrect(ThirteenOrphansWait, ThirteenOrphansWait, Boolean, String)
+- uid: Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  commentId: M:Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  id: ThirteenOrphansWaitGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: ThirteenOrphansWaitGetPossibleIsCorrect(string, List<MadeBlockContext>, string)
+  nameWithType: WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect(string, List<MadeBlockContext>, string)
+  fullName: Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect(string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("ThirteenOrphansWaitGetPossibleTestCases")]
+
+      public static void ThirteenOrphansWaitGetPossibleIsCorrect(string tilesNotation, List<MadeBlockContext> expectedOutput, string because)
+    parameters:
+    - id: tilesNotation
+      type: System.String
+    - id: expectedOutput
+      type: System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext}
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("ThirteenOrphansWaitGetPossibleTestCases")>
+
+      Public Shared Sub ThirteenOrphansWaitGetPossibleIsCorrect(tilesNotation As String, expectedOutput As List(Of MadeBlockContext), because As String)
+  overload: Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ThirteenOrphansWaitGetPossibleTestCases
+  nameWithType.vb: WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect(String, List(Of MadeBlockContext), String)
+  fullName.vb: Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect(String, System.Collections.Generic.List(Of Koffing.Blocks.MadeBlockContext), String)
+  name.vb: ThirteenOrphansWaitGetPossibleIsCorrect(String, List(Of MadeBlockContext), String)
+- uid: Koffing.Tests.WaitTests.#ctor
+  commentId: M:Koffing.Tests.WaitTests.#ctor
+  id: '#ctor'
+  parent: Koffing.Tests.WaitTests
+  langs:
+  - csharp
+  - vb
+  name: WaitTests()
+  nameWithType: WaitTests.WaitTests()
+  fullName: Koffing.Tests.WaitTests.WaitTests()
+  type: Constructor
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: public WaitTests()
+    content.vb: Public Sub New()
+  overload: Koffing.Tests.WaitTests.#ctor*
+  nameWithType.vb: WaitTests.New()
+  fullName.vb: Koffing.Tests.WaitTests.New()
+  name.vb: New()
+references:
+- uid: Koffing.Tests
+  commentId: N:Koffing.Tests
+  isExternal: true
+  name: Koffing.Tests
+  nameWithType: Koffing.Tests
+  fullName: Koffing.Tests
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Tests
+    name: Tests
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Tests
+    name: Tests
+    isExternal: true
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koffing.Tests.WaitTests.Setup*
+  commentId: Overload:Koffing.Tests.WaitTests.Setup
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_Setup
+  name: Setup
+  nameWithType: WaitTests.Setup
+  fullName: Koffing.Tests.WaitTests.Setup
+- uid: Koffing.Tests.WaitTests.TearDown*
+  commentId: Overload:Koffing.Tests.WaitTests.TearDown
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_TearDown
+  name: TearDown
+  nameWithType: WaitTests.TearDown
+  fullName: Koffing.Tests.WaitTests.TearDown
+- uid: Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect*
+  commentId: Overload:Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_GetFirstLevelWaitsIsCorrect_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
+  name: GetFirstLevelWaitsIsCorrect
+  nameWithType: WaitTests.GetFirstLevelWaitsIsCorrect
+  fullName: Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext}
+  commentId: T:System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<MadeBlockContext>
+  nameWithType: List<MadeBlockContext>
+  fullName: System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>
+  nameWithType.vb: List(Of MadeBlockContext)
+  fullName.vb: System.Collections.Generic.List(Of Koffing.Blocks.MadeBlockContext)
+  name.vb: List(Of MadeBlockContext)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    isExternal: true
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    isExternal: true
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Koffing.Tests.WaitTests.CanCreateOrphan*
+  commentId: Overload:Koffing.Tests.WaitTests.CanCreateOrphan
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_CanCreateOrphan
+  name: CanCreateOrphan
+  nameWithType: WaitTests.CanCreateOrphan
+  fullName: Koffing.Tests.WaitTests.CanCreateOrphan
+- uid: Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect*
+  commentId: Overload:Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_RyanmenGetPossibleForTileIsCorrect_System_String_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
+  name: RyanmenGetPossibleForTileIsCorrect
+  nameWithType: WaitTests.RyanmenGetPossibleForTileIsCorrect
+  fullName: Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect
+- uid: Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect*
+  commentId: Overload:Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_RyanmenGetPossibleIsCorrect_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
+  name: RyanmenGetPossibleIsCorrect
+  nameWithType: WaitTests.RyanmenGetPossibleIsCorrect
+  fullName: Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect
+- uid: Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect*
+  commentId: Overload:Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_KanchanGetPossibleForTileIsCorrect_System_String_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
+  name: KanchanGetPossibleForTileIsCorrect
+  nameWithType: WaitTests.KanchanGetPossibleForTileIsCorrect
+  fullName: Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect
+- uid: Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect*
+  commentId: Overload:Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_KanchanGetPossibleIsCorrect_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
+  name: KanchanGetPossibleIsCorrect
+  nameWithType: WaitTests.KanchanGetPossibleIsCorrect
+  fullName: Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect
+- uid: Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect*
+  commentId: Overload:Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_PenchanGetPossibleForTileIsCorrect_System_String_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
+  name: PenchanGetPossibleForTileIsCorrect
+  nameWithType: WaitTests.PenchanGetPossibleForTileIsCorrect
+  fullName: Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect
+- uid: Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect*
+  commentId: Overload:Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_PenchanGetPossibleIsCorrect_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
+  name: PenchanGetPossibleIsCorrect
+  nameWithType: WaitTests.PenchanGetPossibleIsCorrect
+  fullName: Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect
+- uid: Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect*
+  commentId: Overload:Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_SevenPairsWaitEqualsIsCorrect_Koffing_Waits_SevenPairsWait_Koffing_Waits_SevenPairsWait_System_Boolean_System_String_
+  name: SevenPairsWaitEqualsIsCorrect
+  nameWithType: WaitTests.SevenPairsWaitEqualsIsCorrect
+  fullName: Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect
+- uid: Koffing.Waits.SevenPairsWait
+  commentId: T:Koffing.Waits.SevenPairsWait
+  parent: Koffing.Waits
+  isExternal: true
+  href: Koffing.Waits.SevenPairsWait.html
+  name: SevenPairsWait
+  nameWithType: SevenPairsWait
+  fullName: Koffing.Waits.SevenPairsWait
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Koffing.Waits
+  commentId: N:Koffing.Waits
+  isExternal: true
+  name: Koffing.Waits
+  nameWithType: Koffing.Waits
+  fullName: Koffing.Waits
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Waits
+    name: Waits
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Waits
+    name: Waits
+    isExternal: true
+- uid: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect*
+  commentId: Overload:Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_SevenPairsWaitGetPossibleForTileIsCorrect_System_String_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
+  name: SevenPairsWaitGetPossibleForTileIsCorrect
+  nameWithType: WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect
+  fullName: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect
+- uid: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect*
+  commentId: Overload:Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_SevenPairsWaitGetPossibleIsCorrect_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
+  name: SevenPairsWaitGetPossibleIsCorrect
+  nameWithType: WaitTests.SevenPairsWaitGetPossibleIsCorrect
+  fullName: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect
+- uid: Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect*
+  commentId: Overload:Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_ThirteenOrphansWaitEqualsIsCorrect_Koffing_Waits_ThirteenOrphansWait_Koffing_Waits_ThirteenOrphansWait_System_Boolean_System_String_
+  name: ThirteenOrphansWaitEqualsIsCorrect
+  nameWithType: WaitTests.ThirteenOrphansWaitEqualsIsCorrect
+  fullName: Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect
+- uid: Koffing.Waits.ThirteenOrphansWait
+  commentId: T:Koffing.Waits.ThirteenOrphansWait
+  parent: Koffing.Waits
+  isExternal: true
+  href: Koffing.Waits.ThirteenOrphansWait.html
+  name: ThirteenOrphansWait
+  nameWithType: ThirteenOrphansWait
+  fullName: Koffing.Waits.ThirteenOrphansWait
+- uid: Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect*
+  commentId: Overload:Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_ThirteenOrphansWaitGetPossibleIsCorrect_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
+  name: ThirteenOrphansWaitGetPossibleIsCorrect
+  nameWithType: WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect
+  fullName: Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect
+- uid: Koffing.Tests.WaitTests.#ctor*
+  commentId: Overload:Koffing.Tests.WaitTests.#ctor
+  isExternal: true
+  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests__ctor
+  name: WaitTests
+  nameWithType: WaitTests.WaitTests
+  fullName: Koffing.Tests.WaitTests.WaitTests
+  nameWithType.vb: WaitTests.New
+  fullName.vb: Koffing.Tests.WaitTests.New
+  name.vb: New

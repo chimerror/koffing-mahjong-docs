@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Blocks.IDowngradable`1
+  commentId: T:Koffing.Blocks.IDowngradable`1
+  id: IDowngradable`1
+  parent: Koffing.Blocks
+  children:
+  - Koffing.Blocks.IDowngradable`1.Downgrade
+  langs:
+  - csharp
+  - vb
+  name: IDowngradable<T>
+  nameWithType: IDowngradable<T>
+  fullName: Koffing.Blocks.IDowngradable<T>
+  type: Interface
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IDowngradable.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  syntax:
+    content: public interface IDowngradable<T>
+    typeParameters:
+    - id: T
+    content.vb: Public Interface IDowngradable(Of T)
+  derivedClasses:
+  - Koffing.Melds.Chow
+  - Koffing.Melds.Chow
+  - Koffing.Melds.Chow
+  - Koffing.Melds.Kong
+  - Koffing.Melds.Pung
+  nameWithType.vb: IDowngradable(Of T)
+  fullName.vb: Koffing.Blocks.IDowngradable(Of T)
+  name.vb: IDowngradable(Of T)
+- uid: Koffing.Blocks.IDowngradable`1.Downgrade
+  commentId: M:Koffing.Blocks.IDowngradable`1.Downgrade
+  id: Downgrade
+  parent: Koffing.Blocks.IDowngradable`1
+  langs:
+  - csharp
+  - vb
+  name: Downgrade()
+  nameWithType: IDowngradable<T>.Downgrade()
+  fullName: Koffing.Blocks.IDowngradable<T>.Downgrade()
+  type: Method
+  source:
+    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IDowngradable.cs
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  syntax:
+    content: IEnumerable<MadeBlockContext> Downgrade()
+    return:
+      type: System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext}
+    content.vb: Function Downgrade() As IEnumerable(Of MadeBlockContext)
+  overload: Koffing.Blocks.IDowngradable`1.Downgrade*
+  nameWithType.vb: IDowngradable(Of T).Downgrade()
+  fullName.vb: Koffing.Blocks.IDowngradable(Of T).Downgrade()
+references:
+- uid: Koffing.Blocks
+  commentId: N:Koffing.Blocks
+  isExternal: true
+  name: Koffing.Blocks
+  nameWithType: Koffing.Blocks
+  fullName: Koffing.Blocks
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Blocks
+    name: Blocks
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Blocks
+    name: Blocks
+    isExternal: true
+- uid: Koffing.Blocks.IDowngradable`1.Downgrade*
+  commentId: Overload:Koffing.Blocks.IDowngradable`1.Downgrade
+  isExternal: true
+  href: Koffing.Blocks.IDowngradable-1.html#Koffing_Blocks_IDowngradable_1_Downgrade
+  name: Downgrade
+  nameWithType: IDowngradable<T>.Downgrade
+  fullName: Koffing.Blocks.IDowngradable<T>.Downgrade
+  nameWithType.vb: IDowngradable(Of T).Downgrade
+  fullName.vb: Koffing.Blocks.IDowngradable(Of T).Downgrade
+- uid: System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext}
+  commentId: T:System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<MadeBlockContext>
+  nameWithType: IEnumerable<MadeBlockContext>
+  fullName: System.Collections.Generic.IEnumerable<Koffing.Blocks.MadeBlockContext>
+  nameWithType.vb: IEnumerable(Of MadeBlockContext)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Koffing.Blocks.MadeBlockContext)
+  name.vb: IEnumerable(Of MadeBlockContext)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    isExternal: true
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    isExternal: true
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

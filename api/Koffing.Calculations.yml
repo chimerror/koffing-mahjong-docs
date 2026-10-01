@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Calculations
+  commentId: N:Koffing.Calculations
+  id: Koffing.Calculations
+  children:
+  - Koffing.Calculations.Readiness
+  - Koffing.Calculations.Readiness.Type
+  langs:
+  - csharp
+  - vb
+  name: Koffing.Calculations
+  nameWithType: Koffing.Calculations
+  fullName: Koffing.Calculations
+  type: Namespace
+  assemblies:
+  - Koffing
+references:
+- uid: Koffing.Calculations.Readiness
+  commentId: T:Koffing.Calculations.Readiness
+  parent: Koffing.Calculations
+  isExternal: true
+  href: Koffing.Calculations.Readiness.html
+  name: Readiness
+  nameWithType: Readiness
+  fullName: Koffing.Calculations.Readiness
+- uid: Koffing.Calculations.Readiness.Type
+  commentId: T:Koffing.Calculations.Readiness.Type
+  parent: Koffing.Calculations
+  isExternal: true
+  href: Koffing.Calculations.Readiness.html
+  name: Readiness.Type
+  nameWithType: Readiness.Type
+  fullName: Koffing.Calculations.Readiness.Type
+  spec.csharp:
+  - uid: Koffing.Calculations.Readiness
+    name: Readiness
+    isExternal: true
+    href: Koffing.Calculations.Readiness.html
+  - name: .
+  - uid: Koffing.Calculations.Readiness.Type
+    name: Type
+    isExternal: true
+    href: Koffing.Calculations.Readiness.Type.html
+  spec.vb:
+  - uid: Koffing.Calculations.Readiness
+    name: Readiness
+    isExternal: true
+    href: Koffing.Calculations.Readiness.html
+  - name: .
+  - uid: Koffing.Calculations.Readiness.Type
+    name: Type
+    isExternal: true
+    href: Koffing.Calculations.Readiness.Type.html
+- uid: Koffing.Calculations
+  commentId: N:Koffing.Calculations
+  isExternal: true
+  name: Koffing.Calculations
+  nameWithType: Koffing.Calculations
+  fullName: Koffing.Calculations
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Calculations
+    name: Calculations
+    isExternal: true
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+    isExternal: true
+  - name: .
+  - uid: Koffing.Calculations
+    name: Calculations
+    isExternal: true
