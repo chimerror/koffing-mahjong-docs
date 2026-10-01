@@ -1,0 +1,22 @@
+{
+  "README.html": {
+    "href": "README.html",
+    "title": "koffing-mahjong.github.io | Koffing Mahjong Engine",
+    "summary": "koffing-mahjong.github.io Documentation for the Koffing Mahjong Engine"
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started | Koffing Mahjong Engine",
+    "summary": "Getting Started"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction | Koffing Mahjong Engine",
+    "summary": "Introduction Koffing!"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE. | Koffing Mahjong Engine",
+    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+  }
+}
