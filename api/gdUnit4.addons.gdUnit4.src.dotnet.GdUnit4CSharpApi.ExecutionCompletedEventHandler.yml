@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: gdUnit4.addons.gdUnit4.src.dotnet.GdUnit4CSharpApi.ExecutionCompletedEventHandler
+  commentId: T:gdUnit4.addons.gdUnit4.src.dotnet.GdUnit4CSharpApi.ExecutionCompletedEventHandler
+  id: GdUnit4CSharpApi.ExecutionCompletedEventHandler
+  parent: gdUnit4.addons.gdUnit4.src.dotnet
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: GdUnit4CSharpApi.ExecutionCompletedEventHandler
+  nameWithType: GdUnit4CSharpApi.ExecutionCompletedEventHandler
+  fullName: gdUnit4.addons.gdUnit4.src.dotnet.GdUnit4CSharpApi.ExecutionCompletedEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: addons/gdUnit4/src/dotnet/GdUnit4CSharpApi.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: ExecutionCompletedEventHandler
+    path: ../koffing/addons/gdUnit4/src/dotnet/GdUnit4CSharpApi.cs
+    startLine: 28
+  assemblies:
+  - Koffing
+  namespace: gdUnit4.addons.gdUnit4.src.dotnet
+  summary: The signal to be emitted when the execution is completed.
+  example: []
+  syntax:
+    content: >-
+      [Signal]
+
+      public delegate void GdUnit4CSharpApi.ExecutionCompletedEventHandler()
+    content.vb: >-
+      <Signal>
+
+      Public Delegate Sub GdUnit4CSharpApi.ExecutionCompletedEventHandler()
+  attributes:
+  - type: Godot.SignalAttribute
+    ctor: Godot.SignalAttribute.#ctor
+    arguments: []
+references:
+- uid: gdUnit4.addons.gdUnit4.src.dotnet
+  commentId: N:gdUnit4.addons.gdUnit4.src.dotnet
+  name: gdUnit4.addons.gdUnit4.src.dotnet
+  nameWithType: gdUnit4.addons.gdUnit4.src.dotnet
+  fullName: gdUnit4.addons.gdUnit4.src.dotnet
+  spec.csharp:
+  - uid: gdUnit4
+    name: gdUnit4
+  - name: .
+  - uid: gdUnit4.addons
+    name: addons
+  - name: .
+  - uid: gdUnit4.addons.gdUnit4
+    name: gdUnit4
+  - name: .
+  - uid: gdUnit4.addons.gdUnit4.src
+    name: src
+  - name: .
+  - uid: gdUnit4.addons.gdUnit4.src.dotnet
+    name: dotnet
+  spec.vb:
+  - uid: gdUnit4
+    name: gdUnit4
+  - name: .
+  - uid: gdUnit4.addons
+    name: addons
+  - name: .
+  - uid: gdUnit4.addons.gdUnit4
+    name: gdUnit4
+  - name: .
+  - uid: gdUnit4.addons.gdUnit4.src
+    name: src
+  - name: .
+  - uid: gdUnit4.addons.gdUnit4.src.dotnet
+    name: dotnet

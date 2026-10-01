@@ -1,0 +1,92 @@
+### YamlMime:ManagedReference
+items:
+- uid: GdUnit4.TestRunner
+  commentId: N:GdUnit4.TestRunner
+  id: GdUnit4.TestRunner
+  children:
+  - GdUnit4.TestRunner.GdUnit4TestRunnerScene
+  - GdUnit4.TestRunner.GdUnit4TestRunnerScene.MethodName
+  - GdUnit4.TestRunner.GdUnit4TestRunnerScene.PropertyName
+  - GdUnit4.TestRunner.GdUnit4TestRunnerScene.SignalName
+  langs:
+  - csharp
+  - vb
+  name: GdUnit4.TestRunner
+  nameWithType: GdUnit4.TestRunner
+  fullName: GdUnit4.TestRunner
+  type: Namespace
+  assemblies:
+  - Koffing
+references:
+- uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene
+  commentId: T:GdUnit4.TestRunner.GdUnit4TestRunnerScene
+  href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.html
+  name: GdUnit4TestRunnerScene
+  nameWithType: GdUnit4TestRunnerScene
+  fullName: GdUnit4.TestRunner.GdUnit4TestRunnerScene
+- uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene.PropertyName
+  commentId: T:GdUnit4.TestRunner.GdUnit4TestRunnerScene.PropertyName
+  href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.html
+  name: GdUnit4TestRunnerScene.PropertyName
+  nameWithType: GdUnit4TestRunnerScene.PropertyName
+  fullName: GdUnit4.TestRunner.GdUnit4TestRunnerScene.PropertyName
+  spec.csharp:
+  - uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene
+    name: GdUnit4TestRunnerScene
+    href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.html
+  - name: .
+  - uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene.PropertyName
+    name: PropertyName
+    href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.PropertyName.html
+  spec.vb:
+  - uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene
+    name: GdUnit4TestRunnerScene
+    href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.html
+  - name: .
+  - uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene.PropertyName
+    name: PropertyName
+    href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.PropertyName.html
+- uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene.MethodName
+  commentId: T:GdUnit4.TestRunner.GdUnit4TestRunnerScene.MethodName
+  href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.html
+  name: GdUnit4TestRunnerScene.MethodName
+  nameWithType: GdUnit4TestRunnerScene.MethodName
+  fullName: GdUnit4.TestRunner.GdUnit4TestRunnerScene.MethodName
+  spec.csharp:
+  - uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene
+    name: GdUnit4TestRunnerScene
+    href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.html
+  - name: .
+  - uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene.MethodName
+    name: MethodName
+    href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.MethodName.html
+  spec.vb:
+  - uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene
+    name: GdUnit4TestRunnerScene
+    href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.html
+  - name: .
+  - uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene.MethodName
+    name: MethodName
+    href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.MethodName.html
+- uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene.SignalName
+  commentId: T:GdUnit4.TestRunner.GdUnit4TestRunnerScene.SignalName
+  href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.html
+  name: GdUnit4TestRunnerScene.SignalName
+  nameWithType: GdUnit4TestRunnerScene.SignalName
+  fullName: GdUnit4.TestRunner.GdUnit4TestRunnerScene.SignalName
+  spec.csharp:
+  - uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene
+    name: GdUnit4TestRunnerScene
+    href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.html
+  - name: .
+  - uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene.SignalName
+    name: SignalName
+    href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.SignalName.html
+  spec.vb:
+  - uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene
+    name: GdUnit4TestRunnerScene
+    href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.html
+  - name: .
+  - uid: GdUnit4.TestRunner.GdUnit4TestRunnerScene.SignalName
+    name: SignalName
+    href: GdUnit4.TestRunner.GdUnit4TestRunnerScene.SignalName.html

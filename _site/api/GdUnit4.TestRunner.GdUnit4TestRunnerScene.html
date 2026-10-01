@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GdUnit4TestRunnerScene | Koffing Mahjong Engine </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GdUnit4TestRunnerScene | Koffing Mahjong Engine ">
+      
+      <meta name="description" content="The GdUnit4Net test runner scene.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/chimerror/koffing/new/main/apiSpec/new?filename=GdUnit4_TestRunner_GdUnit4TestRunnerScene.md&amp;value=---%0Auid%3A%20GdUnit4.TestRunner.GdUnit4TestRunnerScene%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Koffing Mahjong Engine">
+            Koffing Mahjong Engine
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GdUnit4.TestRunner.GdUnit4TestRunnerScene">
+
+
+
+  <h1 id="GdUnit4_TestRunner_GdUnit4TestRunnerScene" data-uid="GdUnit4.TestRunner.GdUnit4TestRunnerScene" class="text-break">
+Class GdUnit4TestRunnerScene  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/gdunit4_testadapter_v5/GdUnit4TestRunnerScene.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">GdUnit4</span>.<a class="xref" href="GdUnit4.TestRunner.html">TestRunner</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Koffing.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The GdUnit4Net test runner scene.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ScriptPath(&quot;res://gdunit4_testadapter_v5/GdUnit4TestRunnerScene.cs&quot;)]
+public class GdUnit4TestRunnerScene : GdUnit4TestRunnerSceneCore, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GodotObject</span></div>
+      <div><span class="xref">MainLoop</span></div>
+      <div><span class="xref">SceneTree</span></div>
+      <div><span class="xref">GdUnit4TestRunnerSceneCore</span></div>
+      <div><span class="xref">GdUnit4TestRunnerScene</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">GdUnit4TestRunnerSceneCore._Initialize()</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.HasGroup(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.IsAccessibilityEnabled()</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.IsAccessibilitySupported()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">SceneTree.CreateTimer(double, bool, bool, bool)</a>
+    </div>
+    <div>
+      <span class="xref">SceneTree.CreateTween()</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.GetProcessedTweens()</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.GetNodeCount()</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.GetFrame()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">SceneTree.Quit(int)</a>
+    </div>
+    <div>
+      <span class="xref">SceneTree.QueueDelete(GodotObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">SceneTree.CallGroupFlags(long, StringName, StringName, params Variant[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">SceneTree.CallGroupFlags(long, StringName, StringName, ReadOnlySpan&lt;Variant&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">SceneTree.NotifyGroupFlags(uint, StringName, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">SceneTree.SetGroupFlags(uint, StringName, string, Variant)</a>
+    </div>
+    <div>
+      <span class="xref">SceneTree.CallGroup(StringName, StringName, params Variant[])</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">SceneTree.CallGroup(StringName, StringName, ReadOnlySpan&lt;Variant&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">SceneTree.NotifyGroup(StringName, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SceneTree.SetGroup(StringName, string, Variant)</a>
+    </div>
+    <div>
+      <span class="xref">SceneTree.GetNodesInGroup(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.GetFirstNodeInGroup(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.GetNodeCountInGroup(StringName)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SceneTree.ChangeSceneToFile(string)</a>
+    </div>
+    <div>
+      <span class="xref">SceneTree.ChangeSceneToPacked(PackedScene)</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.ChangeSceneToNode(Node)</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.ReloadCurrentScene()</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.UnloadCurrentScene()</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.SetMultiplayer(MultiplayerApi, NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.GetMultiplayer(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.EmitSignalTreeChanged()</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.EmitSignalSceneChanged()</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.EmitSignalTreeProcessModeChanged()</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.EmitSignalNodeAdded(Node)</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.EmitSignalNodeRemoved(Node)</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.EmitSignalNodeRenamed(Node)</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.EmitSignalNodeConfigurationWarningChanged(Node)</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.EmitSignalProcessFrame()</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.EmitSignalPhysicsFrame()</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.InvokeGodotClassMethod(in godot_string_name, NativeVariantPtrArgs, out godot_variant)</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.HasGodotClassMethod(in godot_string_name)</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.HasGodotClassSignal(in godot_string_name)</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.AutoAcceptQuit</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.QuitOnGoBack</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.DebugCollisionsHint</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.DebugPathsHint</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.DebugNavigationHint</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.Paused</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.EditedSceneRoot</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.CurrentScene</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.Root</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.MultiplayerPoll</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.PhysicsInterpolation</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.TreeChanged</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.SceneChanged</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.TreeProcessModeChanged</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.NodeAdded</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.NodeRemoved</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.NodeRenamed</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.NodeConfigurationWarningChanged</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.ProcessFrame</span>
+    </div>
+    <div>
+      <span class="xref">SceneTree.PhysicsFrame</span>
+    </div>
+    <div>
+      <span class="xref">MainLoop.NotificationOsMemoryWarning</span>
+    </div>
+    <div>
+      <span class="xref">MainLoop.NotificationTranslationChanged</span>
+    </div>
+    <div>
+      <span class="xref">MainLoop.NotificationWMAbout</span>
+    </div>
+    <div>
+      <span class="xref">MainLoop.NotificationCrash</span>
+    </div>
+    <div>
+      <span class="xref">MainLoop.NotificationOsImeUpdate</span>
+    </div>
+    <div>
+      <span class="xref">MainLoop.NotificationApplicationResumed</span>
+    </div>
+    <div>
+      <span class="xref">MainLoop.NotificationApplicationPaused</span>
+    </div>
+    <div>
+      <span class="xref">MainLoop.NotificationApplicationFocusIn</span>
+    </div>
+    <div>
+      <span class="xref">MainLoop.NotificationApplicationFocusOut</span>
+    </div>
+    <div>
+      <span class="xref">MainLoop.NotificationTextServerChanged</span>
+    </div>
+    <div>
+      <span class="xref">MainLoop.NotificationApplicationPipModeEntered</span>
+    </div>
+    <div>
+      <span class="xref">MainLoop.NotificationApplicationPipModeExited</span>
+    </div>
+    <div>
+      <span class="xref">MainLoop._Finalize()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">MainLoop._PhysicsProcess(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">MainLoop._Process(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MainLoop.EmitSignalOnRequestPermissionsResult(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">MainLoop.OnRequestPermissionsResult</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.NotificationPostinitialize</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.NotificationPredelete</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.NotificationExtensionReloaded</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">GodotObject.InstanceFromId(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">GodotObject.IsInstanceIdValid(ulong)</a>
+    </div>
+    <div>
+      <span class="xref">GodotObject.IsInstanceValid(GodotObject)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.WeakRef(GodotObject)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.Dispose()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">GodotObject.Dispose(bool)</a>
+    </div>
+    <div>
+      <span class="xref">GodotObject.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.ToSignal(GodotObject, StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject._Get(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject._GetPropertyList()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject._IterGet(Variant)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject._IterInit(Array)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject._IterNext(Array)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">GodotObject._Notification(int)</a>
+    </div>
+    <div>
+      <span class="xref">GodotObject._PropertyCanRevert(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject._PropertyGetRevert(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject._Set(StringName, Variant)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject._ValidateProperty(Dictionary)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.Free()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.GetClass()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.IsClass(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.Set(StringName, Variant)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.Get(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.SetIndexed(NodePath, Variant)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.GetIndexed(NodePath)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.GetPropertyList()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.GetMethodList()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.PropertyCanRevert(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.PropertyGetRevert(StringName)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">GodotObject.Notification(int, bool)</a>
+    </div>
+    <div>
+      <span class="xref">GodotObject.GetInstanceId()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.SetScript(Variant)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.GetScript()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.SetMeta(StringName, Variant)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.RemoveMeta(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.GetMeta(StringName, Variant)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.HasMeta(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.GetMetaList()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">GodotObject.AddUserSignal(string, Array)</a>
+    </div>
+    <div>
+      <span class="xref">GodotObject.HasUserSignal(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.RemoveUserSignal(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.EmitSignal(StringName, params Variant[])</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">GodotObject.EmitSignal(StringName, ReadOnlySpan&lt;Variant&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">GodotObject.Call(StringName, params Variant[])</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">GodotObject.Call(StringName, ReadOnlySpan&lt;Variant&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">GodotObject.CallDeferred(StringName, params Variant[])</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">GodotObject.CallDeferred(StringName, ReadOnlySpan&lt;Variant&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">GodotObject.SetDeferred(StringName, Variant)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.Callv(StringName, Array)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.HasMethod(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.GetMethodArgumentCount(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.HasSignal(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.GetSignalList()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.GetSignalConnectionList(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.GetIncomingConnections()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">GodotObject.Connect(StringName, Callable, uint)</a>
+    </div>
+    <div>
+      <span class="xref">GodotObject.Disconnect(StringName, Callable)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.IsConnected(StringName, Callable)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.HasConnections(StringName)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">GodotObject.SetBlockSignals(bool)</a>
+    </div>
+    <div>
+      <span class="xref">GodotObject.IsBlockingSignals()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.NotifyPropertyListChanged()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">GodotObject.SetMessageTranslation(bool)</a>
+    </div>
+    <div>
+      <span class="xref">GodotObject.CanTranslateMessages()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.Tr(StringName, StringName)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">GodotObject.TrN(StringName, StringName, int, StringName)</a>
+    </div>
+    <div>
+      <span class="xref">GodotObject.GetTranslationDomain()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.SetTranslationDomain(StringName)</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.IsQueuedForDeletion()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.CancelFree()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.EmitSignalScriptChanged()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.EmitSignalPropertyListChanged()</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.NativeInstance</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.ScriptChanged</span>
+    </div>
+    <div>
+      <span class="xref">GodotObject.PropertyListChanged</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/chimerror/koffing/blob/main/gdunit4_testadapter_v5/GdUnit4TestRunnerScene.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
