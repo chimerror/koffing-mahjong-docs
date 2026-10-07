@@ -31,17 +31,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: TileTests
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 12
+    startLine: 11
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [TestSuite(13, "")]
+      [TestSuite(12, "")]
 
       public class TileTests
     content.vb: >-
-      <TestSuite(13, "")>
+      <TestSuite(12, "")>
 
       Public Class TileTests
   inheritance:
@@ -59,7 +59,7 @@ items:
     ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 13
+      value: 12
     - type: System.String
       value: ''
 - uid: Koffing.Tests.TileTests.Setup
@@ -80,17 +80,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Setup
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 15
+    startLine: 14
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [Before(16, "Setup")]
+      [Before(15, "Setup")]
 
       public static void Setup()
     content.vb: >-
-      <Before(16, "Setup")>
+      <Before(15, "Setup")>
 
       Public Shared Sub Setup()
   overload: Koffing.Tests.TileTests.Setup*
@@ -99,7 +99,7 @@ items:
     ctor: GdUnit4.BeforeAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 16
+      value: 15
     - type: System.String
       value: Setup
 - uid: Koffing.Tests.TileTests.TearDown
@@ -120,17 +120,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: TearDown
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 21
+    startLine: 20
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [After(22, "TearDown")]
+      [After(21, "TearDown")]
 
       public static void TearDown()
     content.vb: >-
-      <After(22, "TearDown")>
+      <After(21, "TearDown")>
 
       Public Shared Sub TearDown()
   overload: Koffing.Tests.TileTests.TearDown*
@@ -139,7 +139,7 @@ items:
     ctor: GdUnit4.AfterAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 22
+      value: 21
     - type: System.String
       value: TearDown
 - uid: Koffing.Tests.TileTests.IsValidTileIsCorrect(Koffing.Tiles.Suit,System.Int32,System.Boolean)
@@ -160,7 +160,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: IsValidTileIsCorrect
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 27
+    startLine: 26
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -212,7 +212,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RawRanksAreCorrect
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 37
+    startLine: 36
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -244,7 +244,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: EqualsIsCorrectPositiveCases
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 58
+    startLine: 57
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -276,7 +276,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: EqualsIsCorrectNegativeCases
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 88
+    startLine: 87
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -308,7 +308,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RawEqualsIsCorrectPositiveCases
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 138
+    startLine: 137
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -340,7 +340,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RawEqualsIsCorrectNegativeCases
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 177
+    startLine: 176
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -372,7 +372,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: EqualsIsCorrectNegativeEdgeCases
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 229
+    startLine: 228
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -424,7 +424,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CompareTilesIsCorrect
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 245
+    startLine: 244
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -478,7 +478,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ToTilesAndNotationFromTilesAreCorrect
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 254
+    startLine: 253
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -530,7 +530,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetTileHashCodeIsCorrect
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 269
+    startLine: 268
   assemblies:
   - Koffing
   namespace: Koffing.Tests

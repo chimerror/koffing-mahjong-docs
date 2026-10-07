@@ -6,7 +6,6 @@ items:
   parent: Koffing.Blocks
   children:
   - Koffing.Blocks.BlockSet.#ctor(System.Collections.Generic.IEnumerable{Koffing.Blocks.Block})
-  - Koffing.Blocks.BlockSet.Blocks
   - Koffing.Blocks.BlockSet.CompareTo(Koffing.Blocks.BlockSet)
   - Koffing.Blocks.BlockSet.Equals(Koffing.Blocks.BlockSet)
   - Koffing.Blocks.BlockSet.Equals(System.Object)
@@ -116,35 +115,6 @@ items:
   nameWithType.vb: BlockSet.this[](Integer)
   fullName.vb: Koffing.Blocks.BlockSet.this[](Integer)
   name.vb: this[](Integer)
-- uid: Koffing.Blocks.BlockSet.Blocks
-  commentId: P:Koffing.Blocks.BlockSet.Blocks
-  id: Blocks
-  parent: Koffing.Blocks.BlockSet
-  langs:
-  - csharp
-  - vb
-  name: Blocks
-  nameWithType: BlockSet.Blocks
-  fullName: Koffing.Blocks.BlockSet.Blocks
-  type: Property
-  source:
-    remote:
-      path: Scripts/Blocks/BlockSet.cs
-      branch: main
-      repo: https://github.com/chimerror/koffing.git
-    id: Blocks
-    path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 28
-  assemblies:
-  - Koffing
-  namespace: Koffing.Blocks
-  syntax:
-    content: public IEnumerable<Block> Blocks { get; }
-    parameters: []
-    return:
-      type: System.Collections.Generic.IEnumerable{Koffing.Blocks.Block}
-    content.vb: Public ReadOnly Property Blocks As IEnumerable(Of Block)
-  overload: Koffing.Blocks.BlockSet.Blocks*
 - uid: Koffing.Blocks.BlockSet.CompareTo(Koffing.Blocks.BlockSet)
   commentId: M:Koffing.Blocks.BlockSet.CompareTo(Koffing.Blocks.BlockSet)
   id: CompareTo(Koffing.Blocks.BlockSet)
@@ -163,7 +133,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CompareTo
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 33
+    startLine: 28
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -202,7 +172,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 60
+    startLine: 55
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -238,7 +208,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetEnumerator
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 65
+    startLine: 60
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -271,7 +241,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 75
+    startLine: 70
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -310,7 +280,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCode
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 80
+    startLine: 75
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -997,12 +967,6 @@ references:
   name: Block
   nameWithType: Block
   fullName: Koffing.Blocks.Block
-- uid: Koffing.Blocks.BlockSet.Blocks*
-  commentId: Overload:Koffing.Blocks.BlockSet.Blocks
-  href: Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_Blocks
-  name: Blocks
-  nameWithType: BlockSet.Blocks
-  fullName: Koffing.Blocks.BlockSet.Blocks
 - uid: Koffing.Blocks.BlockSet.CompareTo*
   commentId: Overload:Koffing.Blocks.BlockSet.CompareTo
   href: Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_CompareTo_Koffing_Blocks_BlockSet_

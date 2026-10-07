@@ -23,7 +23,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Kanchan
     path: ../Koffing/Scripts/Waits/Kanchan.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - Koffing
   namespace: Koffing.Waits
@@ -44,7 +44,6 @@ items:
   - Koffing.Waits.Wait.GetFirstLevelWaits(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
   - Koffing.Blocks.Block._tiles
   - Koffing.Blocks.Block.Item(System.Int32)
-  - Koffing.Blocks.Block.Tiles
   - Koffing.Blocks.Block.GetPossibleBlockSets(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
   - Koffing.Blocks.Block.GetPossibleHelper(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Type)
   - Koffing.Blocks.Block.Equals(System.Object)
@@ -77,7 +76,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Waits/Kanchan.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - Koffing
   namespace: Koffing.Waits
@@ -109,7 +108,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetPossible
     path: ../Koffing/Scripts/Waits/Kanchan.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - Koffing
   namespace: Koffing.Waits
@@ -152,7 +151,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetPossibleForTile
     path: ../Koffing/Scripts/Waits/Kanchan.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - Koffing
   namespace: Koffing.Waits
@@ -198,7 +197,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCodeBasis
     path: ../Koffing/Scripts/Waits/Kanchan.cs
-    startLine: 64
+    startLine: 65
   assemblies:
   - Koffing
   namespace: Koffing.Waits
@@ -458,13 +457,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
-- uid: Koffing.Blocks.Block.Tiles
-  commentId: P:Koffing.Blocks.Block.Tiles
-  parent: Koffing.Blocks.Block
-  href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Tiles
-  name: Tiles
-  nameWithType: Block.Tiles
-  fullName: Koffing.Blocks.Block.Tiles
 - uid: Koffing.Blocks.Block.GetPossibleBlockSets(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
   commentId: M:Koffing.Blocks.Block.GetPossibleBlockSets(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
   parent: Koffing.Blocks.Block

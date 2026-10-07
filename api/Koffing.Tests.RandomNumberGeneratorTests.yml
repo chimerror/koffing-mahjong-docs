@@ -23,17 +23,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RandomNumberGeneratorTests
     path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [TestSuite(14, "")]
+      [TestSuite(13, "")]
 
       public class RandomNumberGeneratorTests
     content.vb: >-
-      <TestSuite(14, "")>
+      <TestSuite(13, "")>
 
       Public Class RandomNumberGeneratorTests
   inheritance:
@@ -51,7 +51,7 @@ items:
     ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 14
+      value: 13
     - type: System.String
       value: ''
 - uid: Koffing.Tests.RandomNumberGeneratorTests.Setup
@@ -72,17 +72,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Setup
     path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
-    startLine: 16
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [Before(17, "Setup")]
+      [Before(16, "Setup")]
 
       public static void Setup()
     content.vb: >-
-      <Before(17, "Setup")>
+      <Before(16, "Setup")>
 
       Public Shared Sub Setup()
   overload: Koffing.Tests.RandomNumberGeneratorTests.Setup*
@@ -91,7 +91,7 @@ items:
     ctor: GdUnit4.BeforeAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 17
+      value: 16
     - type: System.String
       value: Setup
 - uid: Koffing.Tests.RandomNumberGeneratorTests.TearDown
@@ -112,17 +112,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: TearDown
     path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
-    startLine: 22
+    startLine: 21
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [After(23, "TearDown")]
+      [After(22, "TearDown")]
 
       public static void TearDown()
     content.vb: >-
-      <After(23, "TearDown")>
+      <After(22, "TearDown")>
 
       Public Shared Sub TearDown()
   overload: Koffing.Tests.RandomNumberGeneratorTests.TearDown*
@@ -131,7 +131,7 @@ items:
     ctor: GdUnit4.AfterAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 23
+      value: 22
     - type: System.String
       value: TearDown
 - uid: Koffing.Tests.RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed
@@ -152,7 +152,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GodotRandomNumberGeneratorCanBeUsed
     path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
-    startLine: 32
+    startLine: 31
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -192,7 +192,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: SystemRandomNumberGeneratorCanBeUsed
     path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
-    startLine: 56
+    startLine: 55
   assemblies:
   - Koffing
   namespace: Koffing.Tests

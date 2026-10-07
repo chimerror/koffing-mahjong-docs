@@ -34,17 +34,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: WaitTests
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 15
+    startLine: 14
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [TestSuite(16, "")]
+      [TestSuite(15, "")]
 
       public class WaitTests
     content.vb: >-
-      <TestSuite(16, "")>
+      <TestSuite(15, "")>
 
       Public Class WaitTests
   inheritance:
@@ -62,7 +62,7 @@ items:
     ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 16
+      value: 15
     - type: System.String
       value: ''
 - uid: Koffing.Tests.WaitTests.Setup
@@ -83,17 +83,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Setup
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [Before(19, "Setup")]
+      [Before(18, "Setup")]
 
       public static void Setup()
     content.vb: >-
-      <Before(19, "Setup")>
+      <Before(18, "Setup")>
 
       Public Shared Sub Setup()
   overload: Koffing.Tests.WaitTests.Setup*
@@ -102,7 +102,7 @@ items:
     ctor: GdUnit4.BeforeAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 19
+      value: 18
     - type: System.String
       value: Setup
 - uid: Koffing.Tests.WaitTests.TearDown
@@ -123,17 +123,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: TearDown
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 24
+    startLine: 23
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [After(25, "TearDown")]
+      [After(24, "TearDown")]
 
       public static void TearDown()
     content.vb: >-
-      <After(25, "TearDown")>
+      <After(24, "TearDown")>
 
       Public Shared Sub TearDown()
   overload: Koffing.Tests.WaitTests.TearDown*
@@ -142,7 +142,7 @@ items:
     ctor: GdUnit4.AfterAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 25
+      value: 24
     - type: System.String
       value: TearDown
 - uid: Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -163,7 +163,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetFirstLevelWaitsIsCorrect
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 30
+    startLine: 29
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -215,7 +215,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CanCreateOrphan
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 42
+    startLine: 41
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -247,7 +247,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RyanmenGetPossibleForTileIsCorrect
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 64
+    startLine: 63
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -301,7 +301,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RyanmenGetPossibleIsCorrect
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 81
+    startLine: 80
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -353,7 +353,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: KanchanGetPossibleForTileIsCorrect
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 93
+    startLine: 92
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -407,7 +407,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: KanchanGetPossibleIsCorrect
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 110
+    startLine: 109
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -459,7 +459,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PenchanGetPossibleForTileIsCorrect
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 122
+    startLine: 121
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -513,7 +513,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PenchanGetPossibleIsCorrect
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 139
+    startLine: 138
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -565,7 +565,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: SevenPairsWaitEqualsIsCorrect
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 151
+    startLine: 150
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -619,7 +619,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: SevenPairsWaitGetPossibleForTileIsCorrect
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 167
+    startLine: 166
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -673,7 +673,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: SevenPairsWaitGetPossibleIsCorrect
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 184
+    startLine: 183
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -725,7 +725,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ThirteenOrphansWaitEqualsIsCorrect
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 196
+    startLine: 195
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -779,7 +779,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ThirteenOrphansWaitGetPossibleIsCorrect
     path: ../Koffing/Scripts/Tests/WaitTests.cs
-    startLine: 212
+    startLine: 211
   assemblies:
   - Koffing
   namespace: Koffing.Tests

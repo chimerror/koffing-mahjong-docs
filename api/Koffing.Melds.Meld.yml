@@ -45,7 +45,6 @@ items:
   inheritedMembers:
   - Koffing.Blocks.Block._tiles
   - Koffing.Blocks.Block.Item(System.Int32)
-  - Koffing.Blocks.Block.Tiles
   - Koffing.Blocks.Block.GetPossibleBlockSets(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
   - Koffing.Blocks.Block.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
   - Koffing.Blocks.Block.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -315,13 +314,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
-- uid: Koffing.Blocks.Block.Tiles
-  commentId: P:Koffing.Blocks.Block.Tiles
-  parent: Koffing.Blocks.Block
-  href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Tiles
-  name: Tiles
-  nameWithType: Block.Tiles
-  fullName: Koffing.Blocks.Block.Tiles
 - uid: Koffing.Blocks.Block.GetPossibleBlockSets(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
   commentId: M:Koffing.Blocks.Block.GetPossibleBlockSets(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
   parent: Koffing.Blocks.Block

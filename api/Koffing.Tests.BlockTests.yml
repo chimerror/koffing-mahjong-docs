@@ -31,17 +31,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: BlockTests
     path: ../Koffing/Scripts/Tests/BlockTests.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [TestSuite(14, "")]
+      [TestSuite(13, "")]
 
       public class BlockTests
     content.vb: >-
-      <TestSuite(14, "")>
+      <TestSuite(13, "")>
 
       Public Class BlockTests
   inheritance:
@@ -59,7 +59,7 @@ items:
     ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 14
+      value: 13
     - type: System.String
       value: ''
 - uid: Koffing.Tests.BlockTests.Setup
@@ -80,17 +80,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Setup
     path: ../Koffing/Scripts/Tests/BlockTests.cs
-    startLine: 16
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [Before(17, "Setup")]
+      [Before(16, "Setup")]
 
       public static void Setup()
     content.vb: >-
-      <Before(17, "Setup")>
+      <Before(16, "Setup")>
 
       Public Shared Sub Setup()
   overload: Koffing.Tests.BlockTests.Setup*
@@ -99,7 +99,7 @@ items:
     ctor: GdUnit4.BeforeAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 17
+      value: 16
     - type: System.String
       value: Setup
 - uid: Koffing.Tests.BlockTests.TearDown
@@ -120,17 +120,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: TearDown
     path: ../Koffing/Scripts/Tests/BlockTests.cs
-    startLine: 22
+    startLine: 21
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [After(23, "TearDown")]
+      [After(22, "TearDown")]
 
       public static void TearDown()
     content.vb: >-
-      <After(23, "TearDown")>
+      <After(22, "TearDown")>
 
       Public Shared Sub TearDown()
   overload: Koffing.Tests.BlockTests.TearDown*
@@ -139,7 +139,7 @@ items:
     ctor: GdUnit4.AfterAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 23
+      value: 22
     - type: System.String
       value: TearDown
 - uid: Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect(Koffing.Blocks.Block,System.Object,System.String)
@@ -160,7 +160,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: BlockEqualsEdgeCasesAreCorrect
     path: ../Koffing/Scripts/Tests/BlockTests.cs
-    startLine: 28
+    startLine: 27
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -212,7 +212,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: BlockEqualsIsCorrect
     path: ../Koffing/Scripts/Tests/BlockTests.cs
-    startLine: 38
+    startLine: 37
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -266,7 +266,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetBlockHashCodeIsCorrect
     path: ../Koffing/Scripts/Tests/BlockTests.cs
-    startLine: 54
+    startLine: 53
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -316,7 +316,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CompareBlocksIsCorrect
     path: ../Koffing/Scripts/Tests/BlockTests.cs
-    startLine: 64
+    startLine: 63
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -370,7 +370,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: MadeBlockContextEqualsEdgeCasesAreCorrect
     path: ../Koffing/Scripts/Tests/BlockTests.cs
-    startLine: 74
+    startLine: 73
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -422,7 +422,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: MadeBlockContextEqualsCasesAreCorrect
     path: ../Koffing/Scripts/Tests/BlockTests.cs
-    startLine: 84
+    startLine: 83
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -476,7 +476,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CompareMadeBlockContextsIsCorrect
     path: ../Koffing/Scripts/Tests/BlockTests.cs
-    startLine: 104
+    startLine: 103
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -530,7 +530,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PairsAndPairWaitsCastingIsCorrect
     path: ../Koffing/Scripts/Tests/BlockTests.cs
-    startLine: 118
+    startLine: 117
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -562,7 +562,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CompareBlockSetsIsCorrect
     path: ../Koffing/Scripts/Tests/BlockTests.cs
-    startLine: 133
+    startLine: 132
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -616,7 +616,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetPossibleBlockSetsIsCorrect
     path: ../Koffing/Scripts/Tests/BlockTests.cs
-    startLine: 147
+    startLine: 146
   assemblies:
   - Koffing
   namespace: Koffing.Tests

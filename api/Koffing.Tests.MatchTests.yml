@@ -27,17 +27,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: MatchTests
     path: ../Koffing/Scripts/Tests/MatchTests.cs
-    startLine: 15
+    startLine: 14
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [TestSuite(16, "")]
+      [TestSuite(15, "")]
 
       public class MatchTests
     content.vb: >-
-      <TestSuite(16, "")>
+      <TestSuite(15, "")>
 
       Public Class MatchTests
   inheritance:
@@ -55,7 +55,7 @@ items:
     ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 16
+      value: 15
     - type: System.String
       value: ''
 - uid: Koffing.Tests.MatchTests.Setup
@@ -76,17 +76,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Setup
     path: ../Koffing/Scripts/Tests/MatchTests.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [Before(19, "Setup")]
+      [Before(18, "Setup")]
 
       public static void Setup()
     content.vb: >-
-      <Before(19, "Setup")>
+      <Before(18, "Setup")>
 
       Public Shared Sub Setup()
   overload: Koffing.Tests.MatchTests.Setup*
@@ -95,7 +95,7 @@ items:
     ctor: GdUnit4.BeforeAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 19
+      value: 18
     - type: System.String
       value: Setup
 - uid: Koffing.Tests.MatchTests.TearDown
@@ -116,17 +116,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: TearDown
     path: ../Koffing/Scripts/Tests/MatchTests.cs
-    startLine: 24
+    startLine: 23
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [After(25, "TearDown")]
+      [After(24, "TearDown")]
 
       public static void TearDown()
     content.vb: >-
-      <After(25, "TearDown")>
+      <After(24, "TearDown")>
 
       Public Shared Sub TearDown()
   overload: Koffing.Tests.MatchTests.TearDown*
@@ -135,7 +135,7 @@ items:
     ctor: GdUnit4.AfterAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 25
+      value: 24
     - type: System.String
       value: TearDown
 - uid: Koffing.Tests.MatchTests.WallIsCreatedCorrectly(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Koffing.Tiles.Tile)
@@ -156,7 +156,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: WallIsCreatedCorrectly
     path: ../Koffing/Scripts/Tests/MatchTests.cs
-    startLine: 31
+    startLine: 29
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -218,7 +218,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PopLiveTileIsCorrect
     path: ../Koffing/Scripts/Tests/MatchTests.cs
-    startLine: 117
+    startLine: 115
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -270,7 +270,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PopReplacementTileIsCorrect
     path: ../Koffing/Scripts/Tests/MatchTests.cs
-    startLine: 154
+    startLine: 152
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -326,7 +326,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RevealDoraIndicatorIsCorrect
     path: ../Koffing/Scripts/Tests/MatchTests.cs
-    startLine: 221
+    startLine: 219
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -380,7 +380,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: MatchIsCreatedCorrectly
     path: ../Koffing/Scripts/Tests/MatchTests.cs
-    startLine: 291
+    startLine: 289
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -434,7 +434,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: DealHandsIsCorrect
     path: ../Koffing/Scripts/Tests/MatchTests.cs
-    startLine: 339
+    startLine: 337
   assemblies:
   - Koffing
   namespace: Koffing.Tests

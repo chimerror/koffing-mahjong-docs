@@ -29,7 +29,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Match
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 10
+    startLine: 9
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -64,7 +64,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RoundWind
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -93,7 +93,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: NumberOfRounds
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 19
+    startLine: 18
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -122,7 +122,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PlayerCount
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 20
+    startLine: 19
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -151,7 +151,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: HasRedFives
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 21
+    startLine: 20
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -180,7 +180,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Players
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 22
+    startLine: 21
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -209,7 +209,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CurrentEastPlayer
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -238,7 +238,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: WindsToPlayers
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 24
+    startLine: 23
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -267,7 +267,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CurrentEastIndex
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 25
+    startLine: 24
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -296,7 +296,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 30
+    startLine: 29
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -334,7 +334,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: DealHands
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 51
+    startLine: 50
   assemblies:
   - Koffing
   namespace: Koffing.Matches

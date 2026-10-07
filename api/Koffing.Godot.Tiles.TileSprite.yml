@@ -25,7 +25,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: TileSprite
     path: ../Koffing/Scripts/Tiles/TileSprite.cs
-    startLine: 7
+    startLine: 6
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Tiles
@@ -508,7 +508,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Tile
     path: ../Koffing/Scripts/Tiles/TileSprite.cs
-    startLine: 12
+    startLine: 11
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Tiles
@@ -537,7 +537,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Suit
     path: ../Koffing/Scripts/Tiles/TileSprite.cs
-    startLine: 26
+    startLine: 25
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Tiles
@@ -580,7 +580,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Rank
     path: ../Koffing/Scripts/Tiles/TileSprite.cs
-    startLine: 41
+    startLine: 40
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Tiles
@@ -623,7 +623,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: FaceUp
     path: ../Koffing/Scripts/Tiles/TileSprite.cs
-    startLine: 60
+    startLine: 59
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Tiles
@@ -666,7 +666,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ToString
     path: ../Koffing/Scripts/Tiles/TileSprite.cs
-    startLine: 74
+    startLine: 73
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Tiles
@@ -698,7 +698,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: _Ready
     path: ../Koffing/Scripts/Tiles/TileSprite.cs
-    startLine: 91
+    startLine: 90
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Tiles

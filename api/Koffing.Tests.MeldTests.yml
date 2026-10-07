@@ -32,17 +32,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: MeldTests
     path: ../Koffing/Scripts/Tests/MeldTests.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [TestSuite(14, "")]
+      [TestSuite(13, "")]
 
       public class MeldTests
     content.vb: >-
-      <TestSuite(14, "")>
+      <TestSuite(13, "")>
 
       Public Class MeldTests
   inheritance:
@@ -60,7 +60,7 @@ items:
     ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 14
+      value: 13
     - type: System.String
       value: ''
 - uid: Koffing.Tests.MeldTests.Setup
@@ -81,17 +81,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Setup
     path: ../Koffing/Scripts/Tests/MeldTests.cs
-    startLine: 16
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [Before(17, "Setup")]
+      [Before(16, "Setup")]
 
       public static void Setup()
     content.vb: >-
-      <Before(17, "Setup")>
+      <Before(16, "Setup")>
 
       Public Shared Sub Setup()
   overload: Koffing.Tests.MeldTests.Setup*
@@ -100,7 +100,7 @@ items:
     ctor: GdUnit4.BeforeAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 17
+      value: 16
     - type: System.String
       value: Setup
 - uid: Koffing.Tests.MeldTests.TearDown
@@ -121,17 +121,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: TearDown
     path: ../Koffing/Scripts/Tests/MeldTests.cs
-    startLine: 22
+    startLine: 21
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [After(23, "TearDown")]
+      [After(22, "TearDown")]
 
       public static void TearDown()
     content.vb: >-
-      <After(23, "TearDown")>
+      <After(22, "TearDown")>
 
       Public Shared Sub TearDown()
   overload: Koffing.Tests.MeldTests.TearDown*
@@ -140,7 +140,7 @@ items:
     ctor: GdUnit4.AfterAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 23
+      value: 22
     - type: System.String
       value: TearDown
 - uid: Koffing.Tests.MeldTests.GetFirstLevelMeldsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -161,7 +161,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetFirstLevelMeldsIsCorrect
     path: ../Koffing/Scripts/Tests/MeldTests.cs
-    startLine: 28
+    startLine: 27
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -213,7 +213,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PairGetPossibleForTileIsCorrect
     path: ../Koffing/Scripts/Tests/MeldTests.cs
-    startLine: 40
+    startLine: 39
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -267,7 +267,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PairGetPossibleIsCorrect
     path: ../Koffing/Scripts/Tests/MeldTests.cs
-    startLine: 57
+    startLine: 56
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -319,7 +319,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PairWaitGetPossibleForTileIsCorrect
     path: ../Koffing/Scripts/Tests/MeldTests.cs
-    startLine: 71
+    startLine: 70
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -373,7 +373,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PairWaitGetPossibleIsCorrect
     path: ../Koffing/Scripts/Tests/MeldTests.cs
-    startLine: 92
+    startLine: 91
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -425,7 +425,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: KongGetPossibleForTileIsCorrect
     path: ../Koffing/Scripts/Tests/MeldTests.cs
-    startLine: 109
+    startLine: 108
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -479,7 +479,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: KongGetPossibleIsCorrect
     path: ../Koffing/Scripts/Tests/MeldTests.cs
-    startLine: 126
+    startLine: 125
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -531,7 +531,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PungGetPossibleForTileIsCorrect
     path: ../Koffing/Scripts/Tests/MeldTests.cs
-    startLine: 138
+    startLine: 137
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -585,7 +585,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PungGetPossibleIsCorrect
     path: ../Koffing/Scripts/Tests/MeldTests.cs
-    startLine: 155
+    startLine: 154
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -637,7 +637,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ChowGetPossibleForTileIsCorrect
     path: ../Koffing/Scripts/Tests/MeldTests.cs
-    startLine: 167
+    startLine: 166
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -691,7 +691,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ChowGetPossibleIsCorrect
     path: ../Koffing/Scripts/Tests/MeldTests.cs
-    startLine: 184
+    startLine: 183
   assemblies:
   - Koffing
   namespace: Koffing.Tests

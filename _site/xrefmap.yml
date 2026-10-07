@@ -195,19 +195,6 @@ references:
   fullName.vb: Koffing.Blocks.Block.this[]
   nameWithType: Block.this
   nameWithType.vb: Block.this[]
-- uid: Koffing.Blocks.Block.Tiles
-  name: Tiles
-  href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_Tiles
-  commentId: P:Koffing.Blocks.Block.Tiles
-  fullName: Koffing.Blocks.Block.Tiles
-  nameWithType: Block.Tiles
-- uid: Koffing.Blocks.Block.Tiles*
-  name: Tiles
-  href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_Tiles_
-  commentId: Overload:Koffing.Blocks.Block.Tiles
-  isSpec: "True"
-  fullName: Koffing.Blocks.Block.Tiles
-  nameWithType: Block.Tiles
 - uid: Koffing.Blocks.Block.ToString
   name: ToString()
   href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_ToString
@@ -252,19 +239,6 @@ references:
   fullName.vb: Koffing.Blocks.BlockSet.New
   nameWithType: BlockSet.BlockSet
   nameWithType.vb: BlockSet.New
-- uid: Koffing.Blocks.BlockSet.Blocks
-  name: Blocks
-  href: api/Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_Blocks
-  commentId: P:Koffing.Blocks.BlockSet.Blocks
-  fullName: Koffing.Blocks.BlockSet.Blocks
-  nameWithType: BlockSet.Blocks
-- uid: Koffing.Blocks.BlockSet.Blocks*
-  name: Blocks
-  href: api/Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_Blocks_
-  commentId: Overload:Koffing.Blocks.BlockSet.Blocks
-  isSpec: "True"
-  fullName: Koffing.Blocks.BlockSet.Blocks
-  nameWithType: BlockSet.Blocks
 - uid: Koffing.Blocks.BlockSet.CompareTo(Koffing.Blocks.BlockSet)
   name: CompareTo(BlockSet)
   href: api/Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_CompareTo_Koffing_Blocks_BlockSet_

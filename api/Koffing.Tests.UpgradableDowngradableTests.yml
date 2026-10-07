@@ -30,17 +30,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: UpgradableDowngradableTests
     path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
-    startLine: 15
+    startLine: 14
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [TestSuite(16, "")]
+      [TestSuite(15, "")]
 
       public class UpgradableDowngradableTests
     content.vb: >-
-      <TestSuite(16, "")>
+      <TestSuite(15, "")>
 
       Public Class UpgradableDowngradableTests
   inheritance:
@@ -58,7 +58,7 @@ items:
     ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 16
+      value: 15
     - type: System.String
       value: ''
 - uid: Koffing.Tests.UpgradableDowngradableTests.Setup
@@ -79,17 +79,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Setup
     path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [Before(19, "Setup")]
+      [Before(18, "Setup")]
 
       public static void Setup()
     content.vb: >-
-      <Before(19, "Setup")>
+      <Before(18, "Setup")>
 
       Public Shared Sub Setup()
   overload: Koffing.Tests.UpgradableDowngradableTests.Setup*
@@ -98,7 +98,7 @@ items:
     ctor: GdUnit4.BeforeAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 19
+      value: 18
     - type: System.String
       value: Setup
 - uid: Koffing.Tests.UpgradableDowngradableTests.TearDown
@@ -119,17 +119,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: TearDown
     path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
-    startLine: 24
+    startLine: 23
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [After(25, "TearDown")]
+      [After(24, "TearDown")]
 
       public static void TearDown()
     content.vb: >-
-      <After(25, "TearDown")>
+      <After(24, "TearDown")>
 
       Public Shared Sub TearDown()
   overload: Koffing.Tests.UpgradableDowngradableTests.TearDown*
@@ -138,7 +138,7 @@ items:
     ctor: GdUnit4.AfterAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 25
+      value: 24
     - type: System.String
       value: TearDown
 - uid: Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToKanchanIsCorrect(Koffing.Melds.Chow,System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext})
@@ -159,7 +159,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: DowngradeChowToKanchanIsCorrect
     path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
-    startLine: 30
+    startLine: 29
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -209,7 +209,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: DowngradeChowToPenchanIsCorrect
     path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
-    startLine: 41
+    startLine: 40
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -261,7 +261,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: DowngradeChowToRyanmenIsCorrect
     path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
-    startLine: 52
+    startLine: 51
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -311,7 +311,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: DowngradeKongToPungIsCorrect
     path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
-    startLine: 63
+    startLine: 62
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -361,7 +361,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: DowngradePungToPairIsCorrect
     path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
-    startLine: 74
+    startLine: 73
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -411,7 +411,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: UpgradePungToKongSoughtTilesIsCorrect
     path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
-    startLine: 85
+    startLine: 84
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -461,7 +461,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: UpgradePungToKongCanUpgradeWithIsCorrect
     path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
-    startLine: 96
+    startLine: 95
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -515,7 +515,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: UpgradePungToKongNegativeCasesAreCorrect
     path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
-    startLine: 108
+    startLine: 107
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -576,7 +576,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: UpgradePungToKongPositiveCasesAreCorrect
     path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
-    startLine: 119
+    startLine: 118
   assemblies:
   - Koffing
   namespace: Koffing.Tests
