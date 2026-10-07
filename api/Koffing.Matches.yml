@@ -47,6 +47,28 @@ references:
   name: WallDisplay
   nameWithType: WallDisplay
   fullName: Koffing.Matches.WallDisplay
+- uid: Koffing.Matches.WallDisplay.PropertyName
+  commentId: T:Koffing.Matches.WallDisplay.PropertyName
+  href: Koffing.Matches.WallDisplay.html
+  name: WallDisplay.PropertyName
+  nameWithType: WallDisplay.PropertyName
+  fullName: Koffing.Matches.WallDisplay.PropertyName
+  spec.csharp:
+  - uid: Koffing.Matches.WallDisplay
+    name: WallDisplay
+    href: Koffing.Matches.WallDisplay.html
+  - name: .
+  - uid: Koffing.Matches.WallDisplay.PropertyName
+    name: PropertyName
+    href: Koffing.Matches.WallDisplay.PropertyName.html
+  spec.vb:
+  - uid: Koffing.Matches.WallDisplay
+    name: WallDisplay
+    href: Koffing.Matches.WallDisplay.html
+  - name: .
+  - uid: Koffing.Matches.WallDisplay.PropertyName
+    name: PropertyName
+    href: Koffing.Matches.WallDisplay.PropertyName.html
 - uid: Koffing.Matches.WallDisplay.SignalName
   commentId: T:Koffing.Matches.WallDisplay.SignalName
   href: Koffing.Matches.WallDisplay.html
@@ -91,28 +113,6 @@ references:
   - uid: Koffing.Matches.WallDisplay.MethodName
     name: MethodName
     href: Koffing.Matches.WallDisplay.MethodName.html
-- uid: Koffing.Matches.WallDisplay.PropertyName
-  commentId: T:Koffing.Matches.WallDisplay.PropertyName
-  href: Koffing.Matches.WallDisplay.html
-  name: WallDisplay.PropertyName
-  nameWithType: WallDisplay.PropertyName
-  fullName: Koffing.Matches.WallDisplay.PropertyName
-  spec.csharp:
-  - uid: Koffing.Matches.WallDisplay
-    name: WallDisplay
-    href: Koffing.Matches.WallDisplay.html
-  - name: .
-  - uid: Koffing.Matches.WallDisplay.PropertyName
-    name: PropertyName
-    href: Koffing.Matches.WallDisplay.PropertyName.html
-  spec.vb:
-  - uid: Koffing.Matches.WallDisplay
-    name: WallDisplay
-    href: Koffing.Matches.WallDisplay.html
-  - name: .
-  - uid: Koffing.Matches.WallDisplay.PropertyName
-    name: PropertyName
-    href: Koffing.Matches.WallDisplay.PropertyName.html
 - uid: Koffing.Matches.Wind
   commentId: T:Koffing.Matches.Wind
   parent: Koffing.Matches

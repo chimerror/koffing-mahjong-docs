@@ -27,10 +27,19 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: MadeBlockContext
     path: ../Koffing/Scripts/Blocks/MadeBlockContext.cs
-    startLine: 7
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
+  summary: >-
+    Represents a "made" block, a pair of a <xref href="Koffing.Blocks.Block" data-throw-if-not-resolved="false"></xref> and the <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s that remain after making the
+
+    block.
+  remarks: >-
+    By wrapping up these two values, we have an easy way to recursively generate blocks from a collection of tiles, by
+
+    recursing on the <xref href="Koffing.Blocks.MadeBlockContext.RemainingTiles" data-throw-if-not-resolved="false"></xref> property.
+  example: []
   syntax:
     content: 'public class MadeBlockContext : IComparable<MadeBlockContext>, IEquatable<MadeBlockContext>'
     content.vb: Public Class MadeBlockContext Implements IComparable(Of MadeBlockContext), IEquatable(Of MadeBlockContext)
@@ -62,10 +71,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: MadeBlock
     path: ../Koffing/Scripts/Blocks/MadeBlockContext.cs
-    startLine: 12
+    startLine: 23
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
+  summary: The <xref href="Koffing.Blocks.Block" data-throw-if-not-resolved="false"></xref> that was formed for this particular context.
+  example: []
   syntax:
     content: public Block MadeBlock { get; }
     parameters: []
@@ -91,10 +102,15 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RemainingTiles
     path: ../Koffing/Scripts/Blocks/MadeBlockContext.cs
-    startLine: 13
+    startLine: 29
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
+  summary: >-
+    An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s that are the tiles that were left over after forming the
+
+    block returned by <xref href="Koffing.Blocks.MadeBlockContext.MadeBlock" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public IEnumerable<Tile> RemainingTiles { get; }
     parameters: []
@@ -120,17 +136,24 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Blocks/MadeBlockContext.cs
-    startLine: 15
+    startLine: 39
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
+  summary: Constructor.
+  example: []
   syntax:
     content: public MadeBlockContext(Block madeBlock, IEnumerable<Tile> remainingTiles)
     parameters:
     - id: madeBlock
       type: Koffing.Blocks.Block
+      description: The <xref href="Koffing.Blocks.Block" data-throw-if-not-resolved="false"></xref> that was formed for this particular context.
     - id: remainingTiles
       type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+      description: >-
+        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s representing the tiles that were left over after forming
+
+        <code class="paramref">madeBlock</code>.
     content.vb: Public Sub New(madeBlock As Block, remainingTiles As IEnumerable(Of Tile))
   overload: Koffing.Blocks.MadeBlockContext.#ctor*
   nameWithType.vb: MadeBlockContext.New(Block, IEnumerable(Of Tile))
@@ -154,11 +177,22 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Blocks/MadeBlockContext.cs
-    startLine: 21
+    startLine: 62
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
   summary: Determines whether the specified object is equal to the current object.
+  remarks: >-
+    Equality is determined by checking:
+
+
+    <ol><li>
+    		if <code class="paramref">that</code> is null (always false)
+    	</li><li>
+    		if <code class="paramref">that</code> is a <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>
+    	</li><li>
+    		then deferring to <xref href="Koffing.Blocks.MadeBlockContext.Equals(Koffing.Blocks.MadeBlockContext)" data-throw-if-not-resolved="false"></xref>
+    	</li></ol>
   example: []
   syntax:
     content: public override bool Equals(object that)
@@ -192,11 +226,24 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Blocks/MadeBlockContext.cs
-    startLine: 32
+    startLine: 91
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
   summary: Indicates whether the current object is equal to another object of the same type.
+  remarks: >-
+    Equality is determined by checking:
+
+
+    <ol><li>
+    		if <code class="paramref">thatContext</code> is null (always false)
+    	</li><li>
+    		the <xref href="Koffing.Blocks.MadeBlockContext.MadeBlock" data-throw-if-not-resolved="false"></xref> using <xref href="Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)" data-throw-if-not-resolved="false"></xref>
+    	</li><li>
+    		the count of tiles in <xref href="Koffing.Blocks.MadeBlockContext.RemainingTiles" data-throw-if-not-resolved="false"></xref>
+    	</li><li>
+    		the tiles in <xref href="Koffing.Blocks.MadeBlockContext.RemainingTiles" data-throw-if-not-resolved="false"></xref> (after sorting)
+    	</li></ol>
   example: []
   syntax:
     content: public bool Equals(MadeBlockContext thatContext)
@@ -228,11 +275,19 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCode
     path: ../Koffing/Scripts/Blocks/MadeBlockContext.cs
-    startLine: 64
+    startLine: 130
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
   summary: Serves as the default hash function.
+  remarks: >-
+    Calculates hash value using the value returned from <xref href="Koffing.Blocks.IBlock.GetHashCodeBasis" data-throw-if-not-resolved="false"></xref> for
+
+    <xref href="Koffing.Blocks.MadeBlockContext.MadeBlock" data-throw-if-not-resolved="false"></xref> as a basis which is combined using bitwise exclusive or with an "exponent" calculated by
+
+    that same basis and the hash code of the tiles in <xref href="Koffing.Blocks.MadeBlockContext.RemainingTiles" data-throw-if-not-resolved="false"></xref> using
+
+    <xref href="Koffing.Tiles.Tile.GetHashCode" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public override int GetHashCode()
@@ -260,11 +315,25 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CompareTo
     path: ../Koffing/Scripts/Blocks/MadeBlockContext.cs
-    startLine: 77
+    startLine: 165
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
   summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+  remarks: >-
+    Comparison is done by comparing:
+
+
+    <ol><li>
+    		if <code class="paramref">thatContext</code> is null (always 1)
+    	</li><li>
+    		if the <xref href="Koffing.Blocks.MadeBlockContext.MadeBlock" data-throw-if-not-resolved="false"></xref>s aren't equal and then using <xref href="Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)" data-throw-if-not-resolved="false"></xref> on
+    		them if not.
+    	</li><li>
+    		the count of tiles in <xref href="Koffing.Blocks.MadeBlockContext.RemainingTiles" data-throw-if-not-resolved="false"></xref>
+    	</li><li>
+    		the tiles in <xref href="Koffing.Blocks.MadeBlockContext.RemainingTiles" data-throw-if-not-resolved="false"></xref> using <xref href="Koffing.Tiles.Tile.CompareTo(Koffing.Tiles.Tile)" data-throw-if-not-resolved="false"></xref> (after sorting)
+    	</li></ol>
   example: []
   syntax:
     content: public int CompareTo(MadeBlockContext that)
@@ -299,11 +368,30 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ToString
     path: ../Koffing/Scripts/Blocks/MadeBlockContext.cs
-    startLine: 109
+    startLine: 223
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
   summary: Returns a string that represents the current object.
+  remarks: >-
+    Prints:
+
+
+    <ol><li>
+    		<code>"MadeBlockContext "</code>
+    	</li><li>
+    		the name of the <xref href="System.Type" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Blocks.MadeBlockContext.MadeBlock" data-throw-if-not-resolved="false"></xref>
+    	</li><li>
+    		<code>": "</code>
+    	</li><li>
+    		the MPSZ notation of <xref href="Koffing.Blocks.MadeBlockContext.MadeBlock" data-throw-if-not-resolved="false"></xref> as generated by
+    		<xref href="Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable%7bKoffing.Tiles.Tile%7d)" data-throw-if-not-resolved="false"></xref>.
+    	</li><li>
+    		<code>", "</code>
+    	</li><li>
+    		the MPSZ notation of <xref href="Koffing.Blocks.MadeBlockContext.RemainingTiles" data-throw-if-not-resolved="false"></xref> as generated by
+    		<xref href="Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable%7bKoffing.Tiles.Tile%7d)" data-throw-if-not-resolved="false"></xref>.
+    	</li></ol>
   example: []
   syntax:
     content: public override string ToString()
@@ -314,6 +402,26 @@ items:
   overridden: System.Object.ToString
   overload: Koffing.Blocks.MadeBlockContext.ToString*
 references:
+- uid: Koffing.Blocks.Block
+  commentId: T:Koffing.Blocks.Block
+  parent: Koffing.Blocks
+  href: Koffing.Blocks.Block.html
+  name: Block
+  nameWithType: Block
+  fullName: Koffing.Blocks.Block
+- uid: Koffing.Tiles.Tile
+  commentId: T:Koffing.Tiles.Tile
+  parent: Koffing.Tiles
+  href: Koffing.Tiles.Tile.html
+  name: Tile
+  nameWithType: Tile
+  fullName: Koffing.Tiles.Tile
+- uid: Koffing.Blocks.MadeBlockContext.RemainingTiles
+  commentId: P:Koffing.Blocks.MadeBlockContext.RemainingTiles
+  href: Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_RemainingTiles
+  name: RemainingTiles
+  nameWithType: MadeBlockContext.RemainingTiles
+  fullName: Koffing.Blocks.MadeBlockContext.RemainingTiles
 - uid: Koffing.Blocks
   commentId: N:Koffing.Blocks
   name: Koffing.Blocks
@@ -546,6 +654,23 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: Koffing.Tiles
+  commentId: N:Koffing.Tiles
+  name: Koffing.Tiles
+  nameWithType: Koffing.Tiles
+  fullName: Koffing.Tiles
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
 - uid: System
   commentId: N:System
   isExternal: true
@@ -615,13 +740,40 @@ references:
   name: MadeBlock
   nameWithType: MadeBlockContext.MadeBlock
   fullName: Koffing.Blocks.MadeBlockContext.MadeBlock
-- uid: Koffing.Blocks.Block
-  commentId: T:Koffing.Blocks.Block
-  parent: Koffing.Blocks
-  href: Koffing.Blocks.Block.html
-  name: Block
-  nameWithType: Block
-  fullName: Koffing.Blocks.Block
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Koffing.Blocks.MadeBlockContext.MadeBlock
+  commentId: P:Koffing.Blocks.MadeBlockContext.MadeBlock
+  href: Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_MadeBlock
+  name: MadeBlock
+  nameWithType: MadeBlockContext.MadeBlock
+  fullName: Koffing.Blocks.MadeBlockContext.MadeBlock
 - uid: Koffing.Blocks.MadeBlockContext.RemainingTiles*
   commentId: Overload:Koffing.Blocks.MadeBlockContext.RemainingTiles
   href: Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_RemainingTiles
@@ -660,34 +812,6 @@ references:
   - uid: Koffing.Tiles.Tile
     name: Tile
     href: Koffing.Tiles.Tile.html
-  - name: )
-- uid: System.Collections.Generic.IEnumerable`1
-  commentId: T:System.Collections.Generic.IEnumerable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
   - name: )
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
@@ -735,6 +859,37 @@ references:
   nameWithType.vb: MadeBlockContext.New
   fullName.vb: Koffing.Blocks.MadeBlockContext.New
   name.vb: New
+- uid: Koffing.Blocks.MadeBlockContext
+  commentId: T:Koffing.Blocks.MadeBlockContext
+  parent: Koffing.Blocks
+  href: Koffing.Blocks.MadeBlockContext.html
+  name: MadeBlockContext
+  nameWithType: MadeBlockContext
+  fullName: Koffing.Blocks.MadeBlockContext
+- uid: Koffing.Blocks.MadeBlockContext.Equals(Koffing.Blocks.MadeBlockContext)
+  commentId: M:Koffing.Blocks.MadeBlockContext.Equals(Koffing.Blocks.MadeBlockContext)
+  href: Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_Equals_Koffing_Blocks_MadeBlockContext_
+  name: Equals(MadeBlockContext)
+  nameWithType: MadeBlockContext.Equals(MadeBlockContext)
+  fullName: Koffing.Blocks.MadeBlockContext.Equals(Koffing.Blocks.MadeBlockContext)
+  spec.csharp:
+  - uid: Koffing.Blocks.MadeBlockContext.Equals(Koffing.Blocks.MadeBlockContext)
+    name: Equals
+    href: Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_Equals_Koffing_Blocks_MadeBlockContext_
+  - name: (
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: )
+  spec.vb:
+  - uid: Koffing.Blocks.MadeBlockContext.Equals(Koffing.Blocks.MadeBlockContext)
+    name: Equals
+    href: Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_Equals_Koffing_Blocks_MadeBlockContext_
+  - name: (
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -785,6 +940,31 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
+  commentId: M:Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
+  parent: Koffing.Blocks.Block
+  href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Equals_Koffing_Blocks_Block_
+  name: Equals(Block)
+  nameWithType: Block.Equals(Block)
+  fullName: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
+  spec.csharp:
+  - uid: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
+    name: Equals
+    href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Equals_Koffing_Blocks_Block_
+  - name: (
+  - uid: Koffing.Blocks.Block
+    name: Block
+    href: Koffing.Blocks.Block.html
+  - name: )
+  spec.vb:
+  - uid: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
+    name: Equals
+    href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Equals_Koffing_Blocks_Block_
+  - name: (
+  - uid: Koffing.Blocks.Block
+    name: Block
+    href: Koffing.Blocks.Block.html
+  - name: )
 - uid: System.IEquatable{Koffing.Blocks.MadeBlockContext}.Equals(Koffing.Blocks.MadeBlockContext)
   commentId: M:System.IEquatable{Koffing.Blocks.MadeBlockContext}.Equals(Koffing.Blocks.MadeBlockContext)
   parent: System.IEquatable{Koffing.Blocks.MadeBlockContext}
@@ -815,13 +995,6 @@ references:
     name: MadeBlockContext
     href: Koffing.Blocks.MadeBlockContext.html
   - name: )
-- uid: Koffing.Blocks.MadeBlockContext
-  commentId: T:Koffing.Blocks.MadeBlockContext
-  parent: Koffing.Blocks
-  href: Koffing.Blocks.MadeBlockContext.html
-  name: MadeBlockContext
-  nameWithType: MadeBlockContext
-  fullName: Koffing.Blocks.MadeBlockContext
 - uid: System.IEquatable`1.Equals(`0)
   commentId: M:System.IEquatable`1.Equals(`0)
   isExternal: true
@@ -846,6 +1019,43 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
   - name: (
   - name: T
+  - name: )
+- uid: Koffing.Blocks.IBlock.GetHashCodeBasis
+  commentId: M:Koffing.Blocks.IBlock.GetHashCodeBasis
+  parent: Koffing.Blocks.IBlock
+  href: Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetHashCodeBasis
+  name: GetHashCodeBasis()
+  nameWithType: IBlock.GetHashCodeBasis()
+  fullName: Koffing.Blocks.IBlock.GetHashCodeBasis()
+  spec.csharp:
+  - uid: Koffing.Blocks.IBlock.GetHashCodeBasis
+    name: GetHashCodeBasis
+    href: Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetHashCodeBasis
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Koffing.Blocks.IBlock.GetHashCodeBasis
+    name: GetHashCodeBasis
+    href: Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetHashCodeBasis
+  - name: (
+  - name: )
+- uid: Koffing.Tiles.Tile.GetHashCode
+  commentId: M:Koffing.Tiles.Tile.GetHashCode
+  href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_GetHashCode
+  name: GetHashCode()
+  nameWithType: Tile.GetHashCode()
+  fullName: Koffing.Tiles.Tile.GetHashCode()
+  spec.csharp:
+  - uid: Koffing.Tiles.Tile.GetHashCode
+    name: GetHashCode
+    href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Koffing.Tiles.Tile.GetHashCode
+    name: GetHashCode
+    href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_GetHashCode
+  - name: (
   - name: )
 - uid: System.Object.GetHashCode
   commentId: M:System.Object.GetHashCode
@@ -888,6 +1098,62 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: Koffing.Blocks.IBlock
+  commentId: T:Koffing.Blocks.IBlock
+  parent: Koffing.Blocks
+  href: Koffing.Blocks.IBlock.html
+  name: IBlock
+  nameWithType: IBlock
+  fullName: Koffing.Blocks.IBlock
+- uid: Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
+  commentId: M:Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
+  parent: Koffing.Blocks.Block
+  href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_CompareTo_Koffing_Blocks_Block_
+  name: CompareTo(Block)
+  nameWithType: Block.CompareTo(Block)
+  fullName: Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
+  spec.csharp:
+  - uid: Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
+    name: CompareTo
+    href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_CompareTo_Koffing_Blocks_Block_
+  - name: (
+  - uid: Koffing.Blocks.Block
+    name: Block
+    href: Koffing.Blocks.Block.html
+  - name: )
+  spec.vb:
+  - uid: Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
+    name: CompareTo
+    href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_CompareTo_Koffing_Blocks_Block_
+  - name: (
+  - uid: Koffing.Blocks.Block
+    name: Block
+    href: Koffing.Blocks.Block.html
+  - name: )
+- uid: Koffing.Tiles.Tile.CompareTo(Koffing.Tiles.Tile)
+  commentId: M:Koffing.Tiles.Tile.CompareTo(Koffing.Tiles.Tile)
+  href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_CompareTo_Koffing_Tiles_Tile_
+  name: CompareTo(Tile)
+  nameWithType: Tile.CompareTo(Tile)
+  fullName: Koffing.Tiles.Tile.CompareTo(Koffing.Tiles.Tile)
+  spec.csharp:
+  - uid: Koffing.Tiles.Tile.CompareTo(Koffing.Tiles.Tile)
+    name: CompareTo
+    href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_CompareTo_Koffing_Tiles_Tile_
+  - name: (
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
+  spec.vb:
+  - uid: Koffing.Tiles.Tile.CompareTo(Koffing.Tiles.Tile)
+    name: CompareTo
+    href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_CompareTo_Koffing_Tiles_Tile_
+  - name: (
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
 - uid: Koffing.Blocks.MadeBlockContext.CompareTo*
   commentId: Overload:Koffing.Blocks.MadeBlockContext.CompareTo
   href: Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_CompareTo_Koffing_Blocks_MadeBlockContext_
@@ -948,6 +1214,56 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
   - name: (
   - name: T
+  - name: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  commentId: M:Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  isExternal: true
+  href: Koffing.Extensions.html#Koffing_Extensions_NotationFromTiles_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  name: NotationFromTiles(IEnumerable<Tile>)
+  nameWithType: Extensions.NotationFromTiles(IEnumerable<Tile>)
+  fullName: Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
+  nameWithType.vb: Extensions.NotationFromTiles(IEnumerable(Of Tile))
+  fullName.vb: Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
+  name.vb: NotationFromTiles(IEnumerable(Of Tile))
+  spec.csharp:
+  - uid: Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: NotationFromTiles
+    href: Koffing.Extensions.html#Koffing_Extensions_NotationFromTiles_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: NotationFromTiles
+    href: Koffing.Extensions.html#Koffing_Extensions_NotationFromTiles_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
   - name: )
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString

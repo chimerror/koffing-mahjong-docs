@@ -47,7 +47,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Blocks.BlockSet",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Blocks.BlockSet.yml\" sourcestartlinenumber=\"1\">A collection of Blocks, usually representing an entire blocked-out hand.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -103,7 +103,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Blocks.MadeBlockContext",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Blocks.MadeBlockContext.yml\" sourcestartlinenumber=\"1\">Represents a &quot;made&quot; block, a pair of a <xref href=\"Koffing.Blocks.Block\" data-throw-if-not-resolved=\"false\"></xref> and the <xref href=\"Koffing.Tiles.Tile\" data-throw-if-not-resolved=\"false\"></xref>s that remain after making the\nblock.</p>\n"
     },
     {
       "type": "ManagedReference",

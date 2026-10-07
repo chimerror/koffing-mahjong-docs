@@ -26,10 +26,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: BlockSet
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 7
+    startLine: 12
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
+  summary: A collection of Blocks, usually representing an entire blocked-out hand.
+  example: []
   syntax:
     content: 'public class BlockSet : IEnumerable<Block>, IEnumerable, IComparable<BlockSet>, IEquatable<BlockSet>'
     content.vb: Public Class BlockSet Implements IEnumerable(Of Block), IEnumerable, IComparable(Of BlockSet), IEquatable(Of BlockSet)
@@ -67,15 +69,18 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 11
+    startLine: 20
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
+  summary: Constructor. Optionally takes in an <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Blocks.Block" data-throw-if-not-resolved="false"></xref>s.
+  example: []
   syntax:
     content: public BlockSet(IEnumerable<Block> blocks = null)
     parameters:
     - id: blocks
       type: System.Collections.Generic.IEnumerable{Koffing.Blocks.Block}
+      description: The <xref href="Koffing.Blocks.Block" data-throw-if-not-resolved="false"></xref>s that make up the BlockSet.
     content.vb: Public Sub New(blocks As IEnumerable(Of Block) = Nothing)
   overload: Koffing.Blocks.BlockSet.#ctor*
   nameWithType.vb: BlockSet.New(IEnumerable(Of Block))
@@ -99,10 +104,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: this[]
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 23
+    startLine: 36
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
+  summary: Indexer.
+  example: []
   syntax:
     content: public Block this[int index] { get; }
     parameters:
@@ -110,6 +117,7 @@ items:
       type: System.Int32
     return:
       type: Koffing.Blocks.Block
+      description: The <xref href="Koffing.Blocks.Block" data-throw-if-not-resolved="false"></xref> at index <code class="paramref">index</code> in the BlockSet.
     content.vb: Public ReadOnly Default Property this[](index As Integer) As Block
   overload: Koffing.Blocks.BlockSet.Item*
   nameWithType.vb: BlockSet.this[](Integer)
@@ -133,11 +141,22 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CompareTo
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 28
+    startLine: 56
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
   summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+  remarks: >-
+    Comparison is done by comparing:
+
+
+    <ol><li>
+    		if <code class="paramref">that</code> is null (always 1)
+    	</li><li>
+    		the number of blocks
+    	</li><li>
+    		the actual blocks in the block-set (after sorting) using <xref href="Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)" data-throw-if-not-resolved="false"></xref>.
+    	</li></ol>
   example: []
   syntax:
     content: public int CompareTo(BlockSet that)
@@ -172,11 +191,22 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 55
+    startLine: 98
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
   summary: Indicates whether the current object is equal to another object of the same type.
+  remarks: >-
+    Equality is determined by:
+
+
+    <ol><li>
+    		if <code class="paramref">that</code> is null (always false)
+    	</li><li>
+    		the number of blocks
+    	</li><li>
+    		the actual blocks in the block-set (after sorting) using <xref href="Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)" data-throw-if-not-resolved="false"></xref>.
+    	</li></ol>
   example: []
   syntax:
     content: public bool Equals(BlockSet that)
@@ -208,7 +238,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetEnumerator
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 60
+    startLine: 103
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -241,11 +271,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 70
+    startLine: 117
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
   summary: Determines whether the specified object is equal to the current object.
+  remarks: Defers to <xref href="Koffing.Blocks.BlockSet.Equals(Koffing.Blocks.BlockSet)" data-throw-if-not-resolved="false"></xref> after converting <code class="paramref">obj</code> using the <code>as</code> keyword.
   example: []
   syntax:
     content: public override bool Equals(object obj)
@@ -280,11 +311,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCode
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 75
+    startLine: 129
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
   summary: Serves as the default hash function.
+  remarks: >-
+    Hash code is calculated as the multiple of the hash codes of all blocks using <xref href="Koffing.Blocks.Block.GetHashCode" data-throw-if-not-resolved="false"></xref>.
+
+    Given the design of the block hash code based on multiples of exponentiated prime numbers, this should be have
+
+    pretty good hashing (but this has not been verified).
   example: []
   syntax:
     content: public override int GetHashCode()
@@ -294,6 +331,9 @@ items:
     content.vb: Public Overrides Function GetHashCode() As Integer
   overridden: System.Object.GetHashCode
   overload: Koffing.Blocks.BlockSet.GetHashCode*
+  seealso:
+  - linkId: Koffing.Blocks.Block.GetHashCode
+    commentId: M:Koffing.Blocks.Block.GetHashCode
 references:
 - uid: Koffing.Blocks
   commentId: N:Koffing.Blocks
@@ -931,6 +971,13 @@ references:
   - name: .
   - uid: Koffing.Calculations
     name: Calculations
+- uid: Koffing.Blocks.Block
+  commentId: T:Koffing.Blocks.Block
+  parent: Koffing.Blocks
+  href: Koffing.Blocks.Block.html
+  name: Block
+  nameWithType: Block
+  fullName: Koffing.Blocks.Block
 - uid: Koffing.Blocks.BlockSet.#ctor*
   commentId: Overload:Koffing.Blocks.BlockSet.#ctor
   href: Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet__ctor_System_Collections_Generic_IEnumerable_Koffing_Blocks_Block__
@@ -960,13 +1007,31 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: Koffing.Blocks.Block
-  commentId: T:Koffing.Blocks.Block
-  parent: Koffing.Blocks
-  href: Koffing.Blocks.Block.html
-  name: Block
-  nameWithType: Block
-  fullName: Koffing.Blocks.Block
+- uid: Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
+  commentId: M:Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
+  parent: Koffing.Blocks.Block
+  href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_CompareTo_Koffing_Blocks_Block_
+  name: CompareTo(Block)
+  nameWithType: Block.CompareTo(Block)
+  fullName: Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
+  spec.csharp:
+  - uid: Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
+    name: CompareTo
+    href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_CompareTo_Koffing_Blocks_Block_
+  - name: (
+  - uid: Koffing.Blocks.Block
+    name: Block
+    href: Koffing.Blocks.Block.html
+  - name: )
+  spec.vb:
+  - uid: Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
+    name: CompareTo
+    href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_CompareTo_Koffing_Blocks_Block_
+  - name: (
+  - uid: Koffing.Blocks.Block
+    name: Block
+    href: Koffing.Blocks.Block.html
+  - name: )
 - uid: Koffing.Blocks.BlockSet.CompareTo*
   commentId: Overload:Koffing.Blocks.BlockSet.CompareTo
   href: Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_CompareTo_Koffing_Blocks_BlockSet_
@@ -1034,6 +1099,31 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
   - name: (
   - name: T
+  - name: )
+- uid: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
+  commentId: M:Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
+  parent: Koffing.Blocks.Block
+  href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Equals_Koffing_Blocks_Block_
+  name: Equals(Block)
+  nameWithType: Block.Equals(Block)
+  fullName: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
+  spec.csharp:
+  - uid: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
+    name: Equals
+    href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Equals_Koffing_Blocks_Block_
+  - name: (
+  - uid: Koffing.Blocks.Block
+    name: Block
+    href: Koffing.Blocks.Block.html
+  - name: )
+  spec.vb:
+  - uid: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
+    name: Equals
+    href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Equals_Koffing_Blocks_Block_
+  - name: (
+  - uid: Koffing.Blocks.Block
+    name: Block
+    href: Koffing.Blocks.Block.html
   - name: )
 - uid: Koffing.Blocks.BlockSet.Equals*
   commentId: Overload:Koffing.Blocks.BlockSet.Equals
@@ -1221,6 +1311,30 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: Koffing.Blocks.BlockSet.Equals(Koffing.Blocks.BlockSet)
+  commentId: M:Koffing.Blocks.BlockSet.Equals(Koffing.Blocks.BlockSet)
+  href: Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_Equals_Koffing_Blocks_BlockSet_
+  name: Equals(BlockSet)
+  nameWithType: BlockSet.Equals(BlockSet)
+  fullName: Koffing.Blocks.BlockSet.Equals(Koffing.Blocks.BlockSet)
+  spec.csharp:
+  - uid: Koffing.Blocks.BlockSet.Equals(Koffing.Blocks.BlockSet)
+    name: Equals
+    href: Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_Equals_Koffing_Blocks_BlockSet_
+  - name: (
+  - uid: Koffing.Blocks.BlockSet
+    name: BlockSet
+    href: Koffing.Blocks.BlockSet.html
+  - name: )
+  spec.vb:
+  - uid: Koffing.Blocks.BlockSet.Equals(Koffing.Blocks.BlockSet)
+    name: Equals
+    href: Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_Equals_Koffing_Blocks_BlockSet_
+  - name: (
+  - uid: Koffing.Blocks.BlockSet
+    name: BlockSet
+    href: Koffing.Blocks.BlockSet.html
+  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -1253,6 +1367,25 @@ references:
     name: Object
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Koffing.Blocks.Block.GetHashCode
+  commentId: M:Koffing.Blocks.Block.GetHashCode
+  parent: Koffing.Blocks.Block
+  href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCode
+  name: GetHashCode()
+  nameWithType: Block.GetHashCode()
+  fullName: Koffing.Blocks.Block.GetHashCode()
+  spec.csharp:
+  - uid: Koffing.Blocks.Block.GetHashCode
+    name: GetHashCode
+    href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Koffing.Blocks.Block.GetHashCode
+    name: GetHashCode
+    href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCode
+  - name: (
   - name: )
 - uid: System.Object.GetHashCode
   commentId: M:System.Object.GetHashCode

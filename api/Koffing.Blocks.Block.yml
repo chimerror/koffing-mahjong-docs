@@ -39,7 +39,7 @@ items:
   namespace: Koffing.Blocks
   summary: Abstract class representing a grouping of <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s.
   remarks: >-
-    A block is a very generic grouping of <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s. This should be the root class for all derived classes as
+    A block is a very generic grouping of <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s. This should be the root class for all derived blocks as
 
     it provides some basic implementations of the major interfaces of <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>,
 
@@ -84,10 +84,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: _tiles
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
+  summary: The tiles that make up the block.
+  example: []
   syntax:
     content: protected readonly List<Tile> _tiles
     return:
@@ -111,7 +113,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 39
+    startLine: 41
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -158,7 +160,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: this[]
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -169,7 +171,6 @@ items:
     parameters:
     - id: index
       type: System.Int32
-      description: The index to access.
     return:
       type: Koffing.Tiles.Tile
       description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref> at index <code class="paramref">index</code> in the Block.
@@ -196,7 +197,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetPossibleBlockSets
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 68
+    startLine: 69
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -234,7 +235,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetPossible
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 101
+    startLine: 102
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -285,7 +286,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetPossibleForTile
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 116
+    startLine: 117
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -339,7 +340,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCodeBasis
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 126
+    startLine: 127
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -385,7 +386,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetPossibleHelper
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 157
+    startLine: 162
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -413,6 +414,11 @@ items:
     {
     	return GetPossibleHelper(tiles, typeof(Chow)).Distinct();
     }</code></pre>
+
+
+    Note that the call to <xref href="System.Linq.Enumerable.Distinct%60%601(System.Collections.Generic.IEnumerable%7b%60%600%7d)" data-throw-if-not-resolved="false"></xref> is necessary, as this
+
+    function does not do it itself.
   syntax:
     content: protected static IEnumerable<MadeBlockContext> GetPossibleHelper(IEnumerable<Tile> tiles, Type blockType)
     parameters:
@@ -448,7 +454,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 240
+    startLine: 245
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -497,7 +503,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 270
+    startLine: 275
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -546,7 +552,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCode
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 303
+    startLine: 308
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -582,7 +588,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetEnumerator
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 323
+    startLine: 328
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -615,7 +621,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CompareTo
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 352
+    startLine: 357
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -667,15 +673,15 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ToString
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 399
+    startLine: 406
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
   summary: Returns a string that represents the current object.
   remarks: >-
-    Prints the type (through <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref>) followed by ": " and then the MPSZ notation of the tiles
+    Prints the type (through <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref>) followed by <code>": "</code> and then the MPSZ notation of
 
-    as generated by <xref href="Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable%7bKoffing.Tiles.Tile%7d)" data-throw-if-not-resolved="false"></xref>.
+    the tiles as generated by <xref href="Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable%7bKoffing.Tiles.Tile%7d)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public override string ToString()
@@ -1743,6 +1749,54 @@ references:
   - uid: Koffing.Tiles.Tile
     name: Tile
     href: Koffing.Tiles.Tile.html
+  - name: )
+  - name: )
+- uid: System.Linq.Enumerable.Distinct``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:System.Linq.Enumerable.Distinct``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.enumerable.distinct#system-linq-enumerable-distinct-1(system-collections-generic-ienumerable((-0)))
+  name: Distinct<TSource>(IEnumerable<TSource>)
+  nameWithType: Enumerable.Distinct<TSource>(IEnumerable<TSource>)
+  fullName: System.Linq.Enumerable.Distinct<TSource>(System.Collections.Generic.IEnumerable<TSource>)
+  nameWithType.vb: Enumerable.Distinct(Of TSource)(IEnumerable(Of TSource))
+  fullName.vb: System.Linq.Enumerable.Distinct(Of TSource)(System.Collections.Generic.IEnumerable(Of TSource))
+  name.vb: Distinct(Of TSource)(IEnumerable(Of TSource))
+  spec.csharp:
+  - uid: System.Linq.Enumerable.Distinct``1(System.Collections.Generic.IEnumerable{``0})
+    name: Distinct
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.enumerable.distinct#system-linq-enumerable-distinct-1(system-collections-generic-ienumerable((-0)))
+  - name: <
+  - name: TSource
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TSource
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.Distinct``1(System.Collections.Generic.IEnumerable{``0})
+    name: Distinct
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.enumerable.distinct#system-linq-enumerable-distinct-1(system-collections-generic-ienumerable((-0)))
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
   - name: )
   - name: )
 - uid: System.Type
