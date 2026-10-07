@@ -5,7 +5,6 @@ items:
   id: MatchTests
   parent: Koffing.Tests
   children:
-  - Koffing.Tests.MatchTests.#ctor
   - Koffing.Tests.MatchTests.DealHandsIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.List{System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}})
   - Koffing.Tests.MatchTests.MatchIsCreatedCorrectly(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Int32)
   - Koffing.Tests.MatchTests.PopLiveTileIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -22,7 +21,13 @@ items:
   fullName: Koffing.Tests.MatchTests
   type: Class
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+    remote:
+      path: Scripts/Tests/MatchTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: MatchTests
+    path: ../Koffing/Scripts/Tests/MatchTests.cs
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -38,13 +43,13 @@ items:
   inheritance:
   - System.Object
   inheritedMembers:
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   attributes:
   - type: GdUnit4.TestSuiteAttribute
     ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
@@ -65,7 +70,13 @@ items:
   fullName: Koffing.Tests.MatchTests.Setup()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+    remote:
+      path: Scripts/Tests/MatchTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Setup
+    path: ../Koffing/Scripts/Tests/MatchTests.cs
+    startLine: 18
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -99,7 +110,13 @@ items:
   fullName: Koffing.Tests.MatchTests.TearDown()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+    remote:
+      path: Scripts/Tests/MatchTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: TearDown
+    path: ../Koffing/Scripts/Tests/MatchTests.cs
+    startLine: 24
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -133,7 +150,13 @@ items:
   fullName: Koffing.Tests.MatchTests.WallIsCreatedCorrectly(Koffing.Matches.PlayerCount, bool, int, int, int, int, int, Koffing.Tiles.Tile)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+    remote:
+      path: Scripts/Tests/MatchTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: WallIsCreatedCorrectly
+    path: ../Koffing/Scripts/Tests/MatchTests.cs
+    startLine: 31
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -189,7 +212,13 @@ items:
   fullName: Koffing.Tests.MatchTests.PopLiveTileIsCorrect(Koffing.Matches.PlayerCount, bool, System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+    remote:
+      path: Scripts/Tests/MatchTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: PopLiveTileIsCorrect
+    path: ../Koffing/Scripts/Tests/MatchTests.cs
+    startLine: 117
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -235,7 +264,13 @@ items:
   fullName: Koffing.Tests.MatchTests.PopReplacementTileIsCorrect(Koffing.Matches.PlayerCount, bool, int, System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>, System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+    remote:
+      path: Scripts/Tests/MatchTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: PopReplacementTileIsCorrect
+    path: ../Koffing/Scripts/Tests/MatchTests.cs
+    startLine: 154
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -285,7 +320,13 @@ items:
   fullName: Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect(Koffing.Matches.PlayerCount, bool, int, System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+    remote:
+      path: Scripts/Tests/MatchTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: RevealDoraIndicatorIsCorrect
+    path: ../Koffing/Scripts/Tests/MatchTests.cs
+    startLine: 221
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -333,7 +374,13 @@ items:
   fullName: Koffing.Tests.MatchTests.MatchIsCreatedCorrectly(Koffing.Matches.PlayerCount, bool, int, int)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+    remote:
+      path: Scripts/Tests/MatchTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: MatchIsCreatedCorrectly
+    path: ../Koffing/Scripts/Tests/MatchTests.cs
+    startLine: 291
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -381,7 +428,13 @@ items:
   fullName: Koffing.Tests.MatchTests.DealHandsIsCorrect(Koffing.Matches.PlayerCount, bool, int, System.Collections.Generic.List<System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>>)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
+    remote:
+      path: Scripts/Tests/MatchTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: DealHandsIsCorrect
+    path: ../Koffing/Scripts/Tests/MatchTests.cs
+    startLine: 339
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -417,52 +470,24 @@ items:
   nameWithType.vb: MatchTests.DealHandsIsCorrect(PlayerCount, Boolean, Integer, List(Of IEnumerable(Of Tile)))
   fullName.vb: Koffing.Tests.MatchTests.DealHandsIsCorrect(Koffing.Matches.PlayerCount, Boolean, Integer, System.Collections.Generic.List(Of System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile)))
   name.vb: DealHandsIsCorrect(PlayerCount, Boolean, Integer, List(Of IEnumerable(Of Tile)))
-- uid: Koffing.Tests.MatchTests.#ctor
-  commentId: M:Koffing.Tests.MatchTests.#ctor
-  id: '#ctor'
-  parent: Koffing.Tests.MatchTests
-  langs:
-  - csharp
-  - vb
-  name: MatchTests()
-  nameWithType: MatchTests.MatchTests()
-  fullName: Koffing.Tests.MatchTests.MatchTests()
-  type: Constructor
-  source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/MatchTests.cs
-  assemblies:
-  - Koffing
-  namespace: Koffing.Tests
-  syntax:
-    content: public MatchTests()
-    content.vb: Public Sub New()
-  overload: Koffing.Tests.MatchTests.#ctor*
-  nameWithType.vb: MatchTests.New()
-  fullName.vb: Koffing.Tests.MatchTests.New()
-  name.vb: New()
 references:
 - uid: Koffing.Tests
   commentId: N:Koffing.Tests
-  isExternal: true
   name: Koffing.Tests
   nameWithType: Koffing.Tests
   fullName: Koffing.Tests
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tests
     name: Tests
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tests
     name: Tests
-    isExternal: true
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -474,78 +499,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  name: MemberwiseClone()
-  nameWithType: object.MemberwiseClone()
-  fullName: object.MemberwiseClone()
-  nameWithType.vb: Object.MemberwiseClone()
-  fullName.vb: Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -624,6 +577,78 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -669,28 +694,28 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
   parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
   spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
   spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
 - uid: System
@@ -702,21 +727,18 @@ references:
   fullName: System
 - uid: Koffing.Tests.MatchTests.Setup*
   commentId: Overload:Koffing.Tests.MatchTests.Setup
-  isExternal: true
   href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_Setup
   name: Setup
   nameWithType: MatchTests.Setup
   fullName: Koffing.Tests.MatchTests.Setup
 - uid: Koffing.Tests.MatchTests.TearDown*
   commentId: Overload:Koffing.Tests.MatchTests.TearDown
-  isExternal: true
   href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_TearDown
   name: TearDown
   nameWithType: MatchTests.TearDown
   fullName: Koffing.Tests.MatchTests.TearDown
 - uid: Koffing.Tests.MatchTests.WallIsCreatedCorrectly*
   commentId: Overload:Koffing.Tests.MatchTests.WallIsCreatedCorrectly
-  isExternal: true
   href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_WallIsCreatedCorrectly_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_Koffing_Tiles_Tile_
   name: WallIsCreatedCorrectly
   nameWithType: MatchTests.WallIsCreatedCorrectly
@@ -724,7 +746,6 @@ references:
 - uid: Koffing.Matches.PlayerCount
   commentId: T:Koffing.Matches.PlayerCount
   parent: Koffing.Matches
-  isExternal: true
   href: Koffing.Matches.PlayerCount.html
   name: PlayerCount
   nameWithType: PlayerCount
@@ -754,58 +775,46 @@ references:
 - uid: Koffing.Tiles.Tile
   commentId: T:Koffing.Tiles.Tile
   parent: Koffing.Tiles
-  isExternal: true
   href: Koffing.Tiles.Tile.html
   name: Tile
   nameWithType: Tile
   fullName: Koffing.Tiles.Tile
 - uid: Koffing.Matches
   commentId: N:Koffing.Matches
-  isExternal: true
   name: Koffing.Matches
   nameWithType: Koffing.Matches
   fullName: Koffing.Matches
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Matches
     name: Matches
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Matches
     name: Matches
-    isExternal: true
 - uid: Koffing.Tiles
   commentId: N:Koffing.Tiles
-  isExternal: true
   name: Koffing.Tiles
   nameWithType: Koffing.Tiles
   fullName: Koffing.Tiles
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tiles
     name: Tiles
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tiles
     name: Tiles
-    isExternal: true
 - uid: Koffing.Tests.MatchTests.PopLiveTileIsCorrect*
   commentId: Overload:Koffing.Tests.MatchTests.PopLiveTileIsCorrect
-  isExternal: true
   href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_PopLiveTileIsCorrect_Koffing_Matches_PlayerCount_System_Boolean_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   name: PopLiveTileIsCorrect
   nameWithType: MatchTests.PopLiveTileIsCorrect
@@ -829,7 +838,6 @@ references:
   - name: <
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: '>'
   spec.vb:
@@ -842,7 +850,6 @@ references:
   - name: " "
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
 - uid: System.Collections.Generic.IEnumerable`1
@@ -912,28 +919,24 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Koffing.Tests.MatchTests.PopReplacementTileIsCorrect*
   commentId: Overload:Koffing.Tests.MatchTests.PopReplacementTileIsCorrect
-  isExternal: true
   href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_PopReplacementTileIsCorrect_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   name: PopReplacementTileIsCorrect
   nameWithType: MatchTests.PopReplacementTileIsCorrect
   fullName: Koffing.Tests.MatchTests.PopReplacementTileIsCorrect
 - uid: Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect*
   commentId: Overload:Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect
-  isExternal: true
   href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_RevealDoraIndicatorIsCorrect_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   name: RevealDoraIndicatorIsCorrect
   nameWithType: MatchTests.RevealDoraIndicatorIsCorrect
   fullName: Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect
 - uid: Koffing.Tests.MatchTests.MatchIsCreatedCorrectly*
   commentId: Overload:Koffing.Tests.MatchTests.MatchIsCreatedCorrectly
-  isExternal: true
   href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_MatchIsCreatedCorrectly_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_System_Int32_
   name: MatchIsCreatedCorrectly
   nameWithType: MatchTests.MatchIsCreatedCorrectly
   fullName: Koffing.Tests.MatchTests.MatchIsCreatedCorrectly
 - uid: Koffing.Tests.MatchTests.DealHandsIsCorrect*
   commentId: Overload:Koffing.Tests.MatchTests.DealHandsIsCorrect
-  isExternal: true
   href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_DealHandsIsCorrect_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_System_Collections_Generic_List_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile___
   name: DealHandsIsCorrect
   nameWithType: MatchTests.DealHandsIsCorrect
@@ -962,7 +965,6 @@ references:
   - name: <
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: '>'
   - name: '>'
@@ -983,7 +985,6 @@ references:
   - name: " "
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
   - name: )
@@ -1015,13 +1016,3 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Koffing.Tests.MatchTests.#ctor*
-  commentId: Overload:Koffing.Tests.MatchTests.#ctor
-  isExternal: true
-  href: Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests__ctor
-  name: MatchTests
-  nameWithType: MatchTests.MatchTests
-  fullName: Koffing.Tests.MatchTests.MatchTests
-  nameWithType.vb: MatchTests.New
-  fullName.vb: Koffing.Tests.MatchTests.New
-  name.vb: New

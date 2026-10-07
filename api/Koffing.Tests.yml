@@ -24,56 +24,48 @@ items:
 references:
 - uid: Koffing.Tests.BlockTests
   commentId: T:Koffing.Tests.BlockTests
-  isExternal: true
   href: Koffing.Tests.BlockTests.html
   name: BlockTests
   nameWithType: BlockTests
   fullName: Koffing.Tests.BlockTests
 - uid: Koffing.Tests.CalculationTests
   commentId: T:Koffing.Tests.CalculationTests
-  isExternal: true
   href: Koffing.Tests.CalculationTests.html
   name: CalculationTests
   nameWithType: CalculationTests
   fullName: Koffing.Tests.CalculationTests
 - uid: Koffing.Tests.MatchTests
   commentId: T:Koffing.Tests.MatchTests
-  isExternal: true
   href: Koffing.Tests.MatchTests.html
   name: MatchTests
   nameWithType: MatchTests
   fullName: Koffing.Tests.MatchTests
 - uid: Koffing.Tests.MeldTests
   commentId: T:Koffing.Tests.MeldTests
-  isExternal: true
   href: Koffing.Tests.MeldTests.html
   name: MeldTests
   nameWithType: MeldTests
   fullName: Koffing.Tests.MeldTests
 - uid: Koffing.Tests.RandomNumberGeneratorTests
   commentId: T:Koffing.Tests.RandomNumberGeneratorTests
-  isExternal: true
   href: Koffing.Tests.RandomNumberGeneratorTests.html
   name: RandomNumberGeneratorTests
   nameWithType: RandomNumberGeneratorTests
   fullName: Koffing.Tests.RandomNumberGeneratorTests
 - uid: Koffing.Tests.TileTests
   commentId: T:Koffing.Tests.TileTests
-  isExternal: true
   href: Koffing.Tests.TileTests.html
   name: TileTests
   nameWithType: TileTests
   fullName: Koffing.Tests.TileTests
 - uid: Koffing.Tests.UpgradableDowngradableTests
   commentId: T:Koffing.Tests.UpgradableDowngradableTests
-  isExternal: true
   href: Koffing.Tests.UpgradableDowngradableTests.html
   name: UpgradableDowngradableTests
   nameWithType: UpgradableDowngradableTests
   fullName: Koffing.Tests.UpgradableDowngradableTests
 - uid: Koffing.Tests.WaitTests
   commentId: T:Koffing.Tests.WaitTests
-  isExternal: true
   href: Koffing.Tests.WaitTests.html
   name: WaitTests
   nameWithType: WaitTests

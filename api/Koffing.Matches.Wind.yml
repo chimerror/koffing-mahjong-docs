@@ -17,7 +17,13 @@ items:
   fullName: Koffing.Matches.Wind
   type: Enum
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/Wind.cs
+    remote:
+      path: Scripts/Matches/Wind.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Wind
+    path: ../Koffing/Scripts/Matches/Wind.cs
+    startLine: 2
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -36,7 +42,13 @@ items:
   fullName: Koffing.Matches.Wind.East
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/Wind.cs
+    remote:
+      path: Scripts/Matches/Wind.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: East
+    path: ../Koffing/Scripts/Matches/Wind.cs
+    startLine: 4
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -56,7 +68,13 @@ items:
   fullName: Koffing.Matches.Wind.South
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/Wind.cs
+    remote:
+      path: Scripts/Matches/Wind.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: South
+    path: ../Koffing/Scripts/Matches/Wind.cs
+    startLine: 5
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -76,7 +94,13 @@ items:
   fullName: Koffing.Matches.Wind.West
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/Wind.cs
+    remote:
+      path: Scripts/Matches/Wind.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: West
+    path: ../Koffing/Scripts/Matches/Wind.cs
+    startLine: 6
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -96,7 +120,13 @@ items:
   fullName: Koffing.Matches.Wind.North
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/Wind.cs
+    remote:
+      path: Scripts/Matches/Wind.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: North
+    path: ../Koffing/Scripts/Matches/Wind.cs
+    startLine: 7
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -107,30 +137,24 @@ items:
 references:
 - uid: Koffing.Matches
   commentId: N:Koffing.Matches
-  isExternal: true
   name: Koffing.Matches
   nameWithType: Koffing.Matches
   fullName: Koffing.Matches
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Matches
     name: Matches
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Matches
     name: Matches
-    isExternal: true
 - uid: Koffing.Matches.Wind
   commentId: T:Koffing.Matches.Wind
   parent: Koffing.Matches
-  isExternal: true
   href: Koffing.Matches.Wind.html
   name: Wind
   nameWithType: Wind

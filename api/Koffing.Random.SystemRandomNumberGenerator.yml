@@ -17,7 +17,13 @@ items:
   fullName: Koffing.Random.SystemRandomNumberGenerator
   type: Class
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Random/SystemRandomNumberGenerator.cs
+    remote:
+      path: Scripts/Random/SystemRandomNumberGenerator.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: SystemRandomNumberGenerator
+    path: ../Koffing/Scripts/Random/SystemRandomNumberGenerator.cs
+    startLine: 4
   assemblies:
   - Koffing
   namespace: Koffing.Random
@@ -29,13 +35,13 @@ items:
   implements:
   - Koffing.Random.IRandomNumberGenerator
   inheritedMembers:
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   extensionMethods:
   - Koffing.Random.IRandomNumberGenerator.Koffing.Extensions.RollDice(System.Int32,System.Int32)
   - Koffing.Random.IRandomNumberGenerator.Koffing.Extensions.Shuffle``1(System.Collections.Generic.IEnumerable{{T}})
@@ -51,7 +57,13 @@ items:
   fullName: Koffing.Random.SystemRandomNumberGenerator.SystemRandomNumberGenerator()
   type: Constructor
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Random/SystemRandomNumberGenerator.cs
+    remote:
+      path: Scripts/Random/SystemRandomNumberGenerator.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: .ctor
+    path: ../Koffing/Scripts/Random/SystemRandomNumberGenerator.cs
+    startLine: 9
   assemblies:
   - Koffing
   namespace: Koffing.Random
@@ -62,6 +74,38 @@ items:
   nameWithType.vb: SystemRandomNumberGenerator.New()
   fullName.vb: Koffing.Random.SystemRandomNumberGenerator.New()
   name.vb: New()
+- uid: Koffing.Random.SystemRandomNumberGenerator.Seed
+  commentId: P:Koffing.Random.SystemRandomNumberGenerator.Seed
+  id: Seed
+  parent: Koffing.Random.SystemRandomNumberGenerator
+  langs:
+  - csharp
+  - vb
+  name: Seed
+  nameWithType: SystemRandomNumberGenerator.Seed
+  fullName: Koffing.Random.SystemRandomNumberGenerator.Seed
+  type: Property
+  source:
+    remote:
+      path: Scripts/Random/SystemRandomNumberGenerator.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Seed
+    path: ../Koffing/Scripts/Random/SystemRandomNumberGenerator.cs
+    startLine: 14
+  assemblies:
+  - Koffing
+  namespace: Koffing.Random
+  example: []
+  syntax:
+    content: public ulong Seed { get; set; }
+    parameters: []
+    return:
+      type: System.UInt64
+    content.vb: Public Property Seed As ULong
+  overload: Koffing.Random.SystemRandomNumberGenerator.Seed*
+  implements:
+  - Koffing.Random.IRandomNumberGenerator.Seed
 - uid: Koffing.Random.SystemRandomNumberGenerator.GetIntegerInRange(System.Int32,System.Int32)
   commentId: M:Koffing.Random.SystemRandomNumberGenerator.GetIntegerInRange(System.Int32,System.Int32)
   id: GetIntegerInRange(System.Int32,System.Int32)
@@ -74,7 +118,13 @@ items:
   fullName: Koffing.Random.SystemRandomNumberGenerator.GetIntegerInRange(int, int)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Random/SystemRandomNumberGenerator.cs
+    remote:
+      path: Scripts/Random/SystemRandomNumberGenerator.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: GetIntegerInRange
+    path: ../Koffing/Scripts/Random/SystemRandomNumberGenerator.cs
+    startLine: 26
   assemblies:
   - Koffing
   namespace: Koffing.Random
@@ -107,7 +157,13 @@ items:
   fullName: Koffing.Random.SystemRandomNumberGenerator.Randomize()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Random/SystemRandomNumberGenerator.cs
+    remote:
+      path: Scripts/Random/SystemRandomNumberGenerator.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Randomize
+    path: ../Koffing/Scripts/Random/SystemRandomNumberGenerator.cs
+    startLine: 33
   assemblies:
   - Koffing
   namespace: Koffing.Random
@@ -118,55 +174,24 @@ items:
   overload: Koffing.Random.SystemRandomNumberGenerator.Randomize*
   implements:
   - Koffing.Random.IRandomNumberGenerator.Randomize
-- uid: Koffing.Random.SystemRandomNumberGenerator.Seed
-  commentId: P:Koffing.Random.SystemRandomNumberGenerator.Seed
-  id: Seed
-  parent: Koffing.Random.SystemRandomNumberGenerator
-  langs:
-  - csharp
-  - vb
-  name: Seed
-  nameWithType: SystemRandomNumberGenerator.Seed
-  fullName: Koffing.Random.SystemRandomNumberGenerator.Seed
-  type: Property
-  source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Random/SystemRandomNumberGenerator.cs
-  assemblies:
-  - Koffing
-  namespace: Koffing.Random
-  example: []
-  syntax:
-    content: public ulong Seed { get; set; }
-    parameters: []
-    return:
-      type: System.UInt64
-    content.vb: Public Property Seed As ULong
-  overload: Koffing.Random.SystemRandomNumberGenerator.Seed*
-  implements:
-  - Koffing.Random.IRandomNumberGenerator.Seed
 references:
 - uid: Koffing.Random
   commentId: N:Koffing.Random
-  isExternal: true
   name: Koffing.Random
   nameWithType: Koffing.Random
   fullName: Koffing.Random
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Random
     name: Random
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Random
     name: Random
-    isExternal: true
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -181,83 +206,10 @@ references:
 - uid: Koffing.Random.IRandomNumberGenerator
   commentId: T:Koffing.Random.IRandomNumberGenerator
   parent: Koffing.Random
-  isExternal: true
   href: Koffing.Random.IRandomNumberGenerator.html
   name: IRandomNumberGenerator
   nameWithType: IRandomNumberGenerator
   fullName: Koffing.Random.IRandomNumberGenerator
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  name: MemberwiseClone()
-  nameWithType: object.MemberwiseClone()
-  fullName: object.MemberwiseClone()
-  nameWithType.vb: Object.MemberwiseClone()
-  fullName.vb: Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -336,6 +288,78 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -381,28 +405,28 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
   parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
   spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
   spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
 - uid: Koffing.Random.IRandomNumberGenerator.Koffing.Extensions.RollDice(System.Int32,System.Int32)
@@ -419,12 +443,10 @@ references:
   spec.csharp:
   - uid: Koffing.Extensions.RollDice(Koffing.Random.IRandomNumberGenerator,System.Int32,System.Int32)
     name: RollDice
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_RollDice_Koffing_Random_IRandomNumberGenerator_System_Int32_System_Int32_
   - name: (
   - uid: Koffing.Random.IRandomNumberGenerator
     name: IRandomNumberGenerator
-    isExternal: true
     href: Koffing.Random.IRandomNumberGenerator.html
   - name: ','
   - name: " "
@@ -442,12 +464,10 @@ references:
   spec.vb:
   - uid: Koffing.Extensions.RollDice(Koffing.Random.IRandomNumberGenerator,System.Int32,System.Int32)
     name: RollDice
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_RollDice_Koffing_Random_IRandomNumberGenerator_System_Int32_System_Int32_
   - name: (
   - uid: Koffing.Random.IRandomNumberGenerator
     name: IRandomNumberGenerator
-    isExternal: true
     href: Koffing.Random.IRandomNumberGenerator.html
   - name: ','
   - name: " "
@@ -476,7 +496,6 @@ references:
   spec.csharp:
   - uid: Koffing.Extensions.Shuffle``1(Koffing.Random.IRandomNumberGenerator,System.Collections.Generic.IEnumerable{``0})
     name: Shuffle
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_Shuffle__1_Koffing_Random_IRandomNumberGenerator_System_Collections_Generic_IEnumerable___0__
   - name: <
   - name: T
@@ -484,7 +503,6 @@ references:
   - name: (
   - uid: Koffing.Random.IRandomNumberGenerator
     name: IRandomNumberGenerator
-    isExternal: true
     href: Koffing.Random.IRandomNumberGenerator.html
   - name: ','
   - name: " "
@@ -499,7 +517,6 @@ references:
   spec.vb:
   - uid: Koffing.Extensions.Shuffle``1(Koffing.Random.IRandomNumberGenerator,System.Collections.Generic.IEnumerable{``0})
     name: Shuffle
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_Shuffle__1_Koffing_Random_IRandomNumberGenerator_System_Collections_Generic_IEnumerable___0__
   - name: (
   - name: Of
@@ -509,7 +526,6 @@ references:
   - name: (
   - uid: Koffing.Random.IRandomNumberGenerator
     name: IRandomNumberGenerator
-    isExternal: true
     href: Koffing.Random.IRandomNumberGenerator.html
   - name: ','
   - name: " "
@@ -543,12 +559,10 @@ references:
   spec.csharp:
   - uid: Koffing.Extensions.RollDice(Koffing.Random.IRandomNumberGenerator,System.Int32,System.Int32)
     name: RollDice
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_RollDice_Koffing_Random_IRandomNumberGenerator_System_Int32_System_Int32_
   - name: (
   - uid: Koffing.Random.IRandomNumberGenerator
     name: IRandomNumberGenerator
-    isExternal: true
     href: Koffing.Random.IRandomNumberGenerator.html
   - name: ','
   - name: " "
@@ -566,12 +580,10 @@ references:
   spec.vb:
   - uid: Koffing.Extensions.RollDice(Koffing.Random.IRandomNumberGenerator,System.Int32,System.Int32)
     name: RollDice
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_RollDice_Koffing_Random_IRandomNumberGenerator_System_Int32_System_Int32_
   - name: (
   - uid: Koffing.Random.IRandomNumberGenerator
     name: IRandomNumberGenerator
-    isExternal: true
     href: Koffing.Random.IRandomNumberGenerator.html
   - name: ','
   - name: " "
@@ -589,7 +601,6 @@ references:
 - uid: Koffing.Extensions
   commentId: T:Koffing.Extensions
   parent: Koffing
-  isExternal: true
   href: Koffing.Extensions.html
   name: Extensions
   nameWithType: Extensions
@@ -607,7 +618,6 @@ references:
   spec.csharp:
   - uid: Koffing.Extensions.Shuffle``1(Koffing.Random.IRandomNumberGenerator,System.Collections.Generic.IEnumerable{``0})
     name: Shuffle
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_Shuffle__1_Koffing_Random_IRandomNumberGenerator_System_Collections_Generic_IEnumerable___0__
   - name: <
   - name: T
@@ -615,7 +625,6 @@ references:
   - name: (
   - uid: Koffing.Random.IRandomNumberGenerator
     name: IRandomNumberGenerator
-    isExternal: true
     href: Koffing.Random.IRandomNumberGenerator.html
   - name: ','
   - name: " "
@@ -630,7 +639,6 @@ references:
   spec.vb:
   - uid: Koffing.Extensions.Shuffle``1(Koffing.Random.IRandomNumberGenerator,System.Collections.Generic.IEnumerable{``0})
     name: Shuffle
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_Shuffle__1_Koffing_Random_IRandomNumberGenerator_System_Collections_Generic_IEnumerable___0__
   - name: (
   - name: Of
@@ -640,7 +648,6 @@ references:
   - name: (
   - uid: Koffing.Random.IRandomNumberGenerator
     name: IRandomNumberGenerator
-    isExternal: true
     href: Koffing.Random.IRandomNumberGenerator.html
   - name: ','
   - name: " "
@@ -656,13 +663,11 @@ references:
   - name: )
 - uid: Koffing
   commentId: N:Koffing
-  isExternal: true
   name: Koffing
   nameWithType: Koffing
   fullName: Koffing
 - uid: Koffing.Random.SystemRandomNumberGenerator.#ctor*
   commentId: Overload:Koffing.Random.SystemRandomNumberGenerator.#ctor
-  isExternal: true
   href: Koffing.Random.SystemRandomNumberGenerator.html#Koffing_Random_SystemRandomNumberGenerator__ctor
   name: SystemRandomNumberGenerator
   nameWithType: SystemRandomNumberGenerator.SystemRandomNumberGenerator
@@ -670,9 +675,32 @@ references:
   nameWithType.vb: SystemRandomNumberGenerator.New
   fullName.vb: Koffing.Random.SystemRandomNumberGenerator.New
   name.vb: New
+- uid: Koffing.Random.SystemRandomNumberGenerator.Seed*
+  commentId: Overload:Koffing.Random.SystemRandomNumberGenerator.Seed
+  href: Koffing.Random.SystemRandomNumberGenerator.html#Koffing_Random_SystemRandomNumberGenerator_Seed
+  name: Seed
+  nameWithType: SystemRandomNumberGenerator.Seed
+  fullName: Koffing.Random.SystemRandomNumberGenerator.Seed
+- uid: Koffing.Random.IRandomNumberGenerator.Seed
+  commentId: P:Koffing.Random.IRandomNumberGenerator.Seed
+  parent: Koffing.Random.IRandomNumberGenerator
+  href: Koffing.Random.IRandomNumberGenerator.html#Koffing_Random_IRandomNumberGenerator_Seed
+  name: Seed
+  nameWithType: IRandomNumberGenerator.Seed
+  fullName: Koffing.Random.IRandomNumberGenerator.Seed
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
 - uid: Koffing.Random.SystemRandomNumberGenerator.GetIntegerInRange*
   commentId: Overload:Koffing.Random.SystemRandomNumberGenerator.GetIntegerInRange
-  isExternal: true
   href: Koffing.Random.SystemRandomNumberGenerator.html#Koffing_Random_SystemRandomNumberGenerator_GetIntegerInRange_System_Int32_System_Int32_
   name: GetIntegerInRange
   nameWithType: SystemRandomNumberGenerator.GetIntegerInRange
@@ -691,7 +719,6 @@ references:
   spec.csharp:
   - uid: Koffing.Random.IRandomNumberGenerator.GetIntegerInRange(System.Int32,System.Int32)
     name: GetIntegerInRange
-    isExternal: true
     href: Koffing.Random.IRandomNumberGenerator.html#Koffing_Random_IRandomNumberGenerator_GetIntegerInRange_System_Int32_System_Int32_
   - name: (
   - uid: System.Int32
@@ -708,7 +735,6 @@ references:
   spec.vb:
   - uid: Koffing.Random.IRandomNumberGenerator.GetIntegerInRange(System.Int32,System.Int32)
     name: GetIntegerInRange
-    isExternal: true
     href: Koffing.Random.IRandomNumberGenerator.html#Koffing_Random_IRandomNumberGenerator_GetIntegerInRange_System_Int32_System_Int32_
   - name: (
   - uid: System.Int32
@@ -735,7 +761,6 @@ references:
   name.vb: Integer
 - uid: Koffing.Random.SystemRandomNumberGenerator.Randomize*
   commentId: Overload:Koffing.Random.SystemRandomNumberGenerator.Randomize
-  isExternal: true
   href: Koffing.Random.SystemRandomNumberGenerator.html#Koffing_Random_SystemRandomNumberGenerator_Randomize
   name: Randomize
   nameWithType: SystemRandomNumberGenerator.Randomize
@@ -743,7 +768,6 @@ references:
 - uid: Koffing.Random.IRandomNumberGenerator.Randomize
   commentId: M:Koffing.Random.IRandomNumberGenerator.Randomize
   parent: Koffing.Random.IRandomNumberGenerator
-  isExternal: true
   href: Koffing.Random.IRandomNumberGenerator.html#Koffing_Random_IRandomNumberGenerator_Randomize
   name: Randomize()
   nameWithType: IRandomNumberGenerator.Randomize()
@@ -751,40 +775,12 @@ references:
   spec.csharp:
   - uid: Koffing.Random.IRandomNumberGenerator.Randomize
     name: Randomize
-    isExternal: true
     href: Koffing.Random.IRandomNumberGenerator.html#Koffing_Random_IRandomNumberGenerator_Randomize
   - name: (
   - name: )
   spec.vb:
   - uid: Koffing.Random.IRandomNumberGenerator.Randomize
     name: Randomize
-    isExternal: true
     href: Koffing.Random.IRandomNumberGenerator.html#Koffing_Random_IRandomNumberGenerator_Randomize
   - name: (
   - name: )
-- uid: Koffing.Random.SystemRandomNumberGenerator.Seed*
-  commentId: Overload:Koffing.Random.SystemRandomNumberGenerator.Seed
-  isExternal: true
-  href: Koffing.Random.SystemRandomNumberGenerator.html#Koffing_Random_SystemRandomNumberGenerator_Seed
-  name: Seed
-  nameWithType: SystemRandomNumberGenerator.Seed
-  fullName: Koffing.Random.SystemRandomNumberGenerator.Seed
-- uid: Koffing.Random.IRandomNumberGenerator.Seed
-  commentId: P:Koffing.Random.IRandomNumberGenerator.Seed
-  parent: Koffing.Random.IRandomNumberGenerator
-  isExternal: true
-  href: Koffing.Random.IRandomNumberGenerator.html#Koffing_Random_IRandomNumberGenerator_Seed
-  name: Seed
-  nameWithType: IRandomNumberGenerator.Seed
-  fullName: Koffing.Random.IRandomNumberGenerator.Seed
-- uid: System.UInt64
-  commentId: T:System.UInt64
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.uint64
-  name: ulong
-  nameWithType: ulong
-  fullName: ulong
-  nameWithType.vb: ULong
-  fullName.vb: ULong
-  name.vb: ULong

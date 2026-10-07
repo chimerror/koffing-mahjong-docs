@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Interface IBlock | Koffing Mahjong Engine ">
       
-      
+      <meta name="description" content="Interface of static methods used to work with s.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/chimerror/koffing/new/main/apiSpec/new?filename=Koffing_Blocks_IBlock.md&amp;value=---%0Auid%3A%20Koffing.Blocks.IBlock%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Koffing_Blocks_IBlock" data-uid="Koffing.Blocks.IBlock" class="text-break">
-Interface IBlock  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IBlock.cs"><i class="bi bi-code-slash"></i></a>
+Interface IBlock  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/IBlock.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Interface IBlock  <a class="header-action link-secondary" title="View source" hr
   <dl><dt>Assembly</dt><dd>Koffing.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Interface of static methods used to work with <a class="xref" href="Koffing.Blocks.Block.html">Block</a>s.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -114,6 +115,11 @@ Interface IBlock  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h2 id="Koffing_Blocks_IBlock_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Note that because these are <code>static abstract</code> methods, the <code>new</code> keyword will have to be used on
+overrides. This also requires calling the correct method through reflection, but for the most part, the code to
+do that is already part of the <a class="xref" href="Koffing.Blocks.Block.html">Block</a> abstract class implementation.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -124,10 +130,12 @@ Interface IBlock  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Koffing_Blocks_IBlock_GetHashCodeBasis" data-uid="Koffing.Blocks.IBlock.GetHashCodeBasis">
   GetHashCodeBasis()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IBlock.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/IBlock.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the hash code basis representing this block type, which will be exponentiated as a part of calculating
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">GetHashCode()</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -138,7 +146,8 @@ Interface IBlock  <a class="header-action link-secondary" title="View source" hr
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The basis to use when calculating hash codes for this block type.</p>
+</dd>
   </dl>
 
 
@@ -147,6 +156,11 @@ Interface IBlock  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h4 class="section" id="Koffing_Blocks_IBlock_GetHashCodeBasis_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The number returned here should be a unique prime number among all derived <a class="xref" href="Koffing.Blocks.html">Koffing.Blocks</a> to ensure proper
+hashing. The current set of numbers is verified in
+<a class="xref" href="Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_Koffing_Blocks_Block_System_Int32_">GetBlockHashCodeIsCorrect(Block, int)</a>.</p>
+</div>
 
 
 
@@ -155,10 +169,11 @@ Interface IBlock  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Koffing_Blocks_IBlock_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Blocks.IBlock.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
   GetPossible(IEnumerable&lt;Tile&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IBlock.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/IBlock.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get possible blocks of this type that can be created from a collection of tiles.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -168,13 +183,16 @@ Interface IBlock  <a class="header-action link-secondary" title="View source" hr
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s to use to create <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s that can be created from
+<code class="paramref">tiles</code>.</p>
+</dd>
   </dl>
 
 
@@ -191,10 +209,11 @@ Interface IBlock  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Koffing_Blocks_IBlock_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Blocks.IBlock.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
   GetPossibleForTile(Tile, IEnumerable&lt;Tile&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IBlock.cs"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/IBlock.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get possible blocks of this type that can be created using a specified tile and set of other tiles.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -204,15 +223,19 @@ Interface IBlock  <a class="header-action link-secondary" title="View source" hr
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tile</code> <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a> that must be included in all created blocks.</p>
+</dd>
     <dt><code>otherTiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of other <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s to use.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s that can be created from
+<code class="paramref">tile</code> and <code class="paramref">otherTiles</code>.</p>
+</dd>
   </dl>
 
 
@@ -229,7 +252,7 @@ Interface IBlock  <a class="header-action link-secondary" title="View source" hr
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IBlock.cs" class="edit-link">Edit this page</a>
+          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/IBlock.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
 

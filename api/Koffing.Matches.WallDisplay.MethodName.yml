@@ -5,7 +5,6 @@ items:
   id: WallDisplay.MethodName
   parent: Koffing.Matches
   children:
-  - Koffing.Matches.WallDisplay.MethodName.#ctor
   - Koffing.Matches.WallDisplay.MethodName.FreeTiles
   - Koffing.Matches.WallDisplay.MethodName.UpdateWall
   - Koffing.Matches.WallDisplay.MethodName._ExitTree
@@ -19,10 +18,14 @@ items:
   fullName: Koffing.Matches.WallDisplay.MethodName
   type: Class
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Matches.WallDisplay_ScriptMethods.generated.cs
+    id: MethodName
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\Koffing.Matches.WallDisplay_ScriptMethods.generated.cs
+    startLine: 11
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: Cached StringNames for the methods contained in this class, for fast lookup.
+  example: []
   syntax:
     content: 'public class WallDisplay.MethodName : Node2D.MethodName'
     content.vb: Public Class WallDisplay.MethodName Inherits Node2D.MethodName
@@ -350,13 +353,13 @@ items:
   - Godot.GodotObject.MethodName.SetTranslationDomain
   - Godot.GodotObject.MethodName.IsQueuedForDeletion
   - Godot.GodotObject.MethodName.CancelFree
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
 - uid: Koffing.Matches.WallDisplay.MethodName.UpdateWall
   commentId: F:Koffing.Matches.WallDisplay.MethodName.UpdateWall
   id: UpdateWall
@@ -369,10 +372,14 @@ items:
   fullName: Koffing.Matches.WallDisplay.MethodName.UpdateWall
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Matches.WallDisplay_ScriptMethods.generated.cs
+    id: UpdateWall
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\Koffing.Matches.WallDisplay_ScriptMethods.generated.cs
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: Cached name for the 'UpdateWall' method.
+  example: []
   syntax:
     content: public static readonly StringName UpdateWall
     return:
@@ -390,10 +397,14 @@ items:
   fullName: Koffing.Matches.WallDisplay.MethodName.FreeTiles
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Matches.WallDisplay_ScriptMethods.generated.cs
+    id: FreeTiles
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\Koffing.Matches.WallDisplay_ScriptMethods.generated.cs
+    startLine: 19
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: Cached name for the 'FreeTiles' method.
+  example: []
   syntax:
     content: public static readonly StringName FreeTiles
     return:
@@ -411,10 +422,14 @@ items:
   fullName: Koffing.Matches.WallDisplay.MethodName._Ready
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Matches.WallDisplay_ScriptMethods.generated.cs
+    id: _Ready
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\Koffing.Matches.WallDisplay_ScriptMethods.generated.cs
+    startLine: 23
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: Cached name for the '_Ready' method.
+  example: []
   syntax:
     content: public static readonly StringName _Ready
     return:
@@ -432,10 +447,14 @@ items:
   fullName: Koffing.Matches.WallDisplay.MethodName._Process
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Matches.WallDisplay_ScriptMethods.generated.cs
+    id: _Process
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\Koffing.Matches.WallDisplay_ScriptMethods.generated.cs
+    startLine: 27
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: Cached name for the '_Process' method.
+  example: []
   syntax:
     content: public static readonly StringName _Process
     return:
@@ -453,61 +472,37 @@ items:
   fullName: Koffing.Matches.WallDisplay.MethodName._ExitTree
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Matches.WallDisplay_ScriptMethods.generated.cs
+    id: _ExitTree
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\Koffing.Matches.WallDisplay_ScriptMethods.generated.cs
+    startLine: 31
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: Cached name for the '_ExitTree' method.
+  example: []
   syntax:
     content: public static readonly StringName _ExitTree
     return:
       type: Godot.StringName
     content.vb: Public Shared ReadOnly _ExitTree As StringName
-- uid: Koffing.Matches.WallDisplay.MethodName.#ctor
-  commentId: M:Koffing.Matches.WallDisplay.MethodName.#ctor
-  id: '#ctor'
-  parent: Koffing.Matches.WallDisplay.MethodName
-  langs:
-  - csharp
-  - vb
-  name: MethodName()
-  nameWithType: WallDisplay.MethodName.MethodName()
-  fullName: Koffing.Matches.WallDisplay.MethodName.MethodName()
-  type: Constructor
-  source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Matches.WallDisplay_ScriptMethods.generated.cs
-  assemblies:
-  - Koffing
-  namespace: Koffing.Matches
-  syntax:
-    content: public MethodName()
-    content.vb: Public Sub New()
-  overload: Koffing.Matches.WallDisplay.MethodName.#ctor*
-  nameWithType.vb: WallDisplay.MethodName.New()
-  fullName.vb: Koffing.Matches.WallDisplay.MethodName.New()
-  name.vb: New()
 references:
 - uid: Koffing.Matches
   commentId: N:Koffing.Matches
-  isExternal: true
   name: Koffing.Matches
   nameWithType: Koffing.Matches
   fullName: Koffing.Matches
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Matches
     name: Matches
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Matches
     name: Matches
-    isExternal: true
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -2830,78 +2825,6 @@ references:
   name: CancelFree
   nameWithType: GodotObject.MethodName.CancelFree
   fullName: Godot.GodotObject.MethodName.CancelFree
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  name: MemberwiseClone()
-  nameWithType: object.MemberwiseClone()
-  fullName: object.MemberwiseClone()
-  nameWithType.vb: Object.MemberwiseClone()
-  fullName.vb: Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -2980,6 +2903,78 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -3025,28 +3020,28 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
   parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
   spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
   spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
 - uid: System
@@ -3069,13 +3064,3 @@ references:
   name: StringName
   nameWithType: StringName
   fullName: Godot.StringName
-- uid: Koffing.Matches.WallDisplay.MethodName.#ctor*
-  commentId: Overload:Koffing.Matches.WallDisplay.MethodName.#ctor
-  isExternal: true
-  href: Koffing.Matches.WallDisplay.MethodName.html#Koffing_Matches_WallDisplay_MethodName__ctor
-  name: MethodName
-  nameWithType: WallDisplay.MethodName.MethodName
-  fullName: Koffing.Matches.WallDisplay.MethodName.MethodName
-  nameWithType.vb: WallDisplay.MethodName.New
-  fullName.vb: Koffing.Matches.WallDisplay.MethodName.New
-  name.vb: New

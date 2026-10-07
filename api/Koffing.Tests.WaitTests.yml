@@ -5,7 +5,6 @@ items:
   id: WaitTests
   parent: Koffing.Tests
   children:
-  - Koffing.Tests.WaitTests.#ctor
   - Koffing.Tests.WaitTests.CanCreateOrphan
   - Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
   - Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -29,7 +28,13 @@ items:
   fullName: Koffing.Tests.WaitTests
   type: Class
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: WaitTests
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -45,13 +50,13 @@ items:
   inheritance:
   - System.Object
   inheritedMembers:
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   attributes:
   - type: GdUnit4.TestSuiteAttribute
     ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
@@ -72,7 +77,13 @@ items:
   fullName: Koffing.Tests.WaitTests.Setup()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Setup
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 18
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -106,7 +117,13 @@ items:
   fullName: Koffing.Tests.WaitTests.TearDown()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: TearDown
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 24
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -140,7 +157,13 @@ items:
   fullName: Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect(string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: GetFirstLevelWaitsIsCorrect
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 30
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -186,7 +209,13 @@ items:
   fullName: Koffing.Tests.WaitTests.CanCreateOrphan()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: CanCreateOrphan
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 42
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -212,7 +241,13 @@ items:
   fullName: Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect(string, string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: RyanmenGetPossibleForTileIsCorrect
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 64
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -260,7 +295,13 @@ items:
   fullName: Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect(string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: RyanmenGetPossibleIsCorrect
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 81
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -306,7 +347,13 @@ items:
   fullName: Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect(string, string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: KanchanGetPossibleForTileIsCorrect
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 93
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -354,7 +401,13 @@ items:
   fullName: Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect(string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: KanchanGetPossibleIsCorrect
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 110
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -400,7 +453,13 @@ items:
   fullName: Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect(string, string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: PenchanGetPossibleForTileIsCorrect
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 122
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -448,7 +507,13 @@ items:
   fullName: Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect(string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: PenchanGetPossibleIsCorrect
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 139
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -494,7 +559,13 @@ items:
   fullName: Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect(Koffing.Waits.SevenPairsWait, Koffing.Waits.SevenPairsWait, bool, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: SevenPairsWaitEqualsIsCorrect
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 151
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -542,7 +613,13 @@ items:
   fullName: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect(string, string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: SevenPairsWaitGetPossibleForTileIsCorrect
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 167
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -590,7 +667,13 @@ items:
   fullName: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect(string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: SevenPairsWaitGetPossibleIsCorrect
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 184
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -636,7 +719,13 @@ items:
   fullName: Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect(Koffing.Waits.ThirteenOrphansWait, Koffing.Waits.ThirteenOrphansWait, bool, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: ThirteenOrphansWaitEqualsIsCorrect
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 196
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -684,7 +773,13 @@ items:
   fullName: Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect(string, System.Collections.Generic.List<Koffing.Blocks.MadeBlockContext>, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
+    remote:
+      path: Scripts/Tests/WaitTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: ThirteenOrphansWaitGetPossibleIsCorrect
+    path: ../Koffing/Scripts/Tests/WaitTests.cs
+    startLine: 212
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -718,52 +813,24 @@ items:
   nameWithType.vb: WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect(String, List(Of MadeBlockContext), String)
   fullName.vb: Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect(String, System.Collections.Generic.List(Of Koffing.Blocks.MadeBlockContext), String)
   name.vb: ThirteenOrphansWaitGetPossibleIsCorrect(String, List(Of MadeBlockContext), String)
-- uid: Koffing.Tests.WaitTests.#ctor
-  commentId: M:Koffing.Tests.WaitTests.#ctor
-  id: '#ctor'
-  parent: Koffing.Tests.WaitTests
-  langs:
-  - csharp
-  - vb
-  name: WaitTests()
-  nameWithType: WaitTests.WaitTests()
-  fullName: Koffing.Tests.WaitTests.WaitTests()
-  type: Constructor
-  source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/WaitTests.cs
-  assemblies:
-  - Koffing
-  namespace: Koffing.Tests
-  syntax:
-    content: public WaitTests()
-    content.vb: Public Sub New()
-  overload: Koffing.Tests.WaitTests.#ctor*
-  nameWithType.vb: WaitTests.New()
-  fullName.vb: Koffing.Tests.WaitTests.New()
-  name.vb: New()
 references:
 - uid: Koffing.Tests
   commentId: N:Koffing.Tests
-  isExternal: true
   name: Koffing.Tests
   nameWithType: Koffing.Tests
   fullName: Koffing.Tests
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tests
     name: Tests
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tests
     name: Tests
-    isExternal: true
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -775,78 +842,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  name: MemberwiseClone()
-  nameWithType: object.MemberwiseClone()
-  fullName: object.MemberwiseClone()
-  nameWithType.vb: Object.MemberwiseClone()
-  fullName.vb: Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -925,6 +920,78 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -970,28 +1037,28 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
   parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
   spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
   spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
 - uid: System
@@ -1003,21 +1070,18 @@ references:
   fullName: System
 - uid: Koffing.Tests.WaitTests.Setup*
   commentId: Overload:Koffing.Tests.WaitTests.Setup
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_Setup
   name: Setup
   nameWithType: WaitTests.Setup
   fullName: Koffing.Tests.WaitTests.Setup
 - uid: Koffing.Tests.WaitTests.TearDown*
   commentId: Overload:Koffing.Tests.WaitTests.TearDown
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_TearDown
   name: TearDown
   nameWithType: WaitTests.TearDown
   fullName: Koffing.Tests.WaitTests.TearDown
 - uid: Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect*
   commentId: Overload:Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_GetFirstLevelWaitsIsCorrect_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
   name: GetFirstLevelWaitsIsCorrect
   nameWithType: WaitTests.GetFirstLevelWaitsIsCorrect
@@ -1052,7 +1116,6 @@ references:
   - name: <
   - uid: Koffing.Blocks.MadeBlockContext
     name: MadeBlockContext
-    isExternal: true
     href: Koffing.Blocks.MadeBlockContext.html
   - name: '>'
   spec.vb:
@@ -1065,7 +1128,6 @@ references:
   - name: " "
   - uid: Koffing.Blocks.MadeBlockContext
     name: MadeBlockContext
-    isExternal: true
     href: Koffing.Blocks.MadeBlockContext.html
   - name: )
 - uid: System.Collections.Generic.List`1
@@ -1135,56 +1197,48 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Koffing.Tests.WaitTests.CanCreateOrphan*
   commentId: Overload:Koffing.Tests.WaitTests.CanCreateOrphan
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_CanCreateOrphan
   name: CanCreateOrphan
   nameWithType: WaitTests.CanCreateOrphan
   fullName: Koffing.Tests.WaitTests.CanCreateOrphan
 - uid: Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect*
   commentId: Overload:Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_RyanmenGetPossibleForTileIsCorrect_System_String_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
   name: RyanmenGetPossibleForTileIsCorrect
   nameWithType: WaitTests.RyanmenGetPossibleForTileIsCorrect
   fullName: Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect
 - uid: Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect*
   commentId: Overload:Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_RyanmenGetPossibleIsCorrect_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
   name: RyanmenGetPossibleIsCorrect
   nameWithType: WaitTests.RyanmenGetPossibleIsCorrect
   fullName: Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect
 - uid: Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect*
   commentId: Overload:Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_KanchanGetPossibleForTileIsCorrect_System_String_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
   name: KanchanGetPossibleForTileIsCorrect
   nameWithType: WaitTests.KanchanGetPossibleForTileIsCorrect
   fullName: Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect
 - uid: Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect*
   commentId: Overload:Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_KanchanGetPossibleIsCorrect_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
   name: KanchanGetPossibleIsCorrect
   nameWithType: WaitTests.KanchanGetPossibleIsCorrect
   fullName: Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect
 - uid: Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect*
   commentId: Overload:Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_PenchanGetPossibleForTileIsCorrect_System_String_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
   name: PenchanGetPossibleForTileIsCorrect
   nameWithType: WaitTests.PenchanGetPossibleForTileIsCorrect
   fullName: Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect
 - uid: Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect*
   commentId: Overload:Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_PenchanGetPossibleIsCorrect_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
   name: PenchanGetPossibleIsCorrect
   nameWithType: WaitTests.PenchanGetPossibleIsCorrect
   fullName: Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect
 - uid: Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect*
   commentId: Overload:Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_SevenPairsWaitEqualsIsCorrect_Koffing_Waits_SevenPairsWait_Koffing_Waits_SevenPairsWait_System_Boolean_System_String_
   name: SevenPairsWaitEqualsIsCorrect
   nameWithType: WaitTests.SevenPairsWaitEqualsIsCorrect
@@ -1192,7 +1246,6 @@ references:
 - uid: Koffing.Waits.SevenPairsWait
   commentId: T:Koffing.Waits.SevenPairsWait
   parent: Koffing.Waits
-  isExternal: true
   href: Koffing.Waits.SevenPairsWait.html
   name: SevenPairsWait
   nameWithType: SevenPairsWait
@@ -1210,43 +1263,35 @@ references:
   name.vb: Boolean
 - uid: Koffing.Waits
   commentId: N:Koffing.Waits
-  isExternal: true
   name: Koffing.Waits
   nameWithType: Koffing.Waits
   fullName: Koffing.Waits
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Waits
     name: Waits
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Waits
     name: Waits
-    isExternal: true
 - uid: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect*
   commentId: Overload:Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_SevenPairsWaitGetPossibleForTileIsCorrect_System_String_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
   name: SevenPairsWaitGetPossibleForTileIsCorrect
   nameWithType: WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect
   fullName: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect
 - uid: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect*
   commentId: Overload:Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_SevenPairsWaitGetPossibleIsCorrect_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
   name: SevenPairsWaitGetPossibleIsCorrect
   nameWithType: WaitTests.SevenPairsWaitGetPossibleIsCorrect
   fullName: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect
 - uid: Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect*
   commentId: Overload:Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_ThirteenOrphansWaitEqualsIsCorrect_Koffing_Waits_ThirteenOrphansWait_Koffing_Waits_ThirteenOrphansWait_System_Boolean_System_String_
   name: ThirteenOrphansWaitEqualsIsCorrect
   nameWithType: WaitTests.ThirteenOrphansWaitEqualsIsCorrect
@@ -1254,25 +1299,13 @@ references:
 - uid: Koffing.Waits.ThirteenOrphansWait
   commentId: T:Koffing.Waits.ThirteenOrphansWait
   parent: Koffing.Waits
-  isExternal: true
   href: Koffing.Waits.ThirteenOrphansWait.html
   name: ThirteenOrphansWait
   nameWithType: ThirteenOrphansWait
   fullName: Koffing.Waits.ThirteenOrphansWait
 - uid: Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect*
   commentId: Overload:Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect
-  isExternal: true
   href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_ThirteenOrphansWaitGetPossibleIsCorrect_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
   name: ThirteenOrphansWaitGetPossibleIsCorrect
   nameWithType: WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect
   fullName: Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect
-- uid: Koffing.Tests.WaitTests.#ctor*
-  commentId: Overload:Koffing.Tests.WaitTests.#ctor
-  isExternal: true
-  href: Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests__ctor
-  name: WaitTests
-  nameWithType: WaitTests.WaitTests
-  fullName: Koffing.Tests.WaitTests.WaitTests
-  nameWithType.vb: WaitTests.New
-  fullName.vb: Koffing.Tests.WaitTests.New
-  name.vb: New

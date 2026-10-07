@@ -16,7 +16,13 @@ items:
   fullName: Koffing.Matches.PlayerCount
   type: Enum
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/PlayerCount.cs
+    remote:
+      path: Scripts/Matches/PlayerCount.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: PlayerCount
+    path: ../Koffing/Scripts/Matches/PlayerCount.cs
+    startLine: 2
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -35,7 +41,13 @@ items:
   fullName: Koffing.Matches.PlayerCount.Two
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/PlayerCount.cs
+    remote:
+      path: Scripts/Matches/PlayerCount.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Two
+    path: ../Koffing/Scripts/Matches/PlayerCount.cs
+    startLine: 4
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -55,7 +67,13 @@ items:
   fullName: Koffing.Matches.PlayerCount.Three
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/PlayerCount.cs
+    remote:
+      path: Scripts/Matches/PlayerCount.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Three
+    path: ../Koffing/Scripts/Matches/PlayerCount.cs
+    startLine: 5
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -75,7 +93,13 @@ items:
   fullName: Koffing.Matches.PlayerCount.Four
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Matches/PlayerCount.cs
+    remote:
+      path: Scripts/Matches/PlayerCount.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Four
+    path: ../Koffing/Scripts/Matches/PlayerCount.cs
+    startLine: 6
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -86,30 +110,24 @@ items:
 references:
 - uid: Koffing.Matches
   commentId: N:Koffing.Matches
-  isExternal: true
   name: Koffing.Matches
   nameWithType: Koffing.Matches
   fullName: Koffing.Matches
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Matches
     name: Matches
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Matches
     name: Matches
-    isExternal: true
 - uid: Koffing.Matches.PlayerCount
   commentId: T:Koffing.Matches.PlayerCount
   parent: Koffing.Matches
-  isExternal: true
   href: Koffing.Matches.PlayerCount.html
   name: PlayerCount
   nameWithType: PlayerCount

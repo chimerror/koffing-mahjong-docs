@@ -19,37 +19,30 @@ references:
 - uid: Koffing.Random.IRandomNumberGenerator
   commentId: T:Koffing.Random.IRandomNumberGenerator
   parent: Koffing.Random
-  isExternal: true
   href: Koffing.Random.IRandomNumberGenerator.html
   name: IRandomNumberGenerator
   nameWithType: IRandomNumberGenerator
   fullName: Koffing.Random.IRandomNumberGenerator
 - uid: Koffing.Random.SystemRandomNumberGenerator
   commentId: T:Koffing.Random.SystemRandomNumberGenerator
-  isExternal: true
   href: Koffing.Random.SystemRandomNumberGenerator.html
   name: SystemRandomNumberGenerator
   nameWithType: SystemRandomNumberGenerator
   fullName: Koffing.Random.SystemRandomNumberGenerator
 - uid: Koffing.Random
   commentId: N:Koffing.Random
-  isExternal: true
   name: Koffing.Random
   nameWithType: Koffing.Random
   fullName: Koffing.Random
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Random
     name: Random
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Random
     name: Random
-    isExternal: true

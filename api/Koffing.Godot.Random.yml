@@ -17,7 +17,6 @@ items:
 references:
 - uid: Koffing.Godot.Random.GodotRandomNumberGenerator
   commentId: T:Koffing.Godot.Random.GodotRandomNumberGenerator
-  isExternal: true
   href: Koffing.Godot.Random.GodotRandomNumberGenerator.html
   name: GodotRandomNumberGenerator
   nameWithType: GodotRandomNumberGenerator

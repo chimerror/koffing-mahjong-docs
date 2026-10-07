@@ -5,7 +5,6 @@ items:
   id: TileRect.PropertyName
   parent: Koffing.Godot.UI.Elements
   children:
-  - Koffing.Godot.UI.Elements.TileRect.PropertyName.#ctor
   - Koffing.Godot.UI.Elements.TileRect.PropertyName.FaceUp
   - Koffing.Godot.UI.Elements.TileRect.PropertyName.Rank
   - Koffing.Godot.UI.Elements.TileRect.PropertyName.Suit
@@ -17,10 +16,14 @@ items:
   fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName
   type: Class
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Godot.UI.Elements.TileRect_ScriptMethods.generated.cs
+    id: PropertyName
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 11
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
+  summary: Cached StringNames for the properties and fields contained in this class, for fast lookup.
+  example: []
   syntax:
     content: 'public class TileRect.PropertyName : TextureRect.PropertyName'
     content.vb: Public Class TileRect.PropertyName Inherits TextureRect.PropertyName
@@ -130,13 +133,13 @@ items:
   - Godot.Node.PropertyName.PhysicsInterpolationMode
   - Godot.Node.PropertyName.AutoTranslateMode
   - Godot.Node.PropertyName.EditorDescription
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
 - uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.Suit
   commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.Suit
   id: Suit
@@ -149,10 +152,14 @@ items:
   fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.Suit
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Godot.UI.Elements.TileRect_ScriptMethods.generated.cs
+    id: Suit
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the 'Suit' property.
+  example: []
   syntax:
     content: public static readonly StringName Suit
     return:
@@ -170,10 +177,14 @@ items:
   fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.Rank
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Godot.UI.Elements.TileRect_ScriptMethods.generated.cs
+    id: Rank
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 19
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the 'Rank' property.
+  example: []
   syntax:
     content: public static readonly StringName Rank
     return:
@@ -191,77 +202,49 @@ items:
   fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.FaceUp
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Godot.UI.Elements.TileRect_ScriptMethods.generated.cs
+    id: FaceUp
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 23
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the 'FaceUp' property.
+  example: []
   syntax:
     content: public static readonly StringName FaceUp
     return:
       type: Godot.StringName
     content.vb: Public Shared ReadOnly FaceUp As StringName
-- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.#ctor
-  commentId: M:Koffing.Godot.UI.Elements.TileRect.PropertyName.#ctor
-  id: '#ctor'
-  parent: Koffing.Godot.UI.Elements.TileRect.PropertyName
-  langs:
-  - csharp
-  - vb
-  name: PropertyName()
-  nameWithType: TileRect.PropertyName.PropertyName()
-  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.PropertyName()
-  type: Constructor
-  source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Godot.UI.Elements.TileRect_ScriptMethods.generated.cs
-  assemblies:
-  - Koffing
-  namespace: Koffing.Godot.UI.Elements
-  syntax:
-    content: public PropertyName()
-    content.vb: Public Sub New()
-  overload: Koffing.Godot.UI.Elements.TileRect.PropertyName.#ctor*
-  nameWithType.vb: TileRect.PropertyName.New()
-  fullName.vb: Koffing.Godot.UI.Elements.TileRect.PropertyName.New()
-  name.vb: New()
 references:
 - uid: Koffing.Godot.UI.Elements
   commentId: N:Koffing.Godot.UI.Elements
-  isExternal: true
   name: Koffing.Godot.UI.Elements
   nameWithType: Koffing.Godot.UI.Elements
   fullName: Koffing.Godot.UI.Elements
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Godot
     name: Godot
-    isExternal: true
   - name: .
   - uid: Koffing.Godot.UI
     name: UI
-    isExternal: true
   - name: .
   - uid: Koffing.Godot.UI.Elements
     name: Elements
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Godot
     name: Godot
-    isExternal: true
   - name: .
   - uid: Koffing.Godot.UI
     name: UI
-    isExternal: true
   - name: .
   - uid: Koffing.Godot.UI.Elements
     name: Elements
-    isExternal: true
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1074,78 +1057,6 @@ references:
   name: EditorDescription
   nameWithType: Node.PropertyName.EditorDescription
   fullName: Godot.Node.PropertyName.EditorDescription
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  name: MemberwiseClone()
-  nameWithType: object.MemberwiseClone()
-  fullName: object.MemberwiseClone()
-  nameWithType.vb: Object.MemberwiseClone()
-  fullName.vb: Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -1224,6 +1135,78 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -1269,28 +1252,28 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
   parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
   spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
   spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
 - uid: System
@@ -1313,13 +1296,3 @@ references:
   name: StringName
   nameWithType: StringName
   fullName: Godot.StringName
-- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.#ctor*
-  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.PropertyName.#ctor
-  isExternal: true
-  href: Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName__ctor
-  name: PropertyName
-  nameWithType: TileRect.PropertyName.PropertyName
-  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.PropertyName
-  nameWithType.vb: TileRect.PropertyName.New
-  fullName.vb: Koffing.Godot.UI.Elements.TileRect.PropertyName.New
-  name.vb: New

@@ -19,7 +19,6 @@ references:
 - uid: Koffing.Tiles.Suit
   commentId: T:Koffing.Tiles.Suit
   parent: Koffing.Tiles
-  isExternal: true
   href: Koffing.Tiles.Suit.html
   name: Suit
   nameWithType: Suit
@@ -27,30 +26,24 @@ references:
 - uid: Koffing.Tiles.Tile
   commentId: T:Koffing.Tiles.Tile
   parent: Koffing.Tiles
-  isExternal: true
   href: Koffing.Tiles.Tile.html
   name: Tile
   nameWithType: Tile
   fullName: Koffing.Tiles.Tile
 - uid: Koffing.Tiles
   commentId: N:Koffing.Tiles
-  isExternal: true
   name: Koffing.Tiles
   nameWithType: Koffing.Tiles
   fullName: Koffing.Tiles
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tiles
     name: Tiles
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tiles
     name: Tiles
-    isExternal: true

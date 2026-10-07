@@ -33,7 +33,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Blocks.Block",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Blocks.Block.yml\" sourcestartlinenumber=\"1\">Abstract class representing a grouping of <xref href=\"Koffing.Tiles.Tile\" data-throw-if-not-resolved=\"false\"></xref>s.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -61,7 +61,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Blocks.IBlock",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Blocks.IBlock.yml\" sourcestartlinenumber=\"1\">Interface of static methods used to work with <xref href=\"Koffing.Blocks.Block\" data-throw-if-not-resolved=\"false\"></xref>s.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -215,7 +215,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Godot.Tiles.TileSprite.MethodName",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Godot.Tiles.TileSprite.MethodName.yml\" sourcestartlinenumber=\"1\">Cached StringNames for the methods contained in this class, for fast lookup.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -229,7 +229,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Godot.Tiles.TileSprite.PropertyName",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Godot.Tiles.TileSprite.PropertyName.yml\" sourcestartlinenumber=\"1\">Cached StringNames for the properties and fields contained in this class, for fast lookup.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -243,7 +243,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Godot.Tiles.TileSprite.SignalName",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Godot.Tiles.TileSprite.SignalName.yml\" sourcestartlinenumber=\"1\">Cached StringNames for the signals contained in this class, for fast lookup.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -285,7 +285,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Godot.UI.Elements.TileRect.MethodName",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Godot.UI.Elements.TileRect.MethodName.yml\" sourcestartlinenumber=\"1\">Cached StringNames for the methods contained in this class, for fast lookup.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -299,7 +299,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Godot.UI.Elements.TileRect.PropertyName",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Godot.UI.Elements.TileRect.PropertyName.yml\" sourcestartlinenumber=\"1\">Cached StringNames for the properties and fields contained in this class, for fast lookup.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -313,7 +313,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Godot.UI.Elements.TileRect.SignalName",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Godot.UI.Elements.TileRect.SignalName.yml\" sourcestartlinenumber=\"1\">Cached StringNames for the signals contained in this class, for fast lookup.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -411,7 +411,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Matches.WallDisplay.MethodName",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Matches.WallDisplay.MethodName.yml\" sourcestartlinenumber=\"1\">Cached StringNames for the methods contained in this class, for fast lookup.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -425,7 +425,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Matches.WallDisplay.PropertyName",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Matches.WallDisplay.PropertyName.yml\" sourcestartlinenumber=\"1\">Cached StringNames for the properties and fields contained in this class, for fast lookup.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -439,7 +439,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Matches.WallDisplay.SignalName",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Matches.WallDisplay.SignalName.yml\" sourcestartlinenumber=\"1\">Cached StringNames for the signals contained in this class, for fast lookup.</p>\n"
     },
     {
       "type": "ManagedReference",

@@ -14,7 +14,13 @@ items:
   fullName: Koffing.Blocks.IDowngradable<T>
   type: Interface
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IDowngradable.cs
+    remote:
+      path: Scripts/Blocks/IDowngradable.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: IDowngradable
+    path: ../Koffing/Scripts/Blocks/IDowngradable.cs
+    startLine: 4
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -44,7 +50,13 @@ items:
   fullName: Koffing.Blocks.IDowngradable<T>.Downgrade()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IDowngradable.cs
+    remote:
+      path: Scripts/Blocks/IDowngradable.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Downgrade
+    path: ../Koffing/Scripts/Blocks/IDowngradable.cs
+    startLine: 6
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -59,29 +71,23 @@ items:
 references:
 - uid: Koffing.Blocks
   commentId: N:Koffing.Blocks
-  isExternal: true
   name: Koffing.Blocks
   nameWithType: Koffing.Blocks
   fullName: Koffing.Blocks
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Blocks
     name: Blocks
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Blocks
     name: Blocks
-    isExternal: true
 - uid: Koffing.Blocks.IDowngradable`1.Downgrade*
   commentId: Overload:Koffing.Blocks.IDowngradable`1.Downgrade
-  isExternal: true
   href: Koffing.Blocks.IDowngradable-1.html#Koffing_Blocks_IDowngradable_1_Downgrade
   name: Downgrade
   nameWithType: IDowngradable<T>.Downgrade
@@ -107,7 +113,6 @@ references:
   - name: <
   - uid: Koffing.Blocks.MadeBlockContext
     name: MadeBlockContext
-    isExternal: true
     href: Koffing.Blocks.MadeBlockContext.html
   - name: '>'
   spec.vb:
@@ -120,7 +125,6 @@ references:
   - name: " "
   - uid: Koffing.Blocks.MadeBlockContext
     name: MadeBlockContext
-    isExternal: true
     href: Koffing.Blocks.MadeBlockContext.html
   - name: )
 - uid: System.Collections.Generic.IEnumerable`1

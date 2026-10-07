@@ -32,6 +32,7 @@ references:
   name: Block
   href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block__ctor_
   commentId: Overload:Koffing.Blocks.Block.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Blocks.Block.Block
   fullName.vb: Koffing.Blocks.Block.New
@@ -47,6 +48,7 @@ references:
   name: CompareTo
   href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_CompareTo_
   commentId: Overload:Koffing.Blocks.Block.CompareTo
+  isSpec: "True"
   fullName: Koffing.Blocks.Block.CompareTo
   nameWithType: Block.CompareTo
 - uid: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
@@ -68,6 +70,7 @@ references:
   name: Equals
   href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_Equals_
   commentId: Overload:Koffing.Blocks.Block.Equals
+  isSpec: "True"
   fullName: Koffing.Blocks.Block.Equals
   nameWithType: Block.Equals
 - uid: Koffing.Blocks.Block.GetEnumerator
@@ -80,6 +83,7 @@ references:
   name: GetEnumerator
   href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetEnumerator_
   commentId: Overload:Koffing.Blocks.Block.GetEnumerator
+  isSpec: "True"
   fullName: Koffing.Blocks.Block.GetEnumerator
   nameWithType: Block.GetEnumerator
 - uid: Koffing.Blocks.Block.GetHashCode
@@ -92,6 +96,7 @@ references:
   name: GetHashCode
   href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCode_
   commentId: Overload:Koffing.Blocks.Block.GetHashCode
+  isSpec: "True"
   fullName: Koffing.Blocks.Block.GetHashCode
   nameWithType: Block.GetHashCode
 - uid: Koffing.Blocks.Block.GetHashCodeBasis
@@ -104,6 +109,7 @@ references:
   name: GetHashCodeBasis
   href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCodeBasis_
   commentId: Overload:Koffing.Blocks.Block.GetHashCodeBasis
+  isSpec: "True"
   fullName: Koffing.Blocks.Block.GetHashCodeBasis
   nameWithType: Block.GetHashCodeBasis
 - uid: Koffing.Blocks.Block.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -119,6 +125,7 @@ references:
   name: GetPossible
   href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossible_
   commentId: Overload:Koffing.Blocks.Block.GetPossible
+  isSpec: "True"
   fullName: Koffing.Blocks.Block.GetPossible
   nameWithType: Block.GetPossible
 - uid: Koffing.Blocks.Block.GetPossibleBlockSets(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -134,6 +141,7 @@ references:
   name: GetPossibleBlockSets
   href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossibleBlockSets_
   commentId: Overload:Koffing.Blocks.Block.GetPossibleBlockSets
+  isSpec: "True"
   fullName: Koffing.Blocks.Block.GetPossibleBlockSets
   nameWithType: Block.GetPossibleBlockSets
 - uid: Koffing.Blocks.Block.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -149,6 +157,7 @@ references:
   name: GetPossibleForTile
   href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossibleForTile_
   commentId: Overload:Koffing.Blocks.Block.GetPossibleForTile
+  isSpec: "True"
   fullName: Koffing.Blocks.Block.GetPossibleForTile
   nameWithType: Block.GetPossibleForTile
 - uid: Koffing.Blocks.Block.GetPossibleHelper(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Type)
@@ -164,6 +173,7 @@ references:
   name: GetPossibleHelper
   href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossibleHelper_
   commentId: Overload:Koffing.Blocks.Block.GetPossibleHelper
+  isSpec: "True"
   fullName: Koffing.Blocks.Block.GetPossibleHelper
   nameWithType: Block.GetPossibleHelper
 - uid: Koffing.Blocks.Block.Item(System.Int32)
@@ -179,6 +189,7 @@ references:
   name: this
   href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_Item_
   commentId: Overload:Koffing.Blocks.Block.Item
+  isSpec: "True"
   name.vb: this[]
   fullName: Koffing.Blocks.Block.this
   fullName.vb: Koffing.Blocks.Block.this[]
@@ -194,6 +205,7 @@ references:
   name: Tiles
   href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_Tiles_
   commentId: Overload:Koffing.Blocks.Block.Tiles
+  isSpec: "True"
   fullName: Koffing.Blocks.Block.Tiles
   nameWithType: Block.Tiles
 - uid: Koffing.Blocks.Block.ToString
@@ -206,6 +218,7 @@ references:
   name: ToString
   href: api/Koffing.Blocks.Block.html#Koffing_Blocks_Block_ToString_
   commentId: Overload:Koffing.Blocks.Block.ToString
+  isSpec: "True"
   fullName: Koffing.Blocks.Block.ToString
   nameWithType: Block.ToString
 - uid: Koffing.Blocks.Block._tiles
@@ -233,6 +246,7 @@ references:
   name: BlockSet
   href: api/Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet__ctor_
   commentId: Overload:Koffing.Blocks.BlockSet.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Blocks.BlockSet.BlockSet
   fullName.vb: Koffing.Blocks.BlockSet.New
@@ -248,6 +262,7 @@ references:
   name: Blocks
   href: api/Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_Blocks_
   commentId: Overload:Koffing.Blocks.BlockSet.Blocks
+  isSpec: "True"
   fullName: Koffing.Blocks.BlockSet.Blocks
   nameWithType: BlockSet.Blocks
 - uid: Koffing.Blocks.BlockSet.CompareTo(Koffing.Blocks.BlockSet)
@@ -260,6 +275,7 @@ references:
   name: CompareTo
   href: api/Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_CompareTo_
   commentId: Overload:Koffing.Blocks.BlockSet.CompareTo
+  isSpec: "True"
   fullName: Koffing.Blocks.BlockSet.CompareTo
   nameWithType: BlockSet.CompareTo
 - uid: Koffing.Blocks.BlockSet.Equals(Koffing.Blocks.BlockSet)
@@ -281,6 +297,7 @@ references:
   name: Equals
   href: api/Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_Equals_
   commentId: Overload:Koffing.Blocks.BlockSet.Equals
+  isSpec: "True"
   fullName: Koffing.Blocks.BlockSet.Equals
   nameWithType: BlockSet.Equals
 - uid: Koffing.Blocks.BlockSet.GetEnumerator
@@ -293,6 +310,7 @@ references:
   name: GetEnumerator
   href: api/Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_GetEnumerator_
   commentId: Overload:Koffing.Blocks.BlockSet.GetEnumerator
+  isSpec: "True"
   fullName: Koffing.Blocks.BlockSet.GetEnumerator
   nameWithType: BlockSet.GetEnumerator
 - uid: Koffing.Blocks.BlockSet.GetHashCode
@@ -305,6 +323,7 @@ references:
   name: GetHashCode
   href: api/Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_GetHashCode_
   commentId: Overload:Koffing.Blocks.BlockSet.GetHashCode
+  isSpec: "True"
   fullName: Koffing.Blocks.BlockSet.GetHashCode
   nameWithType: BlockSet.GetHashCode
 - uid: Koffing.Blocks.BlockSet.Item(System.Int32)
@@ -320,6 +339,7 @@ references:
   name: this
   href: api/Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_Item_
   commentId: Overload:Koffing.Blocks.BlockSet.Item
+  isSpec: "True"
   name.vb: this[]
   fullName: Koffing.Blocks.BlockSet.this
   fullName.vb: Koffing.Blocks.BlockSet.this[]
@@ -341,6 +361,7 @@ references:
   name: GetHashCodeBasis
   href: api/Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetHashCodeBasis_
   commentId: Overload:Koffing.Blocks.IBlock.GetHashCodeBasis
+  isSpec: "True"
   fullName: Koffing.Blocks.IBlock.GetHashCodeBasis
   nameWithType: IBlock.GetHashCodeBasis
 - uid: Koffing.Blocks.IBlock.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -356,6 +377,7 @@ references:
   name: GetPossible
   href: api/Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetPossible_
   commentId: Overload:Koffing.Blocks.IBlock.GetPossible
+  isSpec: "True"
   fullName: Koffing.Blocks.IBlock.GetPossible
   nameWithType: IBlock.GetPossible
 - uid: Koffing.Blocks.IBlock.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -371,6 +393,7 @@ references:
   name: GetPossibleForTile
   href: api/Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetPossibleForTile_
   commentId: Overload:Koffing.Blocks.IBlock.GetPossibleForTile
+  isSpec: "True"
   fullName: Koffing.Blocks.IBlock.GetPossibleForTile
   nameWithType: IBlock.GetPossibleForTile
 - uid: Koffing.Blocks.IDowngradable`1
@@ -394,6 +417,7 @@ references:
   name: Downgrade
   href: api/Koffing.Blocks.IDowngradable-1.html#Koffing_Blocks_IDowngradable_1_Downgrade_
   commentId: Overload:Koffing.Blocks.IDowngradable`1.Downgrade
+  isSpec: "True"
   fullName: Koffing.Blocks.IDowngradable<T>.Downgrade
   fullName.vb: Koffing.Blocks.IDowngradable(Of T).Downgrade
   nameWithType: IDowngradable<T>.Downgrade
@@ -419,6 +443,7 @@ references:
   name: CanUpgradeWith
   href: api/Koffing.Blocks.IUpgradable-1.html#Koffing_Blocks_IUpgradable_1_CanUpgradeWith_
   commentId: Overload:Koffing.Blocks.IUpgradable`1.CanUpgradeWith
+  isSpec: "True"
   fullName: Koffing.Blocks.IUpgradable<T>.CanUpgradeWith
   fullName.vb: Koffing.Blocks.IUpgradable(Of T).CanUpgradeWith
   nameWithType: IUpgradable<T>.CanUpgradeWith
@@ -435,6 +460,7 @@ references:
   name: SoughtTiles
   href: api/Koffing.Blocks.IUpgradable-1.html#Koffing_Blocks_IUpgradable_1_SoughtTiles_
   commentId: Overload:Koffing.Blocks.IUpgradable`1.SoughtTiles
+  isSpec: "True"
   fullName: Koffing.Blocks.IUpgradable<T>.SoughtTiles
   fullName.vb: Koffing.Blocks.IUpgradable(Of T).SoughtTiles
   nameWithType: IUpgradable<T>.SoughtTiles
@@ -451,6 +477,7 @@ references:
   name: Upgrade
   href: api/Koffing.Blocks.IUpgradable-1.html#Koffing_Blocks_IUpgradable_1_Upgrade_
   commentId: Overload:Koffing.Blocks.IUpgradable`1.Upgrade
+  isSpec: "True"
   fullName: Koffing.Blocks.IUpgradable<T>.Upgrade
   fullName.vb: Koffing.Blocks.IUpgradable(Of T).Upgrade
   nameWithType: IUpgradable<T>.Upgrade
@@ -474,6 +501,7 @@ references:
   name: MadeBlockContext
   href: api/Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext__ctor_
   commentId: Overload:Koffing.Blocks.MadeBlockContext.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Blocks.MadeBlockContext.MadeBlockContext
   fullName.vb: Koffing.Blocks.MadeBlockContext.New
@@ -489,6 +517,7 @@ references:
   name: CompareTo
   href: api/Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_CompareTo_
   commentId: Overload:Koffing.Blocks.MadeBlockContext.CompareTo
+  isSpec: "True"
   fullName: Koffing.Blocks.MadeBlockContext.CompareTo
   nameWithType: MadeBlockContext.CompareTo
 - uid: Koffing.Blocks.MadeBlockContext.Equals(Koffing.Blocks.MadeBlockContext)
@@ -510,6 +539,7 @@ references:
   name: Equals
   href: api/Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_Equals_
   commentId: Overload:Koffing.Blocks.MadeBlockContext.Equals
+  isSpec: "True"
   fullName: Koffing.Blocks.MadeBlockContext.Equals
   nameWithType: MadeBlockContext.Equals
 - uid: Koffing.Blocks.MadeBlockContext.GetHashCode
@@ -522,6 +552,7 @@ references:
   name: GetHashCode
   href: api/Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_GetHashCode_
   commentId: Overload:Koffing.Blocks.MadeBlockContext.GetHashCode
+  isSpec: "True"
   fullName: Koffing.Blocks.MadeBlockContext.GetHashCode
   nameWithType: MadeBlockContext.GetHashCode
 - uid: Koffing.Blocks.MadeBlockContext.MadeBlock
@@ -534,6 +565,7 @@ references:
   name: MadeBlock
   href: api/Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_MadeBlock_
   commentId: Overload:Koffing.Blocks.MadeBlockContext.MadeBlock
+  isSpec: "True"
   fullName: Koffing.Blocks.MadeBlockContext.MadeBlock
   nameWithType: MadeBlockContext.MadeBlock
 - uid: Koffing.Blocks.MadeBlockContext.RemainingTiles
@@ -546,6 +578,7 @@ references:
   name: RemainingTiles
   href: api/Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_RemainingTiles_
   commentId: Overload:Koffing.Blocks.MadeBlockContext.RemainingTiles
+  isSpec: "True"
   fullName: Koffing.Blocks.MadeBlockContext.RemainingTiles
   nameWithType: MadeBlockContext.RemainingTiles
 - uid: Koffing.Blocks.MadeBlockContext.ToString
@@ -558,6 +591,7 @@ references:
   name: ToString
   href: api/Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_ToString_
   commentId: Overload:Koffing.Blocks.MadeBlockContext.ToString
+  isSpec: "True"
   fullName: Koffing.Blocks.MadeBlockContext.ToString
   nameWithType: MadeBlockContext.ToString
 - uid: Koffing.Calculations
@@ -585,6 +619,7 @@ references:
   name: IsPastReady
   href: api/Koffing.Calculations.Readiness.html#Koffing_Calculations_Readiness_IsPastReady_
   commentId: Overload:Koffing.Calculations.Readiness.IsPastReady
+  isSpec: "True"
   fullName: Koffing.Calculations.Readiness.IsPastReady
   nameWithType: Readiness.IsPastReady
 - uid: Koffing.Calculations.Readiness.IsReady(Koffing.Blocks.BlockSet,Koffing.Calculations.Readiness.Type@)
@@ -600,6 +635,7 @@ references:
   name: IsReady
   href: api/Koffing.Calculations.Readiness.html#Koffing_Calculations_Readiness_IsReady_
   commentId: Overload:Koffing.Calculations.Readiness.IsReady
+  isSpec: "True"
   fullName: Koffing.Calculations.Readiness.IsReady
   nameWithType: Readiness.IsReady
 - uid: Koffing.Calculations.Readiness.SevenPairsTilesToReady(Koffing.Blocks.BlockSet)
@@ -612,6 +648,7 @@ references:
   name: SevenPairsTilesToReady
   href: api/Koffing.Calculations.Readiness.html#Koffing_Calculations_Readiness_SevenPairsTilesToReady_
   commentId: Overload:Koffing.Calculations.Readiness.SevenPairsTilesToReady
+  isSpec: "True"
   fullName: Koffing.Calculations.Readiness.SevenPairsTilesToReady
   nameWithType: Readiness.SevenPairsTilesToReady
 - uid: Koffing.Calculations.Readiness.StandardTilesToReady(Koffing.Blocks.BlockSet)
@@ -624,6 +661,7 @@ references:
   name: StandardTilesToReady
   href: api/Koffing.Calculations.Readiness.html#Koffing_Calculations_Readiness_StandardTilesToReady_
   commentId: Overload:Koffing.Calculations.Readiness.StandardTilesToReady
+  isSpec: "True"
   fullName: Koffing.Calculations.Readiness.StandardTilesToReady
   nameWithType: Readiness.StandardTilesToReady
 - uid: Koffing.Calculations.Readiness.ThirteenOrphansTilesToReady(Koffing.Blocks.BlockSet)
@@ -636,6 +674,7 @@ references:
   name: ThirteenOrphansTilesToReady
   href: api/Koffing.Calculations.Readiness.html#Koffing_Calculations_Readiness_ThirteenOrphansTilesToReady_
   commentId: Overload:Koffing.Calculations.Readiness.ThirteenOrphansTilesToReady
+  isSpec: "True"
   fullName: Koffing.Calculations.Readiness.ThirteenOrphansTilesToReady
   nameWithType: Readiness.ThirteenOrphansTilesToReady
 - uid: Koffing.Calculations.Readiness.TilesToReady(Koffing.Blocks.BlockSet,Koffing.Calculations.Readiness.Type)
@@ -657,6 +696,7 @@ references:
   name: TilesToReady
   href: api/Koffing.Calculations.Readiness.html#Koffing_Calculations_Readiness_TilesToReady_
   commentId: Overload:Koffing.Calculations.Readiness.TilesToReady
+  isSpec: "True"
   fullName: Koffing.Calculations.Readiness.TilesToReady
   nameWithType: Readiness.TilesToReady
 - uid: Koffing.Calculations.Readiness.Type
@@ -699,6 +739,7 @@ references:
   name: GetSuitString
   href: api/Koffing.Extensions.html#Koffing_Extensions_GetSuitString_
   commentId: Overload:Koffing.Extensions.GetSuitString
+  isSpec: "True"
   fullName: Koffing.Extensions.GetSuitString
   nameWithType: Extensions.GetSuitString
 - uid: Koffing.Extensions.NotationFromTile(Koffing.Tiles.Tile)
@@ -711,6 +752,7 @@ references:
   name: NotationFromTile
   href: api/Koffing.Extensions.html#Koffing_Extensions_NotationFromTile_
   commentId: Overload:Koffing.Extensions.NotationFromTile
+  isSpec: "True"
   fullName: Koffing.Extensions.NotationFromTile
   nameWithType: Extensions.NotationFromTile
 - uid: Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -726,6 +768,7 @@ references:
   name: NotationFromTiles
   href: api/Koffing.Extensions.html#Koffing_Extensions_NotationFromTiles_
   commentId: Overload:Koffing.Extensions.NotationFromTiles
+  isSpec: "True"
   fullName: Koffing.Extensions.NotationFromTiles
   nameWithType: Extensions.NotationFromTiles
 - uid: Koffing.Extensions.RollDice(Koffing.Random.IRandomNumberGenerator,System.Int32,System.Int32)
@@ -741,12 +784,14 @@ references:
   name: RollDice
   href: api/Koffing.Extensions.html#Koffing_Extensions_RollDice_
   commentId: Overload:Koffing.Extensions.RollDice
+  isSpec: "True"
   fullName: Koffing.Extensions.RollDice
   nameWithType: Extensions.RollDice
 - uid: Koffing.Extensions.Shuffle*
   name: Shuffle
   href: api/Koffing.Extensions.html#Koffing_Extensions_Shuffle_
   commentId: Overload:Koffing.Extensions.Shuffle
+  isSpec: "True"
   fullName: Koffing.Extensions.Shuffle
   nameWithType: Extensions.Shuffle
 - uid: Koffing.Extensions.Shuffle``1(Koffing.Random.IRandomNumberGenerator,System.Collections.Generic.IEnumerable{``0})
@@ -771,6 +816,7 @@ references:
   name: ToTile
   href: api/Koffing.Extensions.html#Koffing_Extensions_ToTile_
   commentId: Overload:Koffing.Extensions.ToTile
+  isSpec: "True"
   fullName: Koffing.Extensions.ToTile
   nameWithType: Extensions.ToTile
 - uid: Koffing.Extensions.ToTiles(System.String)
@@ -786,6 +832,7 @@ references:
   name: ToTiles
   href: api/Koffing.Extensions.html#Koffing_Extensions_ToTiles_
   commentId: Overload:Koffing.Extensions.ToTiles
+  isSpec: "True"
   fullName: Koffing.Extensions.ToTiles
   nameWithType: Extensions.ToTiles
 - uid: Koffing.Godot.Random
@@ -813,6 +860,7 @@ references:
   name: GodotRandomNumberGenerator
   href: api/Koffing.Godot.Random.GodotRandomNumberGenerator.html#Koffing_Godot_Random_GodotRandomNumberGenerator__ctor_
   commentId: Overload:Koffing.Godot.Random.GodotRandomNumberGenerator.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Godot.Random.GodotRandomNumberGenerator.GodotRandomNumberGenerator
   fullName.vb: Koffing.Godot.Random.GodotRandomNumberGenerator.New
@@ -831,6 +879,7 @@ references:
   name: GetIntegerInRange
   href: api/Koffing.Godot.Random.GodotRandomNumberGenerator.html#Koffing_Godot_Random_GodotRandomNumberGenerator_GetIntegerInRange_
   commentId: Overload:Koffing.Godot.Random.GodotRandomNumberGenerator.GetIntegerInRange
+  isSpec: "True"
   fullName: Koffing.Godot.Random.GodotRandomNumberGenerator.GetIntegerInRange
   nameWithType: GodotRandomNumberGenerator.GetIntegerInRange
 - uid: Koffing.Godot.Random.GodotRandomNumberGenerator.Randomize
@@ -843,6 +892,7 @@ references:
   name: Randomize
   href: api/Koffing.Godot.Random.GodotRandomNumberGenerator.html#Koffing_Godot_Random_GodotRandomNumberGenerator_Randomize_
   commentId: Overload:Koffing.Godot.Random.GodotRandomNumberGenerator.Randomize
+  isSpec: "True"
   fullName: Koffing.Godot.Random.GodotRandomNumberGenerator.Randomize
   nameWithType: GodotRandomNumberGenerator.Randomize
 - uid: Koffing.Godot.Random.GodotRandomNumberGenerator.Seed
@@ -855,6 +905,7 @@ references:
   name: Seed
   href: api/Koffing.Godot.Random.GodotRandomNumberGenerator.html#Koffing_Godot_Random_GodotRandomNumberGenerator_Seed_
   commentId: Overload:Koffing.Godot.Random.GodotRandomNumberGenerator.Seed
+  isSpec: "True"
   fullName: Koffing.Godot.Random.GodotRandomNumberGenerator.Seed
   nameWithType: GodotRandomNumberGenerator.Seed
 - uid: Koffing.Godot.Tiles
@@ -869,24 +920,6 @@ references:
   commentId: T:Koffing.Godot.Tiles.TileSprite
   fullName: Koffing.Godot.Tiles.TileSprite
   nameWithType: TileSprite
-- uid: Koffing.Godot.Tiles.TileSprite.#ctor
-  name: TileSprite()
-  href: api/Koffing.Godot.Tiles.TileSprite.html#Koffing_Godot_Tiles_TileSprite__ctor
-  commentId: M:Koffing.Godot.Tiles.TileSprite.#ctor
-  name.vb: New()
-  fullName: Koffing.Godot.Tiles.TileSprite.TileSprite()
-  fullName.vb: Koffing.Godot.Tiles.TileSprite.New()
-  nameWithType: TileSprite.TileSprite()
-  nameWithType.vb: TileSprite.New()
-- uid: Koffing.Godot.Tiles.TileSprite.#ctor*
-  name: TileSprite
-  href: api/Koffing.Godot.Tiles.TileSprite.html#Koffing_Godot_Tiles_TileSprite__ctor_
-  commentId: Overload:Koffing.Godot.Tiles.TileSprite.#ctor
-  name.vb: New
-  fullName: Koffing.Godot.Tiles.TileSprite.TileSprite
-  fullName.vb: Koffing.Godot.Tiles.TileSprite.New
-  nameWithType: TileSprite.TileSprite
-  nameWithType.vb: TileSprite.New
 - uid: Koffing.Godot.Tiles.TileSprite.FaceUp
   name: FaceUp
   href: api/Koffing.Godot.Tiles.TileSprite.html#Koffing_Godot_Tiles_TileSprite_FaceUp
@@ -897,6 +930,7 @@ references:
   name: FaceUp
   href: api/Koffing.Godot.Tiles.TileSprite.html#Koffing_Godot_Tiles_TileSprite_FaceUp_
   commentId: Overload:Koffing.Godot.Tiles.TileSprite.FaceUp
+  isSpec: "True"
   fullName: Koffing.Godot.Tiles.TileSprite.FaceUp
   nameWithType: TileSprite.FaceUp
 - uid: Koffing.Godot.Tiles.TileSprite.MethodName
@@ -905,24 +939,6 @@ references:
   commentId: T:Koffing.Godot.Tiles.TileSprite.MethodName
   fullName: Koffing.Godot.Tiles.TileSprite.MethodName
   nameWithType: TileSprite.MethodName
-- uid: Koffing.Godot.Tiles.TileSprite.MethodName.#ctor
-  name: MethodName()
-  href: api/Koffing.Godot.Tiles.TileSprite.MethodName.html#Koffing_Godot_Tiles_TileSprite_MethodName__ctor
-  commentId: M:Koffing.Godot.Tiles.TileSprite.MethodName.#ctor
-  name.vb: New()
-  fullName: Koffing.Godot.Tiles.TileSprite.MethodName.MethodName()
-  fullName.vb: Koffing.Godot.Tiles.TileSprite.MethodName.New()
-  nameWithType: TileSprite.MethodName.MethodName()
-  nameWithType.vb: TileSprite.MethodName.New()
-- uid: Koffing.Godot.Tiles.TileSprite.MethodName.#ctor*
-  name: MethodName
-  href: api/Koffing.Godot.Tiles.TileSprite.MethodName.html#Koffing_Godot_Tiles_TileSprite_MethodName__ctor_
-  commentId: Overload:Koffing.Godot.Tiles.TileSprite.MethodName.#ctor
-  name.vb: New
-  fullName: Koffing.Godot.Tiles.TileSprite.MethodName.MethodName
-  fullName.vb: Koffing.Godot.Tiles.TileSprite.MethodName.New
-  nameWithType: TileSprite.MethodName.MethodName
-  nameWithType.vb: TileSprite.MethodName.New
 - uid: Koffing.Godot.Tiles.TileSprite.MethodName.ToString
   name: ToString
   href: api/Koffing.Godot.Tiles.TileSprite.MethodName.html#Koffing_Godot_Tiles_TileSprite_MethodName_ToString
@@ -947,24 +963,6 @@ references:
   commentId: T:Koffing.Godot.Tiles.TileSprite.PropertyName
   fullName: Koffing.Godot.Tiles.TileSprite.PropertyName
   nameWithType: TileSprite.PropertyName
-- uid: Koffing.Godot.Tiles.TileSprite.PropertyName.#ctor
-  name: PropertyName()
-  href: api/Koffing.Godot.Tiles.TileSprite.PropertyName.html#Koffing_Godot_Tiles_TileSprite_PropertyName__ctor
-  commentId: M:Koffing.Godot.Tiles.TileSprite.PropertyName.#ctor
-  name.vb: New()
-  fullName: Koffing.Godot.Tiles.TileSprite.PropertyName.PropertyName()
-  fullName.vb: Koffing.Godot.Tiles.TileSprite.PropertyName.New()
-  nameWithType: TileSprite.PropertyName.PropertyName()
-  nameWithType.vb: TileSprite.PropertyName.New()
-- uid: Koffing.Godot.Tiles.TileSprite.PropertyName.#ctor*
-  name: PropertyName
-  href: api/Koffing.Godot.Tiles.TileSprite.PropertyName.html#Koffing_Godot_Tiles_TileSprite_PropertyName__ctor_
-  commentId: Overload:Koffing.Godot.Tiles.TileSprite.PropertyName.#ctor
-  name.vb: New
-  fullName: Koffing.Godot.Tiles.TileSprite.PropertyName.PropertyName
-  fullName.vb: Koffing.Godot.Tiles.TileSprite.PropertyName.New
-  nameWithType: TileSprite.PropertyName.PropertyName
-  nameWithType.vb: TileSprite.PropertyName.New
 - uid: Koffing.Godot.Tiles.TileSprite.PropertyName.FaceUp
   name: FaceUp
   href: api/Koffing.Godot.Tiles.TileSprite.PropertyName.html#Koffing_Godot_Tiles_TileSprite_PropertyName_FaceUp
@@ -993,6 +991,7 @@ references:
   name: Rank
   href: api/Koffing.Godot.Tiles.TileSprite.html#Koffing_Godot_Tiles_TileSprite_Rank_
   commentId: Overload:Koffing.Godot.Tiles.TileSprite.Rank
+  isSpec: "True"
   fullName: Koffing.Godot.Tiles.TileSprite.Rank
   nameWithType: TileSprite.Rank
 - uid: Koffing.Godot.Tiles.TileSprite.SignalName
@@ -1001,24 +1000,6 @@ references:
   commentId: T:Koffing.Godot.Tiles.TileSprite.SignalName
   fullName: Koffing.Godot.Tiles.TileSprite.SignalName
   nameWithType: TileSprite.SignalName
-- uid: Koffing.Godot.Tiles.TileSprite.SignalName.#ctor
-  name: SignalName()
-  href: api/Koffing.Godot.Tiles.TileSprite.SignalName.html#Koffing_Godot_Tiles_TileSprite_SignalName__ctor
-  commentId: M:Koffing.Godot.Tiles.TileSprite.SignalName.#ctor
-  name.vb: New()
-  fullName: Koffing.Godot.Tiles.TileSprite.SignalName.SignalName()
-  fullName.vb: Koffing.Godot.Tiles.TileSprite.SignalName.New()
-  nameWithType: TileSprite.SignalName.SignalName()
-  nameWithType.vb: TileSprite.SignalName.New()
-- uid: Koffing.Godot.Tiles.TileSprite.SignalName.#ctor*
-  name: SignalName
-  href: api/Koffing.Godot.Tiles.TileSprite.SignalName.html#Koffing_Godot_Tiles_TileSprite_SignalName__ctor_
-  commentId: Overload:Koffing.Godot.Tiles.TileSprite.SignalName.#ctor
-  name.vb: New
-  fullName: Koffing.Godot.Tiles.TileSprite.SignalName.SignalName
-  fullName.vb: Koffing.Godot.Tiles.TileSprite.SignalName.New
-  nameWithType: TileSprite.SignalName.SignalName
-  nameWithType.vb: TileSprite.SignalName.New
 - uid: Koffing.Godot.Tiles.TileSprite.Suit
   name: Suit
   href: api/Koffing.Godot.Tiles.TileSprite.html#Koffing_Godot_Tiles_TileSprite_Suit
@@ -1029,6 +1010,7 @@ references:
   name: Suit
   href: api/Koffing.Godot.Tiles.TileSprite.html#Koffing_Godot_Tiles_TileSprite_Suit_
   commentId: Overload:Koffing.Godot.Tiles.TileSprite.Suit
+  isSpec: "True"
   fullName: Koffing.Godot.Tiles.TileSprite.Suit
   nameWithType: TileSprite.Suit
 - uid: Koffing.Godot.Tiles.TileSprite.Tile
@@ -1041,6 +1023,7 @@ references:
   name: Tile
   href: api/Koffing.Godot.Tiles.TileSprite.html#Koffing_Godot_Tiles_TileSprite_Tile_
   commentId: Overload:Koffing.Godot.Tiles.TileSprite.Tile
+  isSpec: "True"
   fullName: Koffing.Godot.Tiles.TileSprite.Tile
   nameWithType: TileSprite.Tile
 - uid: Koffing.Godot.Tiles.TileSprite.ToString
@@ -1053,6 +1036,7 @@ references:
   name: ToString
   href: api/Koffing.Godot.Tiles.TileSprite.html#Koffing_Godot_Tiles_TileSprite_ToString_
   commentId: Overload:Koffing.Godot.Tiles.TileSprite.ToString
+  isSpec: "True"
   fullName: Koffing.Godot.Tiles.TileSprite.ToString
   nameWithType: TileSprite.ToString
 - uid: Koffing.Godot.Tiles.TileSprite._Ready
@@ -1065,6 +1049,7 @@ references:
   name: _Ready
   href: api/Koffing.Godot.Tiles.TileSprite.html#Koffing_Godot_Tiles_TileSprite__Ready_
   commentId: Overload:Koffing.Godot.Tiles.TileSprite._Ready
+  isSpec: "True"
   fullName: Koffing.Godot.Tiles.TileSprite._Ready
   nameWithType: TileSprite._Ready
 - uid: Koffing.Godot.UI.Elements
@@ -1079,24 +1064,6 @@ references:
   commentId: T:Koffing.Godot.UI.Elements.TileRect
   fullName: Koffing.Godot.UI.Elements.TileRect
   nameWithType: TileRect
-- uid: Koffing.Godot.UI.Elements.TileRect.#ctor
-  name: TileRect()
-  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect__ctor
-  commentId: M:Koffing.Godot.UI.Elements.TileRect.#ctor
-  name.vb: New()
-  fullName: Koffing.Godot.UI.Elements.TileRect.TileRect()
-  fullName.vb: Koffing.Godot.UI.Elements.TileRect.New()
-  nameWithType: TileRect.TileRect()
-  nameWithType.vb: TileRect.New()
-- uid: Koffing.Godot.UI.Elements.TileRect.#ctor*
-  name: TileRect
-  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect__ctor_
-  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.#ctor
-  name.vb: New
-  fullName: Koffing.Godot.UI.Elements.TileRect.TileRect
-  fullName.vb: Koffing.Godot.UI.Elements.TileRect.New
-  nameWithType: TileRect.TileRect
-  nameWithType.vb: TileRect.New
 - uid: Koffing.Godot.UI.Elements.TileRect.FaceUp
   name: FaceUp
   href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_FaceUp
@@ -1107,6 +1074,7 @@ references:
   name: FaceUp
   href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_FaceUp_
   commentId: Overload:Koffing.Godot.UI.Elements.TileRect.FaceUp
+  isSpec: "True"
   fullName: Koffing.Godot.UI.Elements.TileRect.FaceUp
   nameWithType: TileRect.FaceUp
 - uid: Koffing.Godot.UI.Elements.TileRect.MethodName
@@ -1115,24 +1083,6 @@ references:
   commentId: T:Koffing.Godot.UI.Elements.TileRect.MethodName
   fullName: Koffing.Godot.UI.Elements.TileRect.MethodName
   nameWithType: TileRect.MethodName
-- uid: Koffing.Godot.UI.Elements.TileRect.MethodName.#ctor
-  name: MethodName()
-  href: api/Koffing.Godot.UI.Elements.TileRect.MethodName.html#Koffing_Godot_UI_Elements_TileRect_MethodName__ctor
-  commentId: M:Koffing.Godot.UI.Elements.TileRect.MethodName.#ctor
-  name.vb: New()
-  fullName: Koffing.Godot.UI.Elements.TileRect.MethodName.MethodName()
-  fullName.vb: Koffing.Godot.UI.Elements.TileRect.MethodName.New()
-  nameWithType: TileRect.MethodName.MethodName()
-  nameWithType.vb: TileRect.MethodName.New()
-- uid: Koffing.Godot.UI.Elements.TileRect.MethodName.#ctor*
-  name: MethodName
-  href: api/Koffing.Godot.UI.Elements.TileRect.MethodName.html#Koffing_Godot_UI_Elements_TileRect_MethodName__ctor_
-  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.MethodName.#ctor
-  name.vb: New
-  fullName: Koffing.Godot.UI.Elements.TileRect.MethodName.MethodName
-  fullName.vb: Koffing.Godot.UI.Elements.TileRect.MethodName.New
-  nameWithType: TileRect.MethodName.MethodName
-  nameWithType.vb: TileRect.MethodName.New
 - uid: Koffing.Godot.UI.Elements.TileRect.MethodName.ToString
   name: ToString
   href: api/Koffing.Godot.UI.Elements.TileRect.MethodName.html#Koffing_Godot_UI_Elements_TileRect_MethodName_ToString
@@ -1157,24 +1107,6 @@ references:
   commentId: T:Koffing.Godot.UI.Elements.TileRect.PropertyName
   fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName
   nameWithType: TileRect.PropertyName
-- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.#ctor
-  name: PropertyName()
-  href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName__ctor
-  commentId: M:Koffing.Godot.UI.Elements.TileRect.PropertyName.#ctor
-  name.vb: New()
-  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.PropertyName()
-  fullName.vb: Koffing.Godot.UI.Elements.TileRect.PropertyName.New()
-  nameWithType: TileRect.PropertyName.PropertyName()
-  nameWithType.vb: TileRect.PropertyName.New()
-- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.#ctor*
-  name: PropertyName
-  href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName__ctor_
-  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.PropertyName.#ctor
-  name.vb: New
-  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.PropertyName
-  fullName.vb: Koffing.Godot.UI.Elements.TileRect.PropertyName.New
-  nameWithType: TileRect.PropertyName.PropertyName
-  nameWithType.vb: TileRect.PropertyName.New
 - uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.FaceUp
   name: FaceUp
   href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName_FaceUp
@@ -1203,6 +1135,7 @@ references:
   name: Rank
   href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Rank_
   commentId: Overload:Koffing.Godot.UI.Elements.TileRect.Rank
+  isSpec: "True"
   fullName: Koffing.Godot.UI.Elements.TileRect.Rank
   nameWithType: TileRect.Rank
 - uid: Koffing.Godot.UI.Elements.TileRect.SignalName
@@ -1211,24 +1144,6 @@ references:
   commentId: T:Koffing.Godot.UI.Elements.TileRect.SignalName
   fullName: Koffing.Godot.UI.Elements.TileRect.SignalName
   nameWithType: TileRect.SignalName
-- uid: Koffing.Godot.UI.Elements.TileRect.SignalName.#ctor
-  name: SignalName()
-  href: api/Koffing.Godot.UI.Elements.TileRect.SignalName.html#Koffing_Godot_UI_Elements_TileRect_SignalName__ctor
-  commentId: M:Koffing.Godot.UI.Elements.TileRect.SignalName.#ctor
-  name.vb: New()
-  fullName: Koffing.Godot.UI.Elements.TileRect.SignalName.SignalName()
-  fullName.vb: Koffing.Godot.UI.Elements.TileRect.SignalName.New()
-  nameWithType: TileRect.SignalName.SignalName()
-  nameWithType.vb: TileRect.SignalName.New()
-- uid: Koffing.Godot.UI.Elements.TileRect.SignalName.#ctor*
-  name: SignalName
-  href: api/Koffing.Godot.UI.Elements.TileRect.SignalName.html#Koffing_Godot_UI_Elements_TileRect_SignalName__ctor_
-  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.SignalName.#ctor
-  name.vb: New
-  fullName: Koffing.Godot.UI.Elements.TileRect.SignalName.SignalName
-  fullName.vb: Koffing.Godot.UI.Elements.TileRect.SignalName.New
-  nameWithType: TileRect.SignalName.SignalName
-  nameWithType.vb: TileRect.SignalName.New
 - uid: Koffing.Godot.UI.Elements.TileRect.Suit
   name: Suit
   href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Suit
@@ -1239,6 +1154,7 @@ references:
   name: Suit
   href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Suit_
   commentId: Overload:Koffing.Godot.UI.Elements.TileRect.Suit
+  isSpec: "True"
   fullName: Koffing.Godot.UI.Elements.TileRect.Suit
   nameWithType: TileRect.Suit
 - uid: Koffing.Godot.UI.Elements.TileRect.Tile
@@ -1251,6 +1167,7 @@ references:
   name: Tile
   href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Tile_
   commentId: Overload:Koffing.Godot.UI.Elements.TileRect.Tile
+  isSpec: "True"
   fullName: Koffing.Godot.UI.Elements.TileRect.Tile
   nameWithType: TileRect.Tile
 - uid: Koffing.Godot.UI.Elements.TileRect.ToString
@@ -1263,6 +1180,7 @@ references:
   name: ToString
   href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_ToString_
   commentId: Overload:Koffing.Godot.UI.Elements.TileRect.ToString
+  isSpec: "True"
   fullName: Koffing.Godot.UI.Elements.TileRect.ToString
   nameWithType: TileRect.ToString
 - uid: Koffing.Godot.UI.Elements.TileRect._Ready
@@ -1275,6 +1193,7 @@ references:
   name: _Ready
   href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect__Ready_
   commentId: Overload:Koffing.Godot.UI.Elements.TileRect._Ready
+  isSpec: "True"
   fullName: Koffing.Godot.UI.Elements.TileRect._Ready
   nameWithType: TileRect._Ready
 - uid: Koffing.Helpers
@@ -1296,6 +1215,7 @@ references:
   name: GetSafeIndex
   href: api/Koffing.Helpers.html#Koffing_Helpers_GetSafeIndex_
   commentId: Overload:Koffing.Helpers.GetSafeIndex
+  isSpec: "True"
   fullName: Koffing.Helpers.GetSafeIndex
   nameWithType: Helpers.GetSafeIndex
 - uid: Koffing.Matches
@@ -1323,6 +1243,7 @@ references:
   name: Match
   href: api/Koffing.Matches.Match.html#Koffing_Matches_Match__ctor_
   commentId: Overload:Koffing.Matches.Match.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Matches.Match.Match
   fullName.vb: Koffing.Matches.Match.New
@@ -1338,6 +1259,7 @@ references:
   name: CurrentEastIndex
   href: api/Koffing.Matches.Match.html#Koffing_Matches_Match_CurrentEastIndex_
   commentId: Overload:Koffing.Matches.Match.CurrentEastIndex
+  isSpec: "True"
   fullName: Koffing.Matches.Match.CurrentEastIndex
   nameWithType: Match.CurrentEastIndex
 - uid: Koffing.Matches.Match.CurrentEastPlayer
@@ -1350,6 +1272,7 @@ references:
   name: CurrentEastPlayer
   href: api/Koffing.Matches.Match.html#Koffing_Matches_Match_CurrentEastPlayer_
   commentId: Overload:Koffing.Matches.Match.CurrentEastPlayer
+  isSpec: "True"
   fullName: Koffing.Matches.Match.CurrentEastPlayer
   nameWithType: Match.CurrentEastPlayer
 - uid: Koffing.Matches.Match.DealHands
@@ -1362,6 +1285,7 @@ references:
   name: DealHands
   href: api/Koffing.Matches.Match.html#Koffing_Matches_Match_DealHands_
   commentId: Overload:Koffing.Matches.Match.DealHands
+  isSpec: "True"
   fullName: Koffing.Matches.Match.DealHands
   nameWithType: Match.DealHands
 - uid: Koffing.Matches.Match.HasRedFives
@@ -1374,6 +1298,7 @@ references:
   name: HasRedFives
   href: api/Koffing.Matches.Match.html#Koffing_Matches_Match_HasRedFives_
   commentId: Overload:Koffing.Matches.Match.HasRedFives
+  isSpec: "True"
   fullName: Koffing.Matches.Match.HasRedFives
   nameWithType: Match.HasRedFives
 - uid: Koffing.Matches.Match.NumberOfRounds
@@ -1386,6 +1311,7 @@ references:
   name: NumberOfRounds
   href: api/Koffing.Matches.Match.html#Koffing_Matches_Match_NumberOfRounds_
   commentId: Overload:Koffing.Matches.Match.NumberOfRounds
+  isSpec: "True"
   fullName: Koffing.Matches.Match.NumberOfRounds
   nameWithType: Match.NumberOfRounds
 - uid: Koffing.Matches.Match.PlayerCount
@@ -1398,6 +1324,7 @@ references:
   name: PlayerCount
   href: api/Koffing.Matches.Match.html#Koffing_Matches_Match_PlayerCount_
   commentId: Overload:Koffing.Matches.Match.PlayerCount
+  isSpec: "True"
   fullName: Koffing.Matches.Match.PlayerCount
   nameWithType: Match.PlayerCount
 - uid: Koffing.Matches.Match.Players
@@ -1410,6 +1337,7 @@ references:
   name: Players
   href: api/Koffing.Matches.Match.html#Koffing_Matches_Match_Players_
   commentId: Overload:Koffing.Matches.Match.Players
+  isSpec: "True"
   fullName: Koffing.Matches.Match.Players
   nameWithType: Match.Players
 - uid: Koffing.Matches.Match.RoundWind
@@ -1422,6 +1350,7 @@ references:
   name: RoundWind
   href: api/Koffing.Matches.Match.html#Koffing_Matches_Match_RoundWind_
   commentId: Overload:Koffing.Matches.Match.RoundWind
+  isSpec: "True"
   fullName: Koffing.Matches.Match.RoundWind
   nameWithType: Match.RoundWind
 - uid: Koffing.Matches.Match.WindsToPlayers
@@ -1434,6 +1363,7 @@ references:
   name: WindsToPlayers
   href: api/Koffing.Matches.Match.html#Koffing_Matches_Match_WindsToPlayers_
   commentId: Overload:Koffing.Matches.Match.WindsToPlayers
+  isSpec: "True"
   fullName: Koffing.Matches.Match.WindsToPlayers
   nameWithType: Match.WindsToPlayers
 - uid: Koffing.Matches.PlayerCount
@@ -1479,6 +1409,7 @@ references:
   name: Wall
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall__ctor_
   commentId: Overload:Koffing.Matches.Wall.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Matches.Wall.Wall
   fullName.vb: Koffing.Matches.Wall.New
@@ -1494,6 +1425,7 @@ references:
   name: CanRevealDoraIndicator
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanRevealDoraIndicator_
   commentId: Overload:Koffing.Matches.Wall.CanRevealDoraIndicator
+  isSpec: "True"
   fullName: Koffing.Matches.Wall.CanRevealDoraIndicator
   nameWithType: Wall.CanRevealDoraIndicator
 - uid: Koffing.Matches.Wall.CanTakeLiveTile
@@ -1506,6 +1438,7 @@ references:
   name: CanTakeLiveTile
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanTakeLiveTile_
   commentId: Overload:Koffing.Matches.Wall.CanTakeLiveTile
+  isSpec: "True"
   fullName: Koffing.Matches.Wall.CanTakeLiveTile
   nameWithType: Wall.CanTakeLiveTile
 - uid: Koffing.Matches.Wall.CanTakeReplacementTile
@@ -1518,6 +1451,7 @@ references:
   name: CanTakeReplacementTile
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanTakeReplacementTile_
   commentId: Overload:Koffing.Matches.Wall.CanTakeReplacementTile
+  isSpec: "True"
   fullName: Koffing.Matches.Wall.CanTakeReplacementTile
   nameWithType: Wall.CanTakeReplacementTile
 - uid: Koffing.Matches.Wall.DeadWallEndIndex
@@ -1530,6 +1464,7 @@ references:
   name: DeadWallEndIndex
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall_DeadWallEndIndex_
   commentId: Overload:Koffing.Matches.Wall.DeadWallEndIndex
+  isSpec: "True"
   fullName: Koffing.Matches.Wall.DeadWallEndIndex
   nameWithType: Wall.DeadWallEndIndex
 - uid: Koffing.Matches.Wall.DeadWallStartIndex
@@ -1542,6 +1477,7 @@ references:
   name: DeadWallStartIndex
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall_DeadWallStartIndex_
   commentId: Overload:Koffing.Matches.Wall.DeadWallStartIndex
+  isSpec: "True"
   fullName: Koffing.Matches.Wall.DeadWallStartIndex
   nameWithType: Wall.DeadWallStartIndex
 - uid: Koffing.Matches.Wall.LastRevealedDoraIndicatorIndex
@@ -1554,6 +1490,7 @@ references:
   name: LastRevealedDoraIndicatorIndex
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall_LastRevealedDoraIndicatorIndex_
   commentId: Overload:Koffing.Matches.Wall.LastRevealedDoraIndicatorIndex
+  isSpec: "True"
   fullName: Koffing.Matches.Wall.LastRevealedDoraIndicatorIndex
   nameWithType: Wall.LastRevealedDoraIndicatorIndex
 - uid: Koffing.Matches.Wall.LiveWallStartIndex
@@ -1566,6 +1503,7 @@ references:
   name: LiveWallStartIndex
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall_LiveWallStartIndex_
   commentId: Overload:Koffing.Matches.Wall.LiveWallStartIndex
+  isSpec: "True"
   fullName: Koffing.Matches.Wall.LiveWallStartIndex
   nameWithType: Wall.LiveWallStartIndex
 - uid: Koffing.Matches.Wall.NextDoraIndicatorIndex
@@ -1578,6 +1516,7 @@ references:
   name: NextDoraIndicatorIndex
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall_NextDoraIndicatorIndex_
   commentId: Overload:Koffing.Matches.Wall.NextDoraIndicatorIndex
+  isSpec: "True"
   fullName: Koffing.Matches.Wall.NextDoraIndicatorIndex
   nameWithType: Wall.NextDoraIndicatorIndex
 - uid: Koffing.Matches.Wall.NextLiveTileIndex
@@ -1590,6 +1529,7 @@ references:
   name: NextLiveTileIndex
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall_NextLiveTileIndex_
   commentId: Overload:Koffing.Matches.Wall.NextLiveTileIndex
+  isSpec: "True"
   fullName: Koffing.Matches.Wall.NextLiveTileIndex
   nameWithType: Wall.NextLiveTileIndex
 - uid: Koffing.Matches.Wall.NextReplacementTileIndex
@@ -1602,6 +1542,7 @@ references:
   name: NextReplacementTileIndex
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall_NextReplacementTileIndex_
   commentId: Overload:Koffing.Matches.Wall.NextReplacementTileIndex
+  isSpec: "True"
   fullName: Koffing.Matches.Wall.NextReplacementTileIndex
   nameWithType: Wall.NextReplacementTileIndex
 - uid: Koffing.Matches.Wall.PopNextLiveTile
@@ -1614,6 +1555,7 @@ references:
   name: PopNextLiveTile
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall_PopNextLiveTile_
   commentId: Overload:Koffing.Matches.Wall.PopNextLiveTile
+  isSpec: "True"
   fullName: Koffing.Matches.Wall.PopNextLiveTile
   nameWithType: Wall.PopNextLiveTile
 - uid: Koffing.Matches.Wall.PopNextReplacementTile
@@ -1626,6 +1568,7 @@ references:
   name: PopNextReplacementTile
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall_PopNextReplacementTile_
   commentId: Overload:Koffing.Matches.Wall.PopNextReplacementTile
+  isSpec: "True"
   fullName: Koffing.Matches.Wall.PopNextReplacementTile
   nameWithType: Wall.PopNextReplacementTile
 - uid: Koffing.Matches.Wall.RevealNextDoraIndicator
@@ -1638,6 +1581,7 @@ references:
   name: RevealNextDoraIndicator
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall_RevealNextDoraIndicator_
   commentId: Overload:Koffing.Matches.Wall.RevealNextDoraIndicator
+  isSpec: "True"
   fullName: Koffing.Matches.Wall.RevealNextDoraIndicator
   nameWithType: Wall.RevealNextDoraIndicator
 - uid: Koffing.Matches.Wall.Tiles
@@ -1650,6 +1594,7 @@ references:
   name: Tiles
   href: api/Koffing.Matches.Wall.html#Koffing_Matches_Wall_Tiles_
   commentId: Overload:Koffing.Matches.Wall.Tiles
+  isSpec: "True"
   fullName: Koffing.Matches.Wall.Tiles
   nameWithType: Wall.Tiles
 - uid: Koffing.Matches.WallDisplay
@@ -1671,6 +1616,7 @@ references:
   name: WallDisplay
   href: api/Koffing.Matches.WallDisplay.html#Koffing_Matches_WallDisplay__ctor_
   commentId: Overload:Koffing.Matches.WallDisplay.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Matches.WallDisplay.WallDisplay
   fullName.vb: Koffing.Matches.WallDisplay.New
@@ -1686,6 +1632,7 @@ references:
   name: HasRedFives
   href: api/Koffing.Matches.WallDisplay.html#Koffing_Matches_WallDisplay_HasRedFives_
   commentId: Overload:Koffing.Matches.WallDisplay.HasRedFives
+  isSpec: "True"
   fullName: Koffing.Matches.WallDisplay.HasRedFives
   nameWithType: WallDisplay.HasRedFives
 - uid: Koffing.Matches.WallDisplay.MethodName
@@ -1694,24 +1641,6 @@ references:
   commentId: T:Koffing.Matches.WallDisplay.MethodName
   fullName: Koffing.Matches.WallDisplay.MethodName
   nameWithType: WallDisplay.MethodName
-- uid: Koffing.Matches.WallDisplay.MethodName.#ctor
-  name: MethodName()
-  href: api/Koffing.Matches.WallDisplay.MethodName.html#Koffing_Matches_WallDisplay_MethodName__ctor
-  commentId: M:Koffing.Matches.WallDisplay.MethodName.#ctor
-  name.vb: New()
-  fullName: Koffing.Matches.WallDisplay.MethodName.MethodName()
-  fullName.vb: Koffing.Matches.WallDisplay.MethodName.New()
-  nameWithType: WallDisplay.MethodName.MethodName()
-  nameWithType.vb: WallDisplay.MethodName.New()
-- uid: Koffing.Matches.WallDisplay.MethodName.#ctor*
-  name: MethodName
-  href: api/Koffing.Matches.WallDisplay.MethodName.html#Koffing_Matches_WallDisplay_MethodName__ctor_
-  commentId: Overload:Koffing.Matches.WallDisplay.MethodName.#ctor
-  name.vb: New
-  fullName: Koffing.Matches.WallDisplay.MethodName.MethodName
-  fullName.vb: Koffing.Matches.WallDisplay.MethodName.New
-  nameWithType: WallDisplay.MethodName.MethodName
-  nameWithType.vb: WallDisplay.MethodName.New
 - uid: Koffing.Matches.WallDisplay.MethodName.FreeTiles
   name: FreeTiles
   href: api/Koffing.Matches.WallDisplay.MethodName.html#Koffing_Matches_WallDisplay_MethodName_FreeTiles
@@ -1752,6 +1681,7 @@ references:
   name: PlayerCount
   href: api/Koffing.Matches.WallDisplay.html#Koffing_Matches_WallDisplay_PlayerCount_
   commentId: Overload:Koffing.Matches.WallDisplay.PlayerCount
+  isSpec: "True"
   fullName: Koffing.Matches.WallDisplay.PlayerCount
   nameWithType: WallDisplay.PlayerCount
 - uid: Koffing.Matches.WallDisplay.PropertyName
@@ -1760,24 +1690,6 @@ references:
   commentId: T:Koffing.Matches.WallDisplay.PropertyName
   fullName: Koffing.Matches.WallDisplay.PropertyName
   nameWithType: WallDisplay.PropertyName
-- uid: Koffing.Matches.WallDisplay.PropertyName.#ctor
-  name: PropertyName()
-  href: api/Koffing.Matches.WallDisplay.PropertyName.html#Koffing_Matches_WallDisplay_PropertyName__ctor
-  commentId: M:Koffing.Matches.WallDisplay.PropertyName.#ctor
-  name.vb: New()
-  fullName: Koffing.Matches.WallDisplay.PropertyName.PropertyName()
-  fullName.vb: Koffing.Matches.WallDisplay.PropertyName.New()
-  nameWithType: WallDisplay.PropertyName.PropertyName()
-  nameWithType.vb: WallDisplay.PropertyName.New()
-- uid: Koffing.Matches.WallDisplay.PropertyName.#ctor*
-  name: PropertyName
-  href: api/Koffing.Matches.WallDisplay.PropertyName.html#Koffing_Matches_WallDisplay_PropertyName__ctor_
-  commentId: Overload:Koffing.Matches.WallDisplay.PropertyName.#ctor
-  name.vb: New
-  fullName: Koffing.Matches.WallDisplay.PropertyName.PropertyName
-  fullName.vb: Koffing.Matches.WallDisplay.PropertyName.New
-  nameWithType: WallDisplay.PropertyName.PropertyName
-  nameWithType.vb: WallDisplay.PropertyName.New
 - uid: Koffing.Matches.WallDisplay.PropertyName.HasRedFives
   name: HasRedFives
   href: api/Koffing.Matches.WallDisplay.PropertyName.html#Koffing_Matches_WallDisplay_PropertyName_HasRedFives
@@ -1836,6 +1748,7 @@ references:
   name: Seed
   href: api/Koffing.Matches.WallDisplay.html#Koffing_Matches_WallDisplay_Seed_
   commentId: Overload:Koffing.Matches.WallDisplay.Seed
+  isSpec: "True"
   fullName: Koffing.Matches.WallDisplay.Seed
   nameWithType: WallDisplay.Seed
 - uid: Koffing.Matches.WallDisplay.SignalName
@@ -1844,24 +1757,6 @@ references:
   commentId: T:Koffing.Matches.WallDisplay.SignalName
   fullName: Koffing.Matches.WallDisplay.SignalName
   nameWithType: WallDisplay.SignalName
-- uid: Koffing.Matches.WallDisplay.SignalName.#ctor
-  name: SignalName()
-  href: api/Koffing.Matches.WallDisplay.SignalName.html#Koffing_Matches_WallDisplay_SignalName__ctor
-  commentId: M:Koffing.Matches.WallDisplay.SignalName.#ctor
-  name.vb: New()
-  fullName: Koffing.Matches.WallDisplay.SignalName.SignalName()
-  fullName.vb: Koffing.Matches.WallDisplay.SignalName.New()
-  nameWithType: WallDisplay.SignalName.SignalName()
-  nameWithType.vb: WallDisplay.SignalName.New()
-- uid: Koffing.Matches.WallDisplay.SignalName.#ctor*
-  name: SignalName
-  href: api/Koffing.Matches.WallDisplay.SignalName.html#Koffing_Matches_WallDisplay_SignalName__ctor_
-  commentId: Overload:Koffing.Matches.WallDisplay.SignalName.#ctor
-  name.vb: New
-  fullName: Koffing.Matches.WallDisplay.SignalName.SignalName
-  fullName.vb: Koffing.Matches.WallDisplay.SignalName.New
-  nameWithType: WallDisplay.SignalName.SignalName
-  nameWithType.vb: WallDisplay.SignalName.New
 - uid: Koffing.Matches.WallDisplay.TileScene
   name: TileScene
   href: api/Koffing.Matches.WallDisplay.html#Koffing_Matches_WallDisplay_TileScene
@@ -1872,6 +1767,7 @@ references:
   name: TileScene
   href: api/Koffing.Matches.WallDisplay.html#Koffing_Matches_WallDisplay_TileScene_
   commentId: Overload:Koffing.Matches.WallDisplay.TileScene
+  isSpec: "True"
   fullName: Koffing.Matches.WallDisplay.TileScene
   nameWithType: WallDisplay.TileScene
 - uid: Koffing.Matches.WallDisplay._ExitTree
@@ -1884,6 +1780,7 @@ references:
   name: _ExitTree
   href: api/Koffing.Matches.WallDisplay.html#Koffing_Matches_WallDisplay__ExitTree_
   commentId: Overload:Koffing.Matches.WallDisplay._ExitTree
+  isSpec: "True"
   fullName: Koffing.Matches.WallDisplay._ExitTree
   nameWithType: WallDisplay._ExitTree
 - uid: Koffing.Matches.WallDisplay._Process(System.Double)
@@ -1899,6 +1796,7 @@ references:
   name: _Process
   href: api/Koffing.Matches.WallDisplay.html#Koffing_Matches_WallDisplay__Process_
   commentId: Overload:Koffing.Matches.WallDisplay._Process
+  isSpec: "True"
   fullName: Koffing.Matches.WallDisplay._Process
   nameWithType: WallDisplay._Process
 - uid: Koffing.Matches.WallDisplay._Ready
@@ -1911,6 +1809,7 @@ references:
   name: _Ready
   href: api/Koffing.Matches.WallDisplay.html#Koffing_Matches_WallDisplay__Ready_
   commentId: Overload:Koffing.Matches.WallDisplay._Ready
+  isSpec: "True"
   fullName: Koffing.Matches.WallDisplay._Ready
   nameWithType: WallDisplay._Ready
 - uid: Koffing.Matches.Wind
@@ -1968,6 +1867,7 @@ references:
   name: Chow
   href: api/Koffing.Melds.Chow.html#Koffing_Melds_Chow__ctor_
   commentId: Overload:Koffing.Melds.Chow.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Melds.Chow.Chow
   fullName.vb: Koffing.Melds.Chow.New
@@ -1983,6 +1883,7 @@ references:
   name: GetHashCodeBasis
   href: api/Koffing.Melds.Chow.html#Koffing_Melds_Chow_GetHashCodeBasis_
   commentId: Overload:Koffing.Melds.Chow.GetHashCodeBasis
+  isSpec: "True"
   fullName: Koffing.Melds.Chow.GetHashCodeBasis
   nameWithType: Chow.GetHashCodeBasis
 - uid: Koffing.Melds.Chow.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -1998,6 +1899,7 @@ references:
   name: GetPossible
   href: api/Koffing.Melds.Chow.html#Koffing_Melds_Chow_GetPossible_
   commentId: Overload:Koffing.Melds.Chow.GetPossible
+  isSpec: "True"
   fullName: Koffing.Melds.Chow.GetPossible
   nameWithType: Chow.GetPossible
 - uid: Koffing.Melds.Chow.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -2013,6 +1915,7 @@ references:
   name: GetPossibleForTile
   href: api/Koffing.Melds.Chow.html#Koffing_Melds_Chow_GetPossibleForTile_
   commentId: Overload:Koffing.Melds.Chow.GetPossibleForTile
+  isSpec: "True"
   fullName: Koffing.Melds.Chow.GetPossibleForTile
   nameWithType: Chow.GetPossibleForTile
 - uid: Koffing.Melds.Kong
@@ -2034,6 +1937,7 @@ references:
   name: Kong
   href: api/Koffing.Melds.Kong.html#Koffing_Melds_Kong__ctor_
   commentId: Overload:Koffing.Melds.Kong.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Melds.Kong.Kong
   fullName.vb: Koffing.Melds.Kong.New
@@ -2049,6 +1953,7 @@ references:
   name: GetHashCodeBasis
   href: api/Koffing.Melds.Kong.html#Koffing_Melds_Kong_GetHashCodeBasis_
   commentId: Overload:Koffing.Melds.Kong.GetHashCodeBasis
+  isSpec: "True"
   fullName: Koffing.Melds.Kong.GetHashCodeBasis
   nameWithType: Kong.GetHashCodeBasis
 - uid: Koffing.Melds.Kong.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -2064,6 +1969,7 @@ references:
   name: GetPossible
   href: api/Koffing.Melds.Kong.html#Koffing_Melds_Kong_GetPossible_
   commentId: Overload:Koffing.Melds.Kong.GetPossible
+  isSpec: "True"
   fullName: Koffing.Melds.Kong.GetPossible
   nameWithType: Kong.GetPossible
 - uid: Koffing.Melds.Kong.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -2079,6 +1985,7 @@ references:
   name: GetPossibleForTile
   href: api/Koffing.Melds.Kong.html#Koffing_Melds_Kong_GetPossibleForTile_
   commentId: Overload:Koffing.Melds.Kong.GetPossibleForTile
+  isSpec: "True"
   fullName: Koffing.Melds.Kong.GetPossibleForTile
   nameWithType: Kong.GetPossibleForTile
 - uid: Koffing.Melds.Meld
@@ -2100,6 +2007,7 @@ references:
   name: Meld
   href: api/Koffing.Melds.Meld.html#Koffing_Melds_Meld__ctor_
   commentId: Overload:Koffing.Melds.Meld.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Melds.Meld.Meld
   fullName.vb: Koffing.Melds.Meld.New
@@ -2118,6 +2026,7 @@ references:
   name: GetFirstLevelMelds
   href: api/Koffing.Melds.Meld.html#Koffing_Melds_Meld_GetFirstLevelMelds_
   commentId: Overload:Koffing.Melds.Meld.GetFirstLevelMelds
+  isSpec: "True"
   fullName: Koffing.Melds.Meld.GetFirstLevelMelds
   nameWithType: Meld.GetFirstLevelMelds
 - uid: Koffing.Melds.Pair
@@ -2139,6 +2048,7 @@ references:
   name: Pair
   href: api/Koffing.Melds.Pair.html#Koffing_Melds_Pair__ctor_
   commentId: Overload:Koffing.Melds.Pair.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Melds.Pair.Pair
   fullName.vb: Koffing.Melds.Pair.New
@@ -2154,6 +2064,7 @@ references:
   name: GetHashCodeBasis
   href: api/Koffing.Melds.Pair.html#Koffing_Melds_Pair_GetHashCodeBasis_
   commentId: Overload:Koffing.Melds.Pair.GetHashCodeBasis
+  isSpec: "True"
   fullName: Koffing.Melds.Pair.GetHashCodeBasis
   nameWithType: Pair.GetHashCodeBasis
 - uid: Koffing.Melds.Pair.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -2169,6 +2080,7 @@ references:
   name: GetPossible
   href: api/Koffing.Melds.Pair.html#Koffing_Melds_Pair_GetPossible_
   commentId: Overload:Koffing.Melds.Pair.GetPossible
+  isSpec: "True"
   fullName: Koffing.Melds.Pair.GetPossible
   nameWithType: Pair.GetPossible
 - uid: Koffing.Melds.Pair.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -2184,6 +2096,7 @@ references:
   name: GetPossibleForTile
   href: api/Koffing.Melds.Pair.html#Koffing_Melds_Pair_GetPossibleForTile_
   commentId: Overload:Koffing.Melds.Pair.GetPossibleForTile
+  isSpec: "True"
   fullName: Koffing.Melds.Pair.GetPossibleForTile
   nameWithType: Pair.GetPossibleForTile
 - uid: Koffing.Melds.Pung
@@ -2205,6 +2118,7 @@ references:
   name: Pung
   href: api/Koffing.Melds.Pung.html#Koffing_Melds_Pung__ctor_
   commentId: Overload:Koffing.Melds.Pung.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Melds.Pung.Pung
   fullName.vb: Koffing.Melds.Pung.New
@@ -2220,6 +2134,7 @@ references:
   name: GetHashCodeBasis
   href: api/Koffing.Melds.Pung.html#Koffing_Melds_Pung_GetHashCodeBasis_
   commentId: Overload:Koffing.Melds.Pung.GetHashCodeBasis
+  isSpec: "True"
   fullName: Koffing.Melds.Pung.GetHashCodeBasis
   nameWithType: Pung.GetHashCodeBasis
 - uid: Koffing.Melds.Pung.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -2235,6 +2150,7 @@ references:
   name: GetPossible
   href: api/Koffing.Melds.Pung.html#Koffing_Melds_Pung_GetPossible_
   commentId: Overload:Koffing.Melds.Pung.GetPossible
+  isSpec: "True"
   fullName: Koffing.Melds.Pung.GetPossible
   nameWithType: Pung.GetPossible
 - uid: Koffing.Melds.Pung.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -2250,6 +2166,7 @@ references:
   name: GetPossibleForTile
   href: api/Koffing.Melds.Pung.html#Koffing_Melds_Pung_GetPossibleForTile_
   commentId: Overload:Koffing.Melds.Pung.GetPossibleForTile
+  isSpec: "True"
   fullName: Koffing.Melds.Pung.GetPossibleForTile
   nameWithType: Pung.GetPossibleForTile
 - uid: Koffing.Players
@@ -2264,24 +2181,6 @@ references:
   commentId: T:Koffing.Players.Player
   fullName: Koffing.Players.Player
   nameWithType: Player
-- uid: Koffing.Players.Player.#ctor
-  name: Player()
-  href: api/Koffing.Players.Player.html#Koffing_Players_Player__ctor
-  commentId: M:Koffing.Players.Player.#ctor
-  name.vb: New()
-  fullName: Koffing.Players.Player.Player()
-  fullName.vb: Koffing.Players.Player.New()
-  nameWithType: Player.Player()
-  nameWithType.vb: Player.New()
-- uid: Koffing.Players.Player.#ctor*
-  name: Player
-  href: api/Koffing.Players.Player.html#Koffing_Players_Player__ctor_
-  commentId: Overload:Koffing.Players.Player.#ctor
-  name.vb: New
-  fullName: Koffing.Players.Player.Player
-  fullName.vb: Koffing.Players.Player.New
-  nameWithType: Player.Player
-  nameWithType.vb: Player.New
 - uid: Koffing.Players.Player.Hand
   name: Hand
   href: api/Koffing.Players.Player.html#Koffing_Players_Player_Hand
@@ -2292,6 +2191,7 @@ references:
   name: Hand
   href: api/Koffing.Players.Player.html#Koffing_Players_Player_Hand_
   commentId: Overload:Koffing.Players.Player.Hand
+  isSpec: "True"
   fullName: Koffing.Players.Player.Hand
   nameWithType: Player.Hand
 - uid: Koffing.Players.Player.Points
@@ -2304,6 +2204,7 @@ references:
   name: Points
   href: api/Koffing.Players.Player.html#Koffing_Players_Player_Points_
   commentId: Overload:Koffing.Players.Player.Points
+  isSpec: "True"
   fullName: Koffing.Players.Player.Points
   nameWithType: Player.Points
 - uid: Koffing.Random
@@ -2331,6 +2232,7 @@ references:
   name: GetIntegerInRange
   href: api/Koffing.Random.IRandomNumberGenerator.html#Koffing_Random_IRandomNumberGenerator_GetIntegerInRange_
   commentId: Overload:Koffing.Random.IRandomNumberGenerator.GetIntegerInRange
+  isSpec: "True"
   fullName: Koffing.Random.IRandomNumberGenerator.GetIntegerInRange
   nameWithType: IRandomNumberGenerator.GetIntegerInRange
 - uid: Koffing.Random.IRandomNumberGenerator.Randomize
@@ -2343,6 +2245,7 @@ references:
   name: Randomize
   href: api/Koffing.Random.IRandomNumberGenerator.html#Koffing_Random_IRandomNumberGenerator_Randomize_
   commentId: Overload:Koffing.Random.IRandomNumberGenerator.Randomize
+  isSpec: "True"
   fullName: Koffing.Random.IRandomNumberGenerator.Randomize
   nameWithType: IRandomNumberGenerator.Randomize
 - uid: Koffing.Random.IRandomNumberGenerator.Seed
@@ -2355,6 +2258,7 @@ references:
   name: Seed
   href: api/Koffing.Random.IRandomNumberGenerator.html#Koffing_Random_IRandomNumberGenerator_Seed_
   commentId: Overload:Koffing.Random.IRandomNumberGenerator.Seed
+  isSpec: "True"
   fullName: Koffing.Random.IRandomNumberGenerator.Seed
   nameWithType: IRandomNumberGenerator.Seed
 - uid: Koffing.Random.SystemRandomNumberGenerator
@@ -2376,6 +2280,7 @@ references:
   name: SystemRandomNumberGenerator
   href: api/Koffing.Random.SystemRandomNumberGenerator.html#Koffing_Random_SystemRandomNumberGenerator__ctor_
   commentId: Overload:Koffing.Random.SystemRandomNumberGenerator.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Random.SystemRandomNumberGenerator.SystemRandomNumberGenerator
   fullName.vb: Koffing.Random.SystemRandomNumberGenerator.New
@@ -2394,6 +2299,7 @@ references:
   name: GetIntegerInRange
   href: api/Koffing.Random.SystemRandomNumberGenerator.html#Koffing_Random_SystemRandomNumberGenerator_GetIntegerInRange_
   commentId: Overload:Koffing.Random.SystemRandomNumberGenerator.GetIntegerInRange
+  isSpec: "True"
   fullName: Koffing.Random.SystemRandomNumberGenerator.GetIntegerInRange
   nameWithType: SystemRandomNumberGenerator.GetIntegerInRange
 - uid: Koffing.Random.SystemRandomNumberGenerator.Randomize
@@ -2406,6 +2312,7 @@ references:
   name: Randomize
   href: api/Koffing.Random.SystemRandomNumberGenerator.html#Koffing_Random_SystemRandomNumberGenerator_Randomize_
   commentId: Overload:Koffing.Random.SystemRandomNumberGenerator.Randomize
+  isSpec: "True"
   fullName: Koffing.Random.SystemRandomNumberGenerator.Randomize
   nameWithType: SystemRandomNumberGenerator.Randomize
 - uid: Koffing.Random.SystemRandomNumberGenerator.Seed
@@ -2418,6 +2325,7 @@ references:
   name: Seed
   href: api/Koffing.Random.SystemRandomNumberGenerator.html#Koffing_Random_SystemRandomNumberGenerator_Seed_
   commentId: Overload:Koffing.Random.SystemRandomNumberGenerator.Seed
+  isSpec: "True"
   fullName: Koffing.Random.SystemRandomNumberGenerator.Seed
   nameWithType: SystemRandomNumberGenerator.Seed
 - uid: Koffing.Tests
@@ -2432,24 +2340,6 @@ references:
   commentId: T:Koffing.Tests.BlockTests
   fullName: Koffing.Tests.BlockTests
   nameWithType: BlockTests
-- uid: Koffing.Tests.BlockTests.#ctor
-  name: BlockTests()
-  href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests__ctor
-  commentId: M:Koffing.Tests.BlockTests.#ctor
-  name.vb: New()
-  fullName: Koffing.Tests.BlockTests.BlockTests()
-  fullName.vb: Koffing.Tests.BlockTests.New()
-  nameWithType: BlockTests.BlockTests()
-  nameWithType.vb: BlockTests.New()
-- uid: Koffing.Tests.BlockTests.#ctor*
-  name: BlockTests
-  href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests__ctor_
-  commentId: Overload:Koffing.Tests.BlockTests.#ctor
-  name.vb: New
-  fullName: Koffing.Tests.BlockTests.BlockTests
-  fullName.vb: Koffing.Tests.BlockTests.New
-  nameWithType: BlockTests.BlockTests
-  nameWithType.vb: BlockTests.New
 - uid: Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect(Koffing.Blocks.Block,System.Object,System.String)
   name: BlockEqualsEdgeCasesAreCorrect(Block, object, string)
   href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_BlockEqualsEdgeCasesAreCorrect_Koffing_Blocks_Block_System_Object_System_String_
@@ -2463,6 +2353,7 @@ references:
   name: BlockEqualsEdgeCasesAreCorrect
   href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_BlockEqualsEdgeCasesAreCorrect_
   commentId: Overload:Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.BlockTests.BlockEqualsEdgeCasesAreCorrect
   nameWithType: BlockTests.BlockEqualsEdgeCasesAreCorrect
 - uid: Koffing.Tests.BlockTests.BlockEqualsIsCorrect(Koffing.Blocks.Block,Koffing.Blocks.Block,System.Boolean,System.String)
@@ -2478,6 +2369,7 @@ references:
   name: BlockEqualsIsCorrect
   href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_BlockEqualsIsCorrect_
   commentId: Overload:Koffing.Tests.BlockTests.BlockEqualsIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.BlockTests.BlockEqualsIsCorrect
   nameWithType: BlockTests.BlockEqualsIsCorrect
 - uid: Koffing.Tests.BlockTests.CompareBlockSetsIsCorrect(Koffing.Blocks.BlockSet,Koffing.Blocks.BlockSet,System.Int32,System.String)
@@ -2493,6 +2385,7 @@ references:
   name: CompareBlockSetsIsCorrect
   href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_CompareBlockSetsIsCorrect_
   commentId: Overload:Koffing.Tests.BlockTests.CompareBlockSetsIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.BlockTests.CompareBlockSetsIsCorrect
   nameWithType: BlockTests.CompareBlockSetsIsCorrect
 - uid: Koffing.Tests.BlockTests.CompareBlocksIsCorrect(Koffing.Blocks.Block,Koffing.Blocks.Block,System.Int32,System.String)
@@ -2508,6 +2401,7 @@ references:
   name: CompareBlocksIsCorrect
   href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_CompareBlocksIsCorrect_
   commentId: Overload:Koffing.Tests.BlockTests.CompareBlocksIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.BlockTests.CompareBlocksIsCorrect
   nameWithType: BlockTests.CompareBlocksIsCorrect
 - uid: Koffing.Tests.BlockTests.CompareMadeBlockContextsIsCorrect(Koffing.Blocks.MadeBlockContext,Koffing.Blocks.MadeBlockContext,System.Int32,System.String)
@@ -2523,6 +2417,7 @@ references:
   name: CompareMadeBlockContextsIsCorrect
   href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_CompareMadeBlockContextsIsCorrect_
   commentId: Overload:Koffing.Tests.BlockTests.CompareMadeBlockContextsIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.BlockTests.CompareMadeBlockContextsIsCorrect
   nameWithType: BlockTests.CompareMadeBlockContextsIsCorrect
 - uid: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
@@ -2538,6 +2433,7 @@ references:
   name: GetBlockHashCodeIsCorrect
   href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_
   commentId: Overload:Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect
   nameWithType: BlockTests.GetBlockHashCodeIsCorrect
 - uid: Koffing.Tests.BlockTests.GetPossibleBlockSetsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.BlockSet},System.String)
@@ -2553,6 +2449,7 @@ references:
   name: GetPossibleBlockSetsIsCorrect
   href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetPossibleBlockSetsIsCorrect_
   commentId: Overload:Koffing.Tests.BlockTests.GetPossibleBlockSetsIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.BlockTests.GetPossibleBlockSetsIsCorrect
   nameWithType: BlockTests.GetPossibleBlockSetsIsCorrect
 - uid: Koffing.Tests.BlockTests.MadeBlockContextEqualsCasesAreCorrect(Koffing.Blocks.MadeBlockContext,Koffing.Blocks.MadeBlockContext,System.Boolean,System.String)
@@ -2568,6 +2465,7 @@ references:
   name: MadeBlockContextEqualsCasesAreCorrect
   href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_MadeBlockContextEqualsCasesAreCorrect_
   commentId: Overload:Koffing.Tests.BlockTests.MadeBlockContextEqualsCasesAreCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.BlockTests.MadeBlockContextEqualsCasesAreCorrect
   nameWithType: BlockTests.MadeBlockContextEqualsCasesAreCorrect
 - uid: Koffing.Tests.BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect(Koffing.Blocks.MadeBlockContext,System.Object,System.String)
@@ -2583,6 +2481,7 @@ references:
   name: MadeBlockContextEqualsEdgeCasesAreCorrect
   href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_MadeBlockContextEqualsEdgeCasesAreCorrect_
   commentId: Overload:Koffing.Tests.BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect
   nameWithType: BlockTests.MadeBlockContextEqualsEdgeCasesAreCorrect
 - uid: Koffing.Tests.BlockTests.PairsAndPairWaitsCastingIsCorrect
@@ -2595,6 +2494,7 @@ references:
   name: PairsAndPairWaitsCastingIsCorrect
   href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_PairsAndPairWaitsCastingIsCorrect_
   commentId: Overload:Koffing.Tests.BlockTests.PairsAndPairWaitsCastingIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.BlockTests.PairsAndPairWaitsCastingIsCorrect
   nameWithType: BlockTests.PairsAndPairWaitsCastingIsCorrect
 - uid: Koffing.Tests.BlockTests.Setup
@@ -2607,6 +2507,7 @@ references:
   name: Setup
   href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_Setup_
   commentId: Overload:Koffing.Tests.BlockTests.Setup
+  isSpec: "True"
   fullName: Koffing.Tests.BlockTests.Setup
   nameWithType: BlockTests.Setup
 - uid: Koffing.Tests.BlockTests.TearDown
@@ -2619,6 +2520,7 @@ references:
   name: TearDown
   href: api/Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_TearDown_
   commentId: Overload:Koffing.Tests.BlockTests.TearDown
+  isSpec: "True"
   fullName: Koffing.Tests.BlockTests.TearDown
   nameWithType: BlockTests.TearDown
 - uid: Koffing.Tests.CalculationTests
@@ -2627,24 +2529,6 @@ references:
   commentId: T:Koffing.Tests.CalculationTests
   fullName: Koffing.Tests.CalculationTests
   nameWithType: CalculationTests
-- uid: Koffing.Tests.CalculationTests.#ctor
-  name: CalculationTests()
-  href: api/Koffing.Tests.CalculationTests.html#Koffing_Tests_CalculationTests__ctor
-  commentId: M:Koffing.Tests.CalculationTests.#ctor
-  name.vb: New()
-  fullName: Koffing.Tests.CalculationTests.CalculationTests()
-  fullName.vb: Koffing.Tests.CalculationTests.New()
-  nameWithType: CalculationTests.CalculationTests()
-  nameWithType.vb: CalculationTests.New()
-- uid: Koffing.Tests.CalculationTests.#ctor*
-  name: CalculationTests
-  href: api/Koffing.Tests.CalculationTests.html#Koffing_Tests_CalculationTests__ctor_
-  commentId: Overload:Koffing.Tests.CalculationTests.#ctor
-  name.vb: New
-  fullName: Koffing.Tests.CalculationTests.CalculationTests
-  fullName.vb: Koffing.Tests.CalculationTests.New
-  nameWithType: CalculationTests.CalculationTests
-  nameWithType.vb: CalculationTests.New
 - uid: Koffing.Tests.CalculationTests.IsPastReadyIsCorrect(Koffing.Blocks.BlockSet,System.Boolean,Koffing.Calculations.Readiness.Type,System.String)
   name: IsPastReadyIsCorrect(BlockSet, bool, Type, string)
   href: api/Koffing.Tests.CalculationTests.html#Koffing_Tests_CalculationTests_IsPastReadyIsCorrect_Koffing_Blocks_BlockSet_System_Boolean_Koffing_Calculations_Readiness_Type_System_String_
@@ -2658,6 +2542,7 @@ references:
   name: IsPastReadyIsCorrect
   href: api/Koffing.Tests.CalculationTests.html#Koffing_Tests_CalculationTests_IsPastReadyIsCorrect_
   commentId: Overload:Koffing.Tests.CalculationTests.IsPastReadyIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.CalculationTests.IsPastReadyIsCorrect
   nameWithType: CalculationTests.IsPastReadyIsCorrect
 - uid: Koffing.Tests.CalculationTests.IsReadyIsCorrect(Koffing.Blocks.BlockSet,System.Boolean,Koffing.Calculations.Readiness.Type,System.String)
@@ -2673,6 +2558,7 @@ references:
   name: IsReadyIsCorrect
   href: api/Koffing.Tests.CalculationTests.html#Koffing_Tests_CalculationTests_IsReadyIsCorrect_
   commentId: Overload:Koffing.Tests.CalculationTests.IsReadyIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.CalculationTests.IsReadyIsCorrect
   nameWithType: CalculationTests.IsReadyIsCorrect
 - uid: Koffing.Tests.CalculationTests.Setup
@@ -2685,6 +2571,7 @@ references:
   name: Setup
   href: api/Koffing.Tests.CalculationTests.html#Koffing_Tests_CalculationTests_Setup_
   commentId: Overload:Koffing.Tests.CalculationTests.Setup
+  isSpec: "True"
   fullName: Koffing.Tests.CalculationTests.Setup
   nameWithType: CalculationTests.Setup
 - uid: Koffing.Tests.CalculationTests.SevenPairsTilesToReadyEdgeCasesAreCorrect(Koffing.Blocks.BlockSet,System.String)
@@ -2700,6 +2587,7 @@ references:
   name: SevenPairsTilesToReadyEdgeCasesAreCorrect
   href: api/Koffing.Tests.CalculationTests.html#Koffing_Tests_CalculationTests_SevenPairsTilesToReadyEdgeCasesAreCorrect_
   commentId: Overload:Koffing.Tests.CalculationTests.SevenPairsTilesToReadyEdgeCasesAreCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.CalculationTests.SevenPairsTilesToReadyEdgeCasesAreCorrect
   nameWithType: CalculationTests.SevenPairsTilesToReadyEdgeCasesAreCorrect
 - uid: Koffing.Tests.CalculationTests.SevenPairsTilesToReadyIsCorrect(Koffing.Blocks.BlockSet,System.Int32,System.String)
@@ -2715,6 +2603,7 @@ references:
   name: SevenPairsTilesToReadyIsCorrect
   href: api/Koffing.Tests.CalculationTests.html#Koffing_Tests_CalculationTests_SevenPairsTilesToReadyIsCorrect_
   commentId: Overload:Koffing.Tests.CalculationTests.SevenPairsTilesToReadyIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.CalculationTests.SevenPairsTilesToReadyIsCorrect
   nameWithType: CalculationTests.SevenPairsTilesToReadyIsCorrect
 - uid: Koffing.Tests.CalculationTests.StandardTilesToReadyEdgeCasesAreCorrect(Koffing.Blocks.BlockSet,System.String)
@@ -2730,6 +2619,7 @@ references:
   name: StandardTilesToReadyEdgeCasesAreCorrect
   href: api/Koffing.Tests.CalculationTests.html#Koffing_Tests_CalculationTests_StandardTilesToReadyEdgeCasesAreCorrect_
   commentId: Overload:Koffing.Tests.CalculationTests.StandardTilesToReadyEdgeCasesAreCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.CalculationTests.StandardTilesToReadyEdgeCasesAreCorrect
   nameWithType: CalculationTests.StandardTilesToReadyEdgeCasesAreCorrect
 - uid: Koffing.Tests.CalculationTests.StandardTilesToReadyIsCorrect(Koffing.Blocks.BlockSet,System.Int32,System.String)
@@ -2745,6 +2635,7 @@ references:
   name: StandardTilesToReadyIsCorrect
   href: api/Koffing.Tests.CalculationTests.html#Koffing_Tests_CalculationTests_StandardTilesToReadyIsCorrect_
   commentId: Overload:Koffing.Tests.CalculationTests.StandardTilesToReadyIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.CalculationTests.StandardTilesToReadyIsCorrect
   nameWithType: CalculationTests.StandardTilesToReadyIsCorrect
 - uid: Koffing.Tests.CalculationTests.TearDown
@@ -2757,6 +2648,7 @@ references:
   name: TearDown
   href: api/Koffing.Tests.CalculationTests.html#Koffing_Tests_CalculationTests_TearDown_
   commentId: Overload:Koffing.Tests.CalculationTests.TearDown
+  isSpec: "True"
   fullName: Koffing.Tests.CalculationTests.TearDown
   nameWithType: CalculationTests.TearDown
 - uid: Koffing.Tests.CalculationTests.ThirteenOrphansTilesToReadyEdgeCasesAreCorrect(Koffing.Blocks.BlockSet,System.String)
@@ -2772,6 +2664,7 @@ references:
   name: ThirteenOrphansTilesToReadyEdgeCasesAreCorrect
   href: api/Koffing.Tests.CalculationTests.html#Koffing_Tests_CalculationTests_ThirteenOrphansTilesToReadyEdgeCasesAreCorrect_
   commentId: Overload:Koffing.Tests.CalculationTests.ThirteenOrphansTilesToReadyEdgeCasesAreCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.CalculationTests.ThirteenOrphansTilesToReadyEdgeCasesAreCorrect
   nameWithType: CalculationTests.ThirteenOrphansTilesToReadyEdgeCasesAreCorrect
 - uid: Koffing.Tests.CalculationTests.ThirteenOrphansTilesToReadyIsCorrect(Koffing.Blocks.BlockSet,System.Int32,System.String)
@@ -2787,6 +2680,7 @@ references:
   name: ThirteenOrphansTilesToReadyIsCorrect
   href: api/Koffing.Tests.CalculationTests.html#Koffing_Tests_CalculationTests_ThirteenOrphansTilesToReadyIsCorrect_
   commentId: Overload:Koffing.Tests.CalculationTests.ThirteenOrphansTilesToReadyIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.CalculationTests.ThirteenOrphansTilesToReadyIsCorrect
   nameWithType: CalculationTests.ThirteenOrphansTilesToReadyIsCorrect
 - uid: Koffing.Tests.MatchTests
@@ -2795,24 +2689,6 @@ references:
   commentId: T:Koffing.Tests.MatchTests
   fullName: Koffing.Tests.MatchTests
   nameWithType: MatchTests
-- uid: Koffing.Tests.MatchTests.#ctor
-  name: MatchTests()
-  href: api/Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests__ctor
-  commentId: M:Koffing.Tests.MatchTests.#ctor
-  name.vb: New()
-  fullName: Koffing.Tests.MatchTests.MatchTests()
-  fullName.vb: Koffing.Tests.MatchTests.New()
-  nameWithType: MatchTests.MatchTests()
-  nameWithType.vb: MatchTests.New()
-- uid: Koffing.Tests.MatchTests.#ctor*
-  name: MatchTests
-  href: api/Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests__ctor_
-  commentId: Overload:Koffing.Tests.MatchTests.#ctor
-  name.vb: New
-  fullName: Koffing.Tests.MatchTests.MatchTests
-  fullName.vb: Koffing.Tests.MatchTests.New
-  nameWithType: MatchTests.MatchTests
-  nameWithType.vb: MatchTests.New
 - uid: Koffing.Tests.MatchTests.DealHandsIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.List{System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}})
   name: DealHandsIsCorrect(PlayerCount, bool, int, List<IEnumerable<Tile>>)
   href: api/Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_DealHandsIsCorrect_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_System_Collections_Generic_List_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile___
@@ -2826,6 +2702,7 @@ references:
   name: DealHandsIsCorrect
   href: api/Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_DealHandsIsCorrect_
   commentId: Overload:Koffing.Tests.MatchTests.DealHandsIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MatchTests.DealHandsIsCorrect
   nameWithType: MatchTests.DealHandsIsCorrect
 - uid: Koffing.Tests.MatchTests.MatchIsCreatedCorrectly(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Int32)
@@ -2841,6 +2718,7 @@ references:
   name: MatchIsCreatedCorrectly
   href: api/Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_MatchIsCreatedCorrectly_
   commentId: Overload:Koffing.Tests.MatchTests.MatchIsCreatedCorrectly
+  isSpec: "True"
   fullName: Koffing.Tests.MatchTests.MatchIsCreatedCorrectly
   nameWithType: MatchTests.MatchIsCreatedCorrectly
 - uid: Koffing.Tests.MatchTests.PopLiveTileIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -2856,6 +2734,7 @@ references:
   name: PopLiveTileIsCorrect
   href: api/Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_PopLiveTileIsCorrect_
   commentId: Overload:Koffing.Tests.MatchTests.PopLiveTileIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MatchTests.PopLiveTileIsCorrect
   nameWithType: MatchTests.PopLiveTileIsCorrect
 - uid: Koffing.Tests.MatchTests.PopReplacementTileIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -2871,6 +2750,7 @@ references:
   name: PopReplacementTileIsCorrect
   href: api/Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_PopReplacementTileIsCorrect_
   commentId: Overload:Koffing.Tests.MatchTests.PopReplacementTileIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MatchTests.PopReplacementTileIsCorrect
   nameWithType: MatchTests.PopReplacementTileIsCorrect
 - uid: Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -2886,6 +2766,7 @@ references:
   name: RevealDoraIndicatorIsCorrect
   href: api/Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_RevealDoraIndicatorIsCorrect_
   commentId: Overload:Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MatchTests.RevealDoraIndicatorIsCorrect
   nameWithType: MatchTests.RevealDoraIndicatorIsCorrect
 - uid: Koffing.Tests.MatchTests.Setup
@@ -2898,6 +2779,7 @@ references:
   name: Setup
   href: api/Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_Setup_
   commentId: Overload:Koffing.Tests.MatchTests.Setup
+  isSpec: "True"
   fullName: Koffing.Tests.MatchTests.Setup
   nameWithType: MatchTests.Setup
 - uid: Koffing.Tests.MatchTests.TearDown
@@ -2910,6 +2792,7 @@ references:
   name: TearDown
   href: api/Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_TearDown_
   commentId: Overload:Koffing.Tests.MatchTests.TearDown
+  isSpec: "True"
   fullName: Koffing.Tests.MatchTests.TearDown
   nameWithType: MatchTests.TearDown
 - uid: Koffing.Tests.MatchTests.WallIsCreatedCorrectly(Koffing.Matches.PlayerCount,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Koffing.Tiles.Tile)
@@ -2925,6 +2808,7 @@ references:
   name: WallIsCreatedCorrectly
   href: api/Koffing.Tests.MatchTests.html#Koffing_Tests_MatchTests_WallIsCreatedCorrectly_
   commentId: Overload:Koffing.Tests.MatchTests.WallIsCreatedCorrectly
+  isSpec: "True"
   fullName: Koffing.Tests.MatchTests.WallIsCreatedCorrectly
   nameWithType: MatchTests.WallIsCreatedCorrectly
 - uid: Koffing.Tests.MeldTests
@@ -2933,24 +2817,6 @@ references:
   commentId: T:Koffing.Tests.MeldTests
   fullName: Koffing.Tests.MeldTests
   nameWithType: MeldTests
-- uid: Koffing.Tests.MeldTests.#ctor
-  name: MeldTests()
-  href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests__ctor
-  commentId: M:Koffing.Tests.MeldTests.#ctor
-  name.vb: New()
-  fullName: Koffing.Tests.MeldTests.MeldTests()
-  fullName.vb: Koffing.Tests.MeldTests.New()
-  nameWithType: MeldTests.MeldTests()
-  nameWithType.vb: MeldTests.New()
-- uid: Koffing.Tests.MeldTests.#ctor*
-  name: MeldTests
-  href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests__ctor_
-  commentId: Overload:Koffing.Tests.MeldTests.#ctor
-  name.vb: New
-  fullName: Koffing.Tests.MeldTests.MeldTests
-  fullName.vb: Koffing.Tests.MeldTests.New
-  nameWithType: MeldTests.MeldTests
-  nameWithType.vb: MeldTests.New
 - uid: Koffing.Tests.MeldTests.ChowGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
   name: ChowGetPossibleForTileIsCorrect(string, string, List<MadeBlockContext>, string)
   href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests_ChowGetPossibleForTileIsCorrect_System_String_System_String_System_Collections_Generic_List_Koffing_Blocks_MadeBlockContext__System_String_
@@ -2964,6 +2830,7 @@ references:
   name: ChowGetPossibleForTileIsCorrect
   href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests_ChowGetPossibleForTileIsCorrect_
   commentId: Overload:Koffing.Tests.MeldTests.ChowGetPossibleForTileIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MeldTests.ChowGetPossibleForTileIsCorrect
   nameWithType: MeldTests.ChowGetPossibleForTileIsCorrect
 - uid: Koffing.Tests.MeldTests.ChowGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -2979,6 +2846,7 @@ references:
   name: ChowGetPossibleIsCorrect
   href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests_ChowGetPossibleIsCorrect_
   commentId: Overload:Koffing.Tests.MeldTests.ChowGetPossibleIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MeldTests.ChowGetPossibleIsCorrect
   nameWithType: MeldTests.ChowGetPossibleIsCorrect
 - uid: Koffing.Tests.MeldTests.GetFirstLevelMeldsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -2994,6 +2862,7 @@ references:
   name: GetFirstLevelMeldsIsCorrect
   href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests_GetFirstLevelMeldsIsCorrect_
   commentId: Overload:Koffing.Tests.MeldTests.GetFirstLevelMeldsIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MeldTests.GetFirstLevelMeldsIsCorrect
   nameWithType: MeldTests.GetFirstLevelMeldsIsCorrect
 - uid: Koffing.Tests.MeldTests.KongGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3009,6 +2878,7 @@ references:
   name: KongGetPossibleForTileIsCorrect
   href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests_KongGetPossibleForTileIsCorrect_
   commentId: Overload:Koffing.Tests.MeldTests.KongGetPossibleForTileIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MeldTests.KongGetPossibleForTileIsCorrect
   nameWithType: MeldTests.KongGetPossibleForTileIsCorrect
 - uid: Koffing.Tests.MeldTests.KongGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3024,6 +2894,7 @@ references:
   name: KongGetPossibleIsCorrect
   href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests_KongGetPossibleIsCorrect_
   commentId: Overload:Koffing.Tests.MeldTests.KongGetPossibleIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MeldTests.KongGetPossibleIsCorrect
   nameWithType: MeldTests.KongGetPossibleIsCorrect
 - uid: Koffing.Tests.MeldTests.PairGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3039,6 +2910,7 @@ references:
   name: PairGetPossibleForTileIsCorrect
   href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests_PairGetPossibleForTileIsCorrect_
   commentId: Overload:Koffing.Tests.MeldTests.PairGetPossibleForTileIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MeldTests.PairGetPossibleForTileIsCorrect
   nameWithType: MeldTests.PairGetPossibleForTileIsCorrect
 - uid: Koffing.Tests.MeldTests.PairGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3054,6 +2926,7 @@ references:
   name: PairGetPossibleIsCorrect
   href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests_PairGetPossibleIsCorrect_
   commentId: Overload:Koffing.Tests.MeldTests.PairGetPossibleIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MeldTests.PairGetPossibleIsCorrect
   nameWithType: MeldTests.PairGetPossibleIsCorrect
 - uid: Koffing.Tests.MeldTests.PairWaitGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3069,6 +2942,7 @@ references:
   name: PairWaitGetPossibleForTileIsCorrect
   href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests_PairWaitGetPossibleForTileIsCorrect_
   commentId: Overload:Koffing.Tests.MeldTests.PairWaitGetPossibleForTileIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MeldTests.PairWaitGetPossibleForTileIsCorrect
   nameWithType: MeldTests.PairWaitGetPossibleForTileIsCorrect
 - uid: Koffing.Tests.MeldTests.PairWaitGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3084,6 +2958,7 @@ references:
   name: PairWaitGetPossibleIsCorrect
   href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests_PairWaitGetPossibleIsCorrect_
   commentId: Overload:Koffing.Tests.MeldTests.PairWaitGetPossibleIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MeldTests.PairWaitGetPossibleIsCorrect
   nameWithType: MeldTests.PairWaitGetPossibleIsCorrect
 - uid: Koffing.Tests.MeldTests.PungGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3099,6 +2974,7 @@ references:
   name: PungGetPossibleForTileIsCorrect
   href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests_PungGetPossibleForTileIsCorrect_
   commentId: Overload:Koffing.Tests.MeldTests.PungGetPossibleForTileIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MeldTests.PungGetPossibleForTileIsCorrect
   nameWithType: MeldTests.PungGetPossibleForTileIsCorrect
 - uid: Koffing.Tests.MeldTests.PungGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3114,6 +2990,7 @@ references:
   name: PungGetPossibleIsCorrect
   href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests_PungGetPossibleIsCorrect_
   commentId: Overload:Koffing.Tests.MeldTests.PungGetPossibleIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.MeldTests.PungGetPossibleIsCorrect
   nameWithType: MeldTests.PungGetPossibleIsCorrect
 - uid: Koffing.Tests.MeldTests.Setup
@@ -3126,6 +3003,7 @@ references:
   name: Setup
   href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests_Setup_
   commentId: Overload:Koffing.Tests.MeldTests.Setup
+  isSpec: "True"
   fullName: Koffing.Tests.MeldTests.Setup
   nameWithType: MeldTests.Setup
 - uid: Koffing.Tests.MeldTests.TearDown
@@ -3138,6 +3016,7 @@ references:
   name: TearDown
   href: api/Koffing.Tests.MeldTests.html#Koffing_Tests_MeldTests_TearDown_
   commentId: Overload:Koffing.Tests.MeldTests.TearDown
+  isSpec: "True"
   fullName: Koffing.Tests.MeldTests.TearDown
   nameWithType: MeldTests.TearDown
 - uid: Koffing.Tests.RandomNumberGeneratorTests
@@ -3146,24 +3025,6 @@ references:
   commentId: T:Koffing.Tests.RandomNumberGeneratorTests
   fullName: Koffing.Tests.RandomNumberGeneratorTests
   nameWithType: RandomNumberGeneratorTests
-- uid: Koffing.Tests.RandomNumberGeneratorTests.#ctor
-  name: RandomNumberGeneratorTests()
-  href: api/Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests__ctor
-  commentId: M:Koffing.Tests.RandomNumberGeneratorTests.#ctor
-  name.vb: New()
-  fullName: Koffing.Tests.RandomNumberGeneratorTests.RandomNumberGeneratorTests()
-  fullName.vb: Koffing.Tests.RandomNumberGeneratorTests.New()
-  nameWithType: RandomNumberGeneratorTests.RandomNumberGeneratorTests()
-  nameWithType.vb: RandomNumberGeneratorTests.New()
-- uid: Koffing.Tests.RandomNumberGeneratorTests.#ctor*
-  name: RandomNumberGeneratorTests
-  href: api/Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests__ctor_
-  commentId: Overload:Koffing.Tests.RandomNumberGeneratorTests.#ctor
-  name.vb: New
-  fullName: Koffing.Tests.RandomNumberGeneratorTests.RandomNumberGeneratorTests
-  fullName.vb: Koffing.Tests.RandomNumberGeneratorTests.New
-  nameWithType: RandomNumberGeneratorTests.RandomNumberGeneratorTests
-  nameWithType.vb: RandomNumberGeneratorTests.New
 - uid: Koffing.Tests.RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed
   name: GodotRandomNumberGeneratorCanBeUsed()
   href: api/Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests_GodotRandomNumberGeneratorCanBeUsed
@@ -3174,6 +3035,7 @@ references:
   name: GodotRandomNumberGeneratorCanBeUsed
   href: api/Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests_GodotRandomNumberGeneratorCanBeUsed_
   commentId: Overload:Koffing.Tests.RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed
+  isSpec: "True"
   fullName: Koffing.Tests.RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed
   nameWithType: RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed
 - uid: Koffing.Tests.RandomNumberGeneratorTests.Setup
@@ -3186,6 +3048,7 @@ references:
   name: Setup
   href: api/Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests_Setup_
   commentId: Overload:Koffing.Tests.RandomNumberGeneratorTests.Setup
+  isSpec: "True"
   fullName: Koffing.Tests.RandomNumberGeneratorTests.Setup
   nameWithType: RandomNumberGeneratorTests.Setup
 - uid: Koffing.Tests.RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed
@@ -3198,6 +3061,7 @@ references:
   name: SystemRandomNumberGeneratorCanBeUsed
   href: api/Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests_SystemRandomNumberGeneratorCanBeUsed_
   commentId: Overload:Koffing.Tests.RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed
+  isSpec: "True"
   fullName: Koffing.Tests.RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed
   nameWithType: RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed
 - uid: Koffing.Tests.RandomNumberGeneratorTests.TearDown
@@ -3210,6 +3074,7 @@ references:
   name: TearDown
   href: api/Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests_TearDown_
   commentId: Overload:Koffing.Tests.RandomNumberGeneratorTests.TearDown
+  isSpec: "True"
   fullName: Koffing.Tests.RandomNumberGeneratorTests.TearDown
   nameWithType: RandomNumberGeneratorTests.TearDown
 - uid: Koffing.Tests.TileTests
@@ -3218,24 +3083,6 @@ references:
   commentId: T:Koffing.Tests.TileTests
   fullName: Koffing.Tests.TileTests
   nameWithType: TileTests
-- uid: Koffing.Tests.TileTests.#ctor
-  name: TileTests()
-  href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests__ctor
-  commentId: M:Koffing.Tests.TileTests.#ctor
-  name.vb: New()
-  fullName: Koffing.Tests.TileTests.TileTests()
-  fullName.vb: Koffing.Tests.TileTests.New()
-  nameWithType: TileTests.TileTests()
-  nameWithType.vb: TileTests.New()
-- uid: Koffing.Tests.TileTests.#ctor*
-  name: TileTests
-  href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests__ctor_
-  commentId: Overload:Koffing.Tests.TileTests.#ctor
-  name.vb: New
-  fullName: Koffing.Tests.TileTests.TileTests
-  fullName.vb: Koffing.Tests.TileTests.New
-  nameWithType: TileTests.TileTests
-  nameWithType.vb: TileTests.New
 - uid: Koffing.Tests.TileTests.CompareTilesIsCorrect(Koffing.Tiles.Tile,Koffing.Tiles.Tile,System.Int32,System.String)
   name: CompareTilesIsCorrect(Tile, Tile, int, string)
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_CompareTilesIsCorrect_Koffing_Tiles_Tile_Koffing_Tiles_Tile_System_Int32_System_String_
@@ -3249,6 +3096,7 @@ references:
   name: CompareTilesIsCorrect
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_CompareTilesIsCorrect_
   commentId: Overload:Koffing.Tests.TileTests.CompareTilesIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.TileTests.CompareTilesIsCorrect
   nameWithType: TileTests.CompareTilesIsCorrect
 - uid: Koffing.Tests.TileTests.EqualsIsCorrectNegativeCases
@@ -3261,6 +3109,7 @@ references:
   name: EqualsIsCorrectNegativeCases
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_EqualsIsCorrectNegativeCases_
   commentId: Overload:Koffing.Tests.TileTests.EqualsIsCorrectNegativeCases
+  isSpec: "True"
   fullName: Koffing.Tests.TileTests.EqualsIsCorrectNegativeCases
   nameWithType: TileTests.EqualsIsCorrectNegativeCases
 - uid: Koffing.Tests.TileTests.EqualsIsCorrectNegativeEdgeCases(Koffing.Tiles.Tile,System.Object,System.String)
@@ -3276,6 +3125,7 @@ references:
   name: EqualsIsCorrectNegativeEdgeCases
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_EqualsIsCorrectNegativeEdgeCases_
   commentId: Overload:Koffing.Tests.TileTests.EqualsIsCorrectNegativeEdgeCases
+  isSpec: "True"
   fullName: Koffing.Tests.TileTests.EqualsIsCorrectNegativeEdgeCases
   nameWithType: TileTests.EqualsIsCorrectNegativeEdgeCases
 - uid: Koffing.Tests.TileTests.EqualsIsCorrectPositiveCases
@@ -3288,6 +3138,7 @@ references:
   name: EqualsIsCorrectPositiveCases
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_EqualsIsCorrectPositiveCases_
   commentId: Overload:Koffing.Tests.TileTests.EqualsIsCorrectPositiveCases
+  isSpec: "True"
   fullName: Koffing.Tests.TileTests.EqualsIsCorrectPositiveCases
   nameWithType: TileTests.EqualsIsCorrectPositiveCases
 - uid: Koffing.Tests.TileTests.GetTileHashCodeIsCorrect(Koffing.Tiles.Tile,System.Int32)
@@ -3303,6 +3154,7 @@ references:
   name: GetTileHashCodeIsCorrect
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_GetTileHashCodeIsCorrect_
   commentId: Overload:Koffing.Tests.TileTests.GetTileHashCodeIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.TileTests.GetTileHashCodeIsCorrect
   nameWithType: TileTests.GetTileHashCodeIsCorrect
 - uid: Koffing.Tests.TileTests.IsValidTileIsCorrect(Koffing.Tiles.Suit,System.Int32,System.Boolean)
@@ -3318,6 +3170,7 @@ references:
   name: IsValidTileIsCorrect
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_IsValidTileIsCorrect_
   commentId: Overload:Koffing.Tests.TileTests.IsValidTileIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.TileTests.IsValidTileIsCorrect
   nameWithType: TileTests.IsValidTileIsCorrect
 - uid: Koffing.Tests.TileTests.RawEqualsIsCorrectNegativeCases
@@ -3330,6 +3183,7 @@ references:
   name: RawEqualsIsCorrectNegativeCases
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_RawEqualsIsCorrectNegativeCases_
   commentId: Overload:Koffing.Tests.TileTests.RawEqualsIsCorrectNegativeCases
+  isSpec: "True"
   fullName: Koffing.Tests.TileTests.RawEqualsIsCorrectNegativeCases
   nameWithType: TileTests.RawEqualsIsCorrectNegativeCases
 - uid: Koffing.Tests.TileTests.RawEqualsIsCorrectPositiveCases
@@ -3342,6 +3196,7 @@ references:
   name: RawEqualsIsCorrectPositiveCases
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_RawEqualsIsCorrectPositiveCases_
   commentId: Overload:Koffing.Tests.TileTests.RawEqualsIsCorrectPositiveCases
+  isSpec: "True"
   fullName: Koffing.Tests.TileTests.RawEqualsIsCorrectPositiveCases
   nameWithType: TileTests.RawEqualsIsCorrectPositiveCases
 - uid: Koffing.Tests.TileTests.RawRanksAreCorrect
@@ -3354,6 +3209,7 @@ references:
   name: RawRanksAreCorrect
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_RawRanksAreCorrect_
   commentId: Overload:Koffing.Tests.TileTests.RawRanksAreCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.TileTests.RawRanksAreCorrect
   nameWithType: TileTests.RawRanksAreCorrect
 - uid: Koffing.Tests.TileTests.Setup
@@ -3366,6 +3222,7 @@ references:
   name: Setup
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_Setup_
   commentId: Overload:Koffing.Tests.TileTests.Setup
+  isSpec: "True"
   fullName: Koffing.Tests.TileTests.Setup
   nameWithType: TileTests.Setup
 - uid: Koffing.Tests.TileTests.TearDown
@@ -3378,6 +3235,7 @@ references:
   name: TearDown
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_TearDown_
   commentId: Overload:Koffing.Tests.TileTests.TearDown
+  isSpec: "True"
   fullName: Koffing.Tests.TileTests.TearDown
   nameWithType: TileTests.TearDown
 - uid: Koffing.Tests.TileTests.ToTilesAndNotationFromTilesAreCorrect(System.String,System.Collections.Generic.List{Koffing.Tiles.Tile},System.String)
@@ -3393,6 +3251,7 @@ references:
   name: ToTilesAndNotationFromTilesAreCorrect
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_ToTilesAndNotationFromTilesAreCorrect_
   commentId: Overload:Koffing.Tests.TileTests.ToTilesAndNotationFromTilesAreCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.TileTests.ToTilesAndNotationFromTilesAreCorrect
   nameWithType: TileTests.ToTilesAndNotationFromTilesAreCorrect
 - uid: Koffing.Tests.UpgradableDowngradableTests
@@ -3401,24 +3260,6 @@ references:
   commentId: T:Koffing.Tests.UpgradableDowngradableTests
   fullName: Koffing.Tests.UpgradableDowngradableTests
   nameWithType: UpgradableDowngradableTests
-- uid: Koffing.Tests.UpgradableDowngradableTests.#ctor
-  name: UpgradableDowngradableTests()
-  href: api/Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests__ctor
-  commentId: M:Koffing.Tests.UpgradableDowngradableTests.#ctor
-  name.vb: New()
-  fullName: Koffing.Tests.UpgradableDowngradableTests.UpgradableDowngradableTests()
-  fullName.vb: Koffing.Tests.UpgradableDowngradableTests.New()
-  nameWithType: UpgradableDowngradableTests.UpgradableDowngradableTests()
-  nameWithType.vb: UpgradableDowngradableTests.New()
-- uid: Koffing.Tests.UpgradableDowngradableTests.#ctor*
-  name: UpgradableDowngradableTests
-  href: api/Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests__ctor_
-  commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.#ctor
-  name.vb: New
-  fullName: Koffing.Tests.UpgradableDowngradableTests.UpgradableDowngradableTests
-  fullName.vb: Koffing.Tests.UpgradableDowngradableTests.New
-  nameWithType: UpgradableDowngradableTests.UpgradableDowngradableTests
-  nameWithType.vb: UpgradableDowngradableTests.New
 - uid: Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToKanchanIsCorrect(Koffing.Melds.Chow,System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext})
   name: DowngradeChowToKanchanIsCorrect(Chow, IEnumerable<MadeBlockContext>)
   href: api/Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_DowngradeChowToKanchanIsCorrect_Koffing_Melds_Chow_System_Collections_Generic_IEnumerable_Koffing_Blocks_MadeBlockContext__
@@ -3432,6 +3273,7 @@ references:
   name: DowngradeChowToKanchanIsCorrect
   href: api/Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_DowngradeChowToKanchanIsCorrect_
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToKanchanIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToKanchanIsCorrect
   nameWithType: UpgradableDowngradableTests.DowngradeChowToKanchanIsCorrect
 - uid: Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToPenchanIsCorrect(Koffing.Melds.Chow,System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3447,6 +3289,7 @@ references:
   name: DowngradeChowToPenchanIsCorrect
   href: api/Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_DowngradeChowToPenchanIsCorrect_
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToPenchanIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToPenchanIsCorrect
   nameWithType: UpgradableDowngradableTests.DowngradeChowToPenchanIsCorrect
 - uid: Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToRyanmenIsCorrect(Koffing.Melds.Chow,System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext})
@@ -3462,6 +3305,7 @@ references:
   name: DowngradeChowToRyanmenIsCorrect
   href: api/Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_DowngradeChowToRyanmenIsCorrect_
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToRyanmenIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToRyanmenIsCorrect
   nameWithType: UpgradableDowngradableTests.DowngradeChowToRyanmenIsCorrect
 - uid: Koffing.Tests.UpgradableDowngradableTests.DowngradeKongToPungIsCorrect(Koffing.Melds.Kong,System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext})
@@ -3477,6 +3321,7 @@ references:
   name: DowngradeKongToPungIsCorrect
   href: api/Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_DowngradeKongToPungIsCorrect_
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.DowngradeKongToPungIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.UpgradableDowngradableTests.DowngradeKongToPungIsCorrect
   nameWithType: UpgradableDowngradableTests.DowngradeKongToPungIsCorrect
 - uid: Koffing.Tests.UpgradableDowngradableTests.DowngradePungToPairIsCorrect(Koffing.Melds.Pung,System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext})
@@ -3492,6 +3337,7 @@ references:
   name: DowngradePungToPairIsCorrect
   href: api/Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_DowngradePungToPairIsCorrect_
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.DowngradePungToPairIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.UpgradableDowngradableTests.DowngradePungToPairIsCorrect
   nameWithType: UpgradableDowngradableTests.DowngradePungToPairIsCorrect
 - uid: Koffing.Tests.UpgradableDowngradableTests.Setup
@@ -3504,6 +3350,7 @@ references:
   name: Setup
   href: api/Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_Setup_
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.Setup
+  isSpec: "True"
   fullName: Koffing.Tests.UpgradableDowngradableTests.Setup
   nameWithType: UpgradableDowngradableTests.Setup
 - uid: Koffing.Tests.UpgradableDowngradableTests.TearDown
@@ -3516,6 +3363,7 @@ references:
   name: TearDown
   href: api/Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_TearDown_
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.TearDown
+  isSpec: "True"
   fullName: Koffing.Tests.UpgradableDowngradableTests.TearDown
   nameWithType: UpgradableDowngradableTests.TearDown
 - uid: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongCanUpgradeWithIsCorrect(Koffing.Melds.Pung,Koffing.Tiles.Tile,System.Boolean,System.String)
@@ -3531,6 +3379,7 @@ references:
   name: UpgradePungToKongCanUpgradeWithIsCorrect
   href: api/Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_UpgradePungToKongCanUpgradeWithIsCorrect_
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongCanUpgradeWithIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongCanUpgradeWithIsCorrect
   nameWithType: UpgradableDowngradableTests.UpgradePungToKongCanUpgradeWithIsCorrect
 - uid: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongNegativeCasesAreCorrect(Koffing.Melds.Pung,Koffing.Tiles.Tile,System.String)
@@ -3546,6 +3395,7 @@ references:
   name: UpgradePungToKongNegativeCasesAreCorrect
   href: api/Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_UpgradePungToKongNegativeCasesAreCorrect_
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongNegativeCasesAreCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongNegativeCasesAreCorrect
   nameWithType: UpgradableDowngradableTests.UpgradePungToKongNegativeCasesAreCorrect
 - uid: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongPositiveCasesAreCorrect(Koffing.Melds.Pung,Koffing.Tiles.Tile,Koffing.Melds.Kong,System.String)
@@ -3561,6 +3411,7 @@ references:
   name: UpgradePungToKongPositiveCasesAreCorrect
   href: api/Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_UpgradePungToKongPositiveCasesAreCorrect_
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongPositiveCasesAreCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongPositiveCasesAreCorrect
   nameWithType: UpgradableDowngradableTests.UpgradePungToKongPositiveCasesAreCorrect
 - uid: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongSoughtTilesIsCorrect(Koffing.Melds.Pung,System.Collections.Generic.HashSet{Koffing.Tiles.Tile})
@@ -3576,6 +3427,7 @@ references:
   name: UpgradePungToKongSoughtTilesIsCorrect
   href: api/Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_UpgradePungToKongSoughtTilesIsCorrect_
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongSoughtTilesIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongSoughtTilesIsCorrect
   nameWithType: UpgradableDowngradableTests.UpgradePungToKongSoughtTilesIsCorrect
 - uid: Koffing.Tests.WaitTests
@@ -3584,24 +3436,6 @@ references:
   commentId: T:Koffing.Tests.WaitTests
   fullName: Koffing.Tests.WaitTests
   nameWithType: WaitTests
-- uid: Koffing.Tests.WaitTests.#ctor
-  name: WaitTests()
-  href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests__ctor
-  commentId: M:Koffing.Tests.WaitTests.#ctor
-  name.vb: New()
-  fullName: Koffing.Tests.WaitTests.WaitTests()
-  fullName.vb: Koffing.Tests.WaitTests.New()
-  nameWithType: WaitTests.WaitTests()
-  nameWithType.vb: WaitTests.New()
-- uid: Koffing.Tests.WaitTests.#ctor*
-  name: WaitTests
-  href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests__ctor_
-  commentId: Overload:Koffing.Tests.WaitTests.#ctor
-  name.vb: New
-  fullName: Koffing.Tests.WaitTests.WaitTests
-  fullName.vb: Koffing.Tests.WaitTests.New
-  nameWithType: WaitTests.WaitTests
-  nameWithType.vb: WaitTests.New
 - uid: Koffing.Tests.WaitTests.CanCreateOrphan
   name: CanCreateOrphan()
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_CanCreateOrphan
@@ -3612,6 +3446,7 @@ references:
   name: CanCreateOrphan
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_CanCreateOrphan_
   commentId: Overload:Koffing.Tests.WaitTests.CanCreateOrphan
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.CanCreateOrphan
   nameWithType: WaitTests.CanCreateOrphan
 - uid: Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3627,6 +3462,7 @@ references:
   name: GetFirstLevelWaitsIsCorrect
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_GetFirstLevelWaitsIsCorrect_
   commentId: Overload:Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.GetFirstLevelWaitsIsCorrect
   nameWithType: WaitTests.GetFirstLevelWaitsIsCorrect
 - uid: Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3642,6 +3478,7 @@ references:
   name: KanchanGetPossibleForTileIsCorrect
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_KanchanGetPossibleForTileIsCorrect_
   commentId: Overload:Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.KanchanGetPossibleForTileIsCorrect
   nameWithType: WaitTests.KanchanGetPossibleForTileIsCorrect
 - uid: Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3657,6 +3494,7 @@ references:
   name: KanchanGetPossibleIsCorrect
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_KanchanGetPossibleIsCorrect_
   commentId: Overload:Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.KanchanGetPossibleIsCorrect
   nameWithType: WaitTests.KanchanGetPossibleIsCorrect
 - uid: Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3672,6 +3510,7 @@ references:
   name: PenchanGetPossibleForTileIsCorrect
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_PenchanGetPossibleForTileIsCorrect_
   commentId: Overload:Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.PenchanGetPossibleForTileIsCorrect
   nameWithType: WaitTests.PenchanGetPossibleForTileIsCorrect
 - uid: Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3687,6 +3526,7 @@ references:
   name: PenchanGetPossibleIsCorrect
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_PenchanGetPossibleIsCorrect_
   commentId: Overload:Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.PenchanGetPossibleIsCorrect
   nameWithType: WaitTests.PenchanGetPossibleIsCorrect
 - uid: Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3702,6 +3542,7 @@ references:
   name: RyanmenGetPossibleForTileIsCorrect
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_RyanmenGetPossibleForTileIsCorrect_
   commentId: Overload:Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.RyanmenGetPossibleForTileIsCorrect
   nameWithType: WaitTests.RyanmenGetPossibleForTileIsCorrect
 - uid: Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3717,6 +3558,7 @@ references:
   name: RyanmenGetPossibleIsCorrect
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_RyanmenGetPossibleIsCorrect_
   commentId: Overload:Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.RyanmenGetPossibleIsCorrect
   nameWithType: WaitTests.RyanmenGetPossibleIsCorrect
 - uid: Koffing.Tests.WaitTests.Setup
@@ -3729,6 +3571,7 @@ references:
   name: Setup
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_Setup_
   commentId: Overload:Koffing.Tests.WaitTests.Setup
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.Setup
   nameWithType: WaitTests.Setup
 - uid: Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect(Koffing.Waits.SevenPairsWait,Koffing.Waits.SevenPairsWait,System.Boolean,System.String)
@@ -3744,6 +3587,7 @@ references:
   name: SevenPairsWaitEqualsIsCorrect
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_SevenPairsWaitEqualsIsCorrect_
   commentId: Overload:Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.SevenPairsWaitEqualsIsCorrect
   nameWithType: WaitTests.SevenPairsWaitEqualsIsCorrect
 - uid: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect(System.String,System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3759,6 +3603,7 @@ references:
   name: SevenPairsWaitGetPossibleForTileIsCorrect
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_SevenPairsWaitGetPossibleForTileIsCorrect_
   commentId: Overload:Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect
   nameWithType: WaitTests.SevenPairsWaitGetPossibleForTileIsCorrect
 - uid: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3774,6 +3619,7 @@ references:
   name: SevenPairsWaitGetPossibleIsCorrect
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_SevenPairsWaitGetPossibleIsCorrect_
   commentId: Overload:Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.SevenPairsWaitGetPossibleIsCorrect
   nameWithType: WaitTests.SevenPairsWaitGetPossibleIsCorrect
 - uid: Koffing.Tests.WaitTests.TearDown
@@ -3786,6 +3632,7 @@ references:
   name: TearDown
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_TearDown_
   commentId: Overload:Koffing.Tests.WaitTests.TearDown
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.TearDown
   nameWithType: WaitTests.TearDown
 - uid: Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect(Koffing.Waits.ThirteenOrphansWait,Koffing.Waits.ThirteenOrphansWait,System.Boolean,System.String)
@@ -3801,6 +3648,7 @@ references:
   name: ThirteenOrphansWaitEqualsIsCorrect
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_ThirteenOrphansWaitEqualsIsCorrect_
   commentId: Overload:Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.ThirteenOrphansWaitEqualsIsCorrect
   nameWithType: WaitTests.ThirteenOrphansWaitEqualsIsCorrect
 - uid: Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect(System.String,System.Collections.Generic.List{Koffing.Blocks.MadeBlockContext},System.String)
@@ -3816,6 +3664,7 @@ references:
   name: ThirteenOrphansWaitGetPossibleIsCorrect
   href: api/Koffing.Tests.WaitTests.html#Koffing_Tests_WaitTests_ThirteenOrphansWaitGetPossibleIsCorrect_
   commentId: Overload:Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect
+  isSpec: "True"
   fullName: Koffing.Tests.WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect
   nameWithType: WaitTests.ThirteenOrphansWaitGetPossibleIsCorrect
 - uid: Koffing.Tiles
@@ -3882,6 +3731,7 @@ references:
   name: Tile
   href: api/Koffing.Tiles.Tile.html#Koffing_Tiles_Tile__ctor_
   commentId: Overload:Koffing.Tiles.Tile.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Tiles.Tile.Tile
   fullName.vb: Koffing.Tiles.Tile.New
@@ -3897,6 +3747,7 @@ references:
   name: CompareTo
   href: api/Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_CompareTo_
   commentId: Overload:Koffing.Tiles.Tile.CompareTo
+  isSpec: "True"
   fullName: Koffing.Tiles.Tile.CompareTo
   nameWithType: Tile.CompareTo
 - uid: Koffing.Tiles.Tile.Equals(Koffing.Tiles.Tile)
@@ -3918,6 +3769,7 @@ references:
   name: Equals
   href: api/Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_Equals_
   commentId: Overload:Koffing.Tiles.Tile.Equals
+  isSpec: "True"
   fullName: Koffing.Tiles.Tile.Equals
   nameWithType: Tile.Equals
 - uid: Koffing.Tiles.Tile.FaceUp
@@ -3936,6 +3788,7 @@ references:
   name: GetHashCode
   href: api/Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_GetHashCode_
   commentId: Overload:Koffing.Tiles.Tile.GetHashCode
+  isSpec: "True"
   fullName: Koffing.Tiles.Tile.GetHashCode
   nameWithType: Tile.GetHashCode
 - uid: Koffing.Tiles.Tile.IsValidTile(Koffing.Tiles.Suit,System.Int32)
@@ -3951,6 +3804,7 @@ references:
   name: IsValidTile
   href: api/Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_IsValidTile_
   commentId: Overload:Koffing.Tiles.Tile.IsValidTile
+  isSpec: "True"
   fullName: Koffing.Tiles.Tile.IsValidTile
   nameWithType: Tile.IsValidTile
 - uid: Koffing.Tiles.Tile.Rank
@@ -3969,6 +3823,7 @@ references:
   name: RawEquals
   href: api/Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_RawEquals_
   commentId: Overload:Koffing.Tiles.Tile.RawEquals
+  isSpec: "True"
   fullName: Koffing.Tiles.Tile.RawEquals
   nameWithType: Tile.RawEquals
 - uid: Koffing.Tiles.Tile.RawRank
@@ -3981,6 +3836,7 @@ references:
   name: RawRank
   href: api/Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_RawRank_
   commentId: Overload:Koffing.Tiles.Tile.RawRank
+  isSpec: "True"
   fullName: Koffing.Tiles.Tile.RawRank
   nameWithType: Tile.RawRank
 - uid: Koffing.Tiles.Tile.Suit
@@ -3999,6 +3855,7 @@ references:
   name: ToString
   href: api/Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_ToString_
   commentId: Overload:Koffing.Tiles.Tile.ToString
+  isSpec: "True"
   fullName: Koffing.Tiles.Tile.ToString
   nameWithType: Tile.ToString
 - uid: Koffing.Waits
@@ -4026,6 +3883,7 @@ references:
   name: Kanchan
   href: api/Koffing.Waits.Kanchan.html#Koffing_Waits_Kanchan__ctor_
   commentId: Overload:Koffing.Waits.Kanchan.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Waits.Kanchan.Kanchan
   fullName.vb: Koffing.Waits.Kanchan.New
@@ -4041,6 +3899,7 @@ references:
   name: GetHashCodeBasis
   href: api/Koffing.Waits.Kanchan.html#Koffing_Waits_Kanchan_GetHashCodeBasis_
   commentId: Overload:Koffing.Waits.Kanchan.GetHashCodeBasis
+  isSpec: "True"
   fullName: Koffing.Waits.Kanchan.GetHashCodeBasis
   nameWithType: Kanchan.GetHashCodeBasis
 - uid: Koffing.Waits.Kanchan.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -4056,6 +3915,7 @@ references:
   name: GetPossible
   href: api/Koffing.Waits.Kanchan.html#Koffing_Waits_Kanchan_GetPossible_
   commentId: Overload:Koffing.Waits.Kanchan.GetPossible
+  isSpec: "True"
   fullName: Koffing.Waits.Kanchan.GetPossible
   nameWithType: Kanchan.GetPossible
 - uid: Koffing.Waits.Kanchan.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -4071,6 +3931,7 @@ references:
   name: GetPossibleForTile
   href: api/Koffing.Waits.Kanchan.html#Koffing_Waits_Kanchan_GetPossibleForTile_
   commentId: Overload:Koffing.Waits.Kanchan.GetPossibleForTile
+  isSpec: "True"
   fullName: Koffing.Waits.Kanchan.GetPossibleForTile
   nameWithType: Kanchan.GetPossibleForTile
 - uid: Koffing.Waits.Orphan
@@ -4101,6 +3962,7 @@ references:
   name: Orphan
   href: api/Koffing.Waits.Orphan.html#Koffing_Waits_Orphan__ctor_
   commentId: Overload:Koffing.Waits.Orphan.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Waits.Orphan.Orphan
   fullName.vb: Koffing.Waits.Orphan.New
@@ -4116,6 +3978,7 @@ references:
   name: GetHashCodeBasis
   href: api/Koffing.Waits.Orphan.html#Koffing_Waits_Orphan_GetHashCodeBasis_
   commentId: Overload:Koffing.Waits.Orphan.GetHashCodeBasis
+  isSpec: "True"
   fullName: Koffing.Waits.Orphan.GetHashCodeBasis
   nameWithType: Orphan.GetHashCodeBasis
 - uid: Koffing.Waits.PairWait
@@ -4137,6 +4000,7 @@ references:
   name: PairWait
   href: api/Koffing.Waits.PairWait.html#Koffing_Waits_PairWait__ctor_
   commentId: Overload:Koffing.Waits.PairWait.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Waits.PairWait.PairWait
   fullName.vb: Koffing.Waits.PairWait.New
@@ -4152,6 +4016,7 @@ references:
   name: GetHashCodeBasis
   href: api/Koffing.Waits.PairWait.html#Koffing_Waits_PairWait_GetHashCodeBasis_
   commentId: Overload:Koffing.Waits.PairWait.GetHashCodeBasis
+  isSpec: "True"
   fullName: Koffing.Waits.PairWait.GetHashCodeBasis
   nameWithType: PairWait.GetHashCodeBasis
 - uid: Koffing.Waits.PairWait.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -4167,6 +4032,7 @@ references:
   name: GetPossible
   href: api/Koffing.Waits.PairWait.html#Koffing_Waits_PairWait_GetPossible_
   commentId: Overload:Koffing.Waits.PairWait.GetPossible
+  isSpec: "True"
   fullName: Koffing.Waits.PairWait.GetPossible
   nameWithType: PairWait.GetPossible
 - uid: Koffing.Waits.PairWait.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -4182,6 +4048,7 @@ references:
   name: GetPossibleForTile
   href: api/Koffing.Waits.PairWait.html#Koffing_Waits_PairWait_GetPossibleForTile_
   commentId: Overload:Koffing.Waits.PairWait.GetPossibleForTile
+  isSpec: "True"
   fullName: Koffing.Waits.PairWait.GetPossibleForTile
   nameWithType: PairWait.GetPossibleForTile
 - uid: Koffing.Waits.PairWait.op_Explicit(Koffing.Melds.Pair)~Koffing.Waits.PairWait
@@ -4231,6 +4098,7 @@ references:
   name: Penchan
   href: api/Koffing.Waits.Penchan.html#Koffing_Waits_Penchan__ctor_
   commentId: Overload:Koffing.Waits.Penchan.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Waits.Penchan.Penchan
   fullName.vb: Koffing.Waits.Penchan.New
@@ -4246,6 +4114,7 @@ references:
   name: GetHashCodeBasis
   href: api/Koffing.Waits.Penchan.html#Koffing_Waits_Penchan_GetHashCodeBasis_
   commentId: Overload:Koffing.Waits.Penchan.GetHashCodeBasis
+  isSpec: "True"
   fullName: Koffing.Waits.Penchan.GetHashCodeBasis
   nameWithType: Penchan.GetHashCodeBasis
 - uid: Koffing.Waits.Penchan.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -4261,6 +4130,7 @@ references:
   name: GetPossible
   href: api/Koffing.Waits.Penchan.html#Koffing_Waits_Penchan_GetPossible_
   commentId: Overload:Koffing.Waits.Penchan.GetPossible
+  isSpec: "True"
   fullName: Koffing.Waits.Penchan.GetPossible
   nameWithType: Penchan.GetPossible
 - uid: Koffing.Waits.Penchan.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -4276,6 +4146,7 @@ references:
   name: GetPossibleForTile
   href: api/Koffing.Waits.Penchan.html#Koffing_Waits_Penchan_GetPossibleForTile_
   commentId: Overload:Koffing.Waits.Penchan.GetPossibleForTile
+  isSpec: "True"
   fullName: Koffing.Waits.Penchan.GetPossibleForTile
   nameWithType: Penchan.GetPossibleForTile
 - uid: Koffing.Waits.Ryanmen
@@ -4297,6 +4168,7 @@ references:
   name: Ryanmen
   href: api/Koffing.Waits.Ryanmen.html#Koffing_Waits_Ryanmen__ctor_
   commentId: Overload:Koffing.Waits.Ryanmen.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Waits.Ryanmen.Ryanmen
   fullName.vb: Koffing.Waits.Ryanmen.New
@@ -4312,6 +4184,7 @@ references:
   name: GetHashCodeBasis
   href: api/Koffing.Waits.Ryanmen.html#Koffing_Waits_Ryanmen_GetHashCodeBasis_
   commentId: Overload:Koffing.Waits.Ryanmen.GetHashCodeBasis
+  isSpec: "True"
   fullName: Koffing.Waits.Ryanmen.GetHashCodeBasis
   nameWithType: Ryanmen.GetHashCodeBasis
 - uid: Koffing.Waits.Ryanmen.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -4327,6 +4200,7 @@ references:
   name: GetPossible
   href: api/Koffing.Waits.Ryanmen.html#Koffing_Waits_Ryanmen_GetPossible_
   commentId: Overload:Koffing.Waits.Ryanmen.GetPossible
+  isSpec: "True"
   fullName: Koffing.Waits.Ryanmen.GetPossible
   nameWithType: Ryanmen.GetPossible
 - uid: Koffing.Waits.Ryanmen.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -4342,6 +4216,7 @@ references:
   name: GetPossibleForTile
   href: api/Koffing.Waits.Ryanmen.html#Koffing_Waits_Ryanmen_GetPossibleForTile_
   commentId: Overload:Koffing.Waits.Ryanmen.GetPossibleForTile
+  isSpec: "True"
   fullName: Koffing.Waits.Ryanmen.GetPossibleForTile
   nameWithType: Ryanmen.GetPossibleForTile
 - uid: Koffing.Waits.SevenPairsWait
@@ -4372,6 +4247,7 @@ references:
   name: SevenPairsWait
   href: api/Koffing.Waits.SevenPairsWait.html#Koffing_Waits_SevenPairsWait__ctor_
   commentId: Overload:Koffing.Waits.SevenPairsWait.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Waits.SevenPairsWait.SevenPairsWait
   fullName.vb: Koffing.Waits.SevenPairsWait.New
@@ -4387,6 +4263,7 @@ references:
   name: Equals
   href: api/Koffing.Waits.SevenPairsWait.html#Koffing_Waits_SevenPairsWait_Equals_
   commentId: Overload:Koffing.Waits.SevenPairsWait.Equals
+  isSpec: "True"
   fullName: Koffing.Waits.SevenPairsWait.Equals
   nameWithType: SevenPairsWait.Equals
 - uid: Koffing.Waits.SevenPairsWait.GetHashCodeBasis
@@ -4399,6 +4276,7 @@ references:
   name: GetHashCodeBasis
   href: api/Koffing.Waits.SevenPairsWait.html#Koffing_Waits_SevenPairsWait_GetHashCodeBasis_
   commentId: Overload:Koffing.Waits.SevenPairsWait.GetHashCodeBasis
+  isSpec: "True"
   fullName: Koffing.Waits.SevenPairsWait.GetHashCodeBasis
   nameWithType: SevenPairsWait.GetHashCodeBasis
 - uid: Koffing.Waits.SevenPairsWait.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -4414,6 +4292,7 @@ references:
   name: GetPossible
   href: api/Koffing.Waits.SevenPairsWait.html#Koffing_Waits_SevenPairsWait_GetPossible_
   commentId: Overload:Koffing.Waits.SevenPairsWait.GetPossible
+  isSpec: "True"
   fullName: Koffing.Waits.SevenPairsWait.GetPossible
   nameWithType: SevenPairsWait.GetPossible
 - uid: Koffing.Waits.SevenPairsWait.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -4429,6 +4308,7 @@ references:
   name: GetPossibleForTile
   href: api/Koffing.Waits.SevenPairsWait.html#Koffing_Waits_SevenPairsWait_GetPossibleForTile_
   commentId: Overload:Koffing.Waits.SevenPairsWait.GetPossibleForTile
+  isSpec: "True"
   fullName: Koffing.Waits.SevenPairsWait.GetPossibleForTile
   nameWithType: SevenPairsWait.GetPossibleForTile
 - uid: Koffing.Waits.SevenPairsWait.Pairs
@@ -4441,6 +4321,7 @@ references:
   name: Pairs
   href: api/Koffing.Waits.SevenPairsWait.html#Koffing_Waits_SevenPairsWait_Pairs_
   commentId: Overload:Koffing.Waits.SevenPairsWait.Pairs
+  isSpec: "True"
   fullName: Koffing.Waits.SevenPairsWait.Pairs
   nameWithType: SevenPairsWait.Pairs
 - uid: Koffing.Waits.ThirteenOrphansWait
@@ -4471,6 +4352,7 @@ references:
   name: ThirteenOrphansWait
   href: api/Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait__ctor_
   commentId: Overload:Koffing.Waits.ThirteenOrphansWait.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Waits.ThirteenOrphansWait.ThirteenOrphansWait
   fullName.vb: Koffing.Waits.ThirteenOrphansWait.New
@@ -4486,6 +4368,7 @@ references:
   name: Equals
   href: api/Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait_Equals_
   commentId: Overload:Koffing.Waits.ThirteenOrphansWait.Equals
+  isSpec: "True"
   fullName: Koffing.Waits.ThirteenOrphansWait.Equals
   nameWithType: ThirteenOrphansWait.Equals
 - uid: Koffing.Waits.ThirteenOrphansWait.GetHashCodeBasis
@@ -4498,6 +4381,7 @@ references:
   name: GetHashCodeBasis
   href: api/Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait_GetHashCodeBasis_
   commentId: Overload:Koffing.Waits.ThirteenOrphansWait.GetHashCodeBasis
+  isSpec: "True"
   fullName: Koffing.Waits.ThirteenOrphansWait.GetHashCodeBasis
   nameWithType: ThirteenOrphansWait.GetHashCodeBasis
 - uid: Koffing.Waits.ThirteenOrphansWait.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -4513,6 +4397,7 @@ references:
   name: GetPossible
   href: api/Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait_GetPossible_
   commentId: Overload:Koffing.Waits.ThirteenOrphansWait.GetPossible
+  isSpec: "True"
   fullName: Koffing.Waits.ThirteenOrphansWait.GetPossible
   nameWithType: ThirteenOrphansWait.GetPossible
 - uid: Koffing.Waits.ThirteenOrphansWait.Pairs
@@ -4525,6 +4410,7 @@ references:
   name: Pairs
   href: api/Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait_Pairs_
   commentId: Overload:Koffing.Waits.ThirteenOrphansWait.Pairs
+  isSpec: "True"
   fullName: Koffing.Waits.ThirteenOrphansWait.Pairs
   nameWithType: ThirteenOrphansWait.Pairs
 - uid: Koffing.Waits.Wait
@@ -4546,6 +4432,7 @@ references:
   name: Wait
   href: api/Koffing.Waits.Wait.html#Koffing_Waits_Wait__ctor_
   commentId: Overload:Koffing.Waits.Wait.#ctor
+  isSpec: "True"
   name.vb: New
   fullName: Koffing.Waits.Wait.Wait
   fullName.vb: Koffing.Waits.Wait.New
@@ -4564,5 +4451,6 @@ references:
   name: GetFirstLevelWaits
   href: api/Koffing.Waits.Wait.html#Koffing_Waits_Wait_GetFirstLevelWaits_
   commentId: Overload:Koffing.Waits.Wait.GetFirstLevelWaits
+  isSpec: "True"
   fullName: Koffing.Waits.Wait.GetFirstLevelWaits
   nameWithType: Wait.GetFirstLevelWaits

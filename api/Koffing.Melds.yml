@@ -22,7 +22,6 @@ references:
 - uid: Koffing.Melds.Chow
   commentId: T:Koffing.Melds.Chow
   parent: Koffing.Melds
-  isExternal: true
   href: Koffing.Melds.Chow.html
   name: Chow
   nameWithType: Chow
@@ -30,7 +29,6 @@ references:
 - uid: Koffing.Melds.Kong
   commentId: T:Koffing.Melds.Kong
   parent: Koffing.Melds
-  isExternal: true
   href: Koffing.Melds.Kong.html
   name: Kong
   nameWithType: Kong
@@ -38,7 +36,6 @@ references:
 - uid: Koffing.Melds.Meld
   commentId: T:Koffing.Melds.Meld
   parent: Koffing.Melds
-  isExternal: true
   href: Koffing.Melds.Meld.html
   name: Meld
   nameWithType: Meld
@@ -46,7 +43,6 @@ references:
 - uid: Koffing.Melds.Pair
   commentId: T:Koffing.Melds.Pair
   parent: Koffing.Melds
-  isExternal: true
   href: Koffing.Melds.Pair.html
   name: Pair
   nameWithType: Pair
@@ -54,30 +50,24 @@ references:
 - uid: Koffing.Melds.Pung
   commentId: T:Koffing.Melds.Pung
   parent: Koffing.Melds
-  isExternal: true
   href: Koffing.Melds.Pung.html
   name: Pung
   nameWithType: Pung
   fullName: Koffing.Melds.Pung
 - uid: Koffing.Melds
   commentId: N:Koffing.Melds
-  isExternal: true
   name: Koffing.Melds
   nameWithType: Koffing.Melds
   fullName: Koffing.Melds
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Melds
     name: Melds
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Melds
     name: Melds
-    isExternal: true

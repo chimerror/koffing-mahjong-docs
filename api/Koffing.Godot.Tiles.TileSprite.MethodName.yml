@@ -5,7 +5,6 @@ items:
   id: TileSprite.MethodName
   parent: Koffing.Godot.Tiles
   children:
-  - Koffing.Godot.Tiles.TileSprite.MethodName.#ctor
   - Koffing.Godot.Tiles.TileSprite.MethodName.ToString
   - Koffing.Godot.Tiles.TileSprite.MethodName.UpdateTileSprite
   - Koffing.Godot.Tiles.TileSprite.MethodName._Ready
@@ -17,10 +16,14 @@ items:
   fullName: Koffing.Godot.Tiles.TileSprite.MethodName
   type: Class
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Godot.Tiles.TileSprite_ScriptMethods.generated.cs
+    id: MethodName
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\Koffing.Godot.Tiles.TileSprite_ScriptMethods.generated.cs
+    startLine: 11
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Tiles
+  summary: Cached StringNames for the methods contained in this class, for fast lookup.
+  example: []
   syntax:
     content: 'public class TileSprite.MethodName : Sprite2D.MethodName'
     content.vb: Public Class TileSprite.MethodName Inherits Sprite2D.MethodName
@@ -377,12 +380,12 @@ items:
   - Godot.GodotObject.MethodName.SetTranslationDomain
   - Godot.GodotObject.MethodName.IsQueuedForDeletion
   - Godot.GodotObject.MethodName.CancelFree
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
 - uid: Koffing.Godot.Tiles.TileSprite.MethodName.ToString
   commentId: F:Koffing.Godot.Tiles.TileSprite.MethodName.ToString
   id: ToString
@@ -395,10 +398,14 @@ items:
   fullName: Koffing.Godot.Tiles.TileSprite.MethodName.ToString
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Godot.Tiles.TileSprite_ScriptMethods.generated.cs
+    id: ToString
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\Koffing.Godot.Tiles.TileSprite_ScriptMethods.generated.cs
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Tiles
+  summary: Cached name for the 'ToString' method.
+  example: []
   syntax:
     content: public static readonly StringName ToString
     return:
@@ -416,10 +423,14 @@ items:
   fullName: Koffing.Godot.Tiles.TileSprite.MethodName.UpdateTileSprite
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Godot.Tiles.TileSprite_ScriptMethods.generated.cs
+    id: UpdateTileSprite
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\Koffing.Godot.Tiles.TileSprite_ScriptMethods.generated.cs
+    startLine: 19
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Tiles
+  summary: Cached name for the 'UpdateTileSprite' method.
+  example: []
   syntax:
     content: public static readonly StringName UpdateTileSprite
     return:
@@ -437,69 +448,43 @@ items:
   fullName: Koffing.Godot.Tiles.TileSprite.MethodName._Ready
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Godot.Tiles.TileSprite_ScriptMethods.generated.cs
+    id: _Ready
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptMethodsGenerator\Koffing.Godot.Tiles.TileSprite_ScriptMethods.generated.cs
+    startLine: 23
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Tiles
+  summary: Cached name for the '_Ready' method.
+  example: []
   syntax:
     content: public static readonly StringName _Ready
     return:
       type: Godot.StringName
     content.vb: Public Shared ReadOnly _Ready As StringName
-- uid: Koffing.Godot.Tiles.TileSprite.MethodName.#ctor
-  commentId: M:Koffing.Godot.Tiles.TileSprite.MethodName.#ctor
-  id: '#ctor'
-  parent: Koffing.Godot.Tiles.TileSprite.MethodName
-  langs:
-  - csharp
-  - vb
-  name: MethodName()
-  nameWithType: TileSprite.MethodName.MethodName()
-  fullName: Koffing.Godot.Tiles.TileSprite.MethodName.MethodName()
-  type: Constructor
-  source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Godot.Tiles.TileSprite_ScriptMethods.generated.cs
-  assemblies:
-  - Koffing
-  namespace: Koffing.Godot.Tiles
-  syntax:
-    content: public MethodName()
-    content.vb: Public Sub New()
-  overload: Koffing.Godot.Tiles.TileSprite.MethodName.#ctor*
-  nameWithType.vb: TileSprite.MethodName.New()
-  fullName.vb: Koffing.Godot.Tiles.TileSprite.MethodName.New()
-  name.vb: New()
 references:
 - uid: Koffing.Godot.Tiles
   commentId: N:Koffing.Godot.Tiles
-  isExternal: true
   name: Koffing.Godot.Tiles
   nameWithType: Koffing.Godot.Tiles
   fullName: Koffing.Godot.Tiles
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Godot
     name: Godot
-    isExternal: true
   - name: .
   - uid: Koffing.Godot.Tiles
     name: Tiles
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Godot
     name: Godot
-    isExternal: true
   - name: .
   - uid: Koffing.Godot.Tiles
     name: Tiles
-    isExternal: true
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -3041,54 +3026,6 @@ references:
   name: CancelFree
   nameWithType: GodotObject.MethodName.CancelFree
   fullName: Godot.GodotObject.MethodName.CancelFree
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  name: MemberwiseClone()
-  nameWithType: object.MemberwiseClone()
-  fullName: object.MemberwiseClone()
-  nameWithType.vb: Object.MemberwiseClone()
-  fullName.vb: Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -3167,6 +3104,78 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -3212,30 +3221,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  - name: (
-  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -3256,13 +3241,3 @@ references:
   name: StringName
   nameWithType: StringName
   fullName: Godot.StringName
-- uid: Koffing.Godot.Tiles.TileSprite.MethodName.#ctor*
-  commentId: Overload:Koffing.Godot.Tiles.TileSprite.MethodName.#ctor
-  isExternal: true
-  href: Koffing.Godot.Tiles.TileSprite.MethodName.html#Koffing_Godot_Tiles_TileSprite_MethodName__ctor
-  name: MethodName
-  nameWithType: TileSprite.MethodName.MethodName
-  fullName: Koffing.Godot.Tiles.TileSprite.MethodName.MethodName
-  nameWithType.vb: TileSprite.MethodName.New
-  fullName.vb: Koffing.Godot.Tiles.TileSprite.MethodName.New
-  name.vb: New

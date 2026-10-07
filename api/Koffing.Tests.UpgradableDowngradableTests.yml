@@ -5,7 +5,6 @@ items:
   id: UpgradableDowngradableTests
   parent: Koffing.Tests
   children:
-  - Koffing.Tests.UpgradableDowngradableTests.#ctor
   - Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToKanchanIsCorrect(Koffing.Melds.Chow,System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext})
   - Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToPenchanIsCorrect(Koffing.Melds.Chow,System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext},System.String)
   - Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToRyanmenIsCorrect(Koffing.Melds.Chow,System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext})
@@ -25,7 +24,13 @@ items:
   fullName: Koffing.Tests.UpgradableDowngradableTests
   type: Class
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/UpgradableDowngradableTests.cs
+    remote:
+      path: Scripts/Tests/UpgradableDowngradableTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: UpgradableDowngradableTests
+    path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -41,13 +46,13 @@ items:
   inheritance:
   - System.Object
   inheritedMembers:
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   attributes:
   - type: GdUnit4.TestSuiteAttribute
     ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
@@ -68,7 +73,13 @@ items:
   fullName: Koffing.Tests.UpgradableDowngradableTests.Setup()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/UpgradableDowngradableTests.cs
+    remote:
+      path: Scripts/Tests/UpgradableDowngradableTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Setup
+    path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
+    startLine: 18
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -102,7 +113,13 @@ items:
   fullName: Koffing.Tests.UpgradableDowngradableTests.TearDown()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/UpgradableDowngradableTests.cs
+    remote:
+      path: Scripts/Tests/UpgradableDowngradableTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: TearDown
+    path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
+    startLine: 24
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -136,7 +153,13 @@ items:
   fullName: Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToKanchanIsCorrect(Koffing.Melds.Chow, System.Collections.Generic.IEnumerable<Koffing.Blocks.MadeBlockContext>)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/UpgradableDowngradableTests.cs
+    remote:
+      path: Scripts/Tests/UpgradableDowngradableTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: DowngradeChowToKanchanIsCorrect
+    path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
+    startLine: 30
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -180,7 +203,13 @@ items:
   fullName: Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToPenchanIsCorrect(Koffing.Melds.Chow, System.Collections.Generic.IEnumerable<Koffing.Blocks.MadeBlockContext>, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/UpgradableDowngradableTests.cs
+    remote:
+      path: Scripts/Tests/UpgradableDowngradableTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: DowngradeChowToPenchanIsCorrect
+    path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
+    startLine: 41
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -226,7 +255,13 @@ items:
   fullName: Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToRyanmenIsCorrect(Koffing.Melds.Chow, System.Collections.Generic.IEnumerable<Koffing.Blocks.MadeBlockContext>)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/UpgradableDowngradableTests.cs
+    remote:
+      path: Scripts/Tests/UpgradableDowngradableTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: DowngradeChowToRyanmenIsCorrect
+    path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
+    startLine: 52
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -270,7 +305,13 @@ items:
   fullName: Koffing.Tests.UpgradableDowngradableTests.DowngradeKongToPungIsCorrect(Koffing.Melds.Kong, System.Collections.Generic.IEnumerable<Koffing.Blocks.MadeBlockContext>)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/UpgradableDowngradableTests.cs
+    remote:
+      path: Scripts/Tests/UpgradableDowngradableTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: DowngradeKongToPungIsCorrect
+    path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
+    startLine: 63
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -314,7 +355,13 @@ items:
   fullName: Koffing.Tests.UpgradableDowngradableTests.DowngradePungToPairIsCorrect(Koffing.Melds.Pung, System.Collections.Generic.IEnumerable<Koffing.Blocks.MadeBlockContext>)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/UpgradableDowngradableTests.cs
+    remote:
+      path: Scripts/Tests/UpgradableDowngradableTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: DowngradePungToPairIsCorrect
+    path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
+    startLine: 74
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -358,7 +405,13 @@ items:
   fullName: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongSoughtTilesIsCorrect(Koffing.Melds.Pung, System.Collections.Generic.HashSet<Koffing.Tiles.Tile>)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/UpgradableDowngradableTests.cs
+    remote:
+      path: Scripts/Tests/UpgradableDowngradableTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: UpgradePungToKongSoughtTilesIsCorrect
+    path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
+    startLine: 85
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -402,7 +455,13 @@ items:
   fullName: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongCanUpgradeWithIsCorrect(Koffing.Melds.Pung, Koffing.Tiles.Tile, bool, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/UpgradableDowngradableTests.cs
+    remote:
+      path: Scripts/Tests/UpgradableDowngradableTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: UpgradePungToKongCanUpgradeWithIsCorrect
+    path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
+    startLine: 96
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -450,7 +509,13 @@ items:
   fullName: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongNegativeCasesAreCorrect(Koffing.Melds.Pung, Koffing.Tiles.Tile, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/UpgradableDowngradableTests.cs
+    remote:
+      path: Scripts/Tests/UpgradableDowngradableTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: UpgradePungToKongNegativeCasesAreCorrect
+    path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
+    startLine: 108
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -505,7 +570,13 @@ items:
   fullName: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongPositiveCasesAreCorrect(Koffing.Melds.Pung, Koffing.Tiles.Tile, Koffing.Melds.Kong, string)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/UpgradableDowngradableTests.cs
+    remote:
+      path: Scripts/Tests/UpgradableDowngradableTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: UpgradePungToKongPositiveCasesAreCorrect
+    path: ../Koffing/Scripts/Tests/UpgradableDowngradableTests.cs
+    startLine: 119
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -541,52 +612,24 @@ items:
   nameWithType.vb: UpgradableDowngradableTests.UpgradePungToKongPositiveCasesAreCorrect(Pung, Tile, Kong, String)
   fullName.vb: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongPositiveCasesAreCorrect(Koffing.Melds.Pung, Koffing.Tiles.Tile, Koffing.Melds.Kong, String)
   name.vb: UpgradePungToKongPositiveCasesAreCorrect(Pung, Tile, Kong, String)
-- uid: Koffing.Tests.UpgradableDowngradableTests.#ctor
-  commentId: M:Koffing.Tests.UpgradableDowngradableTests.#ctor
-  id: '#ctor'
-  parent: Koffing.Tests.UpgradableDowngradableTests
-  langs:
-  - csharp
-  - vb
-  name: UpgradableDowngradableTests()
-  nameWithType: UpgradableDowngradableTests.UpgradableDowngradableTests()
-  fullName: Koffing.Tests.UpgradableDowngradableTests.UpgradableDowngradableTests()
-  type: Constructor
-  source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/UpgradableDowngradableTests.cs
-  assemblies:
-  - Koffing
-  namespace: Koffing.Tests
-  syntax:
-    content: public UpgradableDowngradableTests()
-    content.vb: Public Sub New()
-  overload: Koffing.Tests.UpgradableDowngradableTests.#ctor*
-  nameWithType.vb: UpgradableDowngradableTests.New()
-  fullName.vb: Koffing.Tests.UpgradableDowngradableTests.New()
-  name.vb: New()
 references:
 - uid: Koffing.Tests
   commentId: N:Koffing.Tests
-  isExternal: true
   name: Koffing.Tests
   nameWithType: Koffing.Tests
   fullName: Koffing.Tests
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tests
     name: Tests
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tests
     name: Tests
-    isExternal: true
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -598,78 +641,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  name: MemberwiseClone()
-  nameWithType: object.MemberwiseClone()
-  fullName: object.MemberwiseClone()
-  nameWithType.vb: Object.MemberwiseClone()
-  fullName.vb: Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -748,6 +719,78 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -793,28 +836,28 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
   parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
   spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
   spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
 - uid: System
@@ -826,21 +869,18 @@ references:
   fullName: System
 - uid: Koffing.Tests.UpgradableDowngradableTests.Setup*
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.Setup
-  isExternal: true
   href: Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_Setup
   name: Setup
   nameWithType: UpgradableDowngradableTests.Setup
   fullName: Koffing.Tests.UpgradableDowngradableTests.Setup
 - uid: Koffing.Tests.UpgradableDowngradableTests.TearDown*
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.TearDown
-  isExternal: true
   href: Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_TearDown
   name: TearDown
   nameWithType: UpgradableDowngradableTests.TearDown
   fullName: Koffing.Tests.UpgradableDowngradableTests.TearDown
 - uid: Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToKanchanIsCorrect*
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToKanchanIsCorrect
-  isExternal: true
   href: Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_DowngradeChowToKanchanIsCorrect_Koffing_Melds_Chow_System_Collections_Generic_IEnumerable_Koffing_Blocks_MadeBlockContext__
   name: DowngradeChowToKanchanIsCorrect
   nameWithType: UpgradableDowngradableTests.DowngradeChowToKanchanIsCorrect
@@ -848,7 +888,6 @@ references:
 - uid: Koffing.Melds.Chow
   commentId: T:Koffing.Melds.Chow
   parent: Koffing.Melds
-  isExternal: true
   href: Koffing.Melds.Chow.html
   name: Chow
   nameWithType: Chow
@@ -872,7 +911,6 @@ references:
   - name: <
   - uid: Koffing.Blocks.MadeBlockContext
     name: MadeBlockContext
-    isExternal: true
     href: Koffing.Blocks.MadeBlockContext.html
   - name: '>'
   spec.vb:
@@ -885,31 +923,25 @@ references:
   - name: " "
   - uid: Koffing.Blocks.MadeBlockContext
     name: MadeBlockContext
-    isExternal: true
     href: Koffing.Blocks.MadeBlockContext.html
   - name: )
 - uid: Koffing.Melds
   commentId: N:Koffing.Melds
-  isExternal: true
   name: Koffing.Melds
   nameWithType: Koffing.Melds
   fullName: Koffing.Melds
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Melds
     name: Melds
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Melds
     name: Melds
-    isExternal: true
 - uid: System.Collections.Generic.IEnumerable`1
   commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true
@@ -977,7 +1009,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToPenchanIsCorrect*
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToPenchanIsCorrect
-  isExternal: true
   href: Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_DowngradeChowToPenchanIsCorrect_Koffing_Melds_Chow_System_Collections_Generic_IEnumerable_Koffing_Blocks_MadeBlockContext__System_String_
   name: DowngradeChowToPenchanIsCorrect
   nameWithType: UpgradableDowngradableTests.DowngradeChowToPenchanIsCorrect
@@ -995,14 +1026,12 @@ references:
   name.vb: String
 - uid: Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToRyanmenIsCorrect*
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToRyanmenIsCorrect
-  isExternal: true
   href: Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_DowngradeChowToRyanmenIsCorrect_Koffing_Melds_Chow_System_Collections_Generic_IEnumerable_Koffing_Blocks_MadeBlockContext__
   name: DowngradeChowToRyanmenIsCorrect
   nameWithType: UpgradableDowngradableTests.DowngradeChowToRyanmenIsCorrect
   fullName: Koffing.Tests.UpgradableDowngradableTests.DowngradeChowToRyanmenIsCorrect
 - uid: Koffing.Tests.UpgradableDowngradableTests.DowngradeKongToPungIsCorrect*
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.DowngradeKongToPungIsCorrect
-  isExternal: true
   href: Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_DowngradeKongToPungIsCorrect_Koffing_Melds_Kong_System_Collections_Generic_IEnumerable_Koffing_Blocks_MadeBlockContext__
   name: DowngradeKongToPungIsCorrect
   nameWithType: UpgradableDowngradableTests.DowngradeKongToPungIsCorrect
@@ -1010,14 +1039,12 @@ references:
 - uid: Koffing.Melds.Kong
   commentId: T:Koffing.Melds.Kong
   parent: Koffing.Melds
-  isExternal: true
   href: Koffing.Melds.Kong.html
   name: Kong
   nameWithType: Kong
   fullName: Koffing.Melds.Kong
 - uid: Koffing.Tests.UpgradableDowngradableTests.DowngradePungToPairIsCorrect*
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.DowngradePungToPairIsCorrect
-  isExternal: true
   href: Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_DowngradePungToPairIsCorrect_Koffing_Melds_Pung_System_Collections_Generic_IEnumerable_Koffing_Blocks_MadeBlockContext__
   name: DowngradePungToPairIsCorrect
   nameWithType: UpgradableDowngradableTests.DowngradePungToPairIsCorrect
@@ -1025,14 +1052,12 @@ references:
 - uid: Koffing.Melds.Pung
   commentId: T:Koffing.Melds.Pung
   parent: Koffing.Melds
-  isExternal: true
   href: Koffing.Melds.Pung.html
   name: Pung
   nameWithType: Pung
   fullName: Koffing.Melds.Pung
 - uid: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongSoughtTilesIsCorrect*
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongSoughtTilesIsCorrect
-  isExternal: true
   href: Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_UpgradePungToKongSoughtTilesIsCorrect_Koffing_Melds_Pung_System_Collections_Generic_HashSet_Koffing_Tiles_Tile__
   name: UpgradePungToKongSoughtTilesIsCorrect
   nameWithType: UpgradableDowngradableTests.UpgradePungToKongSoughtTilesIsCorrect
@@ -1056,7 +1081,6 @@ references:
   - name: <
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: '>'
   spec.vb:
@@ -1069,7 +1093,6 @@ references:
   - name: " "
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
 - uid: System.Collections.Generic.HashSet`1
@@ -1102,7 +1125,6 @@ references:
   - name: )
 - uid: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongCanUpgradeWithIsCorrect*
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongCanUpgradeWithIsCorrect
-  isExternal: true
   href: Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_UpgradePungToKongCanUpgradeWithIsCorrect_Koffing_Melds_Pung_Koffing_Tiles_Tile_System_Boolean_System_String_
   name: UpgradePungToKongCanUpgradeWithIsCorrect
   nameWithType: UpgradableDowngradableTests.UpgradePungToKongCanUpgradeWithIsCorrect
@@ -1110,7 +1132,6 @@ references:
 - uid: Koffing.Tiles.Tile
   commentId: T:Koffing.Tiles.Tile
   parent: Koffing.Tiles
-  isExternal: true
   href: Koffing.Tiles.Tile.html
   name: Tile
   nameWithType: Tile
@@ -1128,47 +1149,30 @@ references:
   name.vb: Boolean
 - uid: Koffing.Tiles
   commentId: N:Koffing.Tiles
-  isExternal: true
   name: Koffing.Tiles
   nameWithType: Koffing.Tiles
   fullName: Koffing.Tiles
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tiles
     name: Tiles
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tiles
     name: Tiles
-    isExternal: true
 - uid: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongNegativeCasesAreCorrect*
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongNegativeCasesAreCorrect
-  isExternal: true
   href: Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_UpgradePungToKongNegativeCasesAreCorrect_Koffing_Melds_Pung_Koffing_Tiles_Tile_System_String_
   name: UpgradePungToKongNegativeCasesAreCorrect
   nameWithType: UpgradableDowngradableTests.UpgradePungToKongNegativeCasesAreCorrect
   fullName: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongNegativeCasesAreCorrect
 - uid: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongPositiveCasesAreCorrect*
   commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongPositiveCasesAreCorrect
-  isExternal: true
   href: Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests_UpgradePungToKongPositiveCasesAreCorrect_Koffing_Melds_Pung_Koffing_Tiles_Tile_Koffing_Melds_Kong_System_String_
   name: UpgradePungToKongPositiveCasesAreCorrect
   nameWithType: UpgradableDowngradableTests.UpgradePungToKongPositiveCasesAreCorrect
   fullName: Koffing.Tests.UpgradableDowngradableTests.UpgradePungToKongPositiveCasesAreCorrect
-- uid: Koffing.Tests.UpgradableDowngradableTests.#ctor*
-  commentId: Overload:Koffing.Tests.UpgradableDowngradableTests.#ctor
-  isExternal: true
-  href: Koffing.Tests.UpgradableDowngradableTests.html#Koffing_Tests_UpgradableDowngradableTests__ctor
-  name: UpgradableDowngradableTests
-  nameWithType: UpgradableDowngradableTests.UpgradableDowngradableTests
-  fullName: Koffing.Tests.UpgradableDowngradableTests.UpgradableDowngradableTests
-  nameWithType.vb: UpgradableDowngradableTests.New
-  fullName.vb: Koffing.Tests.UpgradableDowngradableTests.New
-  name.vb: New

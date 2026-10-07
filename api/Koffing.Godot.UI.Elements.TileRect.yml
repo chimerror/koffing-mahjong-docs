@@ -5,7 +5,6 @@ items:
   id: TileRect
   parent: Koffing.Godot.UI.Elements
   children:
-  - Koffing.Godot.UI.Elements.TileRect.#ctor
   - Koffing.Godot.UI.Elements.TileRect.FaceUp
   - Koffing.Godot.UI.Elements.TileRect.Rank
   - Koffing.Godot.UI.Elements.TileRect.Suit
@@ -20,7 +19,13 @@ items:
   fullName: Koffing.Godot.UI.Elements.TileRect
   type: Class
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/.godot/mono/temp/obj/Debug/Godot.SourceGenerators/Godot.SourceGenerators.ScriptMethodsGenerator/Koffing.Godot.UI.Elements.TileRect_ScriptMethods.generated.cs
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: TileRect
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 5
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -621,12 +626,12 @@ items:
   - Godot.GodotObject.NativeInstance
   - Godot.GodotObject.ScriptChanged
   - Godot.GodotObject.PropertyListChanged
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   attributes:
   - type: Godot.ToolAttribute
     ctor: Godot.ToolAttribute.#ctor
@@ -636,75 +641,6 @@ items:
     arguments:
     - type: System.String
       value: res://UI/Elements/TileRect.cs
-- uid: Koffing.Godot.UI.Elements.TileRect.ToString
-  commentId: M:Koffing.Godot.UI.Elements.TileRect.ToString
-  id: ToString
-  parent: Koffing.Godot.UI.Elements.TileRect
-  langs:
-  - csharp
-  - vb
-  name: ToString()
-  nameWithType: TileRect.ToString()
-  fullName: Koffing.Godot.UI.Elements.TileRect.ToString()
-  type: Method
-  source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/UI/Elements/TileRect.cs
-  assemblies:
-  - Koffing
-  namespace: Koffing.Godot.UI.Elements
-  example: []
-  syntax:
-    content: public override string ToString()
-    return:
-      type: System.String
-    content.vb: Public Overrides Function ToString() As String
-  overridden: Godot.GodotObject.ToString
-  overload: Koffing.Godot.UI.Elements.TileRect.ToString*
-- uid: Koffing.Godot.UI.Elements.TileRect._Ready
-  commentId: M:Koffing.Godot.UI.Elements.TileRect._Ready
-  id: _Ready
-  parent: Koffing.Godot.UI.Elements.TileRect
-  langs:
-  - csharp
-  - vb
-  name: _Ready()
-  nameWithType: TileRect._Ready()
-  fullName: Koffing.Godot.UI.Elements.TileRect._Ready()
-  type: Method
-  source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/UI/Elements/TileRect.cs
-  assemblies:
-  - Koffing
-  namespace: Koffing.Godot.UI.Elements
-  example: []
-  syntax:
-    content: public override void _Ready()
-    content.vb: Public Overrides Sub _Ready()
-  overridden: Godot.Node._Ready
-  overload: Koffing.Godot.UI.Elements.TileRect._Ready*
-- uid: Koffing.Godot.UI.Elements.TileRect.#ctor
-  commentId: M:Koffing.Godot.UI.Elements.TileRect.#ctor
-  id: '#ctor'
-  parent: Koffing.Godot.UI.Elements.TileRect
-  langs:
-  - csharp
-  - vb
-  name: TileRect()
-  nameWithType: TileRect.TileRect()
-  fullName: Koffing.Godot.UI.Elements.TileRect.TileRect()
-  type: Constructor
-  source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/UI/Elements/TileRect.cs
-  assemblies:
-  - Koffing
-  namespace: Koffing.Godot.UI.Elements
-  syntax:
-    content: public TileRect()
-    content.vb: Public Sub New()
-  overload: Koffing.Godot.UI.Elements.TileRect.#ctor*
-  nameWithType.vb: TileRect.New()
-  fullName.vb: Koffing.Godot.UI.Elements.TileRect.New()
-  name.vb: New()
 - uid: Koffing.Godot.UI.Elements.TileRect.Tile
   commentId: P:Koffing.Godot.UI.Elements.TileRect.Tile
   id: Tile
@@ -717,7 +653,13 @@ items:
   fullName: Koffing.Godot.UI.Elements.TileRect.Tile
   type: Property
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/UI/Elements/TileRect.cs
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Tile
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 12
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -740,7 +682,13 @@ items:
   fullName: Koffing.Godot.UI.Elements.TileRect.Suit
   type: Property
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/UI/Elements/TileRect.cs
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Suit
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 26
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -777,7 +725,13 @@ items:
   fullName: Koffing.Godot.UI.Elements.TileRect.Rank
   type: Property
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/UI/Elements/TileRect.cs
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Rank
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 41
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -814,7 +768,13 @@ items:
   fullName: Koffing.Godot.UI.Elements.TileRect.FaceUp
   type: Property
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/UI/Elements/TileRect.cs
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: FaceUp
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 60
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -839,45 +799,104 @@ items:
       value: "0"
     - type: System.String
       value: ''
+- uid: Koffing.Godot.UI.Elements.TileRect.ToString
+  commentId: M:Koffing.Godot.UI.Elements.TileRect.ToString
+  id: ToString
+  parent: Koffing.Godot.UI.Elements.TileRect
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TileRect.ToString()
+  fullName: Koffing.Godot.UI.Elements.TileRect.ToString()
+  type: Method
+  source:
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: ToString
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 74
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  summary: Converts this <xref href="Godot.GodotObject" data-throw-if-not-resolved="false"></xref> to a string.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string representation of this object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: Godot.GodotObject.ToString
+  overload: Koffing.Godot.UI.Elements.TileRect.ToString*
+- uid: Koffing.Godot.UI.Elements.TileRect._Ready
+  commentId: M:Koffing.Godot.UI.Elements.TileRect._Ready
+  id: _Ready
+  parent: Koffing.Godot.UI.Elements.TileRect
+  langs:
+  - csharp
+  - vb
+  name: _Ready()
+  nameWithType: TileRect._Ready()
+  fullName: Koffing.Godot.UI.Elements.TileRect._Ready()
+  type: Method
+  source:
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: _Ready
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 91
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  summary: >-
+    <p>Called when the node is "ready", i.e. when both the node and its children have entered the scene tree. If the node has children, their <xref href="Godot.Node._Ready" data-throw-if-not-resolved="false"></xref> callbacks get triggered first, and the parent node will receive the ready notification afterwards.</p>
+
+    <p>Corresponds to the <xref href="Godot.Node.NotificationReady" data-throw-if-not-resolved="false"></xref> notification in <xref href="Godot.GodotObject._Notification(System.Int32)" data-throw-if-not-resolved="false"></xref>. See also the <code>@onready</code> annotation for variables.</p>
+
+    <p>Usually used for initialization. For even earlier initialization, <xref href="Godot.GodotObject.%23ctor" data-throw-if-not-resolved="false"></xref> may be used. See also <xref href="Godot.Node._EnterTree" data-throw-if-not-resolved="false"></xref>.</p>
+
+    <p><b>Note:</b> This method may be called only once for each node. After removing a node from the scene tree and adding it again, <xref href="Godot.Node._Ready" data-throw-if-not-resolved="false"></xref> will <b>not</b> be called a second time. This can be bypassed by requesting another call with <xref href="Godot.Node.RequestReady" data-throw-if-not-resolved="false"></xref>, which may be called anywhere before adding the node again.</p>
+  example: []
+  syntax:
+    content: public override void _Ready()
+    content.vb: Public Overrides Sub _Ready()
+  overridden: Godot.Node._Ready
+  overload: Koffing.Godot.UI.Elements.TileRect._Ready*
 references:
 - uid: Koffing.Godot.UI.Elements
   commentId: N:Koffing.Godot.UI.Elements
-  isExternal: true
   name: Koffing.Godot.UI.Elements
   nameWithType: Koffing.Godot.UI.Elements
   fullName: Koffing.Godot.UI.Elements
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Godot
     name: Godot
-    isExternal: true
   - name: .
   - uid: Koffing.Godot.UI
     name: UI
-    isExternal: true
   - name: .
   - uid: Koffing.Godot.UI.Elements
     name: Elements
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Godot
     name: Godot
-    isExternal: true
   - name: .
   - uid: Koffing.Godot.UI
     name: UI
-    isExternal: true
   - name: .
   - uid: Koffing.Godot.UI.Elements
     name: Elements
-    isExternal: true
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -14926,54 +14945,6 @@ references:
   name: PropertyListChanged
   nameWithType: GodotObject.PropertyListChanged
   fullName: Godot.GodotObject.PropertyListChanged
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  name: MemberwiseClone()
-  nameWithType: object.MemberwiseClone()
-  fullName: object.MemberwiseClone()
-  nameWithType.vb: Object.MemberwiseClone()
-  fullName.vb: Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -15052,6 +15023,78 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -15097,30 +15140,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  - name: (
-  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -15134,6 +15153,83 @@ references:
   name: Godot
   nameWithType: Godot
   fullName: Godot
+- uid: Koffing.Godot.UI.Elements.TileRect.Tile*
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.Tile
+  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Tile
+  name: Tile
+  nameWithType: TileRect.Tile
+  fullName: Koffing.Godot.UI.Elements.TileRect.Tile
+- uid: Koffing.Tiles.Tile
+  commentId: T:Koffing.Tiles.Tile
+  parent: Koffing.Tiles
+  href: Koffing.Tiles.Tile.html
+  name: Tile
+  nameWithType: Tile
+  fullName: Koffing.Tiles.Tile
+- uid: Koffing.Tiles
+  commentId: N:Koffing.Tiles
+  name: Koffing.Tiles
+  nameWithType: Koffing.Tiles
+  fullName: Koffing.Tiles
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+- uid: Koffing.Godot.UI.Elements.TileRect.Suit*
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.Suit
+  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Suit
+  name: Suit
+  nameWithType: TileRect.Suit
+  fullName: Koffing.Godot.UI.Elements.TileRect.Suit
+- uid: Koffing.Tiles.Suit
+  commentId: T:Koffing.Tiles.Suit
+  parent: Koffing.Tiles
+  href: Koffing.Tiles.Suit.html
+  name: Suit
+  nameWithType: Suit
+  fullName: Koffing.Tiles.Suit
+- uid: Koffing.Godot.UI.Elements.TileRect.Rank*
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.Rank
+  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Rank
+  name: Rank
+  nameWithType: TileRect.Rank
+  fullName: Koffing.Godot.UI.Elements.TileRect.Rank
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Koffing.Godot.UI.Elements.TileRect.FaceUp*
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.FaceUp
+  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_FaceUp
+  name: FaceUp
+  nameWithType: TileRect.FaceUp
+  fullName: Koffing.Godot.UI.Elements.TileRect.FaceUp
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: Godot.GodotObject.ToString
   commentId: M:Godot.GodotObject.ToString
   parent: Godot.GodotObject
@@ -15155,7 +15251,6 @@ references:
   - name: )
 - uid: Koffing.Godot.UI.Elements.TileRect.ToString*
   commentId: Overload:Koffing.Godot.UI.Elements.TileRect.ToString
-  isExternal: true
   href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_ToString
   name: ToString
   nameWithType: TileRect.ToString
@@ -15190,108 +15285,28 @@ references:
     isExternal: true
   - name: (
   - name: )
+- uid: Godot.GodotObject.#ctor
+  commentId: M:Godot.GodotObject.#ctor
+  isExternal: true
+  name: GodotObject()
+  nameWithType: GodotObject.GodotObject()
+  fullName: Godot.GodotObject.GodotObject()
+  nameWithType.vb: GodotObject.New()
+  fullName.vb: Godot.GodotObject.New()
+  name.vb: New()
+  spec.csharp:
+  - uid: Godot.GodotObject.#ctor
+    name: GodotObject
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - name: )
 - uid: Koffing.Godot.UI.Elements.TileRect._Ready*
   commentId: Overload:Koffing.Godot.UI.Elements.TileRect._Ready
-  isExternal: true
   href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect__Ready
   name: _Ready
   nameWithType: TileRect._Ready
   fullName: Koffing.Godot.UI.Elements.TileRect._Ready
-- uid: Koffing.Godot.UI.Elements.TileRect.#ctor*
-  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.#ctor
-  isExternal: true
-  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect__ctor
-  name: TileRect
-  nameWithType: TileRect.TileRect
-  fullName: Koffing.Godot.UI.Elements.TileRect.TileRect
-  nameWithType.vb: TileRect.New
-  fullName.vb: Koffing.Godot.UI.Elements.TileRect.New
-  name.vb: New
-- uid: Koffing.Godot.UI.Elements.TileRect.Tile*
-  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.Tile
-  isExternal: true
-  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Tile
-  name: Tile
-  nameWithType: TileRect.Tile
-  fullName: Koffing.Godot.UI.Elements.TileRect.Tile
-- uid: Koffing.Tiles.Tile
-  commentId: T:Koffing.Tiles.Tile
-  parent: Koffing.Tiles
-  isExternal: true
-  href: Koffing.Tiles.Tile.html
-  name: Tile
-  nameWithType: Tile
-  fullName: Koffing.Tiles.Tile
-- uid: Koffing.Tiles
-  commentId: N:Koffing.Tiles
-  isExternal: true
-  name: Koffing.Tiles
-  nameWithType: Koffing.Tiles
-  fullName: Koffing.Tiles
-  spec.csharp:
-  - uid: Koffing
-    name: Koffing
-    isExternal: true
-  - name: .
-  - uid: Koffing.Tiles
-    name: Tiles
-    isExternal: true
-  spec.vb:
-  - uid: Koffing
-    name: Koffing
-    isExternal: true
-  - name: .
-  - uid: Koffing.Tiles
-    name: Tiles
-    isExternal: true
-- uid: Koffing.Godot.UI.Elements.TileRect.Suit*
-  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.Suit
-  isExternal: true
-  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Suit
-  name: Suit
-  nameWithType: TileRect.Suit
-  fullName: Koffing.Godot.UI.Elements.TileRect.Suit
-- uid: Koffing.Tiles.Suit
-  commentId: T:Koffing.Tiles.Suit
-  parent: Koffing.Tiles
-  isExternal: true
-  href: Koffing.Tiles.Suit.html
-  name: Suit
-  nameWithType: Suit
-  fullName: Koffing.Tiles.Suit
-- uid: Koffing.Godot.UI.Elements.TileRect.Rank*
-  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.Rank
-  isExternal: true
-  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Rank
-  name: Rank
-  nameWithType: TileRect.Rank
-  fullName: Koffing.Godot.UI.Elements.TileRect.Rank
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
-- uid: Koffing.Godot.UI.Elements.TileRect.FaceUp*
-  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.FaceUp
-  isExternal: true
-  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_FaceUp
-  name: FaceUp
-  nameWithType: TileRect.FaceUp
-  fullName: Koffing.Godot.UI.Elements.TileRect.FaceUp
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean

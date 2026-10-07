@@ -16,7 +16,13 @@ items:
   fullName: Koffing.Calculations.Readiness.Type
   type: Enum
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Calculations/Readiness.cs
+    remote:
+      path: Scripts/Calculations/Readiness.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Type
+    path: ../Koffing/Scripts/Calculations/Readiness.cs
+    startLine: 10
   assemblies:
   - Koffing
   namespace: Koffing.Calculations
@@ -35,7 +41,13 @@ items:
   fullName: Koffing.Calculations.Readiness.Type.Standard
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Calculations/Readiness.cs
+    remote:
+      path: Scripts/Calculations/Readiness.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Standard
+    path: ../Koffing/Scripts/Calculations/Readiness.cs
+    startLine: 12
   assemblies:
   - Koffing
   namespace: Koffing.Calculations
@@ -55,7 +67,13 @@ items:
   fullName: Koffing.Calculations.Readiness.Type.SevenPairs
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Calculations/Readiness.cs
+    remote:
+      path: Scripts/Calculations/Readiness.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: SevenPairs
+    path: ../Koffing/Scripts/Calculations/Readiness.cs
+    startLine: 13
   assemblies:
   - Koffing
   namespace: Koffing.Calculations
@@ -75,7 +93,13 @@ items:
   fullName: Koffing.Calculations.Readiness.Type.ThirteenOrphans
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Calculations/Readiness.cs
+    remote:
+      path: Scripts/Calculations/Readiness.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: ThirteenOrphans
+    path: ../Koffing/Scripts/Calculations/Readiness.cs
+    startLine: 14
   assemblies:
   - Koffing
   namespace: Koffing.Calculations
@@ -86,30 +110,24 @@ items:
 references:
 - uid: Koffing.Calculations
   commentId: N:Koffing.Calculations
-  isExternal: true
   name: Koffing.Calculations
   nameWithType: Koffing.Calculations
   fullName: Koffing.Calculations
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Calculations
     name: Calculations
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Calculations
     name: Calculations
-    isExternal: true
 - uid: Koffing.Calculations.Readiness.Type
   commentId: T:Koffing.Calculations.Readiness.Type
   parent: Koffing.Calculations
-  isExternal: true
   href: Koffing.Calculations.Readiness.html
   name: Readiness.Type
   nameWithType: Readiness.Type
@@ -117,20 +135,16 @@ references:
   spec.csharp:
   - uid: Koffing.Calculations.Readiness
     name: Readiness
-    isExternal: true
     href: Koffing.Calculations.Readiness.html
   - name: .
   - uid: Koffing.Calculations.Readiness.Type
     name: Type
-    isExternal: true
     href: Koffing.Calculations.Readiness.Type.html
   spec.vb:
   - uid: Koffing.Calculations.Readiness
     name: Readiness
-    isExternal: true
     href: Koffing.Calculations.Readiness.html
   - name: .
   - uid: Koffing.Calculations.Readiness.Type
     name: Type
-    isExternal: true
     href: Koffing.Calculations.Readiness.Type.html

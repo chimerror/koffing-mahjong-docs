@@ -15,7 +15,13 @@ items:
   fullName: Koffing.Waits.Wait
   type: Class
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Waits/Wait.cs
+    remote:
+      path: Scripts/Waits/Wait.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Wait
+    path: ../Koffing/Scripts/Waits/Wait.cs
+    startLine: 7
   assemblies:
   - Koffing
   namespace: Koffing.Waits
@@ -41,6 +47,8 @@ items:
   - System.IEquatable{Koffing.Blocks.Block}
   inheritedMembers:
   - Koffing.Blocks.Block._tiles
+  - Koffing.Blocks.Block.Item(System.Int32)
+  - Koffing.Blocks.Block.Tiles
   - Koffing.Blocks.Block.GetPossibleBlockSets(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
   - Koffing.Blocks.Block.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
   - Koffing.Blocks.Block.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -52,11 +60,9 @@ items:
   - Koffing.Blocks.Block.GetEnumerator
   - Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
   - Koffing.Blocks.Block.ToString
-  - Koffing.Blocks.Block.Item(System.Int32)
-  - Koffing.Blocks.Block.Tiles
+  - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   extensionMethods:
   - System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}.Koffing.Extensions.NotationFromTiles
@@ -72,7 +78,13 @@ items:
   fullName: Koffing.Waits.Wait.GetFirstLevelWaits(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Waits/Wait.cs
+    remote:
+      path: Scripts/Waits/Wait.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: GetFirstLevelWaits
+    path: ../Koffing/Scripts/Waits/Wait.cs
+    startLine: 9
   assemblies:
   - Koffing
   namespace: Koffing.Waits
@@ -100,7 +112,13 @@ items:
   fullName: Koffing.Waits.Wait.Wait(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
   type: Constructor
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Waits/Wait.cs
+    remote:
+      path: Scripts/Waits/Wait.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: .ctor
+    path: ../Koffing/Scripts/Waits/Wait.cs
+    startLine: 17
   assemblies:
   - Koffing
   namespace: Koffing.Waits
@@ -117,26 +135,21 @@ items:
 references:
 - uid: Koffing.Waits
   commentId: N:Koffing.Waits
-  isExternal: true
   name: Koffing.Waits
   nameWithType: Koffing.Waits
   fullName: Koffing.Waits
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Waits
     name: Waits
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Waits
     name: Waits
-    isExternal: true
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -151,7 +164,6 @@ references:
 - uid: Koffing.Blocks.Block
   commentId: T:Koffing.Blocks.Block
   parent: Koffing.Blocks
-  isExternal: true
   href: Koffing.Blocks.Block.html
   name: Block
   nameWithType: Block
@@ -175,7 +187,6 @@ references:
   - name: <
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: '>'
   spec.vb:
@@ -188,7 +199,6 @@ references:
   - name: " "
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
 - uid: System.Collections.IEnumerable
@@ -202,7 +212,6 @@ references:
 - uid: Koffing.Blocks.IBlock
   commentId: T:Koffing.Blocks.IBlock
   parent: Koffing.Blocks
-  isExternal: true
   href: Koffing.Blocks.IBlock.html
   name: IBlock
   nameWithType: IBlock
@@ -226,7 +235,6 @@ references:
   - name: <
   - uid: Koffing.Blocks.Block
     name: Block
-    isExternal: true
     href: Koffing.Blocks.Block.html
   - name: '>'
   spec.vb:
@@ -239,7 +247,6 @@ references:
   - name: " "
   - uid: Koffing.Blocks.Block
     name: Block
-    isExternal: true
     href: Koffing.Blocks.Block.html
   - name: )
 - uid: System.IEquatable{Koffing.Blocks.Block}
@@ -261,7 +268,6 @@ references:
   - name: <
   - uid: Koffing.Blocks.Block
     name: Block
-    isExternal: true
     href: Koffing.Blocks.Block.html
   - name: '>'
   spec.vb:
@@ -274,17 +280,51 @@ references:
   - name: " "
   - uid: Koffing.Blocks.Block
     name: Block
-    isExternal: true
     href: Koffing.Blocks.Block.html
   - name: )
 - uid: Koffing.Blocks.Block._tiles
   commentId: F:Koffing.Blocks.Block._tiles
   parent: Koffing.Blocks.Block
-  isExternal: true
   href: Koffing.Blocks.Block.html#Koffing_Blocks_Block__tiles
   name: _tiles
   nameWithType: Block._tiles
   fullName: Koffing.Blocks.Block._tiles
+- uid: Koffing.Blocks.Block.Item(System.Int32)
+  commentId: P:Koffing.Blocks.Block.Item(System.Int32)
+  parent: Koffing.Blocks.Block
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: Block.this[int]
+  fullName: Koffing.Blocks.Block.this[int]
+  nameWithType.vb: Block.this[](Integer)
+  fullName.vb: Koffing.Blocks.Block.this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: Koffing.Blocks.Block.Item(System.Int32)
+    name: this[]
+    href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Item_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Koffing.Blocks.Block.Tiles
+  commentId: P:Koffing.Blocks.Block.Tiles
+  parent: Koffing.Blocks.Block
+  href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Tiles
+  name: Tiles
+  nameWithType: Block.Tiles
+  fullName: Koffing.Blocks.Block.Tiles
 - uid: Koffing.Blocks.Block.GetPossibleBlockSets(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
   commentId: M:Koffing.Blocks.Block.GetPossibleBlockSets(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
   parent: Koffing.Blocks.Block
@@ -299,7 +339,6 @@ references:
   spec.csharp:
   - uid: Koffing.Blocks.Block.GetPossibleBlockSets(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
     name: GetPossibleBlockSets
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossibleBlockSets_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   - name: (
   - uid: System.Collections.Generic.IEnumerable`1
@@ -309,14 +348,12 @@ references:
   - name: <
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: '>'
   - name: )
   spec.vb:
   - uid: Koffing.Blocks.Block.GetPossibleBlockSets(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
     name: GetPossibleBlockSets
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossibleBlockSets_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   - name: (
   - uid: System.Collections.Generic.IEnumerable`1
@@ -328,7 +365,6 @@ references:
   - name: " "
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
   - name: )
@@ -346,7 +382,6 @@ references:
   spec.csharp:
   - uid: Koffing.Blocks.Block.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
     name: GetPossible
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   - name: (
   - uid: System.Collections.Generic.IEnumerable`1
@@ -356,14 +391,12 @@ references:
   - name: <
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: '>'
   - name: )
   spec.vb:
   - uid: Koffing.Blocks.Block.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
     name: GetPossible
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   - name: (
   - uid: System.Collections.Generic.IEnumerable`1
@@ -375,7 +408,6 @@ references:
   - name: " "
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
   - name: )
@@ -393,12 +425,10 @@ references:
   spec.csharp:
   - uid: Koffing.Blocks.Block.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
     name: GetPossibleForTile
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   - name: (
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: ','
   - name: " "
@@ -409,19 +439,16 @@ references:
   - name: <
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: '>'
   - name: )
   spec.vb:
   - uid: Koffing.Blocks.Block.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
     name: GetPossibleForTile
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   - name: (
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: ','
   - name: " "
@@ -434,14 +461,12 @@ references:
   - name: " "
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
   - name: )
 - uid: Koffing.Blocks.Block.GetHashCodeBasis
   commentId: M:Koffing.Blocks.Block.GetHashCodeBasis
   parent: Koffing.Blocks.Block
-  isExternal: true
   href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCodeBasis
   name: GetHashCodeBasis()
   nameWithType: Block.GetHashCodeBasis()
@@ -449,14 +474,12 @@ references:
   spec.csharp:
   - uid: Koffing.Blocks.Block.GetHashCodeBasis
     name: GetHashCodeBasis
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCodeBasis
   - name: (
   - name: )
   spec.vb:
   - uid: Koffing.Blocks.Block.GetHashCodeBasis
     name: GetHashCodeBasis
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCodeBasis
   - name: (
   - name: )
@@ -474,7 +497,6 @@ references:
   spec.csharp:
   - uid: Koffing.Blocks.Block.GetPossibleHelper(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Type)
     name: GetPossibleHelper
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossibleHelper_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__System_Type_
   - name: (
   - uid: System.Collections.Generic.IEnumerable`1
@@ -484,7 +506,6 @@ references:
   - name: <
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: '>'
   - name: ','
@@ -497,7 +518,6 @@ references:
   spec.vb:
   - uid: Koffing.Blocks.Block.GetPossibleHelper(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Type)
     name: GetPossibleHelper
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossibleHelper_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__System_Type_
   - name: (
   - uid: System.Collections.Generic.IEnumerable`1
@@ -509,7 +529,6 @@ references:
   - name: " "
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
   - name: ','
@@ -533,7 +552,6 @@ references:
   spec.csharp:
   - uid: Koffing.Blocks.Block.Equals(System.Object)
     name: Equals
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Equals_System_Object_
   - name: (
   - uid: System.Object
@@ -544,7 +562,6 @@ references:
   spec.vb:
   - uid: Koffing.Blocks.Block.Equals(System.Object)
     name: Equals
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Equals_System_Object_
   - name: (
   - uid: System.Object
@@ -555,7 +572,6 @@ references:
 - uid: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
   commentId: M:Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
   parent: Koffing.Blocks.Block
-  isExternal: true
   href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Equals_Koffing_Blocks_Block_
   name: Equals(Block)
   nameWithType: Block.Equals(Block)
@@ -563,29 +579,24 @@ references:
   spec.csharp:
   - uid: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
     name: Equals
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Equals_Koffing_Blocks_Block_
   - name: (
   - uid: Koffing.Blocks.Block
     name: Block
-    isExternal: true
     href: Koffing.Blocks.Block.html
   - name: )
   spec.vb:
   - uid: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
     name: Equals
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Equals_Koffing_Blocks_Block_
   - name: (
   - uid: Koffing.Blocks.Block
     name: Block
-    isExternal: true
     href: Koffing.Blocks.Block.html
   - name: )
 - uid: Koffing.Blocks.Block.GetHashCode
   commentId: M:Koffing.Blocks.Block.GetHashCode
   parent: Koffing.Blocks.Block
-  isExternal: true
   href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCode
   name: GetHashCode()
   nameWithType: Block.GetHashCode()
@@ -593,21 +604,18 @@ references:
   spec.csharp:
   - uid: Koffing.Blocks.Block.GetHashCode
     name: GetHashCode
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCode
   - name: (
   - name: )
   spec.vb:
   - uid: Koffing.Blocks.Block.GetHashCode
     name: GetHashCode
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCode
   - name: (
   - name: )
 - uid: Koffing.Blocks.Block.GetEnumerator
   commentId: M:Koffing.Blocks.Block.GetEnumerator
   parent: Koffing.Blocks.Block
-  isExternal: true
   href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetEnumerator
   name: GetEnumerator()
   nameWithType: Block.GetEnumerator()
@@ -615,21 +623,18 @@ references:
   spec.csharp:
   - uid: Koffing.Blocks.Block.GetEnumerator
     name: GetEnumerator
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetEnumerator
   - name: (
   - name: )
   spec.vb:
   - uid: Koffing.Blocks.Block.GetEnumerator
     name: GetEnumerator
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetEnumerator
   - name: (
   - name: )
 - uid: Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
   commentId: M:Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
   parent: Koffing.Blocks.Block
-  isExternal: true
   href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_CompareTo_Koffing_Blocks_Block_
   name: CompareTo(Block)
   nameWithType: Block.CompareTo(Block)
@@ -637,29 +642,24 @@ references:
   spec.csharp:
   - uid: Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
     name: CompareTo
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_CompareTo_Koffing_Blocks_Block_
   - name: (
   - uid: Koffing.Blocks.Block
     name: Block
-    isExternal: true
     href: Koffing.Blocks.Block.html
   - name: )
   spec.vb:
   - uid: Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)
     name: CompareTo
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_CompareTo_Koffing_Blocks_Block_
   - name: (
   - uid: Koffing.Blocks.Block
     name: Block
-    isExternal: true
     href: Koffing.Blocks.Block.html
   - name: )
 - uid: Koffing.Blocks.Block.ToString
   commentId: M:Koffing.Blocks.Block.ToString
   parent: Koffing.Blocks.Block
-  isExternal: true
   href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_ToString
   name: ToString()
   nameWithType: Block.ToString()
@@ -667,55 +667,60 @@ references:
   spec.csharp:
   - uid: Koffing.Blocks.Block.ToString
     name: ToString
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_ToString
   - name: (
   - name: )
   spec.vb:
   - uid: Koffing.Blocks.Block.ToString
     name: ToString
-    isExternal: true
     href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_ToString
   - name: (
   - name: )
-- uid: Koffing.Blocks.Block.Item(System.Int32)
-  commentId: P:Koffing.Blocks.Block.Item(System.Int32)
-  parent: Koffing.Blocks.Block
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: this[int]
-  nameWithType: Block.this[int]
-  fullName: Koffing.Blocks.Block.this[int]
-  nameWithType.vb: Block.this[](Integer)
-  fullName.vb: Koffing.Blocks.Block.this[](Integer)
-  name.vb: this[](Integer)
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
   spec.csharp:
-  - name: this
-  - name: '['
-  - uid: System.Int32
-    name: int
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: ']'
-  spec.vb:
-  - uid: Koffing.Blocks.Block.Item(System.Int32)
-    name: this[]
-    isExternal: true
-    href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Item_System_Int32_
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
   - name: (
-  - uid: System.Int32
-    name: Integer
+  - uid: System.Object
+    name: object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: Koffing.Blocks.Block.Tiles
-  commentId: P:Koffing.Blocks.Block.Tiles
-  parent: Koffing.Blocks.Block
-  isExternal: true
-  href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_Tiles
-  name: Tiles
-  nameWithType: Block.Tiles
-  fullName: Koffing.Blocks.Block.Tiles
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object
@@ -763,51 +768,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
-  - name: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  name: Equals(object, object)
-  nameWithType: object.Equals(object, object)
-  fullName: object.Equals(object, object)
-  nameWithType.vb: Object.Equals(Object, Object)
-  fullName.vb: Object.Equals(Object, Object)
-  name.vb: Equals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
@@ -868,7 +828,6 @@ references:
   spec.csharp:
   - uid: Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
     name: NotationFromTiles
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_NotationFromTiles_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   - name: (
   - uid: System.Collections.Generic.IEnumerable`1
@@ -878,14 +837,12 @@ references:
   - name: <
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: '>'
   - name: )
   spec.vb:
   - uid: Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
     name: NotationFromTiles
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_NotationFromTiles_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   - name: (
   - uid: System.Collections.Generic.IEnumerable`1
@@ -897,7 +854,6 @@ references:
   - name: " "
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
   - name: )
@@ -910,26 +866,21 @@ references:
   fullName: System
 - uid: Koffing.Blocks
   commentId: N:Koffing.Blocks
-  isExternal: true
   name: Koffing.Blocks
   nameWithType: Koffing.Blocks
   fullName: Koffing.Blocks
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Blocks
     name: Blocks
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Blocks
     name: Blocks
-    isExternal: true
 - uid: System.Collections.Generic.IEnumerable`1
   commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true
@@ -1091,7 +1042,6 @@ references:
   spec.csharp:
   - uid: Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
     name: NotationFromTiles
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_NotationFromTiles_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   - name: (
   - uid: System.Collections.Generic.IEnumerable`1
@@ -1101,14 +1051,12 @@ references:
   - name: <
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: '>'
   - name: )
   spec.vb:
   - uid: Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
     name: NotationFromTiles
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_NotationFromTiles_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   - name: (
   - uid: System.Collections.Generic.IEnumerable`1
@@ -1120,27 +1068,23 @@ references:
   - name: " "
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
   - name: )
 - uid: Koffing.Extensions
   commentId: T:Koffing.Extensions
   parent: Koffing
-  isExternal: true
   href: Koffing.Extensions.html
   name: Extensions
   nameWithType: Extensions
   fullName: Koffing.Extensions
 - uid: Koffing
   commentId: N:Koffing
-  isExternal: true
   name: Koffing
   nameWithType: Koffing
   fullName: Koffing
 - uid: Koffing.Waits.Wait.GetFirstLevelWaits*
   commentId: Overload:Koffing.Waits.Wait.GetFirstLevelWaits
-  isExternal: true
   href: Koffing.Waits.Wait.html#Koffing_Waits_Wait_GetFirstLevelWaits_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   name: GetFirstLevelWaits
   nameWithType: Wait.GetFirstLevelWaits
@@ -1164,7 +1108,6 @@ references:
   - name: <
   - uid: Koffing.Blocks.MadeBlockContext
     name: MadeBlockContext
-    isExternal: true
     href: Koffing.Blocks.MadeBlockContext.html
   - name: '>'
   spec.vb:
@@ -1177,12 +1120,10 @@ references:
   - name: " "
   - uid: Koffing.Blocks.MadeBlockContext
     name: MadeBlockContext
-    isExternal: true
     href: Koffing.Blocks.MadeBlockContext.html
   - name: )
 - uid: Koffing.Waits.Wait.#ctor*
   commentId: Overload:Koffing.Waits.Wait.#ctor
-  isExternal: true
   href: Koffing.Waits.Wait.html#Koffing_Waits_Wait__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   name: Wait
   nameWithType: Wait.Wait

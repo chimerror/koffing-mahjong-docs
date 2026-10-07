@@ -26,7 +26,13 @@ items:
   fullName: Koffing.Tiles.Tile
   type: Class
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Tile.cs
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Tile
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 4
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -39,9 +45,9 @@ items:
   - System.IComparable{Koffing.Tiles.Tile}
   - System.IEquatable{Koffing.Tiles.Tile}
   inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.MemberwiseClone
-  - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   extensionMethods:
   - Koffing.Tiles.Tile.Koffing.Extensions.NotationFromTile
@@ -57,7 +63,13 @@ items:
   fullName: Koffing.Tiles.Tile.Suit
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Tile.cs
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Suit
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 6
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -78,7 +90,13 @@ items:
   fullName: Koffing.Tiles.Tile.Rank
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Tile.cs
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Rank
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 7
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -99,7 +117,13 @@ items:
   fullName: Koffing.Tiles.Tile.FaceUp
   type: Field
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Tile.cs
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: FaceUp
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 8
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -108,6 +132,35 @@ items:
     return:
       type: System.Boolean
     content.vb: Public FaceUp As Boolean
+- uid: Koffing.Tiles.Tile.RawRank
+  commentId: P:Koffing.Tiles.Tile.RawRank
+  id: RawRank
+  parent: Koffing.Tiles.Tile
+  langs:
+  - csharp
+  - vb
+  name: RawRank
+  nameWithType: Tile.RawRank
+  fullName: Koffing.Tiles.Tile.RawRank
+  type: Property
+  source:
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: RawRank
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 10
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tiles
+  syntax:
+    content: public int RawRank { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property RawRank As Integer
+  overload: Koffing.Tiles.Tile.RawRank*
 - uid: Koffing.Tiles.Tile.IsValidTile(Koffing.Tiles.Suit,System.Int32)
   commentId: M:Koffing.Tiles.Tile.IsValidTile(Koffing.Tiles.Suit,System.Int32)
   id: IsValidTile(Koffing.Tiles.Suit,System.Int32)
@@ -120,7 +173,13 @@ items:
   fullName: Koffing.Tiles.Tile.IsValidTile(Koffing.Tiles.Suit, int)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Tile.cs
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: IsValidTile
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -150,7 +209,13 @@ items:
   fullName: Koffing.Tiles.Tile.Tile()
   type: Constructor
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Tile.cs
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: .ctor
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 20
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -173,7 +238,13 @@ items:
   fullName: Koffing.Tiles.Tile.Tile(Koffing.Tiles.Suit, int)
   type: Constructor
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Tile.cs
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: .ctor
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 24
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -201,10 +272,17 @@ items:
   fullName: Koffing.Tiles.Tile.Equals(object)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Tile.cs
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Equals
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 30
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: Determines whether the specified object is equal to the current object.
   example: []
   syntax:
     content: public override bool Equals(object that)
@@ -213,6 +291,7 @@ items:
       type: System.Object
     return:
       type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Overrides Function Equals(that As Object) As Boolean
   overridden: System.Object.Equals(System.Object)
   overload: Koffing.Tiles.Tile.Equals*
@@ -231,10 +310,17 @@ items:
   fullName: Koffing.Tiles.Tile.Equals(Koffing.Tiles.Tile)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Tile.cs
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Equals
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 41
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: Indicates whether the current object is equal to another object of the same type.
   example: []
   syntax:
     content: public bool Equals(Tile that)
@@ -243,6 +329,7 @@ items:
       type: Koffing.Tiles.Tile
     return:
       type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function Equals(that As Tile) As Boolean
   overload: Koffing.Tiles.Tile.Equals*
   implements:
@@ -259,7 +346,13 @@ items:
   fullName: Koffing.Tiles.Tile.RawEquals(Koffing.Tiles.Tile)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Tile.cs
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: RawEquals
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 52
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -284,15 +377,23 @@ items:
   fullName: Koffing.Tiles.Tile.GetHashCode()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Tile.cs
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: GetHashCode
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 63
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: Serves as the default hash function.
   example: []
   syntax:
     content: public override int GetHashCode()
     return:
       type: System.Int32
+      description: A hash code for the current object.
     content.vb: Public Overrides Function GetHashCode() As Integer
   overridden: System.Object.GetHashCode
   overload: Koffing.Tiles.Tile.GetHashCode*
@@ -308,10 +409,17 @@ items:
   fullName: Koffing.Tiles.Tile.CompareTo(Koffing.Tiles.Tile)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Tile.cs
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: CompareTo
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 70
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
   example: []
   syntax:
     content: public int CompareTo(Tile that)
@@ -320,6 +428,10 @@ items:
       type: Koffing.Tiles.Tile
     return:
       type: System.Int32
+      description: >-
+        A value that indicates the relative order of the objects being compared. The return value has these meanings:  
+
+         <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
     content.vb: Public Function CompareTo(that As Tile) As Integer
   overload: Koffing.Tiles.Tile.CompareTo*
   implements:
@@ -336,64 +448,44 @@ items:
   fullName: Koffing.Tiles.Tile.ToString()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Tile.cs
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: ToString
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 99
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: Returns a string that represents the current object.
   example: []
   syntax:
     content: public override string ToString()
     return:
       type: System.String
+      description: A string that represents the current object.
     content.vb: Public Overrides Function ToString() As String
   overridden: System.Object.ToString
   overload: Koffing.Tiles.Tile.ToString*
-- uid: Koffing.Tiles.Tile.RawRank
-  commentId: P:Koffing.Tiles.Tile.RawRank
-  id: RawRank
-  parent: Koffing.Tiles.Tile
-  langs:
-  - csharp
-  - vb
-  name: RawRank
-  nameWithType: Tile.RawRank
-  fullName: Koffing.Tiles.Tile.RawRank
-  type: Property
-  source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tiles/Tile.cs
-  assemblies:
-  - Koffing
-  namespace: Koffing.Tiles
-  syntax:
-    content: public int RawRank { get; }
-    parameters: []
-    return:
-      type: System.Int32
-    content.vb: Public ReadOnly Property RawRank As Integer
-  overload: Koffing.Tiles.Tile.RawRank*
 references:
 - uid: Koffing.Tiles
   commentId: N:Koffing.Tiles
-  isExternal: true
   name: Koffing.Tiles
   nameWithType: Koffing.Tiles
   fullName: Koffing.Tiles
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tiles
     name: Tiles
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tiles
     name: Tiles
-    isExternal: true
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -424,7 +516,6 @@ references:
   - name: <
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: '>'
   spec.vb:
@@ -437,7 +528,6 @@ references:
   - name: " "
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
 - uid: System.IEquatable{Koffing.Tiles.Tile}
@@ -459,7 +549,6 @@ references:
   - name: <
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: '>'
   spec.vb:
@@ -472,8 +561,52 @@ references:
   - name: " "
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
@@ -522,51 +655,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
-  - name: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  name: Equals(object, object)
-  nameWithType: object.Equals(object, object)
-  fullName: object.Equals(object, object)
-  nameWithType.vb: Object.Equals(Object, Object)
-  fullName.vb: Object.Equals(Object, Object)
-  name.vb: Equals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
@@ -624,23 +712,19 @@ references:
   spec.csharp:
   - uid: Koffing.Extensions.NotationFromTile(Koffing.Tiles.Tile)
     name: NotationFromTile
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_NotationFromTile_Koffing_Tiles_Tile_
   - name: (
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
   spec.vb:
   - uid: Koffing.Extensions.NotationFromTile(Koffing.Tiles.Tile)
     name: NotationFromTile
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_NotationFromTile_Koffing_Tiles_Tile_
   - name: (
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
 - uid: System
@@ -708,7 +792,6 @@ references:
   - name: )
 - uid: Koffing.Extensions.NotationFromTile(Koffing.Tiles.Tile)
   commentId: M:Koffing.Extensions.NotationFromTile(Koffing.Tiles.Tile)
-  isExternal: true
   href: Koffing.Extensions.html#Koffing_Extensions_NotationFromTile_Koffing_Tiles_Tile_
   name: NotationFromTile(Tile)
   nameWithType: Extensions.NotationFromTile(Tile)
@@ -716,43 +799,36 @@ references:
   spec.csharp:
   - uid: Koffing.Extensions.NotationFromTile(Koffing.Tiles.Tile)
     name: NotationFromTile
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_NotationFromTile_Koffing_Tiles_Tile_
   - name: (
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
   spec.vb:
   - uid: Koffing.Extensions.NotationFromTile(Koffing.Tiles.Tile)
     name: NotationFromTile
-    isExternal: true
     href: Koffing.Extensions.html#Koffing_Extensions_NotationFromTile_Koffing_Tiles_Tile_
   - name: (
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
 - uid: Koffing.Extensions
   commentId: T:Koffing.Extensions
   parent: Koffing
-  isExternal: true
   href: Koffing.Extensions.html
   name: Extensions
   nameWithType: Extensions
   fullName: Koffing.Extensions
 - uid: Koffing
   commentId: N:Koffing
-  isExternal: true
   name: Koffing
   nameWithType: Koffing
   fullName: Koffing
 - uid: Koffing.Tiles.Suit
   commentId: T:Koffing.Tiles.Suit
   parent: Koffing.Tiles
-  isExternal: true
   href: Koffing.Tiles.Suit.html
   name: Suit
   nameWithType: Suit
@@ -779,16 +855,20 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Koffing.Tiles.Tile.RawRank*
+  commentId: Overload:Koffing.Tiles.Tile.RawRank
+  href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_RawRank
+  name: RawRank
+  nameWithType: Tile.RawRank
+  fullName: Koffing.Tiles.Tile.RawRank
 - uid: Koffing.Tiles.Tile.IsValidTile*
   commentId: Overload:Koffing.Tiles.Tile.IsValidTile
-  isExternal: true
   href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_IsValidTile_Koffing_Tiles_Suit_System_Int32_
   name: IsValidTile
   nameWithType: Tile.IsValidTile
   fullName: Koffing.Tiles.Tile.IsValidTile
 - uid: Koffing.Tiles.Tile.#ctor*
   commentId: Overload:Koffing.Tiles.Tile.#ctor
-  isExternal: true
   href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile__ctor
   name: Tile
   nameWithType: Tile.Tile
@@ -831,7 +911,6 @@ references:
   - name: )
 - uid: Koffing.Tiles.Tile.Equals*
   commentId: Overload:Koffing.Tiles.Tile.Equals
-  isExternal: true
   href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_Equals_System_Object_
   name: Equals
   nameWithType: Tile.Equals
@@ -854,7 +933,6 @@ references:
   - name: (
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
   spec.vb:
@@ -865,13 +943,11 @@ references:
   - name: (
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
 - uid: Koffing.Tiles.Tile
   commentId: T:Koffing.Tiles.Tile
   parent: Koffing.Tiles
-  isExternal: true
   href: Koffing.Tiles.Tile.html
   name: Tile
   nameWithType: Tile
@@ -903,7 +979,6 @@ references:
   - name: )
 - uid: Koffing.Tiles.Tile.RawEquals*
   commentId: Overload:Koffing.Tiles.Tile.RawEquals
-  isExternal: true
   href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_RawEquals_Koffing_Tiles_Tile_
   name: RawEquals
   nameWithType: Tile.RawEquals
@@ -934,14 +1009,12 @@ references:
   - name: )
 - uid: Koffing.Tiles.Tile.GetHashCode*
   commentId: Overload:Koffing.Tiles.Tile.GetHashCode
-  isExternal: true
   href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_GetHashCode
   name: GetHashCode
   nameWithType: Tile.GetHashCode
   fullName: Koffing.Tiles.Tile.GetHashCode
 - uid: Koffing.Tiles.Tile.CompareTo*
   commentId: Overload:Koffing.Tiles.Tile.CompareTo
-  isExternal: true
   href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_CompareTo_Koffing_Tiles_Tile_
   name: CompareTo
   nameWithType: Tile.CompareTo
@@ -964,7 +1037,6 @@ references:
   - name: (
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
   spec.vb:
@@ -975,7 +1047,6 @@ references:
   - name: (
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
 - uid: System.IComparable`1.CompareTo(`0)
@@ -1029,7 +1100,6 @@ references:
   - name: )
 - uid: Koffing.Tiles.Tile.ToString*
   commentId: Overload:Koffing.Tiles.Tile.ToString
-  isExternal: true
   href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_ToString
   name: ToString
   nameWithType: Tile.ToString
@@ -1045,10 +1115,3 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Koffing.Tiles.Tile.RawRank*
-  commentId: Overload:Koffing.Tiles.Tile.RawRank
-  isExternal: true
-  href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_RawRank
-  name: RawRank
-  nameWithType: Tile.RawRank
-  fullName: Koffing.Tiles.Tile.RawRank

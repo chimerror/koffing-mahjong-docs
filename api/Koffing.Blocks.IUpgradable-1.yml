@@ -16,7 +16,13 @@ items:
   fullName: Koffing.Blocks.IUpgradable<T>
   type: Interface
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IUpgradable.cs
+    remote:
+      path: Scripts/Blocks/IUpgradable.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: IUpgradable
+    path: ../Koffing/Scripts/Blocks/IUpgradable.cs
+    startLine: 8
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -30,6 +36,37 @@ items:
   nameWithType.vb: IUpgradable(Of T)
   fullName.vb: Koffing.Blocks.IUpgradable(Of T)
   name.vb: IUpgradable(Of T)
+- uid: Koffing.Blocks.IUpgradable`1.SoughtTiles
+  commentId: P:Koffing.Blocks.IUpgradable`1.SoughtTiles
+  id: SoughtTiles
+  parent: Koffing.Blocks.IUpgradable`1
+  langs:
+  - csharp
+  - vb
+  name: SoughtTiles
+  nameWithType: IUpgradable<T>.SoughtTiles
+  fullName: Koffing.Blocks.IUpgradable<T>.SoughtTiles
+  type: Property
+  source:
+    remote:
+      path: Scripts/Blocks/IUpgradable.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: SoughtTiles
+    path: ../Koffing/Scripts/Blocks/IUpgradable.cs
+    startLine: 10
+  assemblies:
+  - Koffing
+  namespace: Koffing.Blocks
+  syntax:
+    content: HashSet<Tile> SoughtTiles { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.HashSet{Koffing.Tiles.Tile}
+    content.vb: ReadOnly Property SoughtTiles As HashSet(Of Tile)
+  overload: Koffing.Blocks.IUpgradable`1.SoughtTiles*
+  nameWithType.vb: IUpgradable(Of T).SoughtTiles
+  fullName.vb: Koffing.Blocks.IUpgradable(Of T).SoughtTiles
 - uid: Koffing.Blocks.IUpgradable`1.CanUpgradeWith(Koffing.Tiles.Tile)
   commentId: M:Koffing.Blocks.IUpgradable`1.CanUpgradeWith(Koffing.Tiles.Tile)
   id: CanUpgradeWith(Koffing.Tiles.Tile)
@@ -42,7 +79,13 @@ items:
   fullName: Koffing.Blocks.IUpgradable<T>.CanUpgradeWith(Koffing.Tiles.Tile)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IUpgradable.cs
+    remote:
+      path: Scripts/Blocks/IUpgradable.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: CanUpgradeWith
+    path: ../Koffing/Scripts/Blocks/IUpgradable.cs
+    startLine: 11
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -69,7 +112,13 @@ items:
   fullName: Koffing.Blocks.IUpgradable<T>.Upgrade(Koffing.Tiles.Tile)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IUpgradable.cs
+    remote:
+      path: Scripts/Blocks/IUpgradable.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Upgrade
+    path: ../Koffing/Scripts/Blocks/IUpgradable.cs
+    startLine: 12
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -84,134 +133,26 @@ items:
   overload: Koffing.Blocks.IUpgradable`1.Upgrade*
   nameWithType.vb: IUpgradable(Of T).Upgrade(Tile)
   fullName.vb: Koffing.Blocks.IUpgradable(Of T).Upgrade(Koffing.Tiles.Tile)
-- uid: Koffing.Blocks.IUpgradable`1.SoughtTiles
-  commentId: P:Koffing.Blocks.IUpgradable`1.SoughtTiles
-  id: SoughtTiles
-  parent: Koffing.Blocks.IUpgradable`1
-  langs:
-  - csharp
-  - vb
-  name: SoughtTiles
-  nameWithType: IUpgradable<T>.SoughtTiles
-  fullName: Koffing.Blocks.IUpgradable<T>.SoughtTiles
-  type: Property
-  source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IUpgradable.cs
-  assemblies:
-  - Koffing
-  namespace: Koffing.Blocks
-  syntax:
-    content: HashSet<Tile> SoughtTiles { get; }
-    parameters: []
-    return:
-      type: System.Collections.Generic.HashSet{Koffing.Tiles.Tile}
-    content.vb: ReadOnly Property SoughtTiles As HashSet(Of Tile)
-  overload: Koffing.Blocks.IUpgradable`1.SoughtTiles*
-  nameWithType.vb: IUpgradable(Of T).SoughtTiles
-  fullName.vb: Koffing.Blocks.IUpgradable(Of T).SoughtTiles
 references:
 - uid: Koffing.Blocks
   commentId: N:Koffing.Blocks
-  isExternal: true
   name: Koffing.Blocks
   nameWithType: Koffing.Blocks
   fullName: Koffing.Blocks
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Blocks
     name: Blocks
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Blocks
     name: Blocks
-    isExternal: true
-- uid: Koffing.Blocks.IUpgradable`1.CanUpgradeWith*
-  commentId: Overload:Koffing.Blocks.IUpgradable`1.CanUpgradeWith
-  isExternal: true
-  href: Koffing.Blocks.IUpgradable-1.html#Koffing_Blocks_IUpgradable_1_CanUpgradeWith_Koffing_Tiles_Tile_
-  name: CanUpgradeWith
-  nameWithType: IUpgradable<T>.CanUpgradeWith
-  fullName: Koffing.Blocks.IUpgradable<T>.CanUpgradeWith
-  nameWithType.vb: IUpgradable(Of T).CanUpgradeWith
-  fullName.vb: Koffing.Blocks.IUpgradable(Of T).CanUpgradeWith
-- uid: Koffing.Tiles.Tile
-  commentId: T:Koffing.Tiles.Tile
-  parent: Koffing.Tiles
-  isExternal: true
-  href: Koffing.Tiles.Tile.html
-  name: Tile
-  nameWithType: Tile
-  fullName: Koffing.Tiles.Tile
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
-- uid: Koffing.Tiles
-  commentId: N:Koffing.Tiles
-  isExternal: true
-  name: Koffing.Tiles
-  nameWithType: Koffing.Tiles
-  fullName: Koffing.Tiles
-  spec.csharp:
-  - uid: Koffing
-    name: Koffing
-    isExternal: true
-  - name: .
-  - uid: Koffing.Tiles
-    name: Tiles
-    isExternal: true
-  spec.vb:
-  - uid: Koffing
-    name: Koffing
-    isExternal: true
-  - name: .
-  - uid: Koffing.Tiles
-    name: Tiles
-    isExternal: true
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: Koffing.Blocks.IUpgradable`1.Upgrade*
-  commentId: Overload:Koffing.Blocks.IUpgradable`1.Upgrade
-  isExternal: true
-  href: Koffing.Blocks.IUpgradable-1.html#Koffing_Blocks_IUpgradable_1_Upgrade_Koffing_Tiles_Tile_
-  name: Upgrade
-  nameWithType: IUpgradable<T>.Upgrade
-  fullName: Koffing.Blocks.IUpgradable<T>.Upgrade
-  nameWithType.vb: IUpgradable(Of T).Upgrade
-  fullName.vb: Koffing.Blocks.IUpgradable(Of T).Upgrade
-- uid: '{T}'
-  commentId: '!:T'
-  definition: T
-  name: T
-  nameWithType: T
-  fullName: T
-- uid: T
-  commentId: '!:T'
-  name: T
-  nameWithType: T
-  fullName: T
 - uid: Koffing.Blocks.IUpgradable`1.SoughtTiles*
   commentId: Overload:Koffing.Blocks.IUpgradable`1.SoughtTiles
-  isExternal: true
   href: Koffing.Blocks.IUpgradable-1.html#Koffing_Blocks_IUpgradable_1_SoughtTiles
   name: SoughtTiles
   nameWithType: IUpgradable<T>.SoughtTiles
@@ -237,7 +178,6 @@ references:
   - name: <
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: '>'
   spec.vb:
@@ -250,7 +190,6 @@ references:
   - name: " "
   - uid: Koffing.Tiles.Tile
     name: Tile
-    isExternal: true
     href: Koffing.Tiles.Tile.html
   - name: )
 - uid: System.Collections.Generic.HashSet`1
@@ -318,3 +257,72 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Koffing.Blocks.IUpgradable`1.CanUpgradeWith*
+  commentId: Overload:Koffing.Blocks.IUpgradable`1.CanUpgradeWith
+  href: Koffing.Blocks.IUpgradable-1.html#Koffing_Blocks_IUpgradable_1_CanUpgradeWith_Koffing_Tiles_Tile_
+  name: CanUpgradeWith
+  nameWithType: IUpgradable<T>.CanUpgradeWith
+  fullName: Koffing.Blocks.IUpgradable<T>.CanUpgradeWith
+  nameWithType.vb: IUpgradable(Of T).CanUpgradeWith
+  fullName.vb: Koffing.Blocks.IUpgradable(Of T).CanUpgradeWith
+- uid: Koffing.Tiles.Tile
+  commentId: T:Koffing.Tiles.Tile
+  parent: Koffing.Tiles
+  href: Koffing.Tiles.Tile.html
+  name: Tile
+  nameWithType: Tile
+  fullName: Koffing.Tiles.Tile
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Koffing.Tiles
+  commentId: N:Koffing.Tiles
+  name: Koffing.Tiles
+  nameWithType: Koffing.Tiles
+  fullName: Koffing.Tiles
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koffing.Blocks.IUpgradable`1.Upgrade*
+  commentId: Overload:Koffing.Blocks.IUpgradable`1.Upgrade
+  href: Koffing.Blocks.IUpgradable-1.html#Koffing_Blocks_IUpgradable_1_Upgrade_Koffing_Tiles_Tile_
+  name: Upgrade
+  nameWithType: IUpgradable<T>.Upgrade
+  fullName: Koffing.Blocks.IUpgradable<T>.Upgrade
+  nameWithType.vb: IUpgradable(Of T).Upgrade
+  fullName.vb: Koffing.Blocks.IUpgradable(Of T).Upgrade
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  commentId: '!:T'
+  name: T
+  nameWithType: T
+  fullName: T

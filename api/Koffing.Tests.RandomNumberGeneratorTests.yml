@@ -5,7 +5,6 @@ items:
   id: RandomNumberGeneratorTests
   parent: Koffing.Tests
   children:
-  - Koffing.Tests.RandomNumberGeneratorTests.#ctor
   - Koffing.Tests.RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed
   - Koffing.Tests.RandomNumberGeneratorTests.Setup
   - Koffing.Tests.RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed
@@ -18,7 +17,13 @@ items:
   fullName: Koffing.Tests.RandomNumberGeneratorTests
   type: Class
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/RandomNumberGeneratorTests.cs
+    remote:
+      path: Scripts/Tests/RandomNumberGeneratorTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: RandomNumberGeneratorTests
+    path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
+    startLine: 13
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -34,13 +39,13 @@ items:
   inheritance:
   - System.Object
   inheritedMembers:
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   attributes:
   - type: GdUnit4.TestSuiteAttribute
     ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
@@ -61,7 +66,13 @@ items:
   fullName: Koffing.Tests.RandomNumberGeneratorTests.Setup()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/RandomNumberGeneratorTests.cs
+    remote:
+      path: Scripts/Tests/RandomNumberGeneratorTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Setup
+    path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
+    startLine: 16
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -95,7 +106,13 @@ items:
   fullName: Koffing.Tests.RandomNumberGeneratorTests.TearDown()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/RandomNumberGeneratorTests.cs
+    remote:
+      path: Scripts/Tests/RandomNumberGeneratorTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: TearDown
+    path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
+    startLine: 22
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -129,7 +146,13 @@ items:
   fullName: Koffing.Tests.RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/RandomNumberGeneratorTests.cs
+    remote:
+      path: Scripts/Tests/RandomNumberGeneratorTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: GodotRandomNumberGeneratorCanBeUsed
+    path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
+    startLine: 32
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -163,7 +186,13 @@ items:
   fullName: Koffing.Tests.RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/RandomNumberGeneratorTests.cs
+    remote:
+      path: Scripts/Tests/RandomNumberGeneratorTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: SystemRandomNumberGeneratorCanBeUsed
+    path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
+    startLine: 56
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -177,52 +206,24 @@ items:
 
       Public Shared Sub SystemRandomNumberGeneratorCanBeUsed()
   overload: Koffing.Tests.RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed*
-- uid: Koffing.Tests.RandomNumberGeneratorTests.#ctor
-  commentId: M:Koffing.Tests.RandomNumberGeneratorTests.#ctor
-  id: '#ctor'
-  parent: Koffing.Tests.RandomNumberGeneratorTests
-  langs:
-  - csharp
-  - vb
-  name: RandomNumberGeneratorTests()
-  nameWithType: RandomNumberGeneratorTests.RandomNumberGeneratorTests()
-  fullName: Koffing.Tests.RandomNumberGeneratorTests.RandomNumberGeneratorTests()
-  type: Constructor
-  source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Tests/RandomNumberGeneratorTests.cs
-  assemblies:
-  - Koffing
-  namespace: Koffing.Tests
-  syntax:
-    content: public RandomNumberGeneratorTests()
-    content.vb: Public Sub New()
-  overload: Koffing.Tests.RandomNumberGeneratorTests.#ctor*
-  nameWithType.vb: RandomNumberGeneratorTests.New()
-  fullName.vb: Koffing.Tests.RandomNumberGeneratorTests.New()
-  name.vb: New()
 references:
 - uid: Koffing.Tests
   commentId: N:Koffing.Tests
-  isExternal: true
   name: Koffing.Tests
   nameWithType: Koffing.Tests
   fullName: Koffing.Tests
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tests
     name: Tests
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Tests
     name: Tests
-    isExternal: true
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -234,78 +235,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  name: MemberwiseClone()
-  nameWithType: object.MemberwiseClone()
-  fullName: object.MemberwiseClone()
-  nameWithType.vb: Object.MemberwiseClone()
-  fullName.vb: Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
-  - name: (
-  - name: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -384,6 +313,78 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -429,28 +430,28 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
   parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
   spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
   spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
+  - uid: System.Object.ToString
+    name: ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
 - uid: System
@@ -462,39 +463,25 @@ references:
   fullName: System
 - uid: Koffing.Tests.RandomNumberGeneratorTests.Setup*
   commentId: Overload:Koffing.Tests.RandomNumberGeneratorTests.Setup
-  isExternal: true
   href: Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests_Setup
   name: Setup
   nameWithType: RandomNumberGeneratorTests.Setup
   fullName: Koffing.Tests.RandomNumberGeneratorTests.Setup
 - uid: Koffing.Tests.RandomNumberGeneratorTests.TearDown*
   commentId: Overload:Koffing.Tests.RandomNumberGeneratorTests.TearDown
-  isExternal: true
   href: Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests_TearDown
   name: TearDown
   nameWithType: RandomNumberGeneratorTests.TearDown
   fullName: Koffing.Tests.RandomNumberGeneratorTests.TearDown
 - uid: Koffing.Tests.RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed*
   commentId: Overload:Koffing.Tests.RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed
-  isExternal: true
   href: Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests_GodotRandomNumberGeneratorCanBeUsed
   name: GodotRandomNumberGeneratorCanBeUsed
   nameWithType: RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed
   fullName: Koffing.Tests.RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed
 - uid: Koffing.Tests.RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed*
   commentId: Overload:Koffing.Tests.RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed
-  isExternal: true
   href: Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests_SystemRandomNumberGeneratorCanBeUsed
   name: SystemRandomNumberGeneratorCanBeUsed
   nameWithType: RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed
   fullName: Koffing.Tests.RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed
-- uid: Koffing.Tests.RandomNumberGeneratorTests.#ctor*
-  commentId: Overload:Koffing.Tests.RandomNumberGeneratorTests.#ctor
-  isExternal: true
-  href: Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests__ctor
-  name: RandomNumberGeneratorTests
-  nameWithType: RandomNumberGeneratorTests.RandomNumberGeneratorTests
-  fullName: Koffing.Tests.RandomNumberGeneratorTests.RandomNumberGeneratorTests
-  nameWithType.vb: RandomNumberGeneratorTests.New
-  fullName.vb: Koffing.Tests.RandomNumberGeneratorTests.New
-  name.vb: New

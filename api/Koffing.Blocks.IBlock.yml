@@ -16,10 +16,24 @@ items:
   fullName: Koffing.Blocks.IBlock
   type: Interface
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IBlock.cs
+    remote:
+      path: Scripts/Blocks/IBlock.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: IBlock
+    path: ../Koffing/Scripts/Blocks/IBlock.cs
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
+  summary: Interface of static methods used to work with <xref href="Koffing.Blocks.Block" data-throw-if-not-resolved="false"></xref>s.
+  remarks: >-
+    Note that because these are <code>static abstract</code> methods, the <code>new</code> keyword will have to be used on
+
+    overrides. This also requires calling the correct method through reflection, but for the most part, the code to
+
+    do that is already part of the <xref href="Koffing.Blocks.Block" data-throw-if-not-resolved="false"></xref> abstract class implementation.
+  example: []
   syntax:
     content: public interface IBlock
     content.vb: Public Interface IBlock
@@ -50,17 +64,30 @@ items:
   fullName: Koffing.Blocks.IBlock.GetPossible(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IBlock.cs
+    remote:
+      path: Scripts/Blocks/IBlock.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: GetPossible
+    path: ../Koffing/Scripts/Blocks/IBlock.cs
+    startLine: 25
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
+  summary: Get possible blocks of this type that can be created from a collection of tiles.
+  example: []
   syntax:
     content: public static abstract IEnumerable<MadeBlockContext> GetPossible(IEnumerable<Tile> tiles)
     parameters:
     - id: tiles
       type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+      description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s to use to create <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s.
     return:
       type: System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext}
+      description: >-
+        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s that can be created from
+
+        <code class="paramref">tiles</code>.
     content.vb: Public Shared MustInherit Function GetPossible(tiles As IEnumerable(Of Tile)) As IEnumerable(Of MadeBlockContext)
   overload: Koffing.Blocks.IBlock.GetPossible*
   nameWithType.vb: IBlock.GetPossible(IEnumerable(Of Tile))
@@ -78,19 +105,33 @@ items:
   fullName: Koffing.Blocks.IBlock.GetPossibleForTile(Koffing.Tiles.Tile, System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IBlock.cs
+    remote:
+      path: Scripts/Blocks/IBlock.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: GetPossibleForTile
+    path: ../Koffing/Scripts/Blocks/IBlock.cs
+    startLine: 36
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
+  summary: Get possible blocks of this type that can be created using a specified tile and set of other tiles.
+  example: []
   syntax:
     content: public static abstract IEnumerable<MadeBlockContext> GetPossibleForTile(Tile tile, IEnumerable<Tile> otherTiles)
     parameters:
     - id: tile
       type: Koffing.Tiles.Tile
+      description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref> that must be included in all created blocks.
     - id: otherTiles
       type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of other <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s to use.
     return:
       type: System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext}
+      description: >-
+        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s that can be created from
+
+        <code class="paramref">tile</code> and <code class="paramref">otherTiles</code>.
     content.vb: Public Shared MustInherit Function GetPossibleForTile(tile As Tile, otherTiles As IEnumerable(Of Tile)) As IEnumerable(Of MadeBlockContext)
   overload: Koffing.Blocks.IBlock.GetPossibleForTile*
   nameWithType.vb: IBlock.GetPossibleForTile(Tile, IEnumerable(Of Tile))
@@ -108,116 +149,73 @@ items:
   fullName: Koffing.Blocks.IBlock.GetHashCodeBasis()
   type: Method
   source:
-    href: https://github.com/chimerror/koffing/blob/1c888ef77a265511209b8913730711bfa4638db0/Scripts/Blocks/IBlock.cs
+    remote:
+      path: Scripts/Blocks/IBlock.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: GetHashCodeBasis
+    path: ../Koffing/Scripts/Blocks/IBlock.cs
+    startLine: 48
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
+  summary: >-
+    Get the hash code basis representing this block type, which will be exponentiated as a part of calculating
+
+    <xref href="System.Object.GetHashCode" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    The number returned here should be a unique prime number among all derived <xref href="Koffing.Blocks" data-throw-if-not-resolved="false"></xref> to ensure proper
+
+    hashing. The current set of numbers is verified in
+
+    <xref href="Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static abstract int GetHashCodeBasis()
     return:
       type: System.Int32
+      description: The basis to use when calculating hash codes for this block type.
     content.vb: Public Shared MustInherit Function GetHashCodeBasis() As Integer
   overload: Koffing.Blocks.IBlock.GetHashCodeBasis*
 references:
+- uid: Koffing.Blocks.Block
+  commentId: T:Koffing.Blocks.Block
+  parent: Koffing.Blocks
+  href: Koffing.Blocks.Block.html
+  name: Block
+  nameWithType: Block
+  fullName: Koffing.Blocks.Block
 - uid: Koffing.Blocks
   commentId: N:Koffing.Blocks
-  isExternal: true
   name: Koffing.Blocks
   nameWithType: Koffing.Blocks
   fullName: Koffing.Blocks
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Blocks
     name: Blocks
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Blocks
     name: Blocks
-    isExternal: true
-- uid: Koffing.Blocks.IBlock.GetPossible*
-  commentId: Overload:Koffing.Blocks.IBlock.GetPossible
-  isExternal: true
-  href: Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
-  name: GetPossible
-  nameWithType: IBlock.GetPossible
-  fullName: Koffing.Blocks.IBlock.GetPossible
-- uid: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
-  commentId: T:System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.IEnumerable`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<Tile>
-  nameWithType: IEnumerable<Tile>
-  fullName: System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>
-  nameWithType.vb: IEnumerable(Of Tile)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile)
-  name.vb: IEnumerable(Of Tile)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - uid: Koffing.Tiles.Tile
-    name: Tile
-    isExternal: true
-    href: Koffing.Tiles.Tile.html
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Koffing.Tiles.Tile
-    name: Tile
-    isExternal: true
-    href: Koffing.Tiles.Tile.html
-  - name: )
-- uid: System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext}
-  commentId: T:System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.IEnumerable`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<MadeBlockContext>
-  nameWithType: IEnumerable<MadeBlockContext>
-  fullName: System.Collections.Generic.IEnumerable<Koffing.Blocks.MadeBlockContext>
-  nameWithType.vb: IEnumerable(Of MadeBlockContext)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of Koffing.Blocks.MadeBlockContext)
-  name.vb: IEnumerable(Of MadeBlockContext)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - uid: Koffing.Blocks.MadeBlockContext
-    name: MadeBlockContext
-    isExternal: true
-    href: Koffing.Blocks.MadeBlockContext.html
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Koffing.Blocks.MadeBlockContext
-    name: MadeBlockContext
-    isExternal: true
-    href: Koffing.Blocks.MadeBlockContext.html
-  - name: )
+- uid: Koffing.Tiles.Tile
+  commentId: T:Koffing.Tiles.Tile
+  parent: Koffing.Tiles
+  href: Koffing.Tiles.Tile.html
+  name: Tile
+  nameWithType: Tile
+  fullName: Koffing.Tiles.Tile
+- uid: Koffing.Blocks.MadeBlockContext
+  commentId: T:Koffing.Blocks.MadeBlockContext
+  parent: Koffing.Blocks
+  href: Koffing.Blocks.MadeBlockContext.html
+  name: MadeBlockContext
+  nameWithType: MadeBlockContext
+  fullName: Koffing.Blocks.MadeBlockContext
 - uid: System.Collections.Generic.IEnumerable`1
   commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true
@@ -246,6 +244,95 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: Koffing.Blocks.IBlock.GetPossible*
+  commentId: Overload:Koffing.Blocks.IBlock.GetPossible
+  href: Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  name: GetPossible
+  nameWithType: IBlock.GetPossible
+  fullName: Koffing.Blocks.IBlock.GetPossible
+- uid: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+  commentId: T:System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Tile>
+  nameWithType: IEnumerable<Tile>
+  fullName: System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>
+  nameWithType.vb: IEnumerable(Of Tile)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile)
+  name.vb: IEnumerable(Of Tile)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext}
+  commentId: T:System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<MadeBlockContext>
+  nameWithType: IEnumerable<MadeBlockContext>
+  fullName: System.Collections.Generic.IEnumerable<Koffing.Blocks.MadeBlockContext>
+  nameWithType.vb: IEnumerable(Of MadeBlockContext)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Koffing.Blocks.MadeBlockContext)
+  name.vb: IEnumerable(Of MadeBlockContext)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Blocks.MadeBlockContext
+    name: MadeBlockContext
+    href: Koffing.Blocks.MadeBlockContext.html
+  - name: )
+- uid: Koffing.Tiles
+  commentId: N:Koffing.Tiles
+  name: Koffing.Tiles
+  nameWithType: Koffing.Tiles
+  fullName: Koffing.Tiles
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
   isExternal: true
@@ -285,44 +372,76 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Koffing.Blocks.IBlock.GetPossibleForTile*
   commentId: Overload:Koffing.Blocks.IBlock.GetPossibleForTile
-  isExternal: true
   href: Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
   name: GetPossibleForTile
   nameWithType: IBlock.GetPossibleForTile
   fullName: Koffing.Blocks.IBlock.GetPossibleForTile
-- uid: Koffing.Tiles.Tile
-  commentId: T:Koffing.Tiles.Tile
-  parent: Koffing.Tiles
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
   isExternal: true
-  href: Koffing.Tiles.Tile.html
-  name: Tile
-  nameWithType: Tile
-  fullName: Koffing.Tiles.Tile
-- uid: Koffing.Tiles
-  commentId: N:Koffing.Tiles
-  isExternal: true
-  name: Koffing.Tiles
-  nameWithType: Koffing.Tiles
-  fullName: Koffing.Tiles
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
   spec.csharp:
-  - uid: Koffing
-    name: Koffing
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
     isExternal: true
-  - name: .
-  - uid: Koffing.Tiles
-    name: Tiles
-    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
   spec.vb:
-  - uid: Koffing
-    name: Koffing
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
     isExternal: true
-  - name: .
-  - uid: Koffing.Tiles
-    name: Tiles
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
+  commentId: M:Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
+  isExternal: true
+  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_Koffing_Blocks_Block_System_Int32_
+  name: GetBlockHashCodeIsCorrect(Block, int)
+  nameWithType: BlockTests.GetBlockHashCodeIsCorrect(Block, int)
+  fullName: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block, int)
+  nameWithType.vb: BlockTests.GetBlockHashCodeIsCorrect(Block, Integer)
+  fullName.vb: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block, Integer)
+  name.vb: GetBlockHashCodeIsCorrect(Block, Integer)
+  spec.csharp:
+  - uid: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
+    name: GetBlockHashCodeIsCorrect
+    href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_Koffing_Blocks_Block_System_Int32_
+  - name: (
+  - uid: Koffing.Blocks.Block
+    name: Block
+    href: Koffing.Blocks.Block.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
+    name: GetBlockHashCodeIsCorrect
+    href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_Koffing_Blocks_Block_System_Int32_
+  - name: (
+  - uid: Koffing.Blocks.Block
+    name: Block
+    href: Koffing.Blocks.Block.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
 - uid: Koffing.Blocks.IBlock.GetHashCodeBasis*
   commentId: Overload:Koffing.Blocks.IBlock.GetHashCodeBasis
-  isExternal: true
   href: Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetHashCodeBasis
   name: GetHashCodeBasis
   nameWithType: IBlock.GetHashCodeBasis
@@ -338,6 +457,17 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
 - uid: System
   commentId: N:System
   isExternal: true

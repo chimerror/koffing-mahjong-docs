@@ -18,30 +18,24 @@ references:
 - uid: Koffing.Players.Player
   commentId: T:Koffing.Players.Player
   parent: Koffing.Players
-  isExternal: true
   href: Koffing.Players.Player.html
   name: Player
   nameWithType: Player
   fullName: Koffing.Players.Player
 - uid: Koffing.Players
   commentId: N:Koffing.Players
-  isExternal: true
   name: Koffing.Players
   nameWithType: Koffing.Players
   fullName: Koffing.Players
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Players
     name: Players
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Players
     name: Players
-    isExternal: true

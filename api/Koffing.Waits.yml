@@ -24,14 +24,12 @@ items:
 references:
 - uid: Koffing.Waits.Kanchan
   commentId: T:Koffing.Waits.Kanchan
-  isExternal: true
   href: Koffing.Waits.Kanchan.html
   name: Kanchan
   nameWithType: Kanchan
   fullName: Koffing.Waits.Kanchan
 - uid: Koffing.Waits.Orphan
   commentId: T:Koffing.Waits.Orphan
-  isExternal: true
   href: Koffing.Waits.Orphan.html
   name: Orphan
   nameWithType: Orphan
@@ -39,21 +37,18 @@ references:
 - uid: Koffing.Waits.PairWait
   commentId: T:Koffing.Waits.PairWait
   parent: Koffing.Waits
-  isExternal: true
   href: Koffing.Waits.PairWait.html
   name: PairWait
   nameWithType: PairWait
   fullName: Koffing.Waits.PairWait
 - uid: Koffing.Waits.Penchan
   commentId: T:Koffing.Waits.Penchan
-  isExternal: true
   href: Koffing.Waits.Penchan.html
   name: Penchan
   nameWithType: Penchan
   fullName: Koffing.Waits.Penchan
 - uid: Koffing.Waits.Ryanmen
   commentId: T:Koffing.Waits.Ryanmen
-  isExternal: true
   href: Koffing.Waits.Ryanmen.html
   name: Ryanmen
   nameWithType: Ryanmen
@@ -61,7 +56,6 @@ references:
 - uid: Koffing.Waits.SevenPairsWait
   commentId: T:Koffing.Waits.SevenPairsWait
   parent: Koffing.Waits
-  isExternal: true
   href: Koffing.Waits.SevenPairsWait.html
   name: SevenPairsWait
   nameWithType: SevenPairsWait
@@ -69,7 +63,6 @@ references:
 - uid: Koffing.Waits.ThirteenOrphansWait
   commentId: T:Koffing.Waits.ThirteenOrphansWait
   parent: Koffing.Waits
-  isExternal: true
   href: Koffing.Waits.ThirteenOrphansWait.html
   name: ThirteenOrphansWait
   nameWithType: ThirteenOrphansWait
@@ -77,30 +70,24 @@ references:
 - uid: Koffing.Waits.Wait
   commentId: T:Koffing.Waits.Wait
   parent: Koffing.Waits
-  isExternal: true
   href: Koffing.Waits.Wait.html
   name: Wait
   nameWithType: Wait
   fullName: Koffing.Waits.Wait
 - uid: Koffing.Waits
   commentId: N:Koffing.Waits
-  isExternal: true
   name: Koffing.Waits
   nameWithType: Koffing.Waits
   fullName: Koffing.Waits
   spec.csharp:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Waits
     name: Waits
-    isExternal: true
   spec.vb:
   - uid: Koffing
     name: Koffing
-    isExternal: true
   - name: .
   - uid: Koffing.Waits
     name: Waits
-    isExternal: true
