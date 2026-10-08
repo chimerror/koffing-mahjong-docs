@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Meld | Koffing Mahjong Engine ">
       
-      
+      <meta name="description" content="An abstract derived  with the semantic meaning of being a &amp;quot;completed&amp;quot; part of a hand.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Koffing_Melds_Meld" data-uid="Koffing.Melds.Meld" class="text-break">
-Class Meld  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Meld.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class Meld  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Meld.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Meld  <a class="header-action link-secondary" title="View source" href="ht
   <dl><dt>Assembly</dt><dd>Koffing.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>An abstract derived <a class="xref" href="Koffing.Blocks.Block.html">Block</a> with the semantic meaning of being a &quot;completed&quot; part of a hand.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -203,6 +204,10 @@ Class Meld  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
+  <h2 id="Koffing_Melds_Meld_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>A meld is a <a class="xref" href="Koffing.Blocks.Block.html">Block</a> that does not need any additional tiles to be a useful part of a hand, compared to
+a <a class="xref" href="Koffing.Waits.Wait.html">Wait</a>, which is incomplete, and would become a meld given additional tiles.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -213,10 +218,11 @@ Class Meld  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Melds_Meld__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Melds.Meld.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
   Meld(IEnumerable&lt;Tile&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Meld.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Meld.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructor. Optionally takes in an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -226,7 +232,8 @@ Class Meld  <a class="header-action link-secondary" title="View source" href="ht
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s that make up the meld.</p>
+</dd>
   </dl>
 
 
@@ -236,6 +243,13 @@ Class Meld  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
+  <h4 class="section" id="Koffing_Melds_Meld__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>It's not possible to construct a concrete version of this class as it's <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/abstract">abstract</a>, but it must
+be mentioned that even if you could, it is preferred to use <a class="xref" href="Koffing.Blocks.IBlock.html">IBlock</a> static functions such as
+<a class="xref" href="Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">GetPossible(IEnumerable&lt;Tile&gt;)</a>, or the
+<a class="xref" href="Koffing.Melds.Meld.html#Koffing_Melds_Meld_GetFirstLevelMelds_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">GetFirstLevelMelds(IEnumerable&lt;Tile&gt;)</a> static helper function in this class to ensure proper
+semantic meanings.</p>
+</div>
 
 
 
@@ -248,10 +262,11 @@ Class Meld  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Melds_Meld_GetFirstLevelMelds_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Melds.Meld.GetFirstLevelMelds(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
   GetFirstLevelMelds(IEnumerable&lt;Tile&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Meld.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Meld.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns all possible first-level melds from a collection of <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -261,13 +276,16 @@ Class Meld  <a class="header-action link-secondary" title="View source" href="ht
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s to use to create <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s of first-level melds.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s of first-level melds that can be created from
+<code class="paramref">tiles</code>.</p>
+</dd>
   </dl>
 
 
@@ -276,6 +294,12 @@ Class Meld  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
+  <h4 class="section" id="Koffing_Melds_Meld_GetFirstLevelMelds_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A &quot;first-level&quot; meld is a single <a class="xref" href="Koffing.Melds.Chow.html">Chow</a>, <a class="xref" href="Koffing.Melds.Pung.html">Pung</a>, or <a class="xref" href="Koffing.Melds.Kong.html">Kong</a> that can be made
+from <code class="paramref">tiles</code>. Note that this does not include <a class="xref" href="Koffing.Melds.Pair.html">Pair</a>s. Instead,
+<a class="xref" href="Koffing.Waits.Wait.html#Koffing_Waits_Wait_GetFirstLevelWaits_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">GetFirstLevelWaits(IEnumerable&lt;Tile&gt;)</a> will generate first-level <a class="xref" href="Koffing.Waits.PairWait.html">PairWait</a>s,
+which can be explicitly cast to <a class="xref" href="Koffing.Melds.Pair.html">Pair</a>s.</p>
+</div>
 
 
 
@@ -284,7 +308,7 @@ Class Meld  <a class="header-action link-secondary" title="View source" href="ht
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Meld.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Meld.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
 

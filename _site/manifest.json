@@ -495,7 +495,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Melds.Chow",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Melds.Chow.yml\" sourcestartlinenumber=\"1\">A meld made up of a sequence of three tiles in the same suit, such as 3 Pin, 4 Pin, and 5 Pin (&quot;345p&quot;).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -509,7 +509,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Melds.Kong",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Melds.Kong.yml\" sourcestartlinenumber=\"1\">A meld made up of a quad of four of the same tile, such as 2 Zi, 2 Zi, 2 Zi, 2 Zi (&quot;2222z&quot;).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -523,7 +523,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Melds.Meld",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Melds.Meld.yml\" sourcestartlinenumber=\"1\">An abstract derived <xref href=\"Koffing.Blocks.Block\" data-throw-if-not-resolved=\"false\"></xref> with the semantic meaning of being a &quot;completed&quot; part of a hand.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -537,7 +537,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Melds.Pair",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Melds.Pair.yml\" sourcestartlinenumber=\"1\">A meld made up of a pair of two of the same tile such as 7 Pin, 7 Pin (&quot;77p&quot;).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -551,7 +551,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Melds.Pung",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Melds.Pung.yml\" sourcestartlinenumber=\"1\">A meld made up of a triplet of three of the same tile such as 3 Man, 3 Man, 3 Man (&quot;333m&quot;).</p>\n"
     },
     {
       "type": "ManagedReference",

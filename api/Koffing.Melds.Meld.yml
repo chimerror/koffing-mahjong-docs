@@ -21,10 +21,16 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Meld
     path: ../Koffing/Scripts/Melds/Meld.cs
-    startLine: 7
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Melds
+  summary: An abstract derived <xref href="Koffing.Blocks.Block" data-throw-if-not-resolved="false"></xref> with the semantic meaning of being a "completed" part of a hand.
+  remarks: >-
+    A meld is a <xref href="Koffing.Blocks.Block" data-throw-if-not-resolved="false"></xref> that does not need any additional tiles to be a useful part of a hand, compared to
+
+    a <xref href="Koffing.Waits.Wait" data-throw-if-not-resolved="false"></xref>, which is incomplete, and would become a meld given additional tiles.
+  example: []
   syntax:
     content: 'public abstract class Meld : Block, IEnumerable<Tile>, IEnumerable, IBlock, IComparable<Block>, IEquatable<Block>'
     content.vb: Public MustInherit Class Meld Inherits Block Implements IEnumerable(Of Tile), IEnumerable, IBlock, IComparable(Of Block), IEquatable(Of Block)
@@ -80,17 +86,32 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetFirstLevelMelds
     path: ../Koffing/Scripts/Melds/Meld.cs
-    startLine: 9
+    startLine: 33
   assemblies:
   - Koffing
   namespace: Koffing.Melds
+  summary: Returns all possible first-level melds from a collection of <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s.
+  remarks: >-
+    A "first-level" meld is a single <xref href="Koffing.Melds.Chow" data-throw-if-not-resolved="false"></xref>, <xref href="Koffing.Melds.Pung" data-throw-if-not-resolved="false"></xref>, or <xref href="Koffing.Melds.Kong" data-throw-if-not-resolved="false"></xref> that can be made
+
+    from <code class="paramref">tiles</code>. Note that this does not include <xref href="Koffing.Melds.Pair" data-throw-if-not-resolved="false"></xref>s. Instead,
+
+    <xref href="Koffing.Waits.Wait.GetFirstLevelWaits(System.Collections.Generic.IEnumerable%7bKoffing.Tiles.Tile%7d)" data-throw-if-not-resolved="false"></xref> will generate first-level <xref href="Koffing.Waits.PairWait" data-throw-if-not-resolved="false"></xref>s,
+
+    which can be explicitly cast to <xref href="Koffing.Melds.Pair" data-throw-if-not-resolved="false"></xref>s.
+  example: []
   syntax:
     content: public static IEnumerable<MadeBlockContext> GetFirstLevelMelds(IEnumerable<Tile> tiles)
     parameters:
     - id: tiles
       type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+      description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s to use to create <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s of first-level melds.
     return:
       type: System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext}
+      description: >-
+        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s of first-level melds that can be created from
+
+        <code class="paramref">tiles</code>.
     content.vb: Public Shared Function GetFirstLevelMelds(tiles As IEnumerable(Of Tile)) As IEnumerable(Of MadeBlockContext)
   overload: Koffing.Melds.Meld.GetFirstLevelMelds*
   nameWithType.vb: Meld.GetFirstLevelMelds(IEnumerable(Of Tile))
@@ -114,21 +135,48 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Melds/Meld.cs
-    startLine: 16
+    startLine: 51
   assemblies:
   - Koffing
   namespace: Koffing.Melds
+  summary: Constructor. Optionally takes in an <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s.
+  remarks: >-
+    It's not possible to construct a concrete version of this class as it's <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/abstract">abstract</a>, but it must
+
+    be mentioned that even if you could, it is preferred to use <xref href="Koffing.Blocks.IBlock" data-throw-if-not-resolved="false"></xref> static functions such as
+
+    <xref href="Koffing.Blocks.IBlock.GetPossible(System.Collections.Generic.IEnumerable%7bKoffing.Tiles.Tile%7d)" data-throw-if-not-resolved="false"></xref>, or the
+
+    <xref href="Koffing.Melds.Meld.GetFirstLevelMelds(System.Collections.Generic.IEnumerable%7bKoffing.Tiles.Tile%7d)" data-throw-if-not-resolved="false"></xref> static helper function in this class to ensure proper
+
+    semantic meanings.
+  example: []
   syntax:
     content: public Meld(IEnumerable<Tile> tiles = null)
     parameters:
     - id: tiles
       type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+      description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s that make up the meld.
     content.vb: Public Sub New(tiles As IEnumerable(Of Tile) = Nothing)
   overload: Koffing.Melds.Meld.#ctor*
   nameWithType.vb: Meld.New(IEnumerable(Of Tile))
   fullName.vb: Koffing.Melds.Meld.New(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
   name.vb: New(IEnumerable(Of Tile))
 references:
+- uid: Koffing.Blocks.Block
+  commentId: T:Koffing.Blocks.Block
+  parent: Koffing.Blocks
+  href: Koffing.Blocks.Block.html
+  name: Block
+  nameWithType: Block
+  fullName: Koffing.Blocks.Block
+- uid: Koffing.Waits.Wait
+  commentId: T:Koffing.Waits.Wait
+  parent: Koffing.Waits
+  href: Koffing.Waits.Wait.html
+  name: Wait
+  nameWithType: Wait
+  fullName: Koffing.Waits.Wait
 - uid: Koffing.Melds
   commentId: N:Koffing.Melds
   name: Koffing.Melds
@@ -157,13 +205,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Koffing.Blocks.Block
-  commentId: T:Koffing.Blocks.Block
-  parent: Koffing.Blocks
-  href: Koffing.Blocks.Block.html
-  name: Block
-  nameWithType: Block
-  fullName: Koffing.Blocks.Block
 - uid: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
   commentId: T:System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
   parent: System.Collections.Generic
@@ -846,13 +887,6 @@ references:
     href: Koffing.Tiles.Tile.html
   - name: )
   - name: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: Koffing.Blocks
   commentId: N:Koffing.Blocks
   name: Koffing.Blocks
@@ -870,6 +904,30 @@ references:
   - name: .
   - uid: Koffing.Blocks
     name: Blocks
+- uid: Koffing.Waits
+  commentId: N:Koffing.Waits
+  name: Koffing.Waits
+  nameWithType: Koffing.Waits
+  fullName: Koffing.Waits
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Waits
+    name: Waits
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Waits
+    name: Waits
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: System.Collections.Generic.IEnumerable`1
   commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true
@@ -1072,6 +1130,98 @@ references:
   name: Koffing
   nameWithType: Koffing
   fullName: Koffing
+- uid: Koffing.Tiles.Tile
+  commentId: T:Koffing.Tiles.Tile
+  parent: Koffing.Tiles
+  href: Koffing.Tiles.Tile.html
+  name: Tile
+  nameWithType: Tile
+  fullName: Koffing.Tiles.Tile
+- uid: Koffing.Melds.Chow
+  commentId: T:Koffing.Melds.Chow
+  parent: Koffing.Melds
+  href: Koffing.Melds.Chow.html
+  name: Chow
+  nameWithType: Chow
+  fullName: Koffing.Melds.Chow
+- uid: Koffing.Melds.Pung
+  commentId: T:Koffing.Melds.Pung
+  parent: Koffing.Melds
+  href: Koffing.Melds.Pung.html
+  name: Pung
+  nameWithType: Pung
+  fullName: Koffing.Melds.Pung
+- uid: Koffing.Melds.Kong
+  commentId: T:Koffing.Melds.Kong
+  parent: Koffing.Melds
+  href: Koffing.Melds.Kong.html
+  name: Kong
+  nameWithType: Kong
+  fullName: Koffing.Melds.Kong
+- uid: Koffing.Melds.Pair
+  commentId: T:Koffing.Melds.Pair
+  parent: Koffing.Melds
+  href: Koffing.Melds.Pair.html
+  name: Pair
+  nameWithType: Pair
+  fullName: Koffing.Melds.Pair
+- uid: Koffing.Waits.Wait.GetFirstLevelWaits(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  commentId: M:Koffing.Waits.Wait.GetFirstLevelWaits(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  parent: Koffing.Waits.Wait
+  isExternal: true
+  href: Koffing.Waits.Wait.html#Koffing_Waits_Wait_GetFirstLevelWaits_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  name: GetFirstLevelWaits(IEnumerable<Tile>)
+  nameWithType: Wait.GetFirstLevelWaits(IEnumerable<Tile>)
+  fullName: Koffing.Waits.Wait.GetFirstLevelWaits(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
+  nameWithType.vb: Wait.GetFirstLevelWaits(IEnumerable(Of Tile))
+  fullName.vb: Koffing.Waits.Wait.GetFirstLevelWaits(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
+  name.vb: GetFirstLevelWaits(IEnumerable(Of Tile))
+  spec.csharp:
+  - uid: Koffing.Waits.Wait.GetFirstLevelWaits(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: GetFirstLevelWaits
+    href: Koffing.Waits.Wait.html#Koffing_Waits_Wait_GetFirstLevelWaits_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Koffing.Waits.Wait.GetFirstLevelWaits(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: GetFirstLevelWaits
+    href: Koffing.Waits.Wait.html#Koffing_Waits_Wait_GetFirstLevelWaits_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
+  - name: )
+- uid: Koffing.Waits.PairWait
+  commentId: T:Koffing.Waits.PairWait
+  parent: Koffing.Waits
+  href: Koffing.Waits.PairWait.html
+  name: PairWait
+  nameWithType: PairWait
+  fullName: Koffing.Waits.PairWait
+- uid: Koffing.Blocks.MadeBlockContext
+  commentId: T:Koffing.Blocks.MadeBlockContext
+  parent: Koffing.Blocks
+  href: Koffing.Blocks.MadeBlockContext.html
+  name: MadeBlockContext
+  nameWithType: MadeBlockContext
+  fullName: Koffing.Blocks.MadeBlockContext
 - uid: Koffing.Melds.Meld.GetFirstLevelMelds*
   commentId: Overload:Koffing.Melds.Meld.GetFirstLevelMelds
   href: Koffing.Melds.Meld.html#Koffing_Melds_Meld_GetFirstLevelMelds_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
@@ -1111,6 +1261,109 @@ references:
     name: MadeBlockContext
     href: Koffing.Blocks.MadeBlockContext.html
   - name: )
+- uid: Koffing.Tiles
+  commentId: N:Koffing.Tiles
+  name: Koffing.Tiles
+  nameWithType: Koffing.Tiles
+  fullName: Koffing.Tiles
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+- uid: Koffing.Blocks.IBlock.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  commentId: M:Koffing.Blocks.IBlock.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  parent: Koffing.Blocks.IBlock
+  isExternal: true
+  href: Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  name: GetPossible(IEnumerable<Tile>)
+  nameWithType: IBlock.GetPossible(IEnumerable<Tile>)
+  fullName: Koffing.Blocks.IBlock.GetPossible(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
+  nameWithType.vb: IBlock.GetPossible(IEnumerable(Of Tile))
+  fullName.vb: Koffing.Blocks.IBlock.GetPossible(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
+  name.vb: GetPossible(IEnumerable(Of Tile))
+  spec.csharp:
+  - uid: Koffing.Blocks.IBlock.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: GetPossible
+    href: Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Koffing.Blocks.IBlock.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: GetPossible
+    href: Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
+  - name: )
+- uid: Koffing.Melds.Meld.GetFirstLevelMelds(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  commentId: M:Koffing.Melds.Meld.GetFirstLevelMelds(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  parent: Koffing.Melds.Meld
+  isExternal: true
+  href: Koffing.Melds.Meld.html#Koffing_Melds_Meld_GetFirstLevelMelds_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  name: GetFirstLevelMelds(IEnumerable<Tile>)
+  nameWithType: Meld.GetFirstLevelMelds(IEnumerable<Tile>)
+  fullName: Koffing.Melds.Meld.GetFirstLevelMelds(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
+  nameWithType.vb: Meld.GetFirstLevelMelds(IEnumerable(Of Tile))
+  fullName.vb: Koffing.Melds.Meld.GetFirstLevelMelds(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
+  name.vb: GetFirstLevelMelds(IEnumerable(Of Tile))
+  spec.csharp:
+  - uid: Koffing.Melds.Meld.GetFirstLevelMelds(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: GetFirstLevelMelds
+    href: Koffing.Melds.Meld.html#Koffing_Melds_Meld_GetFirstLevelMelds_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Koffing.Melds.Meld.GetFirstLevelMelds(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: GetFirstLevelMelds
+    href: Koffing.Melds.Meld.html#Koffing_Melds_Meld_GetFirstLevelMelds_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
+  - name: )
 - uid: Koffing.Melds.Meld.#ctor*
   commentId: Overload:Koffing.Melds.Meld.#ctor
   href: Koffing.Melds.Meld.html#Koffing_Melds_Meld__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
@@ -1120,3 +1373,10 @@ references:
   nameWithType.vb: Meld.New
   fullName.vb: Koffing.Melds.Meld.New
   name.vb: New
+- uid: Koffing.Melds.Meld
+  commentId: T:Koffing.Melds.Meld
+  parent: Koffing.Melds
+  href: Koffing.Melds.Meld.html
+  name: Meld
+  nameWithType: Meld
+  fullName: Koffing.Melds.Meld

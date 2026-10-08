@@ -78,7 +78,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Pairs
     path: ../Koffing/Scripts/Waits/ThirteenOrphansWait.cs
-    startLine: 12
+    startLine: 14
   assemblies:
   - Koffing
   namespace: Koffing.Waits
@@ -107,7 +107,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Waits/ThirteenOrphansWait.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - Koffing
   namespace: Koffing.Waits
@@ -139,7 +139,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Waits/ThirteenOrphansWait.cs
-    startLine: 20
+    startLine: 22
   assemblies:
   - Koffing
   namespace: Koffing.Waits
@@ -173,7 +173,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetPossible
     path: ../Koffing/Scripts/Waits/ThirteenOrphansWait.cs
-    startLine: 25
+    startLine: 27
   assemblies:
   - Koffing
   namespace: Koffing.Waits
@@ -216,14 +216,14 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCodeBasis
     path: ../Koffing/Scripts/Waits/ThirteenOrphansWait.cs
-    startLine: 62
+    startLine: 64
   assemblies:
   - Koffing
   namespace: Koffing.Waits
   summary: >-
     Get the hash code basis representing this block type, which will be exponentiated as a part of calculating
 
-    <xref href="System.Object.GetHashCode" data-throw-if-not-resolved="false"></xref>.
+    <xref href="Koffing.Blocks.Block.GetHashCode" data-throw-if-not-resolved="false"></xref>.
   remarks: >-
     The number returned here should be a unique prime number among all derived <xref href="Koffing.Blocks" data-throw-if-not-resolved="false"></xref> to ensure proper
 
@@ -258,7 +258,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Waits/ThirteenOrphansWait.cs
-    startLine: 69
+    startLine: 71
   assemblies:
   - Koffing
   namespace: Koffing.Waits
@@ -1360,30 +1360,6 @@ references:
   - name: .
   - uid: Koffing.Tiles
     name: Tiles
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  - name: (
-  - name: )
 - uid: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
   commentId: M:Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
   isExternal: true

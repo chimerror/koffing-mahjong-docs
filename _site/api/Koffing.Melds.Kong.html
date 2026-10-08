@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Kong | Koffing Mahjong Engine ">
       
-      
+      <meta name="description" content="A meld made up of a quad of four of the same tile, such as 2 Zi, 2 Zi, 2 Zi, 2 Zi (&amp;quot;2222z&amp;quot;).">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Koffing_Melds_Kong" data-uid="Koffing.Melds.Kong" class="text-break">
-Class Kong  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Kong.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class Kong  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Kong.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Kong  <a class="header-action link-secondary" title="View source" href="ht
   <dl><dt>Assembly</dt><dd>Koffing.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A meld made up of a quad of four of the same tile, such as 2 Zi, 2 Zi, 2 Zi, 2 Zi (&quot;2222z&quot;).</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -190,6 +191,10 @@ Class Kong  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
+  <h2 id="Koffing_Melds_Kong_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Also known as a &quot;kan&quot; in Japanese terms. In this library, that term is saved to mean the call a player makes to form
+this meld. As always, a red five counts the same as a non-red five.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -200,10 +205,11 @@ Class Kong  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Melds_Kong__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Melds.Kong.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
   Kong(IEnumerable&lt;Tile&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Kong.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Kong.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructor. Optionally takes in an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -213,7 +219,8 @@ Class Kong  <a class="header-action link-secondary" title="View source" href="ht
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s that make up the kong.</p>
+</dd>
   </dl>
 
 
@@ -223,6 +230,11 @@ Class Kong  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
+  <h4 class="section" id="Koffing_Melds_Kong__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This constructor should not be used in most cases, instead preferring the
+<a class="xref" href="Koffing.Melds.Kong.html#Koffing_Melds_Kong_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">GetPossible(IEnumerable&lt;Tile&gt;)</a> and <a class="xref" href="Koffing.Melds.Kong.html#Koffing_Melds_Kong_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">GetPossibleForTile(Tile, IEnumerable&lt;Tile&gt;)</a>
+static helper functions in this class to maintain the semantic meaning of a kong.</p>
+</div>
 
 
 
@@ -235,11 +247,11 @@ Class Kong  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Melds_Kong_GetHashCodeBasis" data-uid="Koffing.Melds.Kong.GetHashCodeBasis">
   GetHashCodeBasis()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Kong.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Kong.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Get the hash code basis representing this block type, which will be exponentiated as a part of calculating
-<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">GetHashCode()</a>.</p>
+  <div class="markdown level1 summary"><p>Get the hash code basis representing a kong, which will be exponentiated as a part of calculating
+<a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCode">GetHashCode()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -251,7 +263,7 @@ Class Kong  <a class="header-action link-secondary" title="View source" href="ht
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The basis to use when calculating hash codes for this block type.</p>
+    <dd><p>The basis to use when calculating hash codes for kongs.</p>
 </dd>
   </dl>
 
@@ -261,11 +273,6 @@ Class Kong  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
-  <h4 class="section" id="Koffing_Melds_Kong_GetHashCodeBasis_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>The number returned here should be a unique prime number among all derived <a class="xref" href="Koffing.Blocks.html">Koffing.Blocks</a> to ensure proper
-hashing. The current set of numbers is verified in
-<a class="xref" href="Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_Koffing_Blocks_Block_System_Int32_">GetBlockHashCodeIsCorrect(Block, int)</a>.</p>
-</div>
 
 
 
@@ -274,10 +281,10 @@ hashing. The current set of numbers is verified in
 
   <h3 id="Koffing_Melds_Kong_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Melds.Kong.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
   GetPossible(IEnumerable&lt;Tile&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Kong.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Kong.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Get possible blocks of this type that can be created from a collection of tiles.</p>
+  <div class="markdown level1 summary"><p>Get possible kongs that can be created from a collection of tiles.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -288,14 +295,14 @@ hashing. The current set of numbers is verified in
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
-    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s to use to create <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s.</p>
+    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s to use to create <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s of kongs.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>&gt;</dt>
-    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s that can be created from
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s of kongs that can be created from
 <code class="paramref">tiles</code>.</p>
 </dd>
   </dl>
@@ -314,10 +321,10 @@ hashing. The current set of numbers is verified in
 
   <h3 id="Koffing_Melds_Kong_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Melds.Kong.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
   GetPossibleForTile(Tile, IEnumerable&lt;Tile&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Kong.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Kong.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Get possible blocks of this type that can be created using a specified tile and set of other tiles.</p>
+  <div class="markdown level1 summary"><p>Get possible kongs that can be created using a specified tile and set of other tiles.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -328,7 +335,7 @@ hashing. The current set of numbers is verified in
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tile</code> <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a></dt>
-    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a> that must be included in all created blocks.</p>
+    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a> that must be included in all created kongs.</p>
 </dd>
     <dt><code>otherTiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
     <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of other <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s to use.</p>
@@ -338,7 +345,7 @@ hashing. The current set of numbers is verified in
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>&gt;</dt>
-    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s that can be created from
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s of kongs that can be created from
 <code class="paramref">tile</code> and <code class="paramref">otherTiles</code>.</p>
 </dd>
   </dl>
@@ -357,7 +364,7 @@ hashing. The current set of numbers is verified in
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Kong.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Melds/Kong.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 

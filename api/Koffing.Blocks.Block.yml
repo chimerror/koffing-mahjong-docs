@@ -347,7 +347,7 @@ items:
   summary: >-
     Get the hash code basis representing this block type, which will be exponentiated as a part of calculating
 
-    <xref href="System.Object.GetHashCode" data-throw-if-not-resolved="false"></xref>.
+    <xref href="Koffing.Blocks.Block.GetHashCode" data-throw-if-not-resolved="false"></xref>.
   remarks: >-
     The number returned here should be a unique prime number among all derived <xref href="Koffing.Blocks" data-throw-if-not-resolved="false"></xref> to ensure proper
 
@@ -1632,28 +1632,23 @@ references:
     href: Koffing.Tiles.Tile.html
   - name: )
   - name: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+- uid: Koffing.Blocks.Block.GetHashCode
+  commentId: M:Koffing.Blocks.Block.GetHashCode
+  parent: Koffing.Blocks.Block
+  href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCode
   name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
+  nameWithType: Block.GetHashCode()
+  fullName: Koffing.Blocks.Block.GetHashCode()
   spec.csharp:
-  - uid: System.Object.GetHashCode
+  - uid: Koffing.Blocks.Block.GetHashCode
     name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCode
   - name: (
   - name: )
   spec.vb:
-  - uid: System.Object.GetHashCode
+  - uid: Koffing.Blocks.Block.GetHashCode
     name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+    href: Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCode
   - name: (
   - name: )
 - uid: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
@@ -1954,6 +1949,30 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
   - name: (
   - name: T
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
   - name: )
 - uid: Koffing.Blocks.Block.GetHashCode*
   commentId: Overload:Koffing.Blocks.Block.GetHashCode
