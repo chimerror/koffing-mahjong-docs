@@ -141,11 +141,14 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CompareTo
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 56
+    startLine: 83
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
-  summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+  summary: >-
+    Compares the current instance with another object of the same type and returns an integer that indicates whether
+
+    the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
   remarks: >-
     Comparison is done by comparing:
 
@@ -163,12 +166,16 @@ items:
     parameters:
     - id: that
       type: Koffing.Blocks.BlockSet
+      description: A <xref href="Koffing.Blocks.BlockSet" data-throw-if-not-resolved="false"></xref> to compare with this instance.
     return:
       type: System.Int32
       description: >-
-        A value that indicates the relative order of the objects being compared. The return value has these meanings:  
+        A value that indicates the relative order of the objects being compared. The return value has these meanings:
 
-         <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
+
+        <table><thead><tr><th class="term">Value</th><th class="description">Meaning</th></tr></thead><tbody><tr><td class="term">Less than zero</td><td class="description">This instance precedes <code class="paramref">that</code> in the sort order.</td></tr><tr><td class="term">Zero</td><td class="description">
+        			This instance occurs in the same position in the sort order as <code class="paramref">that</code>.
+        		</td></tr><tr><td class="term">Greater than zero</td><td class="description">This instance follows <code class="paramref">that</code> in the sort order.</td></tr></tbody></table>
     content.vb: Public Function CompareTo(that As BlockSet) As Integer
   overload: Koffing.Blocks.BlockSet.CompareTo*
   implements:
@@ -191,7 +198,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 98
+    startLine: 132
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -213,9 +220,13 @@ items:
     parameters:
     - id: that
       type: Koffing.Blocks.BlockSet
+      description: The <xref href="Koffing.Blocks.BlockSet" data-throw-if-not-resolved="false"></xref> to compare with the current object.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">that</code> parameter; otherwise,
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function Equals(that As BlockSet) As Boolean
   overload: Koffing.Blocks.BlockSet.Equals*
   implements:
@@ -238,7 +249,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetEnumerator
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 103
+    startLine: 138
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -271,23 +282,26 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 117
+    startLine: 154
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
   summary: Determines whether the specified object is equal to the current object.
-  remarks: Defers to <xref href="Koffing.Blocks.BlockSet.Equals(Koffing.Blocks.BlockSet)" data-throw-if-not-resolved="false"></xref> after converting <code class="paramref">obj</code> using the <code>as</code> keyword.
+  remarks: >-
+    Defers to <xref href="Koffing.Blocks.BlockSet.Equals(Koffing.Blocks.BlockSet)" data-throw-if-not-resolved="false"></xref> after converting <code class="paramref">that</code> using the
+
+    <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/operators/type-testing-and-cast#as-operator">as</a> keyword.
   example: []
   syntax:
-    content: public override bool Equals(object obj)
+    content: public override bool Equals(object that)
     parameters:
-    - id: obj
+    - id: that
       type: System.Object
       description: The object to compare with the current object.
     return:
       type: System.Boolean
       description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
-    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    content.vb: Public Overrides Function Equals(that As Object) As Boolean
   overridden: System.Object.Equals(System.Object)
   overload: Koffing.Blocks.BlockSet.Equals*
   nameWithType.vb: BlockSet.Equals(Object)
@@ -311,7 +325,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCode
     path: ../Koffing/Scripts/Blocks/BlockSet.cs
-    startLine: 129
+    startLine: 166
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -1032,6 +1046,13 @@ references:
     name: Block
     href: Koffing.Blocks.Block.html
   - name: )
+- uid: Koffing.Blocks.BlockSet
+  commentId: T:Koffing.Blocks.BlockSet
+  parent: Koffing.Blocks
+  href: Koffing.Blocks.BlockSet.html
+  name: BlockSet
+  nameWithType: BlockSet
+  fullName: Koffing.Blocks.BlockSet
 - uid: Koffing.Blocks.BlockSet.CompareTo*
   commentId: Overload:Koffing.Blocks.BlockSet.CompareTo
   href: Koffing.Blocks.BlockSet.html#Koffing_Blocks_BlockSet_CompareTo_Koffing_Blocks_BlockSet_
@@ -1068,13 +1089,6 @@ references:
     name: BlockSet
     href: Koffing.Blocks.BlockSet.html
   - name: )
-- uid: Koffing.Blocks.BlockSet
-  commentId: T:Koffing.Blocks.BlockSet
-  parent: Koffing.Blocks
-  href: Koffing.Blocks.BlockSet.html
-  name: BlockSet
-  nameWithType: BlockSet
-  fullName: Koffing.Blocks.BlockSet
 - uid: System.IComparable`1.CompareTo(`0)
   commentId: M:System.IComparable`1.CompareTo(`0)
   isExternal: true

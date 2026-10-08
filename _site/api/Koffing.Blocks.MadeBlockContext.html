@@ -270,10 +270,11 @@ block returned by <a class="xref" href="Koffing.Blocks.MadeBlockContext.html#Kof
 
   <h3 id="Koffing_Blocks_MadeBlockContext_CompareTo_Koffing_Blocks_MadeBlockContext_" data-uid="Koffing.Blocks.MadeBlockContext.CompareTo(Koffing.Blocks.MadeBlockContext)">
   CompareTo(MadeBlockContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/MadeBlockContext.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/MadeBlockContext.cs/#L201"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.</p>
+  <div class="markdown level1 summary"><p>Compares the current instance with another object of the same type and returns an integer that indicates whether
+the current instance precedes, follows, or occurs in the same position in the sort order as the other object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -284,14 +285,17 @@ block returned by <a class="xref" href="Koffing.Blocks.MadeBlockContext.html#Kof
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>that</code> <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a></dt>
-    <dd></dd>
+    <dd><p>A <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a> to compare with this instance.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd><p>A value that indicates the relative order of the objects being compared. The return value has these meanings:</p>
- <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
+<table><thead><tr><th class="term">Value</th><th class="description">Meaning</th></tr></thead><tbody><tr><td class="term">Less than zero</td><td class="description">This instance precedes <code class="paramref">that</code> in the sort order.</td></tr><tr><td class="term">Zero</td><td class="description">
+			This instance occurs in the same position in the sort order as <code class="paramref">that</code>.
+		</td></tr><tr><td class="term">Greater than zero</td><td class="description">This instance follows <code class="paramref">that</code> in the sort order.</td></tr></tbody></table>
 </dd>
   </dl>
 
@@ -304,7 +308,7 @@ block returned by <a class="xref" href="Koffing.Blocks.MadeBlockContext.html#Kof
   <h4 class="section" id="Koffing_Blocks_MadeBlockContext_CompareTo_Koffing_Blocks_MadeBlockContext__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>Comparison is done by comparing:</p>
 <ol><li>
-		if <code class="paramref">thatContext</code> is null (always 1)
+		if <code class="paramref">that</code> is null (always 1)
 	</li><li>
 		if the <a class="xref" href="Koffing.Blocks.MadeBlockContext.html#Koffing_Blocks_MadeBlockContext_MadeBlock">MadeBlock</a>s aren't equal and then using <a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_CompareTo_Koffing_Blocks_Block_">CompareTo(Block)</a> on
 		them if not.
@@ -322,7 +326,7 @@ block returned by <a class="xref" href="Koffing.Blocks.MadeBlockContext.html#Kof
 
   <h3 id="Koffing_Blocks_MadeBlockContext_Equals_Koffing_Blocks_MadeBlockContext_" data-uid="Koffing.Blocks.MadeBlockContext.Equals(Koffing.Blocks.MadeBlockContext)">
   Equals(MadeBlockContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/MadeBlockContext.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/MadeBlockContext.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
@@ -336,13 +340,15 @@ block returned by <a class="xref" href="Koffing.Blocks.MadeBlockContext.html#Kof
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>thatContext</code> <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a> to compare with the current object.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">thatContext</code> parameter;
+otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </dd>
   </dl>
 
@@ -372,7 +378,7 @@ block returned by <a class="xref" href="Koffing.Blocks.MadeBlockContext.html#Kof
 
   <h3 id="Koffing_Blocks_MadeBlockContext_Equals_System_Object_" data-uid="Koffing.Blocks.MadeBlockContext.Equals(System.Object)">
   Equals(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/MadeBlockContext.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/MadeBlockContext.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
@@ -386,7 +392,8 @@ block returned by <a class="xref" href="Koffing.Blocks.MadeBlockContext.html#Kof
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>that</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -420,7 +427,7 @@ block returned by <a class="xref" href="Koffing.Blocks.MadeBlockContext.html#Kof
 
   <h3 id="Koffing_Blocks_MadeBlockContext_GetHashCode" data-uid="Koffing.Blocks.MadeBlockContext.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/MadeBlockContext.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/MadeBlockContext.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
@@ -459,7 +466,7 @@ that same basis and the hash code of the tiles in <a class="xref" href="Koffing.
 
   <h3 id="Koffing_Blocks_MadeBlockContext_ToString" data-uid="Koffing.Blocks.MadeBlockContext.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/MadeBlockContext.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Blocks/MadeBlockContext.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>

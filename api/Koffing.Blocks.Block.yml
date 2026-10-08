@@ -427,7 +427,7 @@ items:
       description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s to use to create <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s.
     - id: blockType
       type: System.Type
-      description: The <xref href="System.Type" data-throw-if-not-resolved="false"></xref> of block to return
+      description: The <xref href="System.Type" data-throw-if-not-resolved="false"></xref> of block to return.
     return:
       type: System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext}
       description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s of type <code class="paramref">blockType</code>.
@@ -454,7 +454,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 245
+    startLine: 246
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -476,6 +476,7 @@ items:
     parameters:
     - id: that
       type: System.Object
+      description: The object to compare with the current object.
     return:
       type: System.Boolean
       description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
@@ -503,7 +504,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 275
+    startLine: 283
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -513,7 +514,7 @@ items:
 
 
     <ol><li>
-    		if <code class="paramref">that</code> is null (always false)
+    		if <code class="paramref">thatBlock</code> is null (always false)
     	</li><li>
     		type
     	</li><li>
@@ -527,9 +528,13 @@ items:
     parameters:
     - id: thatBlock
       type: Koffing.Blocks.Block
+      description: The <xref href="Koffing.Blocks.Block" data-throw-if-not-resolved="false"></xref> to compare with the current object.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">thatBlock</code> parameter; otherwise,
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Overridable Function Equals(thatBlock As Block) As Boolean
   overload: Koffing.Blocks.Block.Equals*
   implements:
@@ -552,7 +557,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCode
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 308
+    startLine: 316
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -588,7 +593,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetEnumerator
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 328
+    startLine: 336
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -621,11 +626,14 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CompareTo
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 357
+    startLine: 391
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
-  summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+  summary: >-
+    Compares the current instance with another object of the same type and returns an integer that indicates whether
+
+    the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
   remarks: >-
     Comparison is done by comparing:
 
@@ -645,12 +653,16 @@ items:
     parameters:
     - id: that
       type: Koffing.Blocks.Block
+      description: A <xref href="Koffing.Blocks.Block" data-throw-if-not-resolved="false"></xref> to compare with this instance.
     return:
       type: System.Int32
       description: >-
-        A value that indicates the relative order of the objects being compared. The return value has these meanings:  
+        A value that indicates the relative order of the objects being compared. The return value has these meanings:
 
-         <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
+
+        <table><thead><tr><th class="term">Value</th><th class="description">Meaning</th></tr></thead><tbody><tr><td class="term">Less than zero</td><td class="description">This instance precedes <code class="paramref">that</code> in the sort order.</td></tr><tr><td class="term">Zero</td><td class="description">
+        			This instance occurs in the same position in the sort order as <code class="paramref">that</code>.
+        		</td></tr><tr><td class="term">Greater than zero</td><td class="description">This instance follows <code class="paramref">that</code> in the sort order.</td></tr></tbody></table>
     content.vb: Public Function CompareTo(that As Block) As Integer
   overload: Koffing.Blocks.Block.CompareTo*
   implements:
@@ -673,7 +685,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ToString
     path: ../Koffing/Scripts/Blocks/Block.cs
-    startLine: 406
+    startLine: 440
   assemblies:
   - Koffing
   namespace: Koffing.Blocks

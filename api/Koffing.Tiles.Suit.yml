@@ -23,10 +23,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Suit
     path: ../Koffing/Scripts/Tiles/Suit.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: Represents the suit of a tile.
+  example: []
   syntax:
     content: public enum Suit
     content.vb: Public Enum Suit
@@ -50,7 +52,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Man
     path: ../Koffing/Scripts/Tiles/Suit.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -76,7 +78,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Pin
     path: ../Koffing/Scripts/Tiles/Suit.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -102,7 +104,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Sou
     path: ../Koffing/Scripts/Tiles/Suit.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -128,7 +130,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Zi
     path: ../Koffing/Scripts/Tiles/Suit.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - Koffing
   namespace: Koffing.Tiles

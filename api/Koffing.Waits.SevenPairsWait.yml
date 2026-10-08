@@ -314,7 +314,7 @@ items:
 
 
     <ol><li>
-    		if <code class="paramref">that</code> is null (always false)
+    		if <code class="paramref">thatBlock</code> is null (always false)
     	</li><li>
     		type
     	</li><li>
@@ -328,9 +328,13 @@ items:
     parameters:
     - id: thatBlock
       type: Koffing.Blocks.Block
+      description: The <xref href="Koffing.Blocks.Block" data-throw-if-not-resolved="false"></xref> to compare with the current object.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">thatBlock</code> parameter; otherwise,
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Overrides Function Equals(thatBlock As Block) As Boolean
   overridden: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
   overload: Koffing.Waits.SevenPairsWait.Equals*

@@ -32,10 +32,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Tile
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: Represents a tile.
+  example: []
   syntax:
     content: 'public class Tile : IComparable<Tile>, IEquatable<Tile>'
     content.vb: Public Class Tile Implements IComparable(Of Tile), IEquatable(Of Tile)
@@ -69,10 +71,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Suit
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 6
+    startLine: 12
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: The suit of the tile.
+  example: []
   syntax:
     content: public Suit Suit
     return:
@@ -96,10 +100,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Rank
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 7
+    startLine: 17
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: The rank of the tile, which is either a value 1-9 (1-7 for suit Zi) or 0 representing a red five.
+  example: []
   syntax:
     content: public int Rank
     return:
@@ -123,10 +129,15 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: FaceUp
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 8
+    startLine: 23
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: >-
+    If the tile is face-up. In general, this is meant to mean that the tile is face up to all players. UI for a
+
+    player's hand is encouraged to just ignore it in favor of showing the player.
+  example: []
   syntax:
     content: public bool FaceUp
     return:
@@ -150,15 +161,21 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RawRank
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 10
+    startLine: 30
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: >-
+    The "raw" rank of the tile, ignoring red fives. That is, it is the same as <xref href="Koffing.Tiles.Tile.Rank" data-throw-if-not-resolved="false"></xref>, unless that is 0,
+
+    in which case this returns 5.
+  example: []
   syntax:
     content: public int RawRank { get; }
     parameters: []
     return:
       type: System.Int32
+      description: ''
     content.vb: Public ReadOnly Property RawRank As Integer
   overload: Koffing.Tiles.Tile.RawRank*
 - uid: Koffing.Tiles.Tile.IsValidTile(Koffing.Tiles.Suit,System.Int32)
@@ -179,19 +196,29 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: IsValidTile
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 15
+    startLine: 45
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: Returns if a given suit and rank combination corresponds to a valid tile.
+  example: []
   syntax:
     content: public static bool IsValidTile(Suit suit, int rank)
     parameters:
     - id: suit
       type: Koffing.Tiles.Suit
+      description: The suit to check.
     - id: rank
       type: System.Int32
+      description: The rank to check.
     return:
       type: System.Boolean
+      description: >-
+        If <code class="paramref">suit</code> is <xref href="Koffing.Tiles.Suit.Zi" data-throw-if-not-resolved="false"></xref> and <code class="paramref">rank</code> is 1-7, returns
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>. If <code class="paramref">suit</code> is any other suit, and <code class="paramref">rank</code> is 0-9, returns
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>. Otherwise, returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Shared Function IsValidTile(suit As Suit, rank As Integer) As Boolean
   overload: Koffing.Tiles.Tile.IsValidTile*
   nameWithType.vb: Tile.IsValidTile(Suit, Integer)
@@ -215,10 +242,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 20
+    startLine: 53
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: Parameterless constructor. Returns a new tile with suit <xref href="Koffing.Tiles.Suit.Man" data-throw-if-not-resolved="false"></xref> and rank <code>1</code>.
+  example: []
   syntax:
     content: public Tile()
     content.vb: Public Sub New()
@@ -244,17 +273,21 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 24
+    startLine: 62
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: Constructor taking a specified suit and rank.
+  example: []
   syntax:
     content: public Tile(Suit suit, int rank = 1)
     parameters:
     - id: suit
       type: Koffing.Tiles.Suit
+      description: The suit of the tile.
     - id: rank
       type: System.Int32
+      description: The rank of the tile.
     content.vb: Public Sub New(suit As Suit, rank As Integer = 1)
   overload: Koffing.Tiles.Tile.#ctor*
   nameWithType.vb: Tile.New(Suit, Integer)
@@ -278,11 +311,22 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 30
+    startLine: 83
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
   summary: Determines whether the specified object is equal to the current object.
+  remarks: >-
+    Equality is determined by:
+
+
+    <ol><li>
+    		if <code class="paramref">that</code> is null (always false)
+    	</li><li>
+    		if <code class="paramref">that</code> is a <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>
+    	</li><li>
+    		then deferring to <xref href="Koffing.Tiles.Tile.Equals(Koffing.Tiles.Tile)" data-throw-if-not-resolved="false"></xref>
+    	</li></ol>
   example: []
   syntax:
     content: public override bool Equals(object that)
@@ -316,20 +360,37 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 41
+    startLine: 116
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
   summary: Indicates whether the current object is equal to another object of the same type.
+  remarks: >-
+    Equality is determined by:
+
+
+    <ol><li>
+    		if <code class="paramref">that</code> is null (always false)
+    	</li><li>
+    		if <xref href="Koffing.Tiles.Tile.Suit" data-throw-if-not-resolved="false"></xref>s equal
+    	</li><li>
+    		if <xref href="Koffing.Tiles.Tile.Rank" data-throw-if-not-resolved="false"></xref>s equal
+    	</li></ol>
+
+    Note that <xref href="Koffing.Tiles.Tile.FaceUp" data-throw-if-not-resolved="false"></xref> is NOT considered.
   example: []
   syntax:
     content: public bool Equals(Tile that)
     parameters:
     - id: that
       type: Koffing.Tiles.Tile
+      description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref> to compare with the current object.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">that</code> parameter; otherwise,
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function Equals(that As Tile) As Boolean
   overload: Koffing.Tiles.Tile.Equals*
   implements:
@@ -352,17 +413,37 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RawEquals
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 52
+    startLine: 150
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
+  summary: Does an equality comparison using <xref href="Koffing.Tiles.Tile.RawRank" data-throw-if-not-resolved="false"></xref> instead of <xref href="Koffing.Tiles.Tile.Rank" data-throw-if-not-resolved="false"></xref>
+  remarks: >-
+    Equality is determined by:
+
+
+    <ol><li>
+    		if <code class="paramref">that</code> is null (always false)
+    	</li><li>
+    		if <xref href="Koffing.Tiles.Tile.Suit" data-throw-if-not-resolved="false"></xref>s equal
+    	</li><li>
+    		if <xref href="Koffing.Tiles.Tile.RawRank" data-throw-if-not-resolved="false"></xref>s equal
+    	</li></ol>
+
+    Note that <xref href="Koffing.Tiles.Tile.FaceUp" data-throw-if-not-resolved="false"></xref> is NOT considered.
+  example: []
   syntax:
     content: public bool RawEquals(Tile that)
     parameters:
     - id: that
       type: Koffing.Tiles.Tile
+      description: The tile to compare against.
     return:
       type: System.Boolean
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">that</code> parameter (using
+
+        <xref href="Koffing.Tiles.Tile.RawRank" data-throw-if-not-resolved="false"></xref> instead of <xref href="Koffing.Tiles.Tile.Rank" data-throw-if-not-resolved="false"></xref>); otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function RawEquals(that As Tile) As Boolean
   overload: Koffing.Tiles.Tile.RawEquals*
 - uid: Koffing.Tiles.Tile.GetHashCode
@@ -383,11 +464,15 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCode
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 63
+    startLine: 166
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
   summary: Serves as the default hash function.
+  remarks: >-
+    Calculates the hash value using the integer value of <xref href="Koffing.Tiles.Tile.Suit" data-throw-if-not-resolved="false"></xref> raised to one plus the
+
+    <xref href="Koffing.Tiles.Tile.Rank" data-throw-if-not-resolved="false"></xref>. <xref href="Koffing.Tiles.Tile.Rank" data-throw-if-not-resolved="false"></xref> plus one is used to ensure unique hashes.
   example: []
   syntax:
     content: public override int GetHashCode()
@@ -415,23 +500,41 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CompareTo
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 70
+    startLine: 215
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
-  summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+  summary: >-
+    Compares the current instance with another object of the same type and returns an integer that indicates whether
+
+    the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+  remarks: >-
+    Comparison is done by comparing:
+
+
+    <ol><li>
+    		if <code class="paramref">that</code> is null (always 1)
+    	</li><li>
+    		<xref href="Koffing.Tiles.Tile.Suit" data-throw-if-not-resolved="false"></xref>
+    	</li><li>
+    		<xref href="Koffing.Tiles.Tile.Rank" data-throw-if-not-resolved="false"></xref>, accounting for placing rank 0 (red five) after rank 5.
+    	</li></ol>
   example: []
   syntax:
     content: public int CompareTo(Tile that)
     parameters:
     - id: that
       type: Koffing.Tiles.Tile
+      description: A <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref> to compare with this instance.
     return:
       type: System.Int32
       description: >-
-        A value that indicates the relative order of the objects being compared. The return value has these meanings:  
+        A value that indicates the relative order of the objects being compared. The return value has these meanings:
 
-         <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
+
+        <table><thead><tr><th class="term">Value</th><th class="description">Meaning</th></tr></thead><tbody><tr><td class="term">Less than zero</td><td class="description">This instance precedes <code class="paramref">that</code> in the sort order.</td></tr><tr><td class="term">Zero</td><td class="description">
+        			This instance occurs in the same position in the sort order as <code class="paramref">that</code>.
+        		</td></tr><tr><td class="term">Greater than zero</td><td class="description">This instance follows <code class="paramref">that</code> in the sort order.</td></tr></tbody></table>
     content.vb: Public Function CompareTo(that As Tile) As Integer
   overload: Koffing.Tiles.Tile.CompareTo*
   implements:
@@ -454,11 +557,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ToString
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 99
+    startLine: 248
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
   summary: Returns a string that represents the current object.
+  remarks: Prints the MPSZ notation of the tile as generated by <xref href="Koffing.Extensions.NotationFromTile(Koffing.Tiles.Tile)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public override string ToString()
@@ -855,18 +959,36 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Koffing.Tiles.Tile.Rank
+  commentId: F:Koffing.Tiles.Tile.Rank
+  href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_Rank
+  name: Rank
+  nameWithType: Tile.Rank
+  fullName: Koffing.Tiles.Tile.Rank
 - uid: Koffing.Tiles.Tile.RawRank*
   commentId: Overload:Koffing.Tiles.Tile.RawRank
   href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_RawRank
   name: RawRank
   nameWithType: Tile.RawRank
   fullName: Koffing.Tiles.Tile.RawRank
+- uid: Koffing.Tiles.Suit.Zi
+  commentId: F:Koffing.Tiles.Suit.Zi
+  href: Koffing.Tiles.Suit.html#Koffing_Tiles_Suit_Zi
+  name: Zi
+  nameWithType: Suit.Zi
+  fullName: Koffing.Tiles.Suit.Zi
 - uid: Koffing.Tiles.Tile.IsValidTile*
   commentId: Overload:Koffing.Tiles.Tile.IsValidTile
   href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_IsValidTile_Koffing_Tiles_Suit_System_Int32_
   name: IsValidTile
   nameWithType: Tile.IsValidTile
   fullName: Koffing.Tiles.Tile.IsValidTile
+- uid: Koffing.Tiles.Suit.Man
+  commentId: F:Koffing.Tiles.Suit.Man
+  href: Koffing.Tiles.Suit.html#Koffing_Tiles_Suit_Man
+  name: Man
+  nameWithType: Suit.Man
+  fullName: Koffing.Tiles.Suit.Man
 - uid: Koffing.Tiles.Tile.#ctor*
   commentId: Overload:Koffing.Tiles.Tile.#ctor
   href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile__ctor
@@ -876,6 +998,37 @@ references:
   nameWithType.vb: Tile.New
   fullName.vb: Koffing.Tiles.Tile.New
   name.vb: New
+- uid: Koffing.Tiles.Tile
+  commentId: T:Koffing.Tiles.Tile
+  parent: Koffing.Tiles
+  href: Koffing.Tiles.Tile.html
+  name: Tile
+  nameWithType: Tile
+  fullName: Koffing.Tiles.Tile
+- uid: Koffing.Tiles.Tile.Equals(Koffing.Tiles.Tile)
+  commentId: M:Koffing.Tiles.Tile.Equals(Koffing.Tiles.Tile)
+  href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_Equals_Koffing_Tiles_Tile_
+  name: Equals(Tile)
+  nameWithType: Tile.Equals(Tile)
+  fullName: Koffing.Tiles.Tile.Equals(Koffing.Tiles.Tile)
+  spec.csharp:
+  - uid: Koffing.Tiles.Tile.Equals(Koffing.Tiles.Tile)
+    name: Equals
+    href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_Equals_Koffing_Tiles_Tile_
+  - name: (
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
+  spec.vb:
+  - uid: Koffing.Tiles.Tile.Equals(Koffing.Tiles.Tile)
+    name: Equals
+    href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_Equals_Koffing_Tiles_Tile_
+  - name: (
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -915,6 +1068,18 @@ references:
   name: Equals
   nameWithType: Tile.Equals
   fullName: Koffing.Tiles.Tile.Equals
+- uid: Koffing.Tiles.Tile.Suit
+  commentId: F:Koffing.Tiles.Tile.Suit
+  href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_Suit
+  name: Suit
+  nameWithType: Tile.Suit
+  fullName: Koffing.Tiles.Tile.Suit
+- uid: Koffing.Tiles.Tile.FaceUp
+  commentId: F:Koffing.Tiles.Tile.FaceUp
+  href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_FaceUp
+  name: FaceUp
+  nameWithType: Tile.FaceUp
+  fullName: Koffing.Tiles.Tile.FaceUp
 - uid: System.IEquatable{Koffing.Tiles.Tile}.Equals(Koffing.Tiles.Tile)
   commentId: M:System.IEquatable{Koffing.Tiles.Tile}.Equals(Koffing.Tiles.Tile)
   parent: System.IEquatable{Koffing.Tiles.Tile}
@@ -945,13 +1110,6 @@ references:
     name: Tile
     href: Koffing.Tiles.Tile.html
   - name: )
-- uid: Koffing.Tiles.Tile
-  commentId: T:Koffing.Tiles.Tile
-  parent: Koffing.Tiles
-  href: Koffing.Tiles.Tile.html
-  name: Tile
-  nameWithType: Tile
-  fullName: Koffing.Tiles.Tile
 - uid: System.IEquatable`1.Equals(`0)
   commentId: M:System.IEquatable`1.Equals(`0)
   isExternal: true
@@ -977,6 +1135,12 @@ references:
   - name: (
   - name: T
   - name: )
+- uid: Koffing.Tiles.Tile.RawRank
+  commentId: P:Koffing.Tiles.Tile.RawRank
+  href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_RawRank
+  name: RawRank
+  nameWithType: Tile.RawRank
+  fullName: Koffing.Tiles.Tile.RawRank
 - uid: Koffing.Tiles.Tile.RawEquals*
   commentId: Overload:Koffing.Tiles.Tile.RawEquals
   href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_RawEquals_Koffing_Tiles_Tile_

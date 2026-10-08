@@ -775,7 +775,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Tiles.Suit",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Tiles.Suit.yml\" sourcestartlinenumber=\"1\">Represents the suit of a tile.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -789,7 +789,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Tiles.Tile",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Tiles.Tile.yml\" sourcestartlinenumber=\"1\">Represents a tile.</p>\n"
     },
     {
       "type": "ManagedReference",

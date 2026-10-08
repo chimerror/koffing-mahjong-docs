@@ -177,7 +177,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Blocks/MadeBlockContext.cs
-    startLine: 62
+    startLine: 63
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -199,6 +199,7 @@ items:
     parameters:
     - id: that
       type: System.Object
+      description: The object to compare with the current object.
     return:
       type: System.Boolean
       description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
@@ -226,7 +227,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Blocks/MadeBlockContext.cs
-    startLine: 91
+    startLine: 99
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -250,9 +251,13 @@ items:
     parameters:
     - id: thatContext
       type: Koffing.Blocks.MadeBlockContext
+      description: The <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref> to compare with the current object.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">thatContext</code> parameter;
+
+        otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function Equals(thatContext As MadeBlockContext) As Boolean
   overload: Koffing.Blocks.MadeBlockContext.Equals*
   implements:
@@ -275,7 +280,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCode
     path: ../Koffing/Scripts/Blocks/MadeBlockContext.cs
-    startLine: 130
+    startLine: 138
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
@@ -315,17 +320,20 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CompareTo
     path: ../Koffing/Scripts/Blocks/MadeBlockContext.cs
-    startLine: 165
+    startLine: 200
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
-  summary: Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+  summary: >-
+    Compares the current instance with another object of the same type and returns an integer that indicates whether
+
+    the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
   remarks: >-
     Comparison is done by comparing:
 
 
     <ol><li>
-    		if <code class="paramref">thatContext</code> is null (always 1)
+    		if <code class="paramref">that</code> is null (always 1)
     	</li><li>
     		if the <xref href="Koffing.Blocks.MadeBlockContext.MadeBlock" data-throw-if-not-resolved="false"></xref>s aren't equal and then using <xref href="Koffing.Blocks.Block.CompareTo(Koffing.Blocks.Block)" data-throw-if-not-resolved="false"></xref> on
     		them if not.
@@ -340,12 +348,16 @@ items:
     parameters:
     - id: that
       type: Koffing.Blocks.MadeBlockContext
+      description: A <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref> to compare with this instance.
     return:
       type: System.Int32
       description: >-
-        A value that indicates the relative order of the objects being compared. The return value has these meanings:  
+        A value that indicates the relative order of the objects being compared. The return value has these meanings:
 
-         <table><thead><tr><th class="term"> Value</th><th class="description"> Meaning</th></tr></thead><tbody><tr><td class="term"> Less than zero</td><td class="description"> This instance precedes <code class="paramref">other</code> in the sort order.</td></tr><tr><td class="term"> Zero</td><td class="description"> This instance occurs in the same position in the sort order as <code class="paramref">other</code>.</td></tr><tr><td class="term"> Greater than zero</td><td class="description"> This instance follows <code class="paramref">other</code> in the sort order.</td></tr></tbody></table>
+
+        <table><thead><tr><th class="term">Value</th><th class="description">Meaning</th></tr></thead><tbody><tr><td class="term">Less than zero</td><td class="description">This instance precedes <code class="paramref">that</code> in the sort order.</td></tr><tr><td class="term">Zero</td><td class="description">
+        			This instance occurs in the same position in the sort order as <code class="paramref">that</code>.
+        		</td></tr><tr><td class="term">Greater than zero</td><td class="description">This instance follows <code class="paramref">that</code> in the sort order.</td></tr></tbody></table>
     content.vb: Public Function CompareTo(that As MadeBlockContext) As Integer
   overload: Koffing.Blocks.MadeBlockContext.CompareTo*
   implements:
@@ -368,7 +380,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ToString
     path: ../Koffing/Scripts/Blocks/MadeBlockContext.cs
-    startLine: 223
+    startLine: 258
   assemblies:
   - Koffing
   namespace: Koffing.Blocks
