@@ -4208,15 +4208,15 @@ references:
   fullName.vb: Koffing.Waits.SevenPairsWait.New(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
   nameWithType: SevenPairsWait.SevenPairsWait(IEnumerable<Tile>)
   nameWithType.vb: SevenPairsWait.New(IEnumerable(Of Tile))
-- uid: Koffing.Waits.SevenPairsWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Blocks.Block})
-  name: SevenPairsWait(IEnumerable<Tile>, IEnumerable<Block>)
-  href: api/Koffing.Waits.SevenPairsWait.html#Koffing_Waits_SevenPairsWait__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__System_Collections_Generic_IEnumerable_Koffing_Blocks_Block__
-  commentId: M:Koffing.Waits.SevenPairsWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Blocks.Block})
-  name.vb: New(IEnumerable(Of Tile), IEnumerable(Of Block))
-  fullName: Koffing.Waits.SevenPairsWait.SevenPairsWait(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>, System.Collections.Generic.IEnumerable<Koffing.Blocks.Block>)
-  fullName.vb: Koffing.Waits.SevenPairsWait.New(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile), System.Collections.Generic.IEnumerable(Of Koffing.Blocks.Block))
-  nameWithType: SevenPairsWait.SevenPairsWait(IEnumerable<Tile>, IEnumerable<Block>)
-  nameWithType.vb: SevenPairsWait.New(IEnumerable(Of Tile), IEnumerable(Of Block))
+- uid: Koffing.Waits.SevenPairsWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Melds.Pair})
+  name: SevenPairsWait(IEnumerable<Tile>, IEnumerable<Pair>)
+  href: api/Koffing.Waits.SevenPairsWait.html#Koffing_Waits_SevenPairsWait__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__System_Collections_Generic_IEnumerable_Koffing_Melds_Pair__
+  commentId: M:Koffing.Waits.SevenPairsWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Melds.Pair})
+  name.vb: New(IEnumerable(Of Tile), IEnumerable(Of Pair))
+  fullName: Koffing.Waits.SevenPairsWait.SevenPairsWait(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>, System.Collections.Generic.IEnumerable<Koffing.Melds.Pair>)
+  fullName.vb: Koffing.Waits.SevenPairsWait.New(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile), System.Collections.Generic.IEnumerable(Of Koffing.Melds.Pair))
+  nameWithType: SevenPairsWait.SevenPairsWait(IEnumerable<Tile>, IEnumerable<Pair>)
+  nameWithType.vb: SevenPairsWait.New(IEnumerable(Of Tile), IEnumerable(Of Pair))
 - uid: Koffing.Waits.SevenPairsWait.#ctor*
   name: SevenPairsWait
   href: api/Koffing.Waits.SevenPairsWait.html#Koffing_Waits_SevenPairsWait__ctor_
@@ -4313,15 +4313,15 @@ references:
   fullName.vb: Koffing.Waits.ThirteenOrphansWait.New(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
   nameWithType: ThirteenOrphansWait.ThirteenOrphansWait(IEnumerable<Tile>)
   nameWithType.vb: ThirteenOrphansWait.New(IEnumerable(Of Tile))
-- uid: Koffing.Waits.ThirteenOrphansWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Blocks.Block})
-  name: ThirteenOrphansWait(IEnumerable<Tile>, IEnumerable<Block>)
-  href: api/Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__System_Collections_Generic_IEnumerable_Koffing_Blocks_Block__
-  commentId: M:Koffing.Waits.ThirteenOrphansWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Blocks.Block})
-  name.vb: New(IEnumerable(Of Tile), IEnumerable(Of Block))
-  fullName: Koffing.Waits.ThirteenOrphansWait.ThirteenOrphansWait(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>, System.Collections.Generic.IEnumerable<Koffing.Blocks.Block>)
-  fullName.vb: Koffing.Waits.ThirteenOrphansWait.New(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile), System.Collections.Generic.IEnumerable(Of Koffing.Blocks.Block))
-  nameWithType: ThirteenOrphansWait.ThirteenOrphansWait(IEnumerable<Tile>, IEnumerable<Block>)
-  nameWithType.vb: ThirteenOrphansWait.New(IEnumerable(Of Tile), IEnumerable(Of Block))
+- uid: Koffing.Waits.ThirteenOrphansWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Melds.Pair})
+  name: ThirteenOrphansWait(IEnumerable<Tile>, IEnumerable<Pair>)
+  href: api/Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__System_Collections_Generic_IEnumerable_Koffing_Melds_Pair__
+  commentId: M:Koffing.Waits.ThirteenOrphansWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Melds.Pair})
+  name.vb: New(IEnumerable(Of Tile), IEnumerable(Of Pair))
+  fullName: Koffing.Waits.ThirteenOrphansWait.ThirteenOrphansWait(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>, System.Collections.Generic.IEnumerable<Koffing.Melds.Pair>)
+  fullName.vb: Koffing.Waits.ThirteenOrphansWait.New(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile), System.Collections.Generic.IEnumerable(Of Koffing.Melds.Pair))
+  nameWithType: ThirteenOrphansWait.ThirteenOrphansWait(IEnumerable<Tile>, IEnumerable<Pair>)
+  nameWithType.vb: ThirteenOrphansWait.New(IEnumerable(Of Tile), IEnumerable(Of Pair))
 - uid: Koffing.Waits.ThirteenOrphansWait.#ctor*
   name: ThirteenOrphansWait
   href: api/Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait__ctor_

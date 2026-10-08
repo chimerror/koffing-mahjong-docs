@@ -23,12 +23,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Pair
     path: ../Koffing/Scripts/Melds/Pair.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Melds
   summary: A meld made up of a pair of two of the same tile such as 7 Pin, 7 Pin ("77p").
-  remarks: As always, a red five counts the same as a non-red five.
+  remarks: >-
+    The difference between this and <xref href="Koffing.Waits.PairWait" data-throw-if-not-resolved="false"></xref> is merely one of semantic intent, and this class can
+
+    be explicitly cast to a <xref href="Koffing.Waits.PairWait" data-throw-if-not-resolved="false"></xref> as needed. As always, a red five counts the same as a non-red
+
+    five.
   example: []
   syntax:
     content: 'public class Pair : Meld, IEnumerable<Tile>, IEnumerable, IComparable<Block>, IEquatable<Block>, IBlock'
@@ -79,7 +84,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Melds/Pair.cs
-    startLine: 24
+    startLine: 26
   assemblies:
   - Koffing
   namespace: Koffing.Melds
@@ -120,7 +125,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetPossible
     path: ../Koffing/Scripts/Melds/Pair.cs
-    startLine: 36
+    startLine: 38
   assemblies:
   - Koffing
   namespace: Koffing.Melds
@@ -163,7 +168,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetPossibleForTile
     path: ../Koffing/Scripts/Melds/Pair.cs
-    startLine: 52
+    startLine: 54
   assemblies:
   - Koffing
   namespace: Koffing.Melds
@@ -209,7 +214,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCodeBasis
     path: ../Koffing/Scripts/Melds/Pair.cs
-    startLine: 96
+    startLine: 98
   assemblies:
   - Koffing
   namespace: Koffing.Melds
@@ -228,6 +233,13 @@ items:
   implements:
   - Koffing.Blocks.IBlock.GetHashCodeBasis
 references:
+- uid: Koffing.Waits.PairWait
+  commentId: T:Koffing.Waits.PairWait
+  parent: Koffing.Waits
+  href: Koffing.Waits.PairWait.html
+  name: PairWait
+  nameWithType: PairWait
+  fullName: Koffing.Waits.PairWait
 - uid: Koffing.Melds
   commentId: N:Koffing.Melds
   name: Koffing.Melds
@@ -880,6 +892,23 @@ references:
     href: Koffing.Tiles.Tile.html
   - name: )
   - name: )
+- uid: Koffing.Waits
+  commentId: N:Koffing.Waits
+  name: Koffing.Waits
+  nameWithType: Koffing.Waits
+  fullName: Koffing.Waits
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Waits
+    name: Waits
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Waits
+    name: Waits
 - uid: System
   commentId: N:System
   isExternal: true

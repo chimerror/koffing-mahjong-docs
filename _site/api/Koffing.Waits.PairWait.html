@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PairWait | Koffing Mahjong Engine ">
       
-      
+      <meta name="description" content="A wait made up of a pair of two of the same tile such as 6 Zi, 6 Zi (&amp;quot;66z&amp;quot;).">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Koffing_Waits_PairWait" data-uid="Koffing.Waits.PairWait" class="text-break">
-Class PairWait  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class PairWait  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class PairWait  <a class="header-action link-secondary" title="View source" href
   <dl><dt>Assembly</dt><dd>Koffing.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>A wait made up of a pair of two of the same tile such as 6 Zi, 6 Zi (&quot;66z&quot;).</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -189,6 +190,11 @@ Class PairWait  <a class="header-action link-secondary" title="View source" href
 
 
 
+  <h2 id="Koffing_Waits_PairWait_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The difference between this and <a class="xref" href="Koffing.Melds.Pair.html">Pair</a> is merely one of semantic intent, and this class defers much of
+its implementation to <a class="xref" href="Koffing.Melds.Pair.html">Pair</a> to avoid duplication. As always, a red five counts the same as a non-red
+five.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -199,10 +205,11 @@ Class PairWait  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Koffing_Waits_PairWait__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Waits.PairWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
   PairWait(IEnumerable&lt;Tile&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructor. Optionally takes in an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -212,7 +219,8 @@ Class PairWait  <a class="header-action link-secondary" title="View source" href
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s that make up the pair wait.</p>
+</dd>
   </dl>
 
 
@@ -222,6 +230,11 @@ Class PairWait  <a class="header-action link-secondary" title="View source" href
 
 
 
+  <h4 class="section" id="Koffing_Waits_PairWait__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This constructor should not be used in most cases, instead preferring the
+<a class="xref" href="Koffing.Waits.PairWait.html#Koffing_Waits_PairWait_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">GetPossible(IEnumerable&lt;Tile&gt;)</a> and <a class="xref" href="Koffing.Waits.PairWait.html#Koffing_Waits_PairWait_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">GetPossibleForTile(Tile, IEnumerable&lt;Tile&gt;)</a>
+static helper functions in this class to maintain the semantic meaning of a pair wait.</p>
+</div>
 
 
 
@@ -234,10 +247,10 @@ Class PairWait  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Koffing_Waits_PairWait_GetHashCodeBasis" data-uid="Koffing.Waits.PairWait.GetHashCodeBasis">
   GetHashCodeBasis()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Get the hash code basis representing this block type, which will be exponentiated as a part of calculating
+  <div class="markdown level1 summary"><p>Get the hash code basis representing a pair wait, which will be exponentiated as a part of calculating
 <a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetHashCode">GetHashCode()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -250,7 +263,7 @@ Class PairWait  <a class="header-action link-secondary" title="View source" href
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The basis to use when calculating hash codes for this block type.</p>
+    <dd><p>The basis to use when calculating hash codes for pair waits.</p>
 </dd>
   </dl>
 
@@ -260,11 +273,6 @@ Class PairWait  <a class="header-action link-secondary" title="View source" href
 
 
 
-  <h4 class="section" id="Koffing_Waits_PairWait_GetHashCodeBasis_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>The number returned here should be a unique prime number among all derived <a class="xref" href="Koffing.Blocks.html">Koffing.Blocks</a> to ensure proper
-hashing. The current set of numbers is verified in
-<a class="xref" href="Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_Koffing_Blocks_Block_System_Int32_">GetBlockHashCodeIsCorrect(Block, int)</a>.</p>
-</div>
 
 
 
@@ -273,10 +281,10 @@ hashing. The current set of numbers is verified in
 
   <h3 id="Koffing_Waits_PairWait_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Waits.PairWait.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
   GetPossible(IEnumerable&lt;Tile&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Get possible blocks of this type that can be created from a collection of tiles.</p>
+  <div class="markdown level1 summary"><p>Get possible pair waits that can be created from a collection of tiles.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -287,14 +295,14 @@ hashing. The current set of numbers is verified in
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
-    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s to use to create <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s.</p>
+    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s to use to create <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s of pair waits.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>&gt;</dt>
-    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s that can be created from
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s of pair waits that can be created from
 <code class="paramref">tiles</code>.</p>
 </dd>
   </dl>
@@ -313,10 +321,10 @@ hashing. The current set of numbers is verified in
 
   <h3 id="Koffing_Waits_PairWait_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Waits.PairWait.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
   GetPossibleForTile(Tile, IEnumerable&lt;Tile&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Get possible blocks of this type that can be created using a specified tile and set of other tiles.</p>
+  <div class="markdown level1 summary"><p>Get possible pair waits that can be created using a specified tile and set of other tiles.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -327,7 +335,7 @@ hashing. The current set of numbers is verified in
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tile</code> <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a></dt>
-    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a> that must be included in all created blocks.</p>
+    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a> that must be included in all created pair waits.</p>
 </dd>
     <dt><code>otherTiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
     <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of other <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s to use.</p>
@@ -337,7 +345,7 @@ hashing. The current set of numbers is verified in
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>&gt;</dt>
-    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s that can be created from
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s of pair waits that can be created from
 <code class="paramref">tile</code> and <code class="paramref">otherTiles</code>.</p>
 </dd>
   </dl>
@@ -360,10 +368,11 @@ hashing. The current set of numbers is verified in
 
   <h3 id="Koffing_Waits_PairWait_op_Explicit_Koffing_Melds_Pair__Koffing_Waits_PairWait" data-uid="Koffing.Waits.PairWait.op_Explicit(Koffing.Melds.Pair)~Koffing.Waits.PairWait">
   explicit operator PairWait(Pair)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An explicit cast from <a class="xref" href="Koffing.Melds.Pair.html">Pair</a> to <a class="xref" href="Koffing.Waits.PairWait.html">PairWait</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -373,7 +382,8 @@ hashing. The current set of numbers is verified in
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>pair</code> <a class="xref" href="Koffing.Melds.Pair.html">Pair</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Melds.Pair.html">Pair</a> to cast to a <a class="xref" href="Koffing.Waits.PairWait.html">PairWait</a></p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -396,10 +406,11 @@ hashing. The current set of numbers is verified in
 
   <h3 id="Koffing_Waits_PairWait_op_Explicit_Koffing_Waits_PairWait__Koffing_Melds_Pair" data-uid="Koffing.Waits.PairWait.op_Explicit(Koffing.Waits.PairWait)~Koffing.Melds.Pair">
   explicit operator Pair(PairWait)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An explicit cast from <a class="xref" href="Koffing.Waits.PairWait.html">PairWait</a> to <a class="xref" href="Koffing.Melds.Pair.html">Pair</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -409,7 +420,8 @@ hashing. The current set of numbers is verified in
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>pairWait</code> <a class="xref" href="Koffing.Waits.PairWait.html">PairWait</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Waits.PairWait.html">PairWait</a> to cast to a <a class="xref" href="Koffing.Melds.Pair.html">Pair</a></p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -432,7 +444,7 @@ hashing. The current set of numbers is verified in
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/PairWait.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

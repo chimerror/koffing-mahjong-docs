@@ -22,10 +22,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Orphan
     path: ../Koffing/Scripts/Waits/Orphan.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - Koffing
   namespace: Koffing.Waits
+  summary: A wait made up of a single tile, unconnected from all others.
+  example: []
   syntax:
     content: 'public class Orphan : Wait, IEnumerable<Tile>, IEnumerable, IBlock, IComparable<Block>, IEquatable<Block>'
     content.vb: Public Class Orphan Inherits Wait Implements IEnumerable(Of Tile), IEnumerable, IBlock, IComparable(Of Block), IEquatable(Of Block)
@@ -77,10 +79,18 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Waits/Orphan.cs
-    startLine: 6
+    startLine: 17
   assemblies:
   - Koffing
   namespace: Koffing.Waits
+  summary: Parameterless constructor.
+  remarks: >-
+    This constructor should not be used, and is only defined for testing purposes. Rather, use
+
+    <xref href="Koffing.Waits.Orphan.%23ctor(Koffing.Tiles.Tile)" data-throw-if-not-resolved="false"></xref>, so that there is a tile associated with the class, maintaining the semantic meaning
+
+    of an orphan.
+  example: []
   syntax:
     content: public Orphan()
     content.vb: Public Sub New()
@@ -106,15 +116,18 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Waits/Orphan.cs
-    startLine: 10
+    startLine: 25
   assemblies:
   - Koffing
   namespace: Koffing.Waits
+  summary: Constructor taking a <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public Orphan(Tile tile)
     parameters:
     - id: tile
       type: Koffing.Tiles.Tile
+      description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref> to mark as an orphan.
     content.vb: Public Sub New(tile As Tile)
   overload: Koffing.Waits.Orphan.#ctor*
   nameWithType.vb: Orphan.New(Tile)
@@ -138,14 +151,20 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCodeBasis
     path: ../Koffing/Scripts/Waits/Orphan.cs
-    startLine: 14
+    startLine: 34
   assemblies:
   - Koffing
   namespace: Koffing.Waits
+  summary: >-
+    Get the hash code basis representing a orphan, which will be exponentiated as a part of calculating
+
+    <xref href="Koffing.Blocks.Block.GetHashCode" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static int GetHashCodeBasis()
     return:
       type: System.Int32
+      description: The basis to use when calculating hash codes for orphans.
     content.vb: Public Shared Function GetHashCodeBasis() As Integer
   overload: Koffing.Waits.Orphan.GetHashCodeBasis*
 references:
@@ -1123,6 +1142,31 @@ references:
   name: Koffing
   nameWithType: Koffing
   fullName: Koffing
+- uid: Koffing.Waits.Orphan.#ctor(Koffing.Tiles.Tile)
+  commentId: M:Koffing.Waits.Orphan.#ctor(Koffing.Tiles.Tile)
+  href: Koffing.Waits.Orphan.html#Koffing_Waits_Orphan__ctor_Koffing_Tiles_Tile_
+  name: Orphan(Tile)
+  nameWithType: Orphan.Orphan(Tile)
+  fullName: Koffing.Waits.Orphan.Orphan(Koffing.Tiles.Tile)
+  nameWithType.vb: Orphan.New(Tile)
+  fullName.vb: Koffing.Waits.Orphan.New(Koffing.Tiles.Tile)
+  name.vb: New(Tile)
+  spec.csharp:
+  - uid: Koffing.Waits.Orphan.#ctor(Koffing.Tiles.Tile)
+    name: Orphan
+    href: Koffing.Waits.Orphan.html#Koffing_Waits_Orphan__ctor_Koffing_Tiles_Tile_
+  - name: (
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
 - uid: Koffing.Waits.Orphan.#ctor*
   commentId: Overload:Koffing.Waits.Orphan.#ctor
   href: Koffing.Waits.Orphan.html#Koffing_Waits_Orphan__ctor

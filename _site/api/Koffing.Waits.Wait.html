@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Wait | Koffing Mahjong Engine ">
       
-      
+      <meta name="description" content="An abstract derived  with the semantic meaning of being an &amp;quot;incomplete&amp;quot; part of a hand.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Koffing_Waits_Wait" data-uid="Koffing.Waits.Wait" class="text-break">
-Class Wait  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/Wait.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class Wait  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/Wait.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Wait  <a class="header-action link-secondary" title="View source" href="ht
   <dl><dt>Assembly</dt><dd>Koffing.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>An abstract derived <a class="xref" href="Koffing.Blocks.Block.html">Block</a> with the semantic meaning of being an &quot;incomplete&quot; part of a hand.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -206,6 +207,11 @@ Class Wait  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
+  <h2 id="Koffing_Waits_Wait_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>A wait is a <a class="xref" href="Koffing.Blocks.Block.html">Block</a> that needs additional tiles to be a useful part of a hand, compared to a
+<a class="xref" href="Koffing.Melds.Meld.html">Meld</a>, which does not need any additional tiles, and which a wait would become if it received the
+correct tiles.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -216,10 +222,11 @@ Class Wait  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Waits_Wait__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Waits.Wait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
   Wait(IEnumerable&lt;Tile&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/Wait.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/Wait.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructor. Optionally takes in an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -229,7 +236,8 @@ Class Wait  <a class="header-action link-secondary" title="View source" href="ht
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s that make up the wait.</p>
+</dd>
   </dl>
 
 
@@ -239,6 +247,13 @@ Class Wait  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
+  <h4 class="section" id="Koffing_Waits_Wait__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>It's not possible to construct a concrete version of this class as it's <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/abstract">abstract</a>, but it must
+be mentioned that even if you could, it is preferred to use <a class="xref" href="Koffing.Blocks.IBlock.html">IBlock</a> static functions such as
+<a class="xref" href="Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">GetPossible(IEnumerable&lt;Tile&gt;)</a>, or the
+<a class="xref" href="Koffing.Waits.Wait.html#Koffing_Waits_Wait_GetFirstLevelWaits_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">GetFirstLevelWaits(IEnumerable&lt;Tile&gt;)</a> static helper function in this class to ensure proper
+semantic meanings.</p>
+</div>
 
 
 
@@ -251,10 +266,11 @@ Class Wait  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Waits_Wait_GetFirstLevelWaits_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Waits.Wait.GetFirstLevelWaits(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
   GetFirstLevelWaits(IEnumerable&lt;Tile&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/Wait.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/Wait.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns all possible first-level waits from a collection of <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -264,13 +280,16 @@ Class Wait  <a class="header-action link-secondary" title="View source" href="ht
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>tiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s to use to create <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s of first-level waits.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Blocks.MadeBlockContext.html">MadeBlockContext</a>s of first-level waits that can be created from
+<code class="paramref">tiles</code>.</p>
+</dd>
   </dl>
 
 
@@ -279,6 +298,12 @@ Class Wait  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
+  <h4 class="section" id="Koffing_Waits_Wait_GetFirstLevelWaits_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A &quot;first-level&quot; wait is a single <a class="xref" href="Koffing.Waits.Kanchan.html">Kanchan</a>, <a class="xref" href="Koffing.Waits.Ryanmen.html">Ryanmen</a>, <a class="xref" href="Koffing.Waits.Penchan.html">Penchan</a>, or
+<a class="xref" href="Koffing.Waits.PairWait.html">PairWait</a> that can be made from <code class="paramref">tiles</code>. Note that this does not include
+<a class="xref" href="Koffing.Waits.SevenPairsWait.html">SevenPairsWait</a>, <a class="xref" href="Koffing.Waits.ThirteenOrphansWait.html">ThirteenOrphansWait</a>, and <a class="xref" href="Koffing.Waits.Orphan.html">Orphan</a>. These special waits
+are only generated by <a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossibleBlockSets_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">GetPossibleBlockSets(IEnumerable&lt;Tile&gt;)</a>.</p>
+</div>
 
 
 
@@ -287,7 +312,7 @@ Class Wait  <a class="header-action link-secondary" title="View source" href="ht
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/Wait.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Waits/Wait.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

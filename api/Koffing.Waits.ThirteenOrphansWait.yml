@@ -6,7 +6,7 @@ items:
   parent: Koffing.Waits
   children:
   - Koffing.Waits.ThirteenOrphansWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
-  - Koffing.Waits.ThirteenOrphansWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Blocks.Block})
+  - Koffing.Waits.ThirteenOrphansWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Melds.Pair})
   - Koffing.Waits.ThirteenOrphansWait.Equals(Koffing.Blocks.Block)
   - Koffing.Waits.ThirteenOrphansWait.GetHashCodeBasis
   - Koffing.Waits.ThirteenOrphansWait.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -25,10 +25,21 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ThirteenOrphansWait
     path: ../Koffing/Scripts/Waits/ThirteenOrphansWait.cs
-    startLine: 8
+    startLine: 18
   assemblies:
   - Koffing
   namespace: Koffing.Waits
+  summary: >-
+    A wait for the special thirteen orphans hand, made up of single terminals (1 or 9 in a non-Zi suit) and single Zi
+
+    suit tiles, which may possibly be paired.
+  remarks: >-
+    The intended final meld here is "19m19s19p1234567z" with one of those tiles paired up. Note that
+
+    <xref href="Koffing.Blocks.IBlock.GetPossibleForTile(Koffing.Tiles.Tile%2cSystem.Collections.Generic.IEnumerable%7bKoffing.Tiles.Tile%7d)" data-throw-if-not-resolved="false"></xref> is NOT overridden as there can be only one possible
+
+    thirteen orphans wait, and thus no need for it.
+  example: []
   syntax:
     content: 'public class ThirteenOrphansWait : Wait, IEnumerable<Tile>, IEnumerable, IComparable<Block>, IEquatable<Block>, IBlock'
     content.vb: Public Class ThirteenOrphansWait Inherits Wait Implements IEnumerable(Of Tile), IEnumerable, IComparable(Of Block), IEquatable(Of Block), IBlock
@@ -78,15 +89,18 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Pairs
     path: ../Koffing/Scripts/Waits/ThirteenOrphansWait.cs
-    startLine: 14
+    startLine: 28
   assemblies:
   - Koffing
   namespace: Koffing.Waits
+  summary: The <xref href="Koffing.Melds.Pair" data-throw-if-not-resolved="false"></xref>s that make up this wait.
+  example: []
   syntax:
     content: public IEnumerable<Block> Pairs { get; }
     parameters: []
     return:
       type: System.Collections.Generic.IEnumerable{Koffing.Blocks.Block}
+      description: A read-only <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of the <xref href="Koffing.Waits.ThirteenOrphansWait.Pairs" data-throw-if-not-resolved="false"></xref> in this wait.
     content.vb: Public ReadOnly Property Pairs As IEnumerable(Of Block)
   overload: Koffing.Waits.ThirteenOrphansWait.Pairs*
 - uid: Koffing.Waits.ThirteenOrphansWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -107,10 +121,18 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Waits/ThirteenOrphansWait.cs
-    startLine: 17
+    startLine: 38
   assemblies:
   - Koffing
   namespace: Koffing.Waits
+  summary: Parameterless constructor.
+  remarks: >-
+    This constructor should not be used, and is only defined for testing purposes. Rather, use the
+
+    <xref href="Koffing.Waits.ThirteenOrphansWait.GetPossible(System.Collections.Generic.IEnumerable%7bKoffing.Tiles.Tile%7d)" data-throw-if-not-resolved="false"></xref> static helper function in this class to maintain the semantic
+
+    meaning of a thirteen orphans wait, as well as properly initializing <xref href="Koffing.Waits.ThirteenOrphansWait.Pairs" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public ThirteenOrphansWait(IEnumerable<Tile> tiles = null)
     parameters:
@@ -121,16 +143,16 @@ items:
   nameWithType.vb: ThirteenOrphansWait.New(IEnumerable(Of Tile))
   fullName.vb: Koffing.Waits.ThirteenOrphansWait.New(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
   name.vb: New(IEnumerable(Of Tile))
-- uid: Koffing.Waits.ThirteenOrphansWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Blocks.Block})
-  commentId: M:Koffing.Waits.ThirteenOrphansWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Blocks.Block})
-  id: '#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Blocks.Block})'
+- uid: Koffing.Waits.ThirteenOrphansWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Melds.Pair})
+  commentId: M:Koffing.Waits.ThirteenOrphansWait.#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Melds.Pair})
+  id: '#ctor(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile},System.Collections.Generic.IEnumerable{Koffing.Melds.Pair})'
   parent: Koffing.Waits.ThirteenOrphansWait
   langs:
   - csharp
   - vb
-  name: ThirteenOrphansWait(IEnumerable<Tile>, IEnumerable<Block>)
-  nameWithType: ThirteenOrphansWait.ThirteenOrphansWait(IEnumerable<Tile>, IEnumerable<Block>)
-  fullName: Koffing.Waits.ThirteenOrphansWait.ThirteenOrphansWait(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>, System.Collections.Generic.IEnumerable<Koffing.Blocks.Block>)
+  name: ThirteenOrphansWait(IEnumerable<Tile>, IEnumerable<Pair>)
+  nameWithType: ThirteenOrphansWait.ThirteenOrphansWait(IEnumerable<Tile>, IEnumerable<Pair>)
+  fullName: Koffing.Waits.ThirteenOrphansWait.ThirteenOrphansWait(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>, System.Collections.Generic.IEnumerable<Koffing.Melds.Pair>)
   type: Constructor
   source:
     remote:
@@ -139,22 +161,35 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Waits/ThirteenOrphansWait.cs
-    startLine: 22
+    startLine: 58
   assemblies:
   - Koffing
   namespace: Koffing.Waits
+  summary: >-
+    Constructor taking an <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s representing the tiles in this wait,
+
+    and an <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Melds.Pair" data-throw-if-not-resolved="false"></xref>s representing the same tiles, but arranged into pairs.
+  remarks: >-
+    This constructor should not be used in most cases, instead preferring the
+
+    <xref href="Koffing.Waits.ThirteenOrphansWait.GetPossible(System.Collections.Generic.IEnumerable%7bKoffing.Tiles.Tile%7d)" data-throw-if-not-resolved="false"></xref> static helper function in this class to maintain the semantic
+
+    meaning of a thirteen orphans wait.
+  example: []
   syntax:
-    content: public ThirteenOrphansWait(IEnumerable<Tile> tiles, IEnumerable<Block> pairs)
+    content: public ThirteenOrphansWait(IEnumerable<Tile> tiles, IEnumerable<Pair> pairs)
     parameters:
     - id: tiles
       type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s representing the tiles in this wait.
     - id: pairs
-      type: System.Collections.Generic.IEnumerable{Koffing.Blocks.Block}
-    content.vb: Public Sub New(tiles As IEnumerable(Of Tile), pairs As IEnumerable(Of Block))
+      type: System.Collections.Generic.IEnumerable{Koffing.Melds.Pair}
+      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Melds.Pair" data-throw-if-not-resolved="false"></xref>s representing the same tiles, but arranged into pairs.
+    content.vb: Public Sub New(tiles As IEnumerable(Of Tile), pairs As IEnumerable(Of Pair))
   overload: Koffing.Waits.ThirteenOrphansWait.#ctor*
-  nameWithType.vb: ThirteenOrphansWait.New(IEnumerable(Of Tile), IEnumerable(Of Block))
-  fullName.vb: Koffing.Waits.ThirteenOrphansWait.New(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile), System.Collections.Generic.IEnumerable(Of Koffing.Blocks.Block))
-  name.vb: New(IEnumerable(Of Tile), IEnumerable(Of Block))
+  nameWithType.vb: ThirteenOrphansWait.New(IEnumerable(Of Tile), IEnumerable(Of Pair))
+  fullName.vb: Koffing.Waits.ThirteenOrphansWait.New(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile), System.Collections.Generic.IEnumerable(Of Koffing.Melds.Pair))
+  name.vb: New(IEnumerable(Of Tile), IEnumerable(Of Pair))
 - uid: Koffing.Waits.ThirteenOrphansWait.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
   commentId: M:Koffing.Waits.ThirteenOrphansWait.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
   id: GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -173,24 +208,24 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetPossible
     path: ../Koffing/Scripts/Waits/ThirteenOrphansWait.cs
-    startLine: 27
+    startLine: 73
   assemblies:
   - Koffing
   namespace: Koffing.Waits
-  summary: Get possible blocks of this type that can be created from a collection of tiles.
+  summary: Get the possible thirteen orphans wait (if any) that can be created from a collection of tiles.
   example: []
   syntax:
     content: public static IEnumerable<MadeBlockContext> GetPossible(IEnumerable<Tile> tiles)
     parameters:
     - id: tiles
       type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
-      description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s to use to create <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s.
+      description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s to use to create <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s of the possible thirteen orphans wait.
     return:
       type: System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext}
       description: >-
-        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s that can be created from
+        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s of the thirteen orphans wait that can be
 
-        <code class="paramref">tiles</code>.
+        created from <code class="paramref">tiles</code>.
     content.vb: Public Shared Function GetPossible(tiles As IEnumerable(Of Tile)) As IEnumerable(Of MadeBlockContext)
   overload: Koffing.Waits.ThirteenOrphansWait.GetPossible*
   implements:
@@ -216,26 +251,20 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCodeBasis
     path: ../Koffing/Scripts/Waits/ThirteenOrphansWait.cs
-    startLine: 64
+    startLine: 112
   assemblies:
   - Koffing
   namespace: Koffing.Waits
   summary: >-
-    Get the hash code basis representing this block type, which will be exponentiated as a part of calculating
+    Get the hash code basis representing a thirteen orphans wait, which will be exponentiated as a part of
 
-    <xref href="Koffing.Blocks.Block.GetHashCode" data-throw-if-not-resolved="false"></xref>.
-  remarks: >-
-    The number returned here should be a unique prime number among all derived <xref href="Koffing.Blocks" data-throw-if-not-resolved="false"></xref> to ensure proper
-
-    hashing. The current set of numbers is verified in
-
-    <xref href="Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref>.
+    calculating <xref href="Koffing.Blocks.Block.GetHashCode" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static int GetHashCodeBasis()
     return:
       type: System.Int32
-      description: The basis to use when calculating hash codes for this block type.
+      description: The basis to use when calculating hash codes for thirteen orphans waits.
     content.vb: Public Shared Function GetHashCodeBasis() As Integer
   overload: Koffing.Waits.ThirteenOrphansWait.GetHashCodeBasis*
   implements:
@@ -258,24 +287,33 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Waits/ThirteenOrphansWait.cs
-    startLine: 71
+    startLine: 147
   assemblies:
   - Koffing
   namespace: Koffing.Waits
   summary: Indicates whether the current object is equal to another object of the same type.
   remarks: >-
+    <p>
+
+    This method should not generally be used, and is only present for testing purposes. As such, the proper
+
+    convention of overriding <xref href="System.Object.GetHashCode" data-throw-if-not-resolved="false"></xref> has not been followed.
+
+    </p>
+
+    <p>
+
     Equality is determined by checking:
 
 
     <ol><li>
-    		if <code class="paramref">thatBlock</code> is null (always false)
+    		the result of <xref href="Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)" data-throw-if-not-resolved="false"></xref>
     	</li><li>
-    		type
+    		the count of pairs in <xref href="Koffing.Waits.ThirteenOrphansWait.Pairs" data-throw-if-not-resolved="false"></xref>
     	</li><li>
-    		the number of tiles in the block
-    	</li><li>
-    		the actual tiles in the block (after sorting)
+    		the actual pairs in <xref href="Koffing.Waits.ThirteenOrphansWait.Pairs" data-throw-if-not-resolved="false"></xref> (after sorting)
     	</li></ol>
+    </p>
   example: []
   syntax:
     content: public override bool Equals(Block thatBlock)
@@ -293,6 +331,59 @@ items:
   overridden: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
   overload: Koffing.Waits.ThirteenOrphansWait.Equals*
 references:
+- uid: Koffing.Blocks.IBlock.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  commentId: M:Koffing.Blocks.IBlock.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  parent: Koffing.Blocks.IBlock
+  isExternal: true
+  href: Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  name: GetPossibleForTile(Tile, IEnumerable<Tile>)
+  nameWithType: IBlock.GetPossibleForTile(Tile, IEnumerable<Tile>)
+  fullName: Koffing.Blocks.IBlock.GetPossibleForTile(Koffing.Tiles.Tile, System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
+  nameWithType.vb: IBlock.GetPossibleForTile(Tile, IEnumerable(Of Tile))
+  fullName.vb: Koffing.Blocks.IBlock.GetPossibleForTile(Koffing.Tiles.Tile, System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
+  name.vb: GetPossibleForTile(Tile, IEnumerable(Of Tile))
+  spec.csharp:
+  - uid: Koffing.Blocks.IBlock.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: GetPossibleForTile
+    href: Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Koffing.Blocks.IBlock.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: GetPossibleForTile
+    href: Koffing.Blocks.IBlock.html#Koffing_Blocks_IBlock_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
+  - name: )
 - uid: Koffing.Waits
   commentId: N:Koffing.Waits
   name: Koffing.Waits
@@ -1199,6 +1290,19 @@ references:
   name: Koffing
   nameWithType: Koffing
   fullName: Koffing
+- uid: Koffing.Melds.Pair
+  commentId: T:Koffing.Melds.Pair
+  parent: Koffing.Melds
+  href: Koffing.Melds.Pair.html
+  name: Pair
+  nameWithType: Pair
+  fullName: Koffing.Melds.Pair
+- uid: Koffing.Waits.ThirteenOrphansWait.Pairs
+  commentId: P:Koffing.Waits.ThirteenOrphansWait.Pairs
+  href: Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait_Pairs
+  name: Pairs
+  nameWithType: ThirteenOrphansWait.Pairs
+  fullName: Koffing.Waits.ThirteenOrphansWait.Pairs
 - uid: Koffing.Waits.ThirteenOrphansWait.Pairs*
   commentId: Overload:Koffing.Waits.ThirteenOrphansWait.Pairs
   href: Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait_Pairs
@@ -1238,6 +1342,65 @@ references:
     name: Block
     href: Koffing.Blocks.Block.html
   - name: )
+- uid: Koffing.Melds
+  commentId: N:Koffing.Melds
+  name: Koffing.Melds
+  nameWithType: Koffing.Melds
+  fullName: Koffing.Melds
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Melds
+    name: Melds
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Melds
+    name: Melds
+- uid: Koffing.Waits.ThirteenOrphansWait.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  commentId: M:Koffing.Waits.ThirteenOrphansWait.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  isExternal: true
+  href: Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  name: GetPossible(IEnumerable<Tile>)
+  nameWithType: ThirteenOrphansWait.GetPossible(IEnumerable<Tile>)
+  fullName: Koffing.Waits.ThirteenOrphansWait.GetPossible(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
+  nameWithType.vb: ThirteenOrphansWait.GetPossible(IEnumerable(Of Tile))
+  fullName.vb: Koffing.Waits.ThirteenOrphansWait.GetPossible(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
+  name.vb: GetPossible(IEnumerable(Of Tile))
+  spec.csharp:
+  - uid: Koffing.Waits.ThirteenOrphansWait.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: GetPossible
+    href: Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Koffing.Waits.ThirteenOrphansWait.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: GetPossible
+    href: Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
+  - name: )
 - uid: Koffing.Waits.ThirteenOrphansWait.#ctor*
   commentId: Overload:Koffing.Waits.ThirteenOrphansWait.#ctor
   href: Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
@@ -1254,6 +1417,56 @@ references:
   name: Tile
   nameWithType: Tile
   fullName: Koffing.Tiles.Tile
+- uid: System.Collections.Generic.IEnumerable{Koffing.Melds.Pair}
+  commentId: T:System.Collections.Generic.IEnumerable{Koffing.Melds.Pair}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Pair>
+  nameWithType: IEnumerable<Pair>
+  fullName: System.Collections.Generic.IEnumerable<Koffing.Melds.Pair>
+  nameWithType.vb: IEnumerable(Of Pair)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Koffing.Melds.Pair)
+  name.vb: IEnumerable(Of Pair)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Melds.Pair
+    name: Pair
+    href: Koffing.Melds.Pair.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Melds.Pair
+    name: Pair
+    href: Koffing.Melds.Pair.html
+  - name: )
+- uid: Koffing.Tiles
+  commentId: N:Koffing.Tiles
+  name: Koffing.Tiles
+  nameWithType: Koffing.Tiles
+  fullName: Koffing.Tiles
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
 - uid: Koffing.Blocks.MadeBlockContext
   commentId: T:Koffing.Blocks.MadeBlockContext
   parent: Koffing.Blocks
@@ -1343,63 +1556,6 @@ references:
     name: MadeBlockContext
     href: Koffing.Blocks.MadeBlockContext.html
   - name: )
-- uid: Koffing.Tiles
-  commentId: N:Koffing.Tiles
-  name: Koffing.Tiles
-  nameWithType: Koffing.Tiles
-  fullName: Koffing.Tiles
-  spec.csharp:
-  - uid: Koffing
-    name: Koffing
-  - name: .
-  - uid: Koffing.Tiles
-    name: Tiles
-  spec.vb:
-  - uid: Koffing
-    name: Koffing
-  - name: .
-  - uid: Koffing.Tiles
-    name: Tiles
-- uid: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
-  commentId: M:Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
-  isExternal: true
-  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_Koffing_Blocks_Block_System_Int32_
-  name: GetBlockHashCodeIsCorrect(Block, int)
-  nameWithType: BlockTests.GetBlockHashCodeIsCorrect(Block, int)
-  fullName: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block, int)
-  nameWithType.vb: BlockTests.GetBlockHashCodeIsCorrect(Block, Integer)
-  fullName.vb: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block, Integer)
-  name.vb: GetBlockHashCodeIsCorrect(Block, Integer)
-  spec.csharp:
-  - uid: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
-    name: GetBlockHashCodeIsCorrect
-    href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_Koffing_Blocks_Block_System_Int32_
-  - name: (
-  - uid: Koffing.Blocks.Block
-    name: Block
-    href: Koffing.Blocks.Block.html
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-  spec.vb:
-  - uid: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
-    name: GetBlockHashCodeIsCorrect
-    href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_Koffing_Blocks_Block_System_Int32_
-  - name: (
-  - uid: Koffing.Blocks.Block
-    name: Block
-    href: Koffing.Blocks.Block.html
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
 - uid: Koffing.Waits.ThirteenOrphansWait.GetHashCodeBasis*
   commentId: Overload:Koffing.Waits.ThirteenOrphansWait.GetHashCodeBasis
   href: Koffing.Waits.ThirteenOrphansWait.html#Koffing_Waits_ThirteenOrphansWait_GetHashCodeBasis
@@ -1436,6 +1592,30 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
 - uid: Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
   commentId: M:Koffing.Blocks.Block.Equals(Koffing.Blocks.Block)
   parent: Koffing.Blocks.Block

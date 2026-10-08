@@ -817,7 +817,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Waits.Kanchan",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Waits.Kanchan.yml\" sourcestartlinenumber=\"1\">A wait made up of two tiles in the same non-Zi suit two ranks apart, such as 6 Pin and 8 Pin (&quot;68p&quot;).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -831,7 +831,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Waits.Orphan",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Waits.Orphan.yml\" sourcestartlinenumber=\"1\">A wait made up of a single tile, unconnected from all others.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -845,7 +845,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Waits.PairWait",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Waits.PairWait.yml\" sourcestartlinenumber=\"1\">A wait made up of a pair of two of the same tile such as 6 Zi, 6 Zi (&quot;66z&quot;).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -859,7 +859,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Waits.Penchan",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Waits.Penchan.yml\" sourcestartlinenumber=\"1\">A wait made up of either an 1-2 or an 8-9 of a non-Zi suit, such as 8 Man and 9 Man (&quot;89m&quot;).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -873,7 +873,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Waits.Ryanmen",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Waits.Ryanmen.yml\" sourcestartlinenumber=\"1\">A wait made up of two tiles in the same non-Zi suit connected by adjacent ranks, without being on the edge like\na <xref href=\"Koffing.Waits.Penchan\" data-throw-if-not-resolved=\"false\"></xref>. For example 4 Sou and 5 Sou (&quot;45s&quot;).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -887,7 +887,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Waits.SevenPairsWait",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Waits.SevenPairsWait.yml\" sourcestartlinenumber=\"1\">A wait for the special seven pairs hand, made up of one or more pairs, such as &quot;1133m99s55z&quot;.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -901,7 +901,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Waits.ThirteenOrphansWait",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Waits.ThirteenOrphansWait.yml\" sourcestartlinenumber=\"1\">A wait for the special thirteen orphans hand, made up of single terminals (1 or 9 in a non-Zi suit) and single Zi\nsuit tiles, which may possibly be paired.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -915,7 +915,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Waits.Wait",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Waits.Wait.yml\" sourcestartlinenumber=\"1\">An abstract derived <xref href=\"Koffing.Blocks.Block\" data-throw-if-not-resolved=\"false\"></xref> with the semantic meaning of being an &quot;incomplete&quot; part of a hand.</p>\n"
     },
     {
       "type": "ManagedReference",

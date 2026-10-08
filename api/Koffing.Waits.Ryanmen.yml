@@ -23,10 +23,16 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Ryanmen
     path: ../Koffing/Scripts/Waits/Ryanmen.cs
-    startLine: 7
+    startLine: 14
   assemblies:
   - Koffing
   namespace: Koffing.Waits
+  summary: >-
+    A wait made up of two tiles in the same non-Zi suit connected by adjacent ranks, without being on the edge like
+
+    a <xref href="Koffing.Waits.Penchan" data-throw-if-not-resolved="false"></xref>. For example 4 Sou and 5 Sou ("45s").
+  remarks: Could be translated into English as "outside wait".
+  example: []
   syntax:
     content: 'public class Ryanmen : Wait, IEnumerable<Tile>, IEnumerable, IComparable<Block>, IEquatable<Block>, IBlock'
     content.vb: Public Class Ryanmen Inherits Wait Implements IEnumerable(Of Tile), IEnumerable, IComparable(Of Block), IEquatable(Of Block), IBlock
@@ -76,15 +82,24 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Waits/Ryanmen.cs
-    startLine: 9
+    startLine: 25
   assemblies:
   - Koffing
   namespace: Koffing.Waits
+  summary: Constructor. Optionally takes in an <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s.
+  remarks: >-
+    This constructor should not be used in most cases, instead preferring the
+
+    <xref href="Koffing.Waits.Ryanmen.GetPossible(System.Collections.Generic.IEnumerable%7bKoffing.Tiles.Tile%7d)" data-throw-if-not-resolved="false"></xref> and <xref href="Koffing.Waits.Ryanmen.GetPossibleForTile(Koffing.Tiles.Tile%2cSystem.Collections.Generic.IEnumerable%7bKoffing.Tiles.Tile%7d)" data-throw-if-not-resolved="false"></xref>
+
+    static helper functions in this class to maintain the semantic meaning of a ryanmen.
+  example: []
   syntax:
     content: public Ryanmen(IEnumerable<Tile> tiles = null)
     parameters:
     - id: tiles
       type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+      description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s that make up the ryanmen.
     content.vb: Public Sub New(tiles As IEnumerable(Of Tile) = Nothing)
   overload: Koffing.Waits.Ryanmen.#ctor*
   nameWithType.vb: Ryanmen.New(IEnumerable(Of Tile))
@@ -108,22 +123,22 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetPossible
     path: ../Koffing/Scripts/Waits/Ryanmen.cs
-    startLine: 13
+    startLine: 39
   assemblies:
   - Koffing
   namespace: Koffing.Waits
-  summary: Get possible blocks of this type that can be created from a collection of tiles.
+  summary: Get possible ryanmens that can be created from a collection of tiles.
   example: []
   syntax:
     content: public static IEnumerable<MadeBlockContext> GetPossible(IEnumerable<Tile> tiles)
     parameters:
     - id: tiles
       type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
-      description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s to use to create <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s.
+      description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s to use to create <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s of ryanmens.
     return:
       type: System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext}
       description: >-
-        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s that can be created from
+        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s of ryanmens that can be created from
 
         <code class="paramref">tiles</code>.
     content.vb: Public Shared Function GetPossible(tiles As IEnumerable(Of Tile)) As IEnumerable(Of MadeBlockContext)
@@ -151,25 +166,25 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetPossibleForTile
     path: ../Koffing/Scripts/Waits/Ryanmen.cs
-    startLine: 18
+    startLine: 53
   assemblies:
   - Koffing
   namespace: Koffing.Waits
-  summary: Get possible blocks of this type that can be created using a specified tile and set of other tiles.
+  summary: Get possible ryanmens that can be created using a specified tile and set of other tiles.
   example: []
   syntax:
     content: public static IEnumerable<MadeBlockContext> GetPossibleForTile(Tile tile, IEnumerable<Tile> otherTiles)
     parameters:
     - id: tile
       type: Koffing.Tiles.Tile
-      description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref> that must be included in all created blocks.
+      description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref> that must be included in all created ryanmens.
     - id: otherTiles
       type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
       description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of other <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s to use.
     return:
       type: System.Collections.Generic.IEnumerable{Koffing.Blocks.MadeBlockContext}
       description: >-
-        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s that can be created from
+        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Blocks.MadeBlockContext" data-throw-if-not-resolved="false"></xref>s of ryanmens that can be created from
 
         <code class="paramref">tile</code> and <code class="paramref">otherTiles</code>.
     content.vb: Public Shared Function GetPossibleForTile(tile As Tile, otherTiles As IEnumerable(Of Tile)) As IEnumerable(Of MadeBlockContext)
@@ -197,31 +212,31 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCodeBasis
     path: ../Koffing/Scripts/Waits/Ryanmen.cs
-    startLine: 62
+    startLine: 102
   assemblies:
   - Koffing
   namespace: Koffing.Waits
   summary: >-
-    Get the hash code basis representing this block type, which will be exponentiated as a part of calculating
+    Get the hash code basis representing a ryanmen, which will be exponentiated as a part of calculating
 
     <xref href="Koffing.Blocks.Block.GetHashCode" data-throw-if-not-resolved="false"></xref>.
-  remarks: >-
-    The number returned here should be a unique prime number among all derived <xref href="Koffing.Blocks" data-throw-if-not-resolved="false"></xref> to ensure proper
-
-    hashing. The current set of numbers is verified in
-
-    <xref href="Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static int GetHashCodeBasis()
     return:
       type: System.Int32
-      description: The basis to use when calculating hash codes for this block type.
+      description: The basis to use when calculating hash codes for ryanmens.
     content.vb: Public Shared Function GetHashCodeBasis() As Integer
   overload: Koffing.Waits.Ryanmen.GetHashCodeBasis*
   implements:
   - Koffing.Blocks.IBlock.GetHashCodeBasis
 references:
+- uid: Koffing.Waits.Penchan
+  commentId: T:Koffing.Waits.Penchan
+  href: Koffing.Waits.Penchan.html
+  name: Penchan
+  nameWithType: Penchan
+  fullName: Koffing.Waits.Penchan
 - uid: Koffing.Waits
   commentId: N:Koffing.Waits
   name: Koffing.Waits
@@ -1100,6 +1115,107 @@ references:
   name: Koffing
   nameWithType: Koffing
   fullName: Koffing
+- uid: Koffing.Tiles.Tile
+  commentId: T:Koffing.Tiles.Tile
+  parent: Koffing.Tiles
+  href: Koffing.Tiles.Tile.html
+  name: Tile
+  nameWithType: Tile
+  fullName: Koffing.Tiles.Tile
+- uid: Koffing.Waits.Ryanmen.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  commentId: M:Koffing.Waits.Ryanmen.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  isExternal: true
+  href: Koffing.Waits.Ryanmen.html#Koffing_Waits_Ryanmen_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  name: GetPossible(IEnumerable<Tile>)
+  nameWithType: Ryanmen.GetPossible(IEnumerable<Tile>)
+  fullName: Koffing.Waits.Ryanmen.GetPossible(System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
+  nameWithType.vb: Ryanmen.GetPossible(IEnumerable(Of Tile))
+  fullName.vb: Koffing.Waits.Ryanmen.GetPossible(System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
+  name.vb: GetPossible(IEnumerable(Of Tile))
+  spec.csharp:
+  - uid: Koffing.Waits.Ryanmen.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: GetPossible
+    href: Koffing.Waits.Ryanmen.html#Koffing_Waits_Ryanmen_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Koffing.Waits.Ryanmen.GetPossible(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: GetPossible
+    href: Koffing.Waits.Ryanmen.html#Koffing_Waits_Ryanmen_GetPossible_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
+  - name: )
+- uid: Koffing.Waits.Ryanmen.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  commentId: M:Koffing.Waits.Ryanmen.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+  isExternal: true
+  href: Koffing.Waits.Ryanmen.html#Koffing_Waits_Ryanmen_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  name: GetPossibleForTile(Tile, IEnumerable<Tile>)
+  nameWithType: Ryanmen.GetPossibleForTile(Tile, IEnumerable<Tile>)
+  fullName: Koffing.Waits.Ryanmen.GetPossibleForTile(Koffing.Tiles.Tile, System.Collections.Generic.IEnumerable<Koffing.Tiles.Tile>)
+  nameWithType.vb: Ryanmen.GetPossibleForTile(Tile, IEnumerable(Of Tile))
+  fullName.vb: Koffing.Waits.Ryanmen.GetPossibleForTile(Koffing.Tiles.Tile, System.Collections.Generic.IEnumerable(Of Koffing.Tiles.Tile))
+  name.vb: GetPossibleForTile(Tile, IEnumerable(Of Tile))
+  spec.csharp:
+  - uid: Koffing.Waits.Ryanmen.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: GetPossibleForTile
+    href: Koffing.Waits.Ryanmen.html#Koffing_Waits_Ryanmen_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Koffing.Waits.Ryanmen.GetPossibleForTile(Koffing.Tiles.Tile,System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
+    name: GetPossibleForTile
+    href: Koffing.Waits.Ryanmen.html#Koffing_Waits_Ryanmen_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
+  - name: (
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Koffing.Tiles.Tile
+    name: Tile
+    href: Koffing.Tiles.Tile.html
+  - name: )
+  - name: )
 - uid: Koffing.Waits.Ryanmen.#ctor*
   commentId: Overload:Koffing.Waits.Ryanmen.#ctor
   href: Koffing.Waits.Ryanmen.html#Koffing_Waits_Ryanmen__ctor_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
@@ -1109,13 +1225,23 @@ references:
   nameWithType.vb: Ryanmen.New
   fullName.vb: Koffing.Waits.Ryanmen.New
   name.vb: New
-- uid: Koffing.Tiles.Tile
-  commentId: T:Koffing.Tiles.Tile
-  parent: Koffing.Tiles
-  href: Koffing.Tiles.Tile.html
-  name: Tile
-  nameWithType: Tile
-  fullName: Koffing.Tiles.Tile
+- uid: Koffing.Tiles
+  commentId: N:Koffing.Tiles
+  name: Koffing.Tiles
+  nameWithType: Koffing.Tiles
+  fullName: Koffing.Tiles
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
 - uid: Koffing.Blocks.MadeBlockContext
   commentId: T:Koffing.Blocks.MadeBlockContext
   parent: Koffing.Blocks
@@ -1205,23 +1331,6 @@ references:
     name: MadeBlockContext
     href: Koffing.Blocks.MadeBlockContext.html
   - name: )
-- uid: Koffing.Tiles
-  commentId: N:Koffing.Tiles
-  name: Koffing.Tiles
-  nameWithType: Koffing.Tiles
-  fullName: Koffing.Tiles
-  spec.csharp:
-  - uid: Koffing
-    name: Koffing
-  - name: .
-  - uid: Koffing.Tiles
-    name: Tiles
-  spec.vb:
-  - uid: Koffing
-    name: Koffing
-  - name: .
-  - uid: Koffing.Tiles
-    name: Tiles
 - uid: Koffing.Waits.Ryanmen.GetPossibleForTile*
   commentId: Overload:Koffing.Waits.Ryanmen.GetPossibleForTile
   href: Koffing.Waits.Ryanmen.html#Koffing_Waits_Ryanmen_GetPossibleForTile_Koffing_Tiles_Tile_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__
@@ -1280,46 +1389,6 @@ references:
     name: Tile
     href: Koffing.Tiles.Tile.html
   - name: )
-  - name: )
-- uid: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
-  commentId: M:Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
-  isExternal: true
-  href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_Koffing_Blocks_Block_System_Int32_
-  name: GetBlockHashCodeIsCorrect(Block, int)
-  nameWithType: BlockTests.GetBlockHashCodeIsCorrect(Block, int)
-  fullName: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block, int)
-  nameWithType.vb: BlockTests.GetBlockHashCodeIsCorrect(Block, Integer)
-  fullName.vb: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block, Integer)
-  name.vb: GetBlockHashCodeIsCorrect(Block, Integer)
-  spec.csharp:
-  - uid: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
-    name: GetBlockHashCodeIsCorrect
-    href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_Koffing_Blocks_Block_System_Int32_
-  - name: (
-  - uid: Koffing.Blocks.Block
-    name: Block
-    href: Koffing.Blocks.Block.html
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-  spec.vb:
-  - uid: Koffing.Tests.BlockTests.GetBlockHashCodeIsCorrect(Koffing.Blocks.Block,System.Int32)
-    name: GetBlockHashCodeIsCorrect
-    href: Koffing.Tests.BlockTests.html#Koffing_Tests_BlockTests_GetBlockHashCodeIsCorrect_Koffing_Blocks_Block_System_Int32_
-  - name: (
-  - uid: Koffing.Blocks.Block
-    name: Block
-    href: Koffing.Blocks.Block.html
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
 - uid: Koffing.Waits.Ryanmen.GetHashCodeBasis*
   commentId: Overload:Koffing.Waits.Ryanmen.GetHashCodeBasis

@@ -47,28 +47,6 @@ references:
   name: WallDisplay
   nameWithType: WallDisplay
   fullName: Koffing.Matches.WallDisplay
-- uid: Koffing.Matches.WallDisplay.PropertyName
-  commentId: T:Koffing.Matches.WallDisplay.PropertyName
-  href: Koffing.Matches.WallDisplay.html
-  name: WallDisplay.PropertyName
-  nameWithType: WallDisplay.PropertyName
-  fullName: Koffing.Matches.WallDisplay.PropertyName
-  spec.csharp:
-  - uid: Koffing.Matches.WallDisplay
-    name: WallDisplay
-    href: Koffing.Matches.WallDisplay.html
-  - name: .
-  - uid: Koffing.Matches.WallDisplay.PropertyName
-    name: PropertyName
-    href: Koffing.Matches.WallDisplay.PropertyName.html
-  spec.vb:
-  - uid: Koffing.Matches.WallDisplay
-    name: WallDisplay
-    href: Koffing.Matches.WallDisplay.html
-  - name: .
-  - uid: Koffing.Matches.WallDisplay.PropertyName
-    name: PropertyName
-    href: Koffing.Matches.WallDisplay.PropertyName.html
 - uid: Koffing.Matches.WallDisplay.SignalName
   commentId: T:Koffing.Matches.WallDisplay.SignalName
   href: Koffing.Matches.WallDisplay.html
@@ -91,6 +69,28 @@ references:
   - uid: Koffing.Matches.WallDisplay.SignalName
     name: SignalName
     href: Koffing.Matches.WallDisplay.SignalName.html
+- uid: Koffing.Matches.WallDisplay.PropertyName
+  commentId: T:Koffing.Matches.WallDisplay.PropertyName
+  href: Koffing.Matches.WallDisplay.html
+  name: WallDisplay.PropertyName
+  nameWithType: WallDisplay.PropertyName
+  fullName: Koffing.Matches.WallDisplay.PropertyName
+  spec.csharp:
+  - uid: Koffing.Matches.WallDisplay
+    name: WallDisplay
+    href: Koffing.Matches.WallDisplay.html
+  - name: .
+  - uid: Koffing.Matches.WallDisplay.PropertyName
+    name: PropertyName
+    href: Koffing.Matches.WallDisplay.PropertyName.html
+  spec.vb:
+  - uid: Koffing.Matches.WallDisplay
+    name: WallDisplay
+    href: Koffing.Matches.WallDisplay.html
+  - name: .
+  - uid: Koffing.Matches.WallDisplay.PropertyName
+    name: PropertyName
+    href: Koffing.Matches.WallDisplay.PropertyName.html
 - uid: Koffing.Matches.WallDisplay.MethodName
   commentId: T:Koffing.Matches.WallDisplay.MethodName
   href: Koffing.Matches.WallDisplay.html
