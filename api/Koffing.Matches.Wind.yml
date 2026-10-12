@@ -23,10 +23,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Wind
     path: ../Koffing/Scripts/Matches/Wind.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: Represents a seat wind or a round wind.
+  example: []
   syntax:
     content: public enum Wind
     content.vb: Public Enum Wind
@@ -48,7 +50,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: East
     path: ../Koffing/Scripts/Matches/Wind.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -74,7 +76,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: South
     path: ../Koffing/Scripts/Matches/Wind.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -100,7 +102,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: West
     path: ../Koffing/Scripts/Matches/Wind.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -126,7 +128,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: North
     path: ../Koffing/Scripts/Matches/Wind.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - Koffing
   namespace: Koffing.Matches

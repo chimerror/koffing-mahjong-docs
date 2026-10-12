@@ -21,10 +21,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Player
     path: ../Koffing/Scripts/Players/Player.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Koffing
   namespace: Koffing.Players
+  summary: Base class for a player in a <xref href="Koffing.Matches.Match" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public class Player
     content.vb: Public Class Player
@@ -56,15 +58,18 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Points
     path: ../Koffing/Scripts/Players/Player.cs
-    startLine: 8
+    startLine: 15
   assemblies:
   - Koffing
   namespace: Koffing.Players
+  summary: The number of points the player current has.
+  example: []
   syntax:
     content: public int Points { get; set; }
     parameters: []
     return:
       type: System.Int32
+      description: ''
     content.vb: Public Property Points As Integer
   overload: Koffing.Players.Player.Points*
 - uid: Koffing.Players.Player.Hand
@@ -85,18 +90,27 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Hand
     path: ../Koffing/Scripts/Players/Player.cs
-    startLine: 9
+    startLine: 21
   assemblies:
   - Koffing
   namespace: Koffing.Players
+  summary: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s the player current has in their hand.
+  example: []
   syntax:
     content: public List<Tile> Hand { get; set; }
     parameters: []
     return:
       type: System.Collections.Generic.List{Koffing.Tiles.Tile}
+      description: ''
     content.vb: Public Property Hand As List(Of Tile)
   overload: Koffing.Players.Player.Hand*
 references:
+- uid: Koffing.Matches.Match
+  commentId: T:Koffing.Matches.Match
+  href: Koffing.Matches.Match.html
+  name: Match
+  nameWithType: Match
+  fullName: Koffing.Matches.Match
 - uid: Koffing.Players
   commentId: N:Koffing.Players
   name: Koffing.Players
@@ -368,6 +382,13 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: Koffing.Tiles.Tile
+  commentId: T:Koffing.Tiles.Tile
+  parent: Koffing.Tiles
+  href: Koffing.Tiles.Tile.html
+  name: Tile
+  nameWithType: Tile
+  fullName: Koffing.Tiles.Tile
 - uid: Koffing.Players.Player.Hand*
   commentId: Overload:Koffing.Players.Player.Hand
   href: Koffing.Players.Player.html#Koffing_Players_Player_Hand
@@ -407,6 +428,23 @@ references:
     name: Tile
     href: Koffing.Tiles.Tile.html
   - name: )
+- uid: Koffing.Tiles
+  commentId: N:Koffing.Tiles
+  name: Koffing.Tiles
+  nameWithType: Koffing.Tiles
+  fullName: Koffing.Tiles
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
   isExternal: true

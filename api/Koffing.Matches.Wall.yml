@@ -34,10 +34,38 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Wall
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 9
+    startLine: 27
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: Represents a wall of <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s.
+  remarks: >-
+    <p>
+
+    The wall of tiles is the set of shuffled tiles that are used to play a deal of a match. The wall is made up of 136
+
+    tiles for a four-player or two-player game, and 108 tiles for a three-player game (due to dropping the 2-8 of the
+
+    Man suit).
+
+    </p>
+
+    <p>
+
+    When created, a wall is already "broken", which means that the point where tiles will be dealt to players and then
+
+    drawn from has been decided, as the "live" wall. Breaking the wall also marks the "dead" wall, which is made up of
+
+    14 tiles in a four-player or two-player game, and 20 tiles in a three-player game. The dead wall is used for
+
+    drawing replacement tiles for kan calls (and kita calls in three-player games), as well as tracking dora indicators.
+
+    One dora indicator is revealed when the wall is created. More dora indicators are revealed each time a kan is made.
+
+    Each indicator indicates a dora tile that receives the dora bonus of one han per tile during scoring.
+
+    </p>
+  example: []
   syntax:
     content: public class Wall
     content.vb: Public Class Wall
@@ -69,17 +97,116 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Tiles
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 26
+    startLine: 48
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: A read-only collection of the <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s in the wall.
+  example: []
   syntax:
     content: public IEnumerable<Tile> Tiles { get; }
     parameters: []
     return:
       type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+      description: A read-only collection of the <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s in the wall.
     content.vb: Public ReadOnly Property Tiles As IEnumerable(Of Tile)
   overload: Koffing.Matches.Wall.Tiles*
+- uid: Koffing.Matches.Wall.CanTakeLiveTile
+  commentId: P:Koffing.Matches.Wall.CanTakeLiveTile
+  id: CanTakeLiveTile
+  parent: Koffing.Matches.Wall
+  langs:
+  - csharp
+  - vb
+  name: CanTakeLiveTile
+  nameWithType: Wall.CanTakeLiveTile
+  fullName: Koffing.Matches.Wall.CanTakeLiveTile
+  type: Property
+  source:
+    remote:
+      path: Scripts/Matches/Wall.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: CanTakeLiveTile
+    path: ../Koffing/Scripts/Matches/Wall.cs
+    startLine: 58
+  assemblies:
+  - Koffing
+  namespace: Koffing.Matches
+  summary: If a live tile can be taken from the wall.
+  example: []
+  syntax:
+    content: public bool CanTakeLiveTile { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if a live tile can be taken, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
+    content.vb: Public ReadOnly Property CanTakeLiveTile As Boolean
+  overload: Koffing.Matches.Wall.CanTakeLiveTile*
+- uid: Koffing.Matches.Wall.CanTakeReplacementTile
+  commentId: P:Koffing.Matches.Wall.CanTakeReplacementTile
+  id: CanTakeReplacementTile
+  parent: Koffing.Matches.Wall
+  langs:
+  - csharp
+  - vb
+  name: CanTakeReplacementTile
+  nameWithType: Wall.CanTakeReplacementTile
+  fullName: Koffing.Matches.Wall.CanTakeReplacementTile
+  type: Property
+  source:
+    remote:
+      path: Scripts/Matches/Wall.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: CanTakeReplacementTile
+    path: ../Koffing/Scripts/Matches/Wall.cs
+    startLine: 64
+  assemblies:
+  - Koffing
+  namespace: Koffing.Matches
+  summary: If a replacement tile can be taken from the dead wall.
+  example: []
+  syntax:
+    content: public bool CanTakeReplacementTile { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if a replacement tile can be taken, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
+    content.vb: Public ReadOnly Property CanTakeReplacementTile As Boolean
+  overload: Koffing.Matches.Wall.CanTakeReplacementTile*
+- uid: Koffing.Matches.Wall.CanRevealDoraIndicator
+  commentId: P:Koffing.Matches.Wall.CanRevealDoraIndicator
+  id: CanRevealDoraIndicator
+  parent: Koffing.Matches.Wall
+  langs:
+  - csharp
+  - vb
+  name: CanRevealDoraIndicator
+  nameWithType: Wall.CanRevealDoraIndicator
+  fullName: Koffing.Matches.Wall.CanRevealDoraIndicator
+  type: Property
+  source:
+    remote:
+      path: Scripts/Matches/Wall.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: CanRevealDoraIndicator
+    path: ../Koffing/Scripts/Matches/Wall.cs
+    startLine: 70
+  assemblies:
+  - Koffing
+  namespace: Koffing.Matches
+  summary: If a dora indicator can be revealed in the dead wall.
+  example: []
+  syntax:
+    content: public bool CanRevealDoraIndicator { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if a dora indicator can be revealed, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
+    content.vb: Public ReadOnly Property CanRevealDoraIndicator As Boolean
+  overload: Koffing.Matches.Wall.CanRevealDoraIndicator*
 - uid: Koffing.Matches.Wall.LiveWallStartIndex
   commentId: P:Koffing.Matches.Wall.LiveWallStartIndex
   id: LiveWallStartIndex
@@ -98,7 +225,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: LiveWallStartIndex
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 33
+    startLine: 73
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -127,7 +254,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: DeadWallStartIndex
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 34
+    startLine: 74
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -156,7 +283,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: DeadWallEndIndex
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 35
+    startLine: 75
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -185,7 +312,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: NextLiveTileIndex
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 36
+    startLine: 76
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -196,64 +323,6 @@ items:
       type: System.Int32
     content.vb: Public ReadOnly Property NextLiveTileIndex As Integer
   overload: Koffing.Matches.Wall.NextLiveTileIndex*
-- uid: Koffing.Matches.Wall.CanTakeLiveTile
-  commentId: P:Koffing.Matches.Wall.CanTakeLiveTile
-  id: CanTakeLiveTile
-  parent: Koffing.Matches.Wall
-  langs:
-  - csharp
-  - vb
-  name: CanTakeLiveTile
-  nameWithType: Wall.CanTakeLiveTile
-  fullName: Koffing.Matches.Wall.CanTakeLiveTile
-  type: Property
-  source:
-    remote:
-      path: Scripts/Matches/Wall.cs
-      branch: main
-      repo: https://github.com/chimerror/koffing.git
-    id: CanTakeLiveTile
-    path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 37
-  assemblies:
-  - Koffing
-  namespace: Koffing.Matches
-  syntax:
-    content: public bool CanTakeLiveTile { get; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public ReadOnly Property CanTakeLiveTile As Boolean
-  overload: Koffing.Matches.Wall.CanTakeLiveTile*
-- uid: Koffing.Matches.Wall.CanTakeReplacementTile
-  commentId: P:Koffing.Matches.Wall.CanTakeReplacementTile
-  id: CanTakeReplacementTile
-  parent: Koffing.Matches.Wall
-  langs:
-  - csharp
-  - vb
-  name: CanTakeReplacementTile
-  nameWithType: Wall.CanTakeReplacementTile
-  fullName: Koffing.Matches.Wall.CanTakeReplacementTile
-  type: Property
-  source:
-    remote:
-      path: Scripts/Matches/Wall.cs
-      branch: main
-      repo: https://github.com/chimerror/koffing.git
-    id: CanTakeReplacementTile
-    path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 38
-  assemblies:
-  - Koffing
-  namespace: Koffing.Matches
-  syntax:
-    content: public bool CanTakeReplacementTile { get; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public ReadOnly Property CanTakeReplacementTile As Boolean
-  overload: Koffing.Matches.Wall.CanTakeReplacementTile*
 - uid: Koffing.Matches.Wall.NextReplacementTileIndex
   commentId: P:Koffing.Matches.Wall.NextReplacementTileIndex
   id: NextReplacementTileIndex
@@ -272,7 +341,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: NextReplacementTileIndex
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 39
+    startLine: 77
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -283,35 +352,6 @@ items:
       type: System.Int32
     content.vb: Public ReadOnly Property NextReplacementTileIndex As Integer
   overload: Koffing.Matches.Wall.NextReplacementTileIndex*
-- uid: Koffing.Matches.Wall.CanRevealDoraIndicator
-  commentId: P:Koffing.Matches.Wall.CanRevealDoraIndicator
-  id: CanRevealDoraIndicator
-  parent: Koffing.Matches.Wall
-  langs:
-  - csharp
-  - vb
-  name: CanRevealDoraIndicator
-  nameWithType: Wall.CanRevealDoraIndicator
-  fullName: Koffing.Matches.Wall.CanRevealDoraIndicator
-  type: Property
-  source:
-    remote:
-      path: Scripts/Matches/Wall.cs
-      branch: main
-      repo: https://github.com/chimerror/koffing.git
-    id: CanRevealDoraIndicator
-    path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 40
-  assemblies:
-  - Koffing
-  namespace: Koffing.Matches
-  syntax:
-    content: public bool CanRevealDoraIndicator { get; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public ReadOnly Property CanRevealDoraIndicator As Boolean
-  overload: Koffing.Matches.Wall.CanRevealDoraIndicator*
 - uid: Koffing.Matches.Wall.LastRevealedDoraIndicatorIndex
   commentId: P:Koffing.Matches.Wall.LastRevealedDoraIndicatorIndex
   id: LastRevealedDoraIndicatorIndex
@@ -330,7 +370,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: LastRevealedDoraIndicatorIndex
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 41
+    startLine: 78
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -359,7 +399,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: NextDoraIndicatorIndex
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 42
+    startLine: 79
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -388,21 +428,39 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 44
+    startLine: 97
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: >-
+    Constructor. Takes in an <xref href="Koffing.Random.IRandomNumberGenerator" data-throw-if-not-resolved="false"></xref>, a <xref href="Koffing.Matches.PlayerCount" data-throw-if-not-resolved="false"></xref>, whether or not to
+
+    use red fives, and optionally a dice roll to use to break the wall (for testing purposes).
+  remarks: >-
+    Once created, the wall will already be "broken" based on either a dice roll from <code class="paramref">rng</code>, or a
+
+    roll provided by <code class="paramref">breakDiceRoll</code>, ready to deal tiles. Note that <code class="paramref">rng</code> will
+
+    be used for shuffling the wall regardless of the value of <code class="paramref">breakDiceRoll</code>.
+  example: []
   syntax:
     content: public Wall(IRandomNumberGenerator rng, PlayerCount playerCount, bool hasRedFives, int breakDiceRoll = -1)
     parameters:
     - id: rng
       type: Koffing.Random.IRandomNumberGenerator
+      description: The <xref href="Koffing.Random.IRandomNumberGenerator" data-throw-if-not-resolved="false"></xref> to use for random numbers.
     - id: playerCount
       type: Koffing.Matches.PlayerCount
+      description: The number of players in the match as a <xref href="Koffing.Matches.PlayerCount" data-throw-if-not-resolved="false"></xref>.
     - id: hasRedFives
       type: System.Boolean
+      description: Whether or not red fives should be used.
     - id: breakDiceRoll
       type: System.Int32
+      description: >-
+        If specified (set to something besides <code>-1</code>), will be used as the roll to break the wall instead of getting
+
+        a dice roll from <code class="paramref">rng</code>. Parameter only meant for testing purposes.
     content.vb: Public Sub New(rng As IRandomNumberGenerator, playerCount As PlayerCount, hasRedFives As Boolean, breakDiceRoll As Integer = -1)
   overload: Koffing.Matches.Wall.#ctor*
   nameWithType.vb: Wall.New(IRandomNumberGenerator, PlayerCount, Boolean, Integer)
@@ -426,14 +484,20 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PopNextLiveTile
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 102
+    startLine: 162
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: If possible, pops the next tile off the live wall, updating indices to point to the tile after it.
+  example: []
   syntax:
     content: public Tile PopNextLiveTile()
     return:
       type: Koffing.Tiles.Tile
+      description: >-
+        The next live tile in the wall, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if <xref href="Koffing.Matches.Wall.CanTakeLiveTile" data-throw-if-not-resolved="false"></xref> is
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function PopNextLiveTile() As Tile
   overload: Koffing.Matches.Wall.PopNextLiveTile*
 - uid: Koffing.Matches.Wall.PopNextReplacementTile
@@ -454,14 +518,20 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PopNextReplacementTile
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 115
+    startLine: 182
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: If possible, pops the next replacement tile off the dead wall, updating indices to point to the tile after it.
+  example: []
   syntax:
     content: public Tile PopNextReplacementTile()
     return:
       type: Koffing.Tiles.Tile
+      description: >-
+        The next replacement tile in the dead wall, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if <xref href="Koffing.Matches.Wall.CanTakeReplacementTile" data-throw-if-not-resolved="false"></xref> is
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function PopNextReplacementTile() As Tile
   overload: Koffing.Matches.Wall.PopNextReplacementTile*
 - uid: Koffing.Matches.Wall.RevealNextDoraIndicator
@@ -482,17 +552,33 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RevealNextDoraIndicator
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 130
+    startLine: 205
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: >-
+    If possible, reveals the next dora indicator in the dead wall, turning it face-up and  updating indices to point
+
+    to the tile after it.
+  example: []
   syntax:
     content: public Tile RevealNextDoraIndicator()
     return:
       type: Koffing.Tiles.Tile
+      description: >-
+        The newly revealed dora indicator in the dead wall, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if
+
+        <xref href="Koffing.Matches.Wall.CanRevealDoraIndicator" data-throw-if-not-resolved="false"></xref> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function RevealNextDoraIndicator() As Tile
   overload: Koffing.Matches.Wall.RevealNextDoraIndicator*
 references:
+- uid: Koffing.Tiles.Tile
+  commentId: T:Koffing.Tiles.Tile
+  parent: Koffing.Tiles
+  href: Koffing.Tiles.Tile.html
+  name: Tile
+  nameWithType: Tile
+  fullName: Koffing.Tiles.Tile
 - uid: Koffing.Matches
   commentId: N:Koffing.Matches
   name: Koffing.Matches
@@ -740,6 +826,23 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
+- uid: Koffing.Tiles
+  commentId: N:Koffing.Tiles
+  name: Koffing.Tiles
+  nameWithType: Koffing.Tiles
+  fullName: Koffing.Tiles
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Tiles
+    name: Tiles
 - uid: System
   commentId: N:System
   isExternal: true
@@ -851,6 +954,35 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Koffing.Matches.Wall.CanTakeLiveTile*
+  commentId: Overload:Koffing.Matches.Wall.CanTakeLiveTile
+  href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanTakeLiveTile
+  name: CanTakeLiveTile
+  nameWithType: Wall.CanTakeLiveTile
+  fullName: Koffing.Matches.Wall.CanTakeLiveTile
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Koffing.Matches.Wall.CanTakeReplacementTile*
+  commentId: Overload:Koffing.Matches.Wall.CanTakeReplacementTile
+  href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanTakeReplacementTile
+  name: CanTakeReplacementTile
+  nameWithType: Wall.CanTakeReplacementTile
+  fullName: Koffing.Matches.Wall.CanTakeReplacementTile
+- uid: Koffing.Matches.Wall.CanRevealDoraIndicator*
+  commentId: Overload:Koffing.Matches.Wall.CanRevealDoraIndicator
+  href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanRevealDoraIndicator
+  name: CanRevealDoraIndicator
+  nameWithType: Wall.CanRevealDoraIndicator
+  fullName: Koffing.Matches.Wall.CanRevealDoraIndicator
 - uid: Koffing.Matches.Wall.LiveWallStartIndex*
   commentId: Overload:Koffing.Matches.Wall.LiveWallStartIndex
   href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_LiveWallStartIndex
@@ -886,41 +1018,12 @@ references:
   name: NextLiveTileIndex
   nameWithType: Wall.NextLiveTileIndex
   fullName: Koffing.Matches.Wall.NextLiveTileIndex
-- uid: Koffing.Matches.Wall.CanTakeLiveTile*
-  commentId: Overload:Koffing.Matches.Wall.CanTakeLiveTile
-  href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanTakeLiveTile
-  name: CanTakeLiveTile
-  nameWithType: Wall.CanTakeLiveTile
-  fullName: Koffing.Matches.Wall.CanTakeLiveTile
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
-- uid: Koffing.Matches.Wall.CanTakeReplacementTile*
-  commentId: Overload:Koffing.Matches.Wall.CanTakeReplacementTile
-  href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanTakeReplacementTile
-  name: CanTakeReplacementTile
-  nameWithType: Wall.CanTakeReplacementTile
-  fullName: Koffing.Matches.Wall.CanTakeReplacementTile
 - uid: Koffing.Matches.Wall.NextReplacementTileIndex*
   commentId: Overload:Koffing.Matches.Wall.NextReplacementTileIndex
   href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_NextReplacementTileIndex
   name: NextReplacementTileIndex
   nameWithType: Wall.NextReplacementTileIndex
   fullName: Koffing.Matches.Wall.NextReplacementTileIndex
-- uid: Koffing.Matches.Wall.CanRevealDoraIndicator*
-  commentId: Overload:Koffing.Matches.Wall.CanRevealDoraIndicator
-  href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanRevealDoraIndicator
-  name: CanRevealDoraIndicator
-  nameWithType: Wall.CanRevealDoraIndicator
-  fullName: Koffing.Matches.Wall.CanRevealDoraIndicator
 - uid: Koffing.Matches.Wall.LastRevealedDoraIndicatorIndex*
   commentId: Overload:Koffing.Matches.Wall.LastRevealedDoraIndicatorIndex
   href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_LastRevealedDoraIndicatorIndex
@@ -933,15 +1036,6 @@ references:
   name: NextDoraIndicatorIndex
   nameWithType: Wall.NextDoraIndicatorIndex
   fullName: Koffing.Matches.Wall.NextDoraIndicatorIndex
-- uid: Koffing.Matches.Wall.#ctor*
-  commentId: Overload:Koffing.Matches.Wall.#ctor
-  href: Koffing.Matches.Wall.html#Koffing_Matches_Wall__ctor_Koffing_Random_IRandomNumberGenerator_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_
-  name: Wall
-  nameWithType: Wall.Wall
-  fullName: Koffing.Matches.Wall.Wall
-  nameWithType.vb: Wall.New
-  fullName.vb: Koffing.Matches.Wall.New
-  name.vb: New
 - uid: Koffing.Random.IRandomNumberGenerator
   commentId: T:Koffing.Random.IRandomNumberGenerator
   parent: Koffing.Random
@@ -956,6 +1050,15 @@ references:
   name: PlayerCount
   nameWithType: PlayerCount
   fullName: Koffing.Matches.PlayerCount
+- uid: Koffing.Matches.Wall.#ctor*
+  commentId: Overload:Koffing.Matches.Wall.#ctor
+  href: Koffing.Matches.Wall.html#Koffing_Matches_Wall__ctor_Koffing_Random_IRandomNumberGenerator_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_
+  name: Wall
+  nameWithType: Wall.Wall
+  fullName: Koffing.Matches.Wall.Wall
+  nameWithType.vb: Wall.New
+  fullName.vb: Koffing.Matches.Wall.New
+  name.vb: New
 - uid: Koffing.Random
   commentId: N:Koffing.Random
   name: Koffing.Random
@@ -973,42 +1076,36 @@ references:
   - name: .
   - uid: Koffing.Random
     name: Random
+- uid: Koffing.Matches.Wall.CanTakeLiveTile
+  commentId: P:Koffing.Matches.Wall.CanTakeLiveTile
+  href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanTakeLiveTile
+  name: CanTakeLiveTile
+  nameWithType: Wall.CanTakeLiveTile
+  fullName: Koffing.Matches.Wall.CanTakeLiveTile
 - uid: Koffing.Matches.Wall.PopNextLiveTile*
   commentId: Overload:Koffing.Matches.Wall.PopNextLiveTile
   href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_PopNextLiveTile
   name: PopNextLiveTile
   nameWithType: Wall.PopNextLiveTile
   fullName: Koffing.Matches.Wall.PopNextLiveTile
-- uid: Koffing.Tiles.Tile
-  commentId: T:Koffing.Tiles.Tile
-  parent: Koffing.Tiles
-  href: Koffing.Tiles.Tile.html
-  name: Tile
-  nameWithType: Tile
-  fullName: Koffing.Tiles.Tile
-- uid: Koffing.Tiles
-  commentId: N:Koffing.Tiles
-  name: Koffing.Tiles
-  nameWithType: Koffing.Tiles
-  fullName: Koffing.Tiles
-  spec.csharp:
-  - uid: Koffing
-    name: Koffing
-  - name: .
-  - uid: Koffing.Tiles
-    name: Tiles
-  spec.vb:
-  - uid: Koffing
-    name: Koffing
-  - name: .
-  - uid: Koffing.Tiles
-    name: Tiles
+- uid: Koffing.Matches.Wall.CanTakeReplacementTile
+  commentId: P:Koffing.Matches.Wall.CanTakeReplacementTile
+  href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanTakeReplacementTile
+  name: CanTakeReplacementTile
+  nameWithType: Wall.CanTakeReplacementTile
+  fullName: Koffing.Matches.Wall.CanTakeReplacementTile
 - uid: Koffing.Matches.Wall.PopNextReplacementTile*
   commentId: Overload:Koffing.Matches.Wall.PopNextReplacementTile
   href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_PopNextReplacementTile
   name: PopNextReplacementTile
   nameWithType: Wall.PopNextReplacementTile
   fullName: Koffing.Matches.Wall.PopNextReplacementTile
+- uid: Koffing.Matches.Wall.CanRevealDoraIndicator
+  commentId: P:Koffing.Matches.Wall.CanRevealDoraIndicator
+  href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanRevealDoraIndicator
+  name: CanRevealDoraIndicator
+  nameWithType: Wall.CanRevealDoraIndicator
+  fullName: Koffing.Matches.Wall.CanRevealDoraIndicator
 - uid: Koffing.Matches.Wall.RevealNextDoraIndicator*
   commentId: Overload:Koffing.Matches.Wall.RevealNextDoraIndicator
   href: Koffing.Matches.Wall.html#Koffing_Matches_Wall_RevealNextDoraIndicator

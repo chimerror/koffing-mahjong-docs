@@ -22,10 +22,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PlayerCount
     path: ../Koffing/Scripts/Matches/PlayerCount.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: Represents the number of players in a game.
+  example: []
   syntax:
     content: public enum PlayerCount
     content.vb: Public Enum PlayerCount
@@ -47,7 +49,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Two
     path: ../Koffing/Scripts/Matches/PlayerCount.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -73,7 +75,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Three
     path: ../Koffing/Scripts/Matches/PlayerCount.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -99,7 +101,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Four
     path: ../Koffing/Scripts/Matches/PlayerCount.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - Koffing
   namespace: Koffing.Matches

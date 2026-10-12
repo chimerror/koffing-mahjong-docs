@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class SystemRandomNumberGenerator | Koffing Mahjong Engine ">
       
-      
+      <meta name="description" content="An implementation of the  interface wrapping around the  random number generator.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Koffing_Random_SystemRandomNumberGenerator" data-uid="Koffing.Random.SystemRandomNumberGenerator" class="text-break">
-Class SystemRandomNumberGenerator  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Random/SystemRandomNumberGenerator.cs/#L5"><i class="bi bi-code-slash"></i></a>
+Class SystemRandomNumberGenerator  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Random/SystemRandomNumberGenerator.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,9 @@ Class SystemRandomNumberGenerator  <a class="header-action link-secondary" title
   <dl><dt>Assembly</dt><dd>Koffing.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>An implementation of the <a class="xref" href="Koffing.Random.IRandomNumberGenerator.html">IRandomNumberGenerator</a> interface wrapping around the
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">System.Random</a> random number generator.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -172,10 +174,11 @@ Class SystemRandomNumberGenerator  <a class="header-action link-secondary" title
 
   <h3 id="Koffing_Random_SystemRandomNumberGenerator__ctor" data-uid="Koffing.Random.SystemRandomNumberGenerator.#ctor">
   SystemRandomNumberGenerator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Random/SystemRandomNumberGenerator.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Random/SystemRandomNumberGenerator.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Parameterless constructor. Chooses a seed at random using <a class="xref" href="Koffing.Random.SystemRandomNumberGenerator.html#Koffing_Random_SystemRandomNumberGenerator_Randomize">Randomize()</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -202,10 +205,11 @@ Class SystemRandomNumberGenerator  <a class="header-action link-secondary" title
 
   <h3 id="Koffing_Random_SystemRandomNumberGenerator_Seed" data-uid="Koffing.Random.SystemRandomNumberGenerator.Seed">
   Seed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Random/SystemRandomNumberGenerator.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Random/SystemRandomNumberGenerator.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The seed value for the random number generator.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -219,12 +223,18 @@ Class SystemRandomNumberGenerator  <a class="header-action link-secondary" title
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
-    <dd></dd>
+    <dd><p>The <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/integral-numeric-types">ulong</a> that was used to seed the random number generator.</p>
+</dd>
   </dl>
 
 
 
 
+  <h4 class="section" id="Koffing_Random_SystemRandomNumberGenerator_Seed_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The System.Random number generator uses an <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/integral-numeric-types">int</a> as the seed rather than a
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/integral-numeric-types">ulong</a>. Thus, when setting the seed using a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/integral-numeric-types">ulong</a>, the value will be
+truncated to fit in the range of <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/integral-numeric-types">int</a>.</p>
+</div>
 
 
 
@@ -237,10 +247,11 @@ Class SystemRandomNumberGenerator  <a class="header-action link-secondary" title
 
   <h3 id="Koffing_Random_SystemRandomNumberGenerator_GetIntegerInRange_System_Int32_System_Int32_" data-uid="Koffing.Random.SystemRandomNumberGenerator.GetIntegerInRange(System.Int32,System.Int32)">
   GetIntegerInRange(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Random/SystemRandomNumberGenerator.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Random/SystemRandomNumberGenerator.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns a random integer within the specified interval.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -250,15 +261,18 @@ Class SystemRandomNumberGenerator  <a class="header-action link-secondary" title
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>from</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The lower bound of the interval (inclusive).</p>
+</dd>
     <dt><code>to</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The upper bound of the interval (inclusive).</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>A random integer within the range specified by <code class="paramref">from</code> and <code class="paramref">to</code>.</p>
+</dd>
   </dl>
 
 
@@ -275,10 +289,11 @@ Class SystemRandomNumberGenerator  <a class="header-action link-secondary" title
 
   <h3 id="Koffing_Random_SystemRandomNumberGenerator_Randomize" data-uid="Koffing.Random.SystemRandomNumberGenerator.Randomize">
   Randomize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Random/SystemRandomNumberGenerator.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Random/SystemRandomNumberGenerator.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Randomizes the random number generator, picking a seed value at random.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -301,7 +316,7 @@ Class SystemRandomNumberGenerator  <a class="header-action link-secondary" title
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Random/SystemRandomNumberGenerator.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Random/SystemRandomNumberGenerator.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 

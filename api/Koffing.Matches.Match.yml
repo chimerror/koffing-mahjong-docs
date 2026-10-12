@@ -29,10 +29,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Match
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 9
+    startLine: 12
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: Represents a match of mahjong, managing the players playing, the wall, and the current game state.
+  example: []
   syntax:
     content: public class Match
     content.vb: Public Class Match
@@ -64,15 +66,18 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RoundWind
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 17
+    startLine: 24
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: The current round wind.
+  example: []
   syntax:
     content: public Wind RoundWind { get; }
     parameters: []
     return:
       type: Koffing.Matches.Wind
+      description: A <xref href="Koffing.Matches.Wind" data-throw-if-not-resolved="false"></xref> that is the current round wind.
     content.vb: Public Property RoundWind As Wind
   overload: Koffing.Matches.Match.RoundWind*
 - uid: Koffing.Matches.Match.NumberOfRounds
@@ -93,15 +98,18 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: NumberOfRounds
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 18
+    startLine: 30
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: The number of rounds to play in the match.
+  example: []
   syntax:
     content: public int NumberOfRounds { get; }
     parameters: []
     return:
       type: System.Int32
+      description: The number of rounds to play in the match.
     content.vb: Public Property NumberOfRounds As Integer
   overload: Koffing.Matches.Match.NumberOfRounds*
 - uid: Koffing.Matches.Match.PlayerCount
@@ -122,15 +130,18 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PlayerCount
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 19
+    startLine: 36
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: The number of players in the match.
+  example: []
   syntax:
     content: public PlayerCount PlayerCount { get; }
     parameters: []
     return:
       type: Koffing.Matches.PlayerCount
+      description: A <xref href="Koffing.Matches.Match.PlayerCount" data-throw-if-not-resolved="false"></xref> representing the number of players in the match.
     content.vb: Public Property PlayerCount As PlayerCount
   overload: Koffing.Matches.Match.PlayerCount*
 - uid: Koffing.Matches.Match.HasRedFives
@@ -151,15 +162,18 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: HasRedFives
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 20
+    startLine: 42
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: Whether or not the match is using red fives in its walls.
+  example: []
   syntax:
     content: public bool HasRedFives { get; }
     parameters: []
     return:
       type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if red fives are being used, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.
     content.vb: Public Property HasRedFives As Boolean
   overload: Koffing.Matches.Match.HasRedFives*
 - uid: Koffing.Matches.Match.Players
@@ -180,15 +194,18 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Players
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 21
+    startLine: 48
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: A read-only collection of the <xref href="Koffing.Players.Player" data-throw-if-not-resolved="false"></xref>s in the match.
+  example: []
   syntax:
     content: public IEnumerable<Player> Players { get; }
     parameters: []
     return:
       type: System.Collections.Generic.IEnumerable{Koffing.Players.Player}
+      description: A read-only collection of the <xref href="Koffing.Players.Player" data-throw-if-not-resolved="false"></xref>s playing the match.
     content.vb: Public ReadOnly Property Players As IEnumerable(Of Player)
   overload: Koffing.Matches.Match.Players*
 - uid: Koffing.Matches.Match.CurrentEastPlayer
@@ -209,10 +226,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CurrentEastPlayer
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 22
+    startLine: 53
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: The current east <xref href="Koffing.Players.Player" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public Player CurrentEastPlayer { get; }
     parameters: []
@@ -238,15 +257,18 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: WindsToPlayers
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 23
+    startLine: 59
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: A read-only dictionary mapping seat <xref href="Koffing.Matches.Wind" data-throw-if-not-resolved="false"></xref>s to the <xref href="Koffing.Players.Player" data-throw-if-not-resolved="false"></xref> currently in the seat.
+  example: []
   syntax:
     content: public IDictionary<Wind, Player> WindsToPlayers { get; }
     parameters: []
     return:
       type: System.Collections.Generic.IDictionary{Koffing.Matches.Wind,Koffing.Players.Player}
+      description: A read-only dictionary mapping seat <xref href="Koffing.Matches.Wind" data-throw-if-not-resolved="false"></xref>s to <xref href="Koffing.Players.Player" data-throw-if-not-resolved="false"></xref>s.
     content.vb: Public ReadOnly Property WindsToPlayers As IDictionary(Of Wind, Player)
   overload: Koffing.Matches.Match.WindsToPlayers*
 - uid: Koffing.Matches.Match.CurrentEastIndex
@@ -267,10 +289,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CurrentEastIndex
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 24
+    startLine: 64
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: The index (in <xref href="Koffing.Matches.Match.Players" data-throw-if-not-resolved="false"></xref>) of the current east <xref href="Koffing.Players.Player" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public int CurrentEastIndex { get; }
     parameters: []
@@ -296,21 +320,36 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 29
+    startLine: 83
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: >-
+    Constructor. Creates a new match using the specified <xref href="Koffing.Random.IRandomNumberGenerator" data-throw-if-not-resolved="false"></xref> with
+
+    <xref href="Koffing.Matches.Match.PlayerCount" data-throw-if-not-resolved="false"></xref> players, whether to use red fives, and the number of rounds in the match.
+  remarks: >-
+    After this constructor returns, the match will have an initial wall created and broken (as part of the
+
+    <xref href="Koffing.Matches.Wall" data-throw-if-not-resolved="false"></xref> constructor), the players at random indices, and a random player chosen as east. However, no
+
+    tiles will be dealt to players yet.
+  example: []
   syntax:
     content: public Match(IRandomNumberGenerator rng, PlayerCount playerCount, bool hasRedFives, int numberOfRounds = 2)
     parameters:
     - id: rng
       type: Koffing.Random.IRandomNumberGenerator
+      description: The <xref href="Koffing.Random.IRandomNumberGenerator" data-throw-if-not-resolved="false"></xref> to use for random numbers.
     - id: playerCount
       type: Koffing.Matches.PlayerCount
+      description: The number of players in the match as a <xref href="Koffing.Matches.Match.PlayerCount" data-throw-if-not-resolved="false"></xref>.
     - id: hasRedFives
       type: System.Boolean
+      description: Whether or not red fives should be used.
     - id: numberOfRounds
       type: System.Int32
+      description: The number of rounds in the match. If not specified, defaults to 2.
     content.vb: Public Sub New(rng As IRandomNumberGenerator, playerCount As PlayerCount, hasRedFives As Boolean, numberOfRounds As Integer = 2)
   overload: Koffing.Matches.Match.#ctor*
   nameWithType.vb: Match.New(IRandomNumberGenerator, PlayerCount, Boolean, Integer)
@@ -334,10 +373,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: DealHands
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 50
+    startLine: 112
   assemblies:
   - Koffing
   namespace: Koffing.Matches
+  summary: Deals the initial starting hands to players.
+  example: []
   syntax:
     content: public void DealHands()
     content.vb: Public Sub DealHands()
@@ -597,12 +638,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Koffing.Matches.Match.RoundWind*
-  commentId: Overload:Koffing.Matches.Match.RoundWind
-  href: Koffing.Matches.Match.html#Koffing_Matches_Match_RoundWind
-  name: RoundWind
-  nameWithType: Match.RoundWind
-  fullName: Koffing.Matches.Match.RoundWind
 - uid: Koffing.Matches.Wind
   commentId: T:Koffing.Matches.Wind
   parent: Koffing.Matches
@@ -610,6 +645,12 @@ references:
   name: Wind
   nameWithType: Wind
   fullName: Koffing.Matches.Wind
+- uid: Koffing.Matches.Match.RoundWind*
+  commentId: Overload:Koffing.Matches.Match.RoundWind
+  href: Koffing.Matches.Match.html#Koffing_Matches_Match_RoundWind
+  name: RoundWind
+  nameWithType: Match.RoundWind
+  fullName: Koffing.Matches.Match.RoundWind
 - uid: Koffing.Matches.Match.NumberOfRounds*
   commentId: Overload:Koffing.Matches.Match.NumberOfRounds
   href: Koffing.Matches.Match.html#Koffing_Matches_Match_NumberOfRounds
@@ -627,6 +668,12 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: Koffing.Matches.Match.PlayerCount
+  commentId: P:Koffing.Matches.Match.PlayerCount
+  href: Koffing.Matches.Match.html#Koffing_Matches_Match_PlayerCount
+  name: PlayerCount
+  nameWithType: Match.PlayerCount
+  fullName: Koffing.Matches.Match.PlayerCount
 - uid: Koffing.Matches.Match.PlayerCount*
   commentId: Overload:Koffing.Matches.Match.PlayerCount
   href: Koffing.Matches.Match.html#Koffing_Matches_Match_PlayerCount
@@ -657,6 +704,13 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Koffing.Players.Player
+  commentId: T:Koffing.Players.Player
+  parent: Koffing.Players
+  href: Koffing.Players.Player.html
+  name: Player
+  nameWithType: Player
+  fullName: Koffing.Players.Player
 - uid: Koffing.Matches.Match.Players*
   commentId: Overload:Koffing.Matches.Match.Players
   href: Koffing.Matches.Match.html#Koffing_Matches_Match_Players
@@ -696,6 +750,23 @@ references:
     name: Player
     href: Koffing.Players.Player.html
   - name: )
+- uid: Koffing.Players
+  commentId: N:Koffing.Players
+  name: Koffing.Players
+  nameWithType: Koffing.Players
+  fullName: Koffing.Players
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Players
+    name: Players
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Players
+    name: Players
 - uid: System.Collections.Generic.IEnumerable`1
   commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true
@@ -767,30 +838,6 @@ references:
   name: CurrentEastPlayer
   nameWithType: Match.CurrentEastPlayer
   fullName: Koffing.Matches.Match.CurrentEastPlayer
-- uid: Koffing.Players.Player
-  commentId: T:Koffing.Players.Player
-  parent: Koffing.Players
-  href: Koffing.Players.Player.html
-  name: Player
-  nameWithType: Player
-  fullName: Koffing.Players.Player
-- uid: Koffing.Players
-  commentId: N:Koffing.Players
-  name: Koffing.Players
-  nameWithType: Koffing.Players
-  fullName: Koffing.Players
-  spec.csharp:
-  - uid: Koffing
-    name: Koffing
-  - name: .
-  - uid: Koffing.Players
-    name: Players
-  spec.vb:
-  - uid: Koffing
-    name: Koffing
-  - name: .
-  - uid: Koffing.Players
-    name: Players
 - uid: Koffing.Matches.Match.WindsToPlayers*
   commentId: Overload:Koffing.Matches.Match.WindsToPlayers
   href: Koffing.Matches.Match.html#Koffing_Matches_Match_WindsToPlayers
@@ -874,12 +921,31 @@ references:
   - name: " "
   - name: TValue
   - name: )
+- uid: Koffing.Matches.Match.Players
+  commentId: P:Koffing.Matches.Match.Players
+  href: Koffing.Matches.Match.html#Koffing_Matches_Match_Players
+  name: Players
+  nameWithType: Match.Players
+  fullName: Koffing.Matches.Match.Players
 - uid: Koffing.Matches.Match.CurrentEastIndex*
   commentId: Overload:Koffing.Matches.Match.CurrentEastIndex
   href: Koffing.Matches.Match.html#Koffing_Matches_Match_CurrentEastIndex
   name: CurrentEastIndex
   nameWithType: Match.CurrentEastIndex
   fullName: Koffing.Matches.Match.CurrentEastIndex
+- uid: Koffing.Random.IRandomNumberGenerator
+  commentId: T:Koffing.Random.IRandomNumberGenerator
+  parent: Koffing.Random
+  href: Koffing.Random.IRandomNumberGenerator.html
+  name: IRandomNumberGenerator
+  nameWithType: IRandomNumberGenerator
+  fullName: Koffing.Random.IRandomNumberGenerator
+- uid: Koffing.Matches.Wall
+  commentId: T:Koffing.Matches.Wall
+  href: Koffing.Matches.Wall.html
+  name: Wall
+  nameWithType: Wall
+  fullName: Koffing.Matches.Wall
 - uid: Koffing.Matches.Match.#ctor*
   commentId: Overload:Koffing.Matches.Match.#ctor
   href: Koffing.Matches.Match.html#Koffing_Matches_Match__ctor_Koffing_Random_IRandomNumberGenerator_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_
@@ -889,13 +955,6 @@ references:
   nameWithType.vb: Match.New
   fullName.vb: Koffing.Matches.Match.New
   name.vb: New
-- uid: Koffing.Random.IRandomNumberGenerator
-  commentId: T:Koffing.Random.IRandomNumberGenerator
-  parent: Koffing.Random
-  href: Koffing.Random.IRandomNumberGenerator.html
-  name: IRandomNumberGenerator
-  nameWithType: IRandomNumberGenerator
-  fullName: Koffing.Random.IRandomNumberGenerator
 - uid: Koffing.Random
   commentId: N:Koffing.Random
   name: Koffing.Random

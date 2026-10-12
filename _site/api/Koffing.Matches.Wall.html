@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Wall | Koffing Mahjong Engine ">
       
-      
+      <meta name="description" content="Represents a wall of s.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Koffing_Matches_Wall" data-uid="Koffing.Matches.Wall" class="text-break">
-Class Wall  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class Wall  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
   <dl><dt>Assembly</dt><dd>Koffing.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a wall of <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -146,6 +147,21 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
+  <h2 id="Koffing_Matches_Wall_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+The wall of tiles is the set of shuffled tiles that are used to play a deal of a match. The wall is made up of 136
+tiles for a four-player or two-player game, and 108 tiles for a three-player game (due to dropping the 2-8 of the
+Man suit).
+</p>
+<p>
+When created, a wall is already "broken", which means that the point where tiles will be dealt to players and then
+drawn from has been decided, as the "live" wall. Breaking the wall also marks the "dead" wall, which is made up of
+14 tiles in a four-player or two-player game, and 20 tiles in a three-player game. The dead wall is used for
+drawing replacement tiles for kan calls (and kita calls in three-player games), as well as tracking dora indicators.
+One dora indicator is revealed when the wall is created. More dora indicators are revealed each time a kan is made.
+Each indicator indicates a dora tile that receives the dora bonus of one han per tile during scoring.
+</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -156,10 +172,12 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall__ctor_Koffing_Random_IRandomNumberGenerator_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_" data-uid="Koffing.Matches.Wall.#ctor(Koffing.Random.IRandomNumberGenerator,Koffing.Matches.PlayerCount,System.Boolean,System.Int32)">
   Wall(IRandomNumberGenerator, PlayerCount, bool, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructor. Takes in an <a class="xref" href="Koffing.Random.IRandomNumberGenerator.html">IRandomNumberGenerator</a>, a <a class="xref" href="Koffing.Matches.PlayerCount.html">PlayerCount</a>, whether or not to
+use red fives, and optionally a dice roll to use to break the wall (for testing purposes).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,13 +187,18 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rng</code> <a class="xref" href="Koffing.Random.IRandomNumberGenerator.html">IRandomNumberGenerator</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Random.IRandomNumberGenerator.html">IRandomNumberGenerator</a> to use for random numbers.</p>
+</dd>
     <dt><code>playerCount</code> <a class="xref" href="Koffing.Matches.PlayerCount.html">PlayerCount</a></dt>
-    <dd></dd>
+    <dd><p>The number of players in the match as a <a class="xref" href="Koffing.Matches.PlayerCount.html">PlayerCount</a>.</p>
+</dd>
     <dt><code>hasRedFives</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Whether or not red fives should be used.</p>
+</dd>
     <dt><code>breakDiceRoll</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>If specified (set to something besides <code>-1</code>), will be used as the roll to break the wall instead of getting
+a dice roll from <code class="paramref">rng</code>. Parameter only meant for testing purposes.</p>
+</dd>
   </dl>
 
 
@@ -185,6 +208,11 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
+  <h4 class="section" id="Koffing_Matches_Wall__ctor_Koffing_Random_IRandomNumberGenerator_Koffing_Matches_PlayerCount_System_Boolean_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Once created, the wall will already be &quot;broken&quot; based on either a dice roll from <code class="paramref">rng</code>, or a
+roll provided by <code class="paramref">breakDiceRoll</code>, ready to deal tiles. Note that <code class="paramref">rng</code> will
+be used for shuffling the wall regardless of the value of <code class="paramref">breakDiceRoll</code>.</p>
+</div>
 
 
 
@@ -197,10 +225,11 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall_CanRevealDoraIndicator" data-uid="Koffing.Matches.Wall.CanRevealDoraIndicator">
   CanRevealDoraIndicator
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>If a dora indicator can be revealed in the dead wall.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -214,7 +243,8 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if a dora indicator can be revealed, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.</p>
+</dd>
   </dl>
 
 
@@ -228,10 +258,11 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall_CanTakeLiveTile" data-uid="Koffing.Matches.Wall.CanTakeLiveTile">
   CanTakeLiveTile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>If a live tile can be taken from the wall.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -245,7 +276,8 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if a live tile can be taken, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.</p>
+</dd>
   </dl>
 
 
@@ -259,10 +291,11 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall_CanTakeReplacementTile" data-uid="Koffing.Matches.Wall.CanTakeReplacementTile">
   CanTakeReplacementTile
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>If a replacement tile can be taken from the dead wall.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -276,7 +309,8 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if a replacement tile can be taken, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.</p>
+</dd>
   </dl>
 
 
@@ -290,7 +324,7 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall_DeadWallEndIndex" data-uid="Koffing.Matches.Wall.DeadWallEndIndex">
   DeadWallEndIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -321,7 +355,7 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall_DeadWallStartIndex" data-uid="Koffing.Matches.Wall.DeadWallStartIndex">
   DeadWallStartIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -352,7 +386,7 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall_LastRevealedDoraIndicatorIndex" data-uid="Koffing.Matches.Wall.LastRevealedDoraIndicatorIndex">
   LastRevealedDoraIndicatorIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -383,7 +417,7 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall_LiveWallStartIndex" data-uid="Koffing.Matches.Wall.LiveWallStartIndex">
   LiveWallStartIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -414,7 +448,7 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall_NextDoraIndicatorIndex" data-uid="Koffing.Matches.Wall.NextDoraIndicatorIndex">
   NextDoraIndicatorIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -445,7 +479,7 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall_NextLiveTileIndex" data-uid="Koffing.Matches.Wall.NextLiveTileIndex">
   NextLiveTileIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -476,7 +510,7 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall_NextReplacementTileIndex" data-uid="Koffing.Matches.Wall.NextReplacementTileIndex">
   NextReplacementTileIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -507,10 +541,11 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall_Tiles" data-uid="Koffing.Matches.Wall.Tiles">
   Tiles
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A read-only collection of the <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s in the wall.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -524,7 +559,8 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>A read-only collection of the <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s in the wall.</p>
+</dd>
   </dl>
 
 
@@ -542,10 +578,11 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall_PopNextLiveTile" data-uid="Koffing.Matches.Wall.PopNextLiveTile">
   PopNextLiveTile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>If possible, pops the next tile off the live wall, updating indices to point to the tile after it.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -556,7 +593,9 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Koffing.Tiles.Tile.html">Tile</a></dt>
-    <dd></dd>
+    <dd><p>The next live tile in the wall, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if <a class="xref" href="Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanTakeLiveTile">CanTakeLiveTile</a> is
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
   </dl>
 
 
@@ -573,10 +612,11 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall_PopNextReplacementTile" data-uid="Koffing.Matches.Wall.PopNextReplacementTile">
   PopNextReplacementTile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L183"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>If possible, pops the next replacement tile off the dead wall, updating indices to point to the tile after it.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -587,7 +627,9 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Koffing.Tiles.Tile.html">Tile</a></dt>
-    <dd></dd>
+    <dd><p>The next replacement tile in the dead wall, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if <a class="xref" href="Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanTakeReplacementTile">CanTakeReplacementTile</a> is
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
   </dl>
 
 
@@ -604,10 +646,12 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Koffing_Matches_Wall_RevealNextDoraIndicator" data-uid="Koffing.Matches.Wall.RevealNextDoraIndicator">
   RevealNextDoraIndicator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L206"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>If possible, reveals the next dora indicator in the dead wall, turning it face-up and  updating indices to point
+to the tile after it.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -618,7 +662,9 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Koffing.Tiles.Tile.html">Tile</a></dt>
-    <dd></dd>
+    <dd><p>The newly revealed dora indicator in the dead wall, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if
+<a class="xref" href="Koffing.Matches.Wall.html#Koffing_Matches_Wall_CanRevealDoraIndicator">CanRevealDoraIndicator</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
   </dl>
 
 
@@ -635,7 +681,7 @@ Class Wall  <a class="header-action link-secondary" title="View source" href="ht
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Wall.cs/#L28" class="edit-link">Edit this page</a>
         </div>
 
 

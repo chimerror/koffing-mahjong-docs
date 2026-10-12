@@ -23,10 +23,15 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GodotRandomNumberGenerator
     path: ../Koffing/Scripts/Random/GodotRandomNumberGenerator.cs
-    startLine: 5
+    startLine: 9
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Random
+  summary: >-
+    An implementation of the <xref href="Koffing.Random.IRandomNumberGenerator" data-throw-if-not-resolved="false"></xref> interface wrapping around the Godot random number
+
+    generator.
+  example: []
   syntax:
     content: 'public class GodotRandomNumberGenerator : IRandomNumberGenerator'
     content.vb: Public Class GodotRandomNumberGenerator Implements IRandomNumberGenerator
@@ -63,10 +68,21 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Random/GodotRandomNumberGenerator.cs
-    startLine: 9
+    startLine: 20
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Random
+  summary: >-
+    Parameterless constructor. Chooses a seed at random as a result of the
+
+    <a href="https://docs.godotengine.org/en/4.7/classes/class_randomnumbergenerator.html#class-randomnumbergenerator">
+
+    Godot RandomNumberGenerator
+
+    </a>
+
+    constructor.
+  example: []
   syntax:
     content: public GodotRandomNumberGenerator()
     content.vb: Public Sub New()
@@ -92,16 +108,18 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Seed
     path: ../Koffing/Scripts/Random/GodotRandomNumberGenerator.cs
-    startLine: 13
+    startLine: 25
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Random
+  summary: The seed value for the random number generator.
   example: []
   syntax:
     content: public ulong Seed { get; set; }
     parameters: []
     return:
       type: System.UInt64
+      description: The <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/integral-numeric-types">ulong</a> that was used to seed the random number generator.
     content.vb: Public Property Seed As ULong
   overload: Koffing.Godot.Random.GodotRandomNumberGenerator.Seed*
   implements:
@@ -124,10 +142,11 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Randomize
     path: ../Koffing/Scripts/Random/GodotRandomNumberGenerator.cs
-    startLine: 15
+    startLine: 28
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Random
+  summary: Randomizes the random number generator, picking a seed value at random.
   example: []
   syntax:
     content: public void Randomize()
@@ -153,20 +172,24 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetIntegerInRange
     path: ../Koffing/Scripts/Random/GodotRandomNumberGenerator.cs
-    startLine: 20
+    startLine: 34
   assemblies:
   - Koffing
   namespace: Koffing.Godot.Random
+  summary: Returns a random integer within the specified interval.
   example: []
   syntax:
     content: public int GetIntegerInRange(int from, int to)
     parameters:
     - id: from
       type: System.Int32
+      description: The lower bound of the interval (inclusive).
     - id: to
       type: System.Int32
+      description: The upper bound of the interval (inclusive).
     return:
       type: System.Int32
+      description: A random integer within the range specified by <code class="paramref">from</code> and <code class="paramref">to</code>.
     content.vb: Public Function GetIntegerInRange(from As Integer, [to] As Integer) As Integer
   overload: Koffing.Godot.Random.GodotRandomNumberGenerator.GetIntegerInRange*
   implements:
@@ -175,6 +198,13 @@ items:
   fullName.vb: Koffing.Godot.Random.GodotRandomNumberGenerator.GetIntegerInRange(Integer, Integer)
   name.vb: GetIntegerInRange(Integer, Integer)
 references:
+- uid: Koffing.Random.IRandomNumberGenerator
+  commentId: T:Koffing.Random.IRandomNumberGenerator
+  parent: Koffing.Random
+  href: Koffing.Random.IRandomNumberGenerator.html
+  name: IRandomNumberGenerator
+  nameWithType: IRandomNumberGenerator
+  fullName: Koffing.Random.IRandomNumberGenerator
 - uid: Koffing.Godot.Random
   commentId: N:Koffing.Godot.Random
   name: Koffing.Godot.Random
@@ -209,13 +239,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: Koffing.Random.IRandomNumberGenerator
-  commentId: T:Koffing.Random.IRandomNumberGenerator
-  parent: Koffing.Random
-  href: Koffing.Random.IRandomNumberGenerator.html
-  name: IRandomNumberGenerator
-  nameWithType: IRandomNumberGenerator
-  fullName: Koffing.Random.IRandomNumberGenerator
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -545,13 +568,6 @@ references:
   - name: T
   - name: )
   - name: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: Koffing.Random
   commentId: N:Koffing.Random
   name: Koffing.Random
@@ -569,6 +585,13 @@ references:
   - name: .
   - uid: Koffing.Random
     name: Random
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: Koffing.Extensions.RollDice(Koffing.Random.IRandomNumberGenerator,System.Int32,System.Int32)
   commentId: M:Koffing.Extensions.RollDice(Koffing.Random.IRandomNumberGenerator,System.Int32,System.Int32)
   isExternal: true

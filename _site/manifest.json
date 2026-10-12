@@ -187,7 +187,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Godot.Random.GodotRandomNumberGenerator",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Godot.Random.GodotRandomNumberGenerator.yml\" sourcestartlinenumber=\"1\">An implementation of the <xref href=\"Koffing.Random.IRandomNumberGenerator\" data-throw-if-not-resolved=\"false\"></xref> interface wrapping around the Godot random number\ngenerator.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -369,7 +369,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Matches.Match",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Matches.Match.yml\" sourcestartlinenumber=\"1\">Represents a match of mahjong, managing the players playing, the wall, and the current game state.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -383,7 +383,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Matches.PlayerCount",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Matches.PlayerCount.yml\" sourcestartlinenumber=\"1\">Represents the number of players in a game.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -397,7 +397,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Matches.Wall",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Matches.Wall.yml\" sourcestartlinenumber=\"1\">Represents a wall of <xref href=\"Koffing.Tiles.Tile\" data-throw-if-not-resolved=\"false\"></xref>s.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -467,7 +467,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Matches.Wind",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Matches.Wind.yml\" sourcestartlinenumber=\"1\">Represents a seat wind or a round wind.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -579,7 +579,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Players.Player",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Players.Player.yml\" sourcestartlinenumber=\"1\">Base class for a player in a <xref href=\"Koffing.Matches.Match\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -607,7 +607,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Random.IRandomNumberGenerator",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Random.IRandomNumberGenerator.yml\" sourcestartlinenumber=\"1\">Wrapper class for random number generators, providing a common interface.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -621,7 +621,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Random.SystemRandomNumberGenerator",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Random.SystemRandomNumberGenerator.yml\" sourcestartlinenumber=\"1\">An implementation of the <xref href=\"Koffing.Random.IRandomNumberGenerator\" data-throw-if-not-resolved=\"false\"></xref> interface wrapping around the\n<xref href=\"System.Random?text=System.Random\" data-throw-if-not-resolved=\"false\"></xref> random number generator.</p>\n"
     },
     {
       "type": "ManagedReference",

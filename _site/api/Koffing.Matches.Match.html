@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Match | Koffing Mahjong Engine ">
       
-      
+      <meta name="description" content="Represents a match of mahjong, managing the players playing, the wall, and the current game state.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Koffing_Matches_Match" data-uid="Koffing.Matches.Match" class="text-break">
-Class Match  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class Match  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
   <dl><dt>Assembly</dt><dd>Koffing.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a match of mahjong, managing the players playing, the wall, and the current game state.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +157,12 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Koffing_Matches_Match__ctor_Koffing_Random_IRandomNumberGenerator_Koffing_Matches_PlayerCount_System_Boolean_System_Int32_" data-uid="Koffing.Matches.Match.#ctor(Koffing.Random.IRandomNumberGenerator,Koffing.Matches.PlayerCount,System.Boolean,System.Int32)">
   Match(IRandomNumberGenerator, PlayerCount, bool, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructor. Creates a new match using the specified <a class="xref" href="Koffing.Random.IRandomNumberGenerator.html">IRandomNumberGenerator</a> with
+<a class="xref" href="Koffing.Matches.Match.html#Koffing_Matches_Match_PlayerCount">PlayerCount</a> players, whether to use red fives, and the number of rounds in the match.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,13 +172,17 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rng</code> <a class="xref" href="Koffing.Random.IRandomNumberGenerator.html">IRandomNumberGenerator</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Random.IRandomNumberGenerator.html">IRandomNumberGenerator</a> to use for random numbers.</p>
+</dd>
     <dt><code>playerCount</code> <a class="xref" href="Koffing.Matches.PlayerCount.html">PlayerCount</a></dt>
-    <dd></dd>
+    <dd><p>The number of players in the match as a <a class="xref" href="Koffing.Matches.Match.html#Koffing_Matches_Match_PlayerCount">PlayerCount</a>.</p>
+</dd>
     <dt><code>hasRedFives</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Whether or not red fives should be used.</p>
+</dd>
     <dt><code>numberOfRounds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The number of rounds in the match. If not specified, defaults to 2.</p>
+</dd>
   </dl>
 
 
@@ -185,6 +192,11 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <h4 class="section" id="Koffing_Matches_Match__ctor_Koffing_Random_IRandomNumberGenerator_Koffing_Matches_PlayerCount_System_Boolean_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>After this constructor returns, the match will have an initial wall created and broken (as part of the
+<a class="xref" href="Koffing.Matches.Wall.html">Wall</a> constructor), the players at random indices, and a random player chosen as east. However, no
+tiles will be dealt to players yet.</p>
+</div>
 
 
 
@@ -197,10 +209,11 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Koffing_Matches_Match_CurrentEastIndex" data-uid="Koffing.Matches.Match.CurrentEastIndex">
   CurrentEastIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The index (in <a class="xref" href="Koffing.Matches.Match.html#Koffing_Matches_Match_Players">Players</a>) of the current east <a class="xref" href="Koffing.Players.Player.html">Player</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -228,10 +241,11 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Koffing_Matches_Match_CurrentEastPlayer" data-uid="Koffing.Matches.Match.CurrentEastPlayer">
   CurrentEastPlayer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The current east <a class="xref" href="Koffing.Players.Player.html">Player</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -259,10 +273,11 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Koffing_Matches_Match_HasRedFives" data-uid="Koffing.Matches.Match.HasRedFives">
   HasRedFives
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Whether or not the match is using red fives in its walls.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -276,7 +291,8 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if red fives are being used, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.</p>
+</dd>
   </dl>
 
 
@@ -290,10 +306,11 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Koffing_Matches_Match_NumberOfRounds" data-uid="Koffing.Matches.Match.NumberOfRounds">
   NumberOfRounds
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The number of rounds to play in the match.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -307,7 +324,8 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The number of rounds to play in the match.</p>
+</dd>
   </dl>
 
 
@@ -321,10 +339,11 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Koffing_Matches_Match_PlayerCount" data-uid="Koffing.Matches.Match.PlayerCount">
   PlayerCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The number of players in the match.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -338,7 +357,8 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Koffing.Matches.PlayerCount.html">PlayerCount</a></dt>
-    <dd></dd>
+    <dd><p>A <a class="xref" href="Koffing.Matches.Match.html#Koffing_Matches_Match_PlayerCount">PlayerCount</a> representing the number of players in the match.</p>
+</dd>
   </dl>
 
 
@@ -352,10 +372,11 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Koffing_Matches_Match_Players" data-uid="Koffing.Matches.Match.Players">
   Players
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A read-only collection of the <a class="xref" href="Koffing.Players.Player.html">Player</a>s in the match.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -369,7 +390,8 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Players.Player.html">Player</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>A read-only collection of the <a class="xref" href="Koffing.Players.Player.html">Player</a>s playing the match.</p>
+</dd>
   </dl>
 
 
@@ -383,10 +405,11 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Koffing_Matches_Match_RoundWind" data-uid="Koffing.Matches.Match.RoundWind">
   RoundWind
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The current round wind.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -400,7 +423,8 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Koffing.Matches.Wind.html">Wind</a></dt>
-    <dd></dd>
+    <dd><p>A <a class="xref" href="Koffing.Matches.Wind.html">Wind</a> that is the current round wind.</p>
+</dd>
   </dl>
 
 
@@ -414,10 +438,11 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Koffing_Matches_Match_WindsToPlayers" data-uid="Koffing.Matches.Match.WindsToPlayers">
   WindsToPlayers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A read-only dictionary mapping seat <a class="xref" href="Koffing.Matches.Wind.html">Wind</a>s to the <a class="xref" href="Koffing.Players.Player.html">Player</a> currently in the seat.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -431,7 +456,8 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="Koffing.Matches.Wind.html">Wind</a>, <a class="xref" href="Koffing.Players.Player.html">Player</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>A read-only dictionary mapping seat <a class="xref" href="Koffing.Matches.Wind.html">Wind</a>s to <a class="xref" href="Koffing.Players.Player.html">Player</a>s.</p>
+</dd>
   </dl>
 
 
@@ -449,10 +475,11 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Koffing_Matches_Match_DealHands" data-uid="Koffing.Matches.Match.DealHands">
   DealHands()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deals the initial starting hands to players.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -475,7 +502,7 @@ Class Match  <a class="header-action link-secondary" title="View source" href="h
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Matches/Match.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 
