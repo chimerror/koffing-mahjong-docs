@@ -62,14 +62,14 @@ items:
   assemblies:
   - Koffing
   namespace: Koffing.Players
-  summary: The number of points the player current has.
+  summary: The number of points the player currently has.
   example: []
   syntax:
     content: public int Points { get; set; }
     parameters: []
     return:
       type: System.Int32
-      description: ''
+      description: The number of points the player currently has.
     content.vb: Public Property Points As Integer
   overload: Koffing.Players.Player.Points*
 - uid: Koffing.Players.Player.Hand
@@ -94,14 +94,14 @@ items:
   assemblies:
   - Koffing
   namespace: Koffing.Players
-  summary: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s the player current has in their hand.
+  summary: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s the player currently has in their hand.
   example: []
   syntax:
     content: public List<Tile> Hand { get; set; }
     parameters: []
     return:
       type: System.Collections.Generic.List{Koffing.Tiles.Tile}
-      description: ''
+      description: The <xref href="System.Collections.Generic.List%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s the player currently has in their hand.
     content.vb: Public Property Hand As List(Of Tile)
   overload: Koffing.Players.Player.Hand*
 references:
@@ -389,6 +389,34 @@ references:
   name: Tile
   nameWithType: Tile
   fullName: Koffing.Tiles.Tile
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Koffing.Players.Player.Hand*
   commentId: Overload:Koffing.Players.Player.Hand
   href: Koffing.Players.Player.html#Koffing_Players_Player_Hand
@@ -445,34 +473,6 @@ references:
   - name: .
   - uid: Koffing.Tiles
     name: Tiles
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
   isExternal: true

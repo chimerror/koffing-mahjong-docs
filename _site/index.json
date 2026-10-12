@@ -202,7 +202,7 @@
   "api/Koffing.Players.Player.html": {
     "href": "api/Koffing.Players.Player.html",
     "title": "Class Player | Koffing Mahjong Engine",
-    "summary": "Class Player Namespace Koffing.Players Assembly Koffing.dll Base class for a player in a Match. public class Player Inheritance object Player Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties Hand The Tiles the player current has in their hand. public List<Tile> Hand { get; set; } Property Value List<Tile> Points The number of points the player current has. public int Points { get; set; } Property Value int"
+    "summary": "Class Player Namespace Koffing.Players Assembly Koffing.dll Base class for a player in a Match. public class Player Inheritance object Player Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties Hand The Tiles the player currently has in their hand. public List<Tile> Hand { get; set; } Property Value List<Tile> The List<T> of Tiles the player currently has in their hand. Points The number of points the player currently has. public int Points { get; set; } Property Value int The number of points the player currently has."
   },
   "api/Koffing.Players.html": {
     "href": "api/Koffing.Players.html",
