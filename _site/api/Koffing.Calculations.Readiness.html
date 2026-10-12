@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Readiness | Koffing Mahjong Engine ">
       
-      
+      <meta name="description" content="Functions for calculating the readiness of a hand (a ).">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Koffing_Calculations_Readiness" data-uid="Koffing.Calculations.Readiness" class="text-break">
-Class Readiness  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class Readiness  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
   <dl><dt>Assembly</dt><dd>Koffing.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Functions for calculating the readiness of a hand (a <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a>).</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -146,6 +147,21 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h2 id="Koffing_Calculations_Readiness_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+A hand being "ready" means that there is one tile remaining to make a valid complete hand of 14 tiles. This means
+either four <a class="xref" href="Koffing.Melds.Meld.html">Meld</a>s of 3 tiles each and a <a class="xref" href="Koffing.Melds.Pair.html">Pair</a> (standard readiness) or one of the special
+hand patterns of seven pairs/thirteen orphans. Note that a hand may be valid and complete but lack yaku, and thus
+not be a hand that a player can go out on.
+</p>
+<p>
+For ease of calculation, all the readiness functions expect a <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a>, so that it can use the
+semantic knowledge contained in the derived classes of <a class="xref" href="Koffing.Blocks.Block.html">Block</a> (like <a class="xref" href="Koffing.Melds.Meld.html">Meld</a> and
+<a class="xref" href="Koffing.Waits.Wait.html">Wait</a>). Given an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>, use
+<a class="xref" href="Koffing.Blocks.Block.html#Koffing_Blocks_Block_GetPossibleBlockSets_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__">GetPossibleBlockSets(IEnumerable&lt;Tile&gt;)</a> to then feed the possible BlockSets into these
+functions.
+</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -156,10 +172,12 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Koffing_Calculations_Readiness_IsPastReady_Koffing_Blocks_BlockSet_Koffing_Calculations_Readiness_Type__" data-uid="Koffing.Calculations.Readiness.IsPastReady(Koffing.Blocks.BlockSet,Koffing.Calculations.Readiness.Type@)">
   IsPastReady(BlockSet, out Type)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns whether the current hand is past ready, that is, having a hand with more than enough tiles to be ready.
+It also returns the readiness algorithm used for calculation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,15 +187,18 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>hand</code> <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a></dt>
-    <dd></dd>
+    <dd><p>The hand to analyze as a <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a>.</p>
+</dd>
     <dt><code>chosenReadinessType</code> <a class="xref" href="Koffing.Calculations.Readiness.html">Readiness</a>.<a class="xref" href="Koffing.Calculations.Readiness.Type.html">Type</a></dt>
-    <dd></dd>
+    <dd><p>Will contain a <a class="xref" href="Koffing.Calculations.Readiness.Type.html">Readiness.Type</a> indicating the readiness algorithm used after returning.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, if the hand is ready, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.</p>
+</dd>
   </dl>
 
 
@@ -186,6 +207,11 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h4 class="section" id="Koffing_Calculations_Readiness_IsPastReady_Koffing_Blocks_BlockSet_Koffing_Calculations_Readiness_Type___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Note that this may or may not be the same as a &quot;valid complete&quot; hand. This function does not consider if all
+<a class="xref" href="Koffing.Blocks.Block.html">Block</a>s in the <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a> are not a <a class="xref" href="Koffing.Waits.Wait.html">Wait</a> or <a class="xref" href="Koffing.Waits.Orphan.html">Orphan</a>, nor
+that there are only 14 tiles.</p>
+</div>
 
 
 
@@ -194,10 +220,11 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Koffing_Calculations_Readiness_IsReady_Koffing_Blocks_BlockSet_Koffing_Calculations_Readiness_Type__" data-uid="Koffing.Calculations.Readiness.IsReady(Koffing.Blocks.BlockSet,Koffing.Calculations.Readiness.Type@)">
   IsReady(BlockSet, out Type)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns whether the current hand is ready, and the readiness algorithm used for calculation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -207,15 +234,18 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>hand</code> <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a></dt>
-    <dd></dd>
+    <dd><p>The hand to analyze as a <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a>.</p>
+</dd>
     <dt><code>chosenReadinessType</code> <a class="xref" href="Koffing.Calculations.Readiness.html">Readiness</a>.<a class="xref" href="Koffing.Calculations.Readiness.Type.html">Type</a></dt>
-    <dd></dd>
+    <dd><p>Will contain a <a class="xref" href="Koffing.Calculations.Readiness.Type.html">Readiness.Type</a> indicating the readiness algorithm used after returning.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, if the hand is ready, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.</p>
+</dd>
   </dl>
 
 
@@ -232,10 +262,12 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Koffing_Calculations_Readiness_SevenPairsTilesToReady_Koffing_Blocks_BlockSet_" data-uid="Koffing.Calculations.Readiness.SevenPairsTilesToReady(Koffing.Blocks.BlockSet)">
   SevenPairsTilesToReady(BlockSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L211"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the number of tiles that the hand must take in to be ready, using the seven pairs readiness calculation
+algorithm, which assumes the valid complete hand will be made up of seven <a class="xref" href="Koffing.Melds.Pair.html">Pair</a>s.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -245,13 +277,15 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>hand</code> <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a></dt>
-    <dd></dd>
+    <dd><p>The hand to analyze as a <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a>.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The number of tiles remaining until a ready hand based on the seven pairs algorithm.</p>
+</dd>
   </dl>
 
 
@@ -260,7 +294,19 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h4 class="section" id="Koffing_Calculations_Readiness_SevenPairsTilesToReady_Koffing_Blocks_BlockSet__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Note that in certain cases, non-positive numbers like zero and below are valid results, representing a
+&quot;past-ready&quot; hand (see <a class="xref" href="Koffing.Calculations.Readiness.html#Koffing_Calculations_Readiness_IsPastReady_Koffing_Blocks_BlockSet_Koffing_Calculations_Readiness_Type__">IsPastReady(BlockSet, out Type)</a>).</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown when given a <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a> that does NOT contain only a single <a class="xref" href="Koffing.Waits.SevenPairsWait.html">SevenPairsWait</a>,
+as such hands cannot be correctly calculated using the seven pairs algorithm. Note that this includes hands that
+have multiple <a class="xref" href="Koffing.Waits.SevenPairsWait.html">SevenPairsWait</a>s.</p>
+</dd>
+  </dl>
 
 
 
@@ -268,10 +314,13 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Koffing_Calculations_Readiness_StandardTilesToReady_Koffing_Blocks_BlockSet_" data-uid="Koffing.Calculations.Readiness.StandardTilesToReady(Koffing.Blocks.BlockSet)">
   StandardTilesToReady(BlockSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the number of tiles that the hand must take in to be ready, using the standard readiness calculation
+algorithm, which assumes the valid complete hand will be made up of four <a class="xref" href="Koffing.Melds.Meld.html">Meld</a>s of 3 tiles, and a
+<a class="xref" href="Koffing.Melds.Pair.html">Pair</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -281,13 +330,15 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>hand</code> <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a></dt>
-    <dd></dd>
+    <dd><p>The hand to analyze as a <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a>.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The number of tiles remaining until a ready hand based on the standard algorithm.</p>
+</dd>
   </dl>
 
 
@@ -296,7 +347,18 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h4 class="section" id="Koffing_Calculations_Readiness_StandardTilesToReady_Koffing_Blocks_BlockSet__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Note that in certain cases, non-positive numbers like zero and below are valid results, representing a
+&quot;past-ready&quot; hand (see <a class="xref" href="Koffing.Calculations.Readiness.html#Koffing_Calculations_Readiness_IsPastReady_Koffing_Blocks_BlockSet_Koffing_Calculations_Readiness_Type__">IsPastReady(BlockSet, out Type)</a>).</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown when given a <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a> that contains a <a class="xref" href="Koffing.Waits.SevenPairsWait.html">SevenPairsWait</a> or
+<a class="xref" href="Koffing.Waits.ThirteenOrphansWait.html">ThirteenOrphansWait</a>, as these hands cannot be correctly calculated using the standard algorithm.</p>
+</dd>
+  </dl>
 
 
 
@@ -304,10 +366,13 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Koffing_Calculations_Readiness_ThirteenOrphansTilesToReady_Koffing_Blocks_BlockSet_" data-uid="Koffing.Calculations.Readiness.ThirteenOrphansTilesToReady(Koffing.Blocks.BlockSet)">
   ThirteenOrphansTilesToReady(BlockSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L237"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the number of tiles that the hand must take in to be ready, using the thirteen orphans readiness
+calculation algorithm, which assumes the valid complete hand will be made up of twelve distinct terminal and
+Zi suit <a class="xref" href="Koffing.Waits.Orphan.html">Orphan</a>s, and the last remaining distinct terminal/Zi suit in a <a class="xref" href="Koffing.Melds.Pair.html">Pair</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -317,13 +382,15 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>hand</code> <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a></dt>
-    <dd></dd>
+    <dd><p>The hand to analyze as a <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a>.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The number of tiles remaining until a ready hand based on the thirteen orphans algorithm.</p>
+</dd>
   </dl>
 
 
@@ -332,7 +399,19 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h4 class="section" id="Koffing_Calculations_Readiness_ThirteenOrphansTilesToReady_Koffing_Blocks_BlockSet__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Note that in certain cases, non-positive numbers like zero and below are valid results, representing a
+&quot;past-ready&quot; hand (see <a class="xref" href="Koffing.Calculations.Readiness.html#Koffing_Calculations_Readiness_IsPastReady_Koffing_Blocks_BlockSet_Koffing_Calculations_Readiness_Type__">IsPastReady(BlockSet, out Type)</a>).</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown when given a <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a> that does NOT contain only a single
+<a class="xref" href="Koffing.Waits.ThirteenOrphansWait.html">ThirteenOrphansWait</a>, as such hands cannot be correctly calculated using the thirteen orphans
+algorithm. Note that this includes hands that have multiple <a class="xref" href="Koffing.Waits.ThirteenOrphansWait.html">ThirteenOrphansWait</a>s.</p>
+</dd>
+  </dl>
 
 
 
@@ -340,10 +419,12 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Koffing_Calculations_Readiness_TilesToReady_Koffing_Blocks_BlockSet_Koffing_Calculations_Readiness_Type_" data-uid="Koffing.Calculations.Readiness.TilesToReady(Koffing.Blocks.BlockSet,Koffing.Calculations.Readiness.Type)">
   TilesToReady(BlockSet, Type)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the number of tiles that the hand must take in to be ready, using the specified readiness algorithm
+calculation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -353,15 +434,18 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>hand</code> <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a></dt>
-    <dd></dd>
+    <dd><p>The hand to analyze as a <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a>.</p>
+</dd>
     <dt><code>readinessType</code> <a class="xref" href="Koffing.Calculations.Readiness.html">Readiness</a>.<a class="xref" href="Koffing.Calculations.Readiness.Type.html">Type</a></dt>
-    <dd></dd>
+    <dd><p>A <a class="xref" href="Koffing.Calculations.Readiness.Type.html">Readiness.Type</a> indicating the readiness algorithm to use for calculation.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The number of tiles remaining until a ready hand based on the specified algorithm.</p>
+</dd>
   </dl>
 
 
@@ -370,7 +454,17 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h4 class="section" id="Koffing_Calculations_Readiness_TilesToReady_Koffing_Blocks_BlockSet_Koffing_Calculations_Readiness_Type__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Note that in certain cases, non-positive numbers like zero and below are valid results, representing a
+&quot;past-ready&quot; hand (see <a class="xref" href="Koffing.Calculations.Readiness.html#Koffing_Calculations_Readiness_IsPastReady_Koffing_Blocks_BlockSet_Koffing_Calculations_Readiness_Type__">IsPastReady(BlockSet, out Type)</a>).</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown when given an unknown readiness type.</p>
+</dd>
+  </dl>
 
 
 
@@ -378,10 +472,12 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Koffing_Calculations_Readiness_TilesToReady_Koffing_Blocks_BlockSet_Koffing_Calculations_Readiness_Type__" data-uid="Koffing.Calculations.Readiness.TilesToReady(Koffing.Blocks.BlockSet,Koffing.Calculations.Readiness.Type@)">
   TilesToReady(BlockSet, out Type)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the number of tiles that the hand must take in to be ready, as well as the readiness algorithm used for
+calculation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -391,15 +487,18 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>hand</code> <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a></dt>
-    <dd></dd>
+    <dd><p>The hand to analyze as a <a class="xref" href="Koffing.Blocks.BlockSet.html">BlockSet</a>.</p>
+</dd>
     <dt><code>chosenReadinessType</code> <a class="xref" href="Koffing.Calculations.Readiness.html">Readiness</a>.<a class="xref" href="Koffing.Calculations.Readiness.Type.html">Type</a></dt>
-    <dd></dd>
+    <dd><p>Will contain a <a class="xref" href="Koffing.Calculations.Readiness.Type.html">Readiness.Type</a> indicating the readiness algorithm used after returning.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The number of tiles remaining until a ready hand.</p>
+</dd>
   </dl>
 
 
@@ -408,6 +507,10 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h4 class="section" id="Koffing_Calculations_Readiness_TilesToReady_Koffing_Blocks_BlockSet_Koffing_Calculations_Readiness_Type___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Note that in certain cases, non-positive numbers like zero and below are valid results, representing a
+&quot;past-ready&quot; hand (see <a class="xref" href="Koffing.Calculations.Readiness.html#Koffing_Calculations_Readiness_IsPastReady_Koffing_Blocks_BlockSet_Koffing_Calculations_Readiness_Type__">IsPastReady(BlockSet, out Type)</a>).</p>
+</div>
 
 
 
@@ -416,7 +519,7 @@ Class Readiness  <a class="header-action link-secondary" title="View source" hre
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Calculations/Readiness.cs/#L30" class="edit-link">Edit this page</a>
         </div>
 
 

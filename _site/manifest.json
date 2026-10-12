@@ -131,7 +131,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Calculations.Readiness.Type",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Calculations.Readiness.Type.yml\" sourcestartlinenumber=\"1\">The type of readiness algorithm that was used for calculation.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -145,7 +145,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Calculations.Readiness",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Calculations.Readiness.yml\" sourcestartlinenumber=\"1\">Functions for calculating the readiness of a hand (a <xref href=\"Koffing.Blocks.BlockSet\" data-throw-if-not-resolved=\"false\"></xref>).</p>\n"
     },
     {
       "type": "ManagedReference",

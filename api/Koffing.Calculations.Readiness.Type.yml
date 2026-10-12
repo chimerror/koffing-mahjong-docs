@@ -22,10 +22,18 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Type
     path: ../Koffing/Scripts/Calculations/Readiness.cs
-    startLine: 10
+    startLine: 39
   assemblies:
   - Koffing
   namespace: Koffing.Calculations
+  summary: The type of readiness algorithm that was used for calculation.
+  remarks: >-
+    This type is returned as an output parameter by several of the <xref href="Koffing.Calculations.Readiness" data-throw-if-not-resolved="false"></xref> functions that will
+
+    choose the correct readiness calculation algorithm based on the <xref href="Koffing.Blocks.Block" data-throw-if-not-resolved="false"></xref>s of a <xref href="Koffing.Blocks.BlockSet" data-throw-if-not-resolved="false"></xref>
+
+    to indicate which algorithm was used.
+  example: []
   syntax:
     content: public enum Readiness.Type
     content.vb: Public Enum Readiness.Type
@@ -47,7 +55,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Standard
     path: ../Koffing/Scripts/Calculations/Readiness.cs
-    startLine: 12
+    startLine: 41
   assemblies:
   - Koffing
   namespace: Koffing.Calculations
@@ -73,7 +81,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: SevenPairs
     path: ../Koffing/Scripts/Calculations/Readiness.cs
-    startLine: 13
+    startLine: 42
   assemblies:
   - Koffing
   namespace: Koffing.Calculations
@@ -99,7 +107,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ThirteenOrphans
     path: ../Koffing/Scripts/Calculations/Readiness.cs
-    startLine: 14
+    startLine: 43
   assemblies:
   - Koffing
   namespace: Koffing.Calculations
@@ -108,6 +116,27 @@ items:
     return:
       type: Koffing.Calculations.Readiness.Type
 references:
+- uid: Koffing.Calculations.Readiness
+  commentId: T:Koffing.Calculations.Readiness
+  parent: Koffing.Calculations
+  href: Koffing.Calculations.Readiness.html
+  name: Readiness
+  nameWithType: Readiness
+  fullName: Koffing.Calculations.Readiness
+- uid: Koffing.Blocks.Block
+  commentId: T:Koffing.Blocks.Block
+  parent: Koffing.Blocks
+  href: Koffing.Blocks.Block.html
+  name: Block
+  nameWithType: Block
+  fullName: Koffing.Blocks.Block
+- uid: Koffing.Blocks.BlockSet
+  commentId: T:Koffing.Blocks.BlockSet
+  parent: Koffing.Blocks
+  href: Koffing.Blocks.BlockSet.html
+  name: BlockSet
+  nameWithType: BlockSet
+  fullName: Koffing.Blocks.BlockSet
 - uid: Koffing.Calculations
   commentId: N:Koffing.Calculations
   name: Koffing.Calculations
@@ -125,6 +154,23 @@ references:
   - name: .
   - uid: Koffing.Calculations
     name: Calculations
+- uid: Koffing.Blocks
+  commentId: N:Koffing.Blocks
+  name: Koffing.Blocks
+  nameWithType: Koffing.Blocks
+  fullName: Koffing.Blocks
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Blocks
+    name: Blocks
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Blocks
+    name: Blocks
 - uid: Koffing.Calculations.Readiness.Type
   commentId: T:Koffing.Calculations.Readiness.Type
   parent: Koffing.Calculations
