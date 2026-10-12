@@ -226,7 +226,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CurrentEastPlayer
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 53
+    startLine: 54
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -237,6 +237,7 @@ items:
     parameters: []
     return:
       type: Koffing.Players.Player
+      description: The current east <xref href="Koffing.Players.Player" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public ReadOnly Property CurrentEastPlayer As Player
   overload: Koffing.Matches.Match.CurrentEastPlayer*
 - uid: Koffing.Matches.Match.WindsToPlayers
@@ -257,7 +258,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: WindsToPlayers
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 59
+    startLine: 60
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -289,7 +290,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CurrentEastIndex
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 64
+    startLine: 66
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -300,6 +301,7 @@ items:
     parameters: []
     return:
       type: System.Int32
+      description: The index (in <xref href="Koffing.Matches.Match.Players" data-throw-if-not-resolved="false"></xref>) of the current east <xref href="Koffing.Players.Player" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public ReadOnly Property CurrentEastIndex As Integer
   overload: Koffing.Matches.Match.CurrentEastIndex*
 - uid: Koffing.Matches.Match.#ctor(Koffing.Random.IRandomNumberGenerator,Koffing.Matches.PlayerCount,System.Boolean,System.Int32)
@@ -320,7 +322,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 83
+    startLine: 85
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -373,7 +375,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: DealHands
     path: ../Koffing/Scripts/Matches/Match.cs
-    startLine: 112
+    startLine: 114
   assemblies:
   - Koffing
   namespace: Koffing.Matches
