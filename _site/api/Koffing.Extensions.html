@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Extensions | Koffing Mahjong Engine ">
       
-      
+      <meta name="description" content="Useful extension methods for various purposes.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Koffing_Extensions" data-uid="Koffing.Extensions" class="text-break">
-Class Extensions  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class Extensions  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
   <dl><dt>Assembly</dt><dd>Koffing.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Useful extension methods for various purposes.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +157,11 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Koffing_Extensions_GetSuitString_Koffing_Tiles_Suit_" data-uid="Koffing.Extensions.GetSuitString(Koffing.Tiles.Suit)">
   GetSuitString(Suit)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L194"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the MPSZ notation string for the specified suit.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -169,13 +171,15 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>suit</code> <a class="xref" href="Koffing.Tiles.Suit.html">Suit</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Tiles.Suit.html">Suit</a> to covert to notation.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><table><thead><tr><th class="term">Suit</th><th class="description">Result</th></tr></thead><tbody><tr><td class="term">Man</td><td class="description"><code>"m"</code></td></tr><tr><td class="term">Pin</td><td class="description"><code>"p"</code></td></tr><tr><td class="term">Sou</td><td class="description"><code>"s"</code></td></tr><tr><td class="term">Zi</td><td class="description"><code>"z"</code></td></tr></tbody></table>
+</dd>
   </dl>
 
 
@@ -185,6 +189,12 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>If given an invalid <a class="xref" href="Koffing.Tiles.Suit.html">Suit</a>.</p>
+</dd>
+  </dl>
 
 
 
@@ -192,10 +202,11 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Koffing_Extensions_NotationFromTile_Koffing_Tiles_Tile_" data-uid="Koffing.Extensions.NotationFromTile(Koffing.Tiles.Tile)">
   NotationFromTile(Tile)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L130"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates the MPSZ notation for a single tile.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -205,13 +216,15 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>input</code> <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a> to convert to notation.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The MPSZ notation describing <code class="paramref">input</code>.</p>
+</dd>
   </dl>
 
 
@@ -228,10 +241,11 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Koffing_Extensions_NotationFromTiles_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile__" data-uid="Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})">
   NotationFromTiles(IEnumerable&lt;Tile&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates the MPSZ notation for a collection of tiles.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -241,13 +255,15 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s to convert to notation.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The MPSZ notation describing <code class="paramref">input</code></p>
+</dd>
   </dl>
 
 
@@ -256,6 +272,9 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h4 class="section" id="Koffing_Extensions_NotationFromTiles_System_Collections_Generic_IEnumerable_Koffing_Tiles_Tile___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If given an empty collection, the empty string will be returned.</p>
+</div>
 
 
 
@@ -264,10 +283,11 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Koffing_Extensions_RollDice_Koffing_Random_IRandomNumberGenerator_System_Int32_System_Int32_" data-uid="Koffing.Extensions.RollDice(Koffing.Random.IRandomNumberGenerator,System.Int32,System.Int32)">
   RollDice(IRandomNumberGenerator, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Uses an <a class="xref" href="Koffing.Random.IRandomNumberGenerator.html">IRandomNumberGenerator</a> to simulate rolling dice.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -277,17 +297,21 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rng</code> <a class="xref" href="Koffing.Random.IRandomNumberGenerator.html">IRandomNumberGenerator</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Random.IRandomNumberGenerator.html">IRandomNumberGenerator</a> to use for dice rolling.</p>
+</dd>
     <dt><code>numberOfDice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The number of dice to roll. Assumes 2 if not specified.</p>
+</dd>
     <dt><code>sidesOfDie</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>The number of sides on each die. Assumes 6 if not specified.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>A random total from rolling <code class="paramref">numberOfDice</code> dice with <code class="paramref">sidesOfDie</code> sides.</p>
+</dd>
   </dl>
 
 
@@ -297,6 +321,12 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>If given a non-positive <code class="paramref">numberOfDice</code> or <code class="paramref">sidesOfDie</code>.</p>
+</dd>
+  </dl>
 
 
 
@@ -304,10 +334,12 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Koffing_Extensions_Shuffle__1_Koffing_Random_IRandomNumberGenerator_System_Collections_Generic_IEnumerable___0__" data-uid="Koffing.Extensions.Shuffle``1(Koffing.Random.IRandomNumberGenerator,System.Collections.Generic.IEnumerable{``0})">
   Shuffle&lt;T&gt;(IRandomNumberGenerator, IEnumerable&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Shuffles an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> using an <a class="xref" href="Koffing.Random.IRandomNumberGenerator.html">IRandomNumberGenerator</a>, copying the elements
+to a new list.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -317,21 +349,25 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rng</code> <a class="xref" href="Koffing.Random.IRandomNumberGenerator.html">IRandomNumberGenerator</a></dt>
-    <dd></dd>
+    <dd><p>The <a class="xref" href="Koffing.Random.IRandomNumberGenerator.html">IRandomNumberGenerator</a> to use for shuffling.</p>
+</dd>
     <dt><code>originalList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> to shuffle. It will not be modified.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>A new list with the elements of <code class="paramref">originalList</code> shuffled.</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>The type of elements in <code class="paramref">originalList</code>.</p>
+</dd>
   </dl>
 
 
@@ -347,10 +383,11 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Koffing_Extensions_ToTile_System_String_" data-uid="Koffing.Extensions.ToTile(System.String)">
   ToTile(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts a string in MPSZ notation to a <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -360,13 +397,15 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>A string in MPSZ notation describing a single tile.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Koffing.Tiles.Tile.html">Tile</a></dt>
-    <dd></dd>
+    <dd><p>The created <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>.</p>
+</dd>
   </dl>
 
 
@@ -376,6 +415,13 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown if <code class="paramref">input</code> would produce no tile (likely due to invalid MPSZ syntax) or more than one
+tile.</p>
+</dd>
+  </dl>
 
 
 
@@ -383,10 +429,11 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Koffing_Extensions_ToTiles_System_String_" data-uid="Koffing.Extensions.ToTiles(System.String)">
   ToTiles(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts a string in MPSZ notation to one or more tiles.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -396,13 +443,15 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>A string in MPSZ notation describing one or more tiles.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>s created from <code class="paramref">input</code>.</p>
+</dd>
   </dl>
 
 
@@ -412,6 +461,12 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown if <code class="paramref">input</code> was not in valid MPSZ notation or was the empty string.</p>
+</dd>
+  </dl>
 
 
 
@@ -419,7 +474,7 @@ Class Extensions  <a class="header-action link-secondary" title="View source" hr
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/chimerror/koffing/blob/main/Scripts/Extensions.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

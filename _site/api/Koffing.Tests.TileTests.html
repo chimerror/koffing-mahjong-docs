@@ -287,7 +287,7 @@ public static void EqualsIsCorrectPositiveCases()</code></pre>
 
   <h3 id="Koffing_Tests_TileTests_GetTileHashCodeIsCorrect_Koffing_Tiles_Tile_System_Int32_" data-uid="Koffing.Tests.TileTests.GetTileHashCodeIsCorrect(Koffing.Tiles.Tile,System.Int32)">
   GetTileHashCodeIsCorrect(Tile, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Tests/TileTests.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Tests/TileTests.cs/#L316"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -343,6 +343,33 @@ public static void IsValidTileIsCorrect(Suit suit, int rank, bool expectedResult
     <dt><code>expectedResult</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Tests_TileTests_NotationFromTilesIsCorrectWhenGivenAnEmptyCollection_" data-uid="Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection*"></a>
+
+  <h3 id="Koffing_Tests_TileTests_NotationFromTilesIsCorrectWhenGivenAnEmptyCollection" data-uid="Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection">
+  NotationFromTilesIsCorrectWhenGivenAnEmptyCollection()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Tests/TileTests.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestCase(new object?[] { })]
+public static void NotationFromTilesIsCorrectWhenGivenAnEmptyCollection()</code></pre>
+  </div>
+
 
 
 
@@ -490,6 +517,42 @@ public static void TearDown()</code></pre>
 
 
 
+  <a id="Koffing_Tests_TileTests_ToTileEdgeCasesAreCorrect_" data-uid="Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect*"></a>
+
+  <h3 id="Koffing_Tests_TileTests_ToTileEdgeCasesAreCorrect_System_String_System_String_" data-uid="Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect(System.String,System.String)">
+  ToTileEdgeCasesAreCorrect(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Tests/TileTests.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestCase(new object?[] { })]
+[DataPoint(&quot;ToTileEdgeTestCases&quot;)]
+[ThrowsException(typeof(InvalidOperationException))]
+public static void ToTileEdgeCasesAreCorrect(string notation, string because)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>because</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Koffing_Tests_TileTests_ToTilesAndNotationFromTilesAreCorrect_" data-uid="Koffing.Tests.TileTests.ToTilesAndNotationFromTilesAreCorrect*"></a>
 
   <h3 id="Koffing_Tests_TileTests_ToTilesAndNotationFromTilesAreCorrect_System_String_System_Collections_Generic_List_Koffing_Tiles_Tile__System_String_" data-uid="Koffing.Tests.TileTests.ToTilesAndNotationFromTilesAreCorrect(System.String,System.Collections.Generic.List{Koffing.Tiles.Tile},System.String)">
@@ -511,6 +574,42 @@ public static void ToTilesAndNotationFromTilesAreCorrect(string notation, List&l
     <dt><code>notation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>tiles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Koffing.Tiles.Tile.html">Tile</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>because</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Koffing_Tests_TileTests_ToTilesEdgeCasesAreCorrect_" data-uid="Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect*"></a>
+
+  <h3 id="Koffing_Tests_TileTests_ToTilesEdgeCasesAreCorrect_System_String_System_String_" data-uid="Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect(System.String,System.String)">
+  ToTilesEdgeCasesAreCorrect(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/chimerror/koffing/blob/main/Scripts/Tests/TileTests.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestCase(new object?[] { })]
+[DataPoint(&quot;ToTilesEdgeTestCases&quot;)]
+[ThrowsException(typeof(InvalidOperationException))]
+public static void ToTilesEdgeCasesAreCorrect(string notation, string because)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>because</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>

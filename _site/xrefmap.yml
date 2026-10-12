@@ -3012,6 +3012,22 @@ references:
   isSpec: "True"
   fullName: Koffing.Tests.RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed
   nameWithType: RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed
+- uid: Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect(System.Int32,System.Int32,System.String)
+  name: RollDiceEdgeCasesAreCorrect(int, int, string)
+  href: api/Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests_RollDiceEdgeCasesAreCorrect_System_Int32_System_Int32_System_String_
+  commentId: M:Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect(System.Int32,System.Int32,System.String)
+  name.vb: RollDiceEdgeCasesAreCorrect(Integer, Integer, String)
+  fullName: Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect(int, int, string)
+  fullName.vb: Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect(Integer, Integer, String)
+  nameWithType: RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect(int, int, string)
+  nameWithType.vb: RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect(Integer, Integer, String)
+- uid: Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect*
+  name: RollDiceEdgeCasesAreCorrect
+  href: api/Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests_RollDiceEdgeCasesAreCorrect_
+  commentId: Overload:Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect
+  isSpec: "True"
+  fullName: Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect
+  nameWithType: RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect
 - uid: Koffing.Tests.RandomNumberGeneratorTests.Setup
   name: Setup()
   href: api/Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests_Setup
@@ -3147,6 +3163,19 @@ references:
   isSpec: "True"
   fullName: Koffing.Tests.TileTests.IsValidTileIsCorrect
   nameWithType: TileTests.IsValidTileIsCorrect
+- uid: Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
+  name: NotationFromTilesIsCorrectWhenGivenAnEmptyCollection()
+  href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
+  commentId: M:Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
+  fullName: Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection()
+  nameWithType: TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection()
+- uid: Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection*
+  name: NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
+  href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_NotationFromTilesIsCorrectWhenGivenAnEmptyCollection_
+  commentId: Overload:Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
+  isSpec: "True"
+  fullName: Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
+  nameWithType: TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
 - uid: Koffing.Tests.TileTests.RawEqualsIsCorrectNegativeCases
   name: RawEqualsIsCorrectNegativeCases()
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_RawEqualsIsCorrectNegativeCases
@@ -3212,6 +3241,22 @@ references:
   isSpec: "True"
   fullName: Koffing.Tests.TileTests.TearDown
   nameWithType: TileTests.TearDown
+- uid: Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect(System.String,System.String)
+  name: ToTileEdgeCasesAreCorrect(string, string)
+  href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_ToTileEdgeCasesAreCorrect_System_String_System_String_
+  commentId: M:Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect(System.String,System.String)
+  name.vb: ToTileEdgeCasesAreCorrect(String, String)
+  fullName: Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect(string, string)
+  fullName.vb: Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect(String, String)
+  nameWithType: TileTests.ToTileEdgeCasesAreCorrect(string, string)
+  nameWithType.vb: TileTests.ToTileEdgeCasesAreCorrect(String, String)
+- uid: Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect*
+  name: ToTileEdgeCasesAreCorrect
+  href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_ToTileEdgeCasesAreCorrect_
+  commentId: Overload:Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect
+  isSpec: "True"
+  fullName: Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect
+  nameWithType: TileTests.ToTileEdgeCasesAreCorrect
 - uid: Koffing.Tests.TileTests.ToTilesAndNotationFromTilesAreCorrect(System.String,System.Collections.Generic.List{Koffing.Tiles.Tile},System.String)
   name: ToTilesAndNotationFromTilesAreCorrect(string, List<Tile>, string)
   href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_ToTilesAndNotationFromTilesAreCorrect_System_String_System_Collections_Generic_List_Koffing_Tiles_Tile__System_String_
@@ -3228,6 +3273,22 @@ references:
   isSpec: "True"
   fullName: Koffing.Tests.TileTests.ToTilesAndNotationFromTilesAreCorrect
   nameWithType: TileTests.ToTilesAndNotationFromTilesAreCorrect
+- uid: Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect(System.String,System.String)
+  name: ToTilesEdgeCasesAreCorrect(string, string)
+  href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_ToTilesEdgeCasesAreCorrect_System_String_System_String_
+  commentId: M:Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect(System.String,System.String)
+  name.vb: ToTilesEdgeCasesAreCorrect(String, String)
+  fullName: Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect(string, string)
+  fullName.vb: Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect(String, String)
+  nameWithType: TileTests.ToTilesEdgeCasesAreCorrect(string, string)
+  nameWithType.vb: TileTests.ToTilesEdgeCasesAreCorrect(String, String)
+- uid: Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect*
+  name: ToTilesEdgeCasesAreCorrect
+  href: api/Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_ToTilesEdgeCasesAreCorrect_
+  commentId: Overload:Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect
+  isSpec: "True"
+  fullName: Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect
+  nameWithType: TileTests.ToTilesEdgeCasesAreCorrect
 - uid: Koffing.Tests.UpgradableDowngradableTests
   name: UpgradableDowngradableTests
   href: api/Koffing.Tests.UpgradableDowngradableTests.html

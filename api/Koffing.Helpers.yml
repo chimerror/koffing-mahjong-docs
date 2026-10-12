@@ -20,10 +20,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Helpers
     path: ../Koffing/Scripts/Helpers.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - Koffing
   namespace: Koffing
+  summary: Useful helper functions.
+  example: []
   syntax:
     content: public static class Helpers
     content.vb: Public Module Helpers
@@ -55,19 +57,30 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetSafeIndex
     path: ../Koffing/Scripts/Helpers.cs
-    startLine: 4
+    startLine: 20
   assemblies:
   - Koffing
   namespace: Koffing
+  summary: Returns a "safe" index in the interval from 0 to the specified number of items minus one.
+  remarks: >-
+    This function is not particularly robust in its fixes here, and will return invalid indices when given indices
+
+    that are not in interval from negative <code class="paramref">numberOfItems</code> to one less than twice
+
+    <code class="paramref">numberOfItems</code>.
+  example: []
   syntax:
     content: public static int GetSafeIndex(int index, int numberOfItems)
     parameters:
     - id: index
       type: System.Int32
+      description: The index to convert.
     - id: numberOfItems
       type: System.Int32
+      description: The number of items in the array or list that safe indices are being generated for.
     return:
       type: System.Int32
+      description: <code class="paramref">index</code> converted to be within the "safe" range.
     content.vb: Public Shared Function GetSafeIndex(index As Integer, numberOfItems As Integer) As Integer
   overload: Koffing.Helpers.GetSafeIndex*
   nameWithType.vb: Helpers.GetSafeIndex(Integer, Integer)

@@ -6,6 +6,7 @@ items:
   parent: Koffing.Tests
   children:
   - Koffing.Tests.RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed
+  - Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect(System.Int32,System.Int32,System.String)
   - Koffing.Tests.RandomNumberGeneratorTests.Setup
   - Koffing.Tests.RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed
   - Koffing.Tests.RandomNumberGeneratorTests.TearDown
@@ -23,17 +24,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RandomNumberGeneratorTests
     path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [TestSuite(13, "")]
+      [TestSuite(14, "")]
 
       public class RandomNumberGeneratorTests
     content.vb: >-
-      <TestSuite(13, "")>
+      <TestSuite(14, "")>
 
       Public Class RandomNumberGeneratorTests
   inheritance:
@@ -51,7 +52,7 @@ items:
     ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 13
+      value: 14
     - type: System.String
       value: ''
 - uid: Koffing.Tests.RandomNumberGeneratorTests.Setup
@@ -72,17 +73,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Setup
     path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [Before(16, "Setup")]
+      [Before(17, "Setup")]
 
       public static void Setup()
     content.vb: >-
-      <Before(16, "Setup")>
+      <Before(17, "Setup")>
 
       Public Shared Sub Setup()
   overload: Koffing.Tests.RandomNumberGeneratorTests.Setup*
@@ -91,7 +92,7 @@ items:
     ctor: GdUnit4.BeforeAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 16
+      value: 17
     - type: System.String
       value: Setup
 - uid: Koffing.Tests.RandomNumberGeneratorTests.TearDown
@@ -112,17 +113,17 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: TearDown
     path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - Koffing
   namespace: Koffing.Tests
   syntax:
     content: >-
-      [After(22, "TearDown")]
+      [After(23, "TearDown")]
 
       public static void TearDown()
     content.vb: >-
-      <After(22, "TearDown")>
+      <After(23, "TearDown")>
 
       Public Shared Sub TearDown()
   overload: Koffing.Tests.RandomNumberGeneratorTests.TearDown*
@@ -131,7 +132,7 @@ items:
     ctor: GdUnit4.AfterAttribute.#ctor(System.Int32,System.String)
     arguments:
     - type: System.Int32
-      value: 22
+      value: 23
     - type: System.String
       value: TearDown
 - uid: Koffing.Tests.RandomNumberGeneratorTests.GodotRandomNumberGeneratorCanBeUsed
@@ -152,7 +153,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GodotRandomNumberGeneratorCanBeUsed
     path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
-    startLine: 31
+    startLine: 32
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -192,7 +193,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: SystemRandomNumberGeneratorCanBeUsed
     path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
-    startLine: 55
+    startLine: 62
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -206,6 +207,67 @@ items:
 
       Public Shared Sub SystemRandomNumberGeneratorCanBeUsed()
   overload: Koffing.Tests.RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed*
+- uid: Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect(System.Int32,System.Int32,System.String)
+  commentId: M:Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect(System.Int32,System.Int32,System.String)
+  id: RollDiceEdgeCasesAreCorrect(System.Int32,System.Int32,System.String)
+  parent: Koffing.Tests.RandomNumberGeneratorTests
+  langs:
+  - csharp
+  - vb
+  name: RollDiceEdgeCasesAreCorrect(int, int, string)
+  nameWithType: RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect(int, int, string)
+  fullName: Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect(int, int, string)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Tests/RandomNumberGeneratorTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: RollDiceEdgeCasesAreCorrect
+    path: ../Koffing/Scripts/Tests/RandomNumberGeneratorTests.cs
+    startLine: 91
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("RollDiceEdgeCases")]
+
+      [ThrowsException(typeof(ArgumentException))]
+
+      public static void RollDiceEdgeCasesAreCorrect(int numberOfDice, int sidesOfDie, string because)
+    parameters:
+    - id: numberOfDice
+      type: System.Int32
+    - id: sidesOfDie
+      type: System.Int32
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("RollDiceEdgeCases")>
+
+      <ThrowsException(GetType(ArgumentException))>
+
+      Public Shared Sub RollDiceEdgeCasesAreCorrect(numberOfDice As Integer, sidesOfDie As Integer, because As String)
+  overload: Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: RollDiceEdgeCases
+  - type: GdUnit4.ThrowsExceptionAttribute
+    ctor: GdUnit4.ThrowsExceptionAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: System.ArgumentException
+  nameWithType.vb: RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect(Integer, Integer, String)
+  fullName.vb: Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect(Integer, Integer, String)
+  name.vb: RollDiceEdgeCasesAreCorrect(Integer, Integer, String)
 references:
 - uid: Koffing.Tests
   commentId: N:Koffing.Tests
@@ -485,3 +547,31 @@ references:
   name: SystemRandomNumberGeneratorCanBeUsed
   nameWithType: RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed
   fullName: Koffing.Tests.RandomNumberGeneratorTests.SystemRandomNumberGeneratorCanBeUsed
+- uid: Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect*
+  commentId: Overload:Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect
+  href: Koffing.Tests.RandomNumberGeneratorTests.html#Koffing_Tests_RandomNumberGeneratorTests_RollDiceEdgeCasesAreCorrect_System_Int32_System_Int32_System_String_
+  name: RollDiceEdgeCasesAreCorrect
+  nameWithType: RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect
+  fullName: Koffing.Tests.RandomNumberGeneratorTests.RollDiceEdgeCasesAreCorrect
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

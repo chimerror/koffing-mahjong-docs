@@ -11,12 +11,15 @@ items:
   - Koffing.Tests.TileTests.EqualsIsCorrectPositiveCases
   - Koffing.Tests.TileTests.GetTileHashCodeIsCorrect(Koffing.Tiles.Tile,System.Int32)
   - Koffing.Tests.TileTests.IsValidTileIsCorrect(Koffing.Tiles.Suit,System.Int32,System.Boolean)
+  - Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
   - Koffing.Tests.TileTests.RawEqualsIsCorrectNegativeCases
   - Koffing.Tests.TileTests.RawEqualsIsCorrectPositiveCases
   - Koffing.Tests.TileTests.RawRanksAreCorrect
   - Koffing.Tests.TileTests.Setup
   - Koffing.Tests.TileTests.TearDown
+  - Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect(System.String,System.String)
   - Koffing.Tests.TileTests.ToTilesAndNotationFromTilesAreCorrect(System.String,System.Collections.Generic.List{Koffing.Tiles.Tile},System.String)
+  - Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect(System.String,System.String)
   langs:
   - csharp
   - vb
@@ -512,6 +515,156 @@ items:
   nameWithType.vb: TileTests.ToTilesAndNotationFromTilesAreCorrect(String, List(Of Tile), String)
   fullName.vb: Koffing.Tests.TileTests.ToTilesAndNotationFromTilesAreCorrect(String, System.Collections.Generic.List(Of Koffing.Tiles.Tile), String)
   name.vb: ToTilesAndNotationFromTilesAreCorrect(String, List(Of Tile), String)
+- uid: Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect(System.String,System.String)
+  commentId: M:Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect(System.String,System.String)
+  id: ToTilesEdgeCasesAreCorrect(System.String,System.String)
+  parent: Koffing.Tests.TileTests
+  langs:
+  - csharp
+  - vb
+  name: ToTilesEdgeCasesAreCorrect(string, string)
+  nameWithType: TileTests.ToTilesEdgeCasesAreCorrect(string, string)
+  fullName: Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect(string, string)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Tests/TileTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: ToTilesEdgeCasesAreCorrect
+    path: ../Koffing/Scripts/Tests/TileTests.cs
+    startLine: 282
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("ToTilesEdgeTestCases")]
+
+      [ThrowsException(typeof(InvalidOperationException))]
+
+      public static void ToTilesEdgeCasesAreCorrect(string notation, string because)
+    parameters:
+    - id: notation
+      type: System.String
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("ToTilesEdgeTestCases")>
+
+      <ThrowsException(GetType(InvalidOperationException))>
+
+      Public Shared Sub ToTilesEdgeCasesAreCorrect(notation As String, because As String)
+  overload: Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ToTilesEdgeTestCases
+  - type: GdUnit4.ThrowsExceptionAttribute
+    ctor: GdUnit4.ThrowsExceptionAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: System.InvalidOperationException
+  nameWithType.vb: TileTests.ToTilesEdgeCasesAreCorrect(String, String)
+  fullName.vb: Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect(String, String)
+  name.vb: ToTilesEdgeCasesAreCorrect(String, String)
+- uid: Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect(System.String,System.String)
+  commentId: M:Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect(System.String,System.String)
+  id: ToTileEdgeCasesAreCorrect(System.String,System.String)
+  parent: Koffing.Tests.TileTests
+  langs:
+  - csharp
+  - vb
+  name: ToTileEdgeCasesAreCorrect(string, string)
+  nameWithType: TileTests.ToTileEdgeCasesAreCorrect(string, string)
+  fullName: Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect(string, string)
+  type: Method
+  source:
+    remote:
+      path: Scripts/Tests/TileTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: ToTileEdgeCasesAreCorrect
+    path: ../Koffing/Scripts/Tests/TileTests.cs
+    startLine: 294
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [DataPoint("ToTileEdgeTestCases")]
+
+      [ThrowsException(typeof(InvalidOperationException))]
+
+      public static void ToTileEdgeCasesAreCorrect(string notation, string because)
+    parameters:
+    - id: notation
+      type: System.String
+    - id: because
+      type: System.String
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <DataPoint("ToTileEdgeTestCases")>
+
+      <ThrowsException(GetType(InvalidOperationException))>
+
+      Public Shared Sub ToTileEdgeCasesAreCorrect(notation As String, because As String)
+  overload: Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect*
+  attributes:
+  - type: GdUnit4.DataPointAttribute
+    ctor: GdUnit4.DataPointAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ToTileEdgeTestCases
+  - type: GdUnit4.ThrowsExceptionAttribute
+    ctor: GdUnit4.ThrowsExceptionAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: System.InvalidOperationException
+  nameWithType.vb: TileTests.ToTileEdgeCasesAreCorrect(String, String)
+  fullName.vb: Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect(String, String)
+  name.vb: ToTileEdgeCasesAreCorrect(String, String)
+- uid: Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
+  commentId: M:Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
+  id: NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
+  parent: Koffing.Tests.TileTests
+  langs:
+  - csharp
+  - vb
+  name: NotationFromTilesIsCorrectWhenGivenAnEmptyCollection()
+  nameWithType: TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection()
+  fullName: Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection()
+  type: Method
+  source:
+    remote:
+      path: Scripts/Tests/TileTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
+    path: ../Koffing/Scripts/Tests/TileTests.cs
+    startLine: 305
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      public static void NotationFromTilesIsCorrectWhenGivenAnEmptyCollection()
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      Public Shared Sub NotationFromTilesIsCorrectWhenGivenAnEmptyCollection()
+  overload: Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection*
 - uid: Koffing.Tests.TileTests.GetTileHashCodeIsCorrect(Koffing.Tiles.Tile,System.Int32)
   commentId: M:Koffing.Tests.TileTests.GetTileHashCodeIsCorrect(Koffing.Tiles.Tile,System.Int32)
   id: GetTileHashCodeIsCorrect(Koffing.Tiles.Tile,System.Int32)
@@ -530,7 +683,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetTileHashCodeIsCorrect
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 268
+    startLine: 315
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -1045,6 +1198,24 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect*
+  commentId: Overload:Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect
+  href: Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_ToTilesEdgeCasesAreCorrect_System_String_System_String_
+  name: ToTilesEdgeCasesAreCorrect
+  nameWithType: TileTests.ToTilesEdgeCasesAreCorrect
+  fullName: Koffing.Tests.TileTests.ToTilesEdgeCasesAreCorrect
+- uid: Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect*
+  commentId: Overload:Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect
+  href: Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_ToTileEdgeCasesAreCorrect_System_String_System_String_
+  name: ToTileEdgeCasesAreCorrect
+  nameWithType: TileTests.ToTileEdgeCasesAreCorrect
+  fullName: Koffing.Tests.TileTests.ToTileEdgeCasesAreCorrect
+- uid: Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection*
+  commentId: Overload:Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
+  href: Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
+  name: NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
+  nameWithType: TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
+  fullName: Koffing.Tests.TileTests.NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
 - uid: Koffing.Tests.TileTests.GetTileHashCodeIsCorrect*
   commentId: Overload:Koffing.Tests.TileTests.GetTileHashCodeIsCorrect
   href: Koffing.Tests.TileTests.html#Koffing_Tests_TileTests_GetTileHashCodeIsCorrect_Koffing_Tiles_Tile_System_Int32_

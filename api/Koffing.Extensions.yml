@@ -26,10 +26,12 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Extensions
     path: ../Koffing/Scripts/Extensions.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - Koffing
   namespace: Koffing
+  summary: Useful extension methods for various purposes.
+  example: []
   syntax:
     content: public static class Extensions
     content.vb: Public Module Extensions
@@ -62,21 +64,30 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Shuffle
     path: ../Koffing/Scripts/Extensions.cs
-    startLine: 12
+    startLine: 23
   assemblies:
   - Koffing
   namespace: Koffing
+  summary: >-
+    Shuffles an <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> using an <xref href="Koffing.Random.IRandomNumberGenerator" data-throw-if-not-resolved="false"></xref>, copying the elements
+
+    to a new list.
+  example: []
   syntax:
     content: public static List<T> Shuffle<T>(this IRandomNumberGenerator rng, IEnumerable<T> originalList)
     parameters:
     - id: rng
       type: Koffing.Random.IRandomNumberGenerator
+      description: The <xref href="Koffing.Random.IRandomNumberGenerator" data-throw-if-not-resolved="false"></xref> to use for shuffling.
     - id: originalList
       type: System.Collections.Generic.IEnumerable{{T}}
+      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> to shuffle. It will not be modified.
     typeParameters:
     - id: T
+      description: The type of elements in <code class="paramref">originalList</code>.
     return:
       type: System.Collections.Generic.List{{T}}
+      description: A new list with the elements of <code class="paramref">originalList</code> shuffled.
     content.vb: Public Shared Function Shuffle(Of T)(rng As IRandomNumberGenerator, originalList As IEnumerable(Of T)) As List(Of T)
   overload: Koffing.Extensions.Shuffle*
   nameWithType.vb: Extensions.Shuffle(Of T)(IRandomNumberGenerator, IEnumerable(Of T))
@@ -101,23 +112,33 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RollDice
     path: ../Koffing/Scripts/Extensions.cs
-    startLine: 25
+    startLine: 48
   assemblies:
   - Koffing
   namespace: Koffing
+  summary: Uses an <xref href="Koffing.Random.IRandomNumberGenerator" data-throw-if-not-resolved="false"></xref> to simulate rolling dice.
+  example: []
   syntax:
     content: public static int RollDice(this IRandomNumberGenerator rng, int numberOfDice = 2, int sidesOfDie = 6)
     parameters:
     - id: rng
       type: Koffing.Random.IRandomNumberGenerator
+      description: The <xref href="Koffing.Random.IRandomNumberGenerator" data-throw-if-not-resolved="false"></xref> to use for dice rolling.
     - id: numberOfDice
       type: System.Int32
+      description: The number of dice to roll. Assumes 2 if not specified.
     - id: sidesOfDie
       type: System.Int32
+      description: The number of sides on each die. Assumes 6 if not specified.
     return:
       type: System.Int32
+      description: A random total from rolling <code class="paramref">numberOfDice</code> dice with <code class="paramref">sidesOfDie</code> sides.
     content.vb: Public Shared Function RollDice(rng As IRandomNumberGenerator, numberOfDice As Integer = 2, sidesOfDie As Integer = 6) As Integer
   overload: Koffing.Extensions.RollDice*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: If given a non-positive <code class="paramref">numberOfDice</code> or <code class="paramref">sidesOfDie</code>.
   nameWithType.vb: Extensions.RollDice(IRandomNumberGenerator, Integer, Integer)
   fullName.vb: Koffing.Extensions.RollDice(Koffing.Random.IRandomNumberGenerator, Integer, Integer)
   name.vb: RollDice(IRandomNumberGenerator, Integer, Integer)
@@ -140,19 +161,30 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ToTile
     path: ../Koffing/Scripts/Extensions.cs
-    startLine: 35
+    startLine: 78
   assemblies:
   - Koffing
   namespace: Koffing
+  summary: Converts a string in MPSZ notation to a <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>.
+  example: []
   syntax:
     content: public static Tile ToTile(this string input)
     parameters:
     - id: input
       type: System.String
+      description: A string in MPSZ notation describing a single tile.
     return:
       type: Koffing.Tiles.Tile
+      description: The created <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function ToTile(input As String) As Tile
   overload: Koffing.Extensions.ToTile*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: >-
+      Thrown if <code class="paramref">input</code> would produce no tile (likely due to invalid MPSZ syntax) or more than one
+
+      tile.
   nameWithType.vb: Extensions.ToTile(String)
   fullName.vb: Koffing.Extensions.ToTile(String)
   name.vb: ToTile(String)
@@ -175,19 +207,27 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ToTiles
     path: ../Koffing/Scripts/Extensions.cs
-    startLine: 41
+    startLine: 96
   assemblies:
   - Koffing
   namespace: Koffing
+  summary: Converts a string in MPSZ notation to one or more tiles.
+  example: []
   syntax:
     content: public static IEnumerable<Tile> ToTiles(this string input)
     parameters:
     - id: input
       type: System.String
+      description: A string in MPSZ notation describing one or more tiles.
     return:
       type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s created from <code class="paramref">input</code>.
     content.vb: Public Shared Function ToTiles(input As String) As IEnumerable(Of Tile)
   overload: Koffing.Extensions.ToTiles*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown if <code class="paramref">input</code> was not in valid MPSZ notation or was the empty string.
   nameWithType.vb: Extensions.ToTiles(String)
   fullName.vb: Koffing.Extensions.ToTiles(String)
   name.vb: ToTiles(String)
@@ -210,17 +250,21 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: NotationFromTile
     path: ../Koffing/Scripts/Extensions.cs
-    startLine: 65
+    startLine: 129
   assemblies:
   - Koffing
   namespace: Koffing
+  summary: Generates the MPSZ notation for a single tile.
+  example: []
   syntax:
     content: public static string NotationFromTile(this Tile input)
     parameters:
     - id: input
       type: Koffing.Tiles.Tile
+      description: The <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref> to convert to notation.
     return:
       type: System.String
+      description: The MPSZ notation describing <code class="paramref">input</code>.
     content.vb: Public Shared Function NotationFromTile(input As Tile) As String
   overload: Koffing.Extensions.NotationFromTile*
 - uid: Koffing.Extensions.NotationFromTiles(System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile})
@@ -242,17 +286,22 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: NotationFromTiles
     path: ../Koffing/Scripts/Extensions.cs
-    startLine: 70
+    startLine: 142
   assemblies:
   - Koffing
   namespace: Koffing
+  summary: Generates the MPSZ notation for a collection of tiles.
+  remarks: If given an empty collection, the empty string will be returned.
+  example: []
   syntax:
     content: public static string NotationFromTiles(this IEnumerable<Tile> input)
     parameters:
     - id: input
       type: System.Collections.Generic.IEnumerable{Koffing.Tiles.Tile}
+      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="Koffing.Tiles.Tile" data-throw-if-not-resolved="false"></xref>s to convert to notation.
     return:
       type: System.String
+      description: The MPSZ notation describing <code class="paramref">input</code>
     content.vb: Public Shared Function NotationFromTiles(input As IEnumerable(Of Tile)) As String
   overload: Koffing.Extensions.NotationFromTiles*
   nameWithType.vb: Extensions.NotationFromTiles(IEnumerable(Of Tile))
@@ -277,19 +326,27 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetSuitString
     path: ../Koffing/Scripts/Extensions.cs
-    startLine: 92
+    startLine: 193
   assemblies:
   - Koffing
   namespace: Koffing
+  summary: Returns the MPSZ notation string for the specified suit.
+  example: []
   syntax:
     content: public static string GetSuitString(this Suit suit)
     parameters:
     - id: suit
       type: Koffing.Tiles.Suit
+      description: The <xref href="Koffing.Tiles.Suit" data-throw-if-not-resolved="false"></xref> to covert to notation.
     return:
       type: System.String
+      description: <table><thead><tr><th class="term">Suit</th><th class="description">Result</th></tr></thead><tbody><tr><td class="term">Man</td><td class="description"><code>"m"</code></td></tr><tr><td class="term">Pin</td><td class="description"><code>"p"</code></td></tr><tr><td class="term">Sou</td><td class="description"><code>"s"</code></td></tr><tr><td class="term">Zi</td><td class="description"><code>"z"</code></td></tr></tbody></table>
     content.vb: Public Shared Function GetSuitString(suit As Suit) As String
   overload: Koffing.Extensions.GetSuitString*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: If given an invalid <xref href="Koffing.Tiles.Suit" data-throw-if-not-resolved="false"></xref>.
 references:
 - uid: Koffing
   commentId: N:Koffing
@@ -533,12 +590,34 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Koffing.Extensions.Shuffle*
-  commentId: Overload:Koffing.Extensions.Shuffle
-  href: Koffing.Extensions.html#Koffing_Extensions_Shuffle__1_Koffing_Random_IRandomNumberGenerator_System_Collections_Generic_IEnumerable___0__
-  name: Shuffle
-  nameWithType: Extensions.Shuffle
-  fullName: Koffing.Extensions.Shuffle
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Koffing.Random.IRandomNumberGenerator
   commentId: T:Koffing.Random.IRandomNumberGenerator
   parent: Koffing.Random
@@ -546,6 +625,12 @@ references:
   name: IRandomNumberGenerator
   nameWithType: IRandomNumberGenerator
   fullName: Koffing.Random.IRandomNumberGenerator
+- uid: Koffing.Extensions.Shuffle*
+  commentId: Overload:Koffing.Extensions.Shuffle
+  href: Koffing.Extensions.html#Koffing_Extensions_Shuffle__1_Koffing_Random_IRandomNumberGenerator_System_Collections_Generic_IEnumerable___0__
+  name: Shuffle
+  nameWithType: Extensions.Shuffle
+  fullName: Koffing.Extensions.Shuffle
 - uid: System.Collections.Generic.IEnumerable{{T}}
   commentId: T:System.Collections.Generic.IEnumerable{``0}
   parent: System.Collections.Generic
@@ -621,34 +706,6 @@ references:
   - name: .
   - uid: Koffing.Random
     name: Random
-- uid: System.Collections.Generic.IEnumerable`1
-  commentId: T:System.Collections.Generic.IEnumerable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
   isExternal: true
@@ -714,6 +771,14 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
 - uid: Koffing.Extensions.RollDice*
   commentId: Overload:Koffing.Extensions.RollDice
   href: Koffing.Extensions.html#Koffing_Extensions_RollDice_Koffing_Random_IRandomNumberGenerator_System_Int32_System_Int32_
@@ -731,6 +796,21 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: Koffing.Tiles.Tile
+  commentId: T:Koffing.Tiles.Tile
+  parent: Koffing.Tiles
+  href: Koffing.Tiles.Tile.html
+  name: Tile
+  nameWithType: Tile
+  fullName: Koffing.Tiles.Tile
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
 - uid: Koffing.Extensions.ToTile*
   commentId: Overload:Koffing.Extensions.ToTile
   href: Koffing.Extensions.html#Koffing_Extensions_ToTile_System_String_
@@ -748,13 +828,6 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Koffing.Tiles.Tile
-  commentId: T:Koffing.Tiles.Tile
-  parent: Koffing.Tiles
-  href: Koffing.Tiles.Tile.html
-  name: Tile
-  nameWithType: Tile
-  fullName: Koffing.Tiles.Tile
 - uid: Koffing.Tiles
   commentId: N:Koffing.Tiles
   name: Koffing.Tiles
@@ -823,12 +896,6 @@ references:
   name: NotationFromTiles
   nameWithType: Extensions.NotationFromTiles
   fullName: Koffing.Extensions.NotationFromTiles
-- uid: Koffing.Extensions.GetSuitString*
-  commentId: Overload:Koffing.Extensions.GetSuitString
-  href: Koffing.Extensions.html#Koffing_Extensions_GetSuitString_Koffing_Tiles_Suit_
-  name: GetSuitString
-  nameWithType: Extensions.GetSuitString
-  fullName: Koffing.Extensions.GetSuitString
 - uid: Koffing.Tiles.Suit
   commentId: T:Koffing.Tiles.Suit
   parent: Koffing.Tiles
@@ -836,3 +903,9 @@ references:
   name: Suit
   nameWithType: Suit
   fullName: Koffing.Tiles.Suit
+- uid: Koffing.Extensions.GetSuitString*
+  commentId: Overload:Koffing.Extensions.GetSuitString
+  href: Koffing.Extensions.html#Koffing_Extensions_GetSuitString_Koffing_Tiles_Suit_
+  name: GetSuitString
+  nameWithType: Extensions.GetSuitString
+  fullName: Koffing.Extensions.GetSuitString

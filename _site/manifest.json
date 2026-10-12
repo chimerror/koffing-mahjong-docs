@@ -173,7 +173,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Extensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Extensions.yml\" sourcestartlinenumber=\"1\">Useful extension methods for various purposes.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -355,7 +355,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Koffing.Helpers",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/Koffing.Helpers.yml\" sourcestartlinenumber=\"1\">Useful helper functions.</p>\n"
     },
     {
       "type": "ManagedReference",
