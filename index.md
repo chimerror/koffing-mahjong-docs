@@ -2,10 +2,10 @@
 _layout: landing
 ---
 
-# This is the **HOMEPAGE**.
+[!INCLUDE [README](../koffing/README.md)]
 
-Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
+## About This Site
 
-## Quick Start Notes:
-
-1. Add images to the *images* folder if the file is referencing an image.
+This site is the documentation website for the engine. Much like the engine, it is a work in progress. For right now,
+the most useful information can be found in the [API documentation](/api/Koffing.html), generated from XML comments in
+the code. We are hoping to add more help and tutorial files soon!
