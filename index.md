@@ -2,7 +2,7 @@
 _layout: landing
 ---
 
-[!INCLUDE [README](../koffing/README.md)]
+[!INCLUDE [README](../Koffing/README.md)]
 
 ## About This Site
 
