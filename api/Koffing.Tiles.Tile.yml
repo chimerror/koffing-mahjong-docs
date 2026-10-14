@@ -16,6 +16,7 @@ items:
   - Koffing.Tiles.Tile.Rank
   - Koffing.Tiles.Tile.RawEquals(Koffing.Tiles.Tile)
   - Koffing.Tiles.Tile.RawRank
+  - Koffing.Tiles.Tile.Rotated
   - Koffing.Tiles.Tile.Suit
   - Koffing.Tiles.Tile.ToString
   langs:
@@ -143,6 +144,38 @@ items:
     return:
       type: System.Boolean
     content.vb: Public FaceUp As Boolean
+- uid: Koffing.Tiles.Tile.Rotated
+  commentId: F:Koffing.Tiles.Tile.Rotated
+  id: Rotated
+  parent: Koffing.Tiles.Tile
+  langs:
+  - csharp
+  - vb
+  name: Rotated
+  nameWithType: Tile.Rotated
+  fullName: Koffing.Tiles.Tile.Rotated
+  type: Field
+  source:
+    remote:
+      path: Scripts/Tiles/Tile.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Rotated
+    path: ../Koffing/Scripts/Tiles/Tile.cs
+    startLine: 29
+  assemblies:
+  - Koffing
+  namespace: Koffing.Tiles
+  summary: >-
+    If the tile has been rotated 90 degrees counter-clockwise, as to indicate it was taken as a called discard in an
+
+    open meld. Like <xref href="Koffing.Tiles.Tile.FaceUp" data-throw-if-not-resolved="false"></xref>, UI is encouraged to ignore this if that would make the most sense.
+  example: []
+  syntax:
+    content: public bool Rotated
+    return:
+      type: System.Boolean
+    content.vb: Public Rotated As Boolean
 - uid: Koffing.Tiles.Tile.RawRank
   commentId: P:Koffing.Tiles.Tile.RawRank
   id: RawRank
@@ -161,7 +194,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RawRank
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 30
+    startLine: 36
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -196,7 +229,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: IsValidTile
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 45
+    startLine: 51
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -242,7 +275,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 53
+    startLine: 59
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -273,7 +306,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 62
+    startLine: 68
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -311,7 +344,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 83
+    startLine: 89
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -360,7 +393,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Equals
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 116
+    startLine: 122
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -413,7 +446,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RawEquals
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 150
+    startLine: 156
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -464,7 +497,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetHashCode
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 166
+    startLine: 172
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -500,7 +533,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CompareTo
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 215
+    startLine: 221
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -557,7 +590,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ToString
     path: ../Koffing/Scripts/Tiles/Tile.cs
-    startLine: 248
+    startLine: 254
   assemblies:
   - Koffing
   namespace: Koffing.Tiles
@@ -959,6 +992,12 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Koffing.Tiles.Tile.FaceUp
+  commentId: F:Koffing.Tiles.Tile.FaceUp
+  href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_FaceUp
+  name: FaceUp
+  nameWithType: Tile.FaceUp
+  fullName: Koffing.Tiles.Tile.FaceUp
 - uid: Koffing.Tiles.Tile.Rank
   commentId: F:Koffing.Tiles.Tile.Rank
   href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_Rank
@@ -1074,12 +1113,6 @@ references:
   name: Suit
   nameWithType: Tile.Suit
   fullName: Koffing.Tiles.Tile.Suit
-- uid: Koffing.Tiles.Tile.FaceUp
-  commentId: F:Koffing.Tiles.Tile.FaceUp
-  href: Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_FaceUp
-  name: FaceUp
-  nameWithType: Tile.FaceUp
-  fullName: Koffing.Tiles.Tile.FaceUp
 - uid: System.IEquatable{Koffing.Tiles.Tile}.Equals(Koffing.Tiles.Tile)
   commentId: M:System.IEquatable{Koffing.Tiles.Tile}.Equals(Koffing.Tiles.Tile)
   parent: System.IEquatable{Koffing.Tiles.Tile}

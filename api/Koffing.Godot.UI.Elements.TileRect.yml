@@ -6,10 +6,18 @@ items:
   parent: Koffing.Godot.UI.Elements
   children:
   - Koffing.Godot.UI.Elements.TileRect.FaceUp
+  - Koffing.Godot.UI.Elements.TileRect.NormalRankIndicatorColor
   - Koffing.Godot.UI.Elements.TileRect.Rank
+  - Koffing.Godot.UI.Elements.TileRect.RedFiveRankIndicatorColor
+  - Koffing.Godot.UI.Elements.TileRect.Rotated
+  - Koffing.Godot.UI.Elements.TileRect.ShowRankIndicator
   - Koffing.Godot.UI.Elements.TileRect.Suit
   - Koffing.Godot.UI.Elements.TileRect.Tile
+  - Koffing.Godot.UI.Elements.TileRect.TileHeight
+  - Koffing.Godot.UI.Elements.TileRect.TileWidth
   - Koffing.Godot.UI.Elements.TileRect.ToString
+  - Koffing.Godot.UI.Elements.TileRect.WestRankIndicatorOffset
+  - Koffing.Godot.UI.Elements.TileRect.WhiteRankIndicatorOffset
   - Koffing.Godot.UI.Elements.TileRect._Ready
   langs:
   - csharp
@@ -25,7 +33,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: TileRect
     path: ../Koffing/UI/Elements/TileRect.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -659,7 +667,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Tile
     path: ../Koffing/UI/Elements/TileRect.cs
-    startLine: 12
+    startLine: 21
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -670,6 +678,260 @@ items:
       type: Koffing.Tiles.Tile
     content.vb: Public Property Tile As Tile
   overload: Koffing.Godot.UI.Elements.TileRect.Tile*
+- uid: Koffing.Godot.UI.Elements.TileRect.NormalRankIndicatorColor
+  commentId: P:Koffing.Godot.UI.Elements.TileRect.NormalRankIndicatorColor
+  id: NormalRankIndicatorColor
+  parent: Koffing.Godot.UI.Elements.TileRect
+  langs:
+  - csharp
+  - vb
+  name: NormalRankIndicatorColor
+  nameWithType: TileRect.NormalRankIndicatorColor
+  fullName: Koffing.Godot.UI.Elements.TileRect.NormalRankIndicatorColor
+  type: Property
+  source:
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: NormalRankIndicatorColor
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 35
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  syntax:
+    content: >-
+      [Export(PropertyHint.None, "")]
+
+      public Color NormalRankIndicatorColor { get; set; }
+    parameters: []
+    return:
+      type: Godot.Color
+    content.vb: >-
+      <Export(PropertyHint.None, "")>
+
+      Public Property NormalRankIndicatorColor As Color
+  overload: Koffing.Godot.UI.Elements.TileRect.NormalRankIndicatorColor*
+  attributes:
+  - type: Godot.ExportAttribute
+    ctor: Godot.ExportAttribute.#ctor(Godot.PropertyHint,System.String)
+    arguments:
+    - type: Godot.PropertyHint
+      value: "0"
+    - type: System.String
+      value: ''
+- uid: Koffing.Godot.UI.Elements.TileRect.RedFiveRankIndicatorColor
+  commentId: P:Koffing.Godot.UI.Elements.TileRect.RedFiveRankIndicatorColor
+  id: RedFiveRankIndicatorColor
+  parent: Koffing.Godot.UI.Elements.TileRect
+  langs:
+  - csharp
+  - vb
+  name: RedFiveRankIndicatorColor
+  nameWithType: TileRect.RedFiveRankIndicatorColor
+  fullName: Koffing.Godot.UI.Elements.TileRect.RedFiveRankIndicatorColor
+  type: Property
+  source:
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: RedFiveRankIndicatorColor
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 38
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  syntax:
+    content: >-
+      [Export(PropertyHint.None, "")]
+
+      public Color RedFiveRankIndicatorColor { get; set; }
+    parameters: []
+    return:
+      type: Godot.Color
+    content.vb: >-
+      <Export(PropertyHint.None, "")>
+
+      Public Property RedFiveRankIndicatorColor As Color
+  overload: Koffing.Godot.UI.Elements.TileRect.RedFiveRankIndicatorColor*
+  attributes:
+  - type: Godot.ExportAttribute
+    ctor: Godot.ExportAttribute.#ctor(Godot.PropertyHint,System.String)
+    arguments:
+    - type: Godot.PropertyHint
+      value: "0"
+    - type: System.String
+      value: ''
+- uid: Koffing.Godot.UI.Elements.TileRect.TileWidth
+  commentId: P:Koffing.Godot.UI.Elements.TileRect.TileWidth
+  id: TileWidth
+  parent: Koffing.Godot.UI.Elements.TileRect
+  langs:
+  - csharp
+  - vb
+  name: TileWidth
+  nameWithType: TileRect.TileWidth
+  fullName: Koffing.Godot.UI.Elements.TileRect.TileWidth
+  type: Property
+  source:
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: TileWidth
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 41
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  syntax:
+    content: >-
+      [Export(PropertyHint.None, "")]
+
+      public float TileWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <Export(PropertyHint.None, "")>
+
+      Public Property TileWidth As Single
+  overload: Koffing.Godot.UI.Elements.TileRect.TileWidth*
+  attributes:
+  - type: Godot.ExportAttribute
+    ctor: Godot.ExportAttribute.#ctor(Godot.PropertyHint,System.String)
+    arguments:
+    - type: Godot.PropertyHint
+      value: "0"
+    - type: System.String
+      value: ''
+- uid: Koffing.Godot.UI.Elements.TileRect.TileHeight
+  commentId: P:Koffing.Godot.UI.Elements.TileRect.TileHeight
+  id: TileHeight
+  parent: Koffing.Godot.UI.Elements.TileRect
+  langs:
+  - csharp
+  - vb
+  name: TileHeight
+  nameWithType: TileRect.TileHeight
+  fullName: Koffing.Godot.UI.Elements.TileRect.TileHeight
+  type: Property
+  source:
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: TileHeight
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 44
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  syntax:
+    content: >-
+      [Export(PropertyHint.None, "")]
+
+      public float TileHeight { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <Export(PropertyHint.None, "")>
+
+      Public Property TileHeight As Single
+  overload: Koffing.Godot.UI.Elements.TileRect.TileHeight*
+  attributes:
+  - type: Godot.ExportAttribute
+    ctor: Godot.ExportAttribute.#ctor(Godot.PropertyHint,System.String)
+    arguments:
+    - type: Godot.PropertyHint
+      value: "0"
+    - type: System.String
+      value: ''
+- uid: Koffing.Godot.UI.Elements.TileRect.WestRankIndicatorOffset
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.WestRankIndicatorOffset
+  id: WestRankIndicatorOffset
+  parent: Koffing.Godot.UI.Elements.TileRect
+  langs:
+  - csharp
+  - vb
+  name: WestRankIndicatorOffset
+  nameWithType: TileRect.WestRankIndicatorOffset
+  fullName: Koffing.Godot.UI.Elements.TileRect.WestRankIndicatorOffset
+  type: Field
+  source:
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: WestRankIndicatorOffset
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 48
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  syntax:
+    content: >-
+      [Export(PropertyHint.None, "")]
+
+      public Vector2 WestRankIndicatorOffset
+    return:
+      type: Godot.Vector2
+    content.vb: >-
+      <Export(PropertyHint.None, "")>
+
+      Public WestRankIndicatorOffset As Vector2
+  attributes:
+  - type: Godot.ExportAttribute
+    ctor: Godot.ExportAttribute.#ctor(Godot.PropertyHint,System.String)
+    arguments:
+    - type: Godot.PropertyHint
+      value: "0"
+    - type: System.String
+      value: ''
+- uid: Koffing.Godot.UI.Elements.TileRect.WhiteRankIndicatorOffset
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.WhiteRankIndicatorOffset
+  id: WhiteRankIndicatorOffset
+  parent: Koffing.Godot.UI.Elements.TileRect
+  langs:
+  - csharp
+  - vb
+  name: WhiteRankIndicatorOffset
+  nameWithType: TileRect.WhiteRankIndicatorOffset
+  fullName: Koffing.Godot.UI.Elements.TileRect.WhiteRankIndicatorOffset
+  type: Field
+  source:
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: WhiteRankIndicatorOffset
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 51
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  syntax:
+    content: >-
+      [Export(PropertyHint.None, "")]
+
+      public Vector2 WhiteRankIndicatorOffset
+    return:
+      type: Godot.Vector2
+    content.vb: >-
+      <Export(PropertyHint.None, "")>
+
+      Public WhiteRankIndicatorOffset As Vector2
+  attributes:
+  - type: Godot.ExportAttribute
+    ctor: Godot.ExportAttribute.#ctor(Godot.PropertyHint,System.String)
+    arguments:
+    - type: Godot.PropertyHint
+      value: "0"
+    - type: System.String
+      value: ''
 - uid: Koffing.Godot.UI.Elements.TileRect.Suit
   commentId: P:Koffing.Godot.UI.Elements.TileRect.Suit
   id: Suit
@@ -688,7 +950,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Suit
     path: ../Koffing/UI/Elements/TileRect.cs
-    startLine: 26
+    startLine: 53
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -731,7 +993,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: Rank
     path: ../Koffing/UI/Elements/TileRect.cs
-    startLine: 41
+    startLine: 68
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -774,7 +1036,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: FaceUp
     path: ../Koffing/UI/Elements/TileRect.cs
-    startLine: 60
+    startLine: 87
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -791,6 +1053,92 @@ items:
 
       Public Property FaceUp As Boolean
   overload: Koffing.Godot.UI.Elements.TileRect.FaceUp*
+  attributes:
+  - type: Godot.ExportAttribute
+    ctor: Godot.ExportAttribute.#ctor(Godot.PropertyHint,System.String)
+    arguments:
+    - type: Godot.PropertyHint
+      value: "0"
+    - type: System.String
+      value: ''
+- uid: Koffing.Godot.UI.Elements.TileRect.Rotated
+  commentId: P:Koffing.Godot.UI.Elements.TileRect.Rotated
+  id: Rotated
+  parent: Koffing.Godot.UI.Elements.TileRect
+  langs:
+  - csharp
+  - vb
+  name: Rotated
+  nameWithType: TileRect.Rotated
+  fullName: Koffing.Godot.UI.Elements.TileRect.Rotated
+  type: Property
+  source:
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Rotated
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 102
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  syntax:
+    content: >-
+      [Export(PropertyHint.None, "")]
+
+      public bool Rotated { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Export(PropertyHint.None, "")>
+
+      Public Property Rotated As Boolean
+  overload: Koffing.Godot.UI.Elements.TileRect.Rotated*
+  attributes:
+  - type: Godot.ExportAttribute
+    ctor: Godot.ExportAttribute.#ctor(Godot.PropertyHint,System.String)
+    arguments:
+    - type: Godot.PropertyHint
+      value: "0"
+    - type: System.String
+      value: ''
+- uid: Koffing.Godot.UI.Elements.TileRect.ShowRankIndicator
+  commentId: P:Koffing.Godot.UI.Elements.TileRect.ShowRankIndicator
+  id: ShowRankIndicator
+  parent: Koffing.Godot.UI.Elements.TileRect
+  langs:
+  - csharp
+  - vb
+  name: ShowRankIndicator
+  nameWithType: TileRect.ShowRankIndicator
+  fullName: Koffing.Godot.UI.Elements.TileRect.ShowRankIndicator
+  type: Property
+  source:
+    remote:
+      path: UI/Elements/TileRect.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: ShowRankIndicator
+    path: ../Koffing/UI/Elements/TileRect.cs
+    startLine: 117
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  syntax:
+    content: >-
+      [Export(PropertyHint.None, "")]
+
+      public bool ShowRankIndicator { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Export(PropertyHint.None, "")>
+
+      Public Property ShowRankIndicator As Boolean
+  overload: Koffing.Godot.UI.Elements.TileRect.ShowRankIndicator*
   attributes:
   - type: Godot.ExportAttribute
     ctor: Godot.ExportAttribute.#ctor(Godot.PropertyHint,System.String)
@@ -817,7 +1165,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ToString
     path: ../Koffing/UI/Elements/TileRect.cs
-    startLine: 74
+    startLine: 133
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -849,7 +1197,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: _Ready
     path: ../Koffing/UI/Elements/TileRect.cs
-    startLine: 91
+    startLine: 214
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -15183,6 +15531,55 @@ references:
   - name: .
   - uid: Koffing.Tiles
     name: Tiles
+- uid: Koffing.Godot.UI.Elements.TileRect.NormalRankIndicatorColor*
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.NormalRankIndicatorColor
+  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_NormalRankIndicatorColor
+  name: NormalRankIndicatorColor
+  nameWithType: TileRect.NormalRankIndicatorColor
+  fullName: Koffing.Godot.UI.Elements.TileRect.NormalRankIndicatorColor
+- uid: Godot.Color
+  commentId: T:Godot.Color
+  parent: Godot
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Godot.Color
+- uid: Koffing.Godot.UI.Elements.TileRect.RedFiveRankIndicatorColor*
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.RedFiveRankIndicatorColor
+  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_RedFiveRankIndicatorColor
+  name: RedFiveRankIndicatorColor
+  nameWithType: TileRect.RedFiveRankIndicatorColor
+  fullName: Koffing.Godot.UI.Elements.TileRect.RedFiveRankIndicatorColor
+- uid: Koffing.Godot.UI.Elements.TileRect.TileWidth*
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.TileWidth
+  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_TileWidth
+  name: TileWidth
+  nameWithType: TileRect.TileWidth
+  fullName: Koffing.Godot.UI.Elements.TileRect.TileWidth
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Koffing.Godot.UI.Elements.TileRect.TileHeight*
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.TileHeight
+  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_TileHeight
+  name: TileHeight
+  nameWithType: TileRect.TileHeight
+  fullName: Koffing.Godot.UI.Elements.TileRect.TileHeight
+- uid: Godot.Vector2
+  commentId: T:Godot.Vector2
+  parent: Godot
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Godot.Vector2
 - uid: Koffing.Godot.UI.Elements.TileRect.Suit*
   commentId: Overload:Koffing.Godot.UI.Elements.TileRect.Suit
   href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Suit
@@ -15230,6 +15627,18 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: Koffing.Godot.UI.Elements.TileRect.Rotated*
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.Rotated
+  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Rotated
+  name: Rotated
+  nameWithType: TileRect.Rotated
+  fullName: Koffing.Godot.UI.Elements.TileRect.Rotated
+- uid: Koffing.Godot.UI.Elements.TileRect.ShowRankIndicator*
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.ShowRankIndicator
+  href: Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_ShowRankIndicator
+  name: ShowRankIndicator
+  nameWithType: TileRect.ShowRankIndicator
+  fullName: Koffing.Godot.UI.Elements.TileRect.ShowRankIndicator
 - uid: Godot.GodotObject.ToString
   commentId: M:Godot.GodotObject.ToString
   parent: Godot.GodotObject

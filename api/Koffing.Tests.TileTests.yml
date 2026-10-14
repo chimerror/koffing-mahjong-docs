@@ -279,7 +279,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: EqualsIsCorrectNegativeCases
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 87
+    startLine: 94
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -311,7 +311,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RawEqualsIsCorrectPositiveCases
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 137
+    startLine: 144
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -343,7 +343,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RawEqualsIsCorrectNegativeCases
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 176
+    startLine: 190
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -375,7 +375,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: EqualsIsCorrectNegativeEdgeCases
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 228
+    startLine: 242
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -427,7 +427,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: CompareTilesIsCorrect
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 244
+    startLine: 258
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -481,7 +481,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ToTilesAndNotationFromTilesAreCorrect
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 253
+    startLine: 267
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -533,7 +533,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ToTilesEdgeCasesAreCorrect
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 282
+    startLine: 296
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -592,7 +592,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: ToTileEdgeCasesAreCorrect
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 294
+    startLine: 308
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -651,7 +651,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: NotationFromTilesIsCorrectWhenGivenAnEmptyCollection
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 305
+    startLine: 319
   assemblies:
   - Koffing
   namespace: Koffing.Tests
@@ -683,7 +683,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: GetTileHashCodeIsCorrect
     path: ../Koffing/Scripts/Tests/TileTests.cs
-    startLine: 315
+    startLine: 329
   assemblies:
   - Koffing
   namespace: Koffing.Tests

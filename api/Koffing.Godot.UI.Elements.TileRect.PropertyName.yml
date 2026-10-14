@@ -5,9 +5,21 @@ items:
   id: TileRect.PropertyName
   parent: Koffing.Godot.UI.Elements
   children:
+  - Koffing.Godot.UI.Elements.TileRect.PropertyName.CurrentRankIndicator
   - Koffing.Godot.UI.Elements.TileRect.PropertyName.FaceUp
+  - Koffing.Godot.UI.Elements.TileRect.PropertyName.NormalRankIndicatorColor
   - Koffing.Godot.UI.Elements.TileRect.PropertyName.Rank
+  - Koffing.Godot.UI.Elements.TileRect.PropertyName.RedFiveRankIndicatorColor
+  - Koffing.Godot.UI.Elements.TileRect.PropertyName.Rotated
+  - Koffing.Godot.UI.Elements.TileRect.PropertyName.ShowRankIndicator
   - Koffing.Godot.UI.Elements.TileRect.PropertyName.Suit
+  - Koffing.Godot.UI.Elements.TileRect.PropertyName.TileHeight
+  - Koffing.Godot.UI.Elements.TileRect.PropertyName.TileWidth
+  - Koffing.Godot.UI.Elements.TileRect.PropertyName.WestRankIndicatorOffset
+  - Koffing.Godot.UI.Elements.TileRect.PropertyName.WhiteRankIndicatorOffset
+  - Koffing.Godot.UI.Elements.TileRect.PropertyName._horizontalRankIndicator
+  - Koffing.Godot.UI.Elements.TileRect.PropertyName._showRankIndicator
+  - Koffing.Godot.UI.Elements.TileRect.PropertyName._verticalRankIndicator
   langs:
   - csharp
   - vb
@@ -140,6 +152,106 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.NormalRankIndicatorColor
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.NormalRankIndicatorColor
+  id: NormalRankIndicatorColor
+  parent: Koffing.Godot.UI.Elements.TileRect.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: NormalRankIndicatorColor
+  nameWithType: TileRect.PropertyName.NormalRankIndicatorColor
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.NormalRankIndicatorColor
+  type: Field
+  source:
+    id: NormalRankIndicatorColor
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 15
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the 'NormalRankIndicatorColor' property.
+  example: []
+  syntax:
+    content: public static readonly StringName NormalRankIndicatorColor
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly NormalRankIndicatorColor As StringName
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.RedFiveRankIndicatorColor
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.RedFiveRankIndicatorColor
+  id: RedFiveRankIndicatorColor
+  parent: Koffing.Godot.UI.Elements.TileRect.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: RedFiveRankIndicatorColor
+  nameWithType: TileRect.PropertyName.RedFiveRankIndicatorColor
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.RedFiveRankIndicatorColor
+  type: Field
+  source:
+    id: RedFiveRankIndicatorColor
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 19
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the 'RedFiveRankIndicatorColor' property.
+  example: []
+  syntax:
+    content: public static readonly StringName RedFiveRankIndicatorColor
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly RedFiveRankIndicatorColor As StringName
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.TileWidth
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.TileWidth
+  id: TileWidth
+  parent: Koffing.Godot.UI.Elements.TileRect.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: TileWidth
+  nameWithType: TileRect.PropertyName.TileWidth
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.TileWidth
+  type: Field
+  source:
+    id: TileWidth
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 23
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the 'TileWidth' property.
+  example: []
+  syntax:
+    content: public static readonly StringName TileWidth
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly TileWidth As StringName
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.TileHeight
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.TileHeight
+  id: TileHeight
+  parent: Koffing.Godot.UI.Elements.TileRect.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: TileHeight
+  nameWithType: TileRect.PropertyName.TileHeight
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.TileHeight
+  type: Field
+  source:
+    id: TileHeight
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 27
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the 'TileHeight' property.
+  example: []
+  syntax:
+    content: public static readonly StringName TileHeight
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly TileHeight As StringName
 - uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.Suit
   commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.Suit
   id: Suit
@@ -154,7 +266,7 @@ items:
   source:
     id: Suit
     path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
-    startLine: 15
+    startLine: 31
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -179,7 +291,7 @@ items:
   source:
     id: Rank
     path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
-    startLine: 19
+    startLine: 35
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -204,7 +316,7 @@ items:
   source:
     id: FaceUp
     path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
-    startLine: 23
+    startLine: 39
   assemblies:
   - Koffing
   namespace: Koffing.Godot.UI.Elements
@@ -215,6 +327,206 @@ items:
     return:
       type: Godot.StringName
     content.vb: Public Shared ReadOnly FaceUp As StringName
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.Rotated
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.Rotated
+  id: Rotated
+  parent: Koffing.Godot.UI.Elements.TileRect.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: Rotated
+  nameWithType: TileRect.PropertyName.Rotated
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.Rotated
+  type: Field
+  source:
+    id: Rotated
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 43
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the 'Rotated' property.
+  example: []
+  syntax:
+    content: public static readonly StringName Rotated
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly Rotated As StringName
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.ShowRankIndicator
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.ShowRankIndicator
+  id: ShowRankIndicator
+  parent: Koffing.Godot.UI.Elements.TileRect.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: ShowRankIndicator
+  nameWithType: TileRect.PropertyName.ShowRankIndicator
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.ShowRankIndicator
+  type: Field
+  source:
+    id: ShowRankIndicator
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 47
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the 'ShowRankIndicator' property.
+  example: []
+  syntax:
+    content: public static readonly StringName ShowRankIndicator
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly ShowRankIndicator As StringName
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.CurrentRankIndicator
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.CurrentRankIndicator
+  id: CurrentRankIndicator
+  parent: Koffing.Godot.UI.Elements.TileRect.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: CurrentRankIndicator
+  nameWithType: TileRect.PropertyName.CurrentRankIndicator
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.CurrentRankIndicator
+  type: Field
+  source:
+    id: CurrentRankIndicator
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 51
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the 'CurrentRankIndicator' property.
+  example: []
+  syntax:
+    content: public static readonly StringName CurrentRankIndicator
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly CurrentRankIndicator As StringName
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName._verticalRankIndicator
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName._verticalRankIndicator
+  id: _verticalRankIndicator
+  parent: Koffing.Godot.UI.Elements.TileRect.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: _verticalRankIndicator
+  nameWithType: TileRect.PropertyName._verticalRankIndicator
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName._verticalRankIndicator
+  type: Field
+  source:
+    id: _verticalRankIndicator
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 55
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the '_verticalRankIndicator' field.
+  example: []
+  syntax:
+    content: public static readonly StringName _verticalRankIndicator
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly _verticalRankIndicator As StringName
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName._horizontalRankIndicator
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName._horizontalRankIndicator
+  id: _horizontalRankIndicator
+  parent: Koffing.Godot.UI.Elements.TileRect.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: _horizontalRankIndicator
+  nameWithType: TileRect.PropertyName._horizontalRankIndicator
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName._horizontalRankIndicator
+  type: Field
+  source:
+    id: _horizontalRankIndicator
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 59
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the '_horizontalRankIndicator' field.
+  example: []
+  syntax:
+    content: public static readonly StringName _horizontalRankIndicator
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly _horizontalRankIndicator As StringName
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName._showRankIndicator
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName._showRankIndicator
+  id: _showRankIndicator
+  parent: Koffing.Godot.UI.Elements.TileRect.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: _showRankIndicator
+  nameWithType: TileRect.PropertyName._showRankIndicator
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName._showRankIndicator
+  type: Field
+  source:
+    id: _showRankIndicator
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 63
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the '_showRankIndicator' field.
+  example: []
+  syntax:
+    content: public static readonly StringName _showRankIndicator
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly _showRankIndicator As StringName
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.WestRankIndicatorOffset
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.WestRankIndicatorOffset
+  id: WestRankIndicatorOffset
+  parent: Koffing.Godot.UI.Elements.TileRect.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: WestRankIndicatorOffset
+  nameWithType: TileRect.PropertyName.WestRankIndicatorOffset
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.WestRankIndicatorOffset
+  type: Field
+  source:
+    id: WestRankIndicatorOffset
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 67
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the 'WestRankIndicatorOffset' field.
+  example: []
+  syntax:
+    content: public static readonly StringName WestRankIndicatorOffset
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly WestRankIndicatorOffset As StringName
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.WhiteRankIndicatorOffset
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.WhiteRankIndicatorOffset
+  id: WhiteRankIndicatorOffset
+  parent: Koffing.Godot.UI.Elements.TileRect.PropertyName
+  langs:
+  - csharp
+  - vb
+  name: WhiteRankIndicatorOffset
+  nameWithType: TileRect.PropertyName.WhiteRankIndicatorOffset
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.WhiteRankIndicatorOffset
+  type: Field
+  source:
+    id: WhiteRankIndicatorOffset
+    path: C:\Users\fooba\Projects\Coding\Koffing\.godot\mono\temp\obj\Release\Godot.SourceGenerators\Godot.SourceGenerators.ScriptPropertiesGenerator\Koffing.Godot.UI.Elements.TileRect_ScriptProperties.generated.cs
+    startLine: 71
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements
+  summary: Cached name for the 'WhiteRankIndicatorOffset' field.
+  example: []
+  syntax:
+    content: public static readonly StringName WhiteRankIndicatorOffset
+    return:
+      type: Godot.StringName
+    content.vb: Public Shared ReadOnly WhiteRankIndicatorOffset As StringName
 references:
 - uid: Koffing.Godot.UI.Elements
   commentId: N:Koffing.Godot.UI.Elements

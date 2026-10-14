@@ -1075,30 +1075,115 @@ references:
   commentId: F:Koffing.Godot.UI.Elements.TileRect.MethodName._Ready
   fullName: Koffing.Godot.UI.Elements.TileRect.MethodName._Ready
   nameWithType: TileRect.MethodName._Ready
+- uid: Koffing.Godot.UI.Elements.TileRect.NormalRankIndicatorColor
+  name: NormalRankIndicatorColor
+  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_NormalRankIndicatorColor
+  commentId: P:Koffing.Godot.UI.Elements.TileRect.NormalRankIndicatorColor
+  fullName: Koffing.Godot.UI.Elements.TileRect.NormalRankIndicatorColor
+  nameWithType: TileRect.NormalRankIndicatorColor
+- uid: Koffing.Godot.UI.Elements.TileRect.NormalRankIndicatorColor*
+  name: NormalRankIndicatorColor
+  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_NormalRankIndicatorColor_
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.NormalRankIndicatorColor
+  isSpec: "True"
+  fullName: Koffing.Godot.UI.Elements.TileRect.NormalRankIndicatorColor
+  nameWithType: TileRect.NormalRankIndicatorColor
 - uid: Koffing.Godot.UI.Elements.TileRect.PropertyName
   name: TileRect.PropertyName
   href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html
   commentId: T:Koffing.Godot.UI.Elements.TileRect.PropertyName
   fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName
   nameWithType: TileRect.PropertyName
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.CurrentRankIndicator
+  name: CurrentRankIndicator
+  href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName_CurrentRankIndicator
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.CurrentRankIndicator
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.CurrentRankIndicator
+  nameWithType: TileRect.PropertyName.CurrentRankIndicator
 - uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.FaceUp
   name: FaceUp
   href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName_FaceUp
   commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.FaceUp
   fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.FaceUp
   nameWithType: TileRect.PropertyName.FaceUp
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.NormalRankIndicatorColor
+  name: NormalRankIndicatorColor
+  href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName_NormalRankIndicatorColor
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.NormalRankIndicatorColor
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.NormalRankIndicatorColor
+  nameWithType: TileRect.PropertyName.NormalRankIndicatorColor
 - uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.Rank
   name: Rank
   href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName_Rank
   commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.Rank
   fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.Rank
   nameWithType: TileRect.PropertyName.Rank
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.RedFiveRankIndicatorColor
+  name: RedFiveRankIndicatorColor
+  href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName_RedFiveRankIndicatorColor
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.RedFiveRankIndicatorColor
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.RedFiveRankIndicatorColor
+  nameWithType: TileRect.PropertyName.RedFiveRankIndicatorColor
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.Rotated
+  name: Rotated
+  href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName_Rotated
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.Rotated
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.Rotated
+  nameWithType: TileRect.PropertyName.Rotated
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.ShowRankIndicator
+  name: ShowRankIndicator
+  href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName_ShowRankIndicator
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.ShowRankIndicator
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.ShowRankIndicator
+  nameWithType: TileRect.PropertyName.ShowRankIndicator
 - uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.Suit
   name: Suit
   href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName_Suit
   commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.Suit
   fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.Suit
   nameWithType: TileRect.PropertyName.Suit
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.TileHeight
+  name: TileHeight
+  href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName_TileHeight
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.TileHeight
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.TileHeight
+  nameWithType: TileRect.PropertyName.TileHeight
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.TileWidth
+  name: TileWidth
+  href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName_TileWidth
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.TileWidth
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.TileWidth
+  nameWithType: TileRect.PropertyName.TileWidth
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.WestRankIndicatorOffset
+  name: WestRankIndicatorOffset
+  href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName_WestRankIndicatorOffset
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.WestRankIndicatorOffset
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.WestRankIndicatorOffset
+  nameWithType: TileRect.PropertyName.WestRankIndicatorOffset
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName.WhiteRankIndicatorOffset
+  name: WhiteRankIndicatorOffset
+  href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName_WhiteRankIndicatorOffset
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName.WhiteRankIndicatorOffset
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName.WhiteRankIndicatorOffset
+  nameWithType: TileRect.PropertyName.WhiteRankIndicatorOffset
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName._horizontalRankIndicator
+  name: _horizontalRankIndicator
+  href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName__horizontalRankIndicator
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName._horizontalRankIndicator
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName._horizontalRankIndicator
+  nameWithType: TileRect.PropertyName._horizontalRankIndicator
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName._showRankIndicator
+  name: _showRankIndicator
+  href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName__showRankIndicator
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName._showRankIndicator
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName._showRankIndicator
+  nameWithType: TileRect.PropertyName._showRankIndicator
+- uid: Koffing.Godot.UI.Elements.TileRect.PropertyName._verticalRankIndicator
+  name: _verticalRankIndicator
+  href: api/Koffing.Godot.UI.Elements.TileRect.PropertyName.html#Koffing_Godot_UI_Elements_TileRect_PropertyName__verticalRankIndicator
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.PropertyName._verticalRankIndicator
+  fullName: Koffing.Godot.UI.Elements.TileRect.PropertyName._verticalRankIndicator
+  nameWithType: TileRect.PropertyName._verticalRankIndicator
 - uid: Koffing.Godot.UI.Elements.TileRect.Rank
   name: Rank
   href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Rank
@@ -1112,6 +1197,45 @@ references:
   isSpec: "True"
   fullName: Koffing.Godot.UI.Elements.TileRect.Rank
   nameWithType: TileRect.Rank
+- uid: Koffing.Godot.UI.Elements.TileRect.RedFiveRankIndicatorColor
+  name: RedFiveRankIndicatorColor
+  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_RedFiveRankIndicatorColor
+  commentId: P:Koffing.Godot.UI.Elements.TileRect.RedFiveRankIndicatorColor
+  fullName: Koffing.Godot.UI.Elements.TileRect.RedFiveRankIndicatorColor
+  nameWithType: TileRect.RedFiveRankIndicatorColor
+- uid: Koffing.Godot.UI.Elements.TileRect.RedFiveRankIndicatorColor*
+  name: RedFiveRankIndicatorColor
+  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_RedFiveRankIndicatorColor_
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.RedFiveRankIndicatorColor
+  isSpec: "True"
+  fullName: Koffing.Godot.UI.Elements.TileRect.RedFiveRankIndicatorColor
+  nameWithType: TileRect.RedFiveRankIndicatorColor
+- uid: Koffing.Godot.UI.Elements.TileRect.Rotated
+  name: Rotated
+  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Rotated
+  commentId: P:Koffing.Godot.UI.Elements.TileRect.Rotated
+  fullName: Koffing.Godot.UI.Elements.TileRect.Rotated
+  nameWithType: TileRect.Rotated
+- uid: Koffing.Godot.UI.Elements.TileRect.Rotated*
+  name: Rotated
+  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_Rotated_
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.Rotated
+  isSpec: "True"
+  fullName: Koffing.Godot.UI.Elements.TileRect.Rotated
+  nameWithType: TileRect.Rotated
+- uid: Koffing.Godot.UI.Elements.TileRect.ShowRankIndicator
+  name: ShowRankIndicator
+  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_ShowRankIndicator
+  commentId: P:Koffing.Godot.UI.Elements.TileRect.ShowRankIndicator
+  fullName: Koffing.Godot.UI.Elements.TileRect.ShowRankIndicator
+  nameWithType: TileRect.ShowRankIndicator
+- uid: Koffing.Godot.UI.Elements.TileRect.ShowRankIndicator*
+  name: ShowRankIndicator
+  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_ShowRankIndicator_
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.ShowRankIndicator
+  isSpec: "True"
+  fullName: Koffing.Godot.UI.Elements.TileRect.ShowRankIndicator
+  nameWithType: TileRect.ShowRankIndicator
 - uid: Koffing.Godot.UI.Elements.TileRect.SignalName
   name: TileRect.SignalName
   href: api/Koffing.Godot.UI.Elements.TileRect.SignalName.html
@@ -1144,6 +1268,32 @@ references:
   isSpec: "True"
   fullName: Koffing.Godot.UI.Elements.TileRect.Tile
   nameWithType: TileRect.Tile
+- uid: Koffing.Godot.UI.Elements.TileRect.TileHeight
+  name: TileHeight
+  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_TileHeight
+  commentId: P:Koffing.Godot.UI.Elements.TileRect.TileHeight
+  fullName: Koffing.Godot.UI.Elements.TileRect.TileHeight
+  nameWithType: TileRect.TileHeight
+- uid: Koffing.Godot.UI.Elements.TileRect.TileHeight*
+  name: TileHeight
+  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_TileHeight_
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.TileHeight
+  isSpec: "True"
+  fullName: Koffing.Godot.UI.Elements.TileRect.TileHeight
+  nameWithType: TileRect.TileHeight
+- uid: Koffing.Godot.UI.Elements.TileRect.TileWidth
+  name: TileWidth
+  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_TileWidth
+  commentId: P:Koffing.Godot.UI.Elements.TileRect.TileWidth
+  fullName: Koffing.Godot.UI.Elements.TileRect.TileWidth
+  nameWithType: TileRect.TileWidth
+- uid: Koffing.Godot.UI.Elements.TileRect.TileWidth*
+  name: TileWidth
+  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_TileWidth_
+  commentId: Overload:Koffing.Godot.UI.Elements.TileRect.TileWidth
+  isSpec: "True"
+  fullName: Koffing.Godot.UI.Elements.TileRect.TileWidth
+  nameWithType: TileRect.TileWidth
 - uid: Koffing.Godot.UI.Elements.TileRect.ToString
   name: ToString()
   href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_ToString
@@ -1157,6 +1307,18 @@ references:
   isSpec: "True"
   fullName: Koffing.Godot.UI.Elements.TileRect.ToString
   nameWithType: TileRect.ToString
+- uid: Koffing.Godot.UI.Elements.TileRect.WestRankIndicatorOffset
+  name: WestRankIndicatorOffset
+  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_WestRankIndicatorOffset
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.WestRankIndicatorOffset
+  fullName: Koffing.Godot.UI.Elements.TileRect.WestRankIndicatorOffset
+  nameWithType: TileRect.WestRankIndicatorOffset
+- uid: Koffing.Godot.UI.Elements.TileRect.WhiteRankIndicatorOffset
+  name: WhiteRankIndicatorOffset
+  href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect_WhiteRankIndicatorOffset
+  commentId: F:Koffing.Godot.UI.Elements.TileRect.WhiteRankIndicatorOffset
+  fullName: Koffing.Godot.UI.Elements.TileRect.WhiteRankIndicatorOffset
+  nameWithType: TileRect.WhiteRankIndicatorOffset
 - uid: Koffing.Godot.UI.Elements.TileRect._Ready
   name: _Ready()
   href: api/Koffing.Godot.UI.Elements.TileRect.html#Koffing_Godot_UI_Elements_TileRect__Ready
@@ -3874,6 +4036,12 @@ references:
   isSpec: "True"
   fullName: Koffing.Tiles.Tile.RawRank
   nameWithType: Tile.RawRank
+- uid: Koffing.Tiles.Tile.Rotated
+  name: Rotated
+  href: api/Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_Rotated
+  commentId: F:Koffing.Tiles.Tile.Rotated
+  fullName: Koffing.Tiles.Tile.Rotated
+  nameWithType: Tile.Rotated
 - uid: Koffing.Tiles.Tile.Suit
   name: Suit
   href: api/Koffing.Tiles.Tile.html#Koffing_Tiles_Tile_Suit
