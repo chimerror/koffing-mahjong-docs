@@ -31,12 +31,15 @@ jobs:
         path: './koffing'
     - name: Check out Docs Repo
       uses: actions/checkout@v3
+      with:
+        path: './koffing-mahjong-docs
     - name: Dotnet Setup
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 8.x
 
     - run: dotnet tool update -g docfx
+    - run: cd koffing-mahjong-docs
     - run: docfx docfx.json
 
     - name: Upload artifact
