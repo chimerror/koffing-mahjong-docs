@@ -39,7 +39,8 @@ jobs:
         dotnet-version: 8.x
 
     - run: dotnet tool update -g docfx
-    - run: cd koffing-mahjong-docs/koffing-mahjong-docs # Ugh
+    - run: cd koffing-mahjong-docs
+    - run: pwd
     - run: docfx docfx.json
 
     - name: Upload artifact
