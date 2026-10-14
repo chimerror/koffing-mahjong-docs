@@ -24,7 +24,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
+    - name: Check out Library Repo
+      uses: actions/checkout@v3
+      with:
+        repository: chimerror/koffing
+        path: './koffing'
+    - name: Check out Docs Repo
       uses: actions/checkout@v3
     - name: Dotnet Setup
       uses: actions/setup-dotnet@v3
