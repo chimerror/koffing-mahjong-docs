@@ -39,9 +39,9 @@ jobs:
         dotnet-version: 8.x
 
     - run: dotnet tool update -g docfx
-    - run: cd koffing-mahjong-docs
-    - run: pwd
     - run: docfx docfx.json
+      with:
+        path: './koffing-mahjong-docs'
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
