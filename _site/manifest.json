@@ -709,6 +709,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Tests.TileRectTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Tests.TileRectTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Tests.TileRectTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Koffing.Tests.TileTests.yml",
       "output": {
         ".html": {

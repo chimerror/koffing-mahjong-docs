@@ -46,28 +46,6 @@ references:
   - uid: Koffing.Godot.UI.Elements.TileRect.PropertyName
     name: PropertyName
     href: Koffing.Godot.UI.Elements.TileRect.PropertyName.html
-- uid: Koffing.Godot.UI.Elements.TileRect.MethodName
-  commentId: T:Koffing.Godot.UI.Elements.TileRect.MethodName
-  href: Koffing.Godot.UI.Elements.TileRect.html
-  name: TileRect.MethodName
-  nameWithType: TileRect.MethodName
-  fullName: Koffing.Godot.UI.Elements.TileRect.MethodName
-  spec.csharp:
-  - uid: Koffing.Godot.UI.Elements.TileRect
-    name: TileRect
-    href: Koffing.Godot.UI.Elements.TileRect.html
-  - name: .
-  - uid: Koffing.Godot.UI.Elements.TileRect.MethodName
-    name: MethodName
-    href: Koffing.Godot.UI.Elements.TileRect.MethodName.html
-  spec.vb:
-  - uid: Koffing.Godot.UI.Elements.TileRect
-    name: TileRect
-    href: Koffing.Godot.UI.Elements.TileRect.html
-  - name: .
-  - uid: Koffing.Godot.UI.Elements.TileRect.MethodName
-    name: MethodName
-    href: Koffing.Godot.UI.Elements.TileRect.MethodName.html
 - uid: Koffing.Godot.UI.Elements.TileRect.SignalName
   commentId: T:Koffing.Godot.UI.Elements.TileRect.SignalName
   href: Koffing.Godot.UI.Elements.TileRect.html
@@ -90,3 +68,25 @@ references:
   - uid: Koffing.Godot.UI.Elements.TileRect.SignalName
     name: SignalName
     href: Koffing.Godot.UI.Elements.TileRect.SignalName.html
+- uid: Koffing.Godot.UI.Elements.TileRect.MethodName
+  commentId: T:Koffing.Godot.UI.Elements.TileRect.MethodName
+  href: Koffing.Godot.UI.Elements.TileRect.html
+  name: TileRect.MethodName
+  nameWithType: TileRect.MethodName
+  fullName: Koffing.Godot.UI.Elements.TileRect.MethodName
+  spec.csharp:
+  - uid: Koffing.Godot.UI.Elements.TileRect
+    name: TileRect
+    href: Koffing.Godot.UI.Elements.TileRect.html
+  - name: .
+  - uid: Koffing.Godot.UI.Elements.TileRect.MethodName
+    name: MethodName
+    href: Koffing.Godot.UI.Elements.TileRect.MethodName.html
+  spec.vb:
+  - uid: Koffing.Godot.UI.Elements.TileRect
+    name: TileRect
+    href: Koffing.Godot.UI.Elements.TileRect.html
+  - name: .
+  - uid: Koffing.Godot.UI.Elements.TileRect.MethodName
+    name: MethodName
+    href: Koffing.Godot.UI.Elements.TileRect.MethodName.html

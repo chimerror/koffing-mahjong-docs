@@ -9,6 +9,7 @@ items:
   - Koffing.Tests.MatchTests
   - Koffing.Tests.MeldTests
   - Koffing.Tests.RandomNumberGeneratorTests
+  - Koffing.Tests.TileRectTests
   - Koffing.Tests.TileTests
   - Koffing.Tests.UpgradableDowngradableTests
   - Koffing.Tests.WaitTests
@@ -58,6 +59,12 @@ references:
   name: TileTests
   nameWithType: TileTests
   fullName: Koffing.Tests.TileTests
+- uid: Koffing.Tests.TileRectTests
+  commentId: T:Koffing.Tests.TileRectTests
+  href: Koffing.Tests.TileRectTests.html
+  name: TileRectTests
+  nameWithType: TileRectTests
+  fullName: Koffing.Tests.TileRectTests
 - uid: Koffing.Tests.UpgradableDowngradableTests
   commentId: T:Koffing.Tests.UpgradableDowngradableTests
   href: Koffing.Tests.UpgradableDowngradableTests.html

@@ -249,6 +249,11 @@
     "title": "Class RandomNumberGeneratorTests | Koffing Mahjong Engine",
     "summary": "Class RandomNumberGeneratorTests Namespace Koffing.Tests Assembly Koffing.dll [TestSuite(14, \"\")] public class RandomNumberGeneratorTests Inheritance object RandomNumberGeneratorTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods GodotRandomNumberGeneratorCanBeUsed() [TestCase(new object?[] { })] [RequireGodotRuntime] public static void GodotRandomNumberGeneratorCanBeUsed() RollDiceEdgeCasesAreCorrect(int, int, string) [TestCase(new object?[] { })] [DataPoint(\"RollDiceEdgeCases\")] [ThrowsException(typeof(ArgumentException))] public static void RollDiceEdgeCasesAreCorrect(int numberOfDice, int sidesOfDie, string because) Parameters numberOfDice int sidesOfDie int because string Setup() [Before(17, \"Setup\")] public static void Setup() SystemRandomNumberGeneratorCanBeUsed() [TestCase(new object?[] { })] public static void SystemRandomNumberGeneratorCanBeUsed() TearDown() [After(23, \"TearDown\")] public static void TearDown()"
   },
+  "api/Koffing.Tests.TileRectTests.html": {
+    "href": "api/Koffing.Tests.TileRectTests.html",
+    "title": "Class TileRectTests | Koffing Mahjong Engine",
+    "summary": "Class TileRectTests Namespace Koffing.Tests Assembly Koffing.dll [TestSuite(11, \"\")] public class TileRectTests Inheritance object TileRectTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Setup() [Before(14, \"Setup\")] public static void Setup() TearDown() [After(20, \"TearDown\")] public static void TearDown() TileRectRankIndicatorWorksCorrectly() [TestCase(new object?[] { })] [RequireGodotRuntime] public static void TileRectRankIndicatorWorksCorrectly() TileRectRotationWorksCorrectly() [TestCase(new object?[] { })] [RequireGodotRuntime] public static void TileRectRotationWorksCorrectly()"
+  },
   "api/Koffing.Tests.TileTests.html": {
     "href": "api/Koffing.Tests.TileTests.html",
     "title": "Class TileTests | Koffing Mahjong Engine",
@@ -267,7 +272,7 @@
   "api/Koffing.Tests.html": {
     "href": "api/Koffing.Tests.html",
     "title": "Namespace Koffing.Tests | Koffing Mahjong Engine",
-    "summary": "Namespace Koffing.Tests Classes BlockTests CalculationTests MatchTests MeldTests RandomNumberGeneratorTests TileTests UpgradableDowngradableTests WaitTests"
+    "summary": "Namespace Koffing.Tests Classes BlockTests CalculationTests MatchTests MeldTests RandomNumberGeneratorTests TileRectTests TileTests UpgradableDowngradableTests WaitTests"
   },
   "api/Koffing.Tiles.Suit.html": {
     "href": "api/Koffing.Tiles.Suit.html",

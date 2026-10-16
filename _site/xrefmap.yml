@@ -3229,6 +3229,64 @@ references:
   isSpec: "True"
   fullName: Koffing.Tests.RandomNumberGeneratorTests.TearDown
   nameWithType: RandomNumberGeneratorTests.TearDown
+- uid: Koffing.Tests.TileRectTests
+  name: TileRectTests
+  href: api/Koffing.Tests.TileRectTests.html
+  commentId: T:Koffing.Tests.TileRectTests
+  fullName: Koffing.Tests.TileRectTests
+  nameWithType: TileRectTests
+- uid: Koffing.Tests.TileRectTests.Setup
+  name: Setup()
+  href: api/Koffing.Tests.TileRectTests.html#Koffing_Tests_TileRectTests_Setup
+  commentId: M:Koffing.Tests.TileRectTests.Setup
+  fullName: Koffing.Tests.TileRectTests.Setup()
+  nameWithType: TileRectTests.Setup()
+- uid: Koffing.Tests.TileRectTests.Setup*
+  name: Setup
+  href: api/Koffing.Tests.TileRectTests.html#Koffing_Tests_TileRectTests_Setup_
+  commentId: Overload:Koffing.Tests.TileRectTests.Setup
+  isSpec: "True"
+  fullName: Koffing.Tests.TileRectTests.Setup
+  nameWithType: TileRectTests.Setup
+- uid: Koffing.Tests.TileRectTests.TearDown
+  name: TearDown()
+  href: api/Koffing.Tests.TileRectTests.html#Koffing_Tests_TileRectTests_TearDown
+  commentId: M:Koffing.Tests.TileRectTests.TearDown
+  fullName: Koffing.Tests.TileRectTests.TearDown()
+  nameWithType: TileRectTests.TearDown()
+- uid: Koffing.Tests.TileRectTests.TearDown*
+  name: TearDown
+  href: api/Koffing.Tests.TileRectTests.html#Koffing_Tests_TileRectTests_TearDown_
+  commentId: Overload:Koffing.Tests.TileRectTests.TearDown
+  isSpec: "True"
+  fullName: Koffing.Tests.TileRectTests.TearDown
+  nameWithType: TileRectTests.TearDown
+- uid: Koffing.Tests.TileRectTests.TileRectRankIndicatorWorksCorrectly
+  name: TileRectRankIndicatorWorksCorrectly()
+  href: api/Koffing.Tests.TileRectTests.html#Koffing_Tests_TileRectTests_TileRectRankIndicatorWorksCorrectly
+  commentId: M:Koffing.Tests.TileRectTests.TileRectRankIndicatorWorksCorrectly
+  fullName: Koffing.Tests.TileRectTests.TileRectRankIndicatorWorksCorrectly()
+  nameWithType: TileRectTests.TileRectRankIndicatorWorksCorrectly()
+- uid: Koffing.Tests.TileRectTests.TileRectRankIndicatorWorksCorrectly*
+  name: TileRectRankIndicatorWorksCorrectly
+  href: api/Koffing.Tests.TileRectTests.html#Koffing_Tests_TileRectTests_TileRectRankIndicatorWorksCorrectly_
+  commentId: Overload:Koffing.Tests.TileRectTests.TileRectRankIndicatorWorksCorrectly
+  isSpec: "True"
+  fullName: Koffing.Tests.TileRectTests.TileRectRankIndicatorWorksCorrectly
+  nameWithType: TileRectTests.TileRectRankIndicatorWorksCorrectly
+- uid: Koffing.Tests.TileRectTests.TileRectRotationWorksCorrectly
+  name: TileRectRotationWorksCorrectly()
+  href: api/Koffing.Tests.TileRectTests.html#Koffing_Tests_TileRectTests_TileRectRotationWorksCorrectly
+  commentId: M:Koffing.Tests.TileRectTests.TileRectRotationWorksCorrectly
+  fullName: Koffing.Tests.TileRectTests.TileRectRotationWorksCorrectly()
+  nameWithType: TileRectTests.TileRectRotationWorksCorrectly()
+- uid: Koffing.Tests.TileRectTests.TileRectRotationWorksCorrectly*
+  name: TileRectRotationWorksCorrectly
+  href: api/Koffing.Tests.TileRectTests.html#Koffing_Tests_TileRectTests_TileRectRotationWorksCorrectly_
+  commentId: Overload:Koffing.Tests.TileRectTests.TileRectRotationWorksCorrectly
+  isSpec: "True"
+  fullName: Koffing.Tests.TileRectTests.TileRectRotationWorksCorrectly
+  nameWithType: TileRectTests.TileRectRotationWorksCorrectly
 - uid: Koffing.Tests.TileTests
   name: TileTests
   href: api/Koffing.Tests.TileTests.html

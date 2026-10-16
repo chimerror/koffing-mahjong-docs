@@ -225,7 +225,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: LiveWallStartIndex
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 73
+    startLine: 74
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -254,7 +254,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: DeadWallStartIndex
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 74
+    startLine: 75
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -283,7 +283,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: DeadWallEndIndex
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 75
+    startLine: 76
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -312,7 +312,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: NextLiveTileIndex
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 76
+    startLine: 77
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -341,7 +341,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: NextReplacementTileIndex
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 77
+    startLine: 78
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -370,7 +370,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: LastRevealedDoraIndicatorIndex
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 78
+    startLine: 79
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -399,7 +399,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: NextDoraIndicatorIndex
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 79
+    startLine: 80
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -428,7 +428,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: .ctor
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 97
+    startLine: 98
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -484,7 +484,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PopNextLiveTile
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 162
+    startLine: 163
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -518,7 +518,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: PopNextReplacementTile
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 182
+    startLine: 183
   assemblies:
   - Koffing
   namespace: Koffing.Matches
@@ -552,7 +552,7 @@ items:
       repo: https://github.com/chimerror/koffing.git
     id: RevealNextDoraIndicator
     path: ../Koffing/Scripts/Matches/Wall.cs
-    startLine: 205
+    startLine: 206
   assemblies:
   - Koffing
   namespace: Koffing.Matches

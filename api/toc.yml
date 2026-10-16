@@ -164,6 +164,9 @@ items:
   - uid: Koffing.Tests.RandomNumberGeneratorTests
     name: RandomNumberGeneratorTests
     type: Class
+  - uid: Koffing.Tests.TileRectTests
+    name: TileRectTests
+    type: Class
   - uid: Koffing.Tests.TileTests
     name: TileTests
     type: Class
