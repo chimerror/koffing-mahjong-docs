@@ -81,6 +81,13 @@ items:
   - uid: Koffing.Godot.UI.Elements.TileRect.SignalName
     name: TileRect.SignalName
     type: Class
+- uid: Koffing.Godot.UI.Elements.Tests
+  name: Koffing.Godot.UI.Elements.Tests
+  type: Namespace
+  items:
+  - uid: Koffing.Godot.UI.Elements.Tests.TileRectTests
+    name: TileRectTests
+    type: Class
 - uid: Koffing.Matches
   name: Koffing.Matches
   type: Namespace
@@ -163,9 +170,6 @@ items:
     type: Class
   - uid: Koffing.Tests.RandomNumberGeneratorTests
     name: RandomNumberGeneratorTests
-    type: Class
-  - uid: Koffing.Tests.TileRectTests
-    name: TileRectTests
     type: Class
   - uid: Koffing.Tests.TileTests
     name: TileTests

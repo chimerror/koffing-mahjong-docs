@@ -275,6 +275,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Godot.UI.Elements.Tests.TileRectTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Godot.UI.Elements.Tests.TileRectTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Godot.UI.Elements.Tests.TileRectTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Koffing.Godot.UI.Elements.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Koffing.Godot.UI.Elements.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Koffing.Godot.UI.Elements.Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Koffing.Godot.UI.Elements.TileRect.MethodName.yml",
       "output": {
         ".html": {

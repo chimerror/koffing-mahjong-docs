@@ -1,0 +1,513 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Godot.UI.Elements.Tests.TileRectTests
+  commentId: T:Koffing.Godot.UI.Elements.Tests.TileRectTests
+  id: TileRectTests
+  parent: Koffing.Godot.UI.Elements.Tests
+  children:
+  - Koffing.Godot.UI.Elements.Tests.TileRectTests.Setup
+  - Koffing.Godot.UI.Elements.Tests.TileRectTests.TearDown
+  - Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRankIndicatorWorksCorrectly
+  - Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRotationWorksCorrectly
+  langs:
+  - csharp
+  - vb
+  name: TileRectTests
+  nameWithType: TileRectTests
+  fullName: Koffing.Godot.UI.Elements.Tests.TileRectTests
+  type: Class
+  source:
+    remote:
+      path: Scripts/Tests/UI/Elements/TileRectTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: TileRectTests
+    path: ../Koffing/Scripts/Tests/UI/Elements/TileRectTests.cs
+    startLine: 9
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements.Tests
+  syntax:
+    content: >-
+      [TestSuite(10, "")]
+
+      public class TileRectTests
+    content.vb: >-
+      <TestSuite(10, "")>
+
+      Public Class TileRectTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: GdUnit4.TestSuiteAttribute
+    ctor: GdUnit4.TestSuiteAttribute.#ctor(System.Int32,System.String)
+    arguments:
+    - type: System.Int32
+      value: 10
+    - type: System.String
+      value: ''
+- uid: Koffing.Godot.UI.Elements.Tests.TileRectTests.Setup
+  commentId: M:Koffing.Godot.UI.Elements.Tests.TileRectTests.Setup
+  id: Setup
+  parent: Koffing.Godot.UI.Elements.Tests.TileRectTests
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: TileRectTests.Setup()
+  fullName: Koffing.Godot.UI.Elements.Tests.TileRectTests.Setup()
+  type: Method
+  source:
+    remote:
+      path: Scripts/Tests/UI/Elements/TileRectTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: Setup
+    path: ../Koffing/Scripts/Tests/UI/Elements/TileRectTests.cs
+    startLine: 12
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements.Tests
+  syntax:
+    content: >-
+      [Before(13, "Setup")]
+
+      public static void Setup()
+    content.vb: >-
+      <Before(13, "Setup")>
+
+      Public Shared Sub Setup()
+  overload: Koffing.Godot.UI.Elements.Tests.TileRectTests.Setup*
+  attributes:
+  - type: GdUnit4.BeforeAttribute
+    ctor: GdUnit4.BeforeAttribute.#ctor(System.Int32,System.String)
+    arguments:
+    - type: System.Int32
+      value: 13
+    - type: System.String
+      value: Setup
+- uid: Koffing.Godot.UI.Elements.Tests.TileRectTests.TearDown
+  commentId: M:Koffing.Godot.UI.Elements.Tests.TileRectTests.TearDown
+  id: TearDown
+  parent: Koffing.Godot.UI.Elements.Tests.TileRectTests
+  langs:
+  - csharp
+  - vb
+  name: TearDown()
+  nameWithType: TileRectTests.TearDown()
+  fullName: Koffing.Godot.UI.Elements.Tests.TileRectTests.TearDown()
+  type: Method
+  source:
+    remote:
+      path: Scripts/Tests/UI/Elements/TileRectTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: TearDown
+    path: ../Koffing/Scripts/Tests/UI/Elements/TileRectTests.cs
+    startLine: 18
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements.Tests
+  syntax:
+    content: >-
+      [After(19, "TearDown")]
+
+      public static void TearDown()
+    content.vb: >-
+      <After(19, "TearDown")>
+
+      Public Shared Sub TearDown()
+  overload: Koffing.Godot.UI.Elements.Tests.TileRectTests.TearDown*
+  attributes:
+  - type: GdUnit4.AfterAttribute
+    ctor: GdUnit4.AfterAttribute.#ctor(System.Int32,System.String)
+    arguments:
+    - type: System.Int32
+      value: 19
+    - type: System.String
+      value: TearDown
+- uid: Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRotationWorksCorrectly
+  commentId: M:Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRotationWorksCorrectly
+  id: TileRectRotationWorksCorrectly
+  parent: Koffing.Godot.UI.Elements.Tests.TileRectTests
+  langs:
+  - csharp
+  - vb
+  name: TileRectRotationWorksCorrectly()
+  nameWithType: TileRectTests.TileRectRotationWorksCorrectly()
+  fullName: Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRotationWorksCorrectly()
+  type: Method
+  source:
+    remote:
+      path: Scripts/Tests/UI/Elements/TileRectTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: TileRectRotationWorksCorrectly
+    path: ../Koffing/Scripts/Tests/UI/Elements/TileRectTests.cs
+    startLine: 27
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [RequireGodotRuntime]
+
+      public static void TileRectRotationWorksCorrectly()
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <RequireGodotRuntime>
+
+      Public Shared Sub TileRectRotationWorksCorrectly()
+  overload: Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRotationWorksCorrectly*
+  attributes:
+  - type: GdUnit4.RequireGodotRuntimeAttribute
+    ctor: GdUnit4.RequireGodotRuntimeAttribute.#ctor
+    arguments: []
+- uid: Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRankIndicatorWorksCorrectly
+  commentId: M:Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRankIndicatorWorksCorrectly
+  id: TileRectRankIndicatorWorksCorrectly
+  parent: Koffing.Godot.UI.Elements.Tests.TileRectTests
+  langs:
+  - csharp
+  - vb
+  name: TileRectRankIndicatorWorksCorrectly()
+  nameWithType: TileRectTests.TileRectRankIndicatorWorksCorrectly()
+  fullName: Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRankIndicatorWorksCorrectly()
+  type: Method
+  source:
+    remote:
+      path: Scripts/Tests/UI/Elements/TileRectTests.cs
+      branch: main
+      repo: https://github.com/chimerror/koffing.git
+    id: TileRectRankIndicatorWorksCorrectly
+    path: ../Koffing/Scripts/Tests/UI/Elements/TileRectTests.cs
+    startLine: 56
+  assemblies:
+  - Koffing
+  namespace: Koffing.Godot.UI.Elements.Tests
+  syntax:
+    content: >-
+      [TestCase(new object?[] { })]
+
+      [RequireGodotRuntime]
+
+      public static void TileRectRankIndicatorWorksCorrectly()
+    content.vb: >-
+      <TestCase(New Object() { })>
+
+      <RequireGodotRuntime>
+
+      Public Shared Sub TileRectRankIndicatorWorksCorrectly()
+  overload: Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRankIndicatorWorksCorrectly*
+  attributes:
+  - type: GdUnit4.RequireGodotRuntimeAttribute
+    ctor: GdUnit4.RequireGodotRuntimeAttribute.#ctor
+    arguments: []
+references:
+- uid: Koffing.Godot.UI.Elements.Tests
+  commentId: N:Koffing.Godot.UI.Elements.Tests
+  name: Koffing.Godot.UI.Elements.Tests
+  nameWithType: Koffing.Godot.UI.Elements.Tests
+  fullName: Koffing.Godot.UI.Elements.Tests
+  spec.csharp:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Godot
+    name: Godot
+  - name: .
+  - uid: Koffing.Godot.UI
+    name: UI
+  - name: .
+  - uid: Koffing.Godot.UI.Elements
+    name: Elements
+  - name: .
+  - uid: Koffing.Godot.UI.Elements.Tests
+    name: Tests
+  spec.vb:
+  - uid: Koffing
+    name: Koffing
+  - name: .
+  - uid: Koffing.Godot
+    name: Godot
+  - name: .
+  - uid: Koffing.Godot.UI
+    name: UI
+  - name: .
+  - uid: Koffing.Godot.UI.Elements
+    name: Elements
+  - name: .
+  - uid: Koffing.Godot.UI.Elements.Tests
+    name: Tests
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Koffing.Godot.UI.Elements.Tests.TileRectTests.Setup*
+  commentId: Overload:Koffing.Godot.UI.Elements.Tests.TileRectTests.Setup
+  href: Koffing.Godot.UI.Elements.Tests.TileRectTests.html#Koffing_Godot_UI_Elements_Tests_TileRectTests_Setup
+  name: Setup
+  nameWithType: TileRectTests.Setup
+  fullName: Koffing.Godot.UI.Elements.Tests.TileRectTests.Setup
+- uid: Koffing.Godot.UI.Elements.Tests.TileRectTests.TearDown*
+  commentId: Overload:Koffing.Godot.UI.Elements.Tests.TileRectTests.TearDown
+  href: Koffing.Godot.UI.Elements.Tests.TileRectTests.html#Koffing_Godot_UI_Elements_Tests_TileRectTests_TearDown
+  name: TearDown
+  nameWithType: TileRectTests.TearDown
+  fullName: Koffing.Godot.UI.Elements.Tests.TileRectTests.TearDown
+- uid: Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRotationWorksCorrectly*
+  commentId: Overload:Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRotationWorksCorrectly
+  href: Koffing.Godot.UI.Elements.Tests.TileRectTests.html#Koffing_Godot_UI_Elements_Tests_TileRectTests_TileRectRotationWorksCorrectly
+  name: TileRectRotationWorksCorrectly
+  nameWithType: TileRectTests.TileRectRotationWorksCorrectly
+  fullName: Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRotationWorksCorrectly
+- uid: Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRankIndicatorWorksCorrectly*
+  commentId: Overload:Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRankIndicatorWorksCorrectly
+  href: Koffing.Godot.UI.Elements.Tests.TileRectTests.html#Koffing_Godot_UI_Elements_Tests_TileRectTests_TileRectRankIndicatorWorksCorrectly
+  name: TileRectRankIndicatorWorksCorrectly
+  nameWithType: TileRectTests.TileRectRankIndicatorWorksCorrectly
+  fullName: Koffing.Godot.UI.Elements.Tests.TileRectTests.TileRectRankIndicatorWorksCorrectly

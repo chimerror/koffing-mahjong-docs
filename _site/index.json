@@ -94,6 +94,16 @@
     "title": "Namespace Koffing.Godot.Tiles | Koffing Mahjong Engine",
     "summary": "Namespace Koffing.Godot.Tiles Classes TileSprite TileSprite.MethodName Cached StringNames for the methods contained in this class, for fast lookup. TileSprite.PropertyName Cached StringNames for the properties and fields contained in this class, for fast lookup. TileSprite.SignalName Cached StringNames for the signals contained in this class, for fast lookup."
   },
+  "api/Koffing.Godot.UI.Elements.Tests.TileRectTests.html": {
+    "href": "api/Koffing.Godot.UI.Elements.Tests.TileRectTests.html",
+    "title": "Class TileRectTests | Koffing Mahjong Engine",
+    "summary": "Class TileRectTests Namespace Koffing.Godot.UI.Elements.Tests Assembly Koffing.dll [TestSuite(10, \"\")] public class TileRectTests Inheritance object TileRectTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Setup() [Before(13, \"Setup\")] public static void Setup() TearDown() [After(19, \"TearDown\")] public static void TearDown() TileRectRankIndicatorWorksCorrectly() [TestCase(new object?[] { })] [RequireGodotRuntime] public static void TileRectRankIndicatorWorksCorrectly() TileRectRotationWorksCorrectly() [TestCase(new object?[] { })] [RequireGodotRuntime] public static void TileRectRotationWorksCorrectly()"
+  },
+  "api/Koffing.Godot.UI.Elements.Tests.html": {
+    "href": "api/Koffing.Godot.UI.Elements.Tests.html",
+    "title": "Namespace Koffing.Godot.UI.Elements.Tests | Koffing Mahjong Engine",
+    "summary": "Namespace Koffing.Godot.UI.Elements.Tests Classes TileRectTests"
+  },
   "api/Koffing.Godot.UI.Elements.TileRect.MethodName.html": {
     "href": "api/Koffing.Godot.UI.Elements.TileRect.MethodName.html",
     "title": "Class TileRect.MethodName | Koffing Mahjong Engine",
@@ -272,7 +282,7 @@
   "api/Koffing.Tests.html": {
     "href": "api/Koffing.Tests.html",
     "title": "Namespace Koffing.Tests | Koffing Mahjong Engine",
-    "summary": "Namespace Koffing.Tests Classes BlockTests CalculationTests MatchTests MeldTests RandomNumberGeneratorTests TileRectTests TileTests UpgradableDowngradableTests WaitTests"
+    "summary": "Namespace Koffing.Tests Classes BlockTests CalculationTests MatchTests MeldTests RandomNumberGeneratorTests TileTests UpgradableDowngradableTests WaitTests"
   },
   "api/Koffing.Tiles.Suit.html": {
     "href": "api/Koffing.Tiles.Suit.html",

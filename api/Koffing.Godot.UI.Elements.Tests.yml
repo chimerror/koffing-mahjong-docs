@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Koffing.Godot.UI.Elements.Tests
+  commentId: N:Koffing.Godot.UI.Elements.Tests
+  id: Koffing.Godot.UI.Elements.Tests
+  children:
+  - Koffing.Godot.UI.Elements.Tests.TileRectTests
+  langs:
+  - csharp
+  - vb
+  name: Koffing.Godot.UI.Elements.Tests
+  nameWithType: Koffing.Godot.UI.Elements.Tests
+  fullName: Koffing.Godot.UI.Elements.Tests
+  type: Namespace
+  assemblies:
+  - Koffing
+references:
+- uid: Koffing.Godot.UI.Elements.Tests.TileRectTests
+  commentId: T:Koffing.Godot.UI.Elements.Tests.TileRectTests
+  href: Koffing.Godot.UI.Elements.Tests.TileRectTests.html
+  name: TileRectTests
+  nameWithType: TileRectTests
+  fullName: Koffing.Godot.UI.Elements.Tests.TileRectTests
